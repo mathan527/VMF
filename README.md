@@ -85,7 +85,7 @@ python -m compileall vmf/ tests/ scripts/ -q
 |--------------|---------------|--------|--------|
 | provision    | ARCH stub     | Dhatri | M3     |
 | oem_packs    | ARCH stub     | Dhatri | M5     |
-| runner       | M4 IMPL       | Mathan | M4 ✓  |
+| runner       | M4 IMPL       | Mathan | M4     |
 | classifier   | ARCH stub     | Mathan | M6     |
 | geometry     | ARCH stub     | Mathan | M7     |
 | perf         | ARCH stub     | Mathan | M8     |
