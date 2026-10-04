@@ -1,0 +1,55 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Environment / secrets
+.env
+.env.*
+*.secret
+*.secrets
+
+# pytest / test artefacts
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+*.log
+
+# Build artefacts
+build/
+dist/
+*.egg-info/
+*.egg
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Claude IDE tool settings (machine-specific)
+.claude/
+
+# Android build artefacts
+*.apk
+*.aab
+
+# Emulator / test run evidence (generated at runtime)
+results/
+reports/
+
+# Temporary files
+*.tmp
+*.bak
+*.old

@@ -1,0 +1,19 @@
+# schema v1, confirm with Dhatri
+name: "Login"
+package: "com.example.testapp"
+steps:
+  - action: tap
+    locator: {resource_id: "com.example.testapp:id/btn_login"}
+  - action: type
+    locator: {resource_id: "com.example.testapp:id/input_email"}
+    text: "qa@test.com"
+  - action: oem.background_kill
+  - action: wait_for
+    locator: {resource_id: "com.example.testapp:id/home_screen"}
+    timeout_s: 10
+  - action: assert_visible
+    locator: {text: "Welcome"}
+  - action: swipe
+    direction: "up"
+  - action: back
+  - action: home

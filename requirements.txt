@@ -1,0 +1,7 @@
+# Runtime dependencies (M4 — Appium scenario runner)
+Appium-Python-Client
+PyYAML
+
+# Test dependencies
+pytest
+pytest-asyncio
