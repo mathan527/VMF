@@ -1,0 +1,459 @@
+# reference-models.yaml  (catalogue v3 - DRAFT for lead approval, 3 Oct 2026)
+# Tier rule (M1.2): low = 4 GB RAM variant, medium = 6 GB, high = 8 GB or more.
+# Android/API is NOT looked up per model: it comes from the tier in device-matrix.yaml
+#   low = Android 10 (API 29) | medium = Android 12 (API 31) | high = Android 15 (API 35)
+# CPU cores also come from the tier (low 2, medium 4, high 6), set in create_avds.py.
+# The reference model supplies: screen, density, RAM, cutout and GMS only.
+# Never leave a field empty. Missing spec -> rules in M1.6; list the field name in assumed_fields.
+# cutout: punch-hole | notch | none      gms: true | false (Huawei = false -> AOSP default image)
+#
+# Brand strings = device-matrix.yaml: Samsung, Vivo, OnePlus, Xiaomi, Google, Motorola, Honor, Huawei
+# (sub-brands such as Redmi go in the model name only).
+#
+# Selection policy used in this version (per instruction: use the latest models, with the tier RAM):
+#   For each brand x tier, the NEWEST model that (a) has a variant with the tier RAM, (b) launched in
+#   India 2023-2026 and (c) has an official brand page that was opened/seen in this review (M1.4).
+#   The same model can appear in two tiers of one brand when it ships in several RAM sizes; only
+#   ram_gb differs. Where a newer model was seen but its official page/spec was not confirmed, it is
+#   named in notes for Mathan's peer check (M1.10).
+#   Counterpoint India lists (M1.3c) were found only for Vivo Y29 5G and Redmi 14C 5G (2025); they are
+#   mentioned in notes. They were NOT used because they are older than the models chosen here.
+#
+# Fields:
+#   source_spec       = official manufacturer page (M1.5)
+#   source_secondary  = third-party spec page, only for fields the official page omits
+#   secondary_fields  = fields taken from source_secondary
+#   derived_fields    = calculated by us (screen_inches from the official cm value, density_dpi from M1.6)
+#   assumed_fields    = field NAMES ONLY (M1.6). RAM gaps use the tier default and list ram_gb.
+#   notes             = explanation for the reviewer
+# A leading "UNVERIFIED URL" in notes means the link follows the brand's URL pattern but was not opened
+# in this review. Those links must be opened in M1.10 before catalog-v1 is tagged.
+
+models:
+  # =========================== SAMSUNG ===========================
+  - brand: Samsung
+    tier: low            # Android 10 / API 29
+    model: "Galaxy A07 5G"
+    launch_year: 2026
+    resolution: "720 x 1600"
+    screen_inches: 6.74
+    density_dpi: 260
+    ram_gb: 4
+    cutout: "punch-hole"
+    gms: true
+    behaviour_pack: [standby_bucket, doze, always_finish_activities, trim_memory, permission_revoke]
+    source_spec: "https://www.samsung.com/in/smartphones/galaxy-a/galaxy-a07-5g-black-128gb-sm-a076bzkbins/"
+    source_secondary: "https://www.91mobiles.com/samsung-galaxy-a07-5g-price-in-india"
+    secondary_fields: [cutout]
+    derived_fields: [screen_inches, density_dpi]
+    source_popularity: "no list entry - newest official model (Samsung India site, 4 GB tier)"
+    assumed_fields: []
+    
+
+  - brand: Samsung
+    tier: medium            # Android 12 / API 31
+    model: "Galaxy M47 5G"
+    launch_year: 2026
+    resolution: "1080 x 2340"
+    screen_inches: 6.66
+    density_dpi: 387
+    ram_gb: 6
+    cutout: "punch-hole"
+    gms: true
+    behaviour_pack: [standby_bucket, doze, permission_revoke]
+    source_spec: "https://www.samsung.com/in/smartphones/galaxy-m/galaxy-m47-5g-blaze-blue-128gb-sm-m476blbbins/"
+    derived_fields: [screen_inches, density_dpi]
+    source_popularity: "no list entry - newest official model (Samsung India site, 6 GB tier)"
+    assumed_fields: []
+    
+
+  - brand: Samsung
+    tier: high            # Android 15 / API 35
+    model: "Galaxy A57 5G"
+    launch_year: 2026
+    resolution: "1080 x 2340"
+    screen_inches: 6.74
+    density_dpi: 382
+    ram_gb: 8
+    cutout: "punch-hole"
+    gms: true
+    behaviour_pack: [standby_bucket, doze, permission_revoke]
+    source_spec: "https://www.samsung.com/in/smartphones/galaxy-a/galaxy-a57-5g-awesome-navy-256gb-sm-a576bdbfins/"
+    source_secondary: "https://www.smartprix.com/mobiles/samsung-galaxy-a57-ppd1o9vw6s9w"
+    secondary_fields: [cutout]
+    derived_fields: [screen_inches, density_dpi]
+    source_popularity: "no list entry - newest official model (Samsung India site, 8 GB tier)"
+    assumed_fields: []
+    
+
+  # =========================== VIVO ===========================
+  - brand: Vivo
+    tier: low            # Android 10 / API 29
+    model: "Y21 5G"
+    launch_year: 2026
+    resolution: "720 x 1600"
+    screen_inches: 6.74
+    density_dpi: 260
+    ram_gb: 4
+    cutout: "notch"
+    gms: true
+    behaviour_pack: [background_kill, restrict_background, doze, always_finish_activities, trim_memory, permission_revoke]
+    source_spec: "https://www.vivo.com/in/products/y21-5g"
+    source_secondary: "https://www.smartprix.com/mobiles/vivo-y21-5g-ppd1o8utwqt9"
+    secondary_fields: [cutout]
+    derived_fields: [screen_inches, density_dpi]
+    source_popularity: "no list entry - newest official model (Vivo India site, 4 GB tier)"
+    assumed_fields: [cutout]
+
+  - brand: Vivo
+    tier: medium            # Android 12 / API 31
+    model: "Y21 5G"
+    launch_year: 2026
+    resolution: "720 x 1600"
+    screen_inches: 6.74
+    density_dpi: 260
+    ram_gb: 6
+    cutout: "notch"
+    gms: true
+    behaviour_pack: [background_kill, restrict_background, doze, permission_revoke]
+    source_spec: "https://shop.vivo.com/in/product/10360"
+    source_secondary: "https://www.smartprix.com/mobiles/vivo-y21-5g-ppd1o8utwqt9"
+    secondary_fields: [cutout]
+    derived_fields: [screen_inches, density_dpi]
+    source_popularity: "no list entry - newest official model (Vivo India store, 6 GB tier)"
+    assumed_fields: [cutout]
+
+  - brand: Vivo
+    tier: high            # Android 15 / API 35
+    model: "Y21 5G"
+    launch_year: 2026
+    resolution: "720 x 1600"
+    screen_inches: 6.74
+    density_dpi: 260
+    ram_gb: 8
+    cutout: "notch"
+    gms: true
+    behaviour_pack: [background_kill, restrict_background, doze, permission_revoke]
+    source_spec: "https://shop.vivo.com/in/product/10360"
+    source_secondary: "https://www.smartprix.com/mobiles/vivo-y21-5g-ppd1o8utwqt9"
+    secondary_fields: [cutout]
+    derived_fields: [screen_inches, density_dpi]
+    source_popularity: "no list entry - newest official model (Vivo India store, 8 GB tier)"
+    assumed_fields: []
+
+  # =========================== ONEPLUS ===========================
+  - brand: OnePlus
+    tier: low            # Android 10 / API 29
+    model: "N6 5G"
+    launch_year: 2026
+    resolution: "720 x 1570"
+    screen_inches: 6.8
+    density_dpi: 254
+    ram_gb: 4
+    cutout: "punch-hole"
+    gms: true
+    behaviour_pack: [background_kill, standby_bucket, doze, always_finish_activities, trim_memory, permission_revoke]
+    source_spec: "https://www.oneplus.in/n6"
+    derived_fields: [density_dpi]
+    source_popularity: "no list entry - newest official model (OnePlus India site, 4 GB tier)"
+    assumed_fields: []
+
+  - brand: OnePlus
+    tier: medium            # Android 12 / API 31
+    model: "N6 5G"
+    launch_year: 2026
+    resolution: "720 x 1570"
+    screen_inches: 6.8
+    density_dpi: 254
+    ram_gb: 6
+    cutout: "punch-hole"
+    gms: true
+    behaviour_pack: [background_kill, standby_bucket, doze, permission_revoke]
+    source_spec: "https://www.oneplus.in/n6"
+    source_secondary: "https://www.gsmarenaindia.com/oneplus-n6/"
+    secondary_fields: [resolution, screen_inches, cutout]
+    derived_fields: [density_dpi]
+    source_popularity: "no list entry - newest official model (OnePlus India site, 6 GB tier)"
+    assumed_fields: []
+
+  - brand: OnePlus
+    tier: high            # Android 15 / API 35
+    model: "Nord 6"
+    launch_year: 2026
+    resolution: "1272 x 2772"
+    screen_inches: 6.78
+    density_dpi: 450
+    ram_gb: 8
+    cutout: "punch-hole"
+    gms: true
+    behaviour_pack: [background_kill, standby_bucket, doze, permission_revoke]
+    source_spec: "https://www.oneplus.in/nord-6"
+    source_secondary: "https://www.smartprix.com/mobiles/oneplus-nord-6-ppd1jshp0otr"
+    secondary_fields: [cutout]
+    derived_fields: [density_dpi]
+    source_popularity: "no list entry - newest official model (OnePlus India site, 8 GB tier)"
+    assumed_fields: []
+
+  # =========================== XIAOMI ===========================
+  - brand: Xiaomi
+    tier: low            # Android 10 / API 29
+    model: "Redmi 15C 5G"
+    launch_year: 2025
+    resolution: "720 x 1600"
+    screen_inches: 6.9
+    density_dpi: 254
+    ram_gb: 4
+    cutout: "notch"
+    gms: true
+    behaviour_pack: [background_kill, restrict_background, doze, always_finish_activities, trim_memory, permission_revoke]
+    source_spec: "https://www.mi.com/in/product/redmi-15c-5g/specs/"
+    derived_fields: [density_dpi]
+    source_popularity: "no list entry - newest official model (Mi India site, 4 GB tier)"
+    assumed_fields: []
+    notes: "Official page: 17.53 cm (6.9) 'Dot Drop' display = notch, 1600 x 720, 4 GB + 128 GB. India launch 3 Dec 2025. Redmi A7 Pro (21 Apr 2026, 4 GB / 64 GB) is newer but its official page and display were not confirmed; peer check. Counterpoint India lists show Redmi 14C 5G (2025); not used (older)."
+
+  - brand: Xiaomi
+    tier: medium            # Android 12 / API 31
+    model: "Redmi 15C 5G"
+    launch_year: 2025
+    resolution: "720 x 1600"
+    screen_inches: 6.9
+    density_dpi: 254
+    ram_gb: 6
+    cutout: "notch"
+    gms: true
+    behaviour_pack: [background_kill, restrict_background, doze, permission_revoke]
+    source_spec: "https://www.mi.com/in/product/redmi-15c-5g/specs/"
+    derived_fields: [density_dpi]
+    source_popularity: "no list entry - newest official model (Mi India site, 6 GB tier)"
+    assumed_fields: []
+
+  - brand: Xiaomi
+    tier: high            # Android 15 / API 35
+    model: "Redmi 15C 5G"
+    launch_year: 2025
+    resolution: "720 x 1600"
+    screen_inches: 6.9
+    density_dpi: 254
+    ram_gb: 8
+    cutout: "notch"
+    gms: true
+    behaviour_pack: [background_kill, restrict_background, doze, permission_revoke]
+    source_spec: "https://www.mi.com/in/product/redmi-15c-5g/specs/"
+    derived_fields: [density_dpi]
+    source_popularity: "no list entry - newest official model (Mi India site, 8 GB tier)"
+    assumed_fields: []
+
+  # =========================== GOOGLE ===========================
+  # Pixels ship in a single RAM size each. No Pixel launched in 2023-2026 has 4 GB or 6 GB.
+  # Pixel 3a (4 GB) and Pixel 6a (6 GB) are the only options and are documented exceptions to the
+  # launch-year window (lead review section 7, option B). Lead sign-off is needed.
+  - brand: Google
+    tier: low            # Android 10 / API 29
+    model: "Pixel 3a"
+    launch_year: 2019
+    resolution: "1080 x 2220"
+    screen_inches: 5.6
+    density_dpi: 441
+    ram_gb: 4
+    cutout: "none"
+    gms: true
+    behaviour_pack: [doze, always_finish_activities, trim_memory, permission_revoke]
+    source_spec: "https://support.google.com/pixelphone/answer/16043605?hl=en"
+    derived_fields: [density_dpi]
+    source_popularity: "no list entry - newest official model with 4 GB RAM in the Pixel lineup"
+    assumed_fields: []
+    notes: "LEAD DECISION: launch year 2019 is outside the 2023-2026 window (no 2023-2026 Pixel has 4 GB). Android comes from the tier (Android 10); the phone shipped with Android 9, which does not matter under M1.2. Support-page link not opened in this review."
+
+  - brand: Google
+    tier: medium            # Android 12 / API 31
+    model: "Pixel 6a"
+    launch_year: 2022
+    resolution: "1080 x 2400"
+    screen_inches: 6.1
+    density_dpi: 431
+    ram_gb: 6
+    cutout: "punch-hole"
+    gms: true
+    behaviour_pack: [doze, permission_revoke]
+    source_spec: "https://support.google.com/pixelphone/answer/7158570?hl=en-IN"    
+    derived_fields: [density_dpi]
+    source_secondary: "https://www.gadgets360.com/mobiles/reviews/pixel-6a-review-price-in-india-vs-6-charger-google-3330855"
+    secondary_fields: [cutout]
+    source_popularity: "no list entry - newest official model with 6 GB RAM in the Pixel lineup"
+    assumed_fields: []
+    notes: "LEAD DECISION: Pixel 6a launched in 2022, outside the 2023–2026 window; no 6 GB Pixel launched in 2023–2026."
+  
+  - brand: Google
+    tier: high            # Android 15 / API 35
+    model: "Pixel 10a"
+    launch_year: 2026
+    resolution: "1080 x 2424"
+    screen_inches: 6.3
+    density_dpi: 421
+    ram_gb: 8
+    cutout: "punch-hole"
+    gms: true
+    behaviour_pack: [doze, permission_revoke]
+    source_spec: "https://store.google.com/in/product/pixel_10a_specs?hl=en-IN"
+    derived_fields: [density_dpi]
+    source_popularity: "no list entry - newest official model (Google Store India, 8 GB tier)"
+    assumed_fields: []
+
+  # =========================== MOTOROLA ===========================
+  - brand: Motorola
+    tier: low            # Android 10 / API 29
+    model: "Moto G37 Power 5G"
+    launch_year: 2026
+    resolution: "720 x 1604"
+    screen_inches: 6.67
+    density_dpi: 264
+    ram_gb: 4
+    cutout: "punch-hole"
+    gms: true
+    behaviour_pack: [doze, always_finish_activities, trim_memory, permission_revoke]
+    source_spec: "https://www.motorola.in/smartphones-moto-g37-power/p"
+    source_secondary: "https://www.gsmarena.com/motorola_moto_g37_power-14647.php"
+    secondary_fields: [resolution, screen_inches, cutout]
+    derived_fields: [density_dpi]
+    source_popularity: "no list entry - newest official model (Motorola India site, 4 GB tier)"
+    assumed_fields: []
+
+  - brand: Motorola
+    tier: medium            # Android 12 / API 31
+    model: "Moto G Max"
+    launch_year: 2026
+    resolution: "1080 x 2400"
+    screen_inches: 6.72
+    density_dpi: 391
+    ram_gb: 6
+    cutout: "punch-hole"
+    gms: true
+    behaviour_pack: [doze, permission_revoke]
+    source_spec: "https://en-in.support.motorola.com/app/answers/detail/a_id/193210/~/specifications---moto-g-max"
+    source_secondary: "https://www.91mobiles.com/moto-g-max-5g-price-in-india"
+    secondary_fields: [cutout]
+    derived_fields: [density_dpi]
+    source_popularity: "no list entry - newest official model (Motorola India site, 6 GB tier)"
+    assumed_fields: []
+
+  - brand: Motorola
+    tier: high            # Android 15 / API 35
+    model: "Moto G37 Power 5G"
+    launch_year: 2026
+    resolution: "720 x 1604"
+    screen_inches: 6.67
+    density_dpi: 264
+    ram_gb: 8
+    cutout: "punch-hole"
+    gms: true
+    behaviour_pack: [doze, permission_revoke]
+    source_spec: "https://www.motorola.in/smartphones-moto-g37-power/p"
+    source_secondary: "https://www.gsmarena.com/motorola_moto_g37_power-14647.php"
+    secondary_fields: [resolution, screen_inches, cutout]
+    derived_fields: [density_dpi]
+    source_popularity: "no list entry - newest official model (Motorola India site, 8 GB tier)"
+    assumed_fields: []
+
+  # =========================== HONOR ===========================
+  # Honor India (honor.com/in) has very few models. The only India page confirmed is the X8a below.
+  # Low and high tiers reuse it with the tier-default RAM (M1.6) until a verified 4 GB / 8 GB India
+  # model is found. LEAD DECISION required (lead review section 7).
+  - brand: Honor
+    tier: low            # Android 10 / API 29
+    model: "X5b"
+    launch_year: 2024
+    resolution: "720 x 1612"
+    screen_inches: 6.56
+    density_dpi: 269
+    ram_gb: 4
+    cutout: "notch"
+    gms: true
+    behaviour_pack: [background_kill, doze, always_finish_activities, trim_memory, permission_revoke]
+    source_spec: "https://www.honor.com/global/phones/honor-x5b/spec/"
+    derived_fields: [density_dpi]
+    source_popularity: "no list entry - official HONOR model with 4 GB RAM"
+    assumed_fields: []
+
+  - brand: Honor
+    tier: medium            # Android 12 / API 31
+    model: "X8a"
+    launch_year: 2023
+    resolution: "1080 x 2388"
+    screen_inches: 6.7
+    density_dpi: 391
+    ram_gb: 6
+    cutout: "punch-hole"
+    gms: true
+    behaviour_pack: [background_kill, doze, permission_revoke]
+    source_spec: "https://www.honor.com/in/phones/honor-x8a/spec/"
+    derived_fields: [density_dpi]
+    source_popularity: "no list entry - newest official model (Honor India site, 6 GB tier)"
+    assumed_fields: []
+
+  - brand: Honor
+    tier: high            # Android 15 / API 35
+    model: "X8a"
+    launch_year: 2023
+    resolution: "1080 x 2388"
+    screen_inches: 6.7
+    density_dpi: 391
+    ram_gb: 8
+    cutout: "punch-hole"
+    gms: true
+    behaviour_pack: [background_kill, doze, permission_revoke]
+    source_spec: "https://www.honor.com/in/phones/honor-x8a/spec/"
+    derived_fields: [density_dpi]
+    source_popularity: "no list entry - newest official model (Honor India site, 8 GB tier)"
+    assumed_fields: []
+
+  # =========================== HUAWEI ===========================
+  # Huawei has no official India retail. Lead review section 7 allows another market's official site.
+  - brand: Huawei
+    tier: low            # Android 10 / API 29
+    model: "nova Y62"
+    launch_year: 2024
+    resolution: "720 x 1600"
+    screen_inches: 6.52
+    density_dpi: 269
+    ram_gb: 4
+    cutout: "none"
+    gms: false
+    behaviour_pack: [background_kill, restrict_background, doze, always_finish_activities, trim_memory, permission_revoke]
+    source_spec: "https://consumer.huawei.com/za/phones/nova-y62-series/specs/"
+    derived_fields: [density_dpi]
+    source_popularity: "no list entry - newest official model with 4 GB RAM found (Huawei South Africa site)"
+    assumed_fields: [cutout]
+    notes: "Huawei official South Africa page lists 4 GB / 128 GB and 6.52 in, 1600 x 720. Cutout was not stated, so the M1.6 default 'none' is used; please confirm (it may be a waterdrop notch). Launch date differs between sources (2022-2024); 2024 used. Huawei is not sold in India."
+
+  - brand: Huawei
+    tier: medium
+    model: "nova Y63"
+    launch_year: 2025
+    resolution: "720 x 1600"
+    screen_inches: 6.75
+    density_dpi: 260
+    ram_gb: 6
+    cutout: "punch-hole"
+    gms: false
+    behaviour_pack: [background_kill, restrict_background, doze, permission_revoke]
+    source_spec: "https://www.gsmarena.com/huawei_nova_y63_4g-13845.php"
+    derived_fields: [density_dpi]
+    source_popularity: "official Huawei model; 6 GB RAM variant documented"
+    assumed_fields: []
+
+  - brand: Huawei
+    tier: high            # Android 15 / API 35
+    model: "nova 15 Max"
+    launch_year: 2026
+    resolution: "1272 x 2756"
+    screen_inches: 6.84
+    density_dpi: 444
+    ram_gb: 8
+    cutout: "punch-hole"
+    gms: false
+    behaviour_pack: [background_kill, restrict_background, doze, permission_revoke]
+    source_spec: "https://consumer.huawei.com/en/phones/nova15-max/specs/"
+    derived_fields: [density_dpi]
+    source_popularity: "no list entry - newest official model (Huawei global site, 8 GB tier)"
+    assumed_fields: []
