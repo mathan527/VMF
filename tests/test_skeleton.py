@@ -84,19 +84,24 @@ def test_create_run_increments():
     assert a != b
 
 
-def test_storage_save_functions_return_none():
+def test_storage_save_functions_return_none(tmp_path, monkeypatch):
     from vmf import storage
+    from vmf.storage import storage as storage_module
     from vmf.results import Step, Verdict, PerfRow
+    monkeypatch.setattr(storage_module, "_DB_PATH", tmp_path / "farm.db")
+    storage_module._INITIALIZED_PATHS.clear()
+    run_id = storage.create_run(apk_name="a", scenario="s", profiles=["p1"])
     step = Step(step_index=0, action="tap", status="pass", duration_ms=1,
                 screenshot_path="s.png", hierarchy_path="h.xml")
     verdict = Verdict(result="pass", cause="", failed_step=None, trigger_behaviour=None)
     perf = PerfRow(metric="pss", median=1.0, spread_pct=0.0, baseline=None,
                    regression_pct=None, noisy=False, unstable=False)
-    assert storage.save_device_result(run_id=1, profile="p1", verdict=verdict) is None
-    assert storage.save_step(run_id=1, profile="p1", step=step) is None
-    assert storage.save_profile_config(run_id=1, profile="p1", config={"a": 1}) is None
-    assert storage.save_perf(run_id=1, profile="p1", perf_rows=[perf]) is None
-    assert storage.finish_run(run_id=1) is None
+    assert storage.save_device_result(run_id=run_id, profile="p1", verdict=verdict) is None
+    assert storage.save_step(run_id=run_id, profile="p1", step=step) is None
+    assert storage.save_profile_config(run_id=run_id, profile="p1", config={"a": 1}) is None
+    assert storage.save_perf(run_id=run_id, profile="p1", perf_rows=[perf]) is None
+    assert storage.finish_run(run_id=run_id) is None
+    storage_module._INITIALIZED_PATHS.clear()
 
 
 # 9. results dataclasses
