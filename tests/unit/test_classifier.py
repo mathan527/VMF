@@ -6,7 +6,7 @@ from vmf.classifier import classifier
 from vmf.classifier.classifier import classify, start_logcat, stop_logcat
 from vmf.results import Step
 
-FIX = Path(__file__).parent / "fixtures" / "logcat"
+FIX = Path(__file__).resolve().parents[1] / "fixtures" / "logcat"
 PKG = "com.example.testapp"
 
 
