@@ -1,0 +1,6 @@
+10-06 12:00:01.100  4242  4242 D MainActivity: onCreate
+10-06 12:00:02.000  4242  4242 E AndroidRuntime: FATAL EXCEPTION: main
+10-06 12:00:02.000  4242  4242 E AndroidRuntime: Process: com.example.testapp, PID: 4242
+10-06 12:00:02.000  4242  4242 E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke virtual method on a null object reference
+10-06 12:00:02.000  4242  4242 E AndroidRuntime: 	at com.example.testapp.MainActivity.onClick(MainActivity.java:42)
+10-06 12:00:02.100  1000  1000 I ActivityManager: Process com.example.testapp (pid 4242) has died

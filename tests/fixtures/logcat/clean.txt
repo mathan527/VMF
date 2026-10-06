@@ -1,0 +1,5 @@
+10-06 12:00:01.100  4242  4242 I ActivityTaskManager: START u0 {cmp=com.example.testapp/.MainActivity}
+10-06 12:00:01.300  4242  4242 D MainActivity: onCreate
+10-06 12:00:02.000  4242  4260 I OkHttp: --> GET https://example.com/api
+10-06 12:00:02.500  4242  4242 D MainActivity: login button clicked
+10-06 12:00:03.000  1000  1000 I system_server: Displayed com.example.testapp/.HomeActivity: +480ms
