@@ -1,0 +1,44 @@
+# VMF public interfaces
+
+Generated from the code (`inspect` on each module). Status is `STUB` when the
+function docstring starts with "STUB" or "ARCH stub", otherwise `REAL`.
+"Real implementation due" is the milestone ID named in the docstring; the code
+states no calendar dates, so none are given. `REAL` means real logic exists, not
+that it was verified on a device. `runner.run_scenario` and
+`orchestrator.run_matrix.run_single_profile` are REAL but call stubs internally
+(dry-run mode / ARCH pipeline).
+
+All of these are importable from the package, e.g. `from vmf import storage;
+storage.create_run(...)`, and from the module path shown.
+
+| Module | Function | Signature | Owner | Real implementation due | Status |
+|---|---|---|---|---|---|
+| `vmf.provision.provision` | `start_device` | `(profile: dict, port: int) -> str` | Dhatri (M3) | M3 | STUB |
+| `vmf.provision.provision` | `stop_device` | `(serial: str) -> None` | Dhatri (M3) | M3 | STUB |
+| `vmf.oem_packs.oem_packs` | `always_finish_activities` | `(serial: str, pkg: str) -> dict` | Dhatri (M5) | M5 | STUB |
+| `vmf.oem_packs.oem_packs` | `apply_profile_settings` | `(serial: str, profile: dict) -> dict` | Dhatri (M5) | M5 | STUB |
+| `vmf.oem_packs.oem_packs` | `background_kill` | `(serial: str, pkg: str) -> dict` | Dhatri (M5) | M5 | STUB |
+| `vmf.oem_packs.oem_packs` | `doze` | `(serial: str, pkg: str) -> dict` | Dhatri (M5) | M5 | STUB |
+| `vmf.oem_packs.oem_packs` | `permission_revoke` | `(serial: str, pkg: str) -> dict` | Dhatri (M5) | M5 | STUB |
+| `vmf.oem_packs.oem_packs` | `reset_profile` | `(serial: str, pkg: str) -> None` | Dhatri (M5) | M5 | STUB |
+| `vmf.oem_packs.oem_packs` | `restrict_background` | `(serial: str, pkg: str) -> dict` | Dhatri (M5) | M5 | STUB |
+| `vmf.oem_packs.oem_packs` | `trim_memory` | `(serial: str, pkg: str) -> dict` | Dhatri (M5) | M5 | STUB |
+| `vmf.runner.runner` | `run` | `(serial: str, apk: str, scenario: str, system_port: int) -> tuple[int, list[vmf.results.Step]]` | Mathan (M4) | n/a (implemented) | REAL |
+| `vmf.runner.runner` | `run_scenario` | `(serial: str, apk: str, scenario: str, system_port: int = 8200, dry_run: bool = False) -> tuple[int, list[vmf.results.Step]]` | Mathan (M4) | n/a (implemented) | REAL |
+| `vmf.classifier.classifier` | `classify` | `(logcat_path, steps: list[vmf.results.Step] \| None = None, *, package: str \| None = None, pid_alive: Optional[Callable[[], bool]] = None, hang_threshold_s: float = 30.0) -> vmf.results.Verdict` | Mathan (M6) | n/a (implemented) | REAL |
+| `vmf.classifier.classifier` | `start_logcat` | `(serial: str, out_path: str) -> subprocess.Popen` | Mathan (M6) | n/a (implemented) | REAL |
+| `vmf.classifier.classifier` | `stop_logcat` | `(proc: subprocess.Popen) -> None` | Mathan (M6) | n/a (implemented) | REAL |
+| `vmf.geometry.geometry` | `validate_geometry` | `(hierarchy_xml: str, profile: dict) -> list[vmf.results.Finding]` | Mathan (M7) | M7 | STUB |
+| `vmf.perf.perf` | `run_performance` | `(serial: str, package: str, profile: dict) -> list[vmf.results.PerfRow]` | Mathan (M8) | M8 | STUB |
+| `vmf.storage.storage` | `create_run` | `(apk_name: str, scenario: str, profiles: list[str]) -> int` | Gagan (M9) | M9 | STUB |
+| `vmf.storage.storage` | `finish_run` | `(run_id: int) -> None` | Gagan (M9) | M9 | STUB |
+| `vmf.storage.storage` | `save_device_result` | `(run_id: int, profile: str, verdict) -> None` | Gagan (M9) | M9 | STUB |
+| `vmf.storage.storage` | `save_perf` | `(run_id: int, profile: str, perf_rows: list) -> None` | Gagan (M9) | M9 | STUB |
+| `vmf.storage.storage` | `save_profile_config` | `(run_id: int, profile: str, config: dict) -> None` | Gagan (M9) | M9 | STUB |
+| `vmf.storage.storage` | `save_step` | `(run_id: int, profile: str, step) -> None` | Gagan (M9) | M9 | STUB |
+| `vmf.orchestrator.run_matrix` | `dry_run` | `() -> None` | Mathan (M10 / ARCH) | n/a (implemented) | REAL |
+| `vmf.orchestrator.run_matrix` | `run_single_profile` | `(profile: dict, apk: str, scenario: str, port: int = 5554, stub: bool = True) -> dict` | Mathan (M10 / ARCH) | n/a (implemented) | REAL |
+| `vmf.report.report` | `generate_report` | `(run_id: int, output_dir: str = 'reports') -> str` | Gagan (M11) | M11 | STUB |
+| `vmf.api.api` | `create_app` | `()` | Gagan (M12) | M12 | STUB |
+
+Shared data objects live in `vmf/results.py`: `Step`, `Verdict`, `Finding`, `PerfRow`.

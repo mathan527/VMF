@@ -3,6 +3,11 @@
 A Windows-native automated mobile-compatibility testing system for Android
 apps on WHPX-accelerated emulators.
 
+## Documentation
+
+- [docs/architecture/VMF_Architecture_v2_SIGNOFF.pdf](docs/architecture/VMF_Architecture_v2_SIGNOFF.pdf) — signed-off architecture.
+- [docs/interfaces.md](docs/interfaces.md) — every public function: module, signature, owner, STUB or REAL.
+
 ## Architecture
 
 ```
