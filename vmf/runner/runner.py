@@ -23,11 +23,8 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
 from vmf import oem_packs, storage
+from vmf.config import APPIUM_URL, DEFAULT_TIMEOUT_S, KEYCODE_HOME, RESULTS_DIR
 from vmf.results import Step
-
-APPIUM_URL = "http://localhost:4723"
-DEFAULT_TIMEOUT_S = 10
-KEYCODE_HOME = 3
 
 
 # ---------------------------------------------------------------------------
@@ -154,7 +151,7 @@ def run(serial: str, apk: str, scenario: str, system_port: int) -> tuple[int, li
         run_id = storage.create_run(
             apk_name=os.path.basename(apk), scenario=spec["name"], profiles=[serial]
         )
-        out_dir = f"results/{run_id}/{serial}"
+        out_dir = f"{RESULTS_DIR}/{run_id}/{serial}"
 
         for step_index, step_spec in enumerate(spec["steps"]):
             start = time.monotonic()
