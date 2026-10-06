@@ -13,3 +13,5 @@ This __init__.py re-exports the public API so both import styles work:
 from vmf.geometry.geometry import (  # noqa: F401
     validate_geometry,
 )
+
+__all__ = ["validate_geometry"]

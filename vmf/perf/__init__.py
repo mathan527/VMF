@@ -13,3 +13,5 @@ This __init__.py re-exports the public API so both import styles work:
 from vmf.perf.perf import (  # noqa: F401
     run_performance,
 )
+
+__all__ = ["run_performance"]
