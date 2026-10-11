@@ -92,7 +92,7 @@ need no device. Nothing in the suite exercises a real emulator or Appium.
 See [docs/interfaces.md](docs/interfaces.md) for the per-function STUB or REAL
 status. In short: `runner` and `classifier` contain real logic that has not
 been proven on a device; `geometry`, `perf`, `provision`, `oem_packs`,
-`storage`, `report` and `api` are still ARCH stubs; `orchestrator` runs the
+`report` and `api` are still ARCH stubs; `storage` (M9) is implemented; `orchestrator` runs the
 single-profile ARCH pipeline only (`run_matrix` is not written).
 
 ## Technology stack
