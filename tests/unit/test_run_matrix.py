@@ -886,7 +886,8 @@ def test_lease_releases_exactly_once_even_when_the_body_raises():
     with pytest.raises(RuntimeError):
         with pool.lease() as slot:
             raise RuntimeError("body failed")
-    again = pool.acquire(poll_s=0.01)
+    deadline = time.monotonic() + 2   # a leaked slot must fail this test, not hang it
+    again = pool.acquire(lambda: time.monotonic() > deadline, 0.01)
     assert again.index == slot.index
     pool.release(again)
 
