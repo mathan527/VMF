@@ -1,0 +1,10 @@
+Applications Memory Usage (kB):
+Uptime: 2231000 Realtime: 2231000
+
+** MEMINFO in pid 2201 [com.example.app] **
+                   Pss  Private  Private  Swapped     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------
+  Native Heap    18211    18164        0        0    28000    19800     8200
+  Dalvik Heap     7410     7352        0        0    15000     7900     7100
+        TOTAL   123456    98200    11100        0    43000    27700    15300
