@@ -111,7 +111,9 @@ def _capture_evidence(driver, out_dir: str, step_index: int) -> tuple[str, str]:
 # M4 core — requires live Appium + running emulator
 # ---------------------------------------------------------------------------
 
-def run(serial: str, apk: str, scenario: str, system_port: int) -> tuple[int, list[Step]]:
+def run(serial: str, apk: str, scenario: str, system_port: int, *,
+        run_id: int | None = None, profile: str | None = None,
+        record: bool = True) -> tuple[int | None, list[Step]]:
     """Run ``scenario`` on the already-booted device ``serial``; return (run_id, Steps).
 
     Does not boot the device (M3 responsibility) and does not judge overall
@@ -122,6 +124,15 @@ def run(serial: str, apk: str, scenario: str, system_port: int) -> tuple[int, li
         apk:         Path to the APK to install and test.
         scenario:    Path to the scenario YAML file.
         system_port: UiAutomator2 systemPort (unique per device).
+        run_id:      If given, use it instead of calling ``storage.create_run``
+                     (the orchestrator creates one run for the whole matrix).
+        profile:     Name used for the evidence folder
+                     ``results/<run_id>/<profile>/`` and as the profile argument
+                     of ``storage.save_step``. Defaults to ``serial``.
+        record:      If False, nothing is stored: no ``create_run``, no
+                     ``save_step`` and no evidence files. Used when the
+                     scenario is replayed as a performance flow. The returned
+                     run_id is then None.
 
     Returns:
         Tuple of (run_id, list[Step]).
@@ -148,10 +159,14 @@ def run(serial: str, apk: str, scenario: str, system_port: int) -> tuple[int, li
             spec = yaml.safe_load(f)
         package = spec.get("package")
 
-        run_id = storage.create_run(
-            apk_name=os.path.basename(apk), scenario=spec["name"], profiles=[serial]
-        )
-        out_dir = f"{RESULTS_DIR}/{run_id}/{serial}"
+        profile_id = profile or serial
+        if not record:
+            run_id = None
+        elif run_id is None:
+            run_id = storage.create_run(
+                apk_name=os.path.basename(apk), scenario=spec["name"], profiles=[serial]
+            )
+        out_dir = f"{RESULTS_DIR}/{run_id}/{profile_id}"
 
         for step_index, step_spec in enumerate(spec["steps"]):
             start = time.monotonic()
@@ -162,7 +177,10 @@ def run(serial: str, apk: str, scenario: str, system_port: int) -> tuple[int, li
                 status = "fail"
             duration_ms = int((time.monotonic() - start) * 1000)
 
-            screenshot, hierarchy = _capture_evidence(driver, out_dir, step_index)
+            if record:
+                screenshot, hierarchy = _capture_evidence(driver, out_dir, step_index)
+            else:
+                screenshot, hierarchy = "", ""
             step = Step(
                 step_index=step_index,
                 action=step_spec["action"],
@@ -171,7 +189,8 @@ def run(serial: str, apk: str, scenario: str, system_port: int) -> tuple[int, li
                 screenshot_path=screenshot,
                 hierarchy_path=hierarchy,
             )
-            storage.save_step(run_id, serial, step)
+            if record:
+                storage.save_step(run_id, profile_id, step)
             steps.append(step)
     finally:
         driver.quit()
@@ -184,7 +203,9 @@ def run(serial: str, apk: str, scenario: str, system_port: int) -> tuple[int, li
 
 def run_scenario(serial: str, apk: str, scenario: str,
                  system_port: int = 8200,
-                 dry_run: bool = False) -> tuple[int, list[Step]]:
+                 dry_run: bool = False, *,
+                 run_id: int | None = None, profile: str | None = None,
+                 record: bool = True) -> tuple[int | None, list[Step]]:
     """ARCH entry point for the scenario runner.
 
     When ``dry_run=True`` this function does NOT connect to Appium or require
@@ -199,17 +220,21 @@ def run_scenario(serial: str, apk: str, scenario: str,
         scenario:    Path to scenario YAML.
         system_port: UiAutomator2 systemPort (default 8200).
         dry_run:     If ``True``, return a stub result without Appium.
+        run_id, profile, record: see :func:`run`; passed through unchanged.
 
     Returns:
         ``(run_id, steps)`` — same contract as :func:`run`.
     """
     if dry_run:
         logging.info("[STUB] runner.run_scenario serial=%s scenario=%s (dry_run)", serial, scenario)
-        run_id = storage.create_run(
-            apk_name=os.path.basename(apk) if apk else "stub.apk",
-            scenario=os.path.basename(scenario) if scenario else "stub_scenario",
-            profiles=[serial],
-        )
+        if not record:
+            run_id = None
+        elif run_id is None:
+            run_id = storage.create_run(
+                apk_name=os.path.basename(apk) if apk else "stub.apk",
+                scenario=os.path.basename(scenario) if scenario else "stub_scenario",
+                profiles=[serial],
+            )
         stub_step = Step(
             step_index=0,
             action="launch",
@@ -218,8 +243,10 @@ def run_scenario(serial: str, apk: str, scenario: str,
             screenshot_path="",
             hierarchy_path="",
         )
-        storage.save_step(run_id, serial, stub_step)
+        if record:
+            storage.save_step(run_id, profile or serial, stub_step)
         return run_id, [stub_step]
 
     logging.info("runner.run_scenario serial=%s scenario=%s", serial, scenario)
-    return run(serial, apk, scenario, system_port)
+    return run(serial, apk, scenario, system_port,
+               run_id=run_id, profile=profile, record=record)
