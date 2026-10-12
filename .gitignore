@@ -56,3 +56,7 @@ reports/
 
 # Scratch UI dumps
 window*.xml
+
+# sample app build output and throw-away debug key
+sample_app/build/
+sample_app/debug.keystore

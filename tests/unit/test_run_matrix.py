@@ -1754,6 +1754,7 @@ def test_runner_reuse_installed_app_attaches_without_reinstalling(runner_env):
     caps = runner_env.options[0].to_capabilities()
     assert "appium:app" not in caps                      # no reinstall
     assert caps["appium:noReset"] is True                # data kept
+    assert caps["appium:forceAppLaunch"] is True         # an already-running app is relaunched
     assert caps["appium:appPackage"] == PACKAGE and caps["appium:appActivity"] == ".Main"
     assert caps["appium:systemPort"] == 8200
 

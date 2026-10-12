@@ -164,6 +164,9 @@ def run(serial: str, apk: str, scenario: str, system_port: int, *,
         if not package:
             raise ValueError("reuse_installed_app needs 'package' in the scenario")
         options.no_reset = True
+        # With noReset Appium does not relaunch an app that is already running; the
+        # replayed scenario must start from a foreground app, so force the launch.
+        options.set_capability("forceAppLaunch", True)
         options.app_package = package
         if spec.get("activity"):
             options.app_activity = spec["activity"]
