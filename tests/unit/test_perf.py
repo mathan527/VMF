@@ -64,6 +64,8 @@ class FakeAdb:
             return self.snapshot
         if "resolve-activity" in args:
             return fx("resolve_activity")
+        if args[:3] == ("shell", "getprop", "sys.boot_completed"):
+            return "1\n"
         if "force-stop" in args:
             return ""
         if args[:3] == ("shell", "am", "start"):
@@ -279,12 +281,104 @@ def test_assert_isolated_raises_for_no_devices_and_wrong_serial():
         assert_isolated(_text_adb(fx("devices_one")), "emulator-5556")
 
 
+def _snapshot_adb(boot_answers=("1\n",)):
+    """OK for console commands; sys.boot_completed answers come from ``boot_answers``
+    (an item that is an Exception is raised, like adb does while a device is offline)."""
+    answers = iter(boot_answers)
+    calls = []
+
+    def adb(serial, *args, timeout=None):
+        calls.append((serial, args))
+        if args[:3] == ("shell", "getprop", "sys.boot_completed"):
+            answer = next(answers)
+            if isinstance(answer, Exception):
+                raise answer
+            return answer
+        return fx("snapshot_ok")
+    adb.calls = calls
+    return adb
+
+
 def test_snapshot_ok_and_command_shape():
-    adb = _text_adb(fx("snapshot_ok"))
+    adb = _snapshot_adb()
     save_baseline_snapshot(SERIAL, adb)
     load_snapshot(SERIAL, adb)
     assert adb.calls == [(SERIAL, ("emu", "avd", "snapshot", "save", "perf_base")),
-                         (SERIAL, ("emu", "avd", "snapshot", "load", "perf_base"))]
+                         (SERIAL, ("emu", "avd", "snapshot", "load", "perf_base")),
+                         (SERIAL, ("shell", "getprop", "sys.boot_completed"))]
+
+
+def test_load_waits_through_the_offline_window_before_returning(monkeypatch):
+    monkeypatch.setattr(perf_mod, "ADB_BOOT_POLL_S", 0.001)
+    adb = _snapshot_adb([AdbError("adb.exe: device offline"), AdbError("adb.exe: device offline"),
+                         "0\n", "1\n"])
+    load_snapshot(SERIAL, adb)
+    boots = [c for c in adb.calls if c[1][:2] == ("shell", "getprop")]
+    assert len(boots) == 4  # two offline errors, one "not booted yet", then 1
+
+
+def test_save_does_not_wait_for_the_device():
+    adb = _snapshot_adb([])
+    save_baseline_snapshot(SERIAL, adb)
+    assert all(c[1][0] == "emu" for c in adb.calls)
+
+
+def _flaky_adb(online_from_load):
+    """The device answers sys.boot_completed only after the ``online_from_load``-th snapshot
+    load (1 = the first load works); before that adb says it is offline, like a real emulator."""
+    state = {"loads": 0}
+    calls = []
+
+    def adb(serial, *args, timeout=None):
+        calls.append((serial, args))
+        if args[:4] == ("emu", "avd", "snapshot", "load"):
+            state["loads"] += 1
+            return fx("snapshot_ok")
+        if args[:3] == ("shell", "getprop", "sys.boot_completed"):
+            if state["loads"] >= online_from_load:
+                return "1\n"
+            raise AdbError("adb.exe: device offline")
+        return fx("snapshot_ok")
+    adb.calls, adb.state = calls, state
+    return adb
+
+
+def test_load_repeats_the_load_when_the_device_stays_offline_then_recovers(monkeypatch, caplog):
+    monkeypatch.setattr(perf_mod, "ADB_BOOT_POLL_S", 0.001)
+    monkeypatch.setattr(perf_mod, "ADB_BOOT_TIMEOUT_S", 0.03)
+    adb = _flaky_adb(online_from_load=2)
+    with caplog.at_level("WARNING"):
+        load_snapshot(SERIAL, adb)
+    assert adb.state["loads"] == 2                      # the stuck first load was repeated once
+    assert any("attempt 1/3" in r.message for r in caplog.records)
+    assert any("came back after snapshot load attempt 2" in r.message for r in caplog.records)
+
+
+def test_load_does_not_repeat_when_the_first_load_works(monkeypatch):
+    monkeypatch.setattr(perf_mod, "ADB_BOOT_POLL_S", 0.001)
+    adb = _flaky_adb(online_from_load=1)
+    load_snapshot(SERIAL, adb)
+    assert adb.state["loads"] == 1
+
+
+def test_load_gives_up_after_the_configured_attempts(monkeypatch):
+    monkeypatch.setattr(perf_mod, "ADB_BOOT_POLL_S", 0.001)
+    monkeypatch.setattr(perf_mod, "ADB_BOOT_TIMEOUT_S", 0.02)
+    adb = _flaky_adb(online_from_load=99)
+    with pytest.raises(SnapshotError, match=r"stayed offline after 3 snapshot load attempts.*device offline"):
+        load_snapshot(SERIAL, adb)
+    assert adb.state["loads"] == perf_mod.SNAPSHOT_LOAD_ATTEMPTS == 3
+
+
+def test_a_console_refusal_is_not_retried():
+    loads = []
+
+    def adb(serial, *args, timeout=None):
+        loads.append(args)
+        return fx("snapshot_ko")
+    with pytest.raises(SnapshotError, match="KO"):
+        load_snapshot(SERIAL, adb)
+    assert len(loads) == 1
 
 
 def test_snapshot_ko_and_missing_ok_raise_with_console_text():
@@ -390,15 +484,17 @@ def test_measure_once_call_order_is_exact():
     result = measure_once(SERIAL, PACKAGE, ACTIVITY, adb, lambda: adb.calls.append("flow"))
     assert adb.labels() == ["load", "force-stop", "start", "gfx-reset", "flow", "gfx", "meminfo"]
     assert result == {"launch_time": 99999.0, "jank_pct": 90.0, "pss": 900000.0}
-    assert adb.calls[2][1] == ("shell", "am", "start", "-W", "-n", "com.example.app/.MainActivity")
-    assert adb.calls[3][1] == ("shell", "dumpsys", "gfxinfo", PACKAGE, "reset")
+    steps = [c for c in adb.calls if c == "flow" or c[1][:2] != ("shell", "getprop")]  # skip the wait polls
+    assert steps[2][1] == ("shell", "am", "start", "-W", "-n", "com.example.app/.MainActivity")
+    assert steps[3][1] == ("shell", "dumpsys", "gfxinfo", PACKAGE, "reset")
 
 
 def test_measure_once_without_flow_skips_it():
     adb = steady_adb()
     measure_once(SERIAL, PACKAGE, "com.example.app/.MainActivity", adb)
     assert adb.labels() == ["load", "force-stop", "start", "gfx-reset", "gfx", "meminfo"]
-    assert adb.calls[2][1][-1] == "com.example.app/.MainActivity"
+    steps = [c for c in adb.calls if c[1][:2] != ("shell", "getprop")]  # skip the wait polls
+    assert steps[2][1][-1] == "com.example.app/.MainActivity"
 
 
 def test_measure_once_names_serial_and_step_on_failure():

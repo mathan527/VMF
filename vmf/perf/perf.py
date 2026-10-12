@@ -24,6 +24,7 @@ import re
 import statistics
 import subprocess
 import threading
+import time
 from dataclasses import dataclass, fields
 from pathlib import Path
 from typing import Callable
@@ -45,6 +46,14 @@ ADB_LAUNCH_TIMEOUT_S = 60
 ADB_SNAPSHOT_TIMEOUT_S = 120
 # Seconds to wait for `adb install`.
 ADB_INSTALL_TIMEOUT_S = 180
+# After `emu avd snapshot load` adb shows the device "offline" for a few seconds,
+# and on a Pixel_6 AVD it sometimes stays offline for minutes (a repeat test: back
+# in 9 s, never, 6 s, 48 s). Loading the snapshot again recovered it. So wait at
+# most ADB_BOOT_TIMEOUT_S seconds per attempt (checking every ADB_BOOT_POLL_S),
+# then load again, up to SNAPSHOT_LOAD_ATTEMPTS times.
+ADB_BOOT_TIMEOUT_S = 30
+ADB_BOOT_POLL_S = 1.0
+SNAPSHOT_LOAD_ATTEMPTS = 3
 # jank_pct runs whose median is below this many percent are compared in absolute
 # percentage points (max - min) against max_spread_pct, because a relative spread
 # around a median near 0 is meaningless. At or above it the relative rule applies.
@@ -320,14 +329,57 @@ def _snapshot(serial: str, adb: Callable, action: str) -> None:
                             f"acknowledged with OK; console said: {(out or '').strip()!r}")
 
 
+def _wait_until_online(serial: str, adb: Callable) -> None:
+    """Block until ``serial`` answers adb and reports sys.boot_completed == 1.
+
+    adb errors while the device is still "offline" are expected and retried.
+    Raises SnapshotError if the device is not back within ADB_BOOT_TIMEOUT_S.
+    """
+    deadline = time.monotonic() + ADB_BOOT_TIMEOUT_S
+    last = "no answer"
+    while True:
+        try:
+            if (adb(serial, "shell", "getprop", "sys.boot_completed",
+                    timeout=ADB_TIMEOUT_S) or "").strip() == "1":
+                return
+            last = "sys.boot_completed is not 1 yet"
+        except AdbError as e:
+            last = str(e)
+        if time.monotonic() >= deadline:
+            raise SnapshotError(f"{serial} did not come back online within "
+                                f"{ADB_BOOT_TIMEOUT_S}s after the snapshot load; last: {last}")
+        threading.Event().wait(ADB_BOOT_POLL_S)
+
+
 def save_baseline_snapshot(serial: str, adb: Callable) -> None:
     """Save the current emulator state as the clean ``perf_base`` snapshot."""
     _snapshot(serial, adb, "save")
 
 
 def load_snapshot(serial: str, adb: Callable) -> None:
-    """Restore the emulator to the ``perf_base`` snapshot."""
-    _snapshot(serial, adb, "load")
+    """Restore the emulator to the ``perf_base`` snapshot and wait until it is back
+    online.
+
+    The device can stay offline after a load, so if it is not back within
+    ADB_BOOT_TIMEOUT_S the load is repeated, up to SNAPSHOT_LOAD_ATTEMPTS times
+    in all. A console refusal (KO) is not retried. Raises SnapshotError when every
+    attempt left the device offline.
+    """
+    failures = []
+    for attempt in range(1, SNAPSHOT_LOAD_ATTEMPTS + 1):
+        _snapshot(serial, adb, "load")
+        try:
+            _wait_until_online(serial, adb)
+            if failures:
+                logging.warning("perf: %s came back after snapshot load attempt %d "
+                                "(earlier attempts left it offline)", serial, attempt)
+            return
+        except SnapshotError as e:
+            failures.append(str(e))
+            logging.warning("perf: snapshot load attempt %d/%d on %s: %s",
+                            attempt, SNAPSHOT_LOAD_ATTEMPTS, serial, e)
+    raise SnapshotError(f"{serial} stayed offline after {SNAPSHOT_LOAD_ATTEMPTS} snapshot "
+                        f"load attempts; last: {failures[-1]}")
 
 
 # ---------------------------------------------------------------------------
