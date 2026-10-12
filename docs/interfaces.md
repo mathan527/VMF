@@ -23,8 +23,8 @@ storage.create_run(...)`, and from the module path shown.
 | `vmf.oem_packs.oem_packs` | `reset_profile` | `(serial: str, pkg: str) -> None` | Dhatri (M5) | M5 | STUB |
 | `vmf.oem_packs.oem_packs` | `restrict_background` | `(serial: str, pkg: str) -> dict` | Dhatri (M5) | M5 | STUB |
 | `vmf.oem_packs.oem_packs` | `trim_memory` | `(serial: str, pkg: str) -> dict` | Dhatri (M5) | M5 | STUB |
-| `vmf.runner.runner` | `run` | `(serial: str, apk: str, scenario: str, system_port: int, *, run_id: int \| None = None, profile: str \| None = None, record: bool = True) -> tuple[int \| None, list[vmf.results.Step]]` | Mathan (M4) | n/a (implemented) | REAL |
-| `vmf.runner.runner` | `run_scenario` | `(serial: str, apk: str, scenario: str, system_port: int = 8200, dry_run: bool = False, *, run_id: int \| None = None, profile: str \| None = None, record: bool = True) -> tuple[int \| None, list[vmf.results.Step]]` | Mathan (M4) | n/a (implemented) | REAL |
+| `vmf.runner.runner` | `run` | `(serial: str, apk: str, scenario: str, system_port: int, *, run_id: int \| None = None, profile: str \| None = None, record: bool = True, reuse_installed_app: bool = False, mjpeg_port: int \| None = None, chromedriver_port: int \| None = None) -> tuple[int \| None, list[vmf.results.Step]]` | Mathan (M4) | n/a (implemented) | REAL |
+| `vmf.runner.runner` | `run_scenario` | `(serial: str, apk: str, scenario: str, system_port: int = 8200, dry_run: bool = False, *, run_id: int \| None = None, profile: str \| None = None, record: bool = True, reuse_installed_app: bool = False, mjpeg_port: int \| None = None, chromedriver_port: int \| None = None) -> tuple[int \| None, list[vmf.results.Step]]` | Mathan (M4) | n/a (implemented) | REAL |
 | `vmf.classifier.classifier` | `classify` | `(logcat_path, steps: list[vmf.results.Step] \| None = None, *, package: str \| None = None, pid_alive: Optional[Callable[[], bool]] = None, hang_threshold_s: float = 30.0) -> vmf.results.Verdict` | Mathan (M6) | n/a (implemented) | REAL |
 | `vmf.classifier.classifier` | `start_logcat` | `(serial: str, out_path: str) -> subprocess.Popen` | Mathan (M6) | n/a (implemented) | REAL |
 | `vmf.classifier.classifier` | `stop_logcat` | `(proc: subprocess.Popen) -> None` | Mathan (M6) | n/a (implemented) | REAL |
@@ -45,8 +45,8 @@ storage.create_run(...)`, and from the module path shown.
 | `vmf.orchestrator.run_matrix` | `dry_run` | `() -> None` | Mathan (M10 / ARCH) | n/a (implemented) | REAL |
 | `vmf.orchestrator.run_matrix` | `run_single_profile` | `(profile: dict, apk: str, scenario: str, port: int = 5554, stub: bool = True) -> dict` | Mathan (M10 / ARCH) | n/a (implemented) | REAL |
 | `vmf.orchestrator.run_matrix` | `main` | `(run_id: int \| None, options: dict, deps: Deps \| None = None) -> dict` | Mathan (M10) | n/a (implemented with fakes, not proven on devices) | REAL |
-| `vmf.orchestrator.run_matrix` | `run_profile` | `(profile: dict, ctx: RunContext, pool: SlotPool, slot: Slot) -> dict` | Mathan (M10) | n/a (implemented) | REAL |
-| `vmf.orchestrator.run_matrix` | `preflight` | `(deps: Deps, options: dict) -> None` | Mathan (M10) | n/a (implemented) | REAL |
+| `vmf.orchestrator.run_matrix` | `run_profile` | `(profile: dict, ctx: RunContext, slot: Slot) -> dict` (the caller owns the slot) | Mathan (M10) | n/a (implemented) | REAL |
+| `vmf.orchestrator.run_matrix` | `preflight` | `(deps: Deps, options: dict) -> set` (PIDs seen) | Mathan (M10) | n/a (implemented) | REAL |
 | `vmf.orchestrator.run_matrix` | `profile_name` / `load_profiles` / `resolve_max_parallel` / `default_deps` | see module docstrings | Mathan (M10) | n/a (implemented) | REAL |
 | `vmf.report.report` | `generate_report` | `(run_id: int, output_dir: str = 'reports') -> str` | Gagan (M11) | M11 | STUB |
 | `vmf.api.api` | `create_app` | `()` | Gagan (M12) | M12 | STUB |

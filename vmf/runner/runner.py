@@ -113,7 +113,9 @@ def _capture_evidence(driver, out_dir: str, step_index: int) -> tuple[str, str]:
 
 def run(serial: str, apk: str, scenario: str, system_port: int, *,
         run_id: int | None = None, profile: str | None = None,
-        record: bool = True) -> tuple[int | None, list[Step]]:
+        record: bool = True, reuse_installed_app: bool = False,
+        mjpeg_port: int | None = None,
+        chromedriver_port: int | None = None) -> tuple[int | None, list[Step]]:
     """Run ``scenario`` on the already-booted device ``serial``; return (run_id, Steps).
 
     Does not boot the device (M3 responsibility) and does not judge overall
@@ -133,17 +135,45 @@ def run(serial: str, apk: str, scenario: str, system_port: int, *,
                      ``save_step`` and no evidence files. Used when the
                      scenario is replayed as a performance flow. The returned
                      run_id is then None.
+        reuse_installed_app:
+                     If True the APK is NOT installed again and app data is
+                     kept: ``options.app`` is not set, ``noReset`` is True, and
+                     ``appPackage`` (and ``appActivity`` if the scenario has an
+                     ``activity`` key) come from the scenario. Used by the
+                     performance flow, where the app is already installed in
+                     the snapshot. Needs ``package`` in the scenario. Default
+                     False: unchanged behaviour (install and reset).
+        mjpeg_port, chromedriver_port:
+                     Optional ``mjpegServerPort`` / ``chromedriverPort``
+                     capabilities. Parallel sessions need a distinct value
+                     each, as for ``system_port``. None leaves them unset.
 
     Returns:
         Tuple of (run_id, list[Step]).
     """
+    with open(scenario, encoding="utf-8") as f:
+        spec = yaml.safe_load(f)
+    package = spec.get("package")
+
     options = UiAutomator2Options()
     options.platform_name = "Android"
     options.udid = serial
     options.system_port = system_port
-    options.app = apk
     options.automation_name = "UiAutomator2"
-    options.no_reset = False
+    if reuse_installed_app:
+        if not package:
+            raise ValueError("reuse_installed_app needs 'package' in the scenario")
+        options.no_reset = True
+        options.app_package = package
+        if spec.get("activity"):
+            options.app_activity = spec["activity"]
+    else:
+        options.app = apk
+        options.no_reset = False
+    if mjpeg_port is not None:
+        options.mjpeg_server_port = mjpeg_port
+    if chromedriver_port is not None:
+        options.chromedriver_port = chromedriver_port
 
     try:
         driver = webdriver.Remote(APPIUM_URL, options=options)
@@ -155,10 +185,6 @@ def run(serial: str, apk: str, scenario: str, system_port: int, *,
 
     steps: list[Step] = []
     try:
-        with open(scenario, encoding="utf-8") as f:
-            spec = yaml.safe_load(f)
-        package = spec.get("package")
-
         profile_id = profile or serial
         if not record:
             run_id = None
@@ -205,7 +231,9 @@ def run_scenario(serial: str, apk: str, scenario: str,
                  system_port: int = 8200,
                  dry_run: bool = False, *,
                  run_id: int | None = None, profile: str | None = None,
-                 record: bool = True) -> tuple[int | None, list[Step]]:
+                 record: bool = True, reuse_installed_app: bool = False,
+                 mjpeg_port: int | None = None,
+                 chromedriver_port: int | None = None) -> tuple[int | None, list[Step]]:
     """ARCH entry point for the scenario runner.
 
     When ``dry_run=True`` this function does NOT connect to Appium or require
@@ -220,7 +248,9 @@ def run_scenario(serial: str, apk: str, scenario: str,
         scenario:    Path to scenario YAML.
         system_port: UiAutomator2 systemPort (default 8200).
         dry_run:     If ``True``, return a stub result without Appium.
-        run_id, profile, record: see :func:`run`; passed through unchanged.
+        run_id, profile, record, reuse_installed_app, mjpeg_port,
+        chromedriver_port: see :func:`run`; passed through unchanged (the dry
+        run ignores the last three).
 
     Returns:
         ``(run_id, steps)`` — same contract as :func:`run`.
@@ -249,4 +279,6 @@ def run_scenario(serial: str, apk: str, scenario: str,
 
     logging.info("runner.run_scenario serial=%s scenario=%s", serial, scenario)
     return run(serial, apk, scenario, system_port,
-               run_id=run_id, profile=profile, record=record)
+               run_id=run_id, profile=profile, record=record,
+               reuse_installed_app=reuse_installed_app,
+               mjpeg_port=mjpeg_port, chromedriver_port=chromedriver_port)

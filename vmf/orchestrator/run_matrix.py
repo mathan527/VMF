@@ -27,8 +27,10 @@ import subprocess
 import sys
 import threading
 import time
+import traceback
 import urllib.request
-from concurrent.futures import ThreadPoolExecutor, as_completed
+from concurrent.futures import CancelledError, ThreadPoolExecutor, as_completed
+from contextlib import contextmanager
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Callable
@@ -53,6 +55,17 @@ MAX_PARALLEL_ENV = "VMF_MAX_PARALLEL"
 BASE_CONSOLE_PORT = 5554
 CONSOLE_PORT_STEP = 2
 BASE_SYSTEM_PORT = 8200
+# Appium capability ports, one pair per slot so parallel sessions never share them.
+BASE_MJPEG_PORT = 7810
+BASE_CHROMEDRIVER_PORT = 9515
+# adb only auto-discovers emulators on console ports up to about 5585, which is
+# slot index 15. Later slots would boot but never appear in `adb devices`.
+MAX_SLOTS = 16
+# Seconds a task waits for a slot between checks of the stop request.
+SLOT_POLL_S = 0.5
+# Seconds a single cleanup step (stop logcat, reset_profile, stop_device) may take
+# before it is abandoned and recorded as failed, so cleanup can never block forever.
+CLEANUP_TIMEOUT_S = 120
 # Minimum free disk in GB before a run starts. The architecture document states
 # 100 GB in one place and 20 GB in another; 20 is used here.
 PREFLIGHT_MIN_DISK_GB = 20
@@ -78,6 +91,22 @@ class PreflightError(RuntimeError):
     """A pre-flight check failed; no device was started."""
 
 
+class RunNotFoundError(RuntimeError):
+    """The given run_id has no run row; nothing was started and nothing is finished."""
+
+
+class NoUsableSlot(RuntimeError):
+    """Every slot is quarantined, so no profile can be started."""
+
+
+class SlotWaitCancelled(Exception):
+    """A task stopped waiting for a slot because a stop was requested."""
+
+
+class ScenarioFailed(RuntimeError):
+    """A step of the performance flow failed, so no number may be reported."""
+
+
 # ---------------------------------------------------------------------------
 # Profiles, names, slots (M10 section 2)
 # ---------------------------------------------------------------------------
@@ -85,8 +114,11 @@ class PreflightError(RuntimeError):
 def profile_name(profile: dict) -> str:
     """``profile["name"]`` if present, else ``f"{brand}_{tier}_{api}".lower()``.
 
-    ``api`` falls back to the tier's API level (see ``TIER_API``). Characters
-    that are unsafe in a folder name become ``_``.
+    ``api`` falls back to the tier's API level (see ``TIER_API``). Anything that
+    is not a letter, digit, ``_``, ``.`` or ``-`` (spaces included) becomes ``_``,
+    so a name is always safe as a folder name. The SANITISED name is the profile
+    id used for evidence folders, every storage call and ``baselines`` keys:
+    baselines for a profile named "Samsung A07" must be keyed "Samsung_A07".
     """
     explicit = profile.get("name")
     if explicit:
@@ -121,39 +153,100 @@ class Slot:
     port: int          # emulator console port
     system_port: int   # UiAutomator2 systemPort
 
+    @property
+    def mjpeg_port(self) -> int:
+        return BASE_MJPEG_PORT + self.index
+
+    @property
+    def chromedriver_port(self) -> int:
+        return BASE_CHROMEDRIVER_PORT + self.index
+
 
 class SlotPool:
-    """Thread-safe pool of ``size`` slots; each owns a unique pair of ports."""
+    """Thread-safe pool of ``size`` slots; each owns a unique set of ports.
+
+    A slot is leased with :meth:`lease`, which releases it exactly once in a
+    finally owned by the caller. :meth:`release` is idempotent. A slot whose
+    emulator could not be cleaned up is :meth:`quarantine`-d: it is never handed
+    out again. When every slot is quarantined, waiting tasks get
+    :class:`NoUsableSlot` instead of blocking.
+    """
 
     def __init__(self, size: int):
         if size < 1:
             raise ValueError("SlotPool size must be >= 1")
+        if size > MAX_SLOTS:
+            raise ValueError(
+                f"SlotPool size {size} exceeds {MAX_SLOTS}: adb only auto-discovers emulators "
+                f"on console ports up to about 5585 (slot index 15), so later slots would "
+                f"boot but never be visible in `adb devices`")
         self.size = size
         self._free: queue.Queue = queue.Queue()
         self._lock = threading.Lock()
         self._held: set[int] = set()
+        self._quarantined: dict[int, Slot] = {}
         for n in range(size):
             self._free.put(Slot(n, BASE_CONSOLE_PORT + CONSOLE_PORT_STEP * n,
                                 BASE_SYSTEM_PORT + n))
 
-    def acquire(self, timeout: float | None = None) -> Slot:
-        slot = self._free.get(timeout=timeout)
+    def quarantined_ports(self) -> list[int]:
         with self._lock:
-            self._held.add(slot.index)
-        return slot
+            return sorted(s.port for s in self._quarantined.values())
 
-    def release(self, slot: Slot) -> None:
+    def acquire(self, should_stop: Callable[[], bool] | None = None,
+                poll_s: float = SLOT_POLL_S) -> Slot:
+        """Wait for a free slot, re-checking every ``poll_s`` seconds.
+
+        Raises SlotWaitCancelled if ``should_stop()`` becomes true and
+        NoUsableSlot if every slot is quarantined. Never blocks forever.
+        """
+        while True:
+            if should_stop is not None and should_stop():
+                raise SlotWaitCancelled()
+            with self._lock:
+                if len(self._quarantined) >= self.size:
+                    ports = sorted(s.port for s in self._quarantined.values())
+                    raise NoUsableSlot(
+                        f"no usable slot (quarantined: {', '.join(map(str, ports))})")
+            try:
+                slot = self._free.get(timeout=poll_s)
+            except queue.Empty:
+                continue
+            with self._lock:
+                self._held.add(slot.index)
+            return slot
+
+    def release(self, slot: Slot) -> bool:
+        """Return a held slot to the pool. Idempotent: False if it was not held
+        (already released, or quarantined)."""
         with self._lock:
             if slot.index not in self._held:
-                raise ValueError(f"slot {slot.index} is not held")
+                return False
             self._held.discard(slot.index)
         self._free.put(slot)
+        return True
+
+    def quarantine(self, slot: Slot) -> None:
+        """Take a held slot out of circulation for good."""
+        with self._lock:
+            self._held.discard(slot.index)
+            self._quarantined[slot.index] = slot
+        log.warning("slot %d (console port %d) is quarantined", slot.index, slot.port)
+
+    @contextmanager
+    def lease(self, should_stop: Callable[[], bool] | None = None,
+              poll_s: float = SLOT_POLL_S):
+        slot = self.acquire(should_stop, poll_s)
+        try:
+            yield slot
+        finally:
+            self.release(slot)
 
 
 def resolve_max_parallel(options: dict, profile_count: int,
                          environ: dict | None = None) -> int:
     """options["max_parallel"], else $VMF_MAX_PARALLEL, else DEFAULT_MAX_PARALLEL;
-    validated >= 1 and never more than the number of profiles."""
+    validated >= 1, never more than the number of profiles, and at most MAX_SLOTS."""
     environ = os.environ if environ is None else environ
     raw = options.get("max_parallel")
     if raw is None:
@@ -166,7 +259,11 @@ def resolve_max_parallel(options: dict, profile_count: int,
         raise ValueError(f"max_parallel must be an integer >= 1, got {raw!r}") from None
     if value < 1:
         raise ValueError(f"max_parallel must be >= 1, got {value}")
-    return min(value, max(1, profile_count))
+    effective = min(value, max(1, profile_count))
+    if effective > MAX_SLOTS:
+        raise ValueError(f"max_parallel {effective} exceeds MAX_SLOTS ({MAX_SLOTS}): adb only "
+                         f"auto-discovers emulators on ports up to about 5585")
+    return effective
 
 
 # ---------------------------------------------------------------------------
@@ -192,32 +289,47 @@ class Deps:
     save_device_result: Callable
     save_profile_config: Callable
     finish_run: Callable
-    pid_alive_factory: Callable   # (serial, package) -> Callable[[], bool]
-    list_emulator_processes: Callable   # () -> list[{"pid": int, "name": str}]
+    # (serial, package, on_failure=None) -> Callable[[], bool]; on_failure(msg) is
+    # called whenever the device could not answer and "alive" was assumed.
+    pid_alive_factory: Callable
+    # () -> list[{"pid", "name", "create_time", "cmdline"}]
+    list_emulator_processes: Callable
     appium_status: Callable       # () -> bool
     free_disk_gb: Callable        # (path) -> float
     kill_process: Callable        # (pid) -> None
+    process_info: Callable        # (pid) -> {"pid", "name", "create_time"} | None
+    # (run_id) -> True | False | None. None means "cannot be verified": storage has
+    # no public function to look a run up, so the default cannot answer.
+    run_exists: Callable
 
 
-def _pid_alive_factory(serial: str, package: str) -> Callable[[], bool]:
+def _pid_alive_factory(serial: str, package: str,
+                       on_failure: Callable[[str], None] | None = None) -> Callable[[], bool]:
     """Callable that asks the device whether ``package`` has a live process.
 
-    If adb itself fails the answer is unknown and it returns True with a
-    warning: a process is only declared gone when the device says so.
+    If adb itself fails the answer is unknown and it returns True: a process is
+    only declared gone when the device says so. Every such failure is logged with
+    its traceback and reported through ``on_failure`` so a masked crash is visible.
     """
+    def report_failure(message: str) -> None:
+        if on_failure is not None:
+            on_failure(message)
+
     def alive() -> bool:
         argv = ["adb", "-s", serial, "shell", "pidof", package]
         try:
             result = subprocess.run(argv, capture_output=True, text=True,
                                     timeout=PIDOF_TIMEOUT_S)
         except (OSError, subprocess.SubprocessError) as e:
-            log.warning("pidof check failed (%s); assuming %s is alive", e, package)
+            log.exception("pidof check failed; assuming %s is alive", package)
+            report_failure(f"pidof failed: {type(e).__name__}: {e}")
             return True
         if result.stdout.strip():
             return True
         if result.stderr.strip():
             log.warning("pidof check inconclusive (%s); assuming %s is alive",
                         result.stderr.strip(), package)
+            report_failure(f"pidof inconclusive: {result.stderr.strip()}")
             return True
         return False
     return alive
@@ -226,11 +338,22 @@ def _pid_alive_factory(serial: str, package: str) -> Callable[[], bool]:
 def _list_emulator_processes() -> list[dict]:
     import psutil
     found = []
-    for proc in psutil.process_iter(["pid", "name"]):
+    for proc in psutil.process_iter(["pid", "name", "create_time", "cmdline"]):
         name = (proc.info.get("name") or "")
         if any(part in name.lower() for part in EMULATOR_PROCESS_NAMES):
-            found.append({"pid": proc.info["pid"], "name": name})
+            found.append({"pid": proc.info["pid"], "name": name,
+                          "create_time": proc.info.get("create_time"),
+                          "cmdline": " ".join(proc.info.get("cmdline") or [])})
     return found
+
+
+def _process_info(pid: int) -> dict | None:
+    import psutil
+    try:
+        proc = psutil.Process(pid)
+        return {"pid": pid, "name": proc.name(), "create_time": proc.create_time()}
+    except psutil.NoSuchProcess:
+        return None
 
 
 def _kill_process(pid: int) -> None:
@@ -243,13 +366,19 @@ def _appium_status() -> bool:
     try:
         with urllib.request.urlopen(url, timeout=APPIUM_STATUS_TIMEOUT_S) as response:
             return 200 <= response.status < 300
-    except (OSError, ValueError) as e:
-        log.warning("Appium not reachable at %s: %s", url, e)
+    except (OSError, ValueError):
+        log.exception("Appium not reachable at %s", url)
         return False
 
 
 def _free_disk_gb(path: str) -> float:
     return shutil.disk_usage(path).free / 1024 ** 3
+
+
+def _run_exists(run_id: int) -> bool | None:
+    """Storage has no public function to look a run up, and the database must not
+    be opened from here, so existence cannot be verified: answer None."""
+    return None
 
 
 def default_deps() -> Deps:
@@ -276,6 +405,8 @@ def default_deps() -> Deps:
         appium_status=_appium_status,
         free_disk_gb=_free_disk_gb,
         kill_process=_kill_process,
+        process_info=_process_info,
+        run_exists=_run_exists,
     )
 
 
@@ -286,13 +417,122 @@ class RunContext:
     apk: str
     scenario: str
     package: str
+    stop_event: threading.Event                     # always present; set on interrupt
     apply_settings: bool = True
-    stop_event: threading.Event | None = None
+    external_stop: threading.Event | None = None    # options["stop_event"], if any
     thresholds: Thresholds = field(default_factory=Thresholds)
     baselines: dict = field(default_factory=dict)
+    max_parallel: int = 1
+    slot_poll_s: float = SLOT_POLL_S
 
     def stopping(self) -> bool:
-        return self.stop_event is not None and self.stop_event.is_set()
+        return self.stop_event.is_set() or (
+            self.external_stop is not None and self.external_stop.is_set())
+
+
+# ---------------------------------------------------------------------------
+# Cleanup helpers
+# ---------------------------------------------------------------------------
+
+def _guarded(label: str, fn: Callable, errors: list[str],
+             timeout: float = CLEANUP_TIMEOUT_S) -> bool:
+    """Run a cleanup step with a time limit; log (with traceback) and record a
+    failure or timeout, never raise. Returns True when the step succeeded.
+
+    The step runs in a daemon thread so a hung cleanup call can neither block the
+    caller beyond ``timeout`` nor keep the process alive at exit.
+    """
+    outcome: dict = {}
+
+    def target() -> None:
+        try:
+            fn()
+        except Exception as e:
+            outcome["exc_info"] = sys.exc_info()
+            outcome["error"] = e
+
+    worker = threading.Thread(target=target, name=f"vmf-cleanup-{label}", daemon=True)
+    worker.start()
+    worker.join(timeout)
+    if worker.is_alive():
+        log.error("cleanup step %r timed out after %ss and was abandoned", label, timeout)
+        errors.append(f"{label}: timed out after {timeout}s")
+        return False
+    if "error" in outcome:
+        log.error("cleanup step %r failed", label, exc_info=outcome["exc_info"])
+        errors.append(f"{label}: {type(outcome['error']).__name__}: {outcome['error']}")
+        return False
+    return True
+
+
+def _emulator_snapshot(deps: Deps) -> set | None:
+    """PIDs of emulator processes right now, or None if they cannot be listed."""
+    try:
+        return {p["pid"] for p in deps.list_emulator_processes()}
+    except Exception:
+        log.exception("could not list emulator processes")
+        return None
+
+
+def _mentions_port(proc: dict, port: int) -> bool:
+    cmd = proc.get("cmdline") or ""
+    return f"-port {port}" in cmd or f"-ports {port}" in cmd or f"emulator-{port}" in cmd
+
+
+def _new_emulator_processes(ctx: RunContext, before: set | None, slot: Slot) -> list[dict] | None:
+    """Emulator processes that appeared since ``before`` and can be attributed to
+    ``slot``; None if that cannot be determined.
+
+    Attribution: with max_parallel == 1 every new emulator process is ours; with
+    several profiles running, only a process whose command line names the slot's
+    port (``-port <n>``, an assumption about how provision launches emulators)
+    is attributed, because other profiles legitimately start emulators too.
+    """
+    if before is None:
+        return None
+    try:
+        now = ctx.deps.list_emulator_processes()
+    except Exception:
+        log.exception("could not list emulator processes after a failed start")
+        return None
+    new = [p for p in now if p["pid"] not in before]
+    return [p for p in new if ctx.max_parallel == 1 or _mentions_port(p, slot.port)]
+
+
+def _cleanup_failed_start(ctx: RunContext, slot: Slot, before: set | None,
+                          cleanup_errors: list[str]) -> bool:
+    """start_device raised, so there is no serial. The emulator may still have
+    launched: stop the device derived from the port. Returns True when the slot
+    must be quarantined (the stop failed, or a new emulator process we can
+    attribute to this slot is still alive, or that could not be checked)."""
+    orphan = f"emulator-{slot.port}"
+    stopped = _guarded(f"stop_device({orphan}) after failed start",
+                       lambda: ctx.deps.stop_device(orphan), cleanup_errors)
+    log.info("cleanup after failed start on slot %d: stop_device(%s) %s", slot.index, orphan,
+             "succeeded" if stopped else "FAILED")
+    suspects = _new_emulator_processes(ctx, before, slot)
+    quarantine = (not stopped) or suspects is None or bool(suspects)
+    if quarantine:
+        log.warning("quarantining slot %d (port %d): stop %s; attributable emulator processes: %s",
+                    slot.index, slot.port, "succeeded" if stopped else "failed",
+                    "unknown" if suspects is None else
+                    [p["pid"] for p in suspects] or "none")
+    return quarantine
+
+
+def _result_dict(profile: dict, *, result: str, cause: str = "", serial=None,
+                 findings_count: int = 0, duration_s: float = 0.0, error: bool = False,
+                 warnings: list | None = None, cleanup_errors: list | None = None,
+                 quarantine: bool = False) -> dict:
+    return {"profile": profile_name(profile), "serial": serial, "tier": profile.get("tier"),
+            "result": result, "cause": cause, "findings_count": findings_count,
+            "duration_s": duration_s, "error": error, "warnings": warnings or [],
+            "cleanup_errors": cleanup_errors or [], "quarantine": quarantine}
+
+
+def _cancelled_result(profile: dict) -> dict:
+    return _result_dict(profile, result=RESULT_CANCELLED,
+                        cause="stop requested before this profile started")
 
 
 # ---------------------------------------------------------------------------
@@ -333,13 +573,18 @@ def _collect_findings(ctx: RunContext, steps: list, config: dict) -> list[dict]:
     return [merged[k] for k in sorted(merged)]
 
 
-def _write_findings(run_id: int, name: str, findings: list[dict]) -> str:
+def _write_json(run_id: int, name: str, filename: str, payload: dict) -> str:
     out_dir = Path(RESULTS_DIR) / str(run_id) / name
     out_dir.mkdir(parents=True, exist_ok=True)
-    path = out_dir / "findings.json"
-    path.write_text(json.dumps({"profile": name, "run_id": run_id, "count": len(findings),
-                                "findings": findings}, indent=2), encoding="utf-8")
+    path = out_dir / filename
+    path.write_text(json.dumps(payload, indent=2, default=str), encoding="utf-8")
     return str(path)
+
+
+def _write_findings(run_id: int, name: str, findings: list[dict]) -> str:
+    return _write_json(run_id, name, "findings.json",
+                       {"profile": name, "run_id": run_id, "count": len(findings),
+                        "findings": findings})
 
 
 def _final_verdict(verdict: Verdict, findings: list[dict]) -> Verdict:
@@ -369,31 +614,29 @@ def _save_error(ctx: RunContext, name: str, exc: BaseException, stage: str) -> s
     return cause
 
 
-def _guarded(label: str, fn: Callable, errors: list[str]) -> None:
-    """Run a cleanup step; log (with traceback) and record a failure, never raise."""
-    try:
-        fn()
-    except Exception as e:
-        log.exception("cleanup step %r failed", label)
-        errors.append(f"{label}: {type(e).__name__}: {e}")
+def run_profile(profile: dict, ctx: RunContext, slot: Slot) -> dict:
+    """Functional pipeline for one profile on ``slot``.
 
-
-def run_profile(profile: dict, ctx: RunContext, pool: SlotPool, slot: Slot) -> dict:
-    """Functional pipeline for one profile on ``slot``; always releases the slot.
+    The caller owns the slot (see :func:`_functional_task`); this function never
+    releases it. It only reports ``quarantine`` in its result when a failed
+    start left an emulator it could not clean up.
 
     Order: start_device, apply_profile_settings, display zones, start logcat,
     runner, stop logcat, classify, geometry on every hierarchy, save findings,
-    save_profile_config, save_device_result. Cleanup (always, each step guarded):
-    stop logcat if still running, reset_profile, stop_device, release the slot.
+    save_profile_config, save_device_result. Cleanup (always, each step guarded
+    and time-limited): stop logcat if still running, reset_profile, stop_device;
+    after a failed start_device, stop_device on ``emulator-<port>``.
 
     DECISION: ``pid_alive`` asks the device at the END of the scenario whether
     the package still has a process. The app is expected to be alive then, so a
     dead process means a crash with cause "process gone". A scenario that ends
     after killing the app on purpose (for example an oem.background_kill as its
-    last step) would be reported as a crash.
+    last step) would be reported as a crash. If adb cannot answer, the app is
+    assumed alive and the stored profile config gets ``pid_check_failed: true``.
 
-    An exception anywhere is logged with its traceback and saved as an "error"
-    result for this profile only; it never propagates.
+    An Exception anywhere is logged with its traceback and saved as an "error"
+    result for this profile only; it never propagates. A BaseException still
+    runs the cleanup and then propagates.
     """
     deps = ctx.deps
     name = profile_name(profile)
@@ -405,11 +648,16 @@ def run_profile(profile: dict, ctx: RunContext, pool: SlotPool, slot: Slot) -> d
     run_id = ctx.run_id
     warnings: list[str] = []
     cleanup_errors: list[str] = []
+    pid_failures: list[str] = []
     result = RESULT_ERROR
     cause = ""
     findings_count = 0
     failed = False
+    start_failed = False
+    quarantine = False
+    before = None
     try:
+        before = _emulator_snapshot(deps)
         serial = deps.start_device(profile, slot.port)
         stage = "apply_profile_settings"
         readback = deps.apply_profile_settings(serial, profile) if ctx.apply_settings else {}
@@ -428,8 +676,9 @@ def run_profile(profile: dict, ctx: RunContext, pool: SlotPool, slot: Slot) -> d
         proc = deps.start_logcat(serial, logcat_path)
 
         stage = "runner"
-        returned_id, steps = deps.runner_run(serial, ctx.apk, ctx.scenario, slot.system_port,
-                                             run_id=run_id, profile=name)
+        returned_id, steps = deps.runner_run(
+            serial, ctx.apk, ctx.scenario, slot.system_port, run_id=run_id, profile=name,
+            mjpeg_port=slot.mjpeg_port, chromedriver_port=slot.chromedriver_port)
         run_id = returned_id if returned_id is not None else run_id
 
         stage = "stop_logcat"
@@ -437,8 +686,11 @@ def run_profile(profile: dict, ctx: RunContext, pool: SlotPool, slot: Slot) -> d
         logcat_stopped = True
 
         stage = "classify"
-        verdict = deps.classify(logcat_path, steps, package=ctx.package,
-                                pid_alive=deps.pid_alive_factory(serial, ctx.package))
+        verdict = deps.classify(
+            logcat_path, steps, package=ctx.package,
+            pid_alive=deps.pid_alive_factory(serial, ctx.package, pid_failures.append))
+        if pid_failures:
+            warnings.extend(pid_failures)
 
         stage = "geometry"
         config = _geometry_config(profile, readback, zones, ctx.package)
@@ -450,13 +702,15 @@ def run_profile(profile: dict, ctx: RunContext, pool: SlotPool, slot: Slot) -> d
         stage = "save_profile_config"
         deps.save_profile_config(run_id, name, {
             **readback, "profile": name, "serial": serial, "port": slot.port,
-            "system_port": slot.system_port, "tier": profile.get("tier"), "zones": zones})
+            "system_port": slot.system_port, "tier": profile.get("tier"), "zones": zones,
+            "pid_check_failed": bool(pid_failures)})
         stage = "save_device_result"
         deps.save_device_result(run_id, name, final)
         result, cause = final.result, final.cause
     except Exception as e:
         log.exception("profile %s failed at stage %s", name, stage)
         failed = True
+        start_failed = serial is None and stage == "start_device"
         result, cause = RESULT_ERROR, _save_error(ctx, name, e, stage)
     finally:
         if proc is not None and not logcat_stopped:
@@ -465,109 +719,220 @@ def run_profile(profile: dict, ctx: RunContext, pool: SlotPool, slot: Slot) -> d
             _guarded("reset_profile", lambda: deps.reset_profile(serial, ctx.package),
                      cleanup_errors)
             _guarded("stop_device", lambda: deps.stop_device(serial), cleanup_errors)
-        _guarded("release_slot", lambda: pool.release(slot), cleanup_errors)
-    return {"profile": name, "serial": serial, "tier": profile.get("tier"),
-            "result": result, "cause": cause, "findings_count": findings_count,
-            "duration_s": round(time.monotonic() - started, 3), "error": failed,
-            "warnings": warnings, "cleanup_errors": cleanup_errors}
-
-
-def _cancelled_result(profile: dict) -> dict:
-    return {"profile": profile_name(profile), "serial": None, "tier": profile.get("tier"),
-            "result": RESULT_CANCELLED, "cause": "stop requested before this profile started",
-            "findings_count": 0, "duration_s": 0.0, "error": False,
-            "warnings": [], "cleanup_errors": []}
+        elif start_failed:
+            quarantine = _cleanup_failed_start(ctx, slot, before, cleanup_errors)
+    return _result_dict(profile, result=result, cause=cause, serial=serial,
+                        findings_count=findings_count,
+                        duration_s=round(time.monotonic() - started, 3), error=failed,
+                        warnings=warnings, cleanup_errors=cleanup_errors,
+                        quarantine=quarantine)
 
 
 def _functional_task(profile: dict, ctx: RunContext, pool: SlotPool) -> dict:
-    if ctx.stopping():
-        return _cancelled_result(profile)
-    slot = pool.acquire()
-    if ctx.stopping():
-        pool.release(slot)
-        return _cancelled_result(profile)
-    return run_profile(profile, ctx, pool, slot)
+    """One Pass A task. It owns the slot: acquired here, released here (exactly
+    once, in the lease's finally) whatever run_profile does.
+
+    Any Exception becomes an "error" result. A BaseException (KeyboardInterrupt,
+    SystemExit, ...) is recorded as an "error" result too, the slot is released,
+    and then it is re-raised so the main thread sees it.
+    """
+    name = profile_name(profile)
+    try:
+        if ctx.stopping():
+            return _cancelled_result(profile)
+        try:
+            with pool.lease(ctx.stopping, ctx.slot_poll_s) as slot:
+                if ctx.stopping():  # stop requested between acquire and start
+                    return _cancelled_result(profile)
+                result = run_profile(profile, ctx, slot)
+                if result["quarantine"]:
+                    pool.quarantine(slot)
+                return result
+        except SlotWaitCancelled:
+            return _cancelled_result(profile)
+        except NoUsableSlot as e:
+            log.exception("no usable slot for profile %s", name)
+            return _result_dict(profile, result=RESULT_ERROR, error=True,
+                                cause=_save_error(ctx, name, e, "slot"))
+    except BaseException as e:
+        log.exception("worker for profile %s failed", name)
+        cause = _save_error(ctx, name, e, "worker")
+        if isinstance(e, Exception):
+            return _result_dict(profile, result=RESULT_ERROR, cause=cause, error=True)
+        if isinstance(e, (KeyboardInterrupt, SystemExit)):
+            ctx.stop_event.set()
+        raise
 
 
 # ---------------------------------------------------------------------------
 # Pass A: functional pass (M10.1, M10.3)
 # ---------------------------------------------------------------------------
 
-def _functional_pass(ctx: RunContext, profiles: list[dict], max_parallel: int) -> dict[str, dict]:
+def _shutdown_executor(executor) -> None:
+    """Cancel queued tasks and wait for running ones to finish their cleanup.
+
+    A second interrupt while waiting stops the waiting: running workers keep
+    going on their own threads and finish their own cleanup (every cleanup step
+    is time-limited), but main no longer blocks on them. The interpreter still
+    joins those threads at exit, so a worker stuck in a call that has no timeout
+    of its own (for example inside provision.start_device) can delay exit.
+    """
+    try:
+        executor.shutdown(wait=True, cancel_futures=True)
+    except KeyboardInterrupt:
+        log.warning("second interrupt: no longer waiting for running profiles; their "
+                    "workers finish cleanup on their own")
+        executor.shutdown(wait=False, cancel_futures=True)
+
+
+def _collect_future(ctx: RunContext, future, profile: dict) -> tuple[dict, BaseException | None]:
+    """The result dict for a finished future, and a BaseException to re-raise later
+    (never an ordinary Exception)."""
+    name = profile_name(profile)
+    if future.cancelled():
+        return _cancelled_result(profile), None
+    try:
+        return future.result(), None
+    except CancelledError:
+        return _cancelled_result(profile), None
+    except BaseException as e:
+        if isinstance(e, Exception):
+            log.exception("worker for profile %s crashed", name)
+            cause = _save_error(ctx, name, e, "worker")
+            return _result_dict(profile, result=RESULT_ERROR, cause=cause, error=True), None
+        log.error("worker for profile %s ended with %s after cleanup", name, type(e).__name__,
+                  exc_info=(type(e), e, e.__traceback__))
+        cause = f"{type(e).__name__}: {e} (stage: worker)"  # the worker already saved it
+        return _result_dict(profile, result=RESULT_ERROR, cause=cause, error=True), e
+
+
+def _functional_pass(ctx: RunContext, profiles: list[dict], max_parallel: int
+                     ) -> tuple[dict[str, dict], BaseException | None, list[int]]:
     """Run every profile, at most ``max_parallel`` at once, each on its own slot.
 
-    Stopping is cooperative: once ``stop_event`` is set, profiles that have not
-    started are recorded as "cancelled" and never boot; profiles already running
-    finish their pipeline and clean up normally.
+    Returns ``(results by profile name, interrupt, quarantined ports)``.
+
+    Stopping is cooperative. On KeyboardInterrupt/SystemExit in the main thread
+    (or when ``stop_event`` is set) the stop event is set, queued profiles are
+    cancelled and never boot, and running profiles finish their pipeline and
+    clean up normally. ``interrupt`` is the exception to re-raise at the end of
+    ``main`` once finish_run has run.
     """
     pool = SlotPool(max_parallel)
+    executor = ThreadPoolExecutor(max_workers=max_parallel, thread_name_prefix="vmf-profile")
+    futures: dict = {}
     results: dict[str, dict] = {}
-    with ThreadPoolExecutor(max_workers=max_parallel, thread_name_prefix="vmf-profile") as ex:
-        futures = {ex.submit(_functional_task, p, ctx, pool): p for p in profiles}
+    interrupt: BaseException | None = None
+    try:
+        for p in profiles:
+            futures[executor.submit(_functional_task, p, ctx, pool)] = p
         for future in as_completed(futures):
-            profile = futures[future]
-            name = profile_name(profile)
-            try:
-                results[name] = future.result()
-            except Exception as e:
-                log.exception("worker for profile %s crashed", name)
-                results[name] = {
-                    "profile": name, "serial": None, "tier": profile.get("tier"),
-                    "result": RESULT_ERROR, "cause": _save_error(ctx, name, e, "worker"),
-                    "findings_count": 0, "duration_s": 0.0, "error": True,
-                    "warnings": [], "cleanup_errors": []}
-    return {profile_name(p): results[profile_name(p)] for p in profiles}
+            result, base = _collect_future(ctx, future, futures[future])
+            results[result["profile"]] = result
+            interrupt = interrupt or base
+    except (KeyboardInterrupt, SystemExit) as e:
+        interrupt = e
+        log.warning("%s: no new profile will start; waiting for running profiles to clean up",
+                    type(e).__name__)
+        ctx.stop_event.set()
+    finally:
+        _shutdown_executor(executor)
+    for future, profile in futures.items():
+        name = profile_name(profile)
+        if name in results:
+            continue
+        if future.done() or future.cancelled():
+            results[name], base = _collect_future(ctx, future, profile)
+            interrupt = interrupt or base
+        else:
+            results[name] = _result_dict(
+                profile, result=RESULT_ERROR, error=True,
+                cause="abandoned after a second interrupt; its cleanup may still be running")
+    for profile in profiles:
+        results.setdefault(profile_name(profile), _cancelled_result(profile))
+    ordered = {profile_name(p): results[profile_name(p)] for p in profiles}
+    return ordered, interrupt, pool.quarantined_ports()
 
 
 # ---------------------------------------------------------------------------
 # Pass B: performance pass (M10.2)
 # ---------------------------------------------------------------------------
 
-def _perf_one(profile: dict, ctx: RunContext, pool: SlotPool) -> dict:
+def _perf_flow(ctx: RunContext, serial: str, slot: Slot, name: str) -> None:
+    """Replay the scenario unrecorded on the already-installed app. A failed step
+    raises ScenarioFailed so no number is ever reported from a failed scenario."""
+    _, steps = ctx.deps.runner_run(
+        serial, ctx.apk, ctx.scenario, slot.system_port, run_id=None, profile=name,
+        record=False, reuse_installed_app=True, mjpeg_port=slot.mjpeg_port,
+        chromedriver_port=slot.chromedriver_port)
+    failed = [s.step_index for s in steps if s.status == "fail"]
+    if failed:
+        raise ScenarioFailed(f"scenario steps {failed} failed on profile {name}")
+
+
+def _perf_on_slot(profile: dict, ctx: RunContext, slot: Slot) -> dict:
     deps = ctx.deps
     name = profile_name(profile)
-    slot = pool.acquire()
     serial = None
     stage = "start_device"
     cleanup_errors: list[str] = []
+    start_failed = False
+    quarantine = False
+    before = None
+    entry: dict = {}
     try:
+        before = _emulator_snapshot(deps)
         serial = deps.start_device(profile, slot.port)
         stage = "apply_profile_settings"
         if ctx.apply_settings:
             deps.apply_profile_settings(serial, profile)
         stage = "measure"
-
-        def flow(serial=serial, system_port=slot.system_port, name=name):
-            return deps.runner_run(serial, ctx.apk, ctx.scenario, system_port,
-                                   run_id=None, profile=name, record=False)
-
         rows = deps.perf_run_and_store(
-            ctx.run_id, name, serial, profile, package=ctx.package, apk=ctx.apk, flow=flow,
+            ctx.run_id, name, serial, profile, package=ctx.package, apk=ctx.apk,
+            flow=lambda: _perf_flow(ctx, serial, slot, name),
             baselines=ctx.baselines.get(name), thresholds=ctx.thresholds)
         regressions = [r.metric for r in rows if deps.perf_is_regression(r, ctx.thresholds)]
-        return {"profile": name, "status": "ok", "rows": len(rows),
-                "regressions": regressions, "cleanup_errors": cleanup_errors}
+        entry = {"profile": name, "status": "ok", "rows": len(rows),
+                 "regressions": regressions, "cleanup_errors": cleanup_errors}
     except Exception as e:
         log.exception("performance pass failed for %s at stage %s", name, stage)
-        return {"profile": name, "status": "error",
-                "error": f"{type(e).__name__}: {e} (stage: {stage})",
-                "regressions": [], "cleanup_errors": cleanup_errors}
+        start_failed = serial is None and stage == "start_device"
+        entry = {"profile": name, "status": "error",
+                 "error": f"{type(e).__name__}: {e} (stage: {stage})",
+                 "regressions": [], "cleanup_errors": cleanup_errors}
+        try:
+            entry["error_file"] = _write_json(ctx.run_id, name, "perf_error.json", {
+                "profile": name, "run_id": ctx.run_id, "stage": stage,
+                "error": f"{type(e).__name__}: {e}",
+                "traceback": traceback.format_exc()})
+        except Exception:
+            log.exception("could not write perf_error.json for %s", name)
     finally:
         if serial is not None:
             _guarded("reset_profile", lambda: deps.reset_profile(serial, ctx.package),
                      cleanup_errors)
             _guarded("stop_device", lambda: deps.stop_device(serial), cleanup_errors)
-        _guarded("release_slot", lambda: pool.release(slot), cleanup_errors)
+        elif start_failed:
+            quarantine = _cleanup_failed_start(ctx, slot, before, cleanup_errors)
+    entry["quarantine"] = quarantine
+    return entry
 
 
-def _performance_pass(ctx: RunContext, profiles: list[dict],
-                      functional: dict[str, dict]) -> dict[str, dict]:
+def _performance_pass(ctx: RunContext, profiles: list[dict], functional: dict[str, dict]
+                      ) -> tuple[dict[str, dict], BaseException | None]:
     """One profile at a time, never in parallel, only for profiles whose
     functional result is not "error" or "cancelled". A regression does NOT
     change the functional result; it is only counted in the summary (Gagan's
-    report combines both)."""
+    report combines both). The stop event is checked between profiles; an
+    interrupt during a profile cleans that profile up, marks the rest
+    cancelled and is returned for ``main`` to re-raise at the end.
+
+    Perf errors are written to results/<run_id>/<profile>/perf_error.json and
+    listed in the summary: storage has no API for them.
+    """
     pool = SlotPool(1)
     results: dict[str, dict] = {}
+    interrupt: BaseException | None = None
     for profile in profiles:
         name = profile_name(profile)
         if functional[name]["result"] in (RESULT_ERROR, RESULT_CANCELLED):
@@ -578,59 +943,140 @@ def _performance_pass(ctx: RunContext, profiles: list[dict],
             results[name] = {"profile": name, "status": RESULT_CANCELLED,
                              "reason": "stop requested", "regressions": []}
         else:
-            results[name] = _perf_one(profile, ctx, pool)
-    return results
+            try:
+                results[name] = _perf_one(profile, ctx, pool)
+            except (KeyboardInterrupt, SystemExit) as e:
+                log.warning("%s during the performance pass of %s", type(e).__name__, name)
+                interrupt = e
+                ctx.stop_event.set()
+                results[name] = {"profile": name, "status": "interrupted", "regressions": []}
+    return results, interrupt
+
+
+def _perf_one(profile: dict, ctx: RunContext, pool: SlotPool) -> dict:
+    name = profile_name(profile)
+    try:
+        with pool.lease(ctx.stopping, ctx.slot_poll_s) as slot:
+            entry = _perf_on_slot(profile, ctx, slot)
+            if entry.pop("quarantine", False):
+                pool.quarantine(slot)
+            return entry
+    except SlotWaitCancelled:
+        return {"profile": name, "status": RESULT_CANCELLED, "reason": "stop requested",
+                "regressions": []}
+    except NoUsableSlot as e:
+        log.exception("no usable slot for the performance run of %s", name)
+        return {"profile": name, "status": "error", "error": f"{e} (stage: slot)",
+                "regressions": []}
 
 
 # ---------------------------------------------------------------------------
 # Pre-flight and leftovers (M10.5)
 # ---------------------------------------------------------------------------
 
-def preflight(deps: Deps, options: dict) -> None:
-    """Raise PreflightError naming every failed check. Starts nothing, kills nothing."""
+def preflight(deps: Deps, options: dict) -> set:
+    """Raise PreflightError naming every failed check. Starts nothing, kills nothing.
+
+    Returns the PIDs of emulator processes seen (always empty when it returns,
+    because an existing emulator fails the check); ``main`` keeps the set so the
+    leftover kill can never touch a process that pre-dated the run.
+    """
     problems = []
+    seen: set = set()
     try:
         if not deps.appium_status():
+            log.error("pre-flight: Appium is not reachable at %s/status", APPIUM_URL)
             problems.append(f"Appium is not reachable at {APPIUM_URL}/status")
     except Exception as e:
+        log.exception("pre-flight: Appium check raised")
         problems.append(f"Appium check failed: {type(e).__name__}: {e}")
     minimum = options.get("min_disk_gb", PREFLIGHT_MIN_DISK_GB)
     try:
         free = deps.free_disk_gb(os.getcwd())
         if free < minimum:
+            log.error("pre-flight: free disk is %.1f GB, need %s GB", free, minimum)
             problems.append(f"free disk is {free:.1f} GB, need at least {minimum} GB")
     except Exception as e:
+        log.exception("pre-flight: disk check raised")
         problems.append(f"disk check failed: {type(e).__name__}: {e}")
     try:
         orphans = deps.list_emulator_processes()
+        seen = {p["pid"] for p in orphans}
         if orphans:
             listed = ", ".join(f"{p['name']} (pid {p['pid']})" for p in orphans)
+            log.error("pre-flight: orphan emulator processes: %s", listed)
             problems.append(f"orphan emulator processes already running: {listed}")
     except Exception as e:
+        log.exception("pre-flight: orphan process check raised")
         problems.append(f"orphan process check failed: {type(e).__name__}: {e}")
     if problems:
         raise PreflightError("pre-flight failed: " + "; ".join(problems))
+    return seen
 
 
-def _check_leftovers(deps: Deps, kill: bool) -> tuple[list[dict], list[int]]:
-    """Report emulator processes still alive; kill them only when ``kill``."""
+def _check_leftovers(deps: Deps, kill: bool, run_started: float,
+                     preflight_pids: set) -> dict:
+    """Report emulator processes still alive after the run.
+
+    Returns ``{"check", "processes", "killed", "skipped", "kill_failures"}``.
+    ``check`` is "ok" or "failed: <error>"; when it failed ``processes`` is None
+    (unknown), never an empty list. With ``kill`` a process is killed only if it
+    (a) was not present at pre-flight, (b) was created at or after
+    ``run_started``, and (c) still has the same emulator-looking name when
+    re-read immediately before the kill. Everything else is skipped and logged
+    "skipped: not ours".
+    """
+    report = {"check": "ok", "processes": [], "killed": [], "skipped": [], "kill_failures": []}
     try:
         leftovers = list(deps.list_emulator_processes())
-    except Exception:
+    except Exception as e:
         log.exception("leftover emulator check failed")
-        return [], []
-    killed: list[int] = []
-    if leftovers:
-        log.warning("leftover emulator processes: %s",
-                    ", ".join(f"{p['name']} (pid {p['pid']})" for p in leftovers))
-        if kill:
-            for p in leftovers:
-                try:
-                    deps.kill_process(p["pid"])
-                    killed.append(p["pid"])
-                except Exception:
-                    log.exception("could not kill pid %s", p["pid"])
-    return leftovers, killed
+        report.update(check=f"failed: {type(e).__name__}: {e}", processes=None)
+        return report
+    report["processes"] = leftovers
+    if not leftovers:
+        return report
+    log.warning("leftover emulator processes: %s",
+                ", ".join(f"{p['name']} (pid {p['pid']})" for p in leftovers))
+    if not kill:
+        return report
+    for proc in leftovers:
+        pid = proc["pid"]
+        try:
+            reason = _not_ours(deps, proc, run_started, preflight_pids)
+        except Exception as e:
+            log.exception("could not re-read pid %s before killing it", pid)
+            report["kill_failures"].append({"pid": pid, "error": f"{type(e).__name__}: {e}"})
+            continue
+        if reason:
+            log.warning("pid %s skipped: not ours (%s)", pid, reason)
+            report["skipped"].append({"pid": pid, "reason": reason})
+            continue
+        try:
+            deps.kill_process(pid)
+            report["killed"].append(pid)
+        except Exception as e:
+            log.exception("could not kill pid %s", pid)
+            report["kill_failures"].append({"pid": pid, "error": f"{type(e).__name__}: {e}"})
+    return report
+
+
+def _not_ours(deps: Deps, proc: dict, run_started: float, preflight_pids: set) -> str | None:
+    """Why ``proc`` must not be killed, or None if it is safe to kill."""
+    pid = proc["pid"]
+    if pid in preflight_pids:
+        return "it existed at pre-flight"
+    now = deps.process_info(pid)
+    if now is None:
+        return "it is already gone"
+    created = now.get("create_time")
+    if created is None or created < run_started:
+        return "it started before this run"
+    name = (now.get("name") or "").lower()
+    if name != (proc.get("name") or "").lower() or not any(
+            part in name for part in EMULATOR_PROCESS_NAMES):
+        return f"its name is now {now.get('name')!r} (pid reused)"
+    return None
 
 
 # ---------------------------------------------------------------------------
@@ -638,9 +1084,78 @@ def _check_leftovers(deps: Deps, kill: bool) -> tuple[list[dict], list[int]]:
 # ---------------------------------------------------------------------------
 
 def _scenario_info(path: str) -> tuple[str, str | None]:
-    with open(path, encoding="utf-8") as f:
-        spec = yaml.safe_load(f) or {}
+    try:
+        with open(path, encoding="utf-8") as f:
+            spec = yaml.safe_load(f) or {}
+    except yaml.YAMLError as e:
+        raise ValueError(f"option 'scenario' is not valid YAML: {path}: {e}") from e
+    if not isinstance(spec, dict):
+        raise ValueError(f"option 'scenario' must be a YAML mapping: {path}")
     return spec.get("name") or os.path.basename(path), spec.get("package")
+
+
+@dataclass(frozen=True)
+class _Plan:
+    apk: str
+    scenario: str
+    scenario_name: str
+    package: str
+    profiles: list
+    names: list
+    max_parallel: int
+    baselines: dict
+    thresholds: Thresholds
+    performance_pass: bool
+    apply_settings: bool
+
+
+def _validate_options(options: dict) -> _Plan:
+    """Check every input before anything happens. Raises ValueError naming the
+    option; has no side effects."""
+    if not isinstance(options, dict):
+        raise ValueError("options must be a dict")
+    apk = options.get("apk")
+    if not apk or not isinstance(apk, str):
+        raise ValueError("option 'apk' is required (a path string)")
+    scenario = options.get("scenario")
+    if not scenario or not isinstance(scenario, str):
+        raise ValueError("option 'scenario' is required (a path string)")
+    if not os.path.isfile(scenario):
+        raise ValueError(f"option 'scenario' file not found: {scenario}")
+    profiles = options.get("profiles")
+    if profiles is None:
+        path = options.get("profiles_path")
+        if not path:
+            raise ValueError("option 'profiles' (a list) or 'profiles_path' is required")
+        if not os.path.isfile(path):
+            raise ValueError(f"option 'profiles_path' file not found: {path}")
+        profiles = load_profiles(path)
+    if not isinstance(profiles, list) or not profiles:
+        raise ValueError("option 'profiles' must be a non-empty list of profile dicts "
+                         "(no profiles to run)")
+    if not all(isinstance(p, dict) for p in profiles):
+        raise ValueError("option 'profiles' must contain only dicts")
+    names = [profile_name(p) for p in profiles]
+    if len(set(names)) != len(names):
+        raise ValueError("option 'profiles' has duplicate profile names: "
+                         f"{sorted({n for n in names if names.count(n) > 1})}")
+    scenario_name, scenario_package = _scenario_info(scenario)
+    package = options.get("package") or scenario_package
+    if not package:
+        raise ValueError("no package: pass option 'package' or set 'package' in the scenario")
+    baselines = options.get("baselines") or {}
+    if not isinstance(baselines, dict):
+        raise ValueError("option 'baselines' must be a dict keyed by (sanitised) profile name")
+    for key in baselines:
+        if key not in names:
+            log.warning("baselines key %r matches no profile (profile names are sanitised, "
+                        "for example spaces become '_'; known: %s)", key, names)
+    return _Plan(apk=apk, scenario=scenario, scenario_name=scenario_name, package=package,
+                 profiles=profiles, names=names,
+                 max_parallel=resolve_max_parallel(options, len(profiles)),
+                 baselines=baselines, thresholds=options.get("thresholds") or Thresholds(),
+                 performance_pass=bool(options.get("performance_pass", True)),
+                 apply_settings=bool(options.get("apply_settings", True)))
 
 
 def main(run_id: int | None, options: dict, deps: Deps | None = None) -> dict:
@@ -648,51 +1163,58 @@ def main(run_id: int | None, options: dict, deps: Deps | None = None) -> dict:
 
     ``options``: apk, scenario, profiles (list of dicts) or profiles_path,
     package (else the scenario YAML's ``package``), performance_pass (True),
-    apply_settings (True), max_parallel, baselines ({profile: {metric: value}}),
-    thresholds, stop_event, kill_leftovers, min_disk_gb.
+    apply_settings (True), max_parallel, baselines ({sanitised profile name:
+    {metric: value}}), thresholds, stop_event, kill_leftovers, min_disk_gb.
 
-    ``run_id`` None is command-line mode: one run is created with
-    ``create_run`` (before pre-flight, so a failed pre-flight can still be
-    closed). A given ``run_id`` is API mode: ``create_run`` is never called.
-    ``finish_run`` is called exactly once, in a finally, even on failure.
-    Order: pre-flight, Pass A, Pass B, leftover check, finish_run.
+    ``run_id`` None is command-line mode: the inputs are validated first (an
+    invalid input creates no run), then one run is created with ``create_run``
+    (before pre-flight, so a failed pre-flight can still be closed). A given
+    ``run_id`` is API mode: ``create_run`` is never called; a missing run row
+    raises RunNotFoundError before anything starts and without ``finish_run``
+    (nothing to finish). Once the run is known, ``finish_run`` is called exactly
+    once in a finally, even if validation, pre-flight or a pass raises.
+    ``storage.finish_run`` has no "failed" status, so a failed run is closed the
+    same way as a finished one.
+
+    Order: pre-flight, Pass A, Pass B, leftover check, finish_run. A
+    KeyboardInterrupt/SystemExit stops new profiles, lets running ones clean up,
+    still runs the leftover check and finish_run, and is re-raised at the very end.
     """
     deps = deps or default_deps()
     started = time.monotonic()
-    apk = options["apk"]
-    scenario = options["scenario"]
-    profiles = options.get("profiles")
-    if profiles is None:
-        profiles = load_profiles(options["profiles_path"])
-    if not profiles:
-        raise ValueError("no profiles to run")
-    names = [profile_name(p) for p in profiles]
-    if len(set(names)) != len(names):
-        raise ValueError(f"duplicate profile names: {sorted({n for n in names if names.count(n) > 1})}")
-    scenario_name, scenario_package = _scenario_info(scenario)
-    package = options.get("package") or scenario_package
-    if not package:
-        raise ValueError("no package: pass options['package'] or set 'package' in the scenario")
-    max_parallel = resolve_max_parallel(options, len(profiles))
-
+    run_started = time.time()  # wall clock, comparable with process create_time
+    plan: _Plan | None = None
     if run_id is None:
-        run_id = deps.create_run(os.path.basename(apk), scenario_name, names)
+        plan = _validate_options(options)
+        run_id = deps.create_run(os.path.basename(plan.apk), plan.scenario_name, plan.names)
+    else:
+        exists = deps.run_exists(run_id)
+        if exists is False:
+            raise RunNotFoundError(f"run {run_id} does not exist; nothing was started")
+        if exists is None:
+            log.warning("cannot verify that run %s exists (storage has no lookup); "
+                        "continuing", run_id)
 
-    ctx = RunContext(deps=deps, run_id=run_id, apk=apk, scenario=scenario, package=package,
-                     apply_settings=options.get("apply_settings", True),
-                     stop_event=options.get("stop_event"),
-                     thresholds=options.get("thresholds") or Thresholds(),
-                     baselines=options.get("baselines") or {})
-    leftovers: list[dict] = []
-    killed: list[int] = []
     failed = True
+    interrupt: BaseException | None = None
     try:
-        preflight(deps, options)
-        functional = _functional_pass(ctx, profiles, max_parallel)
+        plan = plan or _validate_options(options)
+        ctx = RunContext(deps=deps, run_id=run_id, apk=plan.apk, scenario=plan.scenario,
+                         package=plan.package, stop_event=threading.Event(),
+                         apply_settings=plan.apply_settings,
+                         external_stop=options.get("stop_event"),
+                         thresholds=plan.thresholds, baselines=plan.baselines,
+                         max_parallel=plan.max_parallel,
+                         slot_poll_s=options.get("slot_poll_s", SLOT_POLL_S))
+        preflight_pids = preflight(deps, options)
+        functional, interrupt, quarantined = _functional_pass(ctx, plan.profiles,
+                                                              plan.max_parallel)
         perf_results: dict[str, dict] = {}
-        if options.get("performance_pass", True):
-            perf_results = _performance_pass(ctx, profiles, functional)
-        leftovers, killed = _check_leftovers(deps, bool(options.get("kill_leftovers")))
+        if plan.performance_pass:
+            perf_results, perf_interrupt = _performance_pass(ctx, plan.profiles, functional)
+            interrupt = interrupt or perf_interrupt
+        leftover = _check_leftovers(deps, bool(options.get("kill_leftovers")), run_started,
+                                    preflight_pids)
         failed = False
     finally:
         try:
@@ -701,22 +1223,39 @@ def main(run_id: int | None, options: dict, deps: Deps | None = None) -> dict:
             log.exception("finish_run failed for run %s", run_id)
             if not failed:
                 raise
+    if interrupt is not None:
+        raise interrupt
 
+    names = plan.names
     results = [functional[n] for n in names]
     counts: dict[str, int] = {}
     for r in results:
         counts[r["result"]] = counts.get(r["result"], 0) + 1
+    if leftover["check"] != "ok":
+        status = "unverified"        # could not verify that no emulators were left
+    elif leftover["processes"]:
+        status = "leftovers"
+    else:
+        status = "ok"
     return {
         "run_id": run_id,
+        "status": status,
         "counts": counts,
         "profiles": results,
         "performance": [perf_results[n] for n in names] if perf_results else [],
         "perf_regressions": [{"profile": n, "metrics": perf_results[n]["regressions"]}
                              for n in names if n in perf_results and perf_results[n]["regressions"]],
+        "perf_errors": [{"profile": n, "error": perf_results[n]["error"],
+                         "file": perf_results[n].get("error_file")}
+                        for n in names if perf_results.get(n, {}).get("status") == "error"],
         "cancelled": [r["profile"] for r in results if r["result"] == RESULT_CANCELLED],
-        "leftover_processes": leftovers,
-        "leftovers_killed": killed,
-        "max_parallel": max_parallel,
+        "quarantined_ports": quarantined,
+        "leftover_check": leftover["check"],
+        "leftover_processes": leftover["processes"],
+        "leftovers_killed": leftover["killed"],
+        "leftovers_skipped": leftover["skipped"],
+        "kill_failures": leftover["kill_failures"],
+        "max_parallel": plan.max_parallel,
         "duration_s": round(time.monotonic() - started, 3),
     }
 
