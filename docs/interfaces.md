@@ -33,7 +33,7 @@ storage.create_run(...)`, and from the module path shown.
 | `vmf.geometry.geometry` | `parse_cutout_rects` | `(dumpsys_display_text: str) -> list[tuple[int, int, int, int]]` | Mathan (M7) | n/a (implemented) | REAL |
 | `vmf.geometry.geometry` | `parse_gesture_rects` | `(dumpsys_window_text: str, screen: tuple[int, int]) -> list[tuple[int, int, int, int]]` | Mathan (M7) | n/a (implemented) | REAL |
 | `vmf.geometry.geometry` | `validate_geometry` | `(hierarchy_xml: str, profile: dict) -> list[vmf.results.Finding]` | Mathan (M7) | n/a (implemented) | REAL |
-| `vmf.perf.perf` | `measure` | `(serial: str, profile: dict, runs: int = 5, *, package=None, activity=None, flow=None, baselines=None, thresholds=None, adb=None, sampler_factory=None) -> list[vmf.results.PerfRow]` | Mathan (M8) | n/a (implemented, emulator-relative, not proven on a device) | REAL |
+| `vmf.perf.perf` | `measure` | `(serial: str, profile: dict, runs: int = 5, *, package=None, activity=None, flow=None, baselines=None, thresholds=None, adb=None, sampler_factory=None) -> list[vmf.results.PerfRow]` | Mathan (M8) | n/a (implemented, emulator-relative; tested with fakes only, per-run snapshot restore unreliable on the Pixel_6 AVD, see README) | REAL |
 | `vmf.perf.perf` | `run_and_store` | `(run_id: int, profile_name: str, serial: str, profile: dict, **kwargs) -> list[vmf.results.PerfRow]` | Mathan (M8) | n/a (implemented) | REAL |
 | `vmf.perf.perf` | `run_performance` | `(serial: str, package: str, profile: dict) -> list[vmf.results.PerfRow]` | Mathan (M8) | kept for old callers; returns a placeholder row | STUB |
 | `vmf.storage.storage` | `create_run` | `(apk_name: str, scenario: str, profiles: list[str]) -> int` | Gagan (M9) | M9 | STUB |
