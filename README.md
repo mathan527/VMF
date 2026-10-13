@@ -102,14 +102,14 @@ been proven on a device; `provision`, `oem_packs`,
 | M4 runner | Sample app, Appium 3.8, Pixel_6 AVD: all 6 steps of `scenarios/sample_app.yaml` pass | Default install mode needs a working `JAVA_HOME` for Appium |
 | M6 classifier | A deliberate `am crash` was classified `crash` from real logcat | ANR, hang and "process gone" paths |
 | M7 geometry | `get_display_zones` returned real cutout and gesture zones | A deliberately broken layout on a device |
-| M8 perf | APK install and snapshot save work on the emulator | **Per-run snapshot restore is unreliable** (see below); no measurement has completed on a device |
+| M8 perf | One full `measure()` run completed on the Pixel_6 AVD (install, snapshot save, warm-up, 3 measured runs): launch_time median 1111 ms, jank_pct median 20.00 %, pss median 21044 KB, all emulator-relative; the host-load and spread checks fired (`noisy host`, `unstable`) | **Per-run snapshot restore is unreliable** (see below); repeatability within 10% and the slowed-build test are not done |
 | M10 orchestrator | Fakes only | Everything on real devices |
 
 **M8 snapshot restore.** After `adb emu avd snapshot load`, the Pixel_6 AVD often shows the device
 `offline`: usually for a few seconds, sometimes for minutes or indefinitely (four repeated loads of one
 snapshot came back in 9 s, never, 6 s and 48 s; a live `measure()` run then stayed offline for all 3 load
 attempts). `load_snapshot` waits for `sys.boot_completed` and repeats the load up to 3 times, which is
-tested with fakes but did not fix the live run. M8's Done-when (slow build flagged on every tier; same
+tested with fakes; it did not fix one earlier live run, but a later run on a healthy emulator completed with no retries needed. M8's Done-when (slow build flagged on every tier; same
 build twice within 10%) is therefore OPEN. Planned alternative once `provision` (M3) is real: restart the
 emulator with `-snapshot perf_base` for each run instead of loading in place.
 
