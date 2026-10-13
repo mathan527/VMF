@@ -41,6 +41,8 @@ from vmf import api, classifier, geometry, oem_packs, perf, provision, report, r
 from vmf.config import APPIUM_URL, RESULTS_DIR
 from vmf.perf.perf import EMULATOR_PROCESS_NAMES, Thresholds
 from vmf.results import Verdict
+from vmf.runner.locator_fallback import (FallbackConfig, config_from_options, read_healed_count,
+                                         validate_fallback_steps)
 
 
 # ---------------------------------------------------------------------------
@@ -424,6 +426,7 @@ class RunContext:
     baselines: dict = field(default_factory=dict)
     max_parallel: int = 1
     slot_poll_s: float = SLOT_POLL_S
+    locator_fallback: FallbackConfig | None = None   # M14, functional pass only
 
     def stopping(self) -> bool:
         return self.stop_event.is_set() or (
@@ -523,11 +526,12 @@ def _cleanup_failed_start(ctx: RunContext, slot: Slot, before: set | None,
 def _result_dict(profile: dict, *, result: str, cause: str = "", serial=None,
                  findings_count: int = 0, duration_s: float = 0.0, error: bool = False,
                  warnings: list | None = None, cleanup_errors: list | None = None,
-                 quarantine: bool = False) -> dict:
+                 quarantine: bool = False, locator_fallbacks: int = 0) -> dict:
     return {"profile": profile_name(profile), "serial": serial, "tier": profile.get("tier"),
             "result": result, "cause": cause, "findings_count": findings_count,
             "duration_s": duration_s, "error": error, "warnings": warnings or [],
-            "cleanup_errors": cleanup_errors or [], "quarantine": quarantine}
+            "cleanup_errors": cleanup_errors or [], "quarantine": quarantine,
+            "locator_fallbacks": locator_fallbacks}
 
 
 def _cancelled_result(profile: dict) -> dict:
@@ -656,6 +660,7 @@ def run_profile(profile: dict, ctx: RunContext, slot: Slot) -> dict:
     start_failed = False
     quarantine = False
     before = None
+    fallback_count = 0
     try:
         before = _emulator_snapshot(deps)
         serial = deps.start_device(profile, slot.port)
@@ -676,10 +681,15 @@ def run_profile(profile: dict, ctx: RunContext, slot: Slot) -> dict:
         proc = deps.start_logcat(serial, logcat_path)
 
         stage = "runner"
+        runner_kwargs = {"run_id": run_id, "profile": name, "mjpeg_port": slot.mjpeg_port,
+                         "chromedriver_port": slot.chromedriver_port}
+        if ctx.locator_fallback is not None:  # M14: only passed when enabled, never to the perf flow
+            runner_kwargs["locator_fallback"] = ctx.locator_fallback
         returned_id, steps = deps.runner_run(
-            serial, ctx.apk, ctx.scenario, slot.system_port, run_id=run_id, profile=name,
-            mjpeg_port=slot.mjpeg_port, chromedriver_port=slot.chromedriver_port)
+            serial, ctx.apk, ctx.scenario, slot.system_port, **runner_kwargs)
         run_id = returned_id if returned_id is not None else run_id
+        if ctx.locator_fallback is not None:
+            fallback_count = read_healed_count(f"{RESULTS_DIR}/{run_id}/{name}")
 
         stage = "stop_logcat"
         deps.stop_logcat(proc)
@@ -725,7 +735,7 @@ def run_profile(profile: dict, ctx: RunContext, slot: Slot) -> dict:
                         findings_count=findings_count,
                         duration_s=round(time.monotonic() - started, 3), error=failed,
                         warnings=warnings, cleanup_errors=cleanup_errors,
-                        quarantine=quarantine)
+                        quarantine=quarantine, locator_fallbacks=fallback_count)
 
 
 def _functional_task(profile: dict, ctx: RunContext, pool: SlotPool) -> dict:
@@ -1107,6 +1117,7 @@ class _Plan:
     thresholds: Thresholds
     performance_pass: bool
     apply_settings: bool
+    locator_fallback: FallbackConfig | None = None
 
 
 def _validate_options(options: dict) -> _Plan:
@@ -1150,12 +1161,17 @@ def _validate_options(options: dict) -> _Plan:
         if key not in names:
             log.warning("baselines key %r matches no profile (profile names are sanitised, "
                         "for example spaces become '_'; known: %s)", key, names)
+    locator_fallback = config_from_options(options)
+    if locator_fallback is not None:  # reject a malformed `fallback: true` step before anything starts
+        with open(scenario, encoding="utf-8") as f:
+            validate_fallback_steps(yaml.safe_load(f) or {})
     return _Plan(apk=apk, scenario=scenario, scenario_name=scenario_name, package=package,
                  profiles=profiles, names=names,
                  max_parallel=resolve_max_parallel(options, len(profiles)),
                  baselines=baselines, thresholds=options.get("thresholds") or Thresholds(),
                  performance_pass=bool(options.get("performance_pass", True)),
-                 apply_settings=bool(options.get("apply_settings", True)))
+                 apply_settings=bool(options.get("apply_settings", True)),
+                 locator_fallback=locator_fallback)
 
 
 def main(run_id: int | None, options: dict, deps: Deps | None = None) -> dict:
@@ -1205,7 +1221,8 @@ def main(run_id: int | None, options: dict, deps: Deps | None = None) -> dict:
                          external_stop=options.get("stop_event"),
                          thresholds=plan.thresholds, baselines=plan.baselines,
                          max_parallel=plan.max_parallel,
-                         slot_poll_s=options.get("slot_poll_s", SLOT_POLL_S))
+                         slot_poll_s=options.get("slot_poll_s", SLOT_POLL_S),
+                         locator_fallback=plan.locator_fallback)
         preflight_pids = preflight(deps, options)
         functional, interrupt, quarantined = _functional_pass(ctx, plan.profiles,
                                                               plan.max_parallel)
@@ -1250,6 +1267,8 @@ def main(run_id: int | None, options: dict, deps: Deps | None = None) -> dict:
                         for n in names if perf_results.get(n, {}).get("status") == "error"],
         "cancelled": [r["profile"] for r in results if r["result"] == RESULT_CANCELLED],
         "quarantined_ports": quarantined,
+        "locator_fallbacks": {r["profile"]: r["locator_fallbacks"]
+                              for r in results if r.get("locator_fallbacks")},
         "leftover_check": leftover["check"],
         "leftover_processes": leftover["processes"],
         "leftovers_killed": leftover["killed"],

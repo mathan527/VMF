@@ -1,0 +1,14 @@
+{
+  "name": "dialog_overlay",
+  "description": "confirmation dialog whose button text changed from Delete to Remove",
+  "package": "com.shop.app",
+  "action": "tap",
+  "intent": "confirm the deletion",
+  "locator": {
+    "text": "Delete"
+  },
+  "hierarchy": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\" ?><hierarchy rotation=\"0\"><node index=\"0\" text=\"12:30\" resource-id=\"\" class=\"android.view.View\" package=\"com.android.systemui\" content-desc=\"\" checkable=\"false\" checked=\"false\" clickable=\"false\" enabled=\"true\" focusable=\"false\" focused=\"false\" long-clickable=\"false\" password=\"false\" scrollable=\"false\" selected=\"false\" bounds=\"[0,0][1080,120]\" displayed=\"true\" /><node index=\"0\" text=\"\" resource-id=\"\" class=\"android.widget.FrameLayout\" package=\"com.shop.app\" content-desc=\"\" checkable=\"false\" checked=\"false\" clickable=\"false\" enabled=\"true\" focusable=\"false\" focused=\"false\" long-clickable=\"false\" password=\"false\" scrollable=\"false\" selected=\"false\" bounds=\"[0,120][1080,2400]\" displayed=\"true\"><node index=\"0\" text=\"Delete this item?\" resource-id=\"\" class=\"android.widget.TextView\" package=\"com.shop.app\" content-desc=\"\" checkable=\"false\" checked=\"false\" clickable=\"false\" enabled=\"true\" focusable=\"false\" focused=\"false\" long-clickable=\"false\" password=\"false\" scrollable=\"false\" selected=\"false\" bounds=\"[100,700][980,800]\" displayed=\"true\" /><node index=\"0\" text=\"Remove\" resource-id=\"com.shop.app:id/btn_confirm_delete\" class=\"android.widget.Button\" package=\"com.shop.app\" content-desc=\"\" checkable=\"false\" checked=\"false\" clickable=\"true\" enabled=\"true\" focusable=\"true\" focused=\"false\" long-clickable=\"false\" password=\"false\" scrollable=\"false\" selected=\"false\" bounds=\"[100,900][980,1040]\" displayed=\"true\" /><node index=\"0\" text=\"Keep\" resource-id=\"com.shop.app:id/btn_cancel_delete\" class=\"android.widget.Button\" package=\"com.shop.app\" content-desc=\"\" checkable=\"false\" checked=\"false\" clickable=\"true\" enabled=\"true\" focusable=\"true\" focused=\"false\" long-clickable=\"false\" password=\"false\" scrollable=\"false\" selected=\"false\" bounds=\"[100,1100][980,1240]\" displayed=\"true\" /></node></hierarchy>",
+  "expected": {
+    "resource_id": "com.shop.app:id/btn_confirm_delete"
+  }
+}

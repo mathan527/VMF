@@ -26,6 +26,7 @@ from vmf.orchestrator import run_matrix as rm
 from vmf.perf.perf import Thresholds
 from vmf.results import Finding, PerfRow, Step, Verdict
 from vmf.runner import runner as runner_mod
+from vmf.runner.locator_fallback import FallbackConfig
 
 PACKAGE = "com.example.testapp"
 GLOBAL_KINDS = {"create_run", "finish_run", "appium", "disk", "procs", "kill", "run_exists"}
@@ -79,6 +80,8 @@ class Fakes:
         self.geometry_configs = []
         self.save_error_fails = False
         self.run_exists_answer = "auto"  # "auto" | True | False | None
+        self.fallback_args = []           # the locator_fallback kwarg of every runner_run call
+        self.heal_counts = {}             # profile -> healed steps the fake runner reports (M14)
 
     # -- helpers ------------------------------------------------------------
     def ev(self, kind, name=None, **extra):
@@ -163,8 +166,15 @@ class Fakes:
 
     def runner_run(self, serial, apk, scenario, system_port, run_id=None, profile=None,
                    record=True, reuse_installed_app=False, mjpeg_port=None,
-                   chromedriver_port=None):
+                   chromedriver_port=None, locator_fallback=None):
         name = self.serial_name[serial]
+        with self.lock:
+            self.fallback_args.append(locator_fallback)
+        if locator_fallback is not None and self.heal_counts.get(name):
+            side = Path(rm.RESULTS_DIR) / str(run_id) / name
+            side.mkdir(parents=True, exist_ok=True)
+            (side / "locator_fallbacks.json").write_text(
+                json.dumps({"healed": [{"step": i} for i in range(self.heal_counts[name])]}), encoding="utf-8")
         self.ev("runner", name, system_port=system_port, run_id=run_id, profile=profile,
                 record=record, reuse=reuse_installed_app, mjpeg=mjpeg_port,
                 chromedriver=chromedriver_port)
@@ -1826,3 +1836,83 @@ def test_run_scenario_dry_run_honours_the_new_arguments(runner_env):
     assert run_id is None and len(runner_env.steps) == 1
     run_id, _ = runner_mod.run_scenario("emulator-5554", "app.apk", "stub", dry_run=True)
     assert run_id == 41 and runner_env.steps[-1] == (41, "emulator-5554", 0)  # old shape unchanged
+
+
+# --- M14 locator fallback: orchestrator pass-through ------------------------------------------------------------
+
+def _write_scenario_with(tmp_path, steps):
+    p = tmp_path / "fb_scenario.yaml"
+    p.write_text(yaml.safe_dump({"name": "Shop", "package": PACKAGE, "steps": steps}), encoding="utf-8")
+    return str(p)
+
+
+def test_the_fallback_is_not_passed_to_the_runner_when_it_is_off(tmp_path, scenario):
+    fakes = Fakes(tmp_path)
+    summary = go(fakes, scenario, make_profiles(2), performance_pass=True)
+    assert fakes.fallback_args == [None] * 4            # 2 functional + 2 perf flows: never a config
+    assert summary["locator_fallbacks"] == {}
+
+
+def test_the_fallback_option_reaches_the_functional_pass_only(tmp_path, scenario):
+    fakes = Fakes(tmp_path)
+    go(fakes, scenario, make_profiles(2), performance_pass=True, locator_fallback=True)
+    functional = [a for a, (_, e) in zip(fakes.fallback_args, fakes.extras("runner")) if e["record"]]
+    flows = [a for a, (_, e) in zip(fakes.fallback_args, fakes.extras("runner")) if not e["record"]]
+    assert len(functional) == 2 and all(isinstance(a, FallbackConfig) and a.enabled for a in functional)
+    assert flows == [None, None]                        # a performance number never depends on a model guess
+
+
+def test_the_environment_variable_enables_it_too(tmp_path, scenario, monkeypatch):
+    monkeypatch.setenv("VMF_LOCATOR_FALLBACK", "1")
+    fakes = Fakes(tmp_path)
+    go(fakes, scenario, make_profiles(1))
+    assert isinstance(fakes.fallback_args[0], FallbackConfig)
+
+
+def test_a_config_instance_is_passed_through_unchanged(tmp_path, scenario):
+    cfg = FallbackConfig(enabled=True, model="tiny:1b", max_fallbacks_per_run=2)
+    fakes = Fakes(tmp_path)
+    go(fakes, scenario, make_profiles(1), locator_fallback=cfg)
+    assert fakes.fallback_args == [cfg]
+
+
+def test_a_non_local_ollama_host_is_rejected_before_anything_starts(tmp_path, scenario):
+    fakes = Fakes(tmp_path, runs=())
+    with pytest.raises(ValueError, match="localhost"):
+        go(fakes, scenario, make_profiles(1), run_id=None,
+           locator_fallback={"host": "https://api.example.com"})
+    assert fakes.kinds(include_global=True) == []
+
+
+def test_the_summary_counts_healed_steps_per_profile_from_the_sidecar(tmp_path, scenario):
+    fakes = Fakes(tmp_path)
+    fakes.heal_counts = {"p0": 2, "p2": 1}
+    summary = go(fakes, scenario, make_profiles(3), locator_fallback=True)
+    assert summary["locator_fallbacks"] == {"p0": 2, "p2": 1}      # profiles with no heals are omitted
+    by = {r["profile"]: r for r in summary["profiles"]}
+    assert by["p0"]["locator_fallbacks"] == 2 and by["p1"]["locator_fallbacks"] == 0
+    assert summary["counts"] == {"pass": 3}                        # healing never changes a verdict
+
+
+def test_a_missing_sidecar_counts_as_zero(tmp_path, scenario):
+    summary = go(Fakes(tmp_path), scenario, make_profiles(1), locator_fallback=True)
+    assert summary["locator_fallbacks"] == {}
+
+
+def test_a_malformed_fallback_step_is_rejected_before_anything_starts(tmp_path):
+    bad = _write_scenario_with(tmp_path, [{"action": "tap", "locator": {"text": "x"}, "fallback": True}])
+    fakes = Fakes(tmp_path, runs=())
+    with pytest.raises(ValueError, match=r"step 0 \(tap\).*intent"):
+        go(fakes, bad, make_profiles(1), run_id=None, locator_fallback=True)
+    assert fakes.kinds(include_global=True) == []
+    # the same scenario is untouched when the feature is off: no new error for existing scenarios
+    summary = go(Fakes(tmp_path), bad, make_profiles(1))
+    assert summary["counts"] == {"pass": 1}
+
+
+def test_enabling_the_fallback_does_not_change_the_other_results(tmp_path, scenario):
+    off = go(Fakes(tmp_path), scenario, make_profiles(3), max_parallel=1)
+    on = go(Fakes(tmp_path), scenario, make_profiles(3), max_parallel=1, locator_fallback=True)
+    keep = ("counts", "status", "cancelled", "leftover_check", "quarantined_ports")
+    assert {k: off[k] for k in keep} == {k: on[k] for k in keep}
+    assert [(p["profile"], p["result"]) for p in off["profiles"]] == [(p["profile"], p["result"]) for p in on["profiles"]]

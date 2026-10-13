@@ -75,6 +75,10 @@ def _parse_bounds(value: str | None) -> Rect | None:
     return tuple(int(g) for g in m.groups())
 
 
+# Public name for other modules (the M14 locator fallback parses the same bounds strings).
+parse_bounds = _parse_bounds
+
+
 def _area(r: Rect) -> int:
     return max(0, r[2] - r[0]) * max(0, r[3] - r[1])
 

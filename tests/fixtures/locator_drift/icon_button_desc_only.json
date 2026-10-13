@@ -1,0 +1,14 @@
+{
+  "name": "icon_button_desc_only",
+  "description": "icon button without id or text, only an accessibility label",
+  "package": "com.shop.app",
+  "action": "tap",
+  "intent": "tap the search icon",
+  "locator": {
+    "resource_id": "com.shop.app:id/btn_search"
+  },
+  "hierarchy": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\" ?><hierarchy rotation=\"0\"><node index=\"0\" text=\"12:30\" resource-id=\"\" class=\"android.view.View\" package=\"com.android.systemui\" content-desc=\"\" checkable=\"false\" checked=\"false\" clickable=\"false\" enabled=\"true\" focusable=\"false\" focused=\"false\" long-clickable=\"false\" password=\"false\" scrollable=\"false\" selected=\"false\" bounds=\"[0,0][1080,120]\" displayed=\"true\" /><node index=\"0\" text=\"\" resource-id=\"\" class=\"android.widget.FrameLayout\" package=\"com.shop.app\" content-desc=\"\" checkable=\"false\" checked=\"false\" clickable=\"false\" enabled=\"true\" focusable=\"false\" focused=\"false\" long-clickable=\"false\" password=\"false\" scrollable=\"false\" selected=\"false\" bounds=\"[0,120][1080,2400]\" displayed=\"true\"><node index=\"0\" text=\"\" resource-id=\"\" class=\"android.widget.ImageButton\" package=\"com.shop.app\" content-desc=\"Search\" checkable=\"false\" checked=\"false\" clickable=\"true\" enabled=\"true\" focusable=\"true\" focused=\"false\" long-clickable=\"false\" password=\"false\" scrollable=\"false\" selected=\"false\" bounds=\"[800,140][940,280]\" displayed=\"true\" /><node index=\"0\" text=\"\" resource-id=\"\" class=\"android.widget.ImageButton\" package=\"com.shop.app\" content-desc=\"Cart\" checkable=\"false\" checked=\"false\" clickable=\"true\" enabled=\"true\" focusable=\"true\" focused=\"false\" long-clickable=\"false\" password=\"false\" scrollable=\"false\" selected=\"false\" bounds=\"[940,140][1080,280]\" displayed=\"true\" /><node index=\"0\" text=\"\" resource-id=\"\" class=\"android.widget.ImageButton\" package=\"com.shop.app\" content-desc=\"Profile\" checkable=\"false\" checked=\"false\" clickable=\"true\" enabled=\"true\" focusable=\"true\" focused=\"false\" long-clickable=\"false\" password=\"false\" scrollable=\"false\" selected=\"false\" bounds=\"[20,140][160,280]\" displayed=\"true\" /></node></hierarchy>",
+  "expected": {
+    "content-desc": "Search"
+  }
+}
