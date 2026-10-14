@@ -38,6 +38,9 @@ A step can opt in to being healed by a small local model (Ollama on localhost, $
 
 - Only action steps are healed (`tap`, `type`). `wait_for` and `assert_visible` are NEVER healed: a missing element the app should show may be the defect.
 - It runs only when enabled for the run (`options["locator_fallback"]` or `VMF_LOCATOR_FALLBACK=1`) and never in the unrecorded performance flow.
-- A healed step still has status `pass`; it is listed in `results/<run_id>/<profile>/locator_fallbacks.json` and logged as a WARNING, and the orchestrator summary has `locator_fallbacks: {profile: count}`.
+- A healed step still has status `pass`; it is listed in `results/<run_id>/<profile>/locator_fallbacks.json` and logged as a WARNING, and the orchestrator summary has `locator_fallbacks: {profile: {"ai_assisted": n, "unresolved": m}}`.
+- The stored action name carries a tag (workbook M14.2): `tap [AI-ASSISTED]` when the fallback resolved the locator, `tap [UNRESOLVED]` when it ran and found nothing (or the retry with the new locator failed). The status is still `pass`/`fail`, because `Step.status` has no third value and `results.py` is not mine to change. Anything that compares action names should use `vmf.runner.locator_fallback.strip_tag(action)`. Today only the classifier reads actions, and only `oem.*` ones, which are never tagged.
+- Unresolved attempts are written to the same sidecar under `unresolved`, with the reason code.
+- Optional vision input, OFF by default: set `VMF_OLLAMA_VISION_MODEL` (or `FallbackConfig.vision_model`) to send the previous step's screenshot (under 2 MB) with the candidate list. The model still answers only with a candidate index, which is validated exactly as before. This path has not been tried against a real vision model.
 - `fallback: true` without an `intent` is rejected when the scenario is loaded with the fallback enabled, naming the step.
 - Setup: install Ollama, `ollama pull qwen2.5:1.5b` (or set `VMF_OLLAMA_MODEL`; keep it at 3B parameters or fewer). Try it with `scripts/try_fallback.py`, measure it with `scripts/eval_fallback.py`.

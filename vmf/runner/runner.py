@@ -214,6 +214,10 @@ def run(serial: str, apk: str, scenario: str, system_port: int, *,
     else:
         options.app = apk
         options.no_reset = False
+        # Appium force-stops the app when the session ends unless this is set. The
+        # classifier asks the device (pidof) whether the app is still alive AFTER the
+        # runner returned; without this every clean run looked like a crash ("process gone").
+        options.set_capability("dontStopAppOnReset", True)
     if mjpeg_port is not None:
         options.mjpeg_server_port = mjpeg_port
     if chromedriver_port is not None:
@@ -259,7 +263,8 @@ def run(serial: str, apk: str, scenario: str, system_port: int, *,
                 screenshot, hierarchy = "", ""
             step = Step(
                 step_index=step_index,
-                action=step_spec["action"],
+                # M14: " [AI-ASSISTED]" / " [UNRESOLVED]" when the locator fallback was used on this step
+                action=step_spec["action"] + (fallback.tag(step_index) if fallback else ""),
                 status=status,
                 duration_ms=duration_ms,
                 screenshot_path=screenshot,
