@@ -19,13 +19,15 @@ be tested without an emulator. Standard library plus PyYAML and psutil.
 Entry point: :func:`measure`. :func:`run_performance` is the old ARCH stub, kept
 so existing callers keep working.
 """
+import datetime
 import logging
+import os
 import re
 import statistics
 import subprocess
 import threading
 import time
-from dataclasses import dataclass, fields
+from dataclasses import dataclass, field, replace
 from pathlib import Path
 from typing import Callable
 
@@ -53,6 +55,10 @@ ADB_INSTALL_TIMEOUT_S = 180
 # then load again, up to SNAPSHOT_LOAD_ATTEMPTS times.
 ADB_BOOT_TIMEOUT_S = 30
 ADB_BOOT_POLL_S = 1.0
+# After a snapshot load sys.boot_completed can already read 1 (it comes from the snapshot) while
+# system_server is still restarting its services; `am force-stop` then fails with
+# "Can't find service: activity". These services must answer before the device counts as online.
+BOOT_SERVICES = ("activity", "package")
 SNAPSHOT_LOAD_ATTEMPTS = 3
 # jank_pct runs whose median is below this many percent are compared in absolute
 # percentage points (max - min) against max_spread_pct, because a relative spread
@@ -103,6 +109,8 @@ class FlowError(PerfError):
 # ---------------------------------------------------------------------------
 
 # PROPOSED values from the Final Execution Plan, NOT YET APPROVED by the lead.
+# ``approved`` / ``approved_by`` / ``approved_on`` are only ever set by load_thresholds()
+# from perf_config.yaml; they are not compared, so equal values stay equal.
 @dataclass(frozen=True)
 class Thresholds:
     launch_regression_pct: float = 20.0   # launch_time: % slower than baseline
@@ -111,34 +119,145 @@ class Thresholds:
     max_spread_pct: float = 10.0          # (max - min) / median across runs
     noisy_host_cpu_pct: float = 30.0      # host CPU outside the emulator
     runs: int = DEFAULT_RUNS              # measured runs per metric
+    approved: bool = field(default=False, compare=False)
+    approved_by: str | None = field(default=None, compare=False)
+    approved_on: str | None = field(default=None, compare=False)
 
 
-def load_thresholds(path: str | None) -> Thresholds:
-    """Return the thresholds, overridden by the YAML file at ``path`` if present.
+# The lead-approved (or still PROPOSED) thresholds live in perf_config.yaml at the repo root.
+PERF_CONFIG_NAME = "perf_config.yaml"
+PERF_CONFIG_ENV = "VMF_PERF_CONFIG"
+REPO_ROOT = Path(__file__).resolve().parents[2]
+# Keys of perf_config.yaml -> Thresholds fields. The Thresholds field names are accepted
+# as aliases (and "runs"), so older config files keep working.
+_CONFIG_KEYS = {
+    "launch_regression_pct": "launch_regression_pct",
+    "jank_increase_points": "jank_increase_pts",
+    "pss_increase_pct": "pss_regression_pct",
+    "max_spread_pct": "max_spread_pct",
+    "noisy_host_cpu_pct": "noisy_host_cpu_pct",
+    "jank_increase_pts": "jank_increase_pts",
+    "pss_regression_pct": "pss_regression_pct",
+    "runs": "runs",
+}
+_APPROVAL_KEYS = ("approved_by", "approved_on", "baseline_approvers")
 
-    Only keys present in the file are overridden. A ``None`` path or a missing
-    file returns the unapproved defaults and logs that. A file that is not a
-    mapping, or has a value that is not a number, raises ``ValueError``.
-    """
-    if path is None or not Path(path).is_file():
-        logging.warning("perf: no thresholds file (%s); using PROPOSED defaults "
-                        "that are NOT YET APPROVED by the lead", path)
-        return Thresholds()
+
+def resolve_config_path(path: str | os.PathLike | None = None) -> Path:
+    """The perf config file to read: ``path``, else $VMF_PERF_CONFIG, else
+    perf_config.yaml at the repo root."""
+    if path is not None:
+        return Path(path)
+    env = os.environ.get(PERF_CONFIG_ENV)
+    return Path(env) if env else REPO_ROOT / PERF_CONFIG_NAME
+
+
+def _read_config(path: Path) -> dict | None:
+    """The parsed mapping, or None if the file does not exist. ValueError if it is
+    not a mapping or has an unknown key (the message names the key)."""
+    if not path.is_file():
+        return None
     import yaml
     with open(path, encoding="utf-8") as f:
         data = yaml.safe_load(f) or {}
     if not isinstance(data, dict):
-        raise ValueError(f"perf thresholds file {path} must be a mapping")
-    known = {f.name: f.type for f in fields(Thresholds)}
-    overrides = {}
-    for key, value in data.items():
+        raise ValueError(f"perf config {path} must be a mapping of keys to values")
+    known = set(_CONFIG_KEYS) | set(_APPROVAL_KEYS)
+    for key in data:
         if key not in known:
-            logging.warning("perf: ignoring unknown threshold key %r in %s", key, path)
-            continue
-        if isinstance(value, bool) or not isinstance(value, (int, float)):
-            raise ValueError(f"perf threshold {key!r} in {path} must be a number, got {value!r}")
-        overrides[key] = int(value) if key == "runs" else float(value)
-    return Thresholds(**overrides)
+            raise ValueError(f"perf config {path}: unknown key {key!r} "
+                             f"(allowed: {', '.join(sorted(known))})")
+    return data
+
+
+def _is_number(value) -> bool:
+    return isinstance(value, (int, float)) and not isinstance(value, bool)
+
+
+def _thresholds_from(data: dict, path: Path) -> Thresholds:
+    overrides: dict = {}
+    for key, field_name in ((k, _CONFIG_KEYS[k]) for k in data if k in _CONFIG_KEYS):
+        value = data[key]
+        if not _is_number(value) or value <= 0:
+            raise ValueError(f"perf config {path}: {key!r} must be a positive number, got {value!r}")
+        if field_name in overrides:
+            raise ValueError(f"perf config {path}: {key!r} repeats another key for the same setting")
+        overrides[field_name] = int(value) if field_name == "runs" else float(value)
+    th = Thresholds(**overrides)
+    if th.noisy_host_cpu_pct > 100:
+        raise ValueError(f"perf config {path}: 'noisy_host_cpu_pct' is a percentage and must be <= 100")
+    for field_name in ("launch_regression_pct", "pss_regression_pct"):
+        if getattr(th, field_name) <= th.max_spread_pct:
+            raise ValueError(
+                f"perf config {path}: {field_name} ({getattr(th, field_name)}) must be larger than "
+                f"max_spread_pct ({th.max_spread_pct}); a smaller threshold cannot be told apart "
+                f"from run-to-run noise")
+    return th
+
+
+def _check_approval_fields(data: dict, path: Path) -> None:
+    for key in ("approved_by", "approved_on"):
+        value = data.get(key)
+        if value is not None and not (isinstance(value, (str, datetime.date)) and str(value).strip()):
+            raise ValueError(f"perf config {path}: {key!r} must be empty (null) or a non-empty name/date")
+    approvers = data.get("baseline_approvers")
+    if approvers is not None and not (isinstance(approvers, list) and all(
+            isinstance(a, str) and a.strip() for a in approvers)):
+        raise ValueError(f"perf config {path}: 'baseline_approvers' must be a list of names")
+
+
+def load_thresholds(path: str | os.PathLike | None = None) -> Thresholds:
+    """Thresholds from the perf config file (see :func:`resolve_config_path`).
+
+    Every key is validated: numbers must be positive, ``noisy_host_cpu_pct`` at most
+    100, and the launch and PSS thresholds larger than ``max_spread_pct``. An unknown
+    key raises ``ValueError`` naming it. A missing file returns the built-in PROPOSED
+    defaults and logs a warning. The returned Thresholds carry ``approved``,
+    ``approved_by`` and ``approved_on`` exactly as :func:`threshold_status` reports
+    them: approved only if the file has both a name and a date.
+    """
+    cfg = resolve_config_path(path)
+    data = _read_config(cfg)
+    if data is None:
+        logging.warning("perf: no thresholds file at %s; using built-in PROPOSED defaults "
+                        "that are NOT YET APPROVED by the lead", cfg)
+        return Thresholds()
+    _check_approval_fields(data, cfg)
+    status = _status_from(data, cfg)
+    return replace(_thresholds_from(data, cfg), approved=status["approved"],
+                   approved_by=status["approved_by"], approved_on=status["approved_on"])
+
+
+def _status_from(data: dict, path: Path) -> dict:
+    by, on = data.get("approved_by"), data.get("approved_on")
+    by = str(by).strip() if by else None
+    on = str(on).strip() if on else None
+    return {"approved": bool(by and on), "approved_by": by, "approved_on": on, "source": str(path)}
+
+
+def threshold_status(path: str | os.PathLike | None = None) -> dict:
+    """``{"approved", "approved_by", "approved_on", "source"}`` for the perf config.
+
+    ``approved`` is True only if the file has BOTH a non-empty ``approved_by`` and
+    ``approved_on``; a missing file is never approved. Nothing in the code can set
+    these values; the lead writes them into perf_config.yaml.
+    """
+    cfg = resolve_config_path(path)
+    data = _read_config(cfg)
+    if data is None:
+        return {"approved": False, "approved_by": None, "approved_on": None,
+                "source": "built-in defaults (no perf config file)"}
+    _check_approval_fields(data, cfg)
+    return _status_from(data, cfg)
+
+
+def load_approvers(path: str | os.PathLike | None = None) -> list[str]:
+    """Names allowed to promote baselines (``baseline_approvers``); [] if none."""
+    data = _read_config(resolve_config_path(path))
+    if data is None:
+        return []
+    _check_approval_fields(data, resolve_config_path(path))
+    return [str(a).strip() for a in (data.get("baseline_approvers") or [])]
 
 
 # ---------------------------------------------------------------------------
@@ -329,8 +448,21 @@ def _snapshot(serial: str, adb: Callable, action: str) -> None:
                             f"acknowledged with OK; console said: {(out or '').strip()!r}")
 
 
-def _wait_until_online(serial: str, adb: Callable) -> None:
-    """Block until ``serial`` answers adb and reports sys.boot_completed == 1.
+def _service_up(serial: str, adb: Callable, name: str) -> bool:
+    out = adb(serial, "shell", "service", "check", name, timeout=ADB_TIMEOUT_S) or ""
+    return "found" in out and "not found" not in out
+
+
+def _package_installed(serial: str, adb: Callable, package: str) -> bool:
+    out = adb(serial, "shell", "pm", "path", package, timeout=ADB_TIMEOUT_S) or ""
+    return out.strip().startswith("package:")
+
+
+def _wait_until_online(serial: str, adb: Callable, package: str | None = None) -> None:
+    """Block until ``serial`` answers adb, reports sys.boot_completed == 1, the
+    activity and package services are registered (BOOT_SERVICES) and, when ``package``
+    is given, ``pm path <package>`` finds the app (right after a restore ``am start``
+    could still fail with "Activity class ... does not exist").
 
     adb errors while the device is still "offline" are expected and retried.
     Raises SnapshotError if the device is not back within ADB_BOOT_TIMEOUT_S.
@@ -341,8 +473,13 @@ def _wait_until_online(serial: str, adb: Callable) -> None:
         try:
             if (adb(serial, "shell", "getprop", "sys.boot_completed",
                     timeout=ADB_TIMEOUT_S) or "").strip() == "1":
-                return
-            last = "sys.boot_completed is not 1 yet"
+                down = [n for n in BOOT_SERVICES if not _service_up(serial, adb, n)]
+                if not down and (package is None or _package_installed(serial, adb, package)):
+                    return
+                last = (f"sys.boot_completed is 1 but service(s) {', '.join(down)} not up yet"
+                        if down else f"package {package} is not visible yet")
+            else:
+                last = "sys.boot_completed is not 1 yet"
         except AdbError as e:
             last = str(e)
         if time.monotonic() >= deadline:
@@ -351,12 +488,27 @@ def _wait_until_online(serial: str, adb: Callable) -> None:
         threading.Event().wait(ADB_BOOT_POLL_S)
 
 
+RESET_MODES = ("snapshot", "app")
+
+
+def reset_app(serial: str, adb: Callable, package: str) -> None:
+    """Return the app to its freshly installed state without touching the rest of the device:
+    stop it and clear its data (``pm clear``). The alternative to a snapshot restore: on the
+    Pixel_6 AVD (Android 16, 3 GB) a restore sometimes froze the guest for many minutes, and
+    nothing in perf can wait that out. The system state is NOT reset, so this is only as clean
+    as the emulator was when the measurement started."""
+    adb(serial, "shell", "am", "force-stop", package, timeout=ADB_TIMEOUT_S)
+    out = adb(serial, "shell", "pm", "clear", package, timeout=ADB_TIMEOUT_S) or ""
+    if "Success" not in out:
+        raise AdbError(f"pm clear {package} on {serial} did not answer Success: {out.strip()!r}")
+
+
 def save_baseline_snapshot(serial: str, adb: Callable) -> None:
     """Save the current emulator state as the clean ``perf_base`` snapshot."""
     _snapshot(serial, adb, "save")
 
 
-def load_snapshot(serial: str, adb: Callable) -> None:
+def load_snapshot(serial: str, adb: Callable, package: str | None = None) -> None:
     """Restore the emulator to the ``perf_base`` snapshot and wait until it is back
     online.
 
@@ -369,7 +521,7 @@ def load_snapshot(serial: str, adb: Callable) -> None:
     for attempt in range(1, SNAPSHOT_LOAD_ATTEMPTS + 1):
         _snapshot(serial, adb, "load")
         try:
-            _wait_until_online(serial, adb)
+            _wait_until_online(serial, adb, package)
             if failures:
                 logging.warning("perf: %s came back after snapshot load attempt %d "
                                 "(earlier attempts left it offline)", serial, attempt)
@@ -413,6 +565,7 @@ class HostSampler:
         self._lock = threading.Lock()
         self._thread: threading.Thread | None = None
         self._cpu_outside: list[float] = []
+        self._cpu_system: list[float] = []
         self._free_ram: list[int] = []
         self.error: Exception | None = None
 
@@ -429,6 +582,7 @@ class HostSampler:
         free = int(ps.virtual_memory().available)
         with self._lock:
             self._cpu_outside.append(max(0.0, system - emulator / cores))
+            self._cpu_system.append(system)
             self._free_ram.append(free)
 
     def _loop(self) -> None:
@@ -482,6 +636,20 @@ class HostSampler:
     def noisy(self) -> bool:
         return self.host_cpu_outside_emulator > self.noisy_threshold
 
+    def summary(self) -> dict:
+        """What the sampler saw: sample count, host CPU % (whole machine, and the
+        part outside the emulator) as min/mean/max, and the lowest free RAM."""
+        with self._lock:
+            system, outside, ram = list(self._cpu_system), list(self._cpu_outside), list(self._free_ram)
+
+        def stats(values):
+            return ({"min": min(values), "mean": statistics.fmean(values), "max": max(values)}
+                    if values else None)
+        return {"samples": len(outside), "cpu_pct": stats(system),
+                "cpu_outside_emulator_pct": stats(outside),
+                "free_ram_min_bytes": min(ram) if ram else None,
+                "noisy_threshold_pct": self.noisy_threshold}
+
 
 # ---------------------------------------------------------------------------
 # One measurement run (M8.6)
@@ -496,7 +664,8 @@ def _step(serial: str, step: str, fn: Callable):
 
 
 def measure_once(serial: str, package: str, activity: str, adb: Callable,
-                 flow: Callable[[], object] | None = None, sampler=None) -> dict:
+                 flow: Callable[[], object] | None = None, sampler=None,
+                 reset: str = "snapshot") -> dict:
     """One measured run, in this exact order: snapshot load, force-stop,
     ``am start -W``, gfxinfo reset, flow, gfxinfo, meminfo.
 
@@ -507,7 +676,12 @@ def measure_once(serial: str, package: str, activity: str, adb: Callable,
     log. Returns ``{"launch_time", "jank_pct", "pss"}``.
     """
     component = activity if "/" in activity else f"{package}/{activity}"
-    _step(serial, "snapshot load", lambda: load_snapshot(serial, adb))
+    if reset == "snapshot":
+        _step(serial, "snapshot load", lambda: load_snapshot(serial, adb, package))
+    elif reset == "app":
+        _step(serial, "app reset", lambda: reset_app(serial, adb, package))
+    else:
+        raise ValueError(f"reset must be one of {RESET_MODES}, not {reset!r}")
     _step(serial, "force-stop", lambda: adb(serial, "shell", "am", "force-stop", package))
 
     def start() -> float:
@@ -557,7 +731,8 @@ def measure(serial: str, profile: dict, runs: int = DEFAULT_RUNS, *,
             flow: Callable[[], object] | None = None,
             baselines: dict | None = None, thresholds: Thresholds | None = None,
             adb: Callable | None = None, sampler_factory: Callable | None = None,
-            apk: str | None = None) -> list[PerfRow]:
+            apk: str | None = None, host_load_out: dict | None = None,
+            reset: str = "snapshot") -> list[PerfRow]:
     """Measure launch_time, jank_pct and pss on ``serial``; return three PerfRows.
 
     ``baselines`` maps metric -> value for THIS profile (read-only here; None or
@@ -570,6 +745,14 @@ def measure(serial: str, profile: dict, runs: int = DEFAULT_RUNS, *,
     Otherwise ``apk`` is installed with ``adb install -r`` (never launched) and
     the snapshot is saved from that state; with neither, a SnapshotError says the
     app must be installed first.
+
+    ``reset`` is how every run starts from a clean app: "snapshot" (default, the specified
+    behaviour: load ``perf_base``) or "app" (stop the app and ``pm clear`` it; no snapshot is
+    saved or loaded, ``apk`` is installed if given). See :func:`reset_app` for why "app" exists.
+
+    ``host_load_out``, if given, is filled in with the host-load summary of the
+    measurement window (see :meth:`HostSampler.summary`), so a caller can record
+    it without measuring again.
 
     Every error propagates as a PerfError naming the serial and the step.
     ``ValueError`` if no package is known or ``runs`` < 1.
@@ -585,8 +768,13 @@ def measure(serial: str, profile: dict, runs: int = DEFAULT_RUNS, *,
         def sampler_factory():
             return HostSampler(noisy_threshold=thresholds.noisy_host_cpu_pct)
 
+    if reset not in RESET_MODES:
+        raise ValueError(f"reset must be one of {RESET_MODES}, not {reset!r}")
     _step(serial, "isolation check", lambda: assert_isolated(adb, serial))
-    if not profile.get("perf_snapshot_ready"):
+    if reset == "app":
+        if apk:
+            _step(serial, "install apk", lambda: install_apk(serial, apk, adb))
+    elif not profile.get("perf_snapshot_ready"):
         if not apk:
             raise SnapshotError(
                 f"{serial}: snapshot prepare: no apk was given and profile['perf_snapshot_ready'] "
@@ -606,11 +794,11 @@ def measure(serial: str, profile: dict, runs: int = DEFAULT_RUNS, *,
     if not activity:
         activity = profile.get("activity") or _step(serial, "resolve launcher activity", resolve)
 
-    measure_once(serial, package, activity, adb, flow)  # warm-up, numbers discarded
+    measure_once(serial, package, activity, adb, flow, reset=reset)  # warm-up, numbers discarded
 
     with sampler_factory() as sampler:
         def batch() -> list[dict]:
-            return [measure_once(serial, package, activity, adb, flow, sampler)
+            return [measure_once(serial, package, activity, adb, flow, sampler, reset=reset)
                     for _ in range(runs)]
 
         results = batch()
@@ -618,6 +806,13 @@ def measure(serial: str, profile: dict, runs: int = DEFAULT_RUNS, *,
         if any(metric_spread(m, [r[m] for r in results]) > limit for m in METRICS):
             results = batch()
         noisy = bool(sampler.noisy)
+        if host_load_out is not None:
+            summarise = getattr(sampler, "summary", None)
+            if callable(summarise):
+                try:
+                    host_load_out.update(summarise())
+                except Exception:
+                    logging.exception("perf: could not summarise the host load")
 
     rows = []
     for metric in METRICS:

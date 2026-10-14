@@ -1,0 +1,23 @@
+# perf_config.yaml - thresholds for the M8 performance module.
+#
+# The values below are PROPOSALS from the Final Execution Plan until the lead approves them.
+# To approve: the lead puts their name in `approved_by` and the date in `approved_on`
+# (and, to allow baseline promotion, adds the names allowed to promote under
+# `baseline_approvers`). Nothing in the code fills these in or claims approval by itself;
+# while `approved_by` / `approved_on` are null the run summary says the thresholds are PROPOSED.
+#
+# Units: launch_regression_pct and pss_increase_pct are percent over the baseline;
+# jank_increase_points is percentage POINTS of janky frames; max_spread_pct is
+# (max - min) / median across the runs of one metric; noisy_host_cpu_pct is host CPU
+# outside the emulator. All numbers are EMULATOR-RELATIVE, never a claim about real phones.
+# launch_regression_pct and pss_increase_pct must be larger than max_spread_pct.
+
+launch_regression_pct: 20
+jank_increase_points: 5
+pss_increase_pct: 15
+max_spread_pct: 10
+noisy_host_cpu_pct: 30
+
+approved_by: null
+approved_on: null
+baseline_approvers: []

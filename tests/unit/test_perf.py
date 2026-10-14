@@ -3,7 +3,6 @@
 Every number measured here is emulator-relative.
 """
 import threading
-from itertools import count
 from pathlib import Path
 from types import SimpleNamespace
 
@@ -66,6 +65,12 @@ class FakeAdb:
             return fx("resolve_activity")
         if args[:3] == ("shell", "getprop", "sys.boot_completed"):
             return "1\n"
+        if args[:3] == ("shell", "service", "check"):
+            return f"Service {args[3]}: found\n"
+        if args[:3] == ("shell", "pm", "path"):
+            return f"package:/data/app/{args[3]}/base.apk\n"
+        if args[:3] == ("shell", "pm", "clear"):
+            return getattr(self, "clear_answer", "Success\n")
         if "force-stop" in args:
             return ""
         if args[:3] == ("shell", "am", "start"):
@@ -91,6 +96,8 @@ class FakeAdb:
                 out.append(a[3])  # "save" or "load"
             elif "resolve-activity" in a:
                 out.append("resolve")
+            elif a[:3] == ("shell", "pm", "clear"):
+                out.append("app-reset")
             elif "force-stop" in a:
                 out.append("force-stop")
             elif a[:3] == ("shell", "am", "start"):
@@ -294,6 +301,8 @@ def _snapshot_adb(boot_answers=("1\n",)):
             if isinstance(answer, Exception):
                 raise answer
             return answer
+        if args[:3] == ("shell", "service", "check"):
+            return f"Service {args[3]}: found\n"
         return fx("snapshot_ok")
     adb.calls = calls
     return adb
@@ -305,7 +314,9 @@ def test_snapshot_ok_and_command_shape():
     load_snapshot(SERIAL, adb)
     assert adb.calls == [(SERIAL, ("emu", "avd", "snapshot", "save", "perf_base")),
                          (SERIAL, ("emu", "avd", "snapshot", "load", "perf_base")),
-                         (SERIAL, ("shell", "getprop", "sys.boot_completed"))]
+                         (SERIAL, ("shell", "getprop", "sys.boot_completed")),
+                         (SERIAL, ("shell", "service", "check", "activity")),
+                         (SERIAL, ("shell", "service", "check", "package"))]
 
 
 def test_load_waits_through_the_offline_window_before_returning(monkeypatch):
@@ -315,6 +326,71 @@ def test_load_waits_through_the_offline_window_before_returning(monkeypatch):
     load_snapshot(SERIAL, adb)
     boots = [c for c in adb.calls if c[1][:2] == ("shell", "getprop")]
     assert len(boots) == 4  # two offline errors, one "not booted yet", then 1
+
+
+def test_load_keeps_waiting_while_system_services_are_not_up_yet(monkeypatch):
+    """sys.boot_completed can read 1 straight after a snapshot load while `am` still fails with
+    "Can't find service: activity" (seen on the Pixel_6 AVD, 14 Oct)."""
+    monkeypatch.setattr(perf_mod, "ADB_BOOT_POLL_S", 0.001)
+    activity = iter(["Service activity: not found\n", "Service activity: not found\n",
+                     "Service activity: found\n"])
+    calls = []
+
+    def adb(serial, *args, timeout=None):
+        calls.append(args)
+        if args[:3] == ("shell", "getprop", "sys.boot_completed"):
+            return "1\n"
+        if args == ("shell", "service", "check", "activity"):
+            return next(activity)
+        if args == ("shell", "service", "check", "package"):
+            return "Service package: found\n"
+        return fx("snapshot_ok")
+    load_snapshot(SERIAL, adb)
+    assert calls.count(("shell", "service", "check", "activity")) == 3   # two "not found", then up
+
+
+def test_load_fails_when_a_system_service_never_comes_up(monkeypatch):
+    monkeypatch.setattr(perf_mod, "ADB_BOOT_POLL_S", 0.001)
+    monkeypatch.setattr(perf_mod, "ADB_BOOT_TIMEOUT_S", 0.02)
+
+    def adb(serial, *args, timeout=None):
+        if args[:3] == ("shell", "getprop", "sys.boot_completed"):
+            return "1\n"
+        if args[:3] == ("shell", "service", "check"):
+            return "Service activity: not found\n"
+        return fx("snapshot_ok")
+    with pytest.raises(SnapshotError, match="activity"):
+        load_snapshot(SERIAL, adb)
+
+
+def test_load_waits_until_the_app_is_visible_when_a_package_is_given(monkeypatch):
+    """Right after a restore `am start` once failed with "Activity class ... does not exist"
+    (Pixel_6 AVD, 14 Oct) although boot and both services were up."""
+    monkeypatch.setattr(perf_mod, "ADB_BOOT_POLL_S", 0.001)
+    answers = iter([AdbError("pm: not found yet"), "", "package:/data/app/x/base.apk\n"])
+    calls = []
+
+    def adb(serial, *args, timeout=None):
+        calls.append(args)
+        if args[:3] == ("shell", "getprop", "sys.boot_completed"):
+            return "1\n"
+        if args[:3] == ("shell", "service", "check"):
+            return f"Service {args[3]}: found\n"
+        if args[:3] == ("shell", "pm", "path"):
+            answer = next(answers)
+            if isinstance(answer, Exception):
+                raise answer
+            return answer
+        return fx("snapshot_ok")
+    load_snapshot(SERIAL, adb, "com.example.app")
+    assert [a for a in calls if a[:3] == ("shell", "pm", "path")] == \
+        [("shell", "pm", "path", "com.example.app")] * 3
+
+
+def test_load_does_not_check_the_package_when_none_is_given():
+    adb = _snapshot_adb()
+    load_snapshot(SERIAL, adb)
+    assert not [c for c in adb.calls if c[1][:3] == ("shell", "pm", "path")]
 
 
 def test_save_does_not_wait_for_the_device():
@@ -338,6 +414,8 @@ def _flaky_adb(online_from_load):
             if state["loads"] >= online_from_load:
                 return "1\n"
             raise AdbError("adb.exe: device offline")
+        if args[:3] == ("shell", "service", "check"):
+            return f"Service {args[3]}: found\n"
         return fx("snapshot_ok")
     adb.calls, adb.state = calls, state
     return adb
@@ -484,7 +562,7 @@ def test_measure_once_call_order_is_exact():
     result = measure_once(SERIAL, PACKAGE, ACTIVITY, adb, lambda: adb.calls.append("flow"))
     assert adb.labels() == ["load", "force-stop", "start", "gfx-reset", "flow", "gfx", "meminfo"]
     assert result == {"launch_time": 99999.0, "jank_pct": 90.0, "pss": 900000.0}
-    steps = [c for c in adb.calls if c == "flow" or c[1][:2] != ("shell", "getprop")]  # skip the wait polls
+    steps = [c for c in adb.calls if c == "flow" or c[1][:2] not in (("shell", "getprop"), ("shell", "service"), ("shell", "pm"))]  # skip the wait polls
     assert steps[2][1] == ("shell", "am", "start", "-W", "-n", "com.example.app/.MainActivity")
     assert steps[3][1] == ("shell", "dumpsys", "gfxinfo", PACKAGE, "reset")
 
@@ -493,7 +571,7 @@ def test_measure_once_without_flow_skips_it():
     adb = steady_adb()
     measure_once(SERIAL, PACKAGE, "com.example.app/.MainActivity", adb)
     assert adb.labels() == ["load", "force-stop", "start", "gfx-reset", "gfx", "meminfo"]
-    steps = [c for c in adb.calls if c[1][:2] != ("shell", "getprop")]  # skip the wait polls
+    steps = [c for c in adb.calls if c[1][:2] not in (("shell", "getprop"), ("shell", "service"), ("shell", "pm"))]  # skip the wait polls
     assert steps[2][1][-1] == "com.example.app/.MainActivity"
 
 
@@ -788,7 +866,10 @@ def test_default_thresholds_are_the_proposed_values():
         t.runs = 9  # frozen
 
 
-def test_load_thresholds_no_file_returns_defaults_and_warns(tmp_path, caplog):
+def test_load_thresholds_no_file_returns_defaults_and_warns(tmp_path, caplog, monkeypatch):
+    # changed: load_thresholds(None) now reads the repo's perf_config.yaml, so the
+    # "no file" case points the environment variable at a file that does not exist
+    monkeypatch.setenv("VMF_PERF_CONFIG", str(tmp_path / "absent.yaml"))
     with caplog.at_level("WARNING"):
         assert load_thresholds(None) == Thresholds()
         assert load_thresholds(str(tmp_path / "missing.yaml")) == Thresholds()
@@ -805,13 +886,15 @@ def test_load_thresholds_partial_file_overrides_only_given_keys(tmp_path):
 
 
 def test_load_thresholds_full_file(tmp_path):
+    # changed: the old values (launch 1 < max spread 4) now fail the sanity check
     p = tmp_path / "t.yaml"
-    p.write_text("launch_regression_pct: 1\njank_increase_pts: 2\npss_regression_pct: 3\n"
-                 "max_spread_pct: 4\nnoisy_host_cpu_pct: 5\nruns: 6\n", encoding="utf-8")
-    assert load_thresholds(str(p)) == Thresholds(1.0, 2.0, 3.0, 4.0, 5.0, 6)
+    p.write_text("launch_regression_pct: 40\njank_increase_pts: 2\npss_regression_pct: 30\n"
+                 "max_spread_pct: 8\nnoisy_host_cpu_pct: 50\nruns: 6\n", encoding="utf-8")
+    assert load_thresholds(str(p)) == Thresholds(40.0, 2.0, 30.0, 8.0, 50.0, 6)
 
 
-def test_load_thresholds_rejects_bad_files_and_ignores_unknown_keys(tmp_path, caplog):
+def test_load_thresholds_rejects_bad_files_and_unknown_keys(tmp_path):
+    # changed: an unknown key used to be ignored with a warning; it is now an error
     p = tmp_path / "t.yaml"
     p.write_text("- a\n- b\n", encoding="utf-8")
     with pytest.raises(ValueError, match="mapping"):
@@ -820,9 +903,8 @@ def test_load_thresholds_rejects_bad_files_and_ignores_unknown_keys(tmp_path, ca
     with pytest.raises(ValueError, match="'runs'"):
         load_thresholds(str(p))
     p.write_text("mystery: 1\nruns: 3\n", encoding="utf-8")
-    with caplog.at_level("WARNING"):
-        assert load_thresholds(str(p)).runs == 3
-    assert any("mystery" in r.message for r in caplog.records)
+    with pytest.raises(ValueError, match="'mystery'"):
+        load_thresholds(str(p))
     p.write_text("", encoding="utf-8")
     assert load_thresholds(str(p)) == Thresholds()
 
@@ -1011,3 +1093,50 @@ def test_jank_and_pss_are_read_after_the_flow_and_only_once_per_run():
     labels = adb.labels()
     assert labels.count("gfx") == 1 and labels.count("meminfo") == 1
     assert labels.index("gfx-reset") < labels.index("flow") < labels.index("gfx") < labels.index("meminfo")
+
+
+# --- reset="app": no snapshot, the app is stopped and cleared before every run (14 Oct) -------------------
+
+def test_app_reset_mode_never_saves_or_loads_a_snapshot():
+    adb = steady_adb()
+    rows = run_measure(adb, reset="app")
+    labels = adb.labels()
+    assert "save" not in labels and "load" not in labels
+    assert labels.count("app-reset") == 6 and labels.count("start") == 6        # warm-up + 5 runs
+    assert labels[:2] == ["devices", "install"]                                 # the apk is still installed
+    assert [r.metric for r in rows] == ["launch_time", "jank_pct", "pss"]
+
+
+def test_app_reset_runs_before_force_stop_and_launch():
+    adb = steady_adb()
+    perf_mod.measure_once(SERIAL, PACKAGE, "com.example.app/.MainActivity", adb, reset="app")
+    assert adb.labels() == ["force-stop", "app-reset", "force-stop", "start", "gfx-reset", "gfx", "meminfo"]
+
+
+def test_app_reset_mode_without_an_apk_does_not_need_one():
+    adb = steady_adb()
+    measure(SERIAL, {"package": PACKAGE}, adb=adb, activity=ACTIVITY, sampler_factory=FakeSampler,
+            reset="app")
+    assert "install" not in adb.labels() and "save" not in adb.labels()
+
+
+def test_app_reset_reports_a_pm_clear_that_did_not_succeed():
+    adb = steady_adb()
+    adb.clear_answer = "Failed\n"
+    with pytest.raises(AdbError, match="pm clear"):
+        run_measure(adb, reset="app")
+
+
+def test_an_unknown_reset_mode_is_rejected_before_anything_runs():
+    adb = steady_adb()
+    with pytest.raises(ValueError, match="reset must be one of"):
+        run_measure(adb, reset="reboot")
+    assert adb.calls == []
+    with pytest.raises(ValueError, match="reset must be one of"):
+        perf_mod.measure_once(SERIAL, PACKAGE, ACTIVITY, adb, reset="reboot")
+
+
+def test_the_default_reset_mode_is_still_the_snapshot():
+    adb = steady_adb()
+    run_measure(adb)
+    assert adb.labels().count("load") == 6 and "app-reset" not in adb.labels()

@@ -28,6 +28,7 @@ from vmf.perf.perf import (  # noqa: F401
     format_perf_row,
     is_regression,
     load_snapshot,
+    load_approvers,
     load_thresholds,
     measure,
     measure_once,
@@ -44,14 +45,26 @@ from vmf.perf.perf import (  # noqa: F401
     save_baseline_snapshot,
     spread_pct,
     stabilise,
+    threshold_status,
     tier_ratio,
+)
+from vmf.perf.baselines import (  # noqa: F401
+    BaselineError,
+    BaselineStore,
+    PromotionRefused,
+    StorageBaselineStore,
+    YamlBaselineStore,
+    get_store,
+    sanitise_profile,
 )
 
 __all__ = [
     "AdbError", "FlowError", "HostSampler", "install_apk", "IsolationError", "PerfError",
     "PerfParseError", "SnapshotError", "Thresholds", "assert_isolated",
     "flags_regression_on_all_tiers", "format_perf_row", "is_regression",
-    "load_snapshot", "load_thresholds", "measure", "measure_once", "median", "metric_spread",
+    "load_snapshot", "load_thresholds", "load_approvers", "threshold_status",
+    "BaselineError", "BaselineStore", "PromotionRefused", "StorageBaselineStore",
+    "YamlBaselineStore", "get_store", "sanitise_profile", "measure", "measure_once", "median", "metric_spread",
     "parse_am_start_w", "parse_devices", "parse_gfxinfo", "parse_meminfo",
     "repeatability_ok", "resolve_launcher_activity", "run_and_store",
     "run_performance", "save_baseline_snapshot", "spread_pct", "stabilise",
