@@ -60,3 +60,6 @@ window*.xml
 # sample app build output and throw-away debug key
 sample_app/build/
 sample_app/debug.keystore
+sample_app/build_slow/
+sample_app/build_broken/
+sample_app/build_anr/

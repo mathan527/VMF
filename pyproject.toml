@@ -12,6 +12,9 @@ dependencies = [
     "PyYAML",
 ]
 
+[project.optional-dependencies]
+hang-detection = ["Pillow"]
+
 [tool.setuptools.packages.find]
 include = ["vmf*"]
 
