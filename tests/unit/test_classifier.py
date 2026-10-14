@@ -305,3 +305,83 @@ def test_last_of_several_oem_steps_is_the_trigger():
     steps = [_step(0, action="oem.doze"), _step(1, action="oem.trim_memory"),
              _step(2, status="fail")]
     assert classify(str(FIX / "crash.txt"), steps, package=PKG).trigger_behaviour == "trim_memory"
+
+
+# --- hang rule with real-looking screenshots (14 Oct: cursor / clock made a byte-exact hash useless) ----
+
+def _png(path, *, blink=False, clock=False, new_screen=False):
+    """A 200x400 screenshot: grey page, optionally a 2x10 'cursor', a status-bar clock, or a
+    completely different screen."""
+    from PIL import Image, ImageDraw
+    img = Image.new("RGB", (200, 400), (240, 240, 240))
+    draw = ImageDraw.Draw(img)
+    draw.rectangle([20, 200, 180, 240], fill=(255, 255, 255))                 # a text field
+    if blink:
+        draw.rectangle([60, 205, 61, 235], fill=(0, 0, 0))                    # the caret
+    if clock:
+        draw.rectangle([150, 5, 190, 15], fill=(0, 0, 0))                     # status-bar clock
+    if new_screen:
+        draw.rectangle([0, 60, 200, 340], fill=(10, 90, 200))                 # a different page
+    img.save(path)
+    return path
+
+
+def _shots_steps(tmp_path, variants, ms=12000, hier=b"<h/>"):
+    steps = []
+    for i, kw in enumerate(variants):
+        shot = _png(tmp_path / f"s{i}.png", **kw)
+        h = tmp_path / f"h{i}.xml"
+        h.write_bytes(hier(i) if callable(hier) else hier)
+        steps.append(_step(i, ms=ms, shot=shot, hier=h))
+    return steps
+
+
+def test_a_blinking_cursor_does_not_hide_a_hang(tmp_path):
+    steps = _shots_steps(tmp_path, [{}, {"blink": True}, {}, {"blink": True}])      # 36 s unchanged
+    assert classify(None, steps, package=PKG, pid_alive=lambda: True).result == "hang"
+
+
+def test_a_ticking_status_bar_clock_does_not_hide_a_hang(tmp_path):
+    steps = _shots_steps(tmp_path, [{}, {"clock": True}, {}, {"clock": True}])
+    assert classify(None, steps, package=PKG, pid_alive=lambda: True).result == "hang"
+
+
+def test_a_real_screen_change_is_not_a_hang(tmp_path):
+    steps = _shots_steps(tmp_path, [{}, {"new_screen": True}, {}, {"new_screen": True}])
+    assert classify(None, steps, package=PKG, pid_alive=lambda: True).result == "pass"
+
+
+def test_a_changed_hierarchy_is_not_a_hang_even_with_identical_pixels(tmp_path):
+    steps = _shots_steps(tmp_path, [{}, {}, {}, {}], hier=lambda i: f"<h n='{i}'/>".encode())
+    assert classify(None, steps, package=PKG, pid_alive=lambda: True).result == "pass"
+
+
+def test_window_id_changes_in_the_hierarchy_do_not_count_as_a_change(tmp_path):
+    steps = _shots_steps(tmp_path, [{}, {}, {}, {}],
+                         hier=lambda i: f'<n window-id="{10 + i}" text="x"/>'.encode())
+    assert classify(None, steps, package=PKG, pid_alive=lambda: True).result == "hang"
+
+
+def test_without_pillow_the_screenshots_must_match_exactly(tmp_path, monkeypatch):
+    import builtins
+    real_import = builtins.__import__
+
+    def no_pil(name, *args, **kwargs):
+        if name == "PIL" or name.startswith("PIL."):
+            raise ImportError("no Pillow")
+        return real_import(name, *args, **kwargs)
+    steps = _shots_steps(tmp_path, [{}, {"blink": True}, {}, {"blink": True}])
+    monkeypatch.setattr(builtins, "__import__", no_pil)
+    assert classifier._same_screen(steps[0].screenshot_path, steps[1].screenshot_path) is False
+    assert classify(None, steps, package=PKG, pid_alive=lambda: True).result == "pass"
+
+
+def test_screenshots_of_different_size_or_unreadable_images_are_not_the_same_screen(tmp_path):
+    from PIL import Image
+    a = _png(tmp_path / "a.png")
+    Image.new("RGB", (100, 100)).save(tmp_path / "b.png")
+    assert classifier._same_screen(str(a), str(tmp_path / "b.png")) is False
+    bad = tmp_path / "bad.png"
+    bad.write_bytes(b"not a png at all")
+    assert classifier._same_screen(str(a), str(bad)) is None
+    assert classifier._same_screen(str(a), str(tmp_path / "missing.png")) is None

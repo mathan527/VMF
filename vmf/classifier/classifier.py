@@ -3,7 +3,8 @@
 Owner: Mathan (M6)
 
 Verdicts are decided only from hard signals: logcat text, process state
-(``pid_alive``) and sha256 hashes of the evidence files. No AI, no vision.
+(``pid_alive``), a hash of the UI hierarchy and a pixel comparison of the
+screenshots. No AI, no vision.
 """
 import hashlib
 import logging
@@ -18,6 +19,16 @@ from vmf.results import Step, Verdict
 # seconds to count as a hang. NOTE: the value 30.0 still needs to be agreed
 # with the lead.
 HANG_THRESHOLD_S = 30.0
+
+# Two screenshots count as "the same screen" if at most this fraction of the compared pixels
+# changed. A byte-exact hash is too strict: on the Pixel_6 AVD a screen that did not change
+# still differed between steps (blinking text cursor, status-bar clock), so a real hang was
+# reported as "pass" (14 Oct, 2 of 2 hang trials). The status bar and navigation bar bands are
+# not compared. Needs Pillow; without it the comparison falls back to an exact hash.
+SCREEN_CHANGE_TOLERANCE = 0.002
+SCREEN_PIXEL_DELTA = 24             # grey-level difference that counts as a changed pixel
+SCREEN_IGNORE_TOP = 0.06            # fraction of the height: status bar
+SCREEN_IGNORE_BOTTOM = 0.04         # fraction of the height: navigation bar
 
 _CRASH_WINDOW = 5
 _LOGCAT_CLEAR_TIMEOUT_S = 10
@@ -123,21 +134,65 @@ def _file_hash(path: str) -> str | None:
     return hashlib.sha256(data).hexdigest() if data else None
 
 
+_WINDOW_ID_RE = re.compile(rb' window-id="\d+"')
+
+
+def _hierarchy_hash(path: str) -> str | None:
+    """sha256 of the hierarchy XML without ``window-id`` (an Android counter that changes
+    between sessions), or None if the file is missing or empty."""
+    try:
+        data = Path(path).read_bytes()
+    except (OSError, ValueError):
+        return None
+    return hashlib.sha256(_WINDOW_ID_RE.sub(b"", data)).hexdigest() if data else None
+
+
+def _same_screen(path_a: str, path_b: str) -> bool | None:
+    """True if two screenshots show the same screen, False if they differ, None if they
+    cannot be compared (missing or empty file, unreadable image)."""
+    hash_a, hash_b = _file_hash(path_a), _file_hash(path_b)
+    if hash_a is None or hash_b is None:
+        return None
+    if hash_a == hash_b:
+        return True
+    try:
+        from PIL import Image, ImageChops   # optional: tolerant comparison
+    except ImportError:
+        return False
+    try:
+        with Image.open(path_a) as a, Image.open(path_b) as b:
+            if a.size != b.size:
+                return False
+            width, height = a.size
+            box = (0, int(height * SCREEN_IGNORE_TOP), width, int(height * (1 - SCREEN_IGNORE_BOTTOM)))
+            diff = ImageChops.difference(a.convert("L").crop(box), b.convert("L").crop(box))
+            histogram = diff.histogram()
+            changed = sum(histogram[SCREEN_PIXEL_DELTA + 1:])
+            total = (box[2] - box[0]) * (box[3] - box[1])
+            return total > 0 and changed / total <= SCREEN_CHANGE_TOLERANCE
+    except Exception:
+        logging.warning("classifier: cannot compare screenshots %s and %s", path_a, path_b,
+                        exc_info=True)
+        return None
+
+
 def _is_hang(steps: list[Step], threshold_s: float) -> bool:
     """True if a run of steps with unchanged evidence spans >= threshold.
 
-    A step extends the run when both its screenshot and hierarchy hashes equal
-    the previous step's. The run's duration is the sum of ``duration_ms`` of
-    the steps that matched their predecessor. Unreadable files make a pair
-    "not comparable", which breaks the run.
+    A step extends the run when its hierarchy hash equals the previous step's and its
+    screenshot shows the same screen (``_same_screen``: identical, or within the pixel
+    tolerance). The run's duration is the sum of ``duration_ms`` of the steps that
+    matched their predecessor. Unreadable files make a pair "not comparable", which
+    breaks the run.
     """
     run_ms = 0
-    prev: tuple[str, str] | None = None
+    prev: tuple[str, str] | None = None     # (screenshot path, hierarchy hash) of the last step
     for step in steps:
-        shot = _file_hash(step.screenshot_path)
-        hier = _file_hash(step.hierarchy_path)
-        cur = (shot, hier) if shot is not None and hier is not None else None
-        if cur is not None and cur == prev:
+        hier = _hierarchy_hash(step.hierarchy_path)
+        cur = (step.screenshot_path, hier) if hier is not None and step.screenshot_path else None
+        same = (cur is not None and prev is not None and cur[1] == prev[1]
+                and _same_screen(prev[0], cur[0]) is True)
+        if same:
             run_ms += step.duration_ms
             if run_ms >= threshold_s * 1000:
                 return True
