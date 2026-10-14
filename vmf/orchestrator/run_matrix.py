@@ -17,12 +17,13 @@ are new values for ``device_results.result`` and need confirming with Gagan.
 unchanged; ``python -m vmf --dry-run`` uses them.
 """
 import argparse
+import hashlib
 import json
 import logging
 import os
 import queue
-import re
 import shutil
+import statistics
 import subprocess
 import sys
 import threading
@@ -31,7 +32,7 @@ import traceback
 import urllib.request
 from concurrent.futures import CancelledError, ThreadPoolExecutor, as_completed
 from contextlib import contextmanager
-from dataclasses import dataclass, field
+from dataclasses import asdict, dataclass, field
 from pathlib import Path
 from typing import Callable
 
@@ -39,10 +40,12 @@ import yaml
 
 from vmf import api, classifier, geometry, oem_packs, perf, provision, report, runner, storage
 from vmf.config import APPIUM_URL, RESULTS_DIR
-from vmf.perf.perf import EMULATOR_PROCESS_NAMES, Thresholds
-from vmf.results import Verdict
-from vmf.runner.locator_fallback import (FallbackConfig, config_from_options, read_healed_count,
-                                         validate_fallback_steps)
+from vmf.perf.baselines import get_store, sanitise_profile
+from vmf.perf.perf import (EMULATOR_PROCESS_NAMES, HostSampler, Thresholds, load_thresholds,
+                           threshold_status, tier_ratio)
+from vmf.results import PerfRow, Verdict
+from vmf.runner.locator_fallback import (FallbackConfig, config_from_options, read_fallback_counts,
+                                         strip_tag, validate_fallback_steps)
 
 
 # ---------------------------------------------------------------------------
@@ -75,6 +78,18 @@ PREFLIGHT_MIN_DISK_GB = 20
 APPIUM_STATUS_TIMEOUT_S = 5
 # Seconds to wait for `adb shell pidof`.
 PIDOF_TIMEOUT_S = 10
+# Seconds to keep capturing logcat after the scenario's last step before it is stopped and
+# classified. A crash that happens in the last moments (14 Oct: `am crash` as the final event, 2
+# of 5 trials classified "pass") is written to logcat and the process dies a moment AFTER the
+# last step returned; stopping at once missed it. Also the time the process gets to die before
+# pidof is asked.
+LOGCAT_GRACE_S = 2.0
+# Scenario actions that kill the app on purpose. If a scenario ENDS with one of them the app is
+# expected to be gone, so the "process gone" crash rule is not applied.
+DELIBERATE_KILL_ACTIONS = ("oem.background_kill",)
+# Results that an overloaded host can cause (a stalled emulator makes an app miss its 5 s input
+# deadline). A verdict of one of these is annotated when the host was busy during the run.
+HOST_SENSITIVE_RESULTS = ("anr", "hang", "crash")
 # Android API level per tier, from the catalogue header (low=10, medium=12, high=15).
 # Only used to build a profile name when the profile has no "api" key.
 TIER_API = {"low": 29, "medium": 31, "high": 35}
@@ -134,7 +149,7 @@ def profile_name(profile: dict) -> str:
         if api_level is None:
             raise ValueError(f"profile has no name and no api for tier {tier!r}: {profile}")
         raw = f"{brand}_{tier}_{api_level}".lower()
-    return re.sub(r"[^\w.-]+", "_", raw.strip())
+    return sanitise_profile(raw)
 
 
 def load_profiles(path: str) -> list[dict]:
@@ -303,6 +318,9 @@ class Deps:
     # (run_id) -> True | False | None. None means "cannot be verified": storage has
     # no public function to look a run up, so the default cannot answer.
     run_exists: Callable
+    # () -> context manager with .summary() and .noisy (HostSampler). Watches the host while
+    # the scenario runs, so an ANR or hang caused by an overloaded laptop can be told apart.
+    host_sampler: Callable = HostSampler
 
 
 def _pid_alive_factory(serial: str, package: str,
@@ -424,9 +442,11 @@ class RunContext:
     external_stop: threading.Event | None = None    # options["stop_event"], if any
     thresholds: Thresholds = field(default_factory=Thresholds)
     baselines: dict = field(default_factory=dict)
+    thresholds_status: dict = field(default_factory=dict)   # approval status of the thresholds
     max_parallel: int = 1
     slot_poll_s: float = SLOT_POLL_S
     locator_fallback: FallbackConfig | None = None   # M14, functional pass only
+    logcat_grace_s: float = field(default_factory=lambda: LOGCAT_GRACE_S)
 
     def stopping(self) -> bool:
         return self.stop_event.is_set() or (
@@ -436,6 +456,23 @@ class RunContext:
 # ---------------------------------------------------------------------------
 # Cleanup helpers
 # ---------------------------------------------------------------------------
+
+def _host_load(sampler) -> tuple[bool, dict | None]:
+    """(busy, summary) from a finished sampler. Never raises: a sampler problem is logged and
+    reported as "not busy, no data"."""
+    try:
+        summary = sampler.summary()
+        busy = bool(sampler.noisy) and bool(summary and summary.get("cpu_outside_emulator_pct"))
+        return busy, summary
+    except Exception:
+        log.exception("host load summary failed; continuing without it")
+        return False, None
+
+
+def _ends_with_deliberate_kill(steps) -> bool:
+    """True if the scenario's last step kills the app on purpose."""
+    return bool(steps) and strip_tag(steps[-1].action) in DELIBERATE_KILL_ACTIONS
+
 
 def _guarded(label: str, fn: Callable, errors: list[str],
              timeout: float = CLEANUP_TIMEOUT_S) -> bool:
@@ -526,12 +563,12 @@ def _cleanup_failed_start(ctx: RunContext, slot: Slot, before: set | None,
 def _result_dict(profile: dict, *, result: str, cause: str = "", serial=None,
                  findings_count: int = 0, duration_s: float = 0.0, error: bool = False,
                  warnings: list | None = None, cleanup_errors: list | None = None,
-                 quarantine: bool = False, locator_fallbacks: int = 0) -> dict:
+                 quarantine: bool = False, locator_fallbacks: dict | None = None) -> dict:
     return {"profile": profile_name(profile), "serial": serial, "tier": profile.get("tier"),
             "result": result, "cause": cause, "findings_count": findings_count,
             "duration_s": duration_s, "error": error, "warnings": warnings or [],
             "cleanup_errors": cleanup_errors or [], "quarantine": quarantine,
-            "locator_fallbacks": locator_fallbacks}
+            "locator_fallbacks": locator_fallbacks or {"ai_assisted": 0, "unresolved": 0}}
 
 
 def _cancelled_result(profile: dict) -> dict:
@@ -631,11 +668,12 @@ def run_profile(profile: dict, ctx: RunContext, slot: Slot) -> dict:
     and time-limited): stop logcat if still running, reset_profile, stop_device;
     after a failed start_device, stop_device on ``emulator-<port>``.
 
-    DECISION: ``pid_alive`` asks the device at the END of the scenario whether
-    the package still has a process. The app is expected to be alive then, so a
-    dead process means a crash with cause "process gone". A scenario that ends
-    after killing the app on purpose (for example an oem.background_kill as its
-    last step) would be reported as a crash. If adb cannot answer, the app is
+    DECISION: ``pid_alive`` asks the device at the END of the scenario (after
+    LOGCAT_GRACE_S) whether the package still has a process. The app is expected
+    to be alive then, so a dead process means a crash with cause "process gone".
+    A scenario whose LAST step kills the app on purpose (DELIBERATE_KILL_ACTIONS,
+    for example oem.background_kill) skips that rule, with a warning; a kill in
+    the middle of a scenario is not affected. If adb cannot answer, the app is
     assumed alive and the stored profile config gets ``pid_check_failed: true``.
 
     An Exception anywhere is logged with its traceback and saved as an "error"
@@ -660,7 +698,7 @@ def run_profile(profile: dict, ctx: RunContext, slot: Slot) -> dict:
     start_failed = False
     quarantine = False
     before = None
-    fallback_count = 0
+    fallback_counts = None
     try:
         before = _emulator_snapshot(deps)
         serial = deps.start_device(profile, slot.port)
@@ -681,24 +719,32 @@ def run_profile(profile: dict, ctx: RunContext, slot: Slot) -> dict:
         proc = deps.start_logcat(serial, logcat_path)
 
         stage = "runner"
+        sampler = deps.host_sampler()
         runner_kwargs = {"run_id": run_id, "profile": name, "mjpeg_port": slot.mjpeg_port,
                          "chromedriver_port": slot.chromedriver_port}
         if ctx.locator_fallback is not None:  # M14: only passed when enabled, never to the perf flow
             runner_kwargs["locator_fallback"] = ctx.locator_fallback
-        returned_id, steps = deps.runner_run(
-            serial, ctx.apk, ctx.scenario, slot.system_port, **runner_kwargs)
+        with sampler:
+            returned_id, steps = deps.runner_run(
+                serial, ctx.apk, ctx.scenario, slot.system_port, **runner_kwargs)
         run_id = returned_id if returned_id is not None else run_id
         if ctx.locator_fallback is not None:
-            fallback_count = read_healed_count(f"{RESULTS_DIR}/{run_id}/{name}")
+            fallback_counts = read_fallback_counts(f"{RESULTS_DIR}/{run_id}/{name}")
 
         stage = "stop_logcat"
+        if ctx.logcat_grace_s > 0:
+            ctx.stop_event.wait(ctx.logcat_grace_s)   # late crash lines, and the process dying
         deps.stop_logcat(proc)
         logcat_stopped = True
 
         stage = "classify"
-        verdict = deps.classify(
-            logcat_path, steps, package=ctx.package,
-            pid_alive=deps.pid_alive_factory(serial, ctx.package, pid_failures.append))
+        if _ends_with_deliberate_kill(steps):
+            pid_alive = None
+            warnings.append("process-gone check skipped: the scenario ends after "
+                            f"{strip_tag(steps[-1].action)}, which kills the app on purpose")
+        else:
+            pid_alive = deps.pid_alive_factory(serial, ctx.package, pid_failures.append)
+        verdict = deps.classify(logcat_path, steps, package=ctx.package, pid_alive=pid_alive)
         if pid_failures:
             warnings.extend(pid_failures)
 
@@ -709,11 +755,20 @@ def run_profile(profile: dict, ctx: RunContext, slot: Slot) -> dict:
         findings_count = len(findings)
 
         final = _final_verdict(verdict, findings)
+        host_busy, host_load = _host_load(sampler)
+        if host_busy and final.result in HOST_SENSITIVE_RESULTS:
+            # The laptop was overloaded while the scenario ran (14 Oct: an idle app ANRed at start-up
+            # while tests ran next to the emulator). The verdict stands, but it is marked.
+            note = (f" [host busy: {host_load['cpu_outside_emulator_pct']['mean']:.0f}% CPU outside "
+                    "the emulator during the run; re-run to confirm]")
+            final = Verdict(result=final.result, cause=final.cause + note,
+                            failed_step=final.failed_step, trigger_behaviour=final.trigger_behaviour)
+            warnings.append("host busy during the run: the " + final.result + " may be a stall")
         stage = "save_profile_config"
         deps.save_profile_config(run_id, name, {
             **readback, "profile": name, "serial": serial, "port": slot.port,
             "system_port": slot.system_port, "tier": profile.get("tier"), "zones": zones,
-            "pid_check_failed": bool(pid_failures)})
+            "pid_check_failed": bool(pid_failures), "host_busy": host_busy, "host_load": host_load})
         stage = "save_device_result"
         deps.save_device_result(run_id, name, final)
         result, cause = final.result, final.cause
@@ -735,7 +790,7 @@ def run_profile(profile: dict, ctx: RunContext, slot: Slot) -> dict:
                         findings_count=findings_count,
                         duration_s=round(time.monotonic() - started, 3), error=failed,
                         warnings=warnings, cleanup_errors=cleanup_errors,
-                        quarantine=quarantine, locator_fallbacks=fallback_count)
+                        quarantine=quarantine, locator_fallbacks=fallback_counts)
 
 
 def _functional_task(profile: dict, ctx: RunContext, pool: SlotPool) -> dict:
@@ -880,6 +935,54 @@ def _perf_flow(ctx: RunContext, serial: str, slot: Slot, name: str) -> None:
         raise ScenarioFailed(f"scenario steps {failed} failed on profile {name}")
 
 
+PERF_META_NAME = "perf_meta.json"
+# Bytes read at a time when hashing the APK.
+_HASH_CHUNK = 1024 * 1024
+
+
+def _sha256_file(path: str) -> str | None:
+    """sha256 of a file, or None (logged with the traceback) if it cannot be read."""
+    try:
+        digest = hashlib.sha256()
+        with open(path, "rb") as f:
+            for chunk in iter(lambda: f.read(_HASH_CHUNK), b""):
+                digest.update(chunk)
+        return digest.hexdigest()
+    except OSError:
+        log.exception("could not hash %s for perf_meta.json", path)
+        return None
+
+
+def _write_perf_meta(ctx: RunContext, profile: dict, name: str, rows: list, host_load: dict) -> str | None:
+    """Write results/<run_id>/<profile>/perf_meta.json and return its path; None (logged,
+    never raised) if it could not be written.
+
+    storage's perf_results table has no host_load or build column (requested from Gagan),
+    so this file is the interim record. It also holds the per-metric medians that
+    ``python -m vmf.perf promote`` reads. Every number is EMULATOR-RELATIVE.
+    """
+    try:
+        metrics = [asdict(r) for r in rows]
+        meta = {
+            "profile": name, "run_id": ctx.run_id, "label": "emulator-relative",
+            "tier": profile.get("tier"),
+            "build": {"apk": os.path.basename(ctx.apk), "sha256": _sha256_file(ctx.apk)},
+            "runs": ctx.thresholds.runs,
+            "metrics": metrics,
+            "spread_pct": {m["metric"]: m["spread_pct"] for m in metrics},
+            "noisy": any(m["noisy"] for m in metrics),
+            "unstable": any(m["unstable"] for m in metrics),
+            "host_load": host_load,
+            "thresholds": threshold_values(ctx.thresholds),
+            "thresholds_approved": bool(ctx.thresholds_status.get("approved")),
+            "baseline_compared": {m["metric"]: m["baseline"] is not None for m in metrics},
+        }
+        return _write_json(ctx.run_id, name, PERF_META_NAME, meta)
+    except Exception:
+        log.exception("could not write %s for %s", PERF_META_NAME, name)
+        return None
+
+
 def _perf_on_slot(profile: dict, ctx: RunContext, slot: Slot) -> dict:
     deps = ctx.deps
     name = profile_name(profile)
@@ -897,13 +1000,19 @@ def _perf_on_slot(profile: dict, ctx: RunContext, slot: Slot) -> dict:
         if ctx.apply_settings:
             deps.apply_profile_settings(serial, profile)
         stage = "measure"
+        host_load: dict = {}
         rows = deps.perf_run_and_store(
             ctx.run_id, name, serial, profile, package=ctx.package, apk=ctx.apk,
             flow=lambda: _perf_flow(ctx, serial, slot, name),
-            baselines=ctx.baselines.get(name), thresholds=ctx.thresholds)
+            baselines=ctx.baselines.get(name), thresholds=ctx.thresholds,
+            runs=ctx.thresholds.runs, host_load_out=host_load)
         regressions = [r.metric for r in rows if deps.perf_is_regression(r, ctx.thresholds)]
         entry = {"profile": name, "status": "ok", "rows": len(rows),
-                 "regressions": regressions, "cleanup_errors": cleanup_errors}
+                 "regressions": regressions, "cleanup_errors": cleanup_errors,
+                 "metrics": [asdict(r) for r in rows]}
+        meta_path = _write_perf_meta(ctx, profile, name, rows, host_load)
+        if meta_path:
+            entry["perf_meta"] = meta_path
     except Exception as e:
         log.exception("performance pass failed for %s at stage %s", name, stage)
         start_failed = serial is None and stage == "start_device"
@@ -1118,6 +1227,53 @@ class _Plan:
     performance_pass: bool
     apply_settings: bool
     locator_fallback: FallbackConfig | None = None
+    thresholds_status: dict = field(default_factory=dict)
+    baseline_source: str = "options"
+    baseline_error: str | None = None
+    no_baseline: list = field(default_factory=list)
+
+
+def _resolve_thresholds(options: dict, performance_pass: bool) -> tuple[Thresholds, dict]:
+    """``options["thresholds"]`` wins; else perf_config.yaml (see perf.load_thresholds).
+
+    Also returns the approval status. It is never reported as approved unless
+    perf_config.yaml itself carries ``approved_by`` and ``approved_on``; thresholds
+    passed in options carry no approval at all.
+    """
+    given = options.get("thresholds")
+    if given:
+        return given, {"approved": False, "approved_by": None, "approved_on": None,
+                       "source": "options['thresholds']"}
+    if not performance_pass:
+        return Thresholds(), {"approved": False, "approved_by": None, "approved_on": None,
+                              "source": "not used (performance pass off)"}
+    return load_thresholds(), threshold_status()
+
+
+def _resolve_baselines(options: dict, names: list, performance_pass: bool) -> tuple[dict, str, str | None]:
+    """``options["baselines"]`` wins; else the baseline store (perf.baselines.get_store).
+
+    Returns ``(baselines by profile, where they came from, error text or None)``. A
+    store that cannot be read is logged and the profiles are measured WITHOUT baselines.
+    """
+    given = options.get("baselines")
+    if given is not None:
+        if not isinstance(given, dict):
+            raise ValueError("option 'baselines' must be a dict keyed by (sanitised) profile name")
+        for key in given:
+            if key not in names:
+                log.warning("baselines key %r matches no profile (profile names are sanitised, "
+                            "for example spaces become '_'; known: %s)", key, names)
+        return given, "options", None
+    if not performance_pass:
+        return {}, "not used (performance pass off)", None
+    store = get_store()
+    try:
+        found = store.load_all(names)
+    except Exception as e:
+        log.exception("could not load baselines from %s; measuring without baselines", store.name)
+        return {}, store.name, f"{type(e).__name__}: {e}"
+    return found, store.name, None
 
 
 def _validate_options(options: dict) -> _Plan:
@@ -1154,13 +1310,10 @@ def _validate_options(options: dict) -> _Plan:
     package = options.get("package") or scenario_package
     if not package:
         raise ValueError("no package: pass option 'package' or set 'package' in the scenario")
-    baselines = options.get("baselines") or {}
-    if not isinstance(baselines, dict):
-        raise ValueError("option 'baselines' must be a dict keyed by (sanitised) profile name")
-    for key in baselines:
-        if key not in names:
-            log.warning("baselines key %r matches no profile (profile names are sanitised, "
-                        "for example spaces become '_'; known: %s)", key, names)
+    performance_pass = bool(options.get("performance_pass", True))
+    thresholds, thresholds_status_ = _resolve_thresholds(options, performance_pass)
+    baselines, baseline_source, baseline_error = _resolve_baselines(options, names, performance_pass)
+    no_baseline = [n for n in names if n not in baselines] if performance_pass else []
     locator_fallback = config_from_options(options)
     if locator_fallback is not None:  # reject a malformed `fallback: true` step before anything starts
         with open(scenario, encoding="utf-8") as f:
@@ -1168,10 +1321,12 @@ def _validate_options(options: dict) -> _Plan:
     return _Plan(apk=apk, scenario=scenario, scenario_name=scenario_name, package=package,
                  profiles=profiles, names=names,
                  max_parallel=resolve_max_parallel(options, len(profiles)),
-                 baselines=baselines, thresholds=options.get("thresholds") or Thresholds(),
-                 performance_pass=bool(options.get("performance_pass", True)),
+                 baselines=baselines, thresholds=thresholds,
+                 performance_pass=performance_pass,
                  apply_settings=bool(options.get("apply_settings", True)),
-                 locator_fallback=locator_fallback)
+                 locator_fallback=locator_fallback, thresholds_status=thresholds_status_,
+                 baseline_source=baseline_source, baseline_error=baseline_error,
+                 no_baseline=no_baseline)
 
 
 def main(run_id: int | None, options: dict, deps: Deps | None = None) -> dict:
@@ -1222,7 +1377,14 @@ def main(run_id: int | None, options: dict, deps: Deps | None = None) -> dict:
                          thresholds=plan.thresholds, baselines=plan.baselines,
                          max_parallel=plan.max_parallel,
                          slot_poll_s=options.get("slot_poll_s", SLOT_POLL_S),
-                         locator_fallback=plan.locator_fallback)
+                         locator_fallback=plan.locator_fallback,
+                         logcat_grace_s=options.get("logcat_grace_s", LOGCAT_GRACE_S),
+                         thresholds_status=plan.thresholds_status)
+        if plan.performance_pass:
+            if not plan.thresholds_status.get("approved"):
+                log.warning("perf thresholds are PROPOSED, not approved by the lead")
+            for missing in plan.no_baseline:
+                log.warning("no baseline for %s: it is measured but NOT compared with a baseline", missing)
         preflight_pids = preflight(deps, options)
         functional, interrupt, quarantined = _functional_pass(ctx, plan.profiles,
                                                               plan.max_parallel)
@@ -1254,7 +1416,7 @@ def main(run_id: int | None, options: dict, deps: Deps | None = None) -> dict:
         status = "leftovers"
     else:
         status = "ok"
-    return {
+    summary = {
         "run_id": run_id,
         "status": status,
         "counts": counts,
@@ -1267,8 +1429,14 @@ def main(run_id: int | None, options: dict, deps: Deps | None = None) -> dict:
                         for n in names if perf_results.get(n, {}).get("status") == "error"],
         "cancelled": [r["profile"] for r in results if r["result"] == RESULT_CANCELLED],
         "quarantined_ports": quarantined,
-        "locator_fallbacks": {r["profile"]: r["locator_fallbacks"]
-                              for r in results if r.get("locator_fallbacks")},
+        "locator_fallbacks": {r["profile"]: r["locator_fallbacks"] for r in results
+                              if r["locator_fallbacks"]["ai_assisted"] or r["locator_fallbacks"]["unresolved"]},
+        "thresholds": {**plan.thresholds_status, "values": threshold_values(plan.thresholds)},
+        "baselines": {"source": plan.baseline_source, "error": plan.baseline_error},
+        "no_baseline": plan.no_baseline,
+        "baseline_notes": _baseline_notes(plan, perf_results),
+        "perf_meta": {n: perf_results[n]["perf_meta"] for n in names
+                      if perf_results.get(n, {}).get("perf_meta")},
         "leftover_check": leftover["check"],
         "leftover_processes": leftover["processes"],
         "leftovers_killed": leftover["killed"],
@@ -1277,6 +1445,49 @@ def main(run_id: int | None, options: dict, deps: Deps | None = None) -> dict:
         "max_parallel": plan.max_parallel,
         "duration_s": round(time.monotonic() - started, 3),
     }
+    ratios = _tier_ratio_summary(plan, perf_results)
+    if ratios:   # only when a low-tier AND a high-tier profile were both measured
+        summary["tier_ratio"] = ratios
+    return summary
+
+
+def threshold_values(thresholds: Thresholds) -> dict:
+    """The threshold numbers only. Approval is reported once, from perf_config.yaml, under
+    summary["thresholds"]["approved"]; a Thresholds object never vouches for itself."""
+    return {k: v for k, v in asdict(thresholds).items() if not k.startswith("approved")}
+
+
+def _baseline_notes(plan: _Plan, perf_results: dict) -> list[str]:
+    """"no baseline for X" for every profile without one, and "no baseline for X/metric"
+    for a measured metric that had none, so no number is reported without saying
+    whether it was compared with a baseline (M8.12)."""
+    notes = [f"no baseline for {n}" for n in plan.no_baseline]
+    for name in plan.names:
+        if name in plan.no_baseline:
+            continue
+        for m in perf_results.get(name, {}).get("metrics", []):
+            if m.get("baseline") is None:
+                notes.append(f"no baseline for {name}/{m['metric']}")
+    return notes
+
+
+def _tier_ratio_summary(plan: _Plan, perf_results: dict) -> dict | None:
+    """low-tier median / high-tier median per metric (perf.tier_ratio), from the profiles
+    of those tiers that were measured successfully; None unless both tiers have one."""
+    tiers = {profile_name(p): str(p.get("tier", "")).lower() for p in plan.profiles}
+    by_tier: dict[str, dict[str, list[float]]] = {}
+    for name, entry in perf_results.items():
+        if entry.get("status") != "ok":
+            continue
+        for m in entry.get("metrics", []):
+            by_tier.setdefault(tiers.get(name, ""), {}).setdefault(m["metric"], []).append(m["median"])
+    if not by_tier.get("low") or not by_tier.get("high"):
+        return None
+
+    def rows(tier: str) -> list[PerfRow]:
+        return [PerfRow(metric, statistics.median(values), 0.0, None, None, False, False)
+                for metric, values in by_tier[tier].items()]
+    return tier_ratio(rows("low"), rows("high")) or None
 
 
 def cli(argv: list[str] | None = None) -> int:
@@ -1300,7 +1511,18 @@ def cli(argv: list[str] | None = None) -> int:
                "performance_pass": not args.no_perf}
     if args.max_parallel is not None:
         options["max_parallel"] = args.max_parallel
-    summary = main(args.run_id, options)
+    try:
+        summary = main(args.run_id, options)
+    except (ValueError, KeyError, OSError) as exc:
+        # bad input (missing file, unknown option, duplicate names, ...): one clear line,
+        # exit code 2, the traceback is kept in the DEBUG log
+        log.debug("invalid input: %s", exc, exc_info=True)  # traceback only with -v/DEBUG
+        print(f"error: {exc}", file=sys.stderr)
+        return 2
+    except (PreflightError, RunNotFoundError) as exc:
+        log.debug("run not started: %s", exc, exc_info=True)
+        print(f"error: {exc}", file=sys.stderr)
+        return 1
     print(json.dumps(summary, indent=2, default=str))
     return 0
 

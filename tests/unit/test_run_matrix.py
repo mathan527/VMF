@@ -38,6 +38,27 @@ class Boom(BaseException):
     """A BaseException that is neither KeyboardInterrupt nor SystemExit."""
 
 
+class FakeHostSampler:
+    """Context manager with HostSampler's surface; ``busy`` and ``cpu`` are set by the test."""
+    busy = False
+    cpu = 5.0
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, *exc):
+        return False
+
+    @property
+    def noisy(self):
+        return type(self).busy
+
+    def summary(self):
+        return {"samples": 3, "cpu_pct": {"min": 1.0, "mean": 2.0, "max": 3.0},
+                "cpu_outside_emulator_pct": {"min": self.cpu, "mean": self.cpu, "max": self.cpu},
+                "free_ram_min_bytes": 1, "noisy_threshold_pct": 30}
+
+
 class Fakes:
     """Thread-safe, strict recording fakes for every Deps callable."""
 
@@ -82,6 +103,10 @@ class Fakes:
         self.run_exists_answer = "auto"  # "auto" | True | False | None
         self.fallback_args = []           # the locator_fallback kwarg of every runner_run call
         self.heal_counts = {}             # profile -> healed steps the fake runner reports (M14)
+        self.unresolved_counts = {}       # profile -> unresolved steps the fake runner reports (M14)
+        self.host_load = {}               # what the fake perf run reports as host load (perf_meta.json)
+        self.perf_median = {}             # profile -> launch_time median the fake perf run returns
+        self.perf_flags = {}              # profile -> (noisy, unstable) the fake perf run returns
 
     # -- helpers ------------------------------------------------------------
     def ev(self, kind, name=None, **extra):
@@ -170,11 +195,13 @@ class Fakes:
         name = self.serial_name[serial]
         with self.lock:
             self.fallback_args.append(locator_fallback)
-        if locator_fallback is not None and self.heal_counts.get(name):
+        if locator_fallback is not None and (self.heal_counts.get(name) or self.unresolved_counts.get(name)):
             side = Path(rm.RESULTS_DIR) / str(run_id) / name
             side.mkdir(parents=True, exist_ok=True)
             (side / "locator_fallbacks.json").write_text(
-                json.dumps({"healed": [{"step": i} for i in range(self.heal_counts[name])]}), encoding="utf-8")
+                json.dumps({"healed": [{"step": i} for i in range(self.heal_counts.get(name, 0))],
+                            "unresolved": [{"step": i} for i in range(self.unresolved_counts.get(name, 0))]}),
+                encoding="utf-8")
         self.ev("runner", name, system_port=system_port, run_id=run_id, profile=profile,
                 record=record, reuse=reuse_installed_app, mjpeg=mjpeg_port,
                 chromedriver=chromedriver_port)
@@ -229,7 +256,13 @@ class Fakes:
             self._maybe_fail("perf", profile_name)
             kw["flow"]()
             reg = 50.0 if profile_name in self.perf_regress else 1.0
-            return [PerfRow("launch_time", 1000.0, 1.0, 900.0, reg, False, False)]
+            out = kw.get("host_load_out")
+            if out is not None:
+                out.update(self.host_load)
+            noisy, unstable = self.perf_flags.get(profile_name, (False, False))
+            return [PerfRow("launch_time", self.perf_median.get(profile_name, 1000.0), 1.0,
+                            kw.get("baselines", {}) and kw["baselines"].get("launch_time", 900.0) or 900.0,
+                            reg, noisy, unstable)]
         finally:
             with self.lock:
                 self.perf_active -= 1
@@ -309,7 +342,7 @@ class Fakes:
             list_emulator_processes=self.list_emulator_processes,
             appium_status=self.appium_status, free_disk_gb=self.free_disk_gb,
             kill_process=self.kill_process, process_info=self.process_info,
-            run_exists=self.run_exists)
+            run_exists=self.run_exists, host_sampler=FakeHostSampler)
         return replace(d, **overrides) if overrides else d
 
 
@@ -1604,6 +1637,27 @@ def test_cli_run_id_flag_skips_create_run(tmp_path, scenario, monkeypatch, capsy
     assert fakes.count("create_run") == 0 and json.loads(capsys.readouterr().out)["run_id"] == 5
 
 
+def test_cli_reports_a_missing_profiles_file_in_one_line_with_exit_code_2(tmp_path, scenario, monkeypatch, capsys):
+    fakes = Fakes(tmp_path, runs=())
+    monkeypatch.setattr(rm, "default_deps", fakes.deps)
+    code = rm.cli(["--apk", "a.apk", "--scenario", scenario, "--profiles", str(tmp_path / "nope.yaml"), "--no-perf"])
+    captured = capsys.readouterr()
+    assert code == 2 and captured.out == ""
+    assert captured.err.startswith("error: ") and "Traceback" not in captured.err
+    assert fakes.count("create_run") == 0 and fakes.count("start") == 0
+
+
+def test_cli_reports_a_preflight_failure_in_one_line_with_exit_code_1(tmp_path, scenario, monkeypatch, capsys):
+    fakes = Fakes(tmp_path, runs=())
+    monkeypatch.setattr(rm, "default_deps", lambda: fakes.deps(appium_status=lambda: False))
+    prof = tmp_path / "profiles.yaml"
+    prof.write_text(yaml.safe_dump(make_profiles(1)), encoding="utf-8")
+    code = rm.cli(["--apk", "a.apk", "--scenario", scenario, "--profiles", str(prof), "--no-perf"])
+    captured = capsys.readouterr()
+    assert code == 1 and "Traceback" not in captured.err and captured.err.startswith("error: ")
+    assert fakes.count("start") == 0
+
+
 def test_default_deps_wires_the_real_modules():
     from vmf import classifier as c, geometry, oem_packs, perf, provision, runner, storage
     d = rm.default_deps()
@@ -1759,6 +1813,14 @@ def test_runner_default_capabilities_install_and_reset_the_app(runner_env):
         assert key not in caps
 
 
+def test_runner_leaves_the_app_running_when_the_session_ends(runner_env):
+    """Appium force-stops the app at session end unless dontStopAppOnReset is set; the
+    classifier checks pidof after the runner returned, so a stopped app = false crash."""
+    runner_mod.run("emulator-5554", "x/app.apk", runner_env.scenario, 8200)
+    caps = runner_env.options[0].to_capabilities()
+    assert caps["appium:dontStopAppOnReset"] is True
+
+
 def test_runner_reuse_installed_app_attaches_without_reinstalling(runner_env):
     runner_mod.run("emulator-5554", "x/app.apk", runner_env.scenario, 8200, reuse_installed_app=True)
     caps = runner_env.options[0].to_capabilities()
@@ -1887,10 +1949,14 @@ def test_a_non_local_ollama_host_is_rejected_before_anything_starts(tmp_path, sc
 def test_the_summary_counts_healed_steps_per_profile_from_the_sidecar(tmp_path, scenario):
     fakes = Fakes(tmp_path)
     fakes.heal_counts = {"p0": 2, "p2": 1}
+    fakes.unresolved_counts = {"p2": 3}
     summary = go(fakes, scenario, make_profiles(3), locator_fallback=True)
-    assert summary["locator_fallbacks"] == {"p0": 2, "p2": 1}      # profiles with no heals are omitted
+    # changed: the counts are now {"ai_assisted": n, "unresolved": m} per profile (workbook M14.2)
+    assert summary["locator_fallbacks"] == {"p0": {"ai_assisted": 2, "unresolved": 0},
+                                            "p2": {"ai_assisted": 1, "unresolved": 3}}   # profiles with none are omitted
     by = {r["profile"]: r for r in summary["profiles"]}
-    assert by["p0"]["locator_fallbacks"] == 2 and by["p1"]["locator_fallbacks"] == 0
+    assert by["p0"]["locator_fallbacks"] == {"ai_assisted": 2, "unresolved": 0}
+    assert by["p1"]["locator_fallbacks"] == {"ai_assisted": 0, "unresolved": 0}
     assert summary["counts"] == {"pass": 3}                        # healing never changes a verdict
 
 
@@ -1916,3 +1982,114 @@ def test_enabling_the_fallback_does_not_change_the_other_results(tmp_path, scena
     keep = ("counts", "status", "cancelled", "leftover_check", "quarantined_ports")
     assert {k: off[k] for k in keep} == {k: on[k] for k in keep}
     assert [(p["profile"], p["result"]) for p in off["profiles"]] == [(p["profile"], p["result"]) for p in on["profiles"]]
+
+
+# --- logcat grace and deliberate kills (14 Oct device run) ----------------------------------------------------
+
+def test_logcat_keeps_running_for_the_grace_period_after_the_last_step(tmp_path, scenario):
+    """A crash in the last moments of a scenario must still reach logcat: 2 of 5 real
+    `am crash` trials were classified pass when logcat was stopped at once."""
+    fakes = Fakes(tmp_path)
+    marks = {}
+
+    def runner_run(*a, **kw):
+        result = fakes.runner_run(*a, **kw)
+        marks["runner_returned"] = time.monotonic()
+        return result
+
+    def stop_logcat(proc):
+        marks["logcat_stopped"] = time.monotonic()
+        return fakes.stop_logcat(proc)
+    deps = fakes.deps(runner_run=runner_run, stop_logcat=stop_logcat)
+    go(fakes, scenario, make_profiles(1), deps=deps, logcat_grace_s=0.3)
+    assert marks["logcat_stopped"] - marks["runner_returned"] >= 0.25
+
+
+def test_the_grace_period_defaults_to_the_module_constant(monkeypatch):
+    monkeypatch.undo()                       # the autouse fixture sets it to 0 for the other tests
+    assert rm.LOGCAT_GRACE_S >= 1.0
+
+
+def test_a_zero_grace_period_adds_no_wait(tmp_path, scenario):
+    fakes = Fakes(tmp_path)
+    started = time.monotonic()
+    go(fakes, scenario, make_profiles(1), logcat_grace_s=0)
+    assert time.monotonic() - started < 2
+
+
+def test_a_scenario_that_ends_with_a_deliberate_kill_skips_the_process_gone_rule(tmp_path, scenario):
+    steps = [Step(0, "tap", "pass", 5, "", ""), Step(1, "oem.background_kill", "pass", 5, "", "")]
+    fakes = Fakes(tmp_path, steps_for=lambda name: steps)
+    result, _ = one(fakes, scenario)
+    (_, cls), = fakes.extras("classify")
+    assert cls["pid_alive_ok"] is False                      # no pid_alive callable was passed
+    assert any("process-gone check skipped" in w for w in result["warnings"])
+
+
+def test_a_kill_in_the_middle_of_a_scenario_keeps_the_process_gone_rule(tmp_path, scenario):
+    steps = [Step(0, "oem.background_kill", "pass", 5, "", ""), Step(1, "tap", "pass", 5, "", "")]
+    fakes = Fakes(tmp_path, steps_for=lambda name: steps)
+    one(fakes, scenario)
+    (_, cls), = fakes.extras("classify")
+    assert cls["pid_alive_ok"] is True
+
+
+def test_a_tagged_kill_action_still_counts_as_a_deliberate_kill():
+    class S:
+        action = "oem.background_kill [AI-ASSISTED]"
+    assert rm._ends_with_deliberate_kill([S()]) is True
+    assert rm._ends_with_deliberate_kill([]) is False
+
+
+# --- an overloaded host is recorded, and marks the results it can cause (14 Oct device run) -----------------
+
+@pytest.fixture
+def busy_host(monkeypatch):
+    monkeypatch.setattr(FakeHostSampler, "busy", True)
+    monkeypatch.setattr(FakeHostSampler, "cpu", 83.0)
+    yield
+    monkeypatch.setattr(FakeHostSampler, "busy", False)
+
+
+def test_an_anr_on_a_busy_host_is_marked_as_possibly_a_stall(tmp_path, scenario, busy_host):
+    fakes = Fakes(tmp_path, verdicts={"p0": Verdict("anr", "ANR in com.app", 2, None)})
+    result, _ = one(fakes, scenario)
+    assert result["result"] == "anr"                           # the verdict itself is unchanged
+    assert "host busy: 83% CPU outside the emulator" in result["cause"]
+    assert any("may be a stall" in w for w in result["warnings"])
+
+
+def test_a_pass_on_a_busy_host_is_left_alone(tmp_path, scenario, busy_host):
+    result, _ = one(Fakes(tmp_path), scenario)
+    assert result["result"] == "pass" and result["cause"] == "" and result["warnings"] == []
+
+
+def test_a_crash_or_hang_on_a_quiet_host_is_not_marked(tmp_path, scenario):
+    fakes = Fakes(tmp_path, verdicts={"p0": Verdict("hang", "UI unchanged", 1, None)})
+    result, _ = one(fakes, scenario)
+    assert result["result"] == "hang" and "host busy" not in result["cause"]
+
+
+def test_the_host_load_is_stored_with_the_profile_config(tmp_path, scenario, busy_host):
+    fakes = Fakes(tmp_path)
+    one(fakes, scenario)
+    config = fakes.configs["p0"]
+    assert config["host_busy"] is True and config["host_load"]["samples"] == 3
+
+
+def test_a_broken_sampler_never_fails_the_profile(tmp_path, scenario):
+    class Broken(FakeHostSampler):
+        def summary(self):
+            raise RuntimeError("psutil exploded")
+    fakes = Fakes(tmp_path)
+    result, _ = one(fakes, scenario, deps=fakes.deps(host_sampler=Broken))
+    assert result["result"] == "pass" and result["error"] is False
+
+
+def test_host_busy_helper_reports_not_busy_without_data():
+    class NoData:
+        noisy = True
+
+        def summary(self):
+            return {"samples": 0, "cpu_outside_emulator_pct": None}
+    assert rm._host_load(NoData()) == (False, {"samples": 0, "cpu_outside_emulator_pct": None})

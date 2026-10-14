@@ -239,7 +239,6 @@ def test_runner_run_scenario_dry_run_returns_steps():
 # 12b. companion module-level run_scenario
 def test_runner_runner_module_run_scenario():
     from vmf.runner.runner import run_scenario
-    from vmf.results import Step
     run_id, steps = run_scenario(
         serial="emulator-5554",
         apk="app.apk",
