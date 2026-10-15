@@ -12,4 +12,8 @@ This __init__.py re-exports the public API so both import styles work:
 """
 from vmf.classifier.classifier import (  # noqa: F401
     classify,
+    start_logcat,
+    stop_logcat,
 )
+
+__all__ = ["classify", "start_logcat", "stop_logcat"]

@@ -1,0 +1,19 @@
+# Scenario for the sample app built by sample_app/build.ps1 (package com.vmf.sample).
+name: "Sample"
+package: "com.vmf.sample"
+activity: ".MainActivity"   # used when the runner reuses the installed app
+steps:
+  - action: wait_for
+    locator: {content-desc: "login_button"}
+    timeout_s: 15
+  - action: type
+    locator: {content-desc: "email_input"}
+    text: "qa@test.com"
+  - action: tap
+    locator: {content-desc: "login_button"}
+  - action: assert_visible
+    locator: {text: "Welcome"}
+    timeout_s: 10
+  - action: swipe
+    direction: "up"
+  - action: home

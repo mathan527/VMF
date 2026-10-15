@@ -1,0 +1,14 @@
+{
+  "name": "checkbox_renamed",
+  "description": "terms checkbox renamed and reworded",
+  "package": "com.shop.app",
+  "action": "tap",
+  "intent": "tick the terms checkbox",
+  "locator": {
+    "resource_id": "com.shop.app:id/accept_terms"
+  },
+  "hierarchy": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\" ?><hierarchy rotation=\"0\"><node index=\"0\" text=\"12:30\" resource-id=\"\" class=\"android.view.View\" package=\"com.android.systemui\" content-desc=\"\" checkable=\"false\" checked=\"false\" clickable=\"false\" enabled=\"true\" focusable=\"false\" focused=\"false\" long-clickable=\"false\" password=\"false\" scrollable=\"false\" selected=\"false\" bounds=\"[0,0][1080,120]\" displayed=\"true\" /><node index=\"0\" text=\"\" resource-id=\"\" class=\"android.widget.FrameLayout\" package=\"com.shop.app\" content-desc=\"\" checkable=\"false\" checked=\"false\" clickable=\"false\" enabled=\"true\" focusable=\"false\" focused=\"false\" long-clickable=\"false\" password=\"false\" scrollable=\"false\" selected=\"false\" bounds=\"[0,120][1080,2400]\" displayed=\"true\"><node index=\"0\" text=\"I agree to the terms\" resource-id=\"com.shop.app:id/chk_agree\" class=\"android.widget.CheckBox\" package=\"com.shop.app\" content-desc=\"\" checkable=\"true\" checked=\"false\" clickable=\"true\" enabled=\"true\" focusable=\"true\" focused=\"false\" long-clickable=\"false\" password=\"false\" scrollable=\"false\" selected=\"false\" bounds=\"[100,800][980,920]\" displayed=\"true\" /><node index=\"0\" text=\"Send me offers\" resource-id=\"com.shop.app:id/chk_news\" class=\"android.widget.CheckBox\" package=\"com.shop.app\" content-desc=\"\" checkable=\"true\" checked=\"false\" clickable=\"true\" enabled=\"true\" focusable=\"true\" focused=\"false\" long-clickable=\"false\" password=\"false\" scrollable=\"false\" selected=\"false\" bounds=\"[100,950][980,1070]\" displayed=\"true\" /><node index=\"0\" text=\"Next\" resource-id=\"com.shop.app:id/btn_next\" class=\"android.widget.Button\" package=\"com.shop.app\" content-desc=\"\" checkable=\"false\" checked=\"false\" clickable=\"true\" enabled=\"true\" focusable=\"true\" focused=\"false\" long-clickable=\"false\" password=\"false\" scrollable=\"false\" selected=\"false\" bounds=\"[100,1200][980,1340]\" displayed=\"true\" /></node></hierarchy>",
+  "expected": {
+    "resource_id": "com.shop.app:id/chk_agree"
+  }
+}

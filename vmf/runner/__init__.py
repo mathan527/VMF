@@ -16,3 +16,5 @@ from vmf.runner.runner import (  # noqa: F401
     run,
     run_scenario,
 )
+
+__all__ = ["run", "run_scenario"]

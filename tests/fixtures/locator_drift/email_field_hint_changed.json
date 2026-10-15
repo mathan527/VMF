@@ -1,0 +1,14 @@
+{
+  "name": "email_field_hint_changed",
+  "description": "email field renamed; its hint text reads Your email",
+  "package": "com.shop.app",
+  "action": "type",
+  "intent": "enter the email address",
+  "locator": {
+    "resource_id": "com.shop.app:id/email"
+  },
+  "hierarchy": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\" ?><hierarchy rotation=\"0\"><node index=\"0\" text=\"12:30\" resource-id=\"\" class=\"android.view.View\" package=\"com.android.systemui\" content-desc=\"\" checkable=\"false\" checked=\"false\" clickable=\"false\" enabled=\"true\" focusable=\"false\" focused=\"false\" long-clickable=\"false\" password=\"false\" scrollable=\"false\" selected=\"false\" bounds=\"[0,0][1080,120]\" displayed=\"true\" /><node index=\"0\" text=\"\" resource-id=\"\" class=\"android.widget.FrameLayout\" package=\"com.shop.app\" content-desc=\"\" checkable=\"false\" checked=\"false\" clickable=\"false\" enabled=\"true\" focusable=\"false\" focused=\"false\" long-clickable=\"false\" password=\"false\" scrollable=\"false\" selected=\"false\" bounds=\"[0,120][1080,2400]\" displayed=\"true\"><node index=\"0\" text=\"Your email\" resource-id=\"com.shop.app:id/input_mail\" class=\"android.widget.EditText\" package=\"com.shop.app\" content-desc=\"\" checkable=\"false\" checked=\"false\" clickable=\"true\" enabled=\"true\" focusable=\"true\" focused=\"false\" long-clickable=\"false\" password=\"false\" scrollable=\"false\" selected=\"false\" bounds=\"[100,400][980,540]\" displayed=\"true\" /><node index=\"0\" text=\"Password\" resource-id=\"com.shop.app:id/input_pass\" class=\"android.widget.EditText\" package=\"com.shop.app\" content-desc=\"\" checkable=\"false\" checked=\"false\" clickable=\"true\" enabled=\"true\" focusable=\"true\" focused=\"false\" long-clickable=\"false\" password=\"true\" scrollable=\"false\" selected=\"false\" bounds=\"[100,600][980,740]\" displayed=\"true\" /><node index=\"0\" text=\"Continue\" resource-id=\"com.shop.app:id/btn_go\" class=\"android.widget.Button\" package=\"com.shop.app\" content-desc=\"\" checkable=\"false\" checked=\"false\" clickable=\"true\" enabled=\"true\" focusable=\"true\" focused=\"false\" long-clickable=\"false\" password=\"false\" scrollable=\"false\" selected=\"false\" bounds=\"[100,900][980,1040]\" displayed=\"true\" /></node></hierarchy>",
+  "expected": {
+    "resource_id": "com.shop.app:id/input_mail"
+  }
+}

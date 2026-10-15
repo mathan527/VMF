@@ -1,6 +1,9 @@
 # Runtime dependencies (M4 — Appium scenario runner)
 Appium-Python-Client
 PyYAML
+psutil
+# Optional: tolerant screenshot comparison for the M6 hang rule (falls back to an exact hash)
+Pillow
 
 # Test dependencies
 pytest

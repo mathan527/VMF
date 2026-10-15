@@ -1,0 +1,4 @@
+10-06 12:00:01.100  4242  4242 D MainActivity: onCreate
+10-06 12:00:09.000  1000  1100 E ActivityManager: ANR in com.example.testapp (com.example.testapp/.MainActivity)
+10-06 12:00:09.000  1000  1100 E ActivityManager: PID: 4242
+10-06 12:00:09.000  1000  1100 E ActivityManager: Reason: Input dispatching timed out

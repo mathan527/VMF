@@ -1,0 +1,15 @@
+name: "Sample drift"
+package: "com.vmf.sample"
+activity: ".MainActivity"
+steps:
+  - action: wait_for
+    locator: {content-desc: "login_button"}
+    timeout_s: 15
+  - action: tap
+    locator: {content-desc: "sign_in_btn"}      # wrong on purpose: the app's button is "login_button"
+    fallback: true
+    intent: "tap the Login button"
+    timeout_s: 4
+  - action: assert_visible
+    locator: {text: "Welcome"}
+    timeout_s: 10
