@@ -1,4 +1,4 @@
-﻿#M3 Checking for 24 devices
+#M3 Checking for 24 devices
 
 import argparse
 import csv
@@ -12,7 +12,7 @@ import yaml
 from device_lifecycle import start_with_retry, stop_device
 
 ROOT = Path(__file__).resolve().parent.parent
-CATALOG = ROOT / "config" / "reference-models.yaml"
+CATALOG = Path(__file__).resolve().parent / "reference-models.yaml"
 REPORT = ROOT / "batch_lifecycle_results.csv"
 
 API_BY_TIER = {

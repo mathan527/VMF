@@ -1,4 +1,4 @@
-﻿#M2.1
+#M2.1
 
 import re
 import subprocess
@@ -15,7 +15,7 @@ from android_paths import (
 )
 
 PROJECT_ROOT = Path(__file__).resolve().parent
-CATALOG_PATH = PROJECT_ROOT.parent / "config" / "reference-models.yaml"
+CATALOG_PATH = PROJECT_ROOT / "reference-models.yaml"
 
 
 
