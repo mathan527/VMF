@@ -14,6 +14,9 @@ except ImportError:
     from device_lifecycle import start_with_retry, stop_device
     from android_paths import ADB
 
+ROOT = Path(__file__).resolve().parent.parent
+REPORT = ROOT / "soak_test_50cycle_results.csv"
+
 PORT = 5554
 CYCLES = 50
 

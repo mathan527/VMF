@@ -63,7 +63,7 @@ def wait_for_boot(port):
 
     return None
 
-def start_with_retry(avd_name, port):
+def start_with_retry(avd_name, port) -> tuple[subprocess.Popen, str]:
     for attempt in range(2):
         process = start_device(avd_name, port)
 
@@ -83,6 +83,8 @@ def start_with_retry(avd_name, port):
             raise RuntimeError(
                 f"Emulator {avd_name} failed to boot within 3 minutes."
             )
+
+    raise RuntimeError(f"Emulator {avd_name} failed to boot.")
 
 def stop_device(serial, process, avd_name):
     subprocess.run(

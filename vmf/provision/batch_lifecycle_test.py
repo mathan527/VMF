@@ -9,7 +9,10 @@ from pathlib import Path
 
 import yaml
 
-from device_lifecycle import start_with_retry, stop_device
+try:
+    from vmf.provision.device_lifecycle import start_with_retry, stop_device
+except ImportError:
+    from device_lifecycle import start_with_retry, stop_device
 
 ROOT = Path(__file__).resolve().parent.parent
 CATALOG = Path(__file__).resolve().parent / "reference-models.yaml"
