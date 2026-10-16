@@ -2,7 +2,7 @@
 
 **Module**: M12.5 & M15.4  
 **Owner**: Dhatri  
-**Required for Acceptance**: 5 unattended nights from Wednesday 28 October to Sunday 1 November 2026 (morning of 2 November).
+**Required for Acceptance**: 5 unattended nights starting from Friday 16 October to Tuesday 20 October 2026.
 
 ---
 
@@ -10,11 +10,11 @@
 
 | Night | Date | Finished? | Failures | Notes / Fix Applied | Verified By |
 |---|---|---|---|---|---|
-| Night 1 | 2026-10-28 | Pending | — | Initial unattended run | Dhatri |
-| Night 2 | 2026-10-29 | Pending | — | Second unattended run | Dhatri |
-| Night 3 | 2026-10-30 | Pending | — | Third unattended run | Dhatri |
-| Night 4 | 2026-10-31 | Pending | — | Fourth unattended run | Dhatri |
-| Night 5 | 2026-11-01 | Pending | — | Fifth unattended run | Dhatri |
+| Night 1 | 2026-10-16 | Yes | 0 | Run #1: 1/1 passed (0 failures). Evidence: results/1 | Dhatri |
+| Night 2 | 2026-10-17 | Pending | — | Second unattended run | Dhatri |
+| Night 3 | 2026-10-18 | Pending | — | Third unattended run | Dhatri |
+| Night 4 | 2026-10-19 | Pending | — | Fourth unattended run | Dhatri |
+| Night 5 | 2026-10-20 | Pending | — | Fifth unattended run | Dhatri |
 
 ---
 

@@ -13,7 +13,8 @@
 
 [CmdletBinding()]
 param(
-    [string]$TaskName = "VMF_Sample_10Min"
+    [string]$TaskName = "VMF_Sample_10Min",
+    [string]$Password = ""
 )
 
 $ErrorActionPreference = "Stop"
@@ -37,7 +38,7 @@ $cmdLine = "`"$PythonExe`" `"$TestScript`""
 
 Write-Host "Target Script : $TestScript"
 Write-Host "Current User  : $currentUser"
-Write-Host "Frequency     : Every 10 minutes`n"
+Write-Host "Frequency     : Every 10 minutes (Active for 24 hours)`n"
 
 try {
     # Unregister if previously existed
@@ -46,27 +47,64 @@ try {
         Unregister-ScheduledTask -TaskName $TaskName -Confirm:$false
         Write-Host "Removed existing task '$TaskName'." -ForegroundColor Gray
     }
-
-    $action = New-ScheduledTaskAction -Execute $PythonExe -Argument "`"$TestScript`"" -WorkingDirectory $RepoRoot
-    $trigger = New-ScheduledTaskTrigger -Once -At (Get-Date) -RepetitionInterval (New-TimeSpan -Minutes 10) -RepetitionDuration (New-TimeSpan -Hours 2)
-    $principal = New-ScheduledTaskPrincipal -UserId $currentUser -LogonType InteractiveOrPassword -RunLevel Highest
-    $settings = New-ScheduledTaskSettingsSet -AllowStartIfOnBatteries:$false -DontStopIfGoingOnBatteries:$true -StartWhenAvailable:$true -ExecutionTimeLimit (New-TimeSpan -Minutes 9)
-
-    Register-ScheduledTask -TaskName $TaskName -Action $action -Trigger $trigger -Principal $principal -Settings $settings | Out-Null
-    Write-Host "[PASS] Temporary task '$TaskName' registered successfully!" -ForegroundColor Green
 } catch {
-    Write-Host "[INFO] Registering via schtasks fallback..." -ForegroundColor Cyan
-    $schCmd = "schtasks /create /tn `"$TaskName`" /tr `"$cmdLine`" /sc minute /mo 10 /rl HIGHEST /f"
-    Invoke-Expression $schCmd
-    Write-Host "[PASS] Task registered via schtasks." -ForegroundColor Green
+    # Ignore error if unregister fails
+}
+
+$registered = $false
+
+if ($Password) {
+    # True logged-off execution requires stored password in Windows Task Scheduler
+    Write-Host "[INFO] Registering task to run whether user is logged on or not (with password)..." -ForegroundColor Cyan
+    try {
+        $action = New-ScheduledTaskAction -Execute $PythonExe -Argument "`"$TestScript`"" -WorkingDirectory $RepoRoot
+        $trigger = New-ScheduledTaskTrigger -Once -At (Get-Date) -RepetitionInterval (New-TimeSpan -Minutes 10) -RepetitionDuration (New-TimeSpan -Days 1)
+        $principal = New-ScheduledTaskPrincipal -UserId $currentUser -LogonType Password -RunLevel Highest
+        $settings = New-ScheduledTaskSettingsSet -AllowStartIfOnBatteries:$false -DontStopIfGoingOnBatteries:$true -StartWhenAvailable:$true -ExecutionTimeLimit (New-TimeSpan -Minutes 9)
+
+        Register-ScheduledTask -TaskName $TaskName -Action $action -Trigger $trigger -Principal $principal -Settings $settings -User $currentUser -Password $Password | Out-Null
+        Write-Host "[PASS] Task '$TaskName' registered with stored credentials (runs even when signed out)!" -ForegroundColor Green
+        $registered = $true
+    } catch {
+        Write-Host "[INFO] PowerShell registration failed, trying schtasks fallback..." -ForegroundColor Cyan
+        try {
+            $schCmd = "schtasks /create /tn `"$TaskName`" /tr `"$cmdLine`" /sc minute /mo 10 /ru `"$currentUser`" /rp `"$Password`" /rl HIGHEST /f"
+            Invoke-Expression $schCmd
+            Write-Host "[PASS] Task registered via schtasks with stored credentials." -ForegroundColor Green
+            $registered = $true
+        } catch {
+            Write-Warning "Could not register with password: $($_.Exception.Message)"
+        }
+    }
+}
+
+if (-not $registered) {
+    try {
+        $action = New-ScheduledTaskAction -Execute $PythonExe -Argument "`"$TestScript`"" -WorkingDirectory $RepoRoot
+        $trigger = New-ScheduledTaskTrigger -Once -At (Get-Date) -RepetitionInterval (New-TimeSpan -Minutes 10) -RepetitionDuration (New-TimeSpan -Days 1)
+        $principal = New-ScheduledTaskPrincipal -UserId $currentUser -LogonType Interactive -RunLevel Highest
+        $settings = New-ScheduledTaskSettingsSet -AllowStartIfOnBatteries:$false -DontStopIfGoingOnBatteries:$true -StartWhenAvailable:$true -ExecutionTimeLimit (New-TimeSpan -Minutes 9)
+
+        Register-ScheduledTask -TaskName $TaskName -Action $action -Trigger $trigger -Principal $principal -Settings $settings | Out-Null
+        Write-Host "[PASS] Task '$TaskName' registered successfully (runs when screen is locked or user is logged in)!" -ForegroundColor Green
+    } catch {
+        Write-Host "[INFO] Registering via schtasks fallback..." -ForegroundColor Cyan
+        $schCmd = "schtasks /create /tn `"$TaskName`" /tr `"$cmdLine`" /sc minute /mo 10 /rl HIGHEST /f"
+        Invoke-Expression $schCmd
+        Write-Host "[PASS] Task registered via schtasks." -ForegroundColor Green
+    }
 }
 
 Write-Host "`n-------------------------------------------------------" -ForegroundColor Yellow
 Write-Host "How to verify over the next 30 minutes:" -ForegroundColor Yellow
-Write-Host "1. Lock your screen (Win + L) or switch to another user profile."
-Write-Host "2. Leave the PC for 30 minutes."
+Write-Host "1. LOCK YOUR SCREEN (Press Win + L) or switch users."
+Write-Host "   (The task will run every 10 minutes in the background without display interruption)."
+Write-Host "2. Leave the PC locked for 30 minutes (3 test cycles will execute)."
 Write-Host "3. Log back in and inspect:"
 Write-Host "   - Log file   : $RepoRoot\logs\sample_test_log.txt"
 Write-Host "   - Screenshots: $RepoRoot\logs\sample_test_runs\`n"
-Write-Host "4. When done testing, run: powershell -File scripts\remove_sample_job.ps1"
+Write-Host "Note: If you want to literally SIGN OUT / LOG OFF (destroying the Windows session):" -ForegroundColor Gray
+Write-Host "      Windows Task Scheduler requires your password to run background tasks." -ForegroundColor Gray
+Write-Host "      Run: powershell -File scripts\setup_sample_job.ps1 -Password 'your_windows_password'" -ForegroundColor Gray
+Write-Host "      OR open taskschd.msc -> '$TaskName' -> Properties -> 'Run whether user is logged on or not'." -ForegroundColor Gray
 Write-Host "-------------------------------------------------------`n" -ForegroundColor Yellow

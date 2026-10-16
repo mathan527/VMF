@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-    VMF — Remove Sample 10-Minute Job & Clean Temporary Test Files
+    VMF - Remove Sample 10-Minute Job & Clean Temporary Test Files
     Module: M12.2 Cleanup
     Owner: Dhatri
 #>
@@ -14,7 +14,7 @@ param(
 $ErrorActionPreference = "SilentlyContinue"
 
 Write-Host "`n=======================================================" -ForegroundColor Cyan
-Write-Host "       VMF — Clean Up Temporary Sample Job Files       " -ForegroundColor Cyan
+Write-Host "       VMF - Clean Up Temporary Sample Job Files       " -ForegroundColor Cyan
 Write-Host "=======================================================`n" -ForegroundColor Cyan
 
 # 1. Unregister Scheduled Task

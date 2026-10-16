@@ -1,13 +1,13 @@
 <#
 .SYNOPSIS
     VMF (Virtual Mobile Farm) - Lab Machine Configuration & Hardening
-    Module: M12 — Scheduling, Hardening & Cleanup (Steps M12.1, M12.3)
+    Module: M12 - Scheduling, Hardening & Cleanup (Steps M12.1, M12.3)
     Owner: Dhatri
 
 .DESCRIPTION
     Configures a host Windows PC for unattended overnight matrix execution:
     1. Disables standby/sleep and hibernation (powercfg).
-    2. Configures Windows Update active hours (00:00–07:00).
+    2. Configures Windows Update active hours (00:00-07:00).
     3. Adds Windows Defender antivirus exclusions for Android SDK, AVD folder, and workspace.
     4. Registers the VMFNightly job in Windows Task Scheduler to run daily at 01:00.
     
