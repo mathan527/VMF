@@ -7,12 +7,12 @@ import time
 from datetime import datetime
 from pathlib import Path
 
-from device_lifecycle import start_with_retry, stop_device
-
-ROOT = Path(__file__).resolve().parent.parent
-REPORT = ROOT / "soak_test_50cycle_results.csv"
-
-from android_paths import ADB
+try:
+    from vmf.provision.device_lifecycle import start_with_retry, stop_device
+    from vmf.provision.android_paths import ADB
+except ImportError:
+    from device_lifecycle import start_with_retry, stop_device
+    from android_paths import ADB
 
 PORT = 5554
 CYCLES = 50

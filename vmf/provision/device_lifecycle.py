@@ -1,4 +1,4 @@
-﻿#M3.1,.2,.3,.4,.5
+#M3.1,.2,.3,.4,.5
 
 
 
@@ -7,7 +7,10 @@ import subprocess
 import time
 from pathlib import Path
 
-from android_paths import EMULATOR, ADB
+try:
+    from vmf.provision.android_paths import EMULATOR, ADB
+except ImportError:
+    from android_paths import EMULATOR, ADB
 
 BOOT_TIMEOUT = 180
 

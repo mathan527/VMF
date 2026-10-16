@@ -7,12 +7,20 @@ from pathlib import Path
 
 import yaml
 
-from android_paths import (
-    ANDROID_SDK_ROOT,
-    AVDMANAGER,
-    AVD_ROOT,
-    validate_android_tools,
-)
+try:
+    from vmf.provision.android_paths import (
+        ANDROID_SDK_ROOT,
+        AVDMANAGER,
+        AVD_ROOT,
+        validate_android_tools,
+    )
+except ImportError:
+    from android_paths import (
+        ANDROID_SDK_ROOT,
+        AVDMANAGER,
+        AVD_ROOT,
+        validate_android_tools,
+    )
 
 PROJECT_ROOT = Path(__file__).resolve().parent
 CATALOG_PATH = PROJECT_ROOT / "reference-models.yaml"
