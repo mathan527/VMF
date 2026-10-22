@@ -164,6 +164,42 @@ def test_finish_run_marks_row_finished(temp_storage):
     assert row["finished_at"]
 
 
+def test_finish_run_accepts_nightly_completion_status(temp_storage):
+    run_id = create_run("app.apk", "login", ["p1"])
+
+    assert finish_run(run_id, "COMPLETED_WITH_FAILURES") is None
+
+    with connect(temp_storage) as conn:
+        row = conn.execute("SELECT status, finished_at FROM runs").fetchone()
+
+    assert row["status"] == "COMPLETED_WITH_FAILURES"
+    assert row["finished_at"]
+
+
+def test_finish_run_if_running_preserves_an_existing_terminal_status(temp_storage):
+    run_id = create_run("app.apk", "login", ["p1"])
+    assert storage_module.finish_run_if_running(run_id, "DISPATCH_FAILED") is True
+    assert storage_module.finish_run_if_running(run_id, "FINISHED") is False
+    with connect(temp_storage) as conn:
+        assert conn.execute("SELECT status FROM runs").fetchone()[0] == "DISPATCH_FAILED"
+
+
+@pytest.mark.parametrize("status", ["", "   ", None, 1])
+def test_finish_run_rejects_malformed_status(temp_storage, status):
+    run_id = create_run("app.apk", "login", ["p1"])
+
+    with pytest.raises(ValueError, match="non-empty string"):
+        finish_run(run_id, status)
+
+
+def test_storage_backed_baselines_replace_only_the_matching_metric(temp_storage):
+    storage_module.save_baseline("p1", "launch_time", 100.0, promoted_by="lead", run_id=7)
+    storage_module.save_baseline("p1", "launch_time", 90.0, promoted_by="lead", run_id=8)
+    storage_module.save_baseline("p1", "pss", 200.0, promoted_by="lead", run_id=8)
+
+    assert storage_module.load_baselines("p1") == {"launch_time": 90.0, "pss": 200.0}
+
+
 def test_persistence_after_reopening_database(temp_storage):
     run_id = create_run("app.apk", "login", ["p1"])
     save_step(run_id, "p1", Step(0, "launch", "pass", 10, "s.png", "h.xml"))

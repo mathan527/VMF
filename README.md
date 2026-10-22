@@ -76,6 +76,22 @@ The output ends with `=== ARCH DRY RUN PASSED ===`.
 python -m pytest -q
 ```
 
+## Persisted reports and console
+
+Set `VMF_DB_PATH` to choose the SQLite database (defaults to `farm.db` at the
+repository root). Generate a persisted-run report with
+`report.generate_report(run_id)`; it writes HTML under `reports/` by default.
+PDF output is not implemented. Start the local console/API with:
+
+```powershell
+uvicorn vmf.api.api:create_app --factory --port 8080
+```
+
+The API exposes `/health`, `/runs`, `/runs/{id}`, `/runs/{id}/report`, and safe
+evidence retrieval under `/evidence/{run_id}/...`. `POST /runs` requires an
+existing APK and scenario inside the workspace plus explicit profile mappings;
+it dispatches through the M10 orchestrator in the background.
+
 Test settings (`testpaths`, `pythonpath`) are in `pyproject.toml`. The tests
 need no device. Nothing in the suite exercises a real emulator or Appium.
 

@@ -11,6 +11,7 @@ import inspect
 import json
 import logging
 import sqlite3
+import sys
 import threading
 import time
 from concurrent.futures import CancelledError, Future
@@ -2107,7 +2108,20 @@ def _forbid_device_access(monkeypatch):
         monkeypatch.setattr(subprocess, name, refuse)
 
 
-def test_the_dry_run_never_starts_a_process_even_for_a_real_looking_profile(monkeypatch):
+@pytest.fixture
+def isolated_dry_run_db(tmp_path, monkeypatch):
+    """Keep legacy dry-run persistence out of the repository farm.db."""
+    from vmf.storage import storage as storage_module
+
+    db_path = tmp_path / "dry-run.db"
+    monkeypatch.setattr(storage_module, "_DB_PATH", db_path)
+    storage_module._INITIALIZED_PATHS.clear()
+    yield db_path
+    storage_module._INITIALIZED_PATHS.clear()
+
+
+def test_the_dry_run_never_starts_a_process_even_for_a_real_looking_profile(
+        monkeypatch, isolated_dry_run_db):
     from vmf import oem_packs, provision
     _forbid_device_access(monkeypatch)
     seen = {}
@@ -2127,9 +2141,13 @@ def test_the_dry_run_never_starts_a_process_even_for_a_real_looking_profile(monk
     result = rm.run_single_profile(profile, "app.apk", "stub", port=5554, stub=True)
     assert isinstance(result["run_id"], int)
     assert seen == {"apply": rm.DRY_RUN_DEVICE, "stop": rm.DRY_RUN_DEVICE}      # a mock serial, never emulator-5554
+    with sqlite3.connect(isolated_dry_run_db) as conn:
+        row = conn.execute("SELECT status FROM runs WHERE run_id = ?", (result["run_id"],)).fetchone()
+    assert row == ("FINISHED",)
 
 
-def test_the_dry_run_asks_provision_for_a_stubbed_start_without_changing_the_callers_profile(monkeypatch):
+def test_the_dry_run_asks_provision_for_a_stubbed_start_without_changing_the_callers_profile(
+        monkeypatch, isolated_dry_run_db):
     from vmf import provision
     _forbid_device_access(monkeypatch)
     started = []
@@ -2137,6 +2155,43 @@ def test_the_dry_run_asks_provision_for_a_stubbed_start_without_changing_the_cal
     profile = {"brand": "Samsung", "tier": "low"}
     rm.run_single_profile(profile, "app.apk", "stub", stub=True)
     assert started[0]["dry_run"] is True and "dry_run" not in profile
+
+
+def test_cli_dry_run_never_starts_a_process_and_uses_an_isolated_database(
+        monkeypatch, isolated_dry_run_db):
+    """Exercise the public CLI boundary without permitting a device process."""
+    from vmf import __main__ as cli
+
+    _forbid_device_access(monkeypatch)
+    monkeypatch.setattr(sys, "argv", ["vmf", "--dry-run"])
+    cli.main()
+
+    with sqlite3.connect(isolated_dry_run_db) as conn:
+        rows = conn.execute("SELECT status FROM runs").fetchall()
+    assert rows == [("FINISHED",)]
+
+
+def test_dry_run_exception_teardown_uses_the_mock_device(monkeypatch, isolated_dry_run_db):
+    """A failure after provisioning must still never target emulator-<port>."""
+    from vmf import oem_packs, provision
+
+    _forbid_device_access(monkeypatch)
+    stopped = []
+    real_stop = provision.stop_device
+
+    def stop(serial):
+        stopped.append(serial)
+        return real_stop(serial)
+
+    def fail_apply(serial, profile):
+        assert serial == rm.DRY_RUN_DEVICE
+        raise RuntimeError("simulated dry-run failure")
+
+    monkeypatch.setattr(provision, "stop_device", stop)
+    monkeypatch.setattr(oem_packs, "apply_profile_settings", fail_apply)
+    with pytest.raises(RuntimeError, match="simulated dry-run failure"):
+        rm.run_single_profile({"brand": "Samsung", "tier": "low"}, "app.apk", "stub", stub=True)
+    assert stopped == [rm.DRY_RUN_DEVICE]
 
 
 def test_without_stub_the_real_serial_and_profile_reach_the_device_functions(monkeypatch):

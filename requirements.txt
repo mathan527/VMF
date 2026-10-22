@@ -8,3 +8,5 @@ Pillow
 # Test dependencies
 pytest
 pytest-asyncio
+fastapi
+uvicorn
