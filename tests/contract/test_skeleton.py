@@ -185,9 +185,18 @@ def test_perf_run_performance_returns_list_of_perfrow():
     assert all(isinstance(r, PerfRow) for r in rows)
 
 
-def test_report_generate_report_returns_str():
-    from vmf import report
-    path = report.generate_report(run_id=1)
+def test_report_generate_report_returns_str(tmp_path, monkeypatch):
+    """The real report needs a persisted run. Use a private database and create the run here,
+    so the test no longer depends on run 1 existing in whatever farm.db is lying around."""
+    from vmf import report, storage
+    from vmf.storage import storage as storage_module
+    monkeypatch.setattr(storage_module, "_DB_PATH", tmp_path / "contract.db")
+    storage_module._INITIALIZED_PATHS.clear()
+    try:
+        run_id = storage.create_run("app.apk", "login_flow.yaml", ["emulator-5554"])
+        path = report.generate_report(run_id=run_id, output_dir=str(tmp_path))
+    finally:
+        storage_module._INITIALIZED_PATHS.clear()
     assert isinstance(path, str)
 
 
