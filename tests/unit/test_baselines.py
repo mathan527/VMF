@@ -10,6 +10,7 @@ from vmf.perf import __main__ as cli
 from vmf.perf import baselines
 from vmf.perf.baselines import BaselineError, PromotionRefused, StorageBaselineStore, YamlBaselineStore
 from vmf.results import PerfRow
+from vmf.storage import storage as storage_module
 
 LEAD = "Lead Name"
 NOW = datetime.datetime(2026, 10, 13, 9, 0, tzinfo=datetime.timezone.utc)
@@ -222,8 +223,8 @@ def test_get_store_uses_storage_only_when_both_functions_exist(tmp_path):
         assert isinstance(baselines.get_store(mod, tmp_path / "b.yaml"), YamlBaselineStore)
 
 
-def test_the_real_storage_module_has_no_baseline_functions_so_yaml_is_used(tmp_path):
-    assert isinstance(baselines.get_store(yaml_path=tmp_path / "b.yaml"), YamlBaselineStore)
+def test_the_real_storage_module_uses_sqlite_baselines():
+    assert isinstance(baselines.get_store(), StorageBaselineStore)
 
 
 def test_storage_store_loads_through_load_baselines_with_the_sanitised_name():
@@ -269,6 +270,8 @@ def env(tmp_path, monkeypatch):
     cfg = tmp_path / "cfg.yaml"
     cfg.write_text(yaml.safe_dump({"baseline_approvers": [LEAD]}), encoding="utf-8")
     base = ["--results-dir", str(results), "--baselines-file", str(tmp_path / "bl.yaml"), "--config", str(cfg)]
+    monkeypatch.setattr(storage_module, "_DB_PATH", tmp_path / "farm.db")
+    storage_module._INITIALIZED_PATHS.clear()
     return types.SimpleNamespace(results=results, base=base, bl=tmp_path / "bl.yaml", cfg=cfg)
 
 
@@ -280,7 +283,7 @@ def test_cli_promote_then_list(env, capsys):
     assert cli.main(env.base + ["baselines"]) == 0
     listing = capsys.readouterr().out
     assert "Samsung_A07" in listing and "1234.00" in listing and LEAD in listing
-    entry = YamlBaselineStore(env.bl).all_entries()[0]
+    entry = baselines.get_store().all_entries()[0]
     assert entry["build_sha256"] == "sha1" and entry["run_id"] == 5
 
 
@@ -308,9 +311,9 @@ def test_cli_overwrite_needs_the_flag(env, capsys):
     write_run(env.results, 6, "p", median=2.0)
     assert cli.main(env.base + ["promote", "--run-id", "5", "--approved-by", LEAD]) == 0
     assert cli.main(env.base + ["promote", "--run-id", "6", "--approved-by", LEAD]) == 2
-    assert YamlBaselineStore(env.bl).load("p") == {"launch_time": 1.0}
+    assert baselines.get_store().load("p") == {"launch_time": 1.0}
     assert cli.main(env.base + ["promote", "--run-id", "6", "--approved-by", LEAD, "--allow-overwrite"]) == 0
-    assert YamlBaselineStore(env.bl).load("p") == {"launch_time": 2.0}
+    assert baselines.get_store().load("p") == {"launch_time": 2.0}
     assert "1.0 -> 2.0" in capsys.readouterr().out
 
 
@@ -318,7 +321,7 @@ def test_cli_profile_filter_and_missing_profile(env, capsys):
     write_run(env.results, 5, "a", median=1.0)
     write_run(env.results, 5, "b", median=2.0)
     assert cli.main(env.base + ["promote", "--run-id", "5", "--approved-by", LEAD, "--profile", "a"]) == 0
-    store = YamlBaselineStore(env.bl)
+    store = baselines.get_store()
     assert store.load("a") == {"launch_time": 1.0} and store.load("b") == {}
     assert cli.main(env.base + ["promote", "--run-id", "5", "--approved-by", LEAD, "--profile", "zzz"]) == 2
     assert "zzz" in capsys.readouterr().out

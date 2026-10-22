@@ -59,7 +59,11 @@ CREATE TABLE IF NOT EXISTS perf_baselines (
     id INTEGER PRIMARY KEY,
     profile TEXT NOT NULL,
     metric TEXT NOT NULL,
-    baseline REAL NOT NULL
+    baseline REAL NOT NULL,
+    build_sha256 TEXT,
+    promoted_by TEXT,
+    promoted_on TEXT,
+    run_id INTEGER
 );
 
 CREATE INDEX IF NOT EXISTS idx_device_results_run_id

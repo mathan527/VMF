@@ -87,6 +87,8 @@ LOGCAT_GRACE_S = 2.0
 # Scenario actions that kill the app on purpose. If a scenario ENDS with one of them the app is
 # expected to be gone, so the "process gone" crash rule is not applied.
 DELIBERATE_KILL_ACTIONS = ("oem.background_kill",)
+# Mock serial that provision and oem_packs recognise: they skip adb for it. Used by the dry run.
+DRY_RUN_DEVICE = "dry_run"
 # Results that an overloaded host can cause (a stalled emulator makes an app miss its 5 s input
 # deadline). A verdict of one of these is annotated when the host was busy during the run.
 HOST_SENSITIVE_RESULTS = ("anr", "hang", "crash")
@@ -1551,14 +1553,22 @@ def run_single_profile(profile: dict, apk: str, scenario: str,
     """
     log = logging.getLogger(__name__)
 
+    # In dry-run mode no real device may be touched. provision stubs itself for a profile with
+    # "dry_run" set (it then returns the fake serial emulator-<port>), and oem_packs and
+    # provision.stop_device skip adb for the mock serial "dry_run". Without this the dry run
+    # (and every test that calls it) changed the font scale, density and dark mode of, and then
+    # ran `adb emu kill` on, a REAL emulator that happened to be on port 5554.
+    start_profile = {**profile, "dry_run": True} if stub else profile
+
     # 1. Provision --------------------------------------------------------
     log.info("[STUB] provision.start_device()")
-    serial = provision.start_device(profile, port)
+    serial = provision.start_device(start_profile, port)
+    device = DRY_RUN_DEVICE if stub else serial     # what the device-touching calls are given
 
     try:
         # 2. OEM profile settings -----------------------------------------
         log.info("[STUB] oem_packs.apply_profile_settings()")
-        oem_packs.apply_profile_settings(serial, profile)
+        oem_packs.apply_profile_settings(device, profile)
 
         # 3. Storage — open run record ------------------------------------
         log.info("[STUB] storage.create_run()")
@@ -1623,7 +1633,7 @@ def run_single_profile(profile: dict, apk: str, scenario: str,
     finally:
         # 11. Provision — stop device -------------------------------------
         log.info("[STUB] provision.stop_device()")
-        provision.stop_device(serial)
+        provision.stop_device(device)
 
 
 # ---------------------------------------------------------------------------
@@ -1633,8 +1643,8 @@ def run_single_profile(profile: dict, apk: str, scenario: str,
 def dry_run() -> None:
     """Execute a single-profile ARCH dry-run and print a formatted summary.
 
-    Calls the real interface of every module in sequence.
-    No emulator, ADB, or Appium required.
+    Calls the interface of every module in sequence in dry-run mode.
+    No emulator, ADB, or Appium is used or touched, even if an emulator is running.
     """
     print()
     print("=== VMF ARCH DRY RUN ===")

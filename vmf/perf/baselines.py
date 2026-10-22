@@ -215,6 +215,8 @@ class StorageBaselineStore(BaselineStore):
         return {m: float(v) for m, v in dict(self._storage.load_baselines(sanitise_profile(profile))).items()}
 
     def all_entries(self, profile_names=None) -> list[dict]:
+        if hasattr(self._storage, "list_baseline_entries"):
+            return self._storage.list_baseline_entries(profile_names)
         out = []
         for profile in profile_names or []:
             for metric, value in sorted(self.load(profile).items()):
