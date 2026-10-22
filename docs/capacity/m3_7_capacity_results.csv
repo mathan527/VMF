@@ -1,0 +1,25 @@
+﻿ConcurrentEmulators,NewAVD,Port,BootSeconds,FreeRAM_GB,CPU_LoadPercent,ConnectedDevices,BootCompleted,StabilityDuration,Failures,TestStatus,Notes
+1,Google_low_29,5554,19.78,106.74,0,1,1,Initial check,0,Pass,Initial boot measurement
+2,Xiaomi_low_29,5556,20.77,102.82,1,2,2,Incremental check,0,Pass,Latest early resource sample
+3,Samsung_low_29,5558,,98.55,7,3,3,Incremental check,0,Pass,Boot time not retained
+4,Motorola_low_29,5560,20.5,94.59,0,4,4,Incremental check,0,Pass,Boot time approximate
+5,OnePlus_low_29,5562,,90.51,1,5,5,Incremental check,0,Pass,Boot time not retained
+6,Honor_low_29,5564,20.4,86.70,2,6,6,Incremental check,0,Pass,Boot time approximate
+7,Vivo_low_29,5566,24.16,82.47,0,7,7,30 seconds,0,Pass,All seven remained connected
+8,Huawei_low_29,5568,18.8,79.49,,8,8,30 seconds,0,Pass,Retry run stable; earlier attempt lost all devices
+9,Google_medium_31,5570,,73.43,10,9,9,30 seconds,0,Pass,Latest early resource sample
+10,Samsung_medium_31,5572,,67.96,0,10,10,30 seconds,0,Pass,Latest early resource sample
+11,Xiaomi_medium_31,5574,,63.14,15,11,11,30 seconds,0,Pass,Latest early resource sample
+12,Vivo_medium_31,5576,,58.71,31,12,12,30 seconds,0,Pass,Latest early resource sample
+13,Honor_medium_31,5578,,52.97,36,13,13,30 seconds,0,Pass,Latest early resource sample
+14,Huawei_medium_31,5580,,49.46,19,14,14,Initial check,0,Pass,No separate 30-second recheck recorded
+15,Motorola_medium_31,5582,,46.05,7,15,15,30 seconds,0,Pass,Stable at follow-up
+16,OnePlus_medium_31,5584,,44.71,2,16,16,30 seconds,0,Pass,Stable at follow-up
+17,Motorola_high_35,5586,,38.68,19,17,17,30 seconds,0,Pass,Stable at follow-up
+18,Samsung_high_35,5588,,32.26,17,18,18,30 seconds,0,Pass,Stable at follow-up
+19,Vivo_high_35,5590,,34.06,29,19,19,30 seconds,0,Pass,Stable at follow-up
+20,Xiaomi_high_35,5592,,28.05,26,20,20,30 seconds,0,Pass,Stable at follow-up
+21,Honor_high_35,5594,,21.96,45,21,21,30 seconds,0,Pass,Stable at follow-up
+22,Huawei_high_35,5596,,17.73,7,22,22,30 seconds,0,Pass,Stable at follow-up; paused before adding device 23
+23,Google_high_35,5598,,24.51,16,23,23,2 minutes,0,Pass,Five samples all 23 connected; RAM 24.39 to 24.51 GB
+24,OnePlus_high_35,5600,,38.04,13,24,24,2 minutes,0,Pass,Five samples all 24 connected; RAM 26.40 to 38.04 GB

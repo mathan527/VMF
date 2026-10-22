@@ -1,0 +1,89 @@
+brand,tier,pack,behaviour,ok,verify
+Samsung,low,"standby_bucket,doze,permission_revoke,always_finish_activities,trim_memory",standby_bucket,True,standby-bucket restricted
+Samsung,low,"standby_bucket,doze,permission_revoke,always_finish_activities,trim_memory",doze,True,deviceidle force-idle
+Samsung,low,"standby_bucket,doze,permission_revoke,always_finish_activities,trim_memory",permission_revoke,True,permission revoked: android.permission.READ_EXTERNAL_STORAGE
+Samsung,low,"standby_bucket,doze,permission_revoke,always_finish_activities,trim_memory",always_finish_activities,True,always_finish_activities 1
+Samsung,low,"standby_bucket,doze,permission_revoke,always_finish_activities,trim_memory",trim_memory,True,send-trim-memory RUNNING_CRITICAL
+Samsung,medium,"standby_bucket,doze,permission_revoke",standby_bucket,True,standby-bucket restricted
+Samsung,medium,"standby_bucket,doze,permission_revoke",doze,True,deviceidle force-idle
+Samsung,medium,"standby_bucket,doze,permission_revoke",permission_revoke,True,permission revoked: android.permission.READ_EXTERNAL_STORAGE
+Samsung,high,"standby_bucket,doze,permission_revoke",standby_bucket,True,standby-bucket restricted
+Samsung,high,"standby_bucket,doze,permission_revoke",doze,True,deviceidle force-idle
+Samsung,high,"standby_bucket,doze,permission_revoke",permission_revoke,True,permission revoked: android.permission.READ_EXTERNAL_STORAGE
+Vivo,low,"background_kill,restrict_background,doze,permission_revoke,always_finish_activities,trim_memory",background_kill,True,pidof empty after am kill; relaunched
+Vivo,low,"background_kill,restrict_background,doze,permission_revoke,always_finish_activities,trim_memory",restrict_background,True,RUN_ANY_IN_BACKGROUND ignore
+Vivo,low,"background_kill,restrict_background,doze,permission_revoke,always_finish_activities,trim_memory",doze,True,deviceidle force-idle
+Vivo,low,"background_kill,restrict_background,doze,permission_revoke,always_finish_activities,trim_memory",permission_revoke,True,permission revoked: android.permission.READ_EXTERNAL_STORAGE
+Vivo,low,"background_kill,restrict_background,doze,permission_revoke,always_finish_activities,trim_memory",always_finish_activities,True,always_finish_activities 1
+Vivo,low,"background_kill,restrict_background,doze,permission_revoke,always_finish_activities,trim_memory",trim_memory,True,send-trim-memory RUNNING_CRITICAL
+Vivo,medium,"background_kill,restrict_background,doze,permission_revoke",background_kill,True,pidof empty after am kill; relaunched
+Vivo,medium,"background_kill,restrict_background,doze,permission_revoke",restrict_background,True,RUN_ANY_IN_BACKGROUND ignore
+Vivo,medium,"background_kill,restrict_background,doze,permission_revoke",doze,True,deviceidle force-idle
+Vivo,medium,"background_kill,restrict_background,doze,permission_revoke",permission_revoke,True,permission revoked: android.permission.READ_EXTERNAL_STORAGE
+Vivo,high,"background_kill,restrict_background,doze,permission_revoke",background_kill,True,pidof empty after am kill; relaunched
+Vivo,high,"background_kill,restrict_background,doze,permission_revoke",restrict_background,True,RUN_ANY_IN_BACKGROUND ignore
+Vivo,high,"background_kill,restrict_background,doze,permission_revoke",doze,True,deviceidle force-idle
+Vivo,high,"background_kill,restrict_background,doze,permission_revoke",permission_revoke,True,permission revoked: android.permission.READ_EXTERNAL_STORAGE
+OnePlus,low,"doze,permission_revoke,always_finish_activities,trim_memory",doze,True,deviceidle force-idle
+OnePlus,low,"doze,permission_revoke,always_finish_activities,trim_memory",permission_revoke,True,permission revoked: android.permission.READ_EXTERNAL_STORAGE
+OnePlus,low,"doze,permission_revoke,always_finish_activities,trim_memory",always_finish_activities,True,always_finish_activities 1
+OnePlus,low,"doze,permission_revoke,always_finish_activities,trim_memory",trim_memory,True,send-trim-memory RUNNING_CRITICAL
+OnePlus,medium,"doze,permission_revoke",doze,True,deviceidle force-idle
+OnePlus,medium,"doze,permission_revoke",permission_revoke,True,permission revoked: android.permission.READ_EXTERNAL_STORAGE
+OnePlus,high,"doze,permission_revoke",doze,True,deviceidle force-idle
+OnePlus,high,"doze,permission_revoke",permission_revoke,True,permission revoked: android.permission.READ_EXTERNAL_STORAGE
+Xiaomi,low,"background_kill,restrict_background,doze,permission_revoke,always_finish_activities,trim_memory",background_kill,True,pidof empty after am kill; relaunched
+Xiaomi,low,"background_kill,restrict_background,doze,permission_revoke,always_finish_activities,trim_memory",restrict_background,True,RUN_ANY_IN_BACKGROUND ignore
+Xiaomi,low,"background_kill,restrict_background,doze,permission_revoke,always_finish_activities,trim_memory",doze,True,deviceidle force-idle
+Xiaomi,low,"background_kill,restrict_background,doze,permission_revoke,always_finish_activities,trim_memory",permission_revoke,True,permission revoked: android.permission.READ_EXTERNAL_STORAGE
+Xiaomi,low,"background_kill,restrict_background,doze,permission_revoke,always_finish_activities,trim_memory",always_finish_activities,True,always_finish_activities 1
+Xiaomi,low,"background_kill,restrict_background,doze,permission_revoke,always_finish_activities,trim_memory",trim_memory,True,send-trim-memory RUNNING_CRITICAL
+Xiaomi,medium,"background_kill,restrict_background,doze,permission_revoke",background_kill,True,pidof empty after am kill; relaunched
+Xiaomi,medium,"background_kill,restrict_background,doze,permission_revoke",restrict_background,True,RUN_ANY_IN_BACKGROUND ignore
+Xiaomi,medium,"background_kill,restrict_background,doze,permission_revoke",doze,True,deviceidle force-idle
+Xiaomi,medium,"background_kill,restrict_background,doze,permission_revoke",permission_revoke,True,permission revoked: android.permission.READ_EXTERNAL_STORAGE
+Xiaomi,high,"background_kill,restrict_background,doze,permission_revoke",background_kill,True,pidof empty after am kill; relaunched
+Xiaomi,high,"background_kill,restrict_background,doze,permission_revoke",restrict_background,True,RUN_ANY_IN_BACKGROUND ignore
+Xiaomi,high,"background_kill,restrict_background,doze,permission_revoke",doze,True,deviceidle force-idle
+Xiaomi,high,"background_kill,restrict_background,doze,permission_revoke",permission_revoke,True,permission revoked: android.permission.READ_EXTERNAL_STORAGE
+Google,low,"doze,permission_revoke,always_finish_activities,trim_memory",doze,True,deviceidle force-idle
+Google,low,"doze,permission_revoke,always_finish_activities,trim_memory",permission_revoke,True,permission revoked: android.permission.READ_EXTERNAL_STORAGE
+Google,low,"doze,permission_revoke,always_finish_activities,trim_memory",always_finish_activities,True,always_finish_activities 1
+Google,low,"doze,permission_revoke,always_finish_activities,trim_memory",trim_memory,True,send-trim-memory RUNNING_CRITICAL
+Google,medium,"doze,permission_revoke",doze,True,deviceidle force-idle
+Google,medium,"doze,permission_revoke",permission_revoke,True,permission revoked: android.permission.READ_EXTERNAL_STORAGE
+Google,high,"doze,permission_revoke",doze,True,deviceidle force-idle
+Google,high,"doze,permission_revoke",permission_revoke,True,permission revoked: android.permission.READ_EXTERNAL_STORAGE
+Motorola,low,"doze,permission_revoke,always_finish_activities,trim_memory",doze,True,deviceidle force-idle
+Motorola,low,"doze,permission_revoke,always_finish_activities,trim_memory",permission_revoke,True,permission revoked: android.permission.READ_EXTERNAL_STORAGE
+Motorola,low,"doze,permission_revoke,always_finish_activities,trim_memory",always_finish_activities,True,always_finish_activities 1
+Motorola,low,"doze,permission_revoke,always_finish_activities,trim_memory",trim_memory,True,send-trim-memory RUNNING_CRITICAL
+Motorola,medium,"doze,permission_revoke",doze,True,deviceidle force-idle
+Motorola,medium,"doze,permission_revoke",permission_revoke,True,permission revoked: android.permission.READ_EXTERNAL_STORAGE
+Motorola,high,"doze,permission_revoke",doze,True,deviceidle force-idle
+Motorola,high,"doze,permission_revoke",permission_revoke,True,permission revoked: android.permission.READ_EXTERNAL_STORAGE
+Honor,low,"background_kill,doze,permission_revoke,always_finish_activities,trim_memory",background_kill,True,pidof empty after am kill; relaunched
+Honor,low,"background_kill,doze,permission_revoke,always_finish_activities,trim_memory",doze,True,deviceidle force-idle
+Honor,low,"background_kill,doze,permission_revoke,always_finish_activities,trim_memory",permission_revoke,True,permission revoked: android.permission.READ_EXTERNAL_STORAGE
+Honor,low,"background_kill,doze,permission_revoke,always_finish_activities,trim_memory",always_finish_activities,True,always_finish_activities 1
+Honor,low,"background_kill,doze,permission_revoke,always_finish_activities,trim_memory",trim_memory,True,send-trim-memory RUNNING_CRITICAL
+Honor,medium,"background_kill,doze,permission_revoke",background_kill,True,pidof empty after am kill; relaunched
+Honor,medium,"background_kill,doze,permission_revoke",doze,True,deviceidle force-idle
+Honor,medium,"background_kill,doze,permission_revoke",permission_revoke,True,permission revoked: android.permission.READ_EXTERNAL_STORAGE
+Honor,high,"background_kill,doze,permission_revoke",background_kill,True,pidof empty after am kill; relaunched
+Honor,high,"background_kill,doze,permission_revoke",doze,True,deviceidle force-idle
+Honor,high,"background_kill,doze,permission_revoke",permission_revoke,True,permission revoked: android.permission.READ_EXTERNAL_STORAGE
+Huawei,low,"background_kill,restrict_background,doze,permission_revoke,always_finish_activities,trim_memory",background_kill,True,pidof empty after am kill; relaunched
+Huawei,low,"background_kill,restrict_background,doze,permission_revoke,always_finish_activities,trim_memory",restrict_background,True,RUN_ANY_IN_BACKGROUND ignore
+Huawei,low,"background_kill,restrict_background,doze,permission_revoke,always_finish_activities,trim_memory",doze,True,deviceidle force-idle
+Huawei,low,"background_kill,restrict_background,doze,permission_revoke,always_finish_activities,trim_memory",permission_revoke,True,permission revoked: android.permission.READ_EXTERNAL_STORAGE
+Huawei,low,"background_kill,restrict_background,doze,permission_revoke,always_finish_activities,trim_memory",always_finish_activities,True,always_finish_activities 1
+Huawei,low,"background_kill,restrict_background,doze,permission_revoke,always_finish_activities,trim_memory",trim_memory,True,send-trim-memory RUNNING_CRITICAL
+Huawei,medium,"background_kill,restrict_background,doze,permission_revoke",background_kill,True,pidof empty after am kill; relaunched
+Huawei,medium,"background_kill,restrict_background,doze,permission_revoke",restrict_background,True,RUN_ANY_IN_BACKGROUND ignore
+Huawei,medium,"background_kill,restrict_background,doze,permission_revoke",doze,True,deviceidle force-idle
+Huawei,medium,"background_kill,restrict_background,doze,permission_revoke",permission_revoke,True,permission revoked: android.permission.READ_EXTERNAL_STORAGE
+Huawei,high,"background_kill,restrict_background,doze,permission_revoke",background_kill,True,pidof empty after am kill; relaunched
+Huawei,high,"background_kill,restrict_background,doze,permission_revoke",restrict_background,True,RUN_ANY_IN_BACKGROUND ignore
+Huawei,high,"background_kill,restrict_background,doze,permission_revoke",doze,True,deviceidle force-idle
+Huawei,high,"background_kill,restrict_background,doze,permission_revoke",permission_revoke,True,permission revoked: android.permission.READ_EXTERNAL_STORAGE
