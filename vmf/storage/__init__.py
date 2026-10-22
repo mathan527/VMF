@@ -9,10 +9,9 @@ This __init__.py re-exports the public API so both import styles work:
     from vmf.storage.storage import create_run   # module-level import
 """
 from vmf.storage.storage import (  # noqa: F401
-    create_run,
-    save_device_result,
-    save_step,
-    save_profile_config,
-    save_perf,
-    finish_run,
+    create_run, finish_run, finish_run_if_running, get_run, list_baseline_entries, list_runs, load_baselines, save_baseline,
+    save_device_result, save_perf, save_profile_config, save_step,
 )
+
+__all__ = ["create_run", "finish_run", "finish_run_if_running", "get_run", "list_baseline_entries", "list_runs", "load_baselines", "save_baseline",
+           "save_device_result", "save_perf", "save_profile_config", "save_step"]
