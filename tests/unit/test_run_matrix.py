@@ -2093,3 +2093,65 @@ def test_host_busy_helper_reports_not_busy_without_data():
         def summary(self):
             return {"samples": 0, "cpu_outside_emulator_pct": None}
     assert rm._host_load(NoData()) == (False, {"samples": 0, "cpu_outside_emulator_pct": None})
+
+
+# --- the dry run must never touch a real device (found 22 Oct, after oem_packs/provision became real) ---------
+
+def _forbid_device_access(monkeypatch):
+    """Any subprocess call (adb, emulator, avdmanager) during the test fails it."""
+    import subprocess
+
+    def refuse(*args, **kwargs):
+        raise AssertionError(f"the dry run touched the system: {args[:1]}")
+    for name in ("run", "Popen", "check_output", "check_call", "call"):
+        monkeypatch.setattr(subprocess, name, refuse)
+
+
+def test_the_dry_run_never_starts_a_process_even_for_a_real_looking_profile(monkeypatch):
+    from vmf import oem_packs, provision
+    _forbid_device_access(monkeypatch)
+    seen = {}
+    real_apply, real_stop = oem_packs.apply_profile_settings, provision.stop_device
+
+    def apply(serial, profile):
+        seen["apply"] = serial
+        return real_apply(serial, profile)
+
+    def stop(serial):
+        seen["stop"] = serial
+        return real_stop(serial)
+    monkeypatch.setattr(oem_packs, "apply_profile_settings", apply)
+    monkeypatch.setattr(provision, "stop_device", stop)
+    profile = {"brand": "Samsung", "tier": "low", "name": "samsung_low_29", "density": 320,
+               "font_scale": 1.3, "dark_mode": True, "cutout": "notch"}
+    result = rm.run_single_profile(profile, "app.apk", "stub", port=5554, stub=True)
+    assert isinstance(result["run_id"], int)
+    assert seen == {"apply": rm.DRY_RUN_DEVICE, "stop": rm.DRY_RUN_DEVICE}      # a mock serial, never emulator-5554
+
+
+def test_the_dry_run_asks_provision_for_a_stubbed_start_without_changing_the_callers_profile(monkeypatch):
+    from vmf import provision
+    _forbid_device_access(monkeypatch)
+    started = []
+    monkeypatch.setattr(provision, "start_device", lambda profile, port: started.append(dict(profile)) or "emulator-5554")
+    profile = {"brand": "Samsung", "tier": "low"}
+    rm.run_single_profile(profile, "app.apk", "stub", stub=True)
+    assert started[0]["dry_run"] is True and "dry_run" not in profile
+
+
+def test_without_stub_the_real_serial_and_profile_reach_the_device_functions(monkeypatch):
+    from vmf import oem_packs, provision, runner
+    calls = {}
+    monkeypatch.setattr(provision, "start_device",
+                        lambda profile, port: calls.setdefault("start", dict(profile)) and "emulator-5556")
+    monkeypatch.setattr(oem_packs, "apply_profile_settings",
+                        lambda serial, profile: calls.setdefault("apply", serial))
+    monkeypatch.setattr(provision, "stop_device", lambda serial: calls.setdefault("stop", serial))
+
+    def boom(**kwargs):
+        raise RuntimeError("stop after the device calls")
+    monkeypatch.setattr(runner, "run_scenario", boom)
+    with pytest.raises(RuntimeError, match="stop after"):
+        rm.run_single_profile({"brand": "Samsung", "tier": "low"}, "app.apk", "stub", stub=False)
+    assert "dry_run" not in calls["start"]
+    assert calls["apply"] == "emulator-5556" and calls["stop"] == "emulator-5556"
