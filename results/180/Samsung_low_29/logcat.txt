@@ -1,0 +1,607 @@
+--------- beginning of main
+10-28 15:58:40.448  2441  3723 I GCoreUlr: WorldUpdater:com.google.android.location.internal.server.ACTION_RESTARTED: Ensuring that reporting is stopped because of reasons: (no Google accounts)
+10-28 15:58:40.450  2441  3723 I GCoreUlr: Unbound from all signal providers.
+10-28 15:58:40.458  2441  3723 I GCoreUlr: DispatchingService ignoring Intent { act=android.net.wifi.WIFI_STATE_CHANGED flg=0x4000010 (has extras) } because ULR inactive
+10-28 15:58:40.461  2441  2441 I GCoreUlr: Unbound from all signal providers.
+10-28 15:58:40.461  2441  2441 I GCoreUlr: Stopping handler for UlrDispSvcFast
+10-28 15:58:40.481  3473  3772 W RcsClientLib: loadFromDiskLocked
+10-28 15:58:40.481  3473  3772 W RcsClientLib: java.io.EOFException
+10-28 15:58:40.481  3473  3772 W RcsClientLib: 	at java.io.ObjectInputStream$PeekInputStream.readFully(ObjectInputStream.java:2472)
+10-28 15:58:40.481  3473  3772 W RcsClientLib: 	at java.io.ObjectInputStream$BlockDataInputStream.readShort(ObjectInputStream.java:2947)
+10-28 15:58:40.481  3473  3772 W RcsClientLib: 	at java.io.ObjectInputStream.readStreamHeader(ObjectInputStream.java:858)
+10-28 15:58:40.481  3473  3772 W RcsClientLib: 	at java.io.ObjectInputStream.<init>(ObjectInputStream.java:353)
+10-28 15:58:40.481  3473  3772 W RcsClientLib: 	at ols.run(SourceFile:12)
+10-28 15:58:40.494  3473  3692 I BugleRcsEngine: [87] RcsStateProvider.onMigrationComplete: Deleted transfers file: false
+10-28 15:58:40.501  3473  3573 I BugleRcsEngine: [74] oil.updateSimInfo: Updated SIM info: currentSimId: [4vfUjdK1ylI-cxPPS6D26oMLYoE]; imsi: [zSrOMA1mh9Q6-7rLJrQ5Pkv1PBs]; rawMsisdn: [S91Pkp86EGIlPk5Ja6-6C9-123U]; formattedMsisdn: ; mccmnc: [GMS5WK9CKM8_bx5id3TvJ4VbDjI] isFiDevice: false;
+10-28 15:58:40.502  3473  3573 I BugleRcsEngine: [74] oil.sendBroadcastSimState: Broadcasting Intent { act=com.google.android.ims.SIM_LOADED (has extras) }
+10-28 15:58:40.502  3473  3473 I Bugle   : SimChangeReceiver: action: com.google.android.ims.SIM_LOADED
+10-28 15:58:40.514  3473  3692 W RcsProvisioning: Failed to read configuration: /data/user/0/com.google.android.apps.messaging/files/rcsconfig: open failed: ENOENT (No such file or directory)
+10-28 15:58:40.514  3473  3692 W RcsProvisioning: java.io.FileNotFoundException: /data/user/0/com.google.android.apps.messaging/files/rcsconfig: open failed: ENOENT (No such file or directory)
+10-28 15:58:40.514  3473  3692 W RcsProvisioning: 	at libcore.io.IoBridge.open(IoBridge.java:496)
+10-28 15:58:40.514  3473  3692 W RcsProvisioning: 	at java.io.FileInputStream.<init>(FileInputStream.java:159)
+10-28 15:58:40.514  3473  3692 W RcsProvisioning: 	at android.app.ContextImpl.openFileInput(ContextImpl.java:600)
+10-28 15:58:40.514  3473  3692 W RcsProvisioning: 	at android.content.ContextWrapper.openFileInput(ContextWrapper.java:206)
+10-28 15:58:40.514  3473  3692 W RcsProvisioning: 	at opj.a(SourceFile:1)
+10-28 15:58:40.514  3473  3692 W RcsProvisioning: 	at oal.a(SourceFile:4)
+10-28 15:58:40.514  3473  3692 W RcsProvisioning: 	at com.google.android.ims.provisioning.RcsConfigurationManager.a(SourceFile:6)
+10-28 15:58:40.514  3473  3692 W RcsProvisioning: 	at odm.buildConferencesFileName(SourceFile:57)
+10-28 15:58:40.514  3473  3692 W RcsProvisioning: 	at com.google.android.apps.messaging.rcsmigration.RcsStateProvider.onMigrationComplete(SourceFile:37)
+10-28 15:58:40.514  3473  3692 W RcsProvisioning: 	at com.google.android.ims.rcsmigration.IRcsStateProvider$Stub.dispatchTransaction(SourceFile:9)
+10-28 15:58:40.514  3473  3692 W RcsProvisioning: 	at com.google.android.aidl.BaseStub.onTransact(SourceFile:11)
+10-28 15:58:40.514  3473  3692 W RcsProvisioning: 	at android.os.Binder.execTransactInternal(Binder.java:1021)
+10-28 15:58:40.514  3473  3692 W RcsProvisioning: 	at android.os.Binder.execTransact(Binder.java:994)
+10-28 15:58:40.514  3473  3692 W RcsProvisioning: Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+10-28 15:58:40.514  3473  3692 W RcsProvisioning: 	at libcore.io.Linux.open(Native Method)
+10-28 15:58:40.514  3473  3692 W RcsProvisioning: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:167)
+10-28 15:58:40.514  3473  3692 W RcsProvisioning: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:252)
+10-28 15:58:40.514  3473  3692 W RcsProvisioning: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:167)
+10-28 15:58:40.514  3473  3692 W RcsProvisioning: 	at android.app.ActivityThread$AndroidOs.open(ActivityThread.java:7255)
+10-28 15:58:40.514  3473  3692 W RcsProvisioning: 	at libcore.io.IoBridge.open(IoBridge.java:482)
+10-28 15:58:40.514  3473  3692 W RcsProvisioning: 	... 12 more
+10-28 15:58:40.531  3771  3771 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-28 15:58:40.532  3771  3771 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_apex_image"
+10-28 15:58:40.532  3771  3771 I AndroidRuntime: Using default boot image
+10-28 15:58:40.532  3771  3771 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.disable_lock_profiling"
+10-28 15:58:40.532  3771  3771 I AndroidRuntime: Leaving lock profiling enabled
+10-28 15:58:40.532  3771  3771 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_generational_cc"
+10-28 15:58:40.533  3771  3771 I app_process: Core platform API reporting enabled, enforcing=false
+10-28 15:58:40.537  3473  3558 I FA      : App measurement is starting up, version: 14711
+10-28 15:58:40.537  3473  3558 I FA      : To enable debug logging run: adb shell setprop log.tag.FA VERBOSE
+10-28 15:58:40.537  3473  3558 I FA      : To enable faster debug mode event logging run:
+10-28 15:58:40.537  3473  3558 I FA      :   adb shell setprop debug.firebase.analytics.app com.google.android.apps.messaging
+10-28 15:58:40.551  3661  3686 E BluetoothAdapter: Bluetooth binder is null
+10-28 15:58:40.552  3661  3686 W SystemServiceRegistry: No service published for: persistent_data_block
+10-28 15:58:40.552  3575  3629 I CarrierServices: [57] cpr.c: Updated SIM info: currentSimId: [4vfUjdK1ylI-cxPPS6D26oMLYoE]; imsi: [zSrOMA1mh9Q6-7rLJrQ5Pkv1PBs]; rawMsisdn: [S91Pkp86EGIlPk5Ja6-6C9-123U]; formattedMsisdn: ; mccmnc: [GMS5WK9CKM8_bx5id3TvJ4VbDjI] isFiDevice: false;
+10-28 15:58:40.557  2441  3728 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+10-28 15:58:40.557  2441  3728 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@202414023@20.24.14 (040800-319035315):2)
+10-28 15:58:40.557  2441  3728 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@202414023@20.24.14 (040800-319035315):0)
+10-28 15:58:40.559  3473  3658 W .apps.messagin: Long monitor contention with owner AsyncTask #2 (3573) at void android.os.Parcel.nativeWriteString(long, java.lang.String)(Parcel.java:-2) waiters=0 in java.lang.String oil.c() for 1.557s
+10-28 15:58:40.559  3473  3658 I BugleRcsEngine: [77] ndu.register: Initializing Carrier Services Library.
+10-28 15:58:40.566  3496  3603 D HostConnection: HostConnection::get() New Host Connection established 0x74312e25b520, tid 3603
+10-28 15:58:40.568  3496  3603 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_hwc_color_transform GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_2 
+10-28 15:58:40.574  3473  3658 I BugleBackup: Registering preference change listener for "bugle".
+10-28 15:58:40.580  3575  3629 I CarrierServices: [57] cpr.a: Broadcasting Intent { act=com.google.android.ims.SIM_LOADED (has extras) }
+10-28 15:58:40.581  1914  1941 E memtrack: Couldn't load memtrack module
+10-28 15:58:40.581  1914  1941 W android.os.Debug: failed to get memory consumption info: -1
+10-28 15:58:40.585  3473  3473 I BugleRcs: RcsAvailability: already updating
+10-28 15:58:40.588  3575  3625 W gle.android.im: Long monitor contention with owner AsyncTask #2 (3629) at android.content.IContentProvider android.app.ActivityThread.acquireExistingProvider(android.content.Context, java.lang.String, int, boolean)(ActivityThread.java:6662) waiters=0 in java.lang.String cpr.a() for 1.232s
+10-28 15:58:40.594  2601  3157 I PeopleChimeraService: onService. callbacks = aabq@fd28e1f, request = com.google.android.gms.common.internal.GetServiceRequest@eee256c
+10-28 15:58:40.597  2441  2556 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_BY_IDS Ids=[atn_geofence_request_id], packageName=com.google.android.apps.maps]
+10-28 15:58:40.600  2441  2592 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+10-28 15:58:40.600  2441  2592 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@202414023@20.24.14 (040800-319035315):2)
+10-28 15:58:40.600  2441  2592 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@202414023@20.24.14 (040800-319035315):0)
+10-28 15:58:40.603  3771  3771 D ICU     : Time zone APEX file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+10-28 15:58:40.608  3771  3771 W app_process: Unexpected CPU variant for X86 using defaults: x86_64
+10-28 15:58:40.617  3771  3771 I app_process: The ClassLoaderContext is a special shared library.
+10-28 15:58:40.618  3771  3771 I app_process: The ClassLoaderContext is a special shared library.
+10-28 15:58:40.625  3473  3658 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-28 15:58:40.630  3473  3533 I BugleRcs: RcsAvailability: No minimum Cs.apk version is set, not checking Cs.apk version
+--------- beginning of system
+10-28 15:58:40.632  1914  2754 W ActivityManager: Background start not allowed: service Intent { cmp=com.google.android.apps.messaging/.shared.datamodel.action.execution.ActionExecutorImpl$EmptyService } to com.google.android.apps.messaging/.shared.datamodel.action.execution.ActionExecutorImpl$EmptyService from pid=3473 uid=10131 pkg=com.google.android.apps.messaging startFg?=false
+10-28 15:58:40.638  3473  3473 W BugleDataModel: ActionExecutorImpl: Action started execution, but we can't guarantee it will complete, the app may be killed. Action: class com.google.android.apps.messaging.shared.datamodel.action.RefreshStatefulNotificationsAction-RefreshStatefulNotificationsAction:27187010
+10-28 15:58:40.638  3473  3473 W BugleDataModel: java.lang.IllegalStateException: Not allowed to start service Intent { cmp=com.google.android.apps.messaging/.shared.datamodel.action.execution.ActionExecutorImpl$EmptyService }: app is in background uid UidRecord{edccaa4 u0a131 RCVR idle procs:1 seq(0,0,0)}
+10-28 15:58:40.638  3473  3473 W BugleDataModel: 	at android.app.ContextImpl.startServiceCommon(ContextImpl.java:1616)
+10-28 15:58:40.638  3473  3473 W BugleDataModel: 	at android.app.ContextImpl.startService(ContextImpl.java:1571)
+10-28 15:58:40.638  3473  3473 W BugleDataModel: 	at android.content.ContextWrapper.startService(ContextWrapper.java:669)
+10-28 15:58:40.638  3473  3473 W BugleDataModel: 	at com.google.android.apps.messaging.shared.datamodel.action.execution.ActionExecutorImpl.e(SourceFile:107)
+10-28 15:58:40.638  3473  3473 W BugleDataModel: 	at com.google.android.apps.messaging.shared.datamodel.action.execution.ActionExecutorImpl.a(SourceFile:19)
+10-28 15:58:40.638  3473  3473 W BugleDataModel: 	at com.google.android.apps.messaging.shared.datamodel.action.execution.ActionExecutorImpl.b(SourceFile:17)
+10-28 15:58:40.638  3473  3473 W BugleDataModel: 	at dya.c(SourceFile:135)
+10-28 15:58:40.638  3473  3473 W BugleDataModel: 	at dya.a(SourceFile:85)
+10-28 15:58:40.638  3473  3473 W BugleDataModel: 	at dxm.b(SourceFile:57)
+10-28 15:58:40.638  3473  3473 W BugleDataModel: 	at dxm.a(SourceFile:23)
+10-28 15:58:40.638  3473  3473 W BugleDataModel: 	at com.google.android.apps.messaging.shared.datamodel.action.common.ThrottledAction.schedule(SourceFile:39)
+10-28 15:58:40.638  3473  3473 W BugleDataModel: 	at com.google.android.apps.messaging.shared.datamodel.action.RefreshStatefulNotificationsAction.refreshIncomingMessageNotifications(SourceFile:17)
+10-28 15:58:40.638  3473  3473 W BugleDataModel: 	at com.google.android.apps.messaging.shared.datamodel.action.RefreshStatefulNotificationsAction.refreshIncomingMessageNotificationsSilently(SourceFile:19)
+10-28 15:58:40.638  3473  3473 W BugleDataModel: 	at com.google.android.apps.messaging.shared.datamodel.action.RefreshStatefulNotificationsAction.refreshIncomingMessageNotificationsSilently(SourceFile:18)
+10-28 15:58:40.638  3473  3473 W BugleDataModel: 	at com.google.android.apps.messaging.shared.receiver.BootAndPackageReplacedReceiver.a(SourceFile:58)
+10-28 15:58:40.638  3473  3473 W BugleDataModel: 	at fpr.onReceive(SourceFile:12)
+10-28 15:58:40.638  3473  3473 W BugleDataModel: 	at fot.onReceive(SourceFile:5)
+10-28 15:58:40.638  3473  3473 W BugleDataModel: 	at com.google.android.apps.messaging.shared.receiver.BootAndPackageReplacedReceiver.onReceive(SourceFile:72)
+10-28 15:58:40.638  3473  3473 W BugleDataModel: 	at android.app.ActivityThread.handleReceiver(ActivityThread.java:3788)
+10-28 15:58:40.638  3473  3473 W BugleDataModel: 	at android.app.ActivityThread.access$1400(ActivityThread.java:219)
+10-28 15:58:40.638  3473  3473 W BugleDataModel: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1870)
+10-28 15:58:40.638  3473  3473 W BugleDataModel: 	at android.os.Handler.dispatchMessage(Handler.java:107)
+10-28 15:58:40.638  3473  3473 W BugleDataModel: 	at android.os.Looper.loop(Looper.java:214)
+10-28 15:58:40.638  3473  3473 W BugleDataModel: 	at android.app.ActivityThread.main(ActivityThread.java:7356)
+10-28 15:58:40.638  3473  3473 W BugleDataModel: 	at java.lang.reflect.Method.invoke(Native Method)
+10-28 15:58:40.638  3473  3473 W BugleDataModel: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:492)
+10-28 15:58:40.638  3473  3473 W BugleDataModel: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:930)
+10-28 15:58:40.638  3473  3473 I BugleAction: ActionSchedulerImpl: class com.google.android.apps.messaging.shared.datamodel.action.RefreshStatefulNotificationsAction-RefreshStatefulNotificationsAction:27187010 deferred since it was started from unsafe context
+10-28 15:58:40.639  3575  3575 I CarrierServices: [2] bqe.a: Unbinding RcsMigrationService
+10-28 15:58:40.641  3473  3473 I Bugle   : BootAndPackageReplacedReceiver: run after reboot tasks
+10-28 15:58:40.645  3575  3575 I CarrierServices: [2] RcsService.a: Initializing RcsService.
+10-28 15:58:40.646  3473  3658 W Bugle   : ChatContentDecoratorGrpc: Instance created but no relevant features are enabled
+10-28 15:58:40.646  1914  2799 W ActivityManager: Background start not allowed: service Intent { cmp=com.google.android.apps.messaging/.shared.datamodel.action.execution.ActionExecutorImpl$EmptyService } to com.google.android.apps.messaging/.shared.datamodel.action.execution.ActionExecutorImpl$EmptyService from pid=3473 uid=10131 pkg=com.google.android.apps.messaging startFg?=false
+10-28 15:58:40.650  3771  3771 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+10-28 15:58:40.653  3771  3771 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-28 15:58:40.657  3575  3791 W RcsClientLib: loadFromDiskLocked
+10-28 15:58:40.657  3575  3791 W RcsClientLib: java.io.EOFException
+10-28 15:58:40.657  3575  3791 W RcsClientLib: 	at java.io.ObjectInputStream$PeekInputStream.readFully(ObjectInputStream.java:2472)
+10-28 15:58:40.657  3575  3791 W RcsClientLib: 	at java.io.ObjectInputStream$BlockDataInputStream.readShort(ObjectInputStream.java:2947)
+10-28 15:58:40.657  3575  3791 W RcsClientLib: 	at java.io.ObjectInputStream.readStreamHeader(ObjectInputStream.java:858)
+10-28 15:58:40.657  3575  3791 W RcsClientLib: 	at java.io.ObjectInputStream.<init>(ObjectInputStream.java:353)
+10-28 15:58:40.657  3575  3791 W RcsClientLib: 	at ctn.a(SourceFile:34)
+10-28 15:58:40.657  3575  3791 W RcsClientLib: 	at cto.run(SourceFile:4)
+10-28 15:58:40.658  3473  3792 I BugleDataModel: ExpireWapPushSiMessageAction: executeAction.
+10-28 15:58:40.661  3473  3792 I Bugle   : CountryCodeDetector: updateMainDeviceCountry from default subscription network country. detected country: us
+10-28 15:58:40.662  3473  3792 E Bugle   : BuglePhoneNumberUtils: Not able to parse phone number MSISDN{x_x_x!x} for country US
+10-28 15:58:40.662  3473  3792 E Bugle   : Error type: NOT_A_NUMBER. The string supplied did not seem to be a phone number.
+10-28 15:58:40.662  3473  3792 E Bugle   : 	at scj.b(SourceFile:271)
+10-28 15:58:40.662  3473  3792 E Bugle   : 	at glx.a(SourceFile:13)
+10-28 15:58:40.662  3473  3792 E Bugle   : 	at glr.e(SourceFile:52)
+10-28 15:58:40.662  3473  3792 E Bugle   : 	at glr.d(SourceFile:39)
+10-28 15:58:40.662  3473  3792 E Bugle   : 	at glr.a(SourceFile:63)
+10-28 15:58:40.662  3473  3792 E Bugle   : 	at glr.a(SourceFile:59)
+10-28 15:58:40.662  3473  3792 E Bugle   : 	at egm.a(SourceFile:83)
+10-28 15:58:40.662  3473  3792 E Bugle   : 	at frw.b(SourceFile:21)
+10-28 15:58:40.662  3473  3792 E Bugle   : 	at frw.a(SourceFile:8)
+10-28 15:58:40.662  3473  3792 E Bugle   : 	at com.google.android.apps.messaging.shared.datamodel.action.ExpireWapPushSiMessageAction.a(SourceFile:21)
+10-28 15:58:40.662  3473  3792 E Bugle   : 	at com.google.android.apps.messaging.shared.datamodel.action.ExpireWapPushSiMessageAction.executeAction(SourceFile:4)
+10-28 15:58:40.662  3473  3792 E Bugle   : 	at dyn.a(SourceFile:4)
+10-28 15:58:40.662  3473  3792 E Bugle   : 	at dxy.run(SourceFile:18)
+10-28 15:58:40.662  3473  3792 E Bugle   : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+10-28 15:58:40.662  3473  3792 E Bugle   : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+10-28 15:58:40.662  3473  3792 E Bugle   : 	at java.lang.Thread.run(Thread.java:919)
+10-28 15:58:40.663  3575  3575 I CarrierServices: [2] cqm.b: Initialize Provisioning Engine V1
+10-28 15:58:40.672  3575  3575 W RcsProvisioning: Failed to read configuration: /data/user/0/com.google.android.ims/files/rcsconfig: open failed: ENOENT (No such file or directory)
+10-28 15:58:40.672  3575  3575 W RcsProvisioning: java.io.FileNotFoundException: /data/user/0/com.google.android.ims/files/rcsconfig: open failed: ENOENT (No such file or directory)
+10-28 15:58:40.672  3575  3575 W RcsProvisioning: 	at libcore.io.IoBridge.open(IoBridge.java:496)
+10-28 15:58:40.672  3575  3575 W RcsProvisioning: 	at java.io.FileInputStream.<init>(FileInputStream.java:159)
+10-28 15:58:40.672  3575  3575 W RcsProvisioning: 	at android.app.ContextImpl.openFileInput(ContextImpl.java:600)
+10-28 15:58:40.672  3575  3575 W RcsProvisioning: 	at android.content.ContextWrapper.openFileInput(ContextWrapper.java:206)
+10-28 15:58:40.672  3575  3575 W RcsProvisioning: 	at cyr.a(SourceFile:2)
+10-28 15:58:40.672  3575  3575 W RcsProvisioning: 	at chf.a(SourceFile:7)
+10-28 15:58:40.672  3575  3575 W RcsProvisioning: 	at chg.a(SourceFile:8)
+10-28 15:58:40.672  3575  3575 W RcsProvisioning: 	at chm.<init>(SourceFile:967)
+10-28 15:58:40.672  3575  3575 W RcsProvisioning: 	at chm.<init>(SourceFile:951)
+10-28 15:58:40.672  3575  3575 W RcsProvisioning: 	at cqm.b(SourceFile:64)
+10-28 15:58:40.672  3575  3575 W RcsProvisioning: 	at cqm.<init>(SourceFile:11)
+10-28 15:58:40.672  3575  3575 W RcsProvisioning: 	at baj.c(SourceFile:48)
+10-28 15:58:40.672  3575  3575 W RcsProvisioning: 	at bai.b(SourceFile:24)
+10-28 15:58:40.672  3575  3575 W RcsProvisioning: 	at com.google.android.ims.services.RcsService.a(SourceFile:31)
+10-28 15:58:40.672  3575  3575 W RcsProvisioning: 	at crs.onCreate(SourceFile:559)
+10-28 15:58:40.672  3575  3575 W RcsProvisioning: 	at com.google.android.ims.services.RcsService.onCreate(SourceFile:25)
+10-28 15:58:40.672  3575  3575 W RcsProvisioning: 	at android.app.ActivityThread.handleCreateService(ActivityThread.java:3953)
+10-28 15:58:40.672  3575  3575 W RcsProvisioning: 	at android.app.ActivityThread.access$1500(ActivityThread.java:219)
+10-28 15:58:40.672  3575  3575 W RcsProvisioning: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1875)
+10-28 15:58:40.672  3575  3575 W RcsProvisioning: 	at android.os.Handler.dispatchMessage(Handler.java:107)
+10-28 15:58:40.672  3575  3575 W RcsProvisioning: 	at android.os.Looper.loop(Looper.java:214)
+10-28 15:58:40.672  3575  3575 W RcsProvisioning: 	at android.app.ActivityThread.main(ActivityThread.java:7356)
+10-28 15:58:40.672  3575  3575 W RcsProvisioning: 	at java.lang.reflect.Method.invoke(Native Method)
+10-28 15:58:40.672  3575  3575 W RcsProvisioning: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:492)
+10-28 15:58:40.672  3575  3575 W RcsProvisioning: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:930)
+10-28 15:58:40.672  3575  3575 W RcsProvisioning: Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+10-28 15:58:40.672  3575  3575 W RcsProvisioning: 	at libcore.io.Linux.open(Native Method)
+10-28 15:58:40.672  3575  3575 W RcsProvisioning: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:167)
+10-28 15:58:40.672  3575  3575 W RcsProvisioning: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:252)
+10-28 15:58:40.672  3575  3575 W RcsProvisioning: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:167)
+10-28 15:58:40.672  3575  3575 W RcsProvisioning: 	at android.app.ActivityThread$AndroidOs.open(ActivityThread.java:7255)
+10-28 15:58:40.672  3575  3575 W RcsProvisioning: 	at libcore.io.IoBridge.open(IoBridge.java:482)
+10-28 15:58:40.672  3575  3575 W RcsProvisioning: 	... 24 more
+10-28 15:58:40.686  3473  3664 I BugleRcs: MCCMNC is NOT RCS enabled
+10-28 15:58:40.686  3473  3664 I BugleRcs: Prod Fi device disabled - Not a Fi device
+10-28 15:58:40.687  3473  3533 I BugleRcs: RcsAvailability: config server url unavailable - Carrier is not RCS enabled
+10-28 15:58:40.688  3473  3533 I BugleRcs: RcsAvailability: updated: RCS is disabled for this carrier by Google
+10-28 15:58:40.690  1664  3803 E ResolverController: No valid NAT64 prefix (101, <unspecified>/0)
+10-28 15:58:40.698  3473  3792 W BugleDataModel: ExpireWapPushSiMessageAction: no WAP Push SI messages.
+10-28 15:58:40.699  3473  3473 I BugleRcs: RcsAvailability: Broadcast disable RCS for RCS is disabled for this carrier by Google
+10-28 15:58:40.648  1914  2799 W ActivityManager: Background start not allowed: service Intent { cmp=com.google.android.apps.messaging/.shared.datamodel.action.execution.ActionExecutorImpl$EmptyService } to com.google.android.apps.messaging/.shared.datamodel.action.execution.ActionExecutorImpl$EmptyService from pid=3473 uid=10131 pkg=com.google.android.apps.messaging startFg?=false
+10-28 15:58:40.700  1914  1914 V SettingsProvider: Notifying for 0: content://settings/secure/accessibility_enabled
+10-28 15:58:40.720  3661  3686 D libEGL  : Emulator has host GPU support, qemu.gles is set to 1.
+10-28 15:58:40.720  3661  3686 W libc    : Unable to set property "qemu.gles" to "1": connection failed; errno=13 (Permission denied)
+10-28 15:58:40.720  1914  2504 W ActivityManager: Background start not allowed: service Intent { cmp=com.google.android.apps.messaging/.shared.datamodel.action.execution.ActionExecutorImpl$EmptyService } to com.google.android.apps.messaging/.shared.datamodel.action.execution.ActionExecutorImpl$EmptyService from pid=3473 uid=10131 pkg=com.google.android.apps.messaging startFg?=false
+10-28 15:58:40.723  3473  3473 I BugleRcs: RcsAvailability: updating
+10-28 15:58:40.723  3473  3533 I BugleRcs: RcsAvailability: No minimum Cs.apk version is set, not checking Cs.apk version
+10-28 15:58:40.726  1666  1666 D Zygote  : Forked child process 3808
+10-28 15:58:40.726  1914  1943 I ActivityManager: Start proc 3808:com.google.android.apps.messaging:rcs/u0a131 for broadcast {com.google.android.apps.messaging/com.google.android.ims.receiver.AutoStartReceiver}
+10-28 15:58:40.731  3473  3664 I BugleRcs: MCCMNC is NOT RCS enabled
+10-28 15:58:40.731  3473  3664 I BugleRcs: Prod Fi device disabled - Not a Fi device
+10-28 15:58:40.732  3473  3533 I BugleRcs: RcsAvailability: config server url unavailable - Carrier is not RCS enabled
+10-28 15:58:40.734  3808  3808 W s.messaging:rc: Unexpected CPU variant for X86 using defaults: x86_64
+10-28 15:58:40.753  3496  3603 D EGL_emulation: eglCreateContext: 0x74312e25b700: maj 2 min 0 rcv 2
+10-28 15:58:40.753  3661  3686 D libEGL  : loaded /vendor/lib64/egl/libEGL_emulation.so
+10-28 15:58:40.754  3661  3686 D libEGL  : loaded /vendor/lib64/egl/libGLESv1_CM_emulation.so
+10-28 15:58:40.754  3496  3603 D EGL_emulation: eglMakeCurrent: 0x74312e25b700: ver 2 0 (tinfo 0x74312e194760)
+10-28 15:58:40.754  3661  3686 D libEGL  : loaded /vendor/lib64/egl/libGLESv2_emulation.so
+10-28 15:58:40.756  3473  3806 W InstanceID: Instance ID SDK is deprecated, com.google.android.apps.messaging should update to use Firebase Instance ID
+10-28 15:58:40.768  3661  3686 D HostConnection: HostConnection::get() New Host Connection established 0x74312e6e6640, tid 3686
+10-28 15:58:40.770  3661  3686 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_hwc_color_transform GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_2 
+10-28 15:58:40.774  3661  3686 D EGL_emulation: eglCreateContext: 0x74312e6e6820: maj 2 min 0 rcv 2
+10-28 15:58:40.775  3661  3686 D EGL_emulation: eglMakeCurrent: 0x74312e6e6820: ver 2 0 (tinfo 0x74312e6d7940)
+10-28 15:58:40.778  2441  3728 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+10-28 15:58:40.779  2441  3728 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@202414023@20.24.14 (040800-319035315):2)
+10-28 15:58:40.779  2441  3728 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@202414023@20.24.14 (040800-319035315):0)
+10-28 15:58:40.781  3575  3575 I CarrierServices: [2] bas.<init>: RcsEngine: Constructor running in com.google.android.ims
+10-28 15:58:40.786  2441  2592 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+10-28 15:58:40.786  2441  2592 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@202414023@20.24.14 (040800-319035315):2)
+10-28 15:58:40.786  2441  2592 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@202414023@20.24.14 (040800-319035315):0)
+10-28 15:58:40.788  3661  3686 W id.gms.unstabl: Core platform API violation: Ljava/nio/Buffer;->position:I from Landroid/opengl/GLES20; using JNI
+10-28 15:58:40.788  3661  3686 W id.gms.unstabl: Core platform API violation: Ljava/nio/Buffer;->limit:I from Landroid/opengl/GLES20; using JNI
+10-28 15:58:40.788  3661  3686 W id.gms.unstabl: Core platform API violation: Ljava/nio/Buffer;->_elementSizeShift:I from Landroid/opengl/GLES20; using JNI
+10-28 15:58:40.794  3808  3808 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.hidl.base-V1.0-java.jar
+10-28 15:58:40.794  3808  3808 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.hidl.manager-V1.0-java.jar
+10-28 15:58:40.794  3808  3808 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.hidl.base-V1.0-java.jar
+10-28 15:58:40.795  3808  3808 I s.messaging:rc: The ClassLoaderContext is a special shared library.
+10-28 15:58:40.797  3808  3808 I s.messaging:rc: The ClassLoaderContext is a special shared library.
+10-28 15:58:40.800  3808  3808 I MultiDex: VM with version 2.1.0 has multidex support
+10-28 15:58:40.800  3808  3808 I MultiDex: install
+10-28 15:58:40.800  3808  3808 I MultiDex: VM has multidex support, MultiDex support library is disabled.
+10-28 15:58:40.522  3771  3771 W app_process: type=1400 audit(0.0:15): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=6751 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+10-28 15:58:40.522  3771  3771 I chatty  : uid=2000(shell) app_process identical 1 line
+10-28 15:58:40.522  3771  3771 W app_process: type=1400 audit(0.0:17): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=6751 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+10-28 15:58:40.814  3575  3575 I CarrierServices: [2] cut.a: KEY_CONFIG_IMS_PACKAGE_OVERRIDE_STRING: com.google.android.ims
+10-28 15:58:40.826  3575  3575 W CarrierServices: [2] cgy.a: No config URL. RCS will be disabled!
+10-28 15:58:40.826  3808  3808 W BugleStartup: StartupHandler: ContentProvider startup tasks did not execute before Application onCreate(), executed in onApplicationCreated().
+10-28 15:58:40.829  3808  3808 I Bugle   : BugleApplicationBase: Bugle version: 4.1.067 (ettin_rc12_alldpi.x86.phone)
+10-28 15:58:40.836  3808  3829 I Bugle   : GServicesValues:
+10-28 15:58:40.836  3808  3829 I Bugle   : bugle_enable_primes_crash_metrics: true
+10-28 15:58:40.836  3808  3829 I Bugle   : bugle_max_telemetry_upload_retries: 10
+10-28 15:58:40.836  3808  3829 I Bugle   : bugle_sticker_set_list_version: 3
+10-28 15:58:40.857  2441  2454 I .gms.persisten: Background concurrent copying GC freed 85187(4851KB) AllocSpace objects, 58(1800KB) LOS objects, 44% free, 7786KB/13MB, paused 32.536ms total 464.363ms
+10-28 15:58:40.870  1914  2504 I ActivityManager: Killing 2575:com.google.android.deskclock/u0a143 (adj 985): empty #17
+10-28 15:58:40.886  1746  1773 D PermissionCache: checking android.permission.DUMP for uid=10115 => granted (1386 us)
+10-28 15:58:40.712  3661  3661 W Binder:3661_2: type=1400 audit(0.0:18): avc: denied { write } for name="property_service" dev="tmpfs" ino=6845 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:property_socket:s0 tclass=sock_file permissive=0 app=com.google.android.gms
+10-28 15:58:40.896  1666  1666 D Zygote  : Forked child process 3838
+10-28 15:58:40.896  1914  1943 I ActivityManager: Start proc 3838:com.google.android.apps.photos/u0a145 for broadcast {com.google.android.apps.photos/com.google.android.apps.photos.backup.freestorage.full.PixelOfferReceiver}
+10-28 15:58:40.898  3473  3473 I RcsClientLib: Service com.google.android.rcs.client.chatsession.ChatSessionService connected. Will notify listeners: false
+10-28 15:58:40.898  3473  3473 I RcsClientLib: Service com.google.android.rcs.client.events.EventService connected. Will notify listeners: true
+10-28 15:58:40.899  3473  3473 I RcsClientLib: Service com.google.android.rcs.client.contacts.ContactsService connected. Will notify listeners: false
+10-28 15:58:40.899  3473  3473 I RcsClientLib: Service com.google.android.rcs.client.filetransfer.FileTransferService connected. Will notify listeners: false
+10-28 15:58:40.899  3473  3473 I RcsClientLib: Service com.google.android.rcs.client.locationsharing.LocationSharingService connected. Will notify listeners: false
+10-28 15:58:40.899  3473  3473 I RcsClientLib: Service com.google.android.rcs.client.ims.ImsConnectionTrackerService connected. Will notify listeners: false
+10-28 15:58:40.900  3473  3473 I RcsClientLib: Service com.google.android.rcs.client.profile.RcsProfileService connected. Will notify listeners: false
+10-28 15:58:40.901  3473  3473 I RcsClientLib: Service com.google.android.rcs.client.businessinfo.BusinessInfoService connected. Will notify listeners: false
+10-28 15:58:40.902  1665  1665 I Zygote  : Process 2575 exited due to signal 9 (Killed)
+10-28 15:58:40.905  3838  3838 W oid.apps.photo: Unexpected CPU variant for X86 using defaults: x86_64
+10-28 15:58:40.912  3575  3575 I CarrierServices: [2] crs.a: onSimLoaded: JibePreferences hasSim: [true], rcsEnabled: [false]
+10-28 15:58:40.914  3575  3826 I CarrierServices: [93] bbd.handleMessage: RCS is disabled, skipping config update request
+10-28 15:58:40.914  1914  1944 I libprocessgroup: Successfully killed process cgroup uid 10143 pid 2575 in 43ms
+10-28 15:58:40.915  3575  3575 E CarrierServices: [2] bas.G: Cannot access P-CSCF address, RCS configuration is null!
+10-28 15:58:40.915  3575  3575 E CarrierServices: [2] bas.A: Cannot access P-CSCF port, IMS configuration is null!
+10-28 15:58:40.915  3575  3575 W CarrierServices: [2] cgy.a: No config URL. RCS will be disabled!
+10-28 15:58:40.915  3575  3575 E CarrierServices: [2] bas.G: Cannot access P-CSCF address, RCS configuration is null!
+10-28 15:58:40.915  3575  3575 E CarrierServices: [2] bas.z: Cannot access P-CSCF address, IMS configuration is null!
+10-28 15:58:40.916  3575  3575 W CarrierServices: [2] chm.m: Current provisioning engine does not support state
+10-28 15:58:40.916  3575  3575 E CarrierServices: [2] bas.G: Cannot access P-CSCF address, RCS configuration is null!
+10-28 15:58:40.916  3575  3575 E CarrierServices: [2] bas.A: Cannot access P-CSCF port, IMS configuration is null!
+10-28 15:58:40.917  3575  3575 W CarrierServices: [2] cgy.a: No config URL. RCS will be disabled!
+10-28 15:58:40.917  3575  3575 E CarrierServices: [2] bas.G: Cannot access P-CSCF address, RCS configuration is null!
+10-28 15:58:40.917  3575  3575 E CarrierServices: [2] bas.z: Cannot access P-CSCF address, IMS configuration is null!
+10-28 15:58:40.948  3838  3838 I oid.apps.photo: The ClassLoaderContext is a special shared library.
+10-28 15:58:40.960  2441  3744 W LogUtils: [Places]: ?: Failed to download inference model weights SLS
+10-28 15:58:40.960  2441  3744 W LogUtils: ckdr: NOT_FOUND: Requested entity was not found.
+10-28 15:58:40.960  2441  3744 W LogUtils: 	at ckdq.c(:com.google.android.gms@202414023@20.24.14 (040800-319035315):3)
+10-28 15:58:40.960  2441  3744 W LogUtils: 	at sjo.a(:com.google.android.gms@202414023@20.24.14 (040800-319035315):57)
+10-28 15:58:40.960  2441  3744 W LogUtils: 	at bjxj.call(:com.google.android.gms@202414023@20.24.14 (040800-319035315):0)
+10-28 15:58:40.960  2441  3744 W LogUtils: 	at bjvu.run(:com.google.android.gms@202414023@20.24.14 (040800-319035315):1)
+10-28 15:58:40.960  2441  3744 W LogUtils: 	at soy.b(:com.google.android.gms@202414023@20.24.14 (040800-319035315):12)
+10-28 15:58:40.960  2441  3744 W LogUtils: 	at soy.run(:com.google.android.gms@202414023@20.24.14 (040800-319035315):7)
+10-28 15:58:40.960  2441  3744 W LogUtils: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+10-28 15:58:40.960  2441  3744 W LogUtils: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+10-28 15:58:40.960  2441  3744 W LogUtils: 	at sux.run(:com.google.android.gms@202414023@20.24.14 (040800-319035315):0)
+10-28 15:58:40.960  2441  3744 W LogUtils: 	at java.lang.Thread.run(Thread.java:919)
+10-28 15:58:40.960  2441  3744 W LogUtils: 
+10-28 15:58:40.960  2441  3744 W LogUtils: [CONTEXT service_id=253 ]
+10-28 15:58:40.960  2441  3744 W PlacesLogger: [PlaceInferenceEngine]: Failed to download model weights. Status code: 7 [CONTEXT service_id=253 ]
+10-28 15:58:40.961  2441  2548 I LogUtils: [Places]: ?: Couldn't find platform key file. [CONTEXT service_id=253 ]
+10-28 15:58:40.962  2601  2922 I CheckinUtil: Classify the device as Phone. [CONTEXT service_id=130 ]
+10-28 15:58:40.964  2441  2548 I LogUtils: [Places]: ?: Couldn't find platform key file. [CONTEXT service_id=253 ]
+10-28 15:58:40.969  2601  3804 I FA-SVC  : App measurement initialized, version: 202414
+10-28 15:58:40.993  3808  3831 W native  : cpu_feature_guard.cc:35 The TensorFlow library was compiled to use SSE instructions, but these aren't available on your machine.
+10-28 15:58:40.993  3808  3831 W native  : cpu_feature_guard.cc:35 The TensorFlow library was compiled to use SSE2 instructions, but these aren't available on your machine.
+10-28 15:58:40.993  3808  3831 W native  : cpu_feature_guard.cc:35 The TensorFlow library was compiled to use SSE3 instructions, but these aren't available on your machine.
+10-28 15:58:40.993  3808  3831 W native  : commandlineflags.cc:976 Ignoring RegisterValidateFunction() for flag pointer 0xc0832c7c: no flag found at that address
+10-28 15:58:41.003  2601  2630 I Icing   : Internal init done: storage state 0
+10-28 15:58:41.027  2601  2914 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.gms componentName=AppsCorpus serviceId=36
+10-28 15:58:41.028  2601  2914 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.gms componentName=AppsCorpus serviceId=32
+10-28 15:58:41.073  3808  3831 W native  : commandlineflags.cc:976 Ignoring RegisterValidateFunction() for flag pointer 0xc00269ec: no flag found at that address
+10-28 15:58:41.092  1914  1930 W ActivityManager: Background start not allowed: service Intent { cmp=com.google.android.apps.messaging/.shared.datamodel.action.execution.ActionExecutorImpl$EmptyService } to com.google.android.apps.messaging/.shared.datamodel.action.execution.ActionExecutorImpl$EmptyService from pid=3473 uid=10131 pkg=com.google.android.apps.messaging startFg?=false
+10-28 15:58:41.094  3473  3473 W BugleDataModel: ActionExecutorImpl: Action started execution, but we can't guarantee it will complete, the app may be killed. Action: class com.google.android.apps.messaging.shared.datamodel.action.CommitPhenotypeAction-CommitPhenotypeAction:27187016
+10-28 15:58:41.094  3473  3473 W BugleDataModel: java.lang.IllegalStateException: Not allowed to start service Intent { cmp=com.google.android.apps.messaging/.shared.datamodel.action.execution.ActionExecutorImpl$EmptyService }: app is in background uid UidRecord{edccaa4 u0a131 TRNB idle change:uncached procs:2 seq(0,0,0)}
+10-28 15:58:41.094  3473  3473 W BugleDataModel: 	at android.app.ContextImpl.startServiceCommon(ContextImpl.java:1616)
+10-28 15:58:41.094  3473  3473 W BugleDataModel: 	at android.app.ContextImpl.startService(ContextImpl.java:1571)
+10-28 15:58:41.094  3473  3473 W BugleDataModel: 	at android.content.ContextWrapper.startService(ContextWrapper.java:669)
+10-28 15:58:41.094  3473  3473 W BugleDataModel: 	at com.google.android.apps.messaging.shared.datamodel.action.execution.ActionExecutorImpl.e(SourceFile:107)
+10-28 15:58:41.094  3473  3473 W BugleDataModel: 	at com.google.android.apps.messaging.shared.datamodel.action.execution.ActionExecutorImpl.a(SourceFile:19)
+10-28 15:58:41.094  3473  3473 W BugleDataModel: 	at com.google.android.apps.messaging.shared.datamodel.action.execution.ActionExecutorImpl.b(SourceFile:17)
+10-28 15:58:41.094  3473  3473 W BugleDataModel: 	at dya.c(SourceFile:135)
+10-28 15:58:41.094  3473  3473 W BugleDataModel: 	at dya.a(SourceFile:85)
+10-28 15:58:41.094  3473  3473 W BugleDataModel: 	at com.google.android.apps.messaging.shared.datamodel.action.common.Action.schedule(SourceFile:60)
+10-28 15:58:41.094  3473  3473 W BugleDataModel: 	at fdf.a(SourceFile:31)
+10-28 15:58:41.094  3473  3473 W BugleDataModel: 	at fdg.a(Unknown Source:4)
+10-28 15:58:41.094  3473  3473 W BugleDataModel: 	at com.google.android.gms.common.api.internal.BasePendingResult$a.handleMessage(SourceFile:7)
+10-28 15:58:41.094  3473  3473 W BugleDataModel: 	at android.os.Handler.dispatchMessage(Handler.java:107)
+10-28 15:58:41.094  3473  3473 W BugleDataModel: 	at lpw.a(SourceFile:10)
+10-28 15:58:41.094  3473  3473 W BugleDataModel: 	at lpw.dispatchMessage(SourceFile:8)
+10-28 15:58:41.094  3473  3473 W BugleDataModel: 	at android.os.Looper.loop(Looper.java:214)
+10-28 15:58:41.094  3473  3473 W BugleDataModel: 	at android.app.ActivityThread.main(ActivityThread.java:7356)
+10-28 15:58:41.094  3473  3473 W BugleDataModel: 	at java.lang.reflect.Method.invoke(Native Method)
+10-28 15:58:41.094  3473  3473 W BugleDataModel: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:492)
+10-28 15:58:41.094  3473  3473 W BugleDataModel: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:930)
+10-28 15:58:41.094  3473  3473 I BugleAction: ActionSchedulerImpl: class com.google.android.apps.messaging.shared.datamodel.action.CommitPhenotypeAction-CommitPhenotypeAction:27187016 deferred since it was started from unsafe context
+10-28 15:58:41.098  2601  2630 I Icing   : 8 corpora need re-polling
+10-28 15:58:41.107  2601  2630 I Icing   : Post-init done
+10-28 15:58:41.120  2601  2630 W Icing   : No valid account for uploading user actions
+10-28 15:58:41.154  3808  3831 W native  : commandlineflags.cc:976 Ignoring RegisterValidateFunction() for flag pointer 0xbff1481c: no flag found at that address
+10-28 15:58:41.156  2601  2630 I Icing   : Using regular flags by method 2
+10-28 15:58:41.185  2601  2630 I Icing   : Usage reports ok 1, Failed Usage reports 0, indexed 0, rejected 0
+10-28 15:58:41.211  2601  2630 W Icing   : No valid account for uploading user actions
+10-28 15:58:41.234  3880  3880 W .apps.wallpape: Unexpected CPU variant for X86 using defaults: x86_64
+10-28 15:58:41.234  3808  3831 W native  : commandlineflags.cc:976 Ignoring RegisterValidateFunction() for flag pointer 0xbfd6f85c: no flag found at that address
+10-28 15:58:41.234  1914  1930 D WificondControl: Scan result ready event
+10-28 15:58:41.239  1665  1665 D Zygote  : Forked child process 3880
+10-28 15:58:41.240  1914  1943 I ActivityManager: Start proc 3880:com.google.android.apps.wallpaper/u0a105 for broadcast {com.google.android.apps.wallpaper/com.android.wallpaper.module.RotationWallpaperMoveReceiver}
+10-28 15:58:41.243  2601  2630 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+10-28 15:58:41.254  2601  2922 W ProviderHelper: Unknown dynamite feature providerinstaller
+10-28 15:58:41.260  2601  2922 I DynamiteModule: Considering local module providerinstaller:0 and remote module providerinstaller:0
+10-28 15:58:41.261  2601  2922 I DynamiteModule: Considering local module providerinstaller:0 and remote module providerinstaller:0
+10-28 15:58:41.282  2601  2630 W Icing   : No valid account for uploading user actions
+10-28 15:58:41.284  3880  3880 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.hidl.base-V1.0-java.jar
+10-28 15:58:41.284  3880  3880 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.hidl.manager-V1.0-java.jar
+10-28 15:58:41.284  3880  3880 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.hidl.base-V1.0-java.jar
+10-28 15:58:41.285  3880  3880 I .apps.wallpape: The ClassLoaderContext is a special shared library.
+10-28 15:58:41.303  3880  3880 I .apps.wallpape: The ClassLoaderContext is a special shared library.
+10-28 15:58:41.306  2601  2922 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+10-28 15:58:41.307  2601  2922 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@202414023@20.24.14 (040800-319035315):2)
+10-28 15:58:41.307  2601  2922 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@202414023@20.24.14 (040800-319035315):0)
+10-28 15:58:41.310  2601  2630 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+10-28 15:58:41.314  2601  2630 W Icing   : No valid account for uploading user actions
+10-28 15:58:41.314  3808  3830 W s.messaging:rc: Long monitor contention with owner StartupThread#2 (3831) at int kxa.a(android.content.Context, boolean, int)(SourceFile:25) waiters=0 in java.lang.Object vos.a() for 476ms
+10-28 15:58:41.315  3808  3832 W s.messaging:rc: Long monitor contention with owner StartupThread#2 (3831) at int kxa.a(android.content.Context, boolean, int)(SourceFile:25) waiters=1 in java.lang.Object vos.a() for 466ms
+10-28 15:58:41.321  2601  2630 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+10-28 15:58:41.322  3880  3880 I MultiDex: VM with version 2.1.0 has multidex support
+10-28 15:58:41.322  3880  3880 I MultiDex: install
+10-28 15:58:41.322  3880  3880 I MultiDex: VM has multidex support, MultiDex support library is disabled.
+10-28 15:58:41.324  2601  2630 W Icing   : No valid account for uploading user actions
+10-28 15:58:41.336  2601  2630 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+10-28 15:58:41.337  2601  2630 I Icing   : Indexing com.google.android.gms-internal.3p:MobileApplication from com.google.android.gms
+10-28 15:58:41.358  2601  2630 D ActivityThread: Loading provider com.google.android.gms.icing.indexapi: com.google.android.gms.icing.indexapi.IndexApiContentProvider
+10-28 15:58:41.372  1914  1930 I ActivityManager: Killing 2928:com.android.keychain/1000 (adj 985): empty #17
+10-28 15:58:41.403  1665  1665 D Zygote  : Forked child process 3904
+10-28 15:58:41.417  3904  3904 W ndroid.calenda: Unexpected CPU variant for X86 using defaults: x86_64
+10-28 15:58:41.422  1665  1665 I Zygote  : Process 2928 exited due to signal 9 (Killed)
+10-28 15:58:41.424  2601  2922 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+10-28 15:58:41.424  2601  2922 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@202414023@20.24.14 (040800-319035315):2)
+10-28 15:58:41.424  2601  2922 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@202414023@20.24.14 (040800-319035315):0)
+10-28 15:58:41.429  1914  1943 W ActivityManager: Slow operation: 63ms so far, now at startProcess: returned from zygote!
+10-28 15:58:41.429  1914  1943 W ActivityManager: Slow operation: 63ms so far, now at startProcess: done updating battery stats
+10-28 15:58:41.429  1914  1943 W ActivityManager: Slow operation: 63ms so far, now at startProcess: building log message
+10-28 15:58:41.429  1914  1943 I ActivityManager: Start proc 3904:com.google.android.calendar/u0a141 for broadcast {com.google.android.calendar/com.google.android.apps.calendar.sync.SyncOnUnlockReceiver}
+10-28 15:58:41.429  1914  1943 W ActivityManager: Slow operation: 63ms so far, now at startProcess: starting to update pids map
+10-28 15:58:41.429  1914  1943 W ActivityManager: Slow operation: 63ms so far, now at startProcess: done updating pids map
+10-28 15:58:41.452  3904  3904 I ndroid.calenda: The ClassLoaderContext is a special shared library.
+10-28 15:58:41.454  1914  1944 I libprocessgroup: Successfully killed process cgroup uid 1000 pid 2928 in 81ms
+10-28 15:58:41.465  3904  3904 I ndroid.calenda: The ClassLoaderContext is a special shared library.
+10-28 15:58:41.566  2601  2630 I Icing   : Indexing done com.google.android.gms-internal.3p:MobileApplication
+10-28 15:58:41.566  2601  2630 I Icing   : Indexing com.google.android.gms-postals_data_id from com.google.android.gms
+10-28 15:58:41.627  2601  2630 I Icing   : Indexing done com.google.android.gms-postals_data_id
+10-28 15:58:41.629  2601  2630 I Icing   : Indexing com.google.android.gms-contacts_contact_id from com.google.android.gms
+10-28 15:58:41.674  2601  2630 I Icing   : Indexing done com.google.android.gms-contacts_contact_id
+10-28 15:58:41.687  2601  2630 I Icing   : Indexing com.google.android.gms-emails_data_id from com.google.android.gms
+10-28 15:58:41.703  1664  2066 I netd    : trafficSwapActiveStatsMap() <24.65ms>
+10-28 15:58:41.710  1664  2066 I netd    : tetherGetStats() <6.60ms>
+10-28 15:58:41.790  2601  2630 I Icing   : Indexing done com.google.android.gms-emails_data_id
+10-28 15:58:41.791  2601  2630 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms
+10-28 15:58:41.798  2601  2630 D ActivityThread: Loading provider com.google.android.gms.icing.proxy.apps: com.google.android.gms.icing.proxy.AppsContentProvider
+10-28 15:58:41.803  2601  2630 I Icing   : Indexing done com.google.android.gms-apps
+10-28 15:58:41.804  2601  2630 I Icing   : Indexing com.google.android.apps.messaging-internal.3p:Person_no_gsa from com.google.android.apps.messaging
+10-28 15:58:41.841  2601  2922 I CheckinResponseProcess: From server: 1520 gservices [full] [CONTEXT service_id=130 ]
+10-28 15:58:41.855  3904  3904 W Primes  : Primes not initialized, returning default (no-op) Primes instance which will ignore all calls. Please call Primes.initialize(...) before using any Primes API.
+10-28 15:58:41.929  2601  2630 I Icing   : Indexing com.google.android.gms-sms from com.google.android.gms
+10-28 15:58:41.933  2601  2630 D ActivityThread: Loading provider com.google.android.gms.icing.proxy.sms: com.google.android.gms.icing.proxy.SmsContentProvider
+10-28 15:58:41.959  2601  2630 I Icing   : Indexing done com.google.android.gms-sms
+10-28 15:58:41.959  2601  2630 I Icing   : Indexing com.google.android.gms-phones_data_id from com.google.android.gms
+10-28 15:58:41.975  1914  1986 I ActivityManager: Killing 3044:com.android.localtransport/1000 (adj 985): empty #17
+10-28 15:58:41.983  2601  2630 I Icing   : Indexing done com.google.android.gms-phones_data_id
+10-28 15:58:41.990  1665  1665 D Zygote  : Forked child process 3961
+10-28 15:58:41.991  1914  1943 I ActivityManager: Start proc 3961:com.google.android.configupdater/u0a104 for broadcast {com.google.android.configupdater/com.google.android.configupdater.MainReceiver}
+10-28 15:58:41.992  3961  3961 W d.configupdate: Unexpected CPU variant for X86 using defaults: x86_64
+10-28 15:58:42.003  1914  1914 V SettingsProvider: Notifying for 0: content://settings/secure/pubkey_blacklist
+10-28 15:58:42.007  1914  3971 I CertBlacklister: Certificate blacklist changed, updating...
+10-28 15:58:42.008  2601  2630 I Icing   : Indexing done com.google.android.apps.messaging-internal.3p:Person_no_gsa
+10-28 15:58:42.020  1914  3971 I CertBlacklister: Certificate blacklist updated
+10-28 15:58:42.024  1665  1665 I Zygote  : Process 3044 exited due to signal 9 (Killed)
+10-28 15:58:42.041  2829  3397 I GservicesProvider: main update completed
+10-28 15:58:42.068  1914  1944 I libprocessgroup: Successfully killed process cgroup uid 1000 pid 3044 in 90ms
+10-28 15:58:42.075  3961  3961 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.hidl.base-V1.0-java.jar
+10-28 15:58:42.075  3961  3961 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.hidl.manager-V1.0-java.jar
+10-28 15:58:42.075  3961  3961 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.hidl.base-V1.0-java.jar
+10-28 15:58:42.091  3961  3961 I d.configupdate: The ClassLoaderContext is a special shared library.
+10-28 15:58:42.106  3473  3986 I Bugle   : ApnsOta: OTA version -1
+10-28 15:58:42.134  2441  2441 E BluetoothAdapter: Bluetooth binder is null
+10-28 15:58:42.166  3575  3575 I CarrierServices: [2] cum.e: Carrier Services GServices flags:
+10-28 15:58:42.166  3575  3575 I CarrierServices:    carrier_services_security_flags_ec_api_white_listed_packages: com.google.android.apps.messaging,com.google.android.dialer,com.google.android.ims.client.sampleapp,com.android.contacts,com.lge.rcscall,com.android.incallui,com.huawei.incallui.appfeature.rcsfeature
+10-28 15:58:42.166  3575  3575 I CarrierServices:    carrier_services_security_flags_ec_api_white_listed_signatures: B28C3EDB665DF32686224DF800F603E9959BBE4E,0980A12BE993528C19107BC21AD811478C63CEFC,B38FA7B5ECFAEC44620A020752B07E063B3120A8,203997BC46B8792DC9747ABD230569071F9A0439,EDA6413C3E3A95492114FE07CD953AD897E40D1A,760EBB9F4200B3DFB1B817B40FF0563A3C150D39,5B368CFF2DA2686996BC95EAC190EAA4F5630FE5,01D845B26B688D8EF647205A5944E9407E52E06E,27196E386B875E76ADF700E7EA84E4C6EEE33DFA,1CDD04F1E4A732BB0352FDFAEE26D2315526DF85,025D5212BF3B5F5CDA6117A518721D70A94D84E0
+10-28 15:58:42.166  3575  3575 I CarrierServices:    carrier_services_security_flags_test_service_white_listed_packages: com.google.android.ims.mobly.snippets
+10-28 15:58:42.166  3575  3575 I CarrierServices:    carrier_services_security_flags_test_service_white_listed_signatures: AE41481F52E0F58DF2806D5A38EB3DBCA5AE02B0,E165542B31953CC282AA4EF2F4D5F07F7663A2A2
+10-28 15:58:42.166  3575  3575 I CarrierServices:    carrier_services_security_flags_white_listed_packages: com.google.android.apps.messaging,com.google.android.dialer,com.google.android.ims.client.sampleapp,com.android.contacts,com.lge.rcscall,com.android.incallui,com.huawei.incallui.appfeature.rcsfeature
+10-28 15:58:42.166  3575  3575 I CarrierServices:    carrier_services_security_flags_white_listed_signatures: B28C3EDB665DF32686224DF800F603E9959BBE4E,0980A12BE993528C19107BC21AD811478C63CEFC,B38FA7B5ECFAEC44620A020752B07E063B3120A8,203997BC46B8792DC9747ABD230569071F9A0439,EDA6413C3E3A95492114FE07CD953AD897E40D1A,760EBB9F4200B3DFB1B817B40FF0563A3C150D39,5B368CFF2DA2686996BC95EAC190EAA4F5630FE5,01D845B26B688D8EF647205A5944E9407E52E06E,27196E386B875E76ADF700E7EA84E4C6EEE33DFA,1CDD04F1E4A732BB0352FDFAEE26D2315526DF85,025D5212BF3B5F5CDA6117A518721D70A94D84E0
+10-28 15:58:42.166  3575  3575 I CarrierServices:    carrier_services_sip_flags_should_use_tycho_version_for_sip_header: true
+10-28 15:58:42.166  3575  3575 I CarrierServices:    carrier_services_video_share_disabled_user_agent_substrings: SM-G930,SM-G935,SM-A320
+10-28 15:58:42.166  3575  3575 I CarrierServices: ====================
+10-28 15:58:42.170  3575  3625 D CarrierServices: log_saver already enabled
+10-28 15:58:42.188  3961  3961 E ConfigUpdater: ignoring update request
+10-28 15:58:42.196  2601  2922 I Checkin : [CheckinRequestProcessor] CheckinNowTaskTag : Checkin Succeeded: https://android.googleapis.com/checkin (fragment #1).
+10-28 15:58:42.197  3961  3961 E ConfigUpdater: ignoring update request
+10-28 15:58:42.205  3961  3961 E ConfigUpdater: ignoring update request
+10-28 15:58:42.208  3575  3761 E CarrierServices: [87] cqf.a: Invalid signature found for com.android.contacts: E39B7BFBE0A67D78292F6CC62E06CA27A2EBF255
+10-28 15:58:42.210  3575  3625 I CarrierServices: [55] cut.a: KEY_CONFIG_IMS_PACKAGE_OVERRIDE_STRING: com.google.android.ims
+10-28 15:58:42.216  3575  3761 E CarrierServices: [87] cqf.a: Invalid signature found for com.android.contacts: E39B7BFBE0A67D78292F6CC62E06CA27A2EBF255
+10-28 15:58:42.253  3961  3961 E ConfigUpdater: ignoring update request
+10-28 15:58:42.298  1914  1930 I ActivityManager: Killing 3140:com.android.contacts/u0a112 (adj 985): empty #17
+10-28 15:58:42.295  3961  3961 I chatty  : uid=10104(com.google.android.configupdater) identical 6 lines
+10-28 15:58:42.297  3961  3961 E ConfigUpdater: ignoring update request
+10-28 15:58:42.308  1665  1665 D Zygote  : Forked child process 4023
+10-28 15:58:42.309  1914  1943 I ActivityManager: Start proc 4023:com.google.android.deskclock/u0a143 for broadcast {com.google.android.deskclock/com.android.deskclock.AlarmInitReceiver}
+10-28 15:58:42.316  4023  4023 W droid.deskcloc: Unexpected CPU variant for X86 using defaults: x86_64
+10-28 15:58:42.333  1665  1665 I Zygote  : Process 3140 exited due to signal 9 (Killed)
+10-28 15:58:42.343  1914  1944 I libprocessgroup: Successfully killed process cgroup uid 10112 pid 3140 in 43ms
+10-28 15:58:42.349  4023  4023 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.hidl.base-V1.0-java.jar
+10-28 15:58:42.349  4023  4023 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.hidl.manager-V1.0-java.jar
+10-28 15:58:42.349  4023  4023 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.hidl.base-V1.0-java.jar
+10-28 15:58:42.350  4023  4023 I droid.deskcloc: The ClassLoaderContext is a special shared library.
+10-28 15:58:42.372  3473  3806 I ShortcutBadger: Checking if platform supports badge counters, attempt 1/3.
+10-28 15:58:42.380  3473  3806 I ShortcutBadger: Checking if platform supports badge counters, attempt 2/3.
+10-28 15:58:42.387  3473  3806 I ShortcutBadger: Checking if platform supports badge counters, attempt 3/3.
+10-28 15:58:42.389  3473  3806 W ShortcutBadger: Badge counter seems not supported in this platform: unable to resolve intent: Intent { act=android.intent.action.BADGE_COUNT_UPDATE (has extras) }
+10-28 15:58:42.390  4023  4023 W PrimesInit: Primes instant initialization
+10-28 15:58:42.390  4023  4023 I GAv4    : Google Analytics 11.0.11 is starting up. To enable debug logging on a device run:
+10-28 15:58:42.390  4023  4023 I GAv4    :   adb shell setprop log.tag.GAv4 DEBUG
+10-28 15:58:42.390  4023  4023 I GAv4    :   adb logcat -s GAv4
+10-28 15:58:42.394  2601  2919 I CheckinCompat: No service .checkin.CheckinService to disable [CONTEXT service_id=130 ]
+10-28 15:58:42.396  4023  4045 W GAv4    : AnalyticsReceiver is not registered or is disabled. Register the receiver for reliable dispatching on non-Google Play devices. See http://goo.gl/8Rd3yj for instructions.
+10-28 15:58:42.396  2601  2919 I CheckinCompat: No service .update.SystemUpdateActivity to disable [CONTEXT service_id=130 ]
+10-28 15:58:42.397  4023  4043 W Primes  : background initialization
+10-28 15:58:42.398  2601  2919 I CheckinCompat: No service .update.SystemUpdateService$SecretCodeReceiver to disable [CONTEXT service_id=130 ]
+10-28 15:58:42.400  2601  2919 I CheckinCompat: No service .update.SystemUpdateService$Receiver to disable [CONTEXT service_id=130 ]
+10-28 15:58:42.406  2601  3992 I FontLog : Received query Google Sans:500, URI content://com.google.android.gms.fonts [CONTEXT service_id=132 ]
+10-28 15:58:42.407  2601  3992 I FontLog : Query [Google Sans:500] resolved to {Google Sans, wdth 100.0, wght 500, ital 0.0, bestEffort false} [CONTEXT service_id=132 ]
+10-28 15:58:42.421  4023  4045 W GAv4    : CampaignTrackingReceiver is not registered, not exported or is disabled. Installation campaign tracking is not possible. See http://goo.gl/8Rd3yj for instructions.
+10-28 15:58:42.422  4023  4045 W GAv4    : AnalyticsService not registered in the app manifest. Hits might not be delivered reliably. See http://goo.gl/8Rd3yj for instructions.
+10-28 15:58:42.425  4023  4043 I PrimesTesting: GserviceFlagsSupplier.get()
+10-28 15:58:42.451  1914  3844 I ActivityManager: Killing 3191:com.android.dynsystem/1000 (adj 985): empty #17
+10-28 15:58:42.474  2601  3992 I FontLog : Font PFD returned from cache for {Google Sans, wdth 100.0, wght 500, ital 0.0, bestEffort false} [CONTEXT service_id=132 ]
+10-28 15:58:42.477  2601  3992 I FontLog : Fetch {Google Sans, wdth 100.0, wght 500, ital 0.0, bestEffort false} end status Status{statusCode=SUCCESS, resolution=null} [CONTEXT service_id=132 ]
+10-28 15:58:42.479  2601  3016 I FontLog : Pulling font file for id = 3, cache size = 3 [CONTEXT service_id=132 ]
+10-28 15:58:42.482  1665  1665 I Zygote  : Process 3191 exited due to signal 9 (Killed)
+10-28 15:58:42.489  2601  3016 I FontLog : Received query Google Sans, URI content://com.google.android.gms.fonts [CONTEXT service_id=132 ]
+10-28 15:58:42.489  2601  3016 I FontLog : Query [Google Sans] resolved to {Google Sans, wdth 100.0, wght 400, ital 0.0, bestEffort false} [CONTEXT service_id=132 ]
+10-28 15:58:42.495  2601  3016 I FontLog : Font PFD returned from cache for {Google Sans, wdth 100.0, wght 400, ital 0.0, bestEffort false} [CONTEXT service_id=132 ]
+10-28 15:58:42.496  1914  1944 I libprocessgroup: Successfully killed process cgroup uid 1000 pid 3191 in 42ms
+10-28 15:58:42.499  2601  3016 I FontLog : Fetch {Google Sans, wdth 100.0, wght 400, ital 0.0, bestEffort false} end status Status{statusCode=SUCCESS, resolution=null} [CONTEXT service_id=132 ]
+10-28 15:58:42.502  2601  3157 I FontLog : Pulling font file for id = 4, cache size = 4 [CONTEXT service_id=132 ]
+10-28 15:58:42.506  4023  4023 I AlarmClock: AlarmInitReceiver android.intent.action.BOOT_COMPLETED
+10-28 15:58:42.514  1914  2340 I ActivityManager: Killing 3240:com.android.managedprovisioning/u0a61 (adj 985): empty #17
+10-28 15:58:42.523  1665  1665 D Zygote  : Forked child process 4051
+10-28 15:58:42.525  4051  4051 W ogle.android.g: Unexpected CPU variant for X86 using defaults: x86_64
+10-28 15:58:42.526  1914  1943 I ActivityManager: Start proc 4051:com.google.android.gm/u0a139 for broadcast {com.google.android.gm/com.google.android.gm.GoogleMailDeviceStartupReceiver}
+10-28 15:58:42.543  4051  4051 I ogle.android.g: The ClassLoaderContext is a special shared library.
+10-28 15:58:42.554  1665  1665 I Zygote  : Process 3240 exited due to signal 9 (Killed)
+10-28 15:58:42.557  4051  4051 I ogle.android.g: The ClassLoaderContext is a special shared library.
+10-28 15:58:42.558  1914  1944 I libprocessgroup: Successfully killed process cgroup uid 10061 pid 3240 in 43ms
+10-28 15:58:42.756  4051  4051 W PrimesInit: Primes instant initialization
+10-28 15:58:42.761  4051  4078 W Primes  : background initialization
+10-28 15:58:42.812  4051  4051 W GAV2    : Thread[main,5,main]: Need to call initialize() and be in fallback mode to start dispatch.
+10-28 15:58:42.821  4051  4078 I PrimesTesting: GserviceFlagsSupplier.get()
+10-28 15:58:42.839  4051  4051 W Gmail   : AccountUtils:For b/73513912, load account content://com.android.gmail.ui/account.-2137146394 from MailAppProvider. Is account valid result: 1.
+10-28 15:58:42.841  4051  4051 W Gmail   : AccountUtils:For b/73513912, load account content://com.google.android.gm.email.provider/account.-437561172?suppress_combined%3Dtrue from MailAppProvider. Is account valid result: 1.
+10-28 15:58:42.856  2441  2441 W SystemServiceRegistry: No service published for: persistent_data_block
+10-28 15:58:42.945  1914  2340 W ActivityManager: Unable to start service Intent { cmp=com.google.android.gm/com.android.email.service.AttachmentService } U=0: not found
+10-28 15:58:43.026  4051  4051 W Gmail   : EasBundling:ExchangeUpgradeReceiver: action=android.intent.action.BOOT_COMPLETED data=null
+10-28 15:58:43.029  4051  4051 W Gmail   : EasBundling:ExchangeUpgradeUtils: isExchangeLegacy=false
+10-28 15:58:43.055  2662  2662 I OpaEligibilityChecker: send OpaEligibilityChange broadcast to CommonBroadcastReceiver
+10-28 15:58:43.076  2601  2888 E ConfigFileUtils: Failed to read config file: /data/user_de/0/com.google.android.gms/app_chimera/current_modules_init.pb: open failed: ENOENT (No such file or directory)
+10-28 15:58:43.079  2662  2662 I HotwordUpgradeTask: App version upgraded to 300951966: running speaker ID model upgrade tasks v2.
+10-28 15:58:43.079  2662  2662 I HotwordUpgradeTask: User is not speaker ID enabled. Returning.
+10-28 15:58:43.079  2662  2662 I UtteranceRenameTask: Utterances already renamed to new format. Abort task.
+10-28 15:58:43.090  2662  2911 E BluetoothAdapter: Bluetooth binder is null
+10-28 15:58:43.093  3575  3575 I CarrierServices: [2] CarrierServicesReleaseApp.a: Initialized already, return.
+10-28 15:58:43.093  3575  3575 I CarrierServices: [2] BootCompletedReceiver.a: Boot completed, Triggering provisioning if needed.
+10-28 15:58:43.101  3575  3575 I CarrierServices: [2] cyc.a: CarrierServices.apk is not sim call manager. Not enabling MMTel.
+10-28 15:58:43.101  3575  3575 I CarrierServices: [2] ProvisioningService.a: Should not enable MMTel. Not scheduling provisioning.
+10-28 15:58:43.116  3575  3575 I CarrierServices: [2] RcsAutoStartReceiver.a: enableRcs changed from true to true
+10-28 15:58:43.116  3575  3575 I CarrierServices: [2] RcsAutoStartReceiver.a: RcsAutoStartReceiver triggered. Fetching RCS State. Action: android.intent.action.BOOT_COMPLETED
+10-28 15:58:43.122  3575  3575 I CarrierServices: [2] bqa.a: Migration binding to RcsMigrationService
+10-28 15:58:43.123  3473  3473 I BugleDataModel: RcsMigrationService: Returning RCS state provider.
+10-28 15:58:43.128  2367  2398 I LauncherIconVisibility: doUpdate() : Visible = false
+10-28 15:58:43.129  3473  3991 I BugleRcsEngine: [107] omj.shouldUseCarrierServicesApkForV1Apis: Checking if using CarrierServices.apk is possible. Enabled: true, isAtLeastM: true, runningInsideBugle: true
+10-28 15:58:43.137  2601  4105 E PhenotypeRegOp: Attempting to overwrite config package for com.google.android.gms.car [CONTEXT service_id=231 ]
+10-28 15:58:43.150  3473  3991 W RcsProvisioning: Failed to read configuration: /data/user/0/com.google.android.apps.messaging/files/rcsconfig: open failed: ENOENT (No such file or directory)
+10-28 15:58:43.150  3473  3991 W RcsProvisioning: java.io.FileNotFoundException: /data/user/0/com.google.android.apps.messaging/files/rcsconfig: open failed: ENOENT (No such file or directory)
+10-28 15:58:43.150  3473  3991 W RcsProvisioning: 	at libcore.io.IoBridge.open(IoBridge.java:496)
+10-28 15:58:43.150  3473  3991 W RcsProvisioning: 	at java.io.FileInputStream.<init>(FileInputStream.java:159)
+10-28 15:58:43.150  3473  3991 W RcsProvisioning: 	at android.app.ContextImpl.openFileInput(ContextImpl.java:600)
+10-28 15:58:43.150  3473  3991 W RcsProvisioning: 	at android.content.ContextWrapper.openFileInput(ContextWrapper.java:206)
+10-28 15:58:43.150  3473  3991 W RcsProvisioning: 	at opj.a(SourceFile:1)
+10-28 15:58:43.150  3473  3991 W RcsProvisioning: 	at oal.a(SourceFile:4)
+10-28 15:58:43.150  3473  3991 W RcsProvisioning: 	at com.google.android.ims.provisioning.RcsConfigurationManager.a(SourceFile:6)
+10-28 15:58:43.150  3473  3991 W RcsProvisioning: 	at odm.buildToken(SourceFile:10)
+10-28 15:58:43.150  3473  3991 W RcsProvisioning: 	at com.google.android.apps.messaging.rcsmigration.RcsStateProvider.buildRcsState(SourceFile:57)
+10-28 15:58:43.150  3473  3991 W RcsProvisioning: 	at com.google.android.apps.messaging.rcsmigration.RcsStateProvider.getRcsState(SourceFile:6)
+10-28 15:58:43.150  3473  3991 W RcsProvisioning: 	at com.google.android.ims.rcsmigration.IRcsStateProvider$Stub.dispatchTransaction(SourceFile:6)
+10-28 15:58:43.150  3473  3991 W RcsProvisioning: 	at com.google.android.aidl.BaseStub.onTransact(SourceFile:11)
+10-28 15:58:43.150  3473  3991 W RcsProvisioning: 	at android.os.Binder.execTransactInternal(Binder.java:1021)
+10-28 15:58:43.150  3473  3991 W RcsProvisioning: 	at android.os.Binder.execTransact(Binder.java:994)
+10-28 15:58:43.150  3473  3991 W RcsProvisioning: Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+10-28 15:58:43.150  3473  3991 W RcsProvisioning: 	at libcore.io.Linux.open(Native Method)
+10-28 15:58:43.150  3473  3991 W RcsProvisioning: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:167)
+10-28 15:58:43.150  3473  3991 W RcsProvisioning: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:252)
+10-28 15:58:43.150  3473  3991 W RcsProvisioning: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:167)
+10-28 15:58:43.150  3473  3991 W RcsProvisioning: 	at android.app.ActivityThread$AndroidOs.open(ActivityThread.java:7255)
+10-28 15:58:43.150  3473  3991 W RcsProvisioning: 	at libcore.io.IoBridge.open(IoBridge.java:482)
+10-28 15:58:43.150  3473  3991 W RcsProvisioning: 	... 13 more
+10-28 15:58:43.152  2662  2662 I BgTaskExecutorImpl: Starting EXCLUSIVE background task OPA_NOTIFICATION_DELAYED_TRIGGER_SYNC.
+10-28 15:58:43.155  2601  4105 E PhenotypeRegOp: Attempting to overwrite config package for com.google.android.gms.games [CONTEXT service_id=231 ]
+10-28 15:58:43.155  2601  4105 E PhenotypeRegOp: Attempting to overwrite config package for com.google.android.gms.mobile_data_plan [CONTEXT service_id=231 ]
+10-28 15:58:43.155  2601  4105 E PhenotypeRegOp: Attempting to overwrite config package for com.google.android.gms.signin [CONTEXT service_id=231 ]
+10-28 15:58:43.156  2601  4105 E PhenotypeRegOp: Attempting to overwrite config package for com.google.android.gms.udc [CONTEXT service_id=231 ]
+10-28 15:58:43.173  1666  1666 D Zygote  : Forked child process 4118
+10-28 15:58:43.175  1914  1943 W ActivityManager: Slow operation: 121ms so far, now at startProcess: returned from zygote!
+10-28 15:58:43.176  1914  1943 W ActivityManager: Slow operation: 122ms so far, now at startProcess: done updating battery stats
+10-28 15:58:43.176  1914  1943 W ActivityManager: Slow operation: 122ms so far, now at startProcess: building log message
+10-28 15:58:43.176  1914  1943 I ActivityManager: Start proc 4118:com.android.chrome/u0a133 for service {com.android.chrome/org.chromium.chrome.browser.customtabs.CustomTabsConnectionService}
+10-28 15:58:43.176  1914  1943 W ActivityManager: Slow operation: 122ms so far, now at startProcess: starting to update pids map
+10-28 15:58:43.176  1914  1943 W ActivityManager: Slow operation: 122ms so far, now at startProcess: done updating pids map
+10-28 15:58:43.176  1914  1943 W ActivityManager: Slow operation: 52ms so far, now at startProcess: asking zygote to start proc
+10-28 15:58:43.183  2334  2785 D ProtoStore: deleting smartspace_current
+10-28 15:58:43.188  2334  2785 D ProtoStore: no cached data
+10-28 15:58:43.200  3496  3532 I droid.apps.map: Waiting for a blocking GC ProfileSaver
+10-28 15:58:43.226  2441  3018 E BluetoothAdapter: Bluetooth binder is null
+10-28 15:58:43.230  4118  4118 W .android.chrom: Unexpected CPU variant for X86 using defaults: x86_64
+10-28 15:58:43.236  3496  3532 I droid.apps.map: WaitForGcToComplete blocked ProfileSaver on ClassLinker for 36.055ms
+10-28 15:58:43.263  3771  3771 I AccessibilityNodeInfoDumper: Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@33605; boundsInParent: Rect(0, 0 - 0, 0); boundsInScreen: Rect(0, 78 - 0, 78); packageName: com.google.android.apps.nexuslauncher; className: android.widget.LinearLayout; text: null; error: null; maxTextLength: -1; contentDescription: null; tooltipText: null; viewIdResName: null; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
+10-28 15:58:43.264  3771  3771 I AccessibilityNodeInfoDumper: Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@2dfae; boundsInParent: Rect(0, 0 - 0, 24); boundsInScreen: Rect(360, 1476 - 360, 1500); packageName: com.google.android.apps.nexuslauncher; className: android.widget.TextView; text: null; error: null; maxTextLength: -1; contentDescription: ; tooltipText: null; viewIdResName: com.google.android.apps.nexuslauncher:id/qsb_hint; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
+10-28 15:58:43.264  3771  3771 I AccessibilityNodeInfoDumper: Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@2e36f; boundsInParent: Rect(0, 0 - 122, 101); boundsInScreen: Rect(567, 1485 - 689, 1586); packageName: com.google.android.apps.nexuslauncher; className: android.widget.TextView; text: null; error: null; maxTextLength: -1; contentDescription: null; tooltipText: null; viewIdResName: com.google.android.apps.nexuslauncher:id/fast_scroller_popup; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
+10-28 15:58:43.264  4118  4118 I .android.chrom: The ClassLoaderContext is a special shared library.
+10-28 15:58:43.264  3771  3771 W AccessibilityNodeInfoDumper: Fetch time: 3ms
+10-28 15:58:43.267  1914  1930 W WindowManager: removeWindowToken: Attempted to remove non-existing token: android.os.Binder@19eba40
+10-28 15:58:43.268  1914  1914 V SettingsProvider: Notifying for 0: content://settings/secure/accessibility_enabled
+10-28 15:58:43.273  1914  1914 V SettingsProvider: Notifying for 0: content://settings/system/accelerometer_rotation
+10-28 15:58:43.276  3771  3771 D AndroidRuntime: Shutting down VM
+10-28 15:58:43.286  1914  2222 W ActivityManager: Unable to start service Intent { act=com.google.android.gms.auth.key.retrieval.service.START pkg=com.google.android.gms } U=0: not found
+10-28 15:58:43.289  1914  2222 W ActivityManager: Unbind failed: could not find connection for android.os.BinderProxy@244fc8f
+10-28 15:58:43.289  2601  2926 E GmsClient: unable to connect to service: com.google.android.gms.auth.key.retrieval.service.START on com.google.android.gms
+10-28 15:58:43.312  1665  1665 D Zygote  : Forked child process 4136
+10-28 15:58:43.316  4118  4118 I .android.chrom: The ClassLoaderContext is a special shared library.
+10-28 15:58:43.325  4136  4136 W timeinitialize: Unexpected CPU variant for X86 using defaults: x86_64
+10-28 15:58:43.328  2334  2360 I s.nexuslaunche: NativeAlloc concurrent copying GC freed 53770(2813KB) AllocSpace objects, 45(1288KB) LOS objects, 49% free, 3480KB/6960KB, paused 8us total 144.580ms
+10-28 15:58:43.356  1914  1943 W ActivityManager: Slow operation: 232ms so far, now at startProcess: returned from zygote!
+10-28 15:58:43.356  1914  1943 W ActivityManager: Slow operation: 232ms so far, now at startProcess: done updating battery stats
+10-28 15:58:43.356  1914  1943 W ActivityManager: Slow operation: 232ms so far, now at startProcess: building log message
+10-28 15:58:43.356  1914  1943 I ActivityManager: Start proc 4136:com.google.android.onetimeinitializer/u0a110 for broadcast {com.google.android.onetimeinitializer/com.google.android.onetimeinitializer.OneTimeInitializerReceiver}
+10-28 15:58:43.356  1914  1943 W ActivityManager: Slow operation: 232ms so far, now at startProcess: starting to update pids map
+10-28 15:58:43.356  1914  1943 W ActivityManager: Slow operation: 232ms so far, now at startProcess: done updating pids map
+10-28 15:58:43.357  3473  3991 W RcsProvisioning: Failed to read configuration: /data/user/0/com.google.android.apps.messaging/files/rcsconfig: open failed: ENOENT (No such file or directory)
+10-28 15:58:43.357  3473  3991 W RcsProvisioning: java.io.FileNotFoundException: /data/user/0/com.google.android.apps.messaging/files/rcsconfig: open failed: ENOENT (No such file or directory)
+10-28 15:58:43.357  3473  3991 W RcsProvisioning: 	at libcore.io.IoBridge.open(IoBridge.java:496)
+10-28 15:58:43.357  3473  3991 W RcsProvisioning: 	at java.io.FileInputStream.<init>(FileInputStream.java:159)
+10-28 15:58:43.357  3473  3991 W RcsProvisioning: 	at android.app.ContextImpl.openFileInput(ContextImpl.java:600)
+10-28 15:58:43.357  3473  3991 W RcsProvisioning: 	at android.content.ContextWrapper.openFileInput(ContextWrapper.java:206)
+10-28 15:58:43.357  3473  3991 W RcsProvisioning: 	at opj.a(SourceFile:1)
+10-28 15:58:43.357  3473  3991 W RcsProvisioning: 	at oal.a(SourceFile:4)
+10-28 15:58:43.357  3473  3991 W RcsProvisioning: 	at com.google.android.ims.provisioning.RcsConfigurationManager.a(SourceFile:6)
+10-28 15:58:43.357  3473  3991 W RcsProvisioning: 	at odm.buildConferencesFileName(SourceFile:57)
+10-28 15:58:43.357  3473  3991 W RcsProvisioning: 	at odm.getConferences(SourceFile:49)
+10-28 15:58:43.357  3473  3991 W RcsProvisioning: 	at odm.buildFiles(SourceFile:6)
+10-28 15:58:43.357  3473  3991 W RcsProvisioning: 	at com.google.android.apps.messaging.rcsmigration.RcsStateProvider.buildRcsState(SourceFile:63)
+10-28 15:58:43.357  3473  3991 W RcsProvisioning: 	at com.google.android.apps.messaging.rcsmigration.RcsStateProvider.getRcsState(SourceFile:6)
+10-28 15:58:43.357  3473  3991 W RcsProvisioning: 	at com.google.android.ims.rcsmigration.IRcsStateProvider$Stub.dispatchTransaction(SourceFile:6)
+10-28 15:58:43.357  3473  3991 W RcsProvisioning: 	at com.google.android.aidl.BaseStub.onTransact(SourceFile:11)
+10-28 15:58:43.357  3473  3991 W RcsProvisioning: 	at android.os.Binder.execTransactInternal(Binder.java:1021)
+10-28 15:58:43.357  3473  3991 W RcsProvisioning: 	at android.os.Binder.execTransact(Binder.java:994)
+10-28 15:58:43.357  3473  3991 W RcsProvisioning: Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+10-28 15:58:43.357  3473  3991 W RcsProvisioning: 	at libcore.io.Linux.open(Native Method)
+10-28 15:58:43.357  3473  3991 W RcsProvisioning: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:167)
+10-28 15:58:43.357  3473  3991 W RcsProvisioning: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:252)
+10-28 15:58:43.357  3473  3991 W RcsProvisioning: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:167)
+10-28 15:58:43.357  3473  3991 W RcsProvisioning: 	at android.app.ActivityThread$AndroidOs.open(ActivityThread.java:7255)
+10-28 15:58:43.357  3473  3991 W RcsProvisioning: 	at libcore.io.IoBridge.open(IoBridge.java:482)
+10-28 15:58:43.357  3473  3991 W RcsProvisioning: 	... 15 more
+10-28 15:58:43.369  4118  4118 I LoadedApk: No resource references to update in package com.google.android.trichromelibrary
+10-28 15:58:43.388  4136  4136 I timeinitialize: The ClassLoaderContext is a special shared library.
+10-28 15:58:43.404  4136  4136 V OneTimeInitializerReceiver: OneTimeInitializerReceiver.onReceive
+10-28 15:58:43.408  4118  4161 W DynamiteModule: Local module descriptor class for com.google.android.gms.googlecertificates not found.
+10-28 15:58:43.412  4136  4162 V OneTimeInitializer: OneTimeInitializer.initialize
+10-28 15:58:43.415  4136  4162 V OneTimeInitializer: Already run, doing nothing.
+10-28 15:58:43.415  1914  3844 I ActivityManager: Killing 3271:com.android.omadm.service/u0a114 (adj 995): empty #17
