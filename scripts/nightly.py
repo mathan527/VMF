@@ -26,6 +26,7 @@ import argparse
 from datetime import datetime
 import json
 import logging
+import os
 from pathlib import Path
 import re
 import subprocess
@@ -37,6 +38,14 @@ import yaml
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO_ROOT))
+os.chdir(REPO_ROOT)
+
+# When running in Administrator mode (e.g. jasrm\admin), redirect to B2-Group2 user profile
+# so emulator AVDs and .android folder are discovered seamlessly without touching vmf/ packages.
+b2_profile = Path("C:/Users/B2-Group2")
+if not (Path.home() / ".android" / "avd").exists() and (b2_profile / ".android" / "avd").exists():
+    os.environ["USERPROFILE"] = str(b2_profile)
+    os.environ["ANDROID_AVD_HOME"] = str(b2_profile / ".android" / "avd")
 
 from vmf.provision.provision import start_device, stop_device
 from vmf.provision.device_lifecycle import cleanup_orphans
@@ -303,16 +312,16 @@ def update_stability_log(date_str: str, finished: bool, failures: int | str, not
             "# VMF Nightly Stability Log (5-Night Log)\n\n"
             "**Module**: M12.5 & M15.4  \n"
             "**Owner**: Dhatri  \n"
-            "**Required for Acceptance**: 5 unattended nights starting from Friday 16 October to Tuesday 20 October 2026.\n\n"
+            "**Required for Acceptance**: 5 unattended nights starting from Wednesday 28 October to Sunday 1 November 2026.\n\n"
             "---\n\n"
             "## Stability Run Table\n\n"
             "| Night | Date | Finished? | Failures | Notes / Fix Applied | Verified By |\n"
             "|---|---|---|---|---|---|\n"
-            f"| Night 1 | 2026-10-16 | Pending | — | Unattended nightly run | Dhatri |\n"
-            f"| Night 2 | 2026-10-17 | Pending | — | Second unattended run | Dhatri |\n"
-            f"| Night 3 | 2026-10-18 | Pending | — | Third unattended run | Dhatri |\n"
-            f"| Night 4 | 2026-10-19 | Pending | — | Fourth unattended run | Dhatri |\n"
-            f"| Night 5 | 2026-10-20 | Pending | — | Fifth unattended run | Dhatri |\n",
+            f"| Night 1 | 2026-10-28 | Pending | — | Night 1 unattended matrix run | Dhatri |\n"
+            f"| Night 2 | 2026-10-29 | Pending | — | Night 2 unattended matrix run | Dhatri |\n"
+            f"| Night 3 | 2026-10-30 | Pending | — | Night 3 unattended matrix run | Dhatri |\n"
+            f"| Night 4 | 2026-10-31 | Pending | — | Night 4 unattended matrix run | Dhatri |\n"
+            f"| Night 5 | 2026-11-01 | Pending | — | Night 5 unattended matrix run | Dhatri |\n",
             encoding="utf-8",
         )
 

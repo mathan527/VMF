@@ -18,6 +18,9 @@
 param(
     [string]$Time = "01:00",
     [string]$TaskName = "VMFNightly",
+    [string]$PythonExe = "",
+    [string]$UserName = "",
+    [string]$Password = "",
     [switch]$RunNow
 )
 
@@ -38,12 +41,31 @@ if (-not $isAdmin) {
 $ScriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 $RepoRoot = (Resolve-Path "$ScriptDir\..").Path
 $NightlyPy = Join-Path $RepoRoot "scripts\nightly.py"
-$PythonExe = (Get-Command python -ErrorAction SilentlyContinue).Source
+
+# Resolve Python with required dependencies (PyYAML, etc.)
+if (-not $PythonExe) {
+    $candidates = @(
+        "C:\Users\B2-Group2\AppData\Local\Programs\Python\Python312\python.exe",
+        (Get-Command python -ErrorAction SilentlyContinue).Source,
+        "C:\Python312\python.exe"
+    )
+    foreach ($cand in $candidates) {
+        if ($cand -and (Test-Path $cand)) {
+            $hasYaml = & $cand -c "import yaml; print('OK')" 2>$null
+            if ($hasYaml -match "OK") {
+                $PythonExe = $cand
+                break
+            }
+        }
+    }
+}
 
 if (-not $PythonExe) {
-    Write-Error "Python executable not found in PATH. Ensure Python 3 is installed and in system PATH."
+    Write-Error "Python executable with required packages (yaml/PyYAML) not found. Ensure Python 3.12 with requirements.txt is installed."
     exit 1
 }
+
+Write-Host "Selected Python: $PythonExe" -ForegroundColor Cyan
 
 # 1. Machine Hardening: Power Settings (M12.3)
 Write-Host "[1/4] Applying Power & Sleep Hardening..." -ForegroundColor Yellow
@@ -110,25 +132,54 @@ try {
     }
 
     $action = New-ScheduledTaskAction -Execute $PythonExe -Argument "`"$NightlyPy`"" -WorkingDirectory $RepoRoot
-    $trigger = New-ScheduledTaskTrigger -Daily -At $Time
-    $principal = New-ScheduledTaskPrincipal -UserId $currentUser -LogonType InteractiveOrPassword -RunLevel Highest
-    $settings = New-ScheduledTaskSettingsSet -AllowStartIfOnBatteries:$false -DontStopIfGoingOnBatteries:$true -StartWhenAvailable:$true -ExecutionTimeLimit (New-TimeSpan -Hours 6)
+    $registered = $false
+    if ($Password) {
+        # If user is admin but runs under B2-Group2 workspace, target B2-Group2
+        $targetUser = if ($UserName) { $UserName } else { $currentUser }
+        try {
+            $principal = New-ScheduledTaskPrincipal -UserId $targetUser -LogonType Password -RunLevel Highest
+            $settings = New-ScheduledTaskSettingsSet -AllowStartIfOnBatteries:$false -DontStopIfGoingOnBatteries:$true -StartWhenAvailable:$true -ExecutionTimeLimit (New-TimeSpan -Hours 6)
+            Register-ScheduledTask -TaskName $TaskName -Action $action -Trigger $trigger -Principal $principal -Settings $settings -User $targetUser -Password $Password | Out-Null
+            Write-Host "  [PASS] Scheduled task '$TaskName' registered with stored password (runs unattended when logged out)!" -ForegroundColor Green
+            $registered = $true
+        } catch {
+            Write-Host "  [INFO] Register-ScheduledTask with password failed, trying schtasks fallback..." -ForegroundColor Cyan
+            try {
+                $schCmd = "schtasks /create /tn `"$TaskName`" /tr `"$actionCmd`" /sc daily /st $Time /ru `"$targetUser`" /rp `"$Password`" /rl HIGHEST /f"
+                Invoke-Expression $schCmd
+                if ($LASTEXITCODE -eq 0) {
+                    Write-Host "  [PASS] Task registered via schtasks.exe with stored credentials." -ForegroundColor Green
+                    $registered = $true
+                } else {
+                    Write-Warning "  [WARN] Password did not match user '$targetUser'."
+                }
+            } catch {
+                Write-Warning "  [WARN] Fallback with password failed: $($_.Exception.Message)"
+            }
+        }
+    }
 
-    Register-ScheduledTask -TaskName $TaskName -Action $action -Trigger $trigger -Principal $principal -Settings $settings | Out-Null
-    Write-Host "  [PASS] Scheduled task '$TaskName' registered successfully!" -ForegroundColor Green
+    if (-not $registered) {
+        Write-Host "  [INFO] Registering interactive scheduled task (runs when logged in or locked with Win+L)..." -ForegroundColor Cyan
+        try {
+            $principal = New-ScheduledTaskPrincipal -UserId $currentUser -LogonType Interactive -RunLevel Highest
+            $settings = New-ScheduledTaskSettingsSet -AllowStartIfOnBatteries:$false -DontStopIfGoingOnBatteries:$true -StartWhenAvailable:$true -ExecutionTimeLimit (New-TimeSpan -Hours 6)
+            Register-ScheduledTask -TaskName $TaskName -Action $action -Trigger $trigger -Principal $principal -Settings $settings | Out-Null
+            Write-Host "  [PASS] Scheduled task '$TaskName' registered successfully (runs when logged in or screen is locked Win+L)!" -ForegroundColor Green
+            $registered = $true
+        } catch {
+            Write-Host "  [INFO] Trying fallback via schtasks.exe..." -ForegroundColor Cyan
+            $schCmd = "schtasks /create /tn `"$TaskName`" /tr `"$actionCmd`" /sc daily /st $Time /rl HIGHEST /f"
+            Invoke-Expression $schCmd
+            Write-Host "  [PASS] Task registered via schtasks.exe." -ForegroundColor Green
+        }
+    }
+
     Write-Host "         Command    : $actionCmd"
     Write-Host "         Schedule   : Daily at $Time"
     Write-Host "         Run Level  : Highest (Administrator)"
 } catch {
-    # Fallback to schtasks command if PowerShell cmdlets fail
-    Write-Host "  [INFO] Trying fallback via schtasks.exe..." -ForegroundColor Cyan
-    try {
-        $schCmd = "schtasks /create /tn `"$TaskName`" /tr `"$actionCmd`" /sc daily /st $Time /rl HIGHEST /f"
-        Invoke-Expression $schCmd
-        Write-Host "  [PASS] Task registered via schtasks.exe." -ForegroundColor Green
-    } catch {
-        Write-Error "  [FAIL] Could not register scheduled task: $($_.Exception.Message)"
-    }
+    Write-Error "  [FAIL] Could not register scheduled task: $($_.Exception.Message)"
 }
 
 Write-Host "`n=======================================================" -ForegroundColor Cyan
