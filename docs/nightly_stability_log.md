@@ -11,7 +11,7 @@
 | Night | Date | Finished? | Failures | Notes / Fix Applied | Verified By |
 |---|---|---|---|---|---|
 | Night 1 | 2026-10-28 | Yes | 0 | Run #180: 1/1 passed (0 failures). Evidence: results/180 | Dhatri |
-| Night 2 | 2026-10-29 | Pending | — | Night 2 unattended matrix run | Dhatri |
+| Night 2 | 2026-11-06 | Yes | 0 verdict failures; hierarchy evidence error | Run #186: 24/24 verdicts passed, but Huawei_medium_31 hierarchy capture failed; not a clean evidence run. Evidence: results/186 | Dhatri |
 | Night 3 | 2026-10-30 | Pending | — | Night 3 unattended matrix run | Dhatri |
 | Night 4 | 2026-10-31 | Pending | — | Night 4 unattended matrix run | Dhatri |
 | Night 5 | 2026-11-01 | Pending | — | Night 5 unattended matrix run | Dhatri |

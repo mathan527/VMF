@@ -60,6 +60,13 @@ STABILITY_LOG = REPO_ROOT / "docs" / "nightly_stability_log.md"
 CATALOGUE_PATH = REPO_ROOT / "vmf" / "provision" / "reference-models.yaml"
 
 logger = logging.getLogger("vmf.nightly")
+SCREENSHOT_MAX_ATTEMPTS = 10
+SCREENSHOT_RETRY_DELAY_S = 3
+WINDOW_ANIMATION_SETTINGS = (
+    "window_animation_scale",
+    "transition_animation_scale",
+    "animator_duration_scale",
+)
 
 
 def setup_logger(log_file: Path):
@@ -78,51 +85,203 @@ def setup_logger(log_file: Path):
 
 
 def check_screenshot_validity(img_path: Path) -> tuple[bool, str]:
-    """Verify screenshot file exists, is valid PNG, and has realistic non-blank size."""
+    """Validate PNG structure, dimensions and visible image content."""
     if not img_path.exists():
         return False, "File does not exist"
+
     size = img_path.stat().st_size
-    if size < 20000:
-        return False, f"Suspiciously small image ({size} bytes)"
-    with open(img_path, "rb") as f:
-        header = f.read(8)
-        if header != b"\x89PNG\r\n\x1a\n":
-            return False, "Not a valid PNG header"
-    return True, f"Valid PNG ({size / 1024:.1f} KB)"
+    if size < 1024:
+        return False, f"Screenshot is empty or truncated ({size} bytes)"
+
+    try:
+        from PIL import Image, ImageStat
+
+        with Image.open(img_path) as image:
+            if image.format != "PNG":
+                return False, f"Expected PNG, received {image.format}"
+            image.verify()
+
+        with Image.open(img_path) as image:
+            image.load()
+            width, height = image.size
+            if width < 240 or height < 320:
+                return False, f"Screenshot dimensions too small: {width}x{height}"
+
+            stats = ImageStat.Stat(image.convert("RGB"))
+            if max(stats.stddev) < 1.0:
+                return False, "Screenshot appears blank or uniform"
+
+        return True, f"Valid PNG {width}x{height} ({size / 1024:.1f} KB)"
+
+    except Exception as exc:
+        return False, f"Invalid or unreadable PNG: {exc}"
+
+
+def _disable_hierarchy_capture_animations(serial: str) -> dict[str, str | None]:
+    previous: dict[str, str | None] = {}
+    for setting in WINDOW_ANIMATION_SETTINGS:
+        command = [str(ADB), "-s", serial, "shell", "settings", "get", "global", setting]
+        try:
+            result = subprocess.run(
+                command, capture_output=True, text=True, errors="replace",
+                timeout=10, check=False
+            )
+            if result.returncode != 0:
+                continue
+            value = (result.stdout or "").strip()
+            previous[setting] = value if value and value.lower() != "null" else None
+            subprocess.run(
+                [str(ADB), "-s", serial, "shell", "settings", "put", "global", setting, "0"],
+                capture_output=True, text=True, errors="replace", timeout=10, check=False
+            )
+        except Exception as exc:
+            logger.info("Could not disable %s during hierarchy capture on %s: %s",
+                        setting, serial, exc)
+    return previous
+
+
+def _restore_hierarchy_capture_animations(
+        serial: str, previous: dict[str, str | None]) -> None:
+    for setting, value in previous.items():
+        command = [str(ADB), "-s", serial, "shell", "settings"]
+        if value is None:
+            command.extend(["delete", "global", setting])
+        else:
+            command.extend(["put", "global", setting, value])
+        try:
+            subprocess.run(
+                command, capture_output=True, text=True, errors="replace",
+                timeout=10, check=False
+            )
+        except Exception as exc:
+            logger.warning("Could not restore %s after hierarchy capture on %s: %s",
+                           setting, serial, exc)
+
 
 
 def capture_evidence(serial: str, target_dir: Path, step_idx: int, action_name: str) -> Step:
-    """Capture ADB screencap and UI hierarchy, returning a Step result object."""
-    target_dir.mkdir(parents=True, exist_ok=True)
-    ss_name = f"step_{step_idx:02d}_{action_name}.png"
-    ss_path = target_dir / ss_name
-    xml_name = f"step_{step_idx:02d}_{action_name}_hierarchy.xml"
-    xml_path = target_dir / xml_name
+    """Capture screenshot and UI hierarchy with retries for transient Android delays."""
+    import xml.etree.ElementTree as ET
 
+    target_dir.mkdir(parents=True, exist_ok=True)
+    ss_path = target_dir / f"step_{step_idx:02d}_{action_name}.png"
+    xml_path = target_dir / f"step_{step_idx:02d}_{action_name}_hierarchy.xml"
     t0 = time.time()
 
-    # 1. Capture screenshot
-    try:
-        with open(ss_path, "wb") as f:
-            cmd = [str(ADB), "-s", serial, "exec-out", "screencap", "-p"]
-            subprocess.run(cmd, stdout=f, timeout=30, check=False)
-    except Exception as e:
-        logger.warning("Failed screenshot for %s (%s): %s", serial, action_name, e)
+    # Allow Android display and SystemUI surfaces to settle before capture.
+    time.sleep(SCREENSHOT_RETRY_DELAY_S)
 
-    # 2. Capture hierarchy
+    valid = False
+    reason = "Screenshot capture was not attempted"
+
+    for attempt in range(1, SCREENSHOT_MAX_ATTEMPTS + 1):
+        temp_path = ss_path.with_name(ss_path.stem + f".attempt{attempt}.png")
+        try:
+            cmd = [str(ADB), "-s", serial, "exec-out", "screencap", "-p"]
+            with open(temp_path, "wb") as f:
+                proc = subprocess.run(
+                    cmd, stdout=f, stderr=subprocess.PIPE,
+                    timeout=30, check=False
+                )
+
+            valid, reason = check_screenshot_validity(temp_path)
+            if proc.returncode != 0:
+                valid = False
+                reason = f"ADB screencap exit code {proc.returncode}"
+
+            if valid:
+                temp_path.replace(ss_path)
+                logger.info("Screenshot captured for %s (%s), attempt %d",
+                            serial, action_name, attempt)
+                break
+
+            logger.info("Screenshot attempt %d/%d failed for %s (%s): %s",
+                        attempt, SCREENSHOT_MAX_ATTEMPTS, serial, action_name, reason)
+
+        except Exception as exc:
+            reason = str(exc)
+            logger.info("Screenshot attempt %d/%d raised for %s: %s",
+                        attempt, SCREENSHOT_MAX_ATTEMPTS, serial, reason)
+        finally:
+            if temp_path.exists():
+                temp_path.unlink()
+
+        if attempt < SCREENSHOT_MAX_ATTEMPTS:
+            time.sleep(SCREENSHOT_RETRY_DELAY_S)
+
+    if not valid:
+        logger.error("Screenshot failed after %d attempts for %s (%s): %s",
+                 SCREENSHOT_MAX_ATTEMPTS, serial, action_name, reason)
+
+    # Retry hierarchy capture; accept only parseable hierarchy XML.
+    hierarchy_valid = False
+    previous_animations = _disable_hierarchy_capture_animations(serial)
     try:
-        with open(xml_path, "w", encoding="utf-8", errors="replace") as f:
-            cmd = [str(ADB), "-s", serial, "exec-out", "uiautomator", "dump", "/dev/tty"]
-            proc = subprocess.run(cmd, stdout=f, timeout=20, check=False)
-            if xml_path.stat().st_size == 0:
-                # fallback via sdcard
-                subprocess.run([str(ADB), "-s", serial, "shell", "uiautomator", "dump", "/sdcard/dump.xml"], timeout=15, check=False)
-                subprocess.run([str(ADB), "-s", serial, "pull", "/sdcard/dump.xml", str(xml_path)], timeout=15, check=False)
-    except Exception as e:
-        logger.warning("Failed hierarchy dump for %s (%s): %s", serial, action_name, e)
+        for attempt in range(1, 4):
+            temp_xml = xml_path.with_name(xml_path.stem + f".attempt{attempt}.xml")
+            try:
+                cmd = [str(ADB), "-s", serial, "exec-out",
+                       "uiautomator", "dump", "/dev/tty"]
+                proc = subprocess.run(
+                    cmd, capture_output=True, text=True,
+                    errors="replace", timeout=25, check=False
+                )
+                output = proc.stdout or ""
+
+                if "<hierarchy" not in output:
+                    subprocess.run(
+                        [str(ADB), "-s", serial, "shell", "uiautomator",
+                         "dump", "/sdcard/dump.xml"],
+                        capture_output=True, text=True,
+                        errors="replace", timeout=20, check=False
+                    )
+                    pulled = subprocess.run(
+                        [str(ADB), "-s", serial, "exec-out",
+                         "cat", "/sdcard/dump.xml"],
+                        capture_output=True, text=True,
+                        errors="replace", timeout=20, check=False
+                    )
+                    output = pulled.stdout or ""
+                    proc = pulled
+
+                hierarchy_start = output.find("<hierarchy")
+                hierarchy_end = output.find("</hierarchy>", hierarchy_start)
+                if hierarchy_start >= 0 and hierarchy_end >= 0:
+                    hierarchy_xml = output[hierarchy_start:hierarchy_end + len("</hierarchy>")]
+                    ET.fromstring(hierarchy_xml)
+                    temp_xml.write_text(hierarchy_xml, encoding="utf-8")
+                    temp_xml.replace(xml_path)
+                    hierarchy_valid = True
+                    logger.info("Hierarchy captured for %s (%s), attempt %d",
+                                serial, action_name, attempt)
+                    break
+
+                logger.info("Hierarchy dump returned no XML for %s (%s): rc=%s stdout=%r stderr=%r",
+                            serial, action_name, proc.returncode,
+                            (proc.stdout or "")[:240], (proc.stderr or "")[:240])
+                logger.warning("Hierarchy attempt %d/3 returned no valid hierarchy for %s",
+                               attempt, serial)
+
+            except Exception as exc:
+                logger.warning("Hierarchy attempt %d/3 failed for %s: %s",
+                               attempt, serial, exc)
+            finally:
+                if temp_xml.exists():
+                    temp_xml.unlink()
+
+            if attempt < 3:
+                time.sleep(2)
+    finally:
+        _restore_hierarchy_capture_animations(serial, previous_animations)
+
+    if not hierarchy_valid:
+        logger.error("Hierarchy capture failed after 3 attempts for %s (%s)",
+                     serial, action_name)
+        if not xml_path.exists():
+            xml_path.write_text("ERROR: hierarchy capture failed after 3 attempts",
+                                encoding="utf-8")
 
     dur_ms = int((time.time() - t0) * 1000)
-    valid, reason = check_screenshot_validity(ss_path)
     status = "pass" if valid else "fail"
 
     return Step(
@@ -135,6 +294,7 @@ def capture_evidence(serial: str, target_dir: Path, step_idx: int, action_name: 
     )
 
 
+
 def dump_logcat(serial: str, output_file: Path, lines: int = 400):
     """Dump tail of logcat for evidence."""
     try:
@@ -145,13 +305,13 @@ def dump_logcat(serial: str, output_file: Path, lines: int = 400):
         logger.warning("Failed to dump logcat for %s: %s", serial, e)
 
 
-def trigger_api_run(api_url: str, apk_path: str, scenario_path: str) -> dict | None:
+def trigger_api_run(api_url: str, apk_path: str, scenario_path: str, profiles: list[dict]) -> dict | None:
     """Attempt to trigger the run via Gagan's FastAPI endpoint (POST /runs)."""
     endpoint = f"{api_url.rstrip('/')}/runs"
     payload = json.dumps({
         "apk": apk_path,
         "scenario": scenario_path,
-        "trigger": "nightly",
+        "profiles": profiles,
     }).encode("utf-8")
 
     req = urllib.request.Request(
@@ -168,8 +328,12 @@ def trigger_api_run(api_url: str, apk_path: str, scenario_path: str) -> dict | N
             result = json.loads(data)
             logger.info("Run successfully dispatched via API: %s", result)
             return result
+    except urllib.error.HTTPError as e:
+        body = e.read().decode("utf-8", errors="replace")
+        logger.error("API rejected POST %s: HTTP %s: %s", endpoint, e.code, body)
+        raise RuntimeError(f"API request rejected with HTTP {e.code}: {body}") from e
     except (urllib.error.URLError, ConnectionError, TimeoutError, json.JSONDecodeError, OSError) as e:
-        logger.info("API endpoint %s not reachable (%s). Falling back to direct sweep.", endpoint, e)
+        logger.warning("API endpoint %s is unavailable (%s). Falling back to direct sweep.", endpoint, e)
         return None
 
 
@@ -377,11 +541,12 @@ def load_target_profiles(catalogue_file: Path, limit: int | None = None, brand: 
 def main():
     parser = argparse.ArgumentParser(description="VMF Nightly Test Runner (M12.1, M12.5)")
     parser.add_argument("--api-url", default="http://localhost:8080", help="VMF API URL")
-    parser.add_argument("--apk", default="sample_app/sample.apk", help="Path to test APK")
+    parser.add_argument("--apk", default="sample_app/build/sample.apk", help="Path to test APK")
     parser.add_argument("--scenario", default="scenarios/login_flow.yaml", help="Path to scenario YAML")
     parser.add_argument("--profiles", default=str(CATALOGUE_PATH), help="Path to reference models YAML")
     parser.add_argument("--limit", type=int, default=None, help="Limit number of profiles to sweep (e.g. 1 for quick test)")
     parser.add_argument("--brand", default=None, help="Filter to specific brand (e.g. Google, Samsung)")
+    parser.add_argument("--direct", action="store_true", help="Run the local sweep without API dispatch")
     parser.add_argument("--skip-cleanup", action="store_true", help="Do not run storage cleanup")
     parser.add_argument("--run-now", action="store_true", help="Run immediately and log today's night")
     args = parser.parse_args()
@@ -394,18 +559,23 @@ def main():
     logger.info("VMF M12 Nightly Run Started: %s", date_str)
     logger.info("========================================")
 
-    # 1. First try API run if available
-    api_res = trigger_api_run(args.api_url, args.apk, args.scenario)
+    # Load the selected profiles once; use the same selection for API and fallback.
+    models = load_target_profiles(Path(args.profiles), limit=args.limit, brand=args.brand)
+    logger.info("Loaded %d target profiles.", len(models))
+
+    # 1. First try API run if available.
+    api_res = None if args.direct else trigger_api_run(args.api_url, args.apk, args.scenario, models)
     success = False
     failures = 0
     notes = ""
 
     if api_res is not None:
-        success = True
-        notes = f"Run #{api_res.get('run_id', 'unknown')} dispatched via API"
+        # Dispatch acceptance is not the same as matrix completion.
+        success = False
+        notes = f"Run #{api_res.get('run_id', 'unknown')} accepted by API; completion not yet verified"
+        logger.info("%s", notes)
     else:
-        # 2. Autonomous sweep: boots emulators, applies OEM packs, captures screenshots, dumps logcat & config
-        models = load_target_profiles(Path(args.profiles), limit=args.limit, brand=args.brand)
+        # 2. Autonomous fallback sweep.
         success, failures, notes = run_unattended_device_sweep(models)
 
     # 3. Evidence Retention Cleanup (M12.4)
