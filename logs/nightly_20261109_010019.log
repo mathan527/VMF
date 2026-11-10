@@ -1,0 +1,326 @@
+2026-11-09 01:00:19,575 [INFO] ========================================
+2026-11-09 01:00:19,576 [INFO] VMF M12 Nightly Run Started: 2026-11-09
+2026-11-09 01:00:19,576 [INFO] ========================================
+2026-11-09 01:00:19,602 [INFO] Loaded 24 target profiles.
+2026-11-09 01:00:19,603 [INFO] Beginning unattended device sweep for 24 profiles...
+2026-11-09 01:00:19,661 [INFO] [1/24] Starting profile Samsung_low_29...
+2026-11-09 01:00:19,729 [INFO]   Booting headless Samsung_low_29 on port 5554...
+2026-11-09 01:00:40,657 [INFO]   Boot completed in 21.0s. Serial: emulator-5554
+2026-11-09 01:00:45,659 [INFO] Screenshot captured for emulator-5554 (boot), attempt 1
+2026-11-09 01:00:49,280 [INFO] Hierarchy captured for emulator-5554 (boot), attempt 1
+2026-11-09 01:00:49,670 [INFO]   Step 1 (boot): pass (duration=8958ms)
+2026-11-09 01:00:49,691 [INFO]   Applying OEM Layer B settings for Samsung...
+2026-11-09 01:00:56,732 [INFO] Screenshot captured for emulator-5554 (oem_applied), attempt 1
+2026-11-09 01:00:57,352 [INFO] Hierarchy captured for emulator-5554 (oem_applied), attempt 1
+2026-11-09 01:00:57,465 [INFO]   Step 2 (oem_applied): pass (duration=4707ms)
+2026-11-09 01:00:57,530 [INFO]   [PASS] Samsung_low_29 finished cleanly.
+2026-11-09 01:00:57,547 [INFO]   Stopping emulator-5554 and cleaning locks...
+2026-11-09 01:01:07,570 [INFO] [2/24] Starting profile Samsung_medium_31...
+2026-11-09 01:01:07,576 [INFO]   Booting headless Samsung_medium_31 on port 5554...
+2026-11-09 01:02:05,112 [INFO]   Boot completed in 57.5s. Serial: emulator-5554
+2026-11-09 01:02:08,614 [INFO] Screenshot captured for emulator-5554 (boot), attempt 1
+2026-11-09 01:02:12,646 [INFO] Hierarchy captured for emulator-5554 (boot), attempt 1
+2026-11-09 01:02:12,780 [INFO]   Step 1 (boot): pass (duration=7665ms)
+2026-11-09 01:02:12,786 [INFO]   Applying OEM Layer B settings for Samsung...
+2026-11-09 01:02:17,051 [INFO] Screenshot captured for emulator-5554 (oem_applied), attempt 1
+2026-11-09 01:02:19,536 [INFO] Hierarchy captured for emulator-5554 (oem_applied), attempt 1
+2026-11-09 01:02:19,665 [INFO]   Step 2 (oem_applied): pass (duration=5906ms)
+2026-11-09 01:02:19,715 [INFO]   [PASS] Samsung_medium_31 finished cleanly.
+2026-11-09 01:02:19,720 [INFO]   Stopping emulator-5554 and cleaning locks...
+2026-11-09 01:02:29,742 [INFO] [3/24] Starting profile Samsung_high_35...
+2026-11-09 01:02:29,745 [INFO]   Booting headless Samsung_high_35 on port 5554...
+2026-11-09 01:02:54,742 [INFO]   Boot completed in 25.0s. Serial: emulator-5554
+2026-11-09 01:02:59,010 [INFO] Screenshot captured for emulator-5554 (boot), attempt 1
+2026-11-09 01:03:02,896 [INFO] Hierarchy captured for emulator-5554 (boot), attempt 1
+2026-11-09 01:03:03,078 [INFO]   Step 1 (boot): pass (duration=8335ms)
+2026-11-09 01:03:03,126 [INFO]   Applying OEM Layer B settings for Samsung...
+2026-11-09 01:03:08,574 [INFO] Screenshot captured for emulator-5554 (oem_applied), attempt 1
+2026-11-09 01:03:11,386 [INFO] Hierarchy captured for emulator-5554 (oem_applied), attempt 1
+2026-11-09 01:03:11,515 [INFO]   Step 2 (oem_applied): pass (duration=7081ms)
+2026-11-09 01:03:11,594 [INFO]   [PASS] Samsung_high_35 finished cleanly.
+2026-11-09 01:03:11,599 [INFO]   Stopping emulator-5554 and cleaning locks...
+2026-11-09 01:03:21,618 [INFO] [4/24] Starting profile Vivo_low_29...
+2026-11-09 01:03:21,622 [INFO]   Booting headless Vivo_low_29 on port 5554...
+2026-11-09 01:03:41,325 [INFO]   Boot completed in 19.7s. Serial: emulator-5554
+2026-11-09 01:03:46,440 [INFO] Screenshot captured for emulator-5554 (boot), attempt 1
+2026-11-09 01:03:49,992 [INFO] Hierarchy captured for emulator-5554 (boot), attempt 1
+2026-11-09 01:03:50,329 [INFO]   Step 1 (boot): pass (duration=9003ms)
+2026-11-09 01:03:50,366 [INFO]   Applying OEM Layer B settings for Vivo...
+2026-11-09 01:03:56,494 [INFO] Screenshot captured for emulator-5554 (oem_applied), attempt 1
+2026-11-09 01:03:58,358 [INFO] Hierarchy captured for emulator-5554 (oem_applied), attempt 1
+2026-11-09 01:03:58,478 [INFO]   Step 2 (oem_applied): pass (duration=5693ms)
+2026-11-09 01:03:58,556 [INFO]   [PASS] Vivo_low_29 finished cleanly.
+2026-11-09 01:03:58,561 [INFO]   Stopping emulator-5554 and cleaning locks...
+2026-11-09 01:04:08,582 [INFO] [5/24] Starting profile Vivo_medium_31...
+2026-11-09 01:04:08,584 [INFO]   Booting headless Vivo_medium_31 on port 5554...
+2026-11-09 01:05:04,872 [INFO]   Boot completed in 56.3s. Serial: emulator-5554
+2026-11-09 01:05:08,299 [INFO] Screenshot attempt 1/10 failed for emulator-5554 (boot): Screenshot appears blank or uniform
+2026-11-09 01:05:11,510 [INFO] Screenshot captured for emulator-5554 (boot), attempt 2
+2026-11-09 01:05:18,487 [INFO] Hierarchy captured for emulator-5554 (boot), attempt 1
+2026-11-09 01:05:18,606 [INFO]   Step 1 (boot): pass (duration=13731ms)
+2026-11-09 01:05:18,614 [INFO]   Applying OEM Layer B settings for Vivo...
+2026-11-09 01:05:22,794 [INFO] Screenshot attempt 1/10 failed for emulator-5554 (oem_applied): Screenshot appears blank or uniform
+2026-11-09 01:05:26,000 [INFO] Screenshot captured for emulator-5554 (oem_applied), attempt 2
+2026-11-09 01:05:29,157 [INFO] Hierarchy captured for emulator-5554 (oem_applied), attempt 1
+2026-11-09 01:05:29,311 [INFO]   Step 2 (oem_applied): pass (duration=9708ms)
+2026-11-09 01:05:29,444 [INFO]   [PASS] Vivo_medium_31 finished cleanly.
+2026-11-09 01:05:29,476 [INFO]   Stopping emulator-5554 and cleaning locks...
+2026-11-09 01:05:39,500 [INFO] [6/24] Starting profile Vivo_high_35...
+2026-11-09 01:05:39,504 [INFO]   Booting headless Vivo_high_35 on port 5554...
+2026-11-09 01:06:05,701 [INFO]   Boot completed in 26.2s. Serial: emulator-5554
+2026-11-09 01:06:09,700 [INFO] Screenshot captured for emulator-5554 (boot), attempt 1
+2026-11-09 01:06:12,565 [INFO] Hierarchy captured for emulator-5554 (boot), attempt 1
+2026-11-09 01:06:12,684 [INFO]   Step 1 (boot): pass (duration=6981ms)
+2026-11-09 01:06:12,724 [INFO]   Applying OEM Layer B settings for Vivo...
+2026-11-09 01:06:17,647 [INFO] Screenshot captured for emulator-5554 (oem_applied), attempt 1
+2026-11-09 01:06:19,933 [INFO] Hierarchy captured for emulator-5554 (oem_applied), attempt 1
+2026-11-09 01:06:20,041 [INFO]   Step 2 (oem_applied): pass (duration=5585ms)
+2026-11-09 01:06:20,127 [INFO]   [PASS] Vivo_high_35 finished cleanly.
+2026-11-09 01:06:20,193 [INFO]   Stopping emulator-5554 and cleaning locks...
+2026-11-09 01:06:30,214 [INFO] [7/24] Starting profile OnePlus_low_29...
+2026-11-09 01:06:30,217 [INFO]   Booting headless OnePlus_low_29 on port 5554...
+2026-11-09 01:06:50,354 [INFO]   Boot completed in 20.1s. Serial: emulator-5554
+2026-11-09 01:06:55,023 [INFO] Screenshot captured for emulator-5554 (boot), attempt 1
+2026-11-09 01:06:58,690 [INFO] Hierarchy captured for emulator-5554 (boot), attempt 1
+2026-11-09 01:06:59,013 [INFO]   Step 1 (boot): pass (duration=8658ms)
+2026-11-09 01:06:59,018 [INFO]   Applying OEM Layer B settings for OnePlus...
+2026-11-09 01:07:06,372 [INFO] Screenshot captured for emulator-5554 (oem_applied), attempt 1
+2026-11-09 01:07:08,141 [INFO] Hierarchy captured for emulator-5554 (oem_applied), attempt 1
+2026-11-09 01:07:08,269 [INFO]   Step 2 (oem_applied): pass (duration=5695ms)
+2026-11-09 01:07:08,337 [INFO]   [PASS] OnePlus_low_29 finished cleanly.
+2026-11-09 01:07:08,343 [INFO]   Stopping emulator-5554 and cleaning locks...
+2026-11-09 01:07:18,363 [INFO] [8/24] Starting profile OnePlus_medium_31...
+2026-11-09 01:07:18,366 [INFO]   Booting headless OnePlus_medium_31 on port 5554...
+2026-11-09 01:08:12,764 [INFO]   Boot completed in 54.4s. Serial: emulator-5554
+2026-11-09 01:08:16,108 [INFO] Screenshot captured for emulator-5554 (boot), attempt 1
+2026-11-09 01:08:19,508 [INFO] Hierarchy captured for emulator-5554 (boot), attempt 1
+2026-11-09 01:08:19,619 [INFO]   Step 1 (boot): pass (duration=6855ms)
+2026-11-09 01:08:19,626 [INFO]   Applying OEM Layer B settings for OnePlus...
+2026-11-09 01:08:23,749 [INFO] Screenshot captured for emulator-5554 (oem_applied), attempt 1
+2026-11-09 01:08:28,454 [INFO] Hierarchy captured for emulator-5554 (oem_applied), attempt 1
+2026-11-09 01:08:28,579 [INFO]   Step 2 (oem_applied): pass (duration=8011ms)
+2026-11-09 01:08:28,657 [INFO]   [PASS] OnePlus_medium_31 finished cleanly.
+2026-11-09 01:08:28,663 [INFO]   Stopping emulator-5554 and cleaning locks...
+2026-11-09 01:08:38,685 [INFO] [9/24] Starting profile OnePlus_high_35...
+2026-11-09 01:08:38,688 [INFO]   Booting headless OnePlus_high_35 on port 5554...
+2026-11-09 01:09:04,314 [INFO]   Boot completed in 25.6s. Serial: emulator-5554
+2026-11-09 01:09:08,717 [INFO] Screenshot captured for emulator-5554 (boot), attempt 1
+2026-11-09 01:09:13,192 [INFO] Hierarchy captured for emulator-5554 (boot), attempt 1
+2026-11-09 01:09:13,389 [INFO]   Step 1 (boot): pass (duration=9073ms)
+2026-11-09 01:09:13,396 [INFO]   Applying OEM Layer B settings for OnePlus...
+2026-11-09 01:09:19,219 [INFO] Screenshot captured for emulator-5554 (oem_applied), attempt 1
+2026-11-09 01:09:22,017 [INFO] Hierarchy captured for emulator-5554 (oem_applied), attempt 1
+2026-11-09 01:09:22,188 [INFO]   Step 2 (oem_applied): pass (duration=7456ms)
+2026-11-09 01:09:22,285 [INFO]   [PASS] OnePlus_high_35 finished cleanly.
+2026-11-09 01:09:22,307 [INFO]   Stopping emulator-5554 and cleaning locks...
+2026-11-09 01:09:32,329 [INFO] [10/24] Starting profile Xiaomi_low_29...
+2026-11-09 01:09:32,332 [INFO]   Booting headless Xiaomi_low_29 on port 5554...
+2026-11-09 01:09:53,020 [INFO]   Boot completed in 20.7s. Serial: emulator-5554
+2026-11-09 01:09:57,786 [INFO] Screenshot captured for emulator-5554 (boot), attempt 1
+2026-11-09 01:10:01,335 [INFO] Hierarchy captured for emulator-5554 (boot), attempt 1
+2026-11-09 01:10:01,557 [INFO]   Step 1 (boot): pass (duration=8536ms)
+2026-11-09 01:10:01,579 [INFO]   Applying OEM Layer B settings for Xiaomi...
+2026-11-09 01:10:07,831 [INFO] Screenshot captured for emulator-5554 (oem_applied), attempt 1
+2026-11-09 01:10:09,716 [INFO] Hierarchy captured for emulator-5554 (oem_applied), attempt 1
+2026-11-09 01:10:09,841 [INFO]   Step 2 (oem_applied): pass (duration=5640ms)
+2026-11-09 01:10:09,910 [INFO]   [PASS] Xiaomi_low_29 finished cleanly.
+2026-11-09 01:10:09,915 [INFO]   Stopping emulator-5554 and cleaning locks...
+2026-11-09 01:10:19,936 [INFO] [11/24] Starting profile Xiaomi_medium_31...
+2026-11-09 01:10:19,940 [INFO]   Booting headless Xiaomi_medium_31 on port 5554...
+2026-11-09 01:11:12,249 [INFO]   Boot completed in 52.3s. Serial: emulator-5554
+2026-11-09 01:11:15,713 [INFO] Screenshot captured for emulator-5554 (boot), attempt 1
+2026-11-09 01:11:29,957 [INFO] Hierarchy dump returned no XML for emulator-5554 (boot): rc=0 stdout='' stderr=''
+2026-11-09 01:11:29,957 [WARNING] Hierarchy attempt 1/3 returned no valid hierarchy for emulator-5554
+2026-11-09 01:11:54,782 [INFO] Hierarchy dump returned no XML for emulator-5554 (boot): rc=0 stdout='' stderr=''
+2026-11-09 01:11:54,783 [WARNING] Hierarchy attempt 2/3 returned no valid hierarchy for emulator-5554
+2026-11-09 01:12:19,401 [INFO] Hierarchy dump returned no XML for emulator-5554 (boot): rc=0 stdout='' stderr=''
+2026-11-09 01:12:19,401 [WARNING] Hierarchy attempt 3/3 returned no valid hierarchy for emulator-5554
+2026-11-09 01:12:19,514 [ERROR] Hierarchy capture failed after 3 attempts for emulator-5554 (boot)
+2026-11-09 01:12:19,515 [INFO]   Step 1 (boot): pass (duration=67264ms)
+2026-11-09 01:12:19,520 [INFO]   Applying OEM Layer B settings for Xiaomi...
+2026-11-09 01:12:23,492 [INFO] Screenshot captured for emulator-5554 (oem_applied), attempt 1
+2026-11-09 01:12:46,199 [INFO] Hierarchy dump returned no XML for emulator-5554 (oem_applied): rc=0 stdout='' stderr=''
+2026-11-09 01:12:46,199 [WARNING] Hierarchy attempt 1/3 returned no valid hierarchy for emulator-5554
+2026-11-09 01:13:10,578 [INFO] Hierarchy dump returned no XML for emulator-5554 (oem_applied): rc=0 stdout='' stderr=''
+2026-11-09 01:13:10,579 [WARNING] Hierarchy attempt 2/3 returned no valid hierarchy for emulator-5554
+2026-11-09 01:13:35,445 [INFO] Hierarchy dump returned no XML for emulator-5554 (oem_applied): rc=0 stdout='' stderr=''
+2026-11-09 01:13:35,446 [WARNING] Hierarchy attempt 3/3 returned no valid hierarchy for emulator-5554
+2026-11-09 01:13:35,548 [ERROR] Hierarchy capture failed after 3 attempts for emulator-5554 (oem_applied)
+2026-11-09 01:13:35,548 [INFO]   Step 2 (oem_applied): pass (duration=75230ms)
+2026-11-09 01:13:35,641 [INFO]   [PASS] Xiaomi_medium_31 finished cleanly.
+2026-11-09 01:13:35,648 [INFO]   Stopping emulator-5554 and cleaning locks...
+2026-11-09 01:13:45,670 [INFO] [12/24] Starting profile Xiaomi_high_35...
+2026-11-09 01:13:45,673 [INFO]   Booting headless Xiaomi_high_35 on port 5554...
+2026-11-09 01:14:11,804 [INFO]   Boot completed in 26.1s. Serial: emulator-5554
+2026-11-09 01:14:15,839 [INFO] Screenshot captured for emulator-5554 (boot), attempt 1
+2026-11-09 01:14:19,333 [INFO] Hierarchy captured for emulator-5554 (boot), attempt 1
+2026-11-09 01:14:19,492 [INFO]   Step 1 (boot): pass (duration=7686ms)
+2026-11-09 01:14:19,498 [INFO]   Applying OEM Layer B settings for Xiaomi...
+2026-11-09 01:14:24,619 [INFO] Screenshot captured for emulator-5554 (oem_applied), attempt 1
+2026-11-09 01:14:27,530 [INFO] Hierarchy captured for emulator-5554 (oem_applied), attempt 1
+2026-11-09 01:14:27,678 [INFO]   Step 2 (oem_applied): pass (duration=6798ms)
+2026-11-09 01:14:27,781 [INFO]   [PASS] Xiaomi_high_35 finished cleanly.
+2026-11-09 01:14:27,814 [INFO]   Stopping emulator-5554 and cleaning locks...
+2026-11-09 01:14:37,837 [INFO] [13/24] Starting profile Google_low_29...
+2026-11-09 01:14:37,840 [INFO]   Booting headless Google_low_29 on port 5554...
+2026-11-09 01:14:59,576 [INFO]   Boot completed in 21.7s. Serial: emulator-5554
+2026-11-09 01:15:05,910 [INFO] Screenshot captured for emulator-5554 (boot), attempt 1
+2026-11-09 01:15:10,094 [INFO] Hierarchy captured for emulator-5554 (boot), attempt 1
+2026-11-09 01:15:10,609 [INFO]   Step 1 (boot): pass (duration=11032ms)
+2026-11-09 01:15:10,614 [INFO]   Applying OEM Layer B settings for Google...
+2026-11-09 01:15:18,639 [INFO] Screenshot captured for emulator-5554 (oem_applied), attempt 1
+2026-11-09 01:15:21,005 [INFO] Hierarchy captured for emulator-5554 (oem_applied), attempt 1
+2026-11-09 01:15:21,149 [INFO]   Step 2 (oem_applied): pass (duration=7631ms)
+2026-11-09 01:15:21,241 [INFO]   [PASS] Google_low_29 finished cleanly.
+2026-11-09 01:15:21,246 [INFO]   Stopping emulator-5554 and cleaning locks...
+2026-11-09 01:15:31,267 [INFO] [14/24] Starting profile Google_medium_31...
+2026-11-09 01:15:31,270 [INFO]   Booting headless Google_medium_31 on port 5554...
+2026-11-09 01:16:24,200 [INFO]   Boot completed in 52.9s. Serial: emulator-5554
+2026-11-09 01:16:27,579 [INFO] Screenshot captured for emulator-5554 (boot), attempt 1
+2026-11-09 01:16:45,180 [INFO] Hierarchy captured for emulator-5554 (boot), attempt 1
+2026-11-09 01:16:45,327 [INFO]   Step 1 (boot): pass (duration=21126ms)
+2026-11-09 01:16:45,334 [INFO]   Applying OEM Layer B settings for Google...
+2026-11-09 01:16:49,699 [INFO] Screenshot captured for emulator-5554 (oem_applied), attempt 1
+2026-11-09 01:17:12,495 [INFO] Hierarchy captured for emulator-5554 (oem_applied), attempt 1
+2026-11-09 01:17:12,606 [INFO]   Step 2 (oem_applied): pass (duration=26158ms)
+2026-11-09 01:17:12,665 [INFO]   [PASS] Google_medium_31 finished cleanly.
+2026-11-09 01:17:12,671 [INFO]   Stopping emulator-5554 and cleaning locks...
+2026-11-09 01:17:22,691 [INFO] [15/24] Starting profile Google_high_35...
+2026-11-09 01:17:22,693 [INFO]   Booting headless Google_high_35 on port 5554...
+2026-11-09 01:17:48,778 [INFO]   Boot completed in 26.1s. Serial: emulator-5554
+2026-11-09 01:17:53,127 [INFO] Screenshot captured for emulator-5554 (boot), attempt 1
+2026-11-09 01:17:56,532 [INFO] Hierarchy captured for emulator-5554 (boot), attempt 1
+2026-11-09 01:17:56,686 [INFO]   Step 1 (boot): pass (duration=7906ms)
+2026-11-09 01:17:56,708 [INFO]   Applying OEM Layer B settings for Google...
+2026-11-09 01:18:02,534 [INFO] Screenshot captured for emulator-5554 (oem_applied), attempt 1
+2026-11-09 01:18:05,387 [INFO] Hierarchy captured for emulator-5554 (oem_applied), attempt 1
+2026-11-09 01:18:05,542 [INFO]   Step 2 (oem_applied): pass (duration=7434ms)
+2026-11-09 01:18:05,621 [INFO]   [PASS] Google_high_35 finished cleanly.
+2026-11-09 01:18:05,627 [INFO]   Stopping emulator-5554 and cleaning locks...
+2026-11-09 01:18:15,648 [INFO] [16/24] Starting profile Motorola_low_29...
+2026-11-09 01:18:15,650 [INFO]   Booting headless Motorola_low_29 on port 5554...
+2026-11-09 01:18:35,234 [INFO]   Boot completed in 19.6s. Serial: emulator-5554
+2026-11-09 01:18:39,632 [INFO] Screenshot captured for emulator-5554 (boot), attempt 1
+2026-11-09 01:18:43,674 [INFO] Hierarchy captured for emulator-5554 (boot), attempt 1
+2026-11-09 01:18:43,934 [INFO]   Step 1 (boot): pass (duration=8698ms)
+2026-11-09 01:18:43,940 [INFO]   Applying OEM Layer B settings for Motorola...
+2026-11-09 01:18:50,687 [INFO] Screenshot captured for emulator-5554 (oem_applied), attempt 1
+2026-11-09 01:18:52,626 [INFO] Hierarchy captured for emulator-5554 (oem_applied), attempt 1
+2026-11-09 01:18:52,768 [INFO]   Step 2 (oem_applied): pass (duration=5933ms)
+2026-11-09 01:18:52,818 [INFO]   [PASS] Motorola_low_29 finished cleanly.
+2026-11-09 01:18:52,838 [INFO]   Stopping emulator-5554 and cleaning locks...
+2026-11-09 01:19:02,859 [INFO] [17/24] Starting profile Motorola_medium_31...
+2026-11-09 01:19:02,861 [INFO]   Booting headless Motorola_medium_31 on port 5554...
+2026-11-09 01:19:55,150 [INFO]   Boot completed in 52.3s. Serial: emulator-5554
+2026-11-09 01:19:58,632 [INFO] Screenshot captured for emulator-5554 (boot), attempt 1
+2026-11-09 01:20:12,965 [INFO] Hierarchy captured for emulator-5554 (boot), attempt 1
+2026-11-09 01:20:13,075 [INFO]   Step 1 (boot): pass (duration=17924ms)
+2026-11-09 01:20:13,081 [INFO]   Applying OEM Layer B settings for Motorola...
+2026-11-09 01:20:17,258 [INFO] Screenshot attempt 1/10 failed for emulator-5554 (oem_applied): Screenshot appears blank or uniform
+2026-11-09 01:20:20,481 [INFO] Screenshot attempt 2/10 failed for emulator-5554 (oem_applied): Screenshot appears blank or uniform
+2026-11-09 01:20:23,733 [INFO] Screenshot captured for emulator-5554 (oem_applied), attempt 3
+2026-11-09 01:20:46,298 [INFO] Hierarchy captured for emulator-5554 (oem_applied), attempt 1
+2026-11-09 01:20:46,413 [INFO]   Step 2 (oem_applied): pass (duration=32428ms)
+2026-11-09 01:20:46,479 [INFO]   [PASS] Motorola_medium_31 finished cleanly.
+2026-11-09 01:20:46,484 [INFO]   Stopping emulator-5554 and cleaning locks...
+2026-11-09 01:20:56,505 [INFO] [18/24] Starting profile Motorola_high_35...
+2026-11-09 01:20:56,510 [INFO]   Booting headless Motorola_high_35 on port 5554...
+2026-11-09 01:21:21,917 [INFO]   Boot completed in 25.4s. Serial: emulator-5554
+2026-11-09 01:21:25,877 [INFO] Screenshot captured for emulator-5554 (boot), attempt 1
+2026-11-09 01:21:30,264 [INFO] Hierarchy captured for emulator-5554 (boot), attempt 1
+2026-11-09 01:21:30,481 [INFO]   Step 1 (boot): pass (duration=8563ms)
+2026-11-09 01:21:30,487 [INFO]   Applying OEM Layer B settings for Motorola...
+2026-11-09 01:21:36,258 [INFO] Screenshot captured for emulator-5554 (oem_applied), attempt 1
+2026-11-09 01:21:39,022 [INFO] Hierarchy captured for emulator-5554 (oem_applied), attempt 1
+2026-11-09 01:21:39,155 [INFO]   Step 2 (oem_applied): pass (duration=6950ms)
+2026-11-09 01:21:39,235 [INFO]   [PASS] Motorola_high_35 finished cleanly.
+2026-11-09 01:21:39,240 [INFO]   Stopping emulator-5554 and cleaning locks...
+2026-11-09 01:21:49,261 [INFO] [19/24] Starting profile Honor_low_29...
+2026-11-09 01:21:49,265 [INFO]   Booting headless Honor_low_29 on port 5554...
+2026-11-09 01:22:11,034 [INFO]   Boot completed in 21.8s. Serial: emulator-5554
+2026-11-09 01:22:15,596 [INFO] Screenshot captured for emulator-5554 (boot), attempt 1
+2026-11-09 01:22:19,602 [INFO] Hierarchy captured for emulator-5554 (boot), attempt 1
+2026-11-09 01:22:19,864 [INFO]   Step 1 (boot): pass (duration=8828ms)
+2026-11-09 01:22:19,868 [INFO]   Applying OEM Layer B settings for Honor...
+2026-11-09 01:22:25,839 [INFO] Screenshot captured for emulator-5554 (oem_applied), attempt 1
+2026-11-09 01:22:27,574 [INFO] Hierarchy captured for emulator-5554 (oem_applied), attempt 1
+2026-11-09 01:22:27,741 [INFO]   Step 2 (oem_applied): pass (duration=5542ms)
+2026-11-09 01:22:27,786 [INFO]   [PASS] Honor_low_29 finished cleanly.
+2026-11-09 01:22:27,824 [INFO]   Stopping emulator-5554 and cleaning locks...
+2026-11-09 01:22:37,844 [INFO] [20/24] Starting profile Honor_medium_31...
+2026-11-09 01:22:37,847 [INFO]   Booting headless Honor_medium_31 on port 5554...
+2026-11-09 01:23:30,905 [INFO]   Boot completed in 53.1s. Serial: emulator-5554
+2026-11-09 01:23:34,424 [INFO] Screenshot captured for emulator-5554 (boot), attempt 1
+2026-11-09 01:23:38,616 [INFO] Hierarchy captured for emulator-5554 (boot), attempt 1
+2026-11-09 01:23:38,773 [INFO]   Step 1 (boot): pass (duration=7868ms)
+2026-11-09 01:23:38,819 [INFO]   Applying OEM Layer B settings for Honor...
+2026-11-09 01:23:43,323 [INFO] Screenshot captured for emulator-5554 (oem_applied), attempt 1
+2026-11-09 01:23:47,585 [INFO] Hierarchy captured for emulator-5554 (oem_applied), attempt 1
+2026-11-09 01:23:47,733 [INFO]   Step 2 (oem_applied): pass (duration=7672ms)
+2026-11-09 01:23:47,789 [INFO]   [PASS] Honor_medium_31 finished cleanly.
+2026-11-09 01:23:47,798 [INFO]   Stopping emulator-5554 and cleaning locks...
+2026-11-09 01:23:57,820 [INFO] [21/24] Starting profile Honor_high_35...
+2026-11-09 01:23:57,823 [INFO]   Booting headless Honor_high_35 on port 5554...
+2026-11-09 01:24:23,918 [INFO]   Boot completed in 26.1s. Serial: emulator-5554
+2026-11-09 01:24:28,094 [INFO] Screenshot captured for emulator-5554 (boot), attempt 1
+2026-11-09 01:24:32,762 [INFO] Hierarchy captured for emulator-5554 (boot), attempt 1
+2026-11-09 01:24:32,940 [INFO]   Step 1 (boot): pass (duration=9019ms)
+2026-11-09 01:24:32,962 [INFO]   Applying OEM Layer B settings for Honor...
+2026-11-09 01:24:38,472 [INFO] Screenshot captured for emulator-5554 (oem_applied), attempt 1
+2026-11-09 01:24:41,412 [INFO] Hierarchy captured for emulator-5554 (oem_applied), attempt 1
+2026-11-09 01:24:41,586 [INFO]   Step 2 (oem_applied): pass (duration=7479ms)
+2026-11-09 01:24:41,680 [INFO]   [PASS] Honor_high_35 finished cleanly.
+2026-11-09 01:24:41,716 [INFO]   Stopping emulator-5554 and cleaning locks...
+2026-11-09 01:24:51,739 [INFO] [22/24] Starting profile Huawei_low_29...
+2026-11-09 01:24:51,743 [INFO]   Booting headless Huawei_low_29 on port 5554...
+2026-11-09 01:25:13,984 [INFO]   Boot completed in 22.2s. Serial: emulator-5554
+2026-11-09 01:25:17,627 [INFO] Screenshot captured for emulator-5554 (boot), attempt 1
+2026-11-09 01:25:19,389 [INFO] Hierarchy captured for emulator-5554 (boot), attempt 1
+2026-11-09 01:25:19,489 [INFO]   Step 1 (boot): pass (duration=5504ms)
+2026-11-09 01:25:19,494 [INFO]   Applying OEM Layer B settings for Huawei...
+2026-11-09 01:25:23,141 [INFO] Screenshot captured for emulator-5554 (oem_applied), attempt 1
+2026-11-09 01:25:24,462 [INFO] Hierarchy captured for emulator-5554 (oem_applied), attempt 1
+2026-11-09 01:25:24,572 [INFO]   Step 2 (oem_applied): pass (duration=4692ms)
+2026-11-09 01:25:24,626 [INFO]   [PASS] Huawei_low_29 finished cleanly.
+2026-11-09 01:25:24,633 [INFO]   Stopping emulator-5554 and cleaning locks...
+2026-11-09 01:25:34,651 [INFO] [23/24] Starting profile Huawei_medium_31...
+2026-11-09 01:25:34,654 [INFO]   Booting headless Huawei_medium_31 on port 5554...
+2026-11-09 01:26:29,566 [INFO]   Boot completed in 54.9s. Serial: emulator-5554
+2026-11-09 01:26:32,753 [INFO] Screenshot captured for emulator-5554 (boot), attempt 1
+2026-11-09 01:26:55,489 [INFO] Hierarchy dump returned no XML for emulator-5554 (boot): rc=0 stdout='cat: /sdcard/dump.xml: No such file or directory\n' stderr=''
+2026-11-09 01:26:55,489 [WARNING] Hierarchy attempt 1/3 returned no valid hierarchy for emulator-5554
+2026-11-09 01:27:19,868 [INFO] Hierarchy dump returned no XML for emulator-5554 (boot): rc=0 stdout='cat: /sdcard/dump.xml: No such file or directory\n' stderr=''
+2026-11-09 01:27:19,868 [WARNING] Hierarchy attempt 2/3 returned no valid hierarchy for emulator-5554
+2026-11-09 01:27:44,349 [INFO] Hierarchy dump returned no XML for emulator-5554 (boot): rc=0 stdout='cat: /sdcard/dump.xml: No such file or directory\n' stderr=''
+2026-11-09 01:27:44,349 [WARNING] Hierarchy attempt 3/3 returned no valid hierarchy for emulator-5554
+2026-11-09 01:27:44,463 [ERROR] Hierarchy capture failed after 3 attempts for emulator-5554 (boot)
+2026-11-09 01:27:44,464 [INFO]   Step 1 (boot): pass (duration=74896ms)
+2026-11-09 01:27:44,468 [INFO]   Applying OEM Layer B settings for Huawei...
+2026-11-09 01:27:48,327 [INFO] Screenshot captured for emulator-5554 (oem_applied), attempt 1
+2026-11-09 01:28:11,357 [INFO] Hierarchy dump returned no XML for emulator-5554 (oem_applied): rc=0 stdout='cat: /sdcard/dump.xml: No such file or directory\n' stderr=''
+2026-11-09 01:28:11,357 [WARNING] Hierarchy attempt 1/3 returned no valid hierarchy for emulator-5554
+2026-11-09 01:28:35,802 [INFO] Hierarchy dump returned no XML for emulator-5554 (oem_applied): rc=0 stdout='cat: /sdcard/dump.xml: No such file or directory\n' stderr=''
+2026-11-09 01:28:35,802 [WARNING] Hierarchy attempt 2/3 returned no valid hierarchy for emulator-5554
+2026-11-09 01:29:00,339 [INFO] Hierarchy dump returned no XML for emulator-5554 (oem_applied): rc=0 stdout='cat: /sdcard/dump.xml: No such file or directory\n' stderr=''
+2026-11-09 01:29:00,339 [WARNING] Hierarchy attempt 3/3 returned no valid hierarchy for emulator-5554
+2026-11-09 01:29:00,446 [ERROR] Hierarchy capture failed after 3 attempts for emulator-5554 (oem_applied)
+2026-11-09 01:29:00,447 [INFO]   Step 2 (oem_applied): pass (duration=75299ms)
+2026-11-09 01:29:00,516 [INFO]   [PASS] Huawei_medium_31 finished cleanly.
+2026-11-09 01:29:00,524 [INFO]   Stopping emulator-5554 and cleaning locks...
+2026-11-09 01:29:10,547 [INFO] [24/24] Starting profile Huawei_high_35...
+2026-11-09 01:29:10,549 [INFO]   Booting headless Huawei_high_35 on port 5554...
+2026-11-09 01:29:33,490 [INFO]   Boot completed in 22.9s. Serial: emulator-5554
+2026-11-09 01:29:37,585 [INFO] Screenshot captured for emulator-5554 (boot), attempt 1
+2026-11-09 01:29:39,967 [INFO] Hierarchy captured for emulator-5554 (boot), attempt 1
+2026-11-09 01:29:40,063 [INFO]   Step 1 (boot): pass (duration=6572ms)
+2026-11-09 01:29:40,067 [INFO]   Applying OEM Layer B settings for Huawei...
+2026-11-09 01:29:44,794 [INFO] Screenshot captured for emulator-5554 (oem_applied), attempt 1
+2026-11-09 01:29:47,012 [INFO] Hierarchy captured for emulator-5554 (oem_applied), attempt 1
+2026-11-09 01:29:47,120 [INFO]   Step 2 (oem_applied): pass (duration=6290ms)
+2026-11-09 01:29:47,160 [INFO]   [PASS] Huawei_high_35 finished cleanly.
+2026-11-09 01:29:47,164 [INFO]   Stopping emulator-5554 and cleaning locks...
+2026-11-09 01:29:57,188 [INFO] Sweep finished: Run #192: 24/24 passed (0 failures). Evidence: results/192
+2026-11-09 01:29:57,189 [INFO] Updated stability log in C:\Users\B2-Group2\Downloads\VMF\docs\nightly_stability_log.md
+2026-11-09 01:29:57,189 [INFO] ========================================
+2026-11-09 01:29:57,189 [INFO] VMF Nightly Run Finished. Status: PASS
+2026-11-09 01:29:57,190 [INFO] ========================================
