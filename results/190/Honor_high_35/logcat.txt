@@ -1,0 +1,432 @@
+--------- beginning of main
+11-07 01:22:33.738  3065  3065 D CompatChangeReporter: Compat change id reported: 202956589; UID 10194; state: ENABLED
+11-07 01:22:33.739  1560  1560 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.auth.service.START pkg=com.google.android.gms }
+11-07 01:22:33.739  1560  1560 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.auth.service.START pkg=com.google.android.gms }
+11-07 01:22:33.739  1827  1964 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/prod/eval/en/address-otp-copied, session=smartselect/prod/eval/en/address-otp-copied]
+11-07 01:22:33.739  1827  1964 W System.err: val in interceptor: null
+11-07 01:22:33.742  1827  1964 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/prod/eval/en/address-phone, session=smartselect/prod/eval/en/address-phone]
+11-07 01:22:33.742  1827  1964 W System.err: val in interceptor: null
+11-07 01:22:33.743  1827  1964 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/prod/eval/en/address-phone-or-selected-in-search-or-browser-apps, session=smartselect/prod/eval/en/address-phone-or-selected-in-search-or-browser-apps]
+11-07 01:22:33.744  3025  3025 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/org.apache.http.legacy.jar
+11-07 01:22:33.747  1827  1964 W System.err: val in interceptor: null
+11-07 01:22:33.749  1827  1964 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/prod/eval/en/address-phone-or-selected-in-non-messaging-apps, session=smartselect/prod/eval/en/address-phone-or-selected-in-non-messaging-apps]
+11-07 01:22:33.749  1827  1964 W System.err: val in interceptor: null
+11-07 01:22:33.749  1534  1534 I BugleRcsWorker: [seqId=1][workId=a0d6603c-c31a-42db-86a0-3b47373284c1] RCS provisioning task has started
+11-07 01:22:33.749  1827  1964 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/prod/eval/en/address-phone-otp-copied, session=smartselect/prod/eval/en/address-phone-otp-copied]
+11-07 01:22:33.751  1560  1605 I gle.android.gms: Background concurrent mark compact GC freed 5132KB AllocSpace bytes, 85(3864KB) LOS objects, 49% free, 10MB/21MB, paused 398.871ms,44.833ms total 672.892ms
+11-07 01:22:33.752  3065  3065 V GraphicsEnvironment: Currently set values for:
+11-07 01:22:33.752  3065  3065 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+11-07 01:22:33.752  3065  3065 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+11-07 01:22:33.752  3065  3065 V GraphicsEnvironment: Global.Settings values are invalid: number of packages: 0, number of values: 0
+11-07 01:22:33.752  3065  3065 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+11-07 01:22:33.755   433   433 I netd    : tetherGetStats() -> {[]} <0.45ms>
+11-07 01:22:33.759  1827  1964 W System.err: val in interceptor: null
+11-07 01:22:33.773  1160  1938 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:2 exec_start_elapsed_seconds: 39 [CONTEXT service_id=218 ]
+11-07 01:22:33.773  3025  3025 D nativeloader: Configuring clns-7 for other apk /system/framework/com.android.media.remotedisplay.jar. target_sdk_version=34, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+11-07 01:22:33.776   433   433 I netd    : bandwidthRemoveInterfaceQuota(eth0) <0.60ms>
+11-07 01:22:33.778   644  1156 D ConnectivityService: requestNetwork for uid/pid:10143/1560 activeRequest: null callbackRequest: 113 [NetworkRequest [ REQUEST id=114, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10143 RequestorUid: 10143 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false
+11-07 01:22:33.780  1827  1964 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/prod/eval/all/all_nonsentences, session=smartselect/prod/eval/all/all_nonsentences]
+11-07 01:22:33.783  3025  3025 D nativeloader: Configuring clns-8 for other apk /system/framework/com.android.location.provider.jar. target_sdk_version=34, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+11-07 01:22:33.783  1827  1964 W System.err: val in interceptor: null
+11-07 01:22:33.784  1827  1964 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/prod/eval/en/pasted-to-maps-apps, session=smartselect/prod/eval/en/pasted-to-maps-apps]
+11-07 01:22:33.784  3025  3025 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+11-07 01:22:33.784  3025  3025 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+11-07 01:22:33.785  1827  1964 W System.err: val in interceptor: null
+11-07 01:22:33.785  1827  1964 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/prod/eval/en/pasted-to-search-or-browser-or-named-entity-apps, session=smartselect/prod/eval/en/pasted-to-search-or-browser-or-named-entity-apps]
+11-07 01:22:33.785  1827  1964 W System.err: val in interceptor: null
+11-07 01:22:33.786  1827  1964 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/prod/eval/en/all-non-url-email, session=smartselect/prod/eval/en/all-non-url-email]
+11-07 01:22:33.787  1827  1964 W System.err: val in interceptor: null
+11-07 01:22:33.787  1827  1964 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/prod/eval/en/address-phone-other-translate, session=smartselect/prod/eval/en/address-phone-other-translate]
+11-07 01:22:33.788  1827  1964 W System.err: val in interceptor: null
+11-07 01:22:33.788  1827  1964 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/eval/en/address-phone-or-selected-in-messaging-apps, session=smartselect/eval/en/address-phone-or-selected-in-messaging-apps]
+11-07 01:22:33.788  1827  1964 W System.err: val in interceptor: null
+11-07 01:22:33.788  1827  1964 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/eval/en/address-phone-other-nonsentences, session=smartselect/eval/en/address-phone-other-nonsentences]
+11-07 01:22:33.789  1827  1964 W System.err: val in interceptor: null
+11-07 01:22:33.789  1827  1964 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/eval/en/address-phone, session=smartselect/eval/en/address-phone]
+11-07 01:22:33.790  1827  1964 W System.err: val in interceptor: null
+11-07 01:22:33.792  1827  1964 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/eval/en/address, session=smartselect/eval/en/address]
+11-07 01:22:33.792  1827  1964 W System.err: val in interceptor: null
+11-07 01:22:33.793  1827  1964 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/eval/en/phone-or-pasted-to-dialer-apps, session=smartselect/eval/en/phone-or-pasted-to-dialer-apps]
+11-07 01:22:33.793  1827  1964 W System.err: val in interceptor: null
+11-07 01:22:33.794  1827  1964 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/eval/en/pasted-to-maps-apps, session=smartselect/eval/en/pasted-to-maps-apps]
+11-07 01:22:33.794  1827  1964 W System.err: val in interceptor: null
+11-07 01:22:33.794  1827  1964 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/eval/en/address-phone-or-selected-in-search-or-browser-apps, session=smartselect/eval/en/address-phone-or-selected-in-search-or-browser-apps]
+11-07 01:22:33.795  1827  1964 W System.err: val in interceptor: null
+11-07 01:22:33.795  1827  1964 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/eval/en/address-phone-or-pasted-to-either-apps, session=smartselect/eval/en/address-phone-or-pasted-to-either-apps]
+11-07 01:22:33.795  1827  1964 W System.err: val in interceptor: null
+11-07 01:22:33.795  1827  1964 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/prod/eval/en/pasted-to-shopping-apps, session=smartselect/prod/eval/en/pasted-to-shopping-apps]
+11-07 01:22:33.795  3025  3025 D nativeloader: InitLlndkLibrariesProduct: libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libRS.so:libandroid_net.so:libapexsupport.so:libbinder_ndk.so:libc.so:libcgrouprc.so:libclang_rt.asan-x86_64-android.so:libcom.android.tethering.connectivity_native.so:libdl.so:libft2.so:liblog.so:libm.so:libmediandk.so:libnativewindow.so:libneuralnetworks.so:libselinux.so:libsync.so:libvendorsupport.so:libvndksupport.so:libvulkan.so
+11-07 01:22:33.796  1827  1964 W System.err: val in interceptor: null
+11-07 01:22:33.796   644   826 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=114, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10143 RequestorUid: 10143 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+11-07 01:22:33.796  3025  3025 D nativeloader: Configuring product-clns-9 for unbundled product apk /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk. target_sdk_version=34, uses_libraries=, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64:/product/lib64:/system/product/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms:/product/lib64:/system/product/lib64
+11-07 01:22:33.796   644   826 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=114, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10143 RequestorUid: 10143 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+11-07 01:22:33.796   644   826 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=114, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10143 RequestorUid: 10143 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+11-07 01:22:33.797  3025  3025 D nativeloader: InitVndkspLibrariesProduct: VNDK is deprecated with product
+11-07 01:22:33.800  1560  1607 W gle.android.gms: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/priv-app/GoogleServicesFramework/GoogleServicesFramework.apk' with 1 weak references
+--------- beginning of system
+11-07 01:22:33.801   644   680 E AccountManagerService: Couldn't determine the packageUid for android.content.pm.PackageManager$NameNotFoundException: 
+11-07 01:22:33.801   644   705 D CompatChangeReporter: Compat change id reported: 151861875; UID 10100; state: ENABLED
+11-07 01:22:33.802  1309  1322 W ssioncontroller: Core platform API violation: Llibcore/io/Memory;->pokeByte(JB)V from Lcom/google/protobuf/UnsafeUtil; using reflection
+11-07 01:22:33.803  1309  1322 W ssioncontroller: Core platform API violation: Llibcore/io/Memory;->peekByte(J)B from Lcom/google/protobuf/UnsafeUtil; using reflection
+11-07 01:22:33.807  1534  1864 I BugleRcsWorker: [seqId=1][workId=a0d6603c-c31a-42db-86a0-3b47373284c1] Starting StateMachine, trigger is BOOT_COMPLETE
+11-07 01:22:33.808  1534  1864 I BugleRcsEngine: start PEv2, trigger is BOOT_COMPLETE, workerId is a0d6603c-c31a-42db-86a0-3b47373284c1 [null] [CONTEXT log_prefix="(PEv2-SM136612490-DefaultCallSmsData-1-911)" thread_id=51 ]
+11-07 01:22:33.809  1560  2234 I Icing   : Usage reports ok 1, Failed Usage reports 0, indexed 0, rejected 0
+11-07 01:22:33.814  3025  3025 V GraphicsEnvironment: Currently set values for:
+11-07 01:22:33.814  3025  3025 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+11-07 01:22:33.814  3025  3025 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+11-07 01:22:33.814  3025  3025 V GraphicsEnvironment: Global.Settings values are invalid: number of packages: 0, number of values: 0
+11-07 01:22:33.815  3025  3025 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+11-07 01:22:33.816  1552  1763 W earchbox:search: Long monitor contention with owner Blocking Thread #16 (2336) at java.util.Map com.google.android.libraries.phenotype.client.c.c()(PG:52) waiters=0 in java.util.Map com.google.android.libraries.phenotype.client.c.c() for 120ms
+11-07 01:22:33.816  3025  3025 I LoadedApk: No resource references to update in package com.google.android.gms
+11-07 01:22:33.817  1552  2336 I A       : (REDACTED) Writing metadata key: %s, corpus: %s
+11-07 01:22:33.818  1534  1864 I BugleRcsEngine: Created new RcsProvisioningProtoDataStorage for sim redacted-pii:sim_id[chars:20,last3:897] [CONTEXT thread_id=51 ]
+11-07 01:22:33.818  1552  2336 I A       : (REDACTED) Writing metadata key: %s, corpus: %s
+11-07 01:22:33.820  1534  1864 I BugleRcsEngine: start [null] [CONTEXT log_prefix="(PEv2-SM136612490-DefaultCallSmsData-1-911)" thread_id=51 ]
+11-07 01:22:33.821   644   833 D ConnectivityService: NetReassign [114 : null → 100] [c 0] [a 15] [i 26]
+11-07 01:22:33.821   644   826 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=114, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10143 RequestorUid: 10143 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+11-07 01:22:33.822  1534  3106 I BugleRcsEngine: Enter EnabledState [null] [CONTEXT log_prefix="(PEv2-SM136612490-DefaultCallSmsData-1-911)" thread_id=104 ]
+11-07 01:22:33.823   433   433 I netd    : bandwidthSetInterfaceQuota(eth0, 9223372036854775807) <1.86ms>
+11-07 01:22:33.828  1534  3106 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=104 ]
+11-07 01:22:33.830   434   434 D Zygote  : Forked child process 3113
+11-07 01:22:33.836  1534  3106 I BugleRcsEngine: Sending ProvisioningEvent to Bugle [Send Provisioning Session ID (18)], redacted-pii:[chars:65] [CONTEXT thread_id=104 ]
+11-07 01:22:33.836  1160  2872 I NetworkScheduler.Stats: HousekeepingTask com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:0 result: 1 elapsed_millis: 521 uptime_millis: 521 exec_start_elapsed_seconds: 39 [CONTEXT service_id=218 ]
+11-07 01:22:33.836  1534  3106 I BugleRcsEngine: Broadcasting provisioning intent com.google.android.ims.provisioning.engine.provisioningEventAction to Bugle with extras redacted-pii:[chars:223] from source PROVISIONING_EVENT [CONTEXT log_prefix="EngineBroadcaster" thread_id=104 ]
+11-07 01:22:33.848  3025  3025 I GmsApplication: Using GservicesReaderQueryDelegate
+11-07 01:22:33.850   644   706 I ActivityManager: Start proc 3113:com.google.android.packageinstaller/u0a100 for broadcast {com.google.android.packageinstaller/com.android.packageinstaller.common.TemporaryFileManager}
+11-07 01:22:33.855  1827  1964 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/eval/en/address-phone-other-translate, session=smartselect/eval/en/address-phone-other-translate]
+11-07 01:22:33.855  1827  1964 W System.err: val in interceptor: null
+11-07 01:22:33.856  1827  1964 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/eval/en/pasted-to-search-apps, session=smartselect/eval/en/pasted-to-search-apps]
+11-07 01:22:33.856  1827  1964 W System.err: val in interceptor: null
+11-07 01:22:33.856  1827  1964 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/eval/all/all_nonsentences, session=smartselect/eval/all/all_nonsentences]
+11-07 01:22:33.857  1827  1964 W System.err: val in interceptor: null
+11-07 01:22:33.857  1552  1762 W MDD     : GddFileGroupPopulator: Account was not provided, skipping private sync for corpus: GDD_APA_BISTO, configuration: GddAgsaApaBisto
+11-07 01:22:33.857  3050  3050 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+11-07 01:22:33.857  3050  3050 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+11-07 01:22:33.858  1827  1964 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/eval/en/address-phone-otp, session=smartselect/eval/en/address-phone-otp]
+11-07 01:22:33.858  1827  1964 W System.err: val in interceptor: null
+11-07 01:22:33.859  1827  1964 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/eval/en/pasted-to-search-or-browser-apps, session=smartselect/eval/en/pasted-to-search-or-browser-apps]
+11-07 01:22:33.859  3113  3113 I ackageinstaller: Using CollectorTypeCMC GC.
+11-07 01:22:33.859  1827  1964 W System.err: val in interceptor: null
+11-07 01:22:33.859   644  1950 D CompatChangeReporter: Compat change id reported: 319212206; UID 10143; state: ENABLED
+11-07 01:22:33.859  3025  3025 W SQLiteCompatibilityWalFlags: Cannot read global setting sqlite_compatibility_wal_flags - Application state not available
+11-07 01:22:33.860  1827  1964 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/eval/all/all, session=smartselect/eval/all/all]
+11-07 01:22:33.860  1827  1964 W System.err: val in interceptor: null
+11-07 01:22:33.861  3113  3113 W ackageinstaller: Unexpected CPU variant for x86: x86_64.
+11-07 01:22:33.861  3113  3113 W ackageinstaller: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, goldmont-without-sha-xsaves, tremont, kabylake, default
+11-07 01:22:33.861  1827  1964 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/eval/en/address-phone-or-pasted-to-non-messaging-apps, session=smartselect/eval/en/address-phone-or-pasted-to-non-messaging-apps]
+11-07 01:22:33.861  1827  1964 W System.err: val in interceptor: null
+11-07 01:22:33.862  1827  1964 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/eval/en/all-non-translate, session=smartselect/eval/en/all-non-translate]
+11-07 01:22:33.862  1827  1964 W System.err: val in interceptor: null
+11-07 01:22:33.864  1552  1767 I A       : (REDACTED) Starting batch sync for corpora: %s
+11-07 01:22:33.866  3113  3113 E ackageinstaller: Not starting debugger since process cannot load the jdwp agent.
+11-07 01:22:33.870  1160  2227 W GLSUser : [DeviceKeyStore] Cannot load key: Device key file not found.
+11-07 01:22:33.870  1552  1762 I AppStateUtil: (REDACTED) getting App Capabilities %s
+11-07 01:22:33.871  1160  2227 W GLSUser : [DeviceKeyStore] Cannot load key: Device key file not found.
+11-07 01:22:33.871  1552  1762 I DPContextParams: Building Device Properties.
+11-07 01:22:33.872   644   833 D ConnectivityService: NetReassign [no changes] [c 0] [a 0] [i 12]
+11-07 01:22:33.872  1534  2244 I BugleRcsProvisioning: RcsProvisioningEventReceiver: Received ProvisioningEvent: Send Provisioning Session ID
+11-07 01:22:33.878  1552  1610 I A       : (REDACTED) hasHotwordEverywhere-%b
+11-07 01:22:33.879  3113  3113 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+11-07 01:22:33.881  1534  2262 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.receiver.RcsProvisioningEventReceiver@23d1ae1
+11-07 01:22:33.883   644   644 W Looper  : Slow dispatch took 296ms main h=android.app.ActivityThread$H c=android.app.LoadedApk$ReceiverDispatcher$Args$$ExternalSyntheticLambda0@11fc953 m=0
+11-07 01:22:33.884   644   644 W Looper  : Slow delivery took 258ms main h=com.android.server.power.Notifier$NotifierHandler c=null m=7
+11-07 01:22:33.889   644  1941 W system_server: Long monitor contention with owner binder:644_3 (746) at int com.android.server.job.JobSchedulerService.getUidProcState(int)(JobSchedulerService.java:2479) waiters=4 in java.util.List com.android.server.job.JobSchedulerService.getPendingJobsInNamespace(int, java.lang.String) for 341ms
+11-07 01:22:33.889  3050  3050 D nativeloader: InitLlndkLibrariesProduct: libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libRS.so:libandroid_net.so:libapexsupport.so:libbinder_ndk.so:libc.so:libcgrouprc.so:libclang_rt.asan-x86_64-android.so:libcom.android.tethering.connectivity_native.so:libdl.so:libft2.so:liblog.so:libm.so:libmediandk.so:libnativewindow.so:libneuralnetworks.so:libselinux.so:libsync.so:libvendorsupport.so:libvndksupport.so:libvulkan.so
+11-07 01:22:33.890  3050  3050 D nativeloader: Configuring product-clns-7 for unbundled product apk /product/app/talkback/talkback.apk. target_sdk_version=35, uses_libraries=, library_path=/product/app/talkback/lib/x86_64:/product/app/talkback/talkback.apk!/lib/x86_64:/product/lib64:/system/product/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.marvin.talkback:/product/lib64:/system/product/lib64
+11-07 01:22:33.890  3050  3050 D nativeloader: InitVndkspLibrariesProduct: VNDK is deprecated with product
+11-07 01:22:33.891  3050  3050 D CompatChangeReporter: Compat change id reported: 202956589; UID 10166; state: ENABLED
+11-07 01:22:33.893  1534  2934 I cr_CronetUrlRequestContext: destroyNativeStreamLocked org.chromium.net.impl.CronetBidirectionalStream@c0f841d
+11-07 01:22:33.895  1534  2262 I RpcManager: [1582a8b8-34ba-4cd5-b542-1abef63c654b] processing getConfiguration response, workRequestId:d67b1a73-d9b6-45a5-9974-150c9052c610
+11-07 01:22:33.898  1827  1964 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/eval/en/address-phone-otp-copied, session=smartselect/eval/en/address-phone-otp-copied]
+11-07 01:22:33.898  1827  1964 W System.err: val in interceptor: null
+11-07 01:22:33.904  3050  3050 V GraphicsEnvironment: Currently set values for:
+11-07 01:22:33.904  1405  1537 I AiAiEcho: [pnb-agg] Reload pnb aggregation on events deleted
+11-07 01:22:33.904  3050  3050 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+11-07 01:22:33.904  1405  1537 I AiAiEcho: [pnb-agg] pnb aggregation disabled.
+11-07 01:22:33.904  3050  3050 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+11-07 01:22:33.904  3050  3050 V GraphicsEnvironment: Global.Settings values are invalid: number of packages: 0, number of values: 0
+11-07 01:22:33.904  3050  3050 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+11-07 01:22:33.909  1827  1964 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/eval/en/all-non-url-email-cut, session=smartselect/eval/en/all-non-url-email-cut]
+11-07 01:22:33.909  1827  1964 W System.err: val in interceptor: null
+11-07 01:22:33.909  1827  1964 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/eval/en/address-phone-other, session=smartselect/eval/en/address-phone-other]
+11-07 01:22:33.909  1827  1964 W System.err: val in interceptor: null
+11-07 01:22:33.914  1827  1964 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/eval/en/all, session=smartselect/eval/en/all]
+11-07 01:22:33.914  1827  1964 W System.err: val in interceptor: null
+11-07 01:22:33.915  1827  1964 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/eval/en/selected-in-messaging-apps, session=smartselect/eval/en/selected-in-messaging-apps]
+11-07 01:22:33.919  1827  1964 W System.err: val in interceptor: null
+11-07 01:22:33.919  1827  1964 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/eval/en/all-pasted-to-none-messaging-apps, session=smartselect/eval/en/all-pasted-to-none-messaging-apps]
+11-07 01:22:33.919  1827  1964 W System.err: val in interceptor: null
+11-07 01:22:33.920  1827  1964 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/eval/en/all_nonsentences, session=smartselect/eval/en/all_nonsentences]
+11-07 01:22:33.922  1827  1964 W System.err: val in interceptor: null
+11-07 01:22:33.923  1827  1964 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/eval/en/all-non-url-email, session=smartselect/eval/en/all-non-url-email]
+11-07 01:22:33.923  1827  1964 W System.err: val in interceptor: null
+11-07 01:22:33.925  1827  1964 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/eval/en/pasted-to-notes-apps, session=smartselect/eval/en/pasted-to-notes-apps]
+11-07 01:22:33.927  1827  1964 W System.err: val in interceptor: null
+11-07 01:22:33.929  1450  1801 I A       : (REDACTED) on opa visibility changed %s
+11-07 01:22:33.929  1827  1964 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/eval/en/selected-in-non-messaging-apps, session=smartselect/eval/en/selected-in-non-messaging-apps]
+11-07 01:22:33.930  1827  1964 W System.err: val in interceptor: null
+11-07 01:22:33.936  1827  1964 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/eval/en/address-or-pasted-to-map-apps, session=smartselect/eval/en/address-or-pasted-to-map-apps]
+11-07 01:22:33.936  1827  1964 W System.err: val in interceptor: null
+11-07 01:22:33.936  1827  1964 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/eval/en/pasted-to-named-entity-apps, session=smartselect/eval/en/pasted-to-named-entity-apps]
+11-07 01:22:33.939   502   749 W APM::HwModule: getDeviceDescriptor: could not find HW module for device  (AUDIO_DEVICE_OUT_WIRED_HEADSET, 00000004) address 
+11-07 01:22:33.939  1827  1964 W System.err: val in interceptor: null
+11-07 01:22:33.940  1675  2575 W RemoteCallableBase: Null cursor. Cannot add index data for Uri: content://com.google.android.marvin.talkback.preference.search.TalkBackSearchIndexablesProvider/settings/dynamic_indexables_raw
+11-07 01:22:33.941  1675  2575 W RemoteCallableBase: Null cursor. Cannot add index data for Uri: content://com.google.android.marvin.talkback.preference.search.TalkBackSearchIndexablesProvider/settings/non_indexables_key
+11-07 01:22:33.942  1827  1964 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/eval/en/pasted-to-shopping-apps, session=smartselect/eval/en/pasted-to-shopping-apps]
+11-07 01:22:33.942  1827  1964 W System.err: val in interceptor: null
+11-07 01:22:33.943  1827  1964 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/eval/en/all-pasted-to-apps, session=smartselect/eval/en/all-pasted-to-apps]
+11-07 01:22:33.944  1827  1964 W System.err: val in interceptor: null
+11-07 01:22:33.946   502   749 W APM::HwModule: getDeviceDescriptor: could not find HW module for device  (AUDIO_DEVICE_OUT_WIRED_HEADPHONE, 00000008) address 
+11-07 01:22:33.947   644   644 W Looper  : Drained
+11-07 01:22:33.948   502   520 W APM::HwModule: getDeviceDescriptor: could not find HW module for device  (AUDIO_DEVICE_OUT_USB_HEADSET, 04000000) address 
+11-07 01:22:33.953  1827  1964 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/eval/en/pasted-to-search-or-browser-or-named-entity-apps, session=smartselect/eval/en/pasted-to-search-or-browser-or-named-entity-apps]
+11-07 01:22:33.954  1827  1964 W System.err: val in interceptor: null
+11-07 01:22:33.954  1827  1964 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/eval/en/selected-in-search-or-browser-apps, session=smartselect/eval/en/selected-in-search-or-browser-apps]
+11-07 01:22:33.955  1827  1964 W System.err: val in interceptor: null
+11-07 01:22:33.955  1827  1964 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/eval/en/address-phone-or-pasted-to-search-or-browser-apps, session=smartselect/eval/en/address-phone-or-pasted-to-search-or-browser-apps]
+11-07 01:22:33.958  1827  1964 W System.err: val in interceptor: null
+11-07 01:22:33.959  1827  1964 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/eval/en/pasted-to-translate-apps, session=smartselect/eval/en/pasted-to-translate-apps]
+11-07 01:22:33.960  1827  1964 W System.err: val in interceptor: null
+11-07 01:22:33.960  1827  1964 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/eval/en/phone, session=smartselect/eval/en/phone]
+11-07 01:22:33.961  1827  1964 W System.err: val in interceptor: null
+11-07 01:22:33.963  1827  1964 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/eval/en/address-or-pasted-to-shopping-apps, session=smartselect/eval/en/address-or-pasted-to-shopping-apps]
+11-07 01:22:33.964  1827  1964 W System.err: val in interceptor: null
+11-07 01:22:33.969  1827  1964 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/eval/en/address-otp-copied, session=smartselect/eval/en/address-otp-copied]
+11-07 01:22:33.969  1827  1964 W System.err: val in interceptor: null
+11-07 01:22:33.976   644   825 W system_server: Long monitor contention with owner NetworkPolicy (824) at void android.net.connectivity.com.android.server.net.NetworkStatsService.advisePersistThreshold(long)(NetworkStatsService.java:2051) waiters=0 in void android.net.connectivity.com.android.server.net.NetworkStatsService.noteUidForeground(int, boolean) for 129ms
+11-07 01:22:33.978  1827  1964 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/eval/en/address-phone-or-selected-in-non-messaging-apps, session=smartselect/eval/en/address-phone-or-selected-in-non-messaging-apps]
+11-07 01:22:33.979  1827  1964 W System.err: val in interceptor: null
+11-07 01:22:33.984  1827  1964 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/eval/en/all-non-url-email-cut-translate, session=smartselect/eval/en/all-non-url-email-cut-translate]
+11-07 01:22:33.984  1827  1964 W System.err: val in interceptor: null
+11-07 01:22:33.985   433   433 I netd    : bandwidthRemoveInterfaceQuota(eth0) <1.71ms>
+11-07 01:22:33.985  1827  1964 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/eval/en/address-or-pasted-to-map-or-shopping-apps, session=smartselect/eval/en/address-or-pasted-to-map-or-shopping-apps]
+11-07 01:22:33.985  1827  1964 W System.err: val in interceptor: null
+11-07 01:22:33.988  3113  3113 D nativeloader: Configuring clns-shared-7 for other apk /system/priv-app/GooglePackageInstaller/GooglePackageInstaller.apk. target_sdk_version=35, uses_libraries=, library_path=/system/priv-app/GooglePackageInstaller/lib/x86_64:/system/lib64:/system_ext/lib64, permitted_path=/data:/mnt/expand:/data/user_de/0/com.google.android.packageinstaller:/system/priv-app/GooglePackageInstaller:/system/lib64:/system_ext/lib64
+11-07 01:22:33.990   433   433 I netd    : bandwidthSetInterfaceQuota(eth0, 9223372036854775807) <3.70ms>
+11-07 01:22:33.992  1827  1964 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/eval/en/address-otp, session=smartselect/eval/en/address-otp]
+11-07 01:22:33.993  1827  1964 W System.err: val in interceptor: null
+11-07 01:22:34.004  1405  1812 I AiAiFedAss: [AiAi Ekho] *** enabled *** [mode=FEDERATION, population=aiai/ekho]
+11-07 01:22:34.009  1534  3106 I BugleRcsEngine: Start a new provisioning session [eadb33a7-9809-4388-9ada-1a21a955d66a] [CONTEXT log_prefix="(PEv2-SM136612490-DefaultCallSmsData-1-911)" thread_id=104 ]
+11-07 01:22:34.009  1450  1801 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+11-07 01:22:34.014  1534  3106 I BugleRcsEngine: transitionViaMessage, srcState=EnabledState, destState = CheckPreconditionsState [eadb33a7-9809-4388-9ada-1a21a955d66a] [CONTEXT log_prefix="(PEv2-SM136612490-DefaultCallSmsData-1-911)" thread_id=104 ]
+11-07 01:22:34.017  3113  3113 D CompatChangeReporter: Compat change id reported: 202956589; UID 10100; state: ENABLED
+11-07 01:22:34.023  1534  3106 I BugleRcsEngine: Sending ProvisioningEvent to Bugle [Update provisioning status (11)], redacted-pii:[chars:85] [CONTEXT thread_id=104 ]
+11-07 01:22:34.024  1534  3106 I BugleRcsEngine: Broadcasting provisioning intent com.google.android.ims.provisioning.engine.provisioningEventAction to Bugle with extras redacted-pii:[chars:243] from source PROVISIONING_EVENT [CONTEXT log_prefix="EngineBroadcaster" thread_id=104 ]
+11-07 01:22:34.037  1534  1864 I SyncScheduler: scheduling sync for 15199 seconds later, policy = APPEND
+11-07 01:22:34.039  1534  1864 I SyncHelper: [1582a8b8-34ba-4cd5-b542-1abef63c654b] sync succeeded, workRequestId:d67b1a73-d9b6-45a5-9974-150c9052c610
+11-07 01:22:34.043  1534  2245 I BugleRcsProvisioning: RcsProvisioningEventReceiver: Received ProvisioningEvent: Update provisioning status
+11-07 01:22:34.044  1534  3106 I BugleRcsEngine: EnabledState: Transition to check preconditions [eadb33a7-9809-4388-9ada-1a21a955d66a] [CONTEXT log_prefix="(PEv2-SM136612490-DefaultCallSmsData-1-911)" thread_id=104 ]
+11-07 01:22:34.045  1534  3106 I BugleRcsEngine: transitionTo: destState=CheckPreconditionsState [eadb33a7-9809-4388-9ada-1a21a955d66a] [CONTEXT log_prefix="(PEv2-SM136612490-DefaultCallSmsData-1-911)" thread_id=104 ]
+11-07 01:22:34.046  1534  3106 I BugleRcsEngine: onTransitionRequested EnabledState [eadb33a7-9809-4388-9ada-1a21a955d66a] [CONTEXT log_prefix="(PEv2-SM136612490-DefaultCallSmsData-1-911)" thread_id=104 ]
+11-07 01:22:34.047  1534  1949 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.receiver.RcsProvisioningEventReceiver@c6ed384
+11-07 01:22:34.050  1560  2234 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+11-07 01:22:34.052  1534  3106 I BugleRcsEngine: Enter CheckPreconditionsState [eadb33a7-9809-4388-9ada-1a21a955d66a] [CONTEXT log_prefix="(PEv2-SM136612490-DefaultCallSmsData-1-911)" thread_id=104 ]
+11-07 01:22:34.056  1560  2908 I cr_CronetLibraryLoader: Cronet version: 126.0.6452.4, arch: x86_64
+11-07 01:22:34.066  1534  3106 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=104 ]
+11-07 01:22:34.067  1534  3106 W BugleRcsProvisioning: Failed to get RCS configuration from the cached provider, configuration is empty.
+11-07 01:22:34.067  1534  3106 W BugleRcsProvisioning: dncp: FULL
+11-07 01:22:34.067  1534  3106 W BugleRcsProvisioning: 	at afzl.c(PG:130)
+11-07 01:22:34.067  1534  3106 W BugleRcsProvisioning: 	at afzl.f(PG:13)
+11-07 01:22:34.067  1534  3106 W BugleRcsProvisioning: 	at afwq.a(PG:9)
+11-07 01:22:34.067  1534  3106 W BugleRcsProvisioning: 	at cjrj.ao(PG:3)
+11-07 01:22:34.067  1534  3106 W BugleRcsProvisioning: 	at cjpj.r(PG:3)
+11-07 01:22:34.067  1534  3106 W BugleRcsProvisioning: 	at cjpj.b(PG:591)
+11-07 01:22:34.067  1534  3106 W BugleRcsProvisioning: 	at cirx.h(PG:17)
+11-07 01:22:34.067  1534  3106 W BugleRcsProvisioning: 	at cirx.handleMessage(PG:311)
+11-07 01:22:34.067  1534  3106 W BugleRcsProvisioning: 	at android.os.Handler.dispatchMessage(Handler.java:107)
+11-07 01:22:34.067  1534  3106 W BugleRcsProvisioning: 	at android.os.Looper.loopOnce(Looper.java:232)
+11-07 01:22:34.067  1534  3106 W BugleRcsProvisioning: 	at android.os.Looper.loop(Looper.java:317)
+11-07 01:22:34.067  1534  3106 W BugleRcsProvisioning: 	at android.os.HandlerThread.run(HandlerThread.java:85)
+11-07 01:22:34.067  1534  3106 I BugleRcsEngine: Battery optimization is not required. [eadb33a7-9809-4388-9ada-1a21a955d66a] [CONTEXT log_prefix="(PEv2-SM136612490-DefaultCallSmsData-1-911)" thread_id=104 ]
+11-07 01:22:34.068  3113  3113 V GraphicsEnvironment: Currently set values for:
+11-07 01:22:34.069  3113  3113 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+11-07 01:22:34.069  1534  3106 I BugleRcsEngine: transitionViaMessage, srcState=CheckPreconditionsState, destState = ReadyState [eadb33a7-9809-4388-9ada-1a21a955d66a] [CONTEXT log_prefix="(PEv2-SM136612490-DefaultCallSmsData-1-911)" thread_id=104 ]
+11-07 01:22:34.069  3113  3113 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+11-07 01:22:34.070  3113  3113 V GraphicsEnvironment: Global.Settings values are invalid: number of packages: 0, number of values: 0
+11-07 01:22:34.070  3113  3113 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+11-07 01:22:34.077  1534  3106 I BugleRcsEngine: CheckPreconditionsState: Transition to ready [eadb33a7-9809-4388-9ada-1a21a955d66a] [CONTEXT log_prefix="(PEv2-SM136612490-DefaultCallSmsData-1-911)" thread_id=104 ]
+11-07 01:22:34.077  1534  3106 I BugleRcsEngine: transitionTo: destState=ReadyState [eadb33a7-9809-4388-9ada-1a21a955d66a] [CONTEXT log_prefix="(PEv2-SM136612490-DefaultCallSmsData-1-911)" thread_id=104 ]
+11-07 01:22:34.078  1534  3106 I BugleRcsEngine: onTransitionRequested CheckPreconditionsState [eadb33a7-9809-4388-9ada-1a21a955d66a] [CONTEXT log_prefix="(PEv2-SM136612490-DefaultCallSmsData-1-911)" thread_id=104 ]
+11-07 01:22:34.081  1534  3106 I BugleRcsEngine: Exit CheckPreconditionsState [eadb33a7-9809-4388-9ada-1a21a955d66a] [CONTEXT log_prefix="(PEv2-SM136612490-DefaultCallSmsData-1-911)" thread_id=104 ]
+11-07 01:22:34.088   644   914 D NetworkStatsObservers: Unregistering RequestInfo from pid/uid:644/1000(android) for DataUsageRequest [ requestId=6, networkTemplate=NetworkTemplate: matchRule=MOBILE, matchSubscriberIds=[310260...], matchWifiNetworkKeys=[], metered=YES, defaultNetwork=NO, thresholdInBytes=13381364 ] accessLevel:3
+11-07 01:22:34.089  1534  3106 I BugleRcsEngine: Exit EnabledState [eadb33a7-9809-4388-9ada-1a21a955d66a] [CONTEXT log_prefix="(PEv2-SM136612490-DefaultCallSmsData-1-911)" thread_id=104 ]
+11-07 01:22:34.089  3025  3025 W ProviderHelper: Unknown dynamite feature providerinstaller.dynamite
+11-07 01:22:34.090  1534  3106 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=104 ]
+11-07 01:22:34.090  1534  3106 I BugleRcsEngine: Enter InProgressState [eadb33a7-9809-4388-9ada-1a21a955d66a] [CONTEXT log_prefix="(PEv2-SM136612490-DefaultCallSmsData-1-911)" thread_id=104 ]
+11-07 01:22:34.090  3025  3025 I DynamiteModule: Considering local module com.google.android.gms.providerinstaller.dynamite:1 and remote module com.google.android.gms.providerinstaller.dynamite:0
+11-07 01:22:34.091  3025  3025 I DynamiteModule: Selected local version of com.google.android.gms.providerinstaller.dynamite
+11-07 01:22:34.101  1534  3106 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=104 ]
+11-07 01:22:34.102   644   824 D NetworkStatsObservers: Registering observer for RequestInfo from pid/uid:644/1000(android) for DataUsageRequest [ requestId=7, networkTemplate=NetworkTemplate: matchRule=MOBILE, matchSubscriberIds=[310260...], matchWifiNetworkKeys=[], metered=YES, defaultNetwork=NO, thresholdInBytes=13377995 ] accessLevel:3
+11-07 01:22:34.102  1534  3106 I BugleRcsEngine: Enter ReadyState [eadb33a7-9809-4388-9ada-1a21a955d66a] [CONTEXT log_prefix="(PEv2-SM136612490-DefaultCallSmsData-1-911)" thread_id=104 ]
+11-07 01:22:34.116  1534  3106 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=104 ]
+11-07 01:22:34.119  3025  3025 D nativeloader: Load /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64/libconscrypt_gmscore_jni.so using ns product-clns-9 from class loader (caller=/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!classes3.dex): ok
+11-07 01:22:34.120  3025  3025 V NativeCrypto: Registering com/google/android/gms/org/conscrypt/NativeCrypto's 305 native methods...
+11-07 01:22:34.132  1534  3106 I BugleRcsEngine: transitionViaMessage, srcState=ReadyState, destState = RequestWithImsiState [eadb33a7-9809-4388-9ada-1a21a955d66a] [CONTEXT log_prefix="(PEv2-SM136612490-DefaultCallSmsData-1-911)" thread_id=104 ]
+11-07 01:22:34.141  1534  3106 I BugleRcsEngine: ReadyState: Transition to request with imsi [eadb33a7-9809-4388-9ada-1a21a955d66a] [CONTEXT log_prefix="(PEv2-SM136612490-DefaultCallSmsData-1-911)" thread_id=104 ]
+11-07 01:22:34.141  1534  3106 I BugleRcsEngine: transitionTo: destState=RequestWithImsiState [eadb33a7-9809-4388-9ada-1a21a955d66a] [CONTEXT log_prefix="(PEv2-SM136612490-DefaultCallSmsData-1-911)" thread_id=104 ]
+11-07 01:22:34.142  1534  3106 I BugleRcsEngine: onTransitionRequested ReadyState [eadb33a7-9809-4388-9ada-1a21a955d66a] [CONTEXT log_prefix="(PEv2-SM136612490-DefaultCallSmsData-1-911)" thread_id=104 ]
+11-07 01:22:34.142  1534  3106 I BugleRcsEngine: Exit ReadyState [eadb33a7-9809-4388-9ada-1a21a955d66a] [CONTEXT log_prefix="(PEv2-SM136612490-DefaultCallSmsData-1-911)" thread_id=104 ]
+11-07 01:22:34.143  1534  3106 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=104 ]
+11-07 01:22:34.143  1534  3106 I BugleRcsEngine: Enter RequestWithImsiState [eadb33a7-9809-4388-9ada-1a21a955d66a] [CONTEXT log_prefix="(PEv2-SM136612490-DefaultCallSmsData-1-911)" thread_id=104 ]
+11-07 01:22:34.144   644  1941 E AccountManagerService: Couldn't determine the packageUid for android.content.pm.PackageManager$NameNotFoundException: 
+11-07 01:22:34.145  1552  2336 I A       : The GellerConfig is not present, returning null.
+11-07 01:22:34.146  1552  2336 I A       : (REDACTED) The GellerConfig is not present, defaulting isUploadEnabled for corpus %s to true.
+11-07 01:22:34.147   644   705 V GrammaticalInflectionUtils: AttributionSource: AttributionSource { uid = 10131, packageName = null, attributionTag = null, token = android.os.Binder@7fad509, deviceId = 0, next = null } does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+11-07 01:22:34.154  1534  3106 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=104 ]
+11-07 01:22:34.158  3025  3025 I ProviderInstaller: Installed default security provider GmsCore_OpenSSL
+11-07 01:22:34.162  1160  2881 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:2 exec_start_elapsed_seconds: 40 [CONTEXT service_id=218 ]
+11-07 01:22:34.164  1534  2245 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=68 ]
+11-07 01:22:34.164  1534  3106 W BugleConnectivity: getNetworkState: NetworkStateMonitor not found for subId 1.
+11-07 01:22:34.166  1552  2336 I A       : (REDACTED) Writing metadata key: %s, corpus: %s
+11-07 01:22:34.167  1552  2336 I A       : (REDACTED) Writing metadata key: %s, corpus: %s
+11-07 01:22:34.176  1534  1864 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=d67b1a73-d9b6-45a5-9974-150c9052c610, tags={ com.google.android.libraries.communications.mobileconfiguration.sync.SyncWorker,SYNC } ]
+11-07 01:22:34.181  1534  3106 I BugleConnectivity: HasReadPrivilegedPhoneState: true
+11-07 01:22:34.182  1534  1864 I WM-WorkerWrapper: Setting status to enqueued for 2de4dc5c-365d-48e2-8e55-2c7f0e10d185
+11-07 01:22:34.212   644   706 W ActivityManager: Slow operation: 65ms so far, now at startProcess: asking zygote to start proc
+11-07 01:22:34.214  3025  3153 I GMS_MM_Logger: Start time: 287250
+11-07 01:22:34.215  1552  2320 I A       : (REDACTED) The syncToken for corpus %s is %s.
+11-07 01:22:34.215  3025  3153 I GMS_MM_Logger: Started.
+11-07 01:22:34.226   433  3156 I resolv  : GetAddrInfoHandler::run: {100 262244 100 983140 10144 0}
+11-07 01:22:34.227   433  3157 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+11-07 01:22:34.227  1534  3106 I BugleRcsEngine: Using config server URL from biuf [CONTEXT log_prefix="ProvisioningServerUtil" thread_id=104 ]
+11-07 01:22:34.227   433  3157 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x78eeda2795f0
+11-07 01:22:34.228   433  3157 I resolv  : doQuery: rcode=0, ancount=8, return value=496
+11-07 01:22:34.230   433  3158 I resolv  : res_nmkquery: (QUERY, IN, A)
+11-07 01:22:34.230   433  3158 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x78ee0a2705a0
+11-07 01:22:34.230   433  3158 I resolv  : doQuery: rcode=0, ancount=8, return value=428
+11-07 01:22:34.232   434   434 D Zygote  : Forked child process 3159
+11-07 01:22:34.234   644   706 W ActivityManager: Slow operation: 87ms so far, now at startProcess: returned from zygote!
+11-07 01:22:34.234   644   706 W ActivityManager: Slow operation: 87ms so far, now at startProcess: done updating battery stats
+11-07 01:22:34.234   644   706 W ActivityManager: Slow operation: 87ms so far, now at startProcess: building log message
+11-07 01:22:34.236   433   433 I netd    : tetherGetStats() -> {[]} <1.75ms>
+11-07 01:22:34.237  1552  2337 D TrafficStats: tagSocket(195) with statsTag=0x0, statsUid=-1
+11-07 01:22:34.257   644   706 I ActivityManager: Start proc 3159:com.google.android.partnersetup/u0a131 for broadcast {com.google.android.partnersetup/com.google.android.partnersetup.BootReceiver}
+11-07 01:22:34.258   644   825 W system_server: Long monitor contention with owner NetworkStats (822) at void android.net.connectivity.com.android.server.net.NetworkStatsService.performPoll(int, android.net.connectivity.com.android.server.net.NetworkStatsEventLogger$PollEvent)(NetworkStatsService.java:2590) waiters=1 in void android.net.connectivity.com.android.server.net.NetworkStatsService.noteUidForeground(int, boolean) for 120ms
+11-07 01:22:34.271  1160  2881 I NetworkScheduler.Stats: HousekeepingTask com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:0 result: 1 elapsed_millis: 389 uptime_millis: 389 exec_start_elapsed_seconds: 40 [CONTEXT service_id=218 ]
+11-07 01:22:34.272   644   706 W ActivityManager: Slow operation: 125ms so far, now at startProcess: starting to update pids map
+11-07 01:22:34.274   644   706 W ActivityManager: Slow operation: 127ms so far, now at startProcess: done updating pids map
+11-07 01:22:34.276   644   914 D NetworkStatsObservers: Unregistering RequestInfo from pid/uid:644/1000(android) for DataUsageRequest [ requestId=7, networkTemplate=NetworkTemplate: matchRule=MOBILE, matchSubscriberIds=[310260...], matchWifiNetworkKeys=[], metered=YES, defaultNetwork=NO, thresholdInBytes=13377995 ] accessLevel:3
+11-07 01:22:34.277   644   824 D NetworkStatsObservers: Registering observer for RequestInfo from pid/uid:644/1000(android) for DataUsageRequest [ requestId=8, networkTemplate=NetworkTemplate: matchRule=MOBILE, matchSubscriberIds=[310260...], matchWifiNetworkKeys=[], metered=YES, defaultNetwork=NO, thresholdInBytes=13377934 ] accessLevel:3
+11-07 01:22:34.280  3025  3025 I GmsApplication: [gms_startup_benchmark] Static start time (ms): 40285, Startup latency (ms): 460, Is system user: true
+11-07 01:22:34.280  1534  2239 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=62 ]
+11-07 01:22:34.283  3025  3025 W ebcf    : Primes not initialized, returning default (no-op) Primes instance which will ignore all calls. Please call Primes.initialize(...) before using any Primes API.
+11-07 01:22:34.295  1552  2320 I A       : (REDACTED) Writing metadata key: %s, corpus: %s
+11-07 01:22:34.295  1552  2320 I A       : (REDACTED) Writing metadata key: %s, corpus: %s
+11-07 01:22:34.305  3025  3090 I DynamiteModule: Considering local module com.google.android.gms.googlecertificates:7 and remote module com.google.android.gms.googlecertificates:7
+11-07 01:22:34.305  3025  3090 I DynamiteModule: Selected local version of com.google.android.gms.googlecertificates
+11-07 01:22:34.310  3159  3159 I id.partnersetup: Using CollectorTypeCMC GC.
+11-07 01:22:34.311  3159  3159 W id.partnersetup: Unexpected CPU variant for x86: x86_64.
+11-07 01:22:34.311  3159  3159 W id.partnersetup: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, goldmont-without-sha-xsaves, tremont, kabylake, default
+11-07 01:22:34.315  1560  2908 W gle.android.gms: Verification of void m.my.<clinit>() took 137.154ms (10294.98 bytecodes/s) (15696B approximate peak alloc)
+11-07 01:22:34.316  3159  3159 E id.partnersetup: Not starting debugger since process cannot load the jdwp agent.
+11-07 01:22:34.318  1450  2600 I A       : Initializing all components
+11-07 01:22:34.320  1450  1759 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+11-07 01:22:34.321  1450  1759 I A       : (REDACTED) onIsEnabledChanged, isEnabled: %s
+11-07 01:22:34.321  1450  1759 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:22:34.322  1450  1759 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:22:34.322  1450  1759 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:22:34.323  1450  1759 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:22:34.323  1450  1759 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:22:34.323  1450  1759 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:22:34.324  1450  1759 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:22:34.325  1450  1759 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:22:34.325  1450  1759 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:22:34.326  1450  1807 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+11-07 01:22:34.329  1450  1759 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:22:34.329  1450  1759 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:22:34.329  1450  1759 I A       : (REDACTED) Setting session to type: %s
+11-07 01:22:34.330  1450  1759 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:22:34.332  1450  1759 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:22:34.332  1450  1759 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:22:34.332  1560  2234 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+11-07 01:22:34.333  1450  1759 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:22:34.333  1560  2234 I Icing   : Indexing com.google.android.gms-emails_data_id from com.google.android.gms
+11-07 01:22:34.333  1450  1759 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:22:34.334  1450  1759 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:22:34.335  1450  1759 I A       : (REDACTED) setNavBarVisible: %s
+11-07 01:22:34.335  1450  1759 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:22:34.335  1450  1759 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:22:34.336  1450  1759 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:22:34.338  1450  1759 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:22:34.338  1450  1759 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:22:34.339  1450  1759 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:22:34.339  3159  3159 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+11-07 01:22:34.341  1675  3011 W RemoteCallableBase: Null cursor. Cannot add index data for Uri: content://com.google.android.gms.accountsettings.content/settings/dynamic_indexables_raw
+11-07 01:22:34.345  1450  1801 I ALT.ARCProvider: (REDACTED) #audio# activating audio request client(%s)
+11-07 01:22:34.348   433   433 I netd    : tetherGetStats() -> {[]} <1.07ms>
+11-07 01:22:34.351  1534  3106 W BugleRcsEngine: Could not retrieve MSISDN from configuration. Configuration is empty. [eadb33a7-9809-4388-9ada-1a21a955d66a] [CONTEXT log_prefix="(PEv2-SM136612490-DefaultCallSmsData-1-911)" thread_id=104 ]
+11-07 01:22:34.358  1534  2245 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=68 ]
+11-07 01:22:34.358  1534  3106 W BugleRcsEngine: Skipping adding Tachyon identity key to request. Null/empty RCS msisdn from configuration for sim ID: redacted-pii:sim_id[chars:20,last3:897]. [eadb33a7-9809-4388-9ada-1a21a955d66a] [CONTEXT log_prefix="(PEv2-SM136612490-DefaultCallSmsData-1-911)" thread_id=104 ]
+11-07 01:22:34.359  1450  1801 I ALT.ClientsRegy: (REDACTED) #audio# activating audio client(token(%d), %s)
+11-07 01:22:34.367  1450  1801 I ALT.ClientsRegy: (REDACTED) #audio# enforcing concurrency state on a new client(%s, token(%d))
+11-07 01:22:34.375  1450  1759 I NgaEntryPointEventSendr: setupConnection
+11-07 01:22:34.376  3159  3159 D CompatChangeReporter: Compat change id reported: 242716250; UID 10131; state: ENABLED
+11-07 01:22:34.377  1450  1883 I A       : (REDACTED) stopListening(%s, %s)
+11-07 01:22:34.389  1450  1801 I ALT.AudioRoutesRegy: (REDACTED) #audio# initializing the default route(%d) for %s
+11-07 01:22:34.389  1450  1883 I INV.SystemUI: showGestureNav
+11-07 01:22:34.389  1450  1883 I INV.SystemUI: (REDACTED) setUiHints(hints = %s)
+11-07 01:22:34.395  1450  1801 I ALT.ARClient: (REDACTED) #audio# routing audio request client(token(%d)) to(%s)
+11-07 01:22:34.396  3159  3159 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/org.apache.http.legacy.jar
+11-07 01:22:34.396  1450  1801 I ALT.HotwordRoutesRegy: (REDACTED) #audio# initializing the default route(%s) for hotword
+11-07 01:22:34.396  1450  1883 I A       : Ignoring as prefetch was recently called
+11-07 01:22:34.397   433   433 I netd    : bandwidthRemoveInterfaceQuota(eth0) <1.18ms>
+11-07 01:22:34.402   433   433 I netd    : bandwidthSetInterfaceQuota(eth0, 9223372036854775807) <1.37ms>
+11-07 01:22:34.403  1450  1883 I INV.SystemUI: setUiHints: finished successfully
+11-07 01:22:34.406  1552  1762 W MDD     : GddFileGroupPopulator: Account was not provided, skipping private sync for corpus: GDD_APA_HOTWORD_MODEL, configuration: GddAgsaApaHotword
+11-07 01:22:34.406  1450  1759 I NgaEntryPointEventSendr: (REDACTED) State changed: %s => %s
+11-07 01:22:34.409  1450  1801 I ALT.AudioRoutesRegy: (REDACTED) #audio# updating to audio route(token(%d), %s) for %s
+11-07 01:22:34.412  1450  1801 I ALT.AudioRoutesRegy: (REDACTED) #audio# audio route(token(%d), %s) OK to update
+11-07 01:22:34.414  1450  1801 I ALT.AudioRoutesRegy: (REDACTED) #audio# enforcing concurrency state on a new audio route of %s
+11-07 01:22:34.415  3159  3159 D nativeloader: InitLlndkLibrariesProduct: libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libRS.so:libandroid_net.so:libapexsupport.so:libbinder_ndk.so:libc.so:libcgrouprc.so:libclang_rt.asan-x86_64-android.so:libcom.android.tethering.connectivity_native.so:libdl.so:libft2.so:liblog.so:libm.so:libmediandk.so:libnativewindow.so:libneuralnetworks.so:libselinux.so:libsync.so:libvendorsupport.so:libvndksupport.so:libvulkan.so
+11-07 01:22:34.415  3159  3159 D nativeloader: Configuring product-clns-7 for unbundled product apk /product/priv-app/PartnerSetupPrebuilt/PartnerSetupPrebuilt.apk. target_sdk_version=34, uses_libraries=, library_path=/product/priv-app/PartnerSetupPrebuilt/lib/x86_64:/product/lib64:/system/product/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.partnersetup:/product/lib64:/system/product/lib64
+11-07 01:22:34.416  3159  3159 D nativeloader: InitVndkspLibrariesProduct: VNDK is deprecated with product
+11-07 01:22:34.430  1450  1759 I NgaEntryPointEventSendr: onServiceConnected
+11-07 01:22:34.431  2539  2560 W GoogleCertificates: GoogleCertificates has been initialized already
+11-07 01:22:34.431  1552  1775 I A       : Calling beginBinderSession().
+11-07 01:22:34.433  1552  1775 I A       : beginBinderSession(): calling binder
+11-07 01:22:34.435  1450  1759 I NgaEntryPointEventSendr: (REDACTED) State changed: %s => %s
+11-07 01:22:34.439  1552  1770 I A       : Successfully scheduled next onetime workers
+11-07 01:22:34.439  1450  1801 I ALT.AudioRoutesRegy: (REDACTED) #audio# disconnecting(%s) audio %s for %s
+11-07 01:22:34.440  1552  1763 I WM-WorkerWrapper: Work [ id=871cc54a-a900-4cac-ba66-6a7a93045567, tags={ com.google.apps.tiktok.contrib.work.TikTokListenableWorker,com.google.apps.tiktok.sync.impl.workmanager.SyncWorker,TikTokWorker#com.google.apps.tiktok.sync.impl.workmanager.SyncWorker } ] was cancelled
+11-07 01:22:34.440  1552  1763 I WM-WorkerWrapper: androidx.work.impl.ba
+11-07 01:22:34.440  1552  1763 I WM-WorkerWrapper: 	at androidx.work.impl.r.e(PG:5)
+11-07 01:22:34.440  1552  1763 I WM-WorkerWrapper: 	at androidx.work.impl.utils.h.b(PG:91)
+11-07 01:22:34.440  1552  1763 I WM-WorkerWrapper: 	at androidx.work.impl.utils.b.run(PG:31)
+11-07 01:22:34.440  1552  1763 I WM-WorkerWrapper: 	at androidx.room.bi.w(PG:4)
+11-07 01:22:34.440  1552  1763 I WM-WorkerWrapper: 	at androidx.work.impl.utils.h.c(PG:14)
+11-07 01:22:34.440  1552  1763 I WM-WorkerWrapper: 	at androidx.work.impl.utils.j.a(PG:330)
+11-07 01:22:34.440  1552  1763 I WM-WorkerWrapper: 	at androidx.work.impl.ad.a(PG:3)
+11-07 01:22:34.440  1552  1763 I WM-WorkerWrapper: 	at androidx.work.ax.run(PG:7)
+11-07 01:22:34.440  1552  1763 I WM-WorkerWrapper: 	at androidx.work.impl.utils.aa.run(PG:3)
+11-07 01:22:34.440  1552  1763 I WM-WorkerWrapper: 	at com.google.android.libraries.k.x.run(PG:3)
+11-07 01:22:34.440  1552  1763 I WM-WorkerWrapper: 	at com.google.common.n.c.c.run(PG:50)
+11-07 01:22:34.440  1552  1763 I WM-WorkerWrapper: 	at com.google.android.libraries.k.e.run(PG:8)
+11-07 01:22:34.440  1552  1763 I WM-WorkerWrapper: 	at java.lang.Thread.run(Thread.java:1012)
+11-07 01:22:34.440  1552  1763 I WM-WorkerWrapper: 	at com.google.android.libraries.k.d.b.run(PG:74)
+11-07 01:22:34.442  1450  1807 I A       : Initialize
+11-07 01:22:34.445  3159  3159 V GraphicsEnvironment: Currently set values for:
+11-07 01:22:34.446  3159  3159 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+11-07 01:22:34.446  3159  3159 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+11-07 01:22:34.446  3159  3159 V GraphicsEnvironment: Global.Settings values are invalid: number of packages: 0, number of values: 0
+11-07 01:22:34.446  3159  3159 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+11-07 01:22:34.458  1450  1801 I ALT.AudioRoutesRegy: (REDACTED) #audio# starting connection to audio route(token(%d), %s) for %s
+11-07 01:22:34.463  1450  1807 I ALT.RefManager: (REDACTED) #audio# referencing(%s) to(%s), (%s)
+11-07 01:22:34.465  1450  1801 I A       : (REDACTED) State changed: %s => %s by %s and %s with %s
+11-07 01:22:34.469  1160  1168 I .gms.persistent: Background concurrent mark compact GC freed 19MB AllocSpace bytes, 52(1728KB) LOS objects, 49% free, 16MB/33MB, paused 16.682ms,62.662ms total 1.646s
+11-07 01:22:34.472   918   922 W ndroid.systemui: Missing inline cache for void com.google.android.systemui.assist.uihints.NgaMessageHandler.processBundle(android.os.Bundle, java.lang.Runnable)
+11-07 01:22:34.472   918   922 W ndroid.systemui: Missing inline cache for void com.google.android.systemui.assist.uihints.NgaMessageHandler.processBundle(android.os.Bundle, java.lang.Runnable)
+11-07 01:22:34.473  1450  1759 I A       : Successfully initialized all components
+11-07 01:22:34.473  1450  1801 I A       : (REDACTED) Recognizer choice: (recognizer_type: %s, recognizer_mode: %s, choice_reason: %s)
+11-07 01:22:34.473  1450  1883 I ALT.AudioEventsHolder: (REDACTED) #audio# route(%s) for audio request client(token(%d)) updated with status(%s)
+11-07 01:22:34.475  1450  1807 I A       : (REDACTED) #audio# audio routing(%s) took %d(ms)
+11-07 01:22:34.478  1552  1767 I A       : (REDACTED) Starting batch sync for corpora: %s
+11-07 01:22:34.482  1552  1758 I AppStateUtil: (REDACTED) getting App Capabilities %s
+11-07 01:22:34.483  1552  1758 I DPContextParams: Building Device Properties.
+11-07 01:22:34.484  1552  1758 W MDD     : GddFileGroupPopulator: Account was not provided, skipping private sync for corpus: GDD_APA_SMART_ACTION_MODELS, configuration: GddAgsaApaSmartActionModels
+11-07 01:22:34.500  3159  3159 D CompatChangeReporter: Compat change id reported: 253665015; UID 10131; state: ENABLED
+11-07 01:22:34.501  3159  3159 W JobInfo : Job 'com.google.android.partnersetup/.PhenotypeJobService#1' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+11-07 01:22:34.503   644  1941 D CompatChangeReporter: Compat change id reported: 253665015; UID 10131; state: ENABLED
+11-07 01:22:34.506   644  1941 W JobInfo : Job 'com.google.android.partnersetup/.PhenotypeJobService#1' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+11-07 01:22:34.507   502   749 W APM::HwModule: getDeviceDescriptor: could not find HW module for device  (AUDIO_DEVICE_OUT_WIRED_HEADSET, 00000004) address 
+11-07 01:22:34.508   502   749 W APM::HwModule: getDeviceDescriptor: could not find HW module for device  (AUDIO_DEVICE_OUT_WIRED_HEADPHONE, 00000008) address 
+11-07 01:22:34.509   502   502 W APM::HwModule: getDeviceDescriptor: could not find HW module for device  (AUDIO_DEVICE_OUT_USB_HEADSET, 04000000) address 

@@ -1,0 +1,468 @@
+--------- beginning of main
+11-08 01:22:17.120  1077  1213 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.semanticlocation.service.SemanticLocationCleanupJob started execution. cause:5 exec_start_elapsed_seconds: 36 [CONTEXT service_id=218 ]
+11-08 01:22:17.127  1077  1944 I NetworkScheduler.Stats: HousekeepingTask com.google.android.gms/com.google.android.gms.semanticlocation.service.SemanticLocationCleanupJob finished executing. cause:0 result: 1 elapsed_millis: 9 uptime_millis: 9 exec_start_elapsed_seconds: 36 [CONTEXT service_id=218 ]
+11-08 01:22:17.128  1639  1639 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.semanticlocation.service.SemanticLocationCleanupJob.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-08 01:22:17.130  1077  1944 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.scheduler.standalone.housekeeping.HousekeepingTrainTaskService finished executing. cause:5 result: 1 elapsed_millis: 329 uptime_millis: 329 exec_start_elapsed_seconds: 36 [CONTEXT service_id=218 ]
+11-08 01:22:17.145  1673  1899 D TrafficStats: tagSocket(133) with statsTag=0x0, statsUid=-1
+11-08 01:22:17.151  1077  2723 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.scheduler.standalone.housekeeping.HousekeepingTrainTaskService started execution. cause:5 exec_start_elapsed_seconds: 36 [CONTEXT service_id=218 ]
+11-08 01:22:17.169  1077  1213 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.mdi.download.service.MddGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 36 [CONTEXT service_id=218 ]
+11-08 01:22:17.175  1639  1873 E MDD     : FileGroupManager: Trying to add expired group enpromo-state-config.
+11-08 01:22:17.175  1639  1873 W MDD     : MDDManager class dwld
+11-08 01:22:17.182  1077  2723 I NetworkScheduler.Stats: HousekeepingTask com.google.android.gms/com.google.android.gms.mdi.download.service.MddGcmTaskService finished executing. cause:0 result: 1 elapsed_millis: 22 uptime_millis: 22 exec_start_elapsed_seconds: 36 [CONTEXT service_id=218 ]
+11-08 01:22:17.195  1639  1639 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.mlbenchmark.installer.service.MlBenchmarkInstallerSchedulerChimeraService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-08 01:22:17.195  1639  1639 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.mlbenchmark.installer.service.MlBenchmarkInstallerSchedulerChimeraService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-08 01:22:17.197  1077  2723 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.mlbenchmark.installer.service.MlBenchmarkInstallerSchedulerChimeraService started execution. cause:5 exec_start_elapsed_seconds: 36 [CONTEXT service_id=218 ]
+11-08 01:22:17.197  1639  3331 I MlBenchmarkInstallerSch: ML Benchmark Installer Scheduler onRunTask() called. [CONTEXT service_id=340 ]
+11-08 01:22:17.198  1639  3331 I MlBenchmarkInstaller: Device sampled out, skipping. [CONTEXT service_id=340 ]
+11-08 01:22:17.199  1077  1213 I NetworkScheduler.Stats: HousekeepingTask com.google.android.gms/com.google.android.gms.mlbenchmark.installer.service.MlBenchmarkInstallerSchedulerChimeraService finished executing. cause:0 result: 1 elapsed_millis: 5 uptime_millis: 5 exec_start_elapsed_seconds: 36 [CONTEXT service_id=218 ]
+11-08 01:22:17.200  1639  1639 I MlBenchmarkInstaller: Feature unrequest success = true [CONTEXT service_id=340 ]
+11-08 01:22:17.201  1639  1639 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.mlbenchmark.installer.service.MlBenchmarkInstallerSchedulerChimeraService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-08 01:22:17.203  1077  1745 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.scheduler.standalone.housekeeping.HousekeepingTrainTaskService finished executing. cause:5 result: 1 elapsed_millis: 51 uptime_millis: 51 exec_start_elapsed_seconds: 36 [CONTEXT service_id=218 ]
+11-08 01:22:17.227  1077  1944 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.scheduler.standalone.housekeeping.HousekeepingTrainTaskService started execution. cause:5 exec_start_elapsed_seconds: 36 [CONTEXT service_id=218 ]
+11-08 01:22:17.247  1077  1744 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.mdi.download.service.MddGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 36 [CONTEXT service_id=218 ]
+11-08 01:22:17.250  2700  2709 V ClearcutMetricXmitter: Transmission is done.
+11-08 01:22:17.250  2700  2709 V ClearcutMetricXmitter: Transmission is done.
+11-08 01:22:17.251  2700  2709 V ClearcutMetricXmitter: Transmission is done.
+11-08 01:22:17.253  1077  1213 I NetworkScheduler.Stats: HousekeepingTask com.google.android.gms/com.google.android.gms.mdi.download.service.MddGcmTaskService finished executing. cause:0 result: 1 elapsed_millis: 16 uptime_millis: 16 exec_start_elapsed_seconds: 36 [CONTEXT service_id=218 ]
+11-08 01:22:17.275  1077  1213 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.mdi.download.service.MddGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 36 [CONTEXT service_id=218 ]
+11-08 01:22:17.294  1639  1873 E MDD     : FileValidator: Downloaded file at uri = android://com.google.android.gms/files/datadownload/shared/public/datadownloadfile_1792057911100, checksum = 79f5581a102d461f41e39aca6b4c222b9fca8b30, size = 0 verification failed
+11-08 01:22:17.295  1639  1873 E MDD     : FileValidator: Downloaded file at uri = android://com.google.android.gms/files/datadownload/shared/public/datadownloadfile_1792057911107, checksum = 59e00406ff8dd9e749877f892cc1673f7453e3d5, size = 0 verification failed
+11-08 01:22:17.296  1639  1873 E MDD     : FileValidator: Downloaded file at uri = android://com.google.android.gms/files/datadownload/shared/public/datadownloadfile_1792057911114, checksum = 8d7a5dc08c06814b19388a32b42f7e365ff01442, size = 0 verification failed
+11-08 01:22:17.297  1639  1873 E MDD     : FileValidator: Downloaded file at uri = android://com.google.android.gms/files/datadownload/shared/public/datadownloadfile_1792057911120, checksum = eb1343b5934aec0b573850d38b0de2237b71ab20, size = 0 verification failed
+11-08 01:22:17.298  1639  1873 E MDD     : FileValidator: Downloaded file at uri = android://com.google.android.gms/files/datadownload/shared/public/datadownloadfile_1792057911126, checksum = 30d07a3167323a638ac6d6ec8f763a87e56615cf, size = 0 verification failed
+11-08 01:22:17.299  1639  1873 E MDD     : FileValidator: Downloaded file at uri = android://com.google.android.gms/files/datadownload/shared/public/datadownloadfile_1792057911096, checksum = 50bfd27d3245fc30b6862695032a6e8fe4fda8b0, size = 0 verification failed
+11-08 01:22:17.300  1639  1873 E MDD     : FileValidator: Downloaded file at uri = android://com.google.android.gms/files/datadownload/shared/public/datadownloadfile_1792057911103, checksum = ee2263e6af720431bb55f652d0a12bbd483d4589, size = 0 verification failed
+11-08 01:22:17.301  1639  1873 E MDD     : FileValidator: Downloaded file at uri = android://com.google.android.gms/files/datadownload/shared/public/datadownloadfile_1792057911110, checksum = 2c5b2120136ba6bd6adfdfd1a3cd5806931bfe0e, size = 0 verification failed
+11-08 01:22:17.302  1639  1873 E MDD     : FileValidator: Downloaded file at uri = android://com.google.android.gms/files/datadownload/shared/public/datadownloadfile_1792057911112, checksum = 11c43c7bf5a82c904f721e6ea78d9fdc8207cad4, size = 0 verification failed
+11-08 01:22:17.303  1639  1873 E MDD     : FileValidator: Downloaded file at uri = android://com.google.android.gms/files/datadownload/shared/public/datadownloadfile_1792057911118, checksum = 07708b9bf8135fbbeb742b0ba609c866cbefd812, size = 0 verification failed
+11-08 01:22:17.304  1639  1873 E MDD     : FileValidator: Downloaded file at uri = android://com.google.android.gms/files/datadownload/shared/public/datadownloadfile_1792057911090, checksum = 3268675a7103ab915dc86d7ee0fbbe50e55c128e, size = 0 verification failed
+11-08 01:22:17.304  1639  1873 E MDD     : FileValidator: Downloaded file at uri = android://com.google.android.gms/files/datadownload/shared/public/datadownloadfile_1792057911095, checksum = 159c5a15146a446ffba144c8b2e05c9b5969bd91, size = 0 verification failed
+11-08 01:22:17.305  1639  1873 E MDD     : FileValidator: Downloaded file at uri = android://com.google.android.gms/files/datadownload/shared/public/datadownloadfile_1792057911094, checksum = b2c4ff614afa59f1876318299479411b44fd1c9a, size = 0 verification failed
+11-08 01:22:17.305  1639  1873 E MDD     : FileValidator: Downloaded file at uri = android://com.google.android.gms/files/datadownload/shared/public/datadownloadfile_1792057911102, checksum = f5ab02be3e7c3ca6a14623da98bc5a0e42666955, size = 0 verification failed
+11-08 01:22:17.306  1639  1873 E MDD     : FileValidator: Downloaded file at uri = android://com.google.android.gms/files/datadownload/shared/public/datadownloadfile_1792057911109, checksum = cd7118b377ddeef30ca7f9e2664827a8b90cbe5f, size = 0 verification failed
+11-08 01:22:17.306  1639  1873 E MDD     : FileValidator: Downloaded file at uri = android://com.google.android.gms/files/datadownload/shared/public/datadownloadfile_1792057911116, checksum = 5c901e84b5e6665d4555f2cb1997308c4d6dd728, size = 0 verification failed
+11-08 01:22:17.307  1639  1873 E MDD     : FileValidator: Downloaded file at uri = android://com.google.android.gms/files/datadownload/shared/public/datadownloadfile_1792057911122, checksum = 78c2b04993ba6899431433ddfceec57be1d19bc2, size = 0 verification failed
+11-08 01:22:17.307  1639  1873 E MDD     : FileValidator: Downloaded file at uri = android://com.google.android.gms/files/datadownload/shared/public/datadownloadfile_1792057911128, checksum = 7dda268bae560f8042ade6cb218fea7666553f6e, size = 0 verification failed
+11-08 01:22:17.307  1639  1873 E MDD     : FileValidator: Downloaded file at uri = android://com.google.android.gms/files/datadownload/shared/public/datadownloadfile_1792057911129, checksum = 372e21d7f8d6bc0b65f4d02005927591b3b85c49, size = 0 verification failed
+11-08 01:22:17.308  1639  1873 E MDD     : FileValidator: Downloaded file at uri = android://com.google.android.gms/files/datadownload/shared/public/datadownloadfile_1792057911130, checksum = 6f8c5b387855207e03c9672f03d9bfc8f45845f8, size = 0 verification failed
+11-08 01:22:17.308  1639  1873 E MDD     : FileValidator: Downloaded file at uri = android://com.google.android.gms/files/datadownload/shared/public/datadownloadfile_1792057911131, checksum = 64d6f5c9988cdd4764ec9892510e594217588ccf, size = 0 verification failed
+11-08 01:22:17.309  1639  1873 E MDD     : FileValidator: Downloaded file at uri = android://com.google.android.gms/files/datadownload/shared/public/datadownloadfile_1792057911132, checksum = 233e4f2688a422cd0e234fadef71ffb0645017ce, size = 0 verification failed
+11-08 01:22:17.309  1639  1873 E MDD     : FileValidator: Downloaded file at uri = android://com.google.android.gms/files/datadownload/shared/public/datadownloadfile_1792057911133, checksum = ca419e389070f2860fd65a1d2eca3e2228a3deb3, size = 0 verification failed
+11-08 01:22:17.310  1639  1873 E MDD     : FileValidator: Downloaded file at uri = android://com.google.android.gms/files/datadownload/shared/public/datadownloadfile_1792057911134, checksum = 11a7c74480c8b56486963ba6b9ef4cac4ef8117c, size = 0 verification failed
+11-08 01:22:17.310  1639  1873 E MDD     : FileValidator: Downloaded file at uri = android://com.google.android.gms/files/datadownload/shared/public/datadownloadfile_1792057911135, checksum = d72837a1d61639279754253409c0a528e10bc931, size = 0 verification failed
+11-08 01:22:17.311  1639  1873 E MDD     : FileValidator: Downloaded file at uri = android://com.google.android.gms/files/datadownload/shared/public/datadownloadfile_1792057911136, checksum = 9a4c0a7bdb8b94440cfd79068430c5ed086b3007, size = 0 verification failed
+11-08 01:22:17.311  1639  1873 E MDD     : FileValidator: Downloaded file at uri = android://com.google.android.gms/files/datadownload/shared/public/datadownloadfile_1792057911137, checksum = 190165d09c04b8fe2ae8267866d20744a98466d1, size = 0 verification failed
+11-08 01:22:17.312  1639  1873 E MDD     : FileValidator: Downloaded file at uri = android://com.google.android.gms/files/datadownload/shared/public/datadownloadfile_1792057911138, checksum = 23c7115c941f5f72f1fbd2beef2042cb5289b385, size = 0 verification failed
+11-08 01:22:17.313  1639  1873 E MDD     : FileValidator: Downloaded file at uri = android://com.google.android.gms/files/datadownload/shared/public/datadownloadfile_1792057911139, checksum = a000c0316a83dd3156ad84713d7035be0131c889, size = 0 verification failed
+11-08 01:22:17.313  1639  1873 E MDD     : FileValidator: Downloaded file at uri = android://com.google.android.gms/files/datadownload/shared/public/datadownloadfile_1792057911140, checksum = cb1230b7abb8c56fdfed0eef1056db2fd21c82c3, size = 0 verification failed
+11-08 01:22:17.314  1639  1873 E MDD     : FileValidator: Downloaded file at uri = android://com.google.android.gms/files/datadownload/shared/public/datadownloadfile_1792057911099, checksum = e489e09e3290fa281720d1f3ac39aeb0e1181988, size = 0 verification failed
+11-08 01:22:17.314  1639  1873 E MDD     : FileValidator: Downloaded file at uri = android://com.google.android.gms/files/datadownload/shared/public/datadownloadfile_1792057911106, checksum = 1b17f0a2bb0bd874d6e2e6516b93a8df2cd6c644, size = 0 verification failed
+11-08 01:22:17.315  1639  1873 E MDD     : FileValidator: Downloaded file at uri = android://com.google.android.gms/files/datadownload/shared/public/datadownloadfile_1792057911113, checksum = 14965922560726c2a859d1506de58db89863a5ac, size = 0 verification failed
+11-08 01:22:17.315  1639  1873 E MDD     : FileValidator: Downloaded file at uri = android://com.google.android.gms/files/datadownload/shared/public/datadownloadfile_1792057911119, checksum = 4aa215b1d62a799565d311f941bf176143f8df95, size = 0 verification failed
+11-08 01:22:17.315  1639  1873 E MDD     : FileValidator: Downloaded file at uri = android://com.google.android.gms/files/datadownload/shared/public/datadownloadfile_1792057911125, checksum = 8f5a6e8f07cfa9c38e792d567f5534c28abfac00, size = 0 verification failed
+11-08 01:22:17.317  1639  1873 E MDD     : FileValidator: Downloaded file at uri = android://com.google.android.gms/files/datadownload/shared/public/datadownloadfile_1792057911092, checksum = 019bd63d1e0b5ed494d867403fe8f5f65ede5352, size = 0 verification failed
+11-08 01:22:17.318  1639  1873 E MDD     : FileValidator: Downloaded file at uri = android://com.google.android.gms/files/datadownload/shared/public/datadownloadfile_1792057911093, checksum = c98e31b91760fd7c24e806717a562a77923e22d9, size = 0 verification failed
+11-08 01:22:17.378  1639  1963 D TrafficStats: tagSocket(180) with statsTag=0x30002500, statsUid=-1
+11-08 01:22:17.379  1639  1873 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:22:17.383  1639  1873 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:22:17.384  1673  2494 D TrafficStats: tagSocket(133) with statsTag=0x0, statsUid=-1
+11-08 01:22:17.386  1639  1873 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:22:17.389  1639  1963 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-08 01:22:17.389  1639  1963 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-08 01:22:17.389  1639  1963 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-08 01:22:17.391  1639  1873 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:22:17.395  1639  1873 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:22:17.398  1639  1873 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:22:17.402  1639  1873 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:22:17.405  1639  1873 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:22:17.409  1639  1873 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:22:17.411  1639  1873 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:22:17.413  1639  1963 V NativeCrypto: SSL handshake aborted: ssl=0x76a5ebb32398: I/O error during system call, Connection reset by peer
+11-08 01:22:17.414  1639  3329 D TrafficStats: tagSocket(180) with statsTag=0x30002500, statsUid=-1
+11-08 01:22:17.415  1639  1873 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:22:17.418  1639  1873 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:22:17.418  2932  3453 D ProfileInstaller: Installing profile for com.google.android.configupdater
+11-08 01:22:17.421  1639  3329 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-08 01:22:17.421  1639  3329 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-08 01:22:17.421  1639  3329 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-08 01:22:17.422  1639  1873 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:22:17.425  1639  1873 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:22:17.428  1639  1873 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:22:17.430  1639  1873 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:22:17.445  1639  1873 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:22:17.447  1639  1873 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:22:17.450  1639  1873 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:22:17.453  1639  1873 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:22:17.455  1639  1873 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:22:17.458  1639  1873 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:22:17.461  1639  1873 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:22:17.463  1639  1873 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:22:17.466  1639  1873 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:22:17.470  1639  1873 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:22:17.472  1639  1873 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:22:17.476  1639  1873 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:22:17.479  1639  1873 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:22:17.481  1639  1873 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:22:17.484  1639  1873 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:22:17.487  1639  1873 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:22:17.490  1639  1873 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:22:17.493  1639  1873 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:22:17.496  1639  1873 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:22:17.499  1639  1873 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:22:17.501  1639  1873 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:22:17.506  1639  1873 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:22:17.509  1639  1873 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:22:17.509  1639  1873 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:22:17.509  1639  1873 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:22:17.509  1639  1873 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:22:17.509  1639  1873 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:22:17.513  1639  1873 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:22:17.513  1639  1873 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:22:17.513  1639  1873 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:22:17.517  1639  1873 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:22:17.517  1639  1873 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:22:17.520  1639  1873 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:22:17.520  1639  1873 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:22:17.523  1639  1873 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:22:17.523  1639  1873 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:22:17.523  1639  1873 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:22:17.523  1639  1873 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:22:17.524  1639  1873 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:22:17.524  1639  1873 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:22:17.524  1639  1873 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:22:17.524  1639  1873 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:22:17.524  1639  1873 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:22:17.524  1639  1873 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:22:17.525  1639  1873 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:22:17.525  1639  1873 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:22:17.525  1639  1873 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:22:17.526  1639  1873 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:22:17.526  1639  1873 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:22:17.526  1639  1873 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:22:17.526  1639  1873 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:22:17.526  1639  1873 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:22:17.529  1639  1873 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:22:17.530  1639  1873 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:22:17.530  1639  1873 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:22:17.530  1639  1873 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:22:17.530  1639  1873 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:22:17.532  1639  1873 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:22:17.582   488   502 W GpuWork : Failed to attach bpf program to power/gpu_work_period tracepoint [2(No such file or directory)]
+--------- beginning of system
+11-08 01:22:17.605   631   733 D ActivityManager: freezing 1504 com.android.printspooler
+11-08 01:22:17.608   631   797 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+11-08 01:22:17.609   631   797 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+11-08 01:22:17.609   631   797 D InetDiagMessage: Destroyed live tcp sockets for uids={10127} in 3ms
+11-08 01:22:17.635  1639  3329 V NativeCrypto: SSL handshake aborted: ssl=0x76a5ebb32398: I/O error during system call, Connection reset by peer
+11-08 01:22:17.636  1673  2486 D TrafficStats: tagSocket(133) with statsTag=0x0, statsUid=-1
+11-08 01:22:17.637  1639  3325 D TrafficStats: tagSocket(180) with statsTag=0x30002500, statsUid=-1
+11-08 01:22:17.646  1639  3325 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-08 01:22:17.646  1639  3325 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-08 01:22:17.646  1639  3325 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-08 01:22:17.649  1639  1873 W MDD     : MddFileDownloader: stopDownloading on non-existent download
+11-08 01:22:17.649  1639  1873 W MDD     : MddFileDownloader: stopDownloading on non-existent download
+11-08 01:22:17.649  1639  1873 W MDD     : MddFileDownloader: stopDownloading on non-existent download
+11-08 01:22:17.649  1639  1873 W MDD     : MddFileDownloader: stopDownloading on non-existent download
+11-08 01:22:17.649  1639  1873 W MDD     : MddFileDownloader: stopDownloading on non-existent download
+11-08 01:22:17.649  1639  1873 W MDD     : MddFileDownloader: stopDownloading on non-existent download
+11-08 01:22:17.649  1639  1873 W MDD     : MddFileDownloader: stopDownloading on non-existent download
+11-08 01:22:17.649  1639  1873 W MDD     : MddFileDownloader: stopDownloading on non-existent download
+11-08 01:22:17.649  1639  1873 W MDD     : MddFileDownloader: stopDownloading on non-existent download
+11-08 01:22:17.649  1639  1873 W MDD     : MddFileDownloader: stopDownloading on non-existent download
+11-08 01:22:17.649  1639  1873 W MDD     : MddFileDownloader: stopDownloading on non-existent download
+11-08 01:22:17.649  1639  1873 W MDD     : MddFileDownloader: stopDownloading on non-existent download
+11-08 01:22:17.649  1639  1873 W MDD     : MddFileDownloader: stopDownloading on non-existent download
+11-08 01:22:17.649  1639  1873 W MDD     : MddFileDownloader: stopDownloading on non-existent download
+11-08 01:22:17.649  1639  1873 W MDD     : MddFileDownloader: stopDownloading on non-existent download
+11-08 01:22:17.649  1639  1873 W MDD     : MddFileDownloader: stopDownloading on non-existent download
+11-08 01:22:17.649  1639  1873 W MDD     : MddFileDownloader: stopDownloading on non-existent download
+11-08 01:22:17.649  1639  1873 W MDD     : MddFileDownloader: stopDownloading on non-existent download
+11-08 01:22:17.649  1639  1873 W MDD     : MddFileDownloader: stopDownloading on non-existent download
+11-08 01:22:17.649  1639  1873 W MDD     : MddFileDownloader: stopDownloading on non-existent download
+11-08 01:22:17.649  1639  1873 W MDD     : MddFileDownloader: stopDownloading on non-existent download
+11-08 01:22:17.649  1639  1873 W MDD     : MddFileDownloader: stopDownloading on non-existent download
+11-08 01:22:17.649  1639  1873 W MDD     : MddFileDownloader: stopDownloading on non-existent download
+11-08 01:22:17.649  1639  1873 W MDD     : MddFileDownloader: stopDownloading on non-existent download
+11-08 01:22:17.649  1639  1873 W MDD     : MddFileDownloader: stopDownloading on non-existent download
+11-08 01:22:17.649  1639  1873 W MDD     : MddFileDownloader: stopDownloading on non-existent download
+11-08 01:22:17.649  1639  1873 W MDD     : MddFileDownloader: stopDownloading on non-existent download
+11-08 01:22:17.649  1639  1873 W MDD     : MddFileDownloader: stopDownloading on non-existent download
+11-08 01:22:17.649  1639  1873 W MDD     : MddFileDownloader: stopDownloading on non-existent download
+11-08 01:22:17.649  1639  1873 W MDD     : MddFileDownloader: stopDownloading on non-existent download
+11-08 01:22:17.649  1639  1873 W MDD     : MddFileDownloader: stopDownloading on non-existent download
+11-08 01:22:17.649  1639  1873 W MDD     : MddFileDownloader: stopDownloading on non-existent download
+11-08 01:22:17.649  1639  1873 W MDD     : MddFileDownloader: stopDownloading on non-existent download
+11-08 01:22:17.649  1639  1873 W MDD     : MddFileDownloader: stopDownloading on non-existent download
+11-08 01:22:17.649  1639  1873 W MDD     : MddFileDownloader: stopDownloading on non-existent download
+11-08 01:22:17.649  1639  1873 W MDD     : MddFileDownloader: stopDownloading on non-existent download
+11-08 01:22:17.649  1639  1873 W MDD     : MddFileDownloader: stopDownloading on non-existent download
+11-08 01:22:17.649  1639  1873 W MDD     : MddFileDownloader: stopDownloading on non-existent download
+11-08 01:22:17.649  1639  1873 W MDD     : MddFileDownloader: stopDownloading on non-existent download
+11-08 01:22:17.649  1639  1873 W MDD     : MddFileDownloader: stopDownloading on non-existent download
+11-08 01:22:17.656  1077  1744 I NetworkScheduler.Stats: HousekeepingTask com.google.android.gms/com.google.android.gms.mdi.download.service.MddGcmTaskService finished executing. cause:0 result: 1 elapsed_millis: 391 uptime_millis: 391 exec_start_elapsed_seconds: 36 [CONTEXT service_id=218 ]
+11-08 01:22:17.658  1077  1213 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.scheduler.standalone.housekeeping.HousekeepingTrainTaskService finished executing. cause:5 result: 1 elapsed_millis: 432 uptime_millis: 432 exec_start_elapsed_seconds: 36 [CONTEXT service_id=218 ]
+11-08 01:22:17.671  1673  1899 D TrafficStats: tagSocket(133) with statsTag=0x0, statsUid=-1
+11-08 01:22:17.675  1639  3325 V NativeCrypto: SSL handshake aborted: ssl=0x76a5ebb32458: I/O error during system call, Connection reset by peer
+11-08 01:22:17.676  1639  3331 D TrafficStats: tagSocket(179) with statsTag=0x30002500, statsUid=-1
+11-08 01:22:17.681  1077  1213 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.scheduler.standalone.housekeeping.HousekeepingTrainTaskService started execution. cause:5 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-08 01:22:17.684  1639  3331 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-08 01:22:17.684  1639  3331 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-08 01:22:17.684  1639  3331 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-08 01:22:17.685  1077  1213 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.scheduler.standalone.housekeeping.HousekeepingTrainTaskService finished executing. cause:5 result: 1 elapsed_millis: 5 uptime_millis: 5 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-08 01:22:17.700  1077  1213 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.scheduler.standalone.housekeeping.HousekeepingTrainTaskService started execution. cause:5 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-08 01:22:17.702  1673  2494 D TrafficStats: tagSocket(133) with statsTag=0x0, statsUid=-1
+11-08 01:22:17.703  1077  1213 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.scheduler.standalone.housekeeping.HousekeepingTrainTaskService finished executing. cause:5 result: 1 elapsed_millis: 4 uptime_millis: 4 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-08 01:22:17.716  1639  3331 V NativeCrypto: SSL handshake aborted: ssl=0x76a5ebb32458: I/O error during system call, Connection reset by peer
+11-08 01:22:17.717  1639  1963 D TrafficStats: tagSocket(179) with statsTag=0x30002500, statsUid=-1
+11-08 01:22:17.725  1077  1213 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.scheduler.standalone.housekeeping.HousekeepingTrainTaskService started execution. cause:5 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-08 01:22:17.726  1639  1963 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-08 01:22:17.726  1639  1963 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-08 01:22:17.726  1639  1963 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-08 01:22:17.730  1077  1944 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.scheduler.standalone.housekeeping.HousekeepingTrainTaskService finished executing. cause:5 result: 1 elapsed_millis: 5 uptime_millis: 5 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-08 01:22:17.740  1673  1899 D TrafficStats: tagSocket(133) with statsTag=0x0, statsUid=-1
+11-08 01:22:17.743  1673  2486 D TrafficStats: tagSocket(133) with statsTag=0x0, statsUid=-1
+11-08 01:22:17.746  1673  2494 D TrafficStats: tagSocket(133) with statsTag=0x0, statsUid=-1
+11-08 01:22:17.749  1673  1899 D TrafficStats: tagSocket(133) with statsTag=0x0, statsUid=-1
+11-08 01:22:17.752  1673  2494 D TrafficStats: tagSocket(133) with statsTag=0x0, statsUid=-1
+11-08 01:22:17.755  1673  2486 D TrafficStats: tagSocket(133) with statsTag=0x0, statsUid=-1
+11-08 01:22:17.755  1077  1745 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.scheduler.standalone.housekeeping.HousekeepingTrainTaskService started execution. cause:5 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-08 01:22:17.758  1639  1963 V NativeCrypto: SSL handshake aborted: ssl=0x76a5ebb32398: I/O error during system call, Connection reset by peer
+11-08 01:22:17.759  1077  1213 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.scheduler.standalone.housekeeping.HousekeepingTrainTaskService finished executing. cause:5 result: 1 elapsed_millis: 4 uptime_millis: 4 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-08 01:22:17.759  1673  1899 D TrafficStats: tagSocket(133) with statsTag=0x0, statsUid=-1
+11-08 01:22:17.759  1639  3325 D TrafficStats: tagSocket(179) with statsTag=0x30002500, statsUid=-1
+11-08 01:22:17.762  1673  2494 D TrafficStats: tagSocket(133) with statsTag=0x0, statsUid=-1
+11-08 01:22:17.766  1639  3325 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-08 01:22:17.767  1639  3325 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-08 01:22:17.767  1639  3325 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-08 01:22:17.767  1673  1899 D TrafficStats: tagSocket(133) with statsTag=0x0, statsUid=-1
+11-08 01:22:17.770  1673  1890 E MDD     : GddFileGroupPopulator: GDD Sync failed for corpus: GDD_BUGLE_EMOJIFY, configuration: GddBugleEmojify
+11-08 01:22:17.770  1673  1890 E MDD     : cwsw: refresh failed [GDD_FAIL_IN_SYNC_RUNNER_PUBLIC]
+11-08 01:22:17.770  1673  1890 E MDD     : 	at cwsu.a(PG:28)
+11-08 01:22:17.770  1673  1890 E MDD     : 	at cybz.a(PG:29)
+11-08 01:22:17.770  1673  1890 E MDD     : 	at dkqe.a(PG:13)
+11-08 01:22:17.770  1673  1890 E MDD     : 	at dqoa.d(PG:3)
+11-08 01:22:17.770  1673  1890 E MDD     : 	at dqoc.run(PG:130)
+11-08 01:22:17.770  1673  1890 E MDD     : 	at crzm.run(PG:3)
+11-08 01:22:17.770  1673  1890 E MDD     : 	at dnmw.run(PG:50)
+11-08 01:22:17.770  1673  1890 E MDD     : 	at cscj.run(PG:18)
+11-08 01:22:17.770  1673  1890 E MDD     : 	at cryt.run(PG:8)
+11-08 01:22:17.770  1673  1890 E MDD     : 	at java.lang.Thread.run(Thread.java:1012)
+11-08 01:22:17.770  1673  1890 E MDD     : 	at csaw.run(PG:64)
+11-08 01:22:17.770  1673  1890 E MDD     : Caused by: cule: Geller batch sync rpc call failed
+11-08 01:22:17.770  1673  1890 E MDD     : 	at culd.d(PG:27)
+11-08 01:22:17.770  1673  1890 E MDD     : 	at cukv.apply(PG:47)
+11-08 01:22:17.770  1673  1890 E MDD     : 	at dkqi.apply(PG:13)
+11-08 01:22:17.770  1673  1890 E MDD     : 	at dqob.d(PG:3)
+11-08 01:22:17.770  1673  1890 E MDD     : 	... 7 more
+11-08 01:22:17.770  1673  1890 E MDD     : Caused by: ecta: UNAVAILABLE
+11-08 01:22:17.770  1673  1890 E MDD     : 	at io.grpc.Status.f(PG:3)
+11-08 01:22:17.770  1673  1890 E MDD     : 	at edqa.a(PG:38)
+11-08 01:22:17.770  1673  1890 E MDD     : 	at edaf.run(PG:9)
+11-08 01:22:17.770  1673  1890 E MDD     : 	at edah.e(PG:14)
+11-08 01:22:17.770  1673  1890 E MDD     : 	at edah.a(PG:6)
+11-08 01:22:17.770  1673  1890 E MDD     : 	at ecyw.a(PG:32)
+11-08 01:22:17.770  1673  1890 E MDD     : 	at eczr.run(PG:7)
+11-08 01:22:17.770  1673  1890 E MDD     : 	at edjo.run(PG:17)
+11-08 01:22:17.770  1673  1890 E MDD     : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-08 01:22:17.770  1673  1890 E MDD     : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-08 01:22:17.770  1673  1890 E MDD     : 	at java.lang.Thread.run(Thread.java:1012)
+11-08 01:22:17.770  1673  1890 E MDD     : Caused by: java.net.ConnectException: failed to connect to geller-pa.googleapis.com/2001:4860:4844:400:: (port 443) from /:: (port 33616): connect failed: ECONNREFUSED (Connection refused)
+11-08 01:22:17.770  1673  1890 E MDD     : 	at libcore.io.IoBridge.connect(IoBridge.java:187)
+11-08 01:22:17.770  1673  1890 E MDD     : 	at java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:142)
+11-08 01:22:17.770  1673  1890 E MDD     : 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:390)
+11-08 01:22:17.770  1673  1890 E MDD     : 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:230)
+11-08 01:22:17.770  1673  1890 E MDD     : 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:212)
+11-08 01:22:17.770  1673  1890 E MDD     : 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:436)
+11-08 01:22:17.770  1673  1890 E MDD     : 	at java.net.Socket.connect(Socket.java:646)
+11-08 01:22:17.770  1673  1890 E MDD     : 	at java.net.Socket.connect(Socket.java:595)
+11-08 01:22:17.770  1673  1890 E MDD     : 	at java.net.Socket.<init>(Socket.java:475)
+11-08 01:22:17.770  1673  1890 E MDD     : 	at java.net.Socket.<init>(Socket.java:275)
+11-08 01:22:17.770  1673  1890 E MDD     : 	at javax.net.DefaultSocketFactory.createSocket(SocketFactory.java:285)
+11-08 01:22:17.770  1673  1890 E MDD     : 	at ednk.run(PG:50)
+11-08 01:22:17.770  1673  1890 E MDD     : 	at edjo.run(PG:17)
+11-08 01:22:17.770  1673  1890 E MDD     : 	at cunp.run(PG:7)
+11-08 01:22:17.770  1673  1890 E MDD     : 	at dkqk.run(PG:21)
+11-08 01:22:17.770  1673  1890 E MDD     : 	at crzm.run(PG:3)
+11-08 01:22:17.770  1673  1890 E MDD     : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-08 01:22:17.770  1673  1890 E MDD     : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-08 01:22:17.770  1673  1890 E MDD     : 	at cryq.run(PG:6)
+11-08 01:22:17.770  1673  1890 E MDD     : 	at java.lang.Thread.run(Thread.java:1012)
+11-08 01:22:17.770  1673  1890 E MDD     : 	at csaw.run(PG:64)
+11-08 01:22:17.770  1673  1890 E MDD     : Caused by: android.system.ErrnoException: connect failed: ECONNREFUSED (Connection refused)
+11-08 01:22:17.770  1673  1890 E MDD     : 	at libcore.io.Linux.connect(Native Method)
+11-08 01:22:17.770  1673  1890 E MDD     : 	at libcore.io.ForwardingOs.connect(ForwardingOs.java:201)
+11-08 01:22:17.770  1673  1890 E MDD     : 	at libcore.io.BlockGuardOs.connect(BlockGuardOs.java:158)
+11-08 01:22:17.770  1673  1890 E MDD     : 	at libcore.io.ForwardingOs.connect(ForwardingOs.java:201)
+11-08 01:22:17.770  1673  1890 E MDD     : 	at libcore.io.IoBridge.connectErrno(IoBridge.java:201)
+11-08 01:22:17.770  1673  1890 E MDD     : 	at libcore.io.IoBridge.connect(IoBridge.java:179)
+11-08 01:22:17.770  1673  1890 E MDD     : 	... 20 more
+11-08 01:22:17.778  1673  2486 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=06b74149-c775-40ee-9f2d-7a05c649f9e6, tags={ com.google.android.libraries.mdi.download.workmanager.workers.PeriodicWorker,MDD.WIFI.CHARGING.PERIODIC.TASK } ]
+11-08 01:22:17.789  1077  1745 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.scheduler.standalone.housekeeping.HousekeepingTrainTaskService started execution. cause:5 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-08 01:22:17.793  1077  1745 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.scheduler.standalone.housekeeping.HousekeepingTrainTaskService finished executing. cause:5 result: 1 elapsed_millis: 4 uptime_millis: 4 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-08 01:22:17.798  1639  3325 V NativeCrypto: SSL handshake aborted: ssl=0x76a5ebb32458: I/O error during system call, Connection reset by peer
+11-08 01:22:17.799  1639  3331 D TrafficStats: tagSocket(179) with statsTag=0x30002500, statsUid=-1
+11-08 01:22:17.805  1639  3331 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-08 01:22:17.805  1639  3331 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-08 01:22:17.805  1639  3331 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-08 01:22:17.807   918  3320 D android.hardware.gnss-service.ranchu: GnssHwListener:consume:87 sz=64
+11-08 01:22:17.808   918  3320 D android.hardware.gnss-service.ranchu: GnssHwListener:consume:87 sz=64
+11-08 01:22:17.808   918  3320 D android.hardware.gnss-service.ranchu: Gnss:onGnssLocationCb:311
+11-08 01:22:17.808   918  3320 D android.hardware.gnss-service.ranchu: Gnss:onGnssLocationCb:321
+11-08 01:22:17.822  1077  1944 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.auth.account.be.legacy.AuthCronService started execution. cause:5 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-08 01:22:17.825  1077  1213 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.auth.account.be.legacy.AuthCronService finished executing. cause:5 result: 3 elapsed_millis: 9 uptime_millis: 9 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-08 01:22:17.846  1077  1944 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.chimera.container.ConfigService started execution. cause:5 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-08 01:22:17.846  1639  3325 I ChimeraConfigurator: Starting update, reason: 3 urgentFeatures: 
+11-08 01:22:17.873  1639  3325 I GmsDebugLogger: [73] 1801
+11-08 01:22:17.875  1639  3325 W ZappDownloader: No successful Zapp module downloads for requested modules [VisionBarcode.optional:242335100800:permitMetered, VisionOcr.optional:242335100000:permitMetered, MapsCoreDynamite.integ:241610202100800, MlkitOcrCommon.optional:242335100800:permitMetered, TfliteDynamiteDynamite.integ:264010405100800:permitMetered, MlkitBarcodeUi.optional:242335100800:permitMetered].
+11-08 01:22:17.875  1639  3325 I GmsDebugLogger: [30] [VisionBarcode.optional:242335100800],[VisionOcr.optional:242335100000],[MapsCoreDynamite.integ:241610202100800],[MlkitOcrCommon.optional:242335100800],[TfliteDynamiteDynamite.integ:264010405100800],[MlkitBarcodeUi.optional:242335100800]
+11-08 01:22:17.878  1639  3325 W ChimeraConfigService: Retry attempt was throttled. [CONTEXT service_id=264 ]
+11-08 01:22:17.881  1077  1213 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.chimera.container.ConfigService finished executing. cause:5 result: 2 elapsed_millis: 42 uptime_millis: 42 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-08 01:22:17.894  3401  3401 I AccessibilityNodeInfoDumper: Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@4d6b9; boundsInParent: Rect(0, 0 - 905, 0); boundsInScreen: Rect(88, 342 - 993, 342); boundsInWindow: Rect(88, 342 - 993, 342); packageName: com.google.android.apps.nexuslauncher; className: android.view.ViewGroup; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; containerTitle: null; viewIdResName: com.google.android.apps.nexuslauncher:id/smartspace_subtitle_group; uniqueId: null; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; granularScrollingSupported: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]; isTextSelectable: false
+11-08 01:22:17.907  3401  3401 W AccessibilityNodeInfoDumper: Fetch time: 21ms
+11-08 01:22:17.910   631  1575 W MagnificationConnectionManager: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
+11-08 01:22:17.910   631  1575 D AccessibilityManagerService: restoreCurrentUserForTestAutomationIfNeededLocked(): ignoring because device doesn't support visible background users
+11-08 01:22:17.913  3401  3401 D AndroidRuntime: Shutting down VM
+11-08 01:22:17.916   631   631 D BatterySaverPolicy: accessibility changed to false, updating policy.
+11-08 01:22:17.917  1449  2088 I AiAiEcho: Settings changed for uri: content://settings/secure/accessibility_enabled
+11-08 01:22:17.919  1449  1752 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-08 01:22:17.919  1449  1752 I AiAiEcho: EchoTargets: 
+11-08 01:22:17.919  1449  1752 I AiAiEcho: Filtered by AiAi flag check: 
+11-08 01:22:17.919  1449  1752 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-08 01:22:17.919  1449  1752 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-08 01:22:17.919  1449  1752 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-08 01:22:17.919  1449  1752 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-08 01:22:17.919  1449  1752 I AiAiEcho: EchoTargets: 
+11-08 01:22:17.919  1449  1752 I AiAiEcho: Filtered by AiAi flag check: 
+11-08 01:22:17.919  1449  1752 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-08 01:22:17.919  1449  1752 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-08 01:22:17.919  1449  1752 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-08 01:22:17.919  1449  1752 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-08 01:22:17.919  1449  1752 I AiAiEcho: EchoTargets: 
+11-08 01:22:17.919  1449  1752 I AiAiEcho: Filtered by AiAi flag check: 
+11-08 01:22:17.919  1449  1752 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-08 01:22:17.920  1449  1752 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-08 01:22:17.920  1449  1752 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-08 01:22:17.920  1449  1752 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+11-08 01:22:17.921  1449  1752 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface media_data_manager with targets# 0 (types=[])
+11-08 01:22:17.921  1335  1335 D SsBaseTemplateCard: No text view can be set up
+11-08 01:22:17.921  1335  1335 D SsBaseTemplateCard: Passed-in item info is null
+11-08 01:22:17.921  1449  1752 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+11-08 01:22:17.921  1335  1335 D SsBaseTemplateCard: Passed-in item info is null
+11-08 01:22:17.921  1335  1335 D SsBaseTemplateCard: Passed-in item info is null
+11-08 01:22:17.921  1335  1335 I SsBaseTemplateCard: Secondary card pane is null
+11-08 01:22:17.921  1602  1784 I A       : NGA enabled in interactor.
+11-08 01:22:17.921  1602  1784 I A       : (REDACTED) Nga state changed to %s
+11-08 01:22:17.921  1602  1784 I A       : (REDACTED) isTngActive=%s
+11-08 01:22:17.923   888   888 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+11-08 01:22:17.923   888   888 D SsMediaDataProvider: Forwarding Smartspace updates []
+11-08 01:22:17.925  1473  1487 I A       : Initializing all components
+11-08 01:22:17.927  1473  1760 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+11-08 01:22:17.927  1473  1747 I A       : (REDACTED) onIsEnabledChanged, isEnabled: %s
+11-08 01:22:17.927  1473  1747 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-08 01:22:17.928  1473  1747 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-08 01:22:17.928  1473  1747 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-08 01:22:17.929  1473  1750 I A       : (REDACTED) State changed: %s => %s by %s and %s with %s
+11-08 01:22:17.929  1473  1747 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-08 01:22:17.929  1473  1747 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-08 01:22:17.929  1473  1760 I A       : (REDACTED) on opa visibility changed %s
+11-08 01:22:17.929  1473  1747 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-08 01:22:17.929  1473  1747 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-08 01:22:17.930  1473  1747 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-08 01:22:17.930  1473  1747 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-08 01:22:17.930  1473  1747 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-08 01:22:17.930  1473  1747 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-08 01:22:17.930  1473  1750 I A       : (REDACTED) Recognizer choice: (recognizer_type: %s, recognizer_mode: %s, choice_reason: %s)
+11-08 01:22:17.930  1473  1749 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+11-08 01:22:17.931  1473  1747 I A       : (REDACTED) Setting session to type: %s
+11-08 01:22:17.931  1473  1747 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-08 01:22:17.931  1473  1747 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-08 01:22:17.931  1473  1747 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-08 01:22:17.931  1473  1747 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-08 01:22:17.931  1473  1747 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-08 01:22:17.931  1473  1750 I A       : (REDACTED) onActiveStateChangeEvent: %s => %s
+11-08 01:22:17.931  1335  1594 D EGL_emulation: app_time_stats: avg=509.04ms min=15.96ms max=1002.13ms count=2
+11-08 01:22:17.931  1473  1747 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-08 01:22:17.932  1473  1747 I A       : (REDACTED) setNavBarVisible: %s
+11-08 01:22:17.932  1473  1747 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-08 01:22:17.932  1077  1213 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.stats.PlatformStatsCollectorService started execution. cause:5 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-08 01:22:17.932  1473  1747 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-08 01:22:17.932  1473  1747 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-08 01:22:17.932  1473  1747 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-08 01:22:17.933  1473  1747 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-08 01:22:17.933  1473  1747 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-08 01:22:17.933  1473  1750 I A       : (REDACTED) #onActiveStateChangeEvent, newState: %s, previousState: %s.
+11-08 01:22:17.935  1473  1747 I A       : (REDACTED) stopListening(%s, %s)
+11-08 01:22:17.939  1473  1750 I NgaEntryPointEventSendr: setupConnection
+11-08 01:22:17.941  1425  1432 W putmethod.latin: Missing inline cache for int rto.a(java.lang.Object)
+11-08 01:22:17.943  1473  1747 I A       : (REDACTED) on opa visibility changed %s
+11-08 01:22:17.943  1473  1749 I A       : Initialize
+11-08 01:22:17.945  1473  1749 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+11-08 01:22:17.946  1473  1749 I INV.SystemUI: showGestureNav
+11-08 01:22:17.946  1473  1749 I INV.SystemUI: (REDACTED) setUiHints(hints = %s)
+11-08 01:22:17.946  1473  1749 I A       : Ignoring as prefetch was recently called
+11-08 01:22:17.948  1473  1750 I NgaEntryPointEventSendr: (REDACTED) State changed: %s => %s
+11-08 01:22:17.948  1473  1750 I NgaEntryPointEventSendr: onServiceConnected
+11-08 01:22:17.948  1602  2757 I A       : Calling beginBinderSession().
+11-08 01:22:17.949  1473  1747 I A       : Successfully initialized all components
+11-08 01:22:17.951  1473  1749 I INV.SystemUI: setUiHints: finished successfully
+11-08 01:22:17.952  1077  1744 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.stats.PlatformStatsCollectorService finished executing. cause:5 result: 1 elapsed_millis: 43 uptime_millis: 43 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-08 01:22:17.953  1602  2757 I A       : beginBinderSession(): calling binder
+11-08 01:22:17.954  1473  1750 I NgaEntryPointEventSendr: (REDACTED) State changed: %s => %s
+11-08 01:22:17.963   631  2818 W ActivityManager: Unable to start service Intent { cmp=com.google.android.apps.tachyon/.clientapi.ClientApiService } U=0: not found
+11-08 01:22:17.964  1473  2023 V ClearcutMetricXmitter: Transmission is done.
+11-08 01:22:17.981  1602  2038 I PBSessionCacheImpl: (REDACTED) Deleted sessionId[%d] from persistence.
+11-08 01:22:17.981  1473  1747 I NgaEntryPointEventSendr: (REDACTED) State changed: %s => %s (%s)
+11-08 01:22:17.981  1602  1909 W A       : (REDACTED) %s task was not run. Callback from Service received after client was disposed.
+11-08 01:22:17.985  1602  1909 W SearchServiceCore: Abort, client detached.
+11-08 01:22:17.992  1639  1639 I BorderAgentScannerImpl: Sent Border Agent mDNS service query (transactionId = 3) [CONTEXT service_id=305 ]
+11-08 01:22:17.999  1077  1744 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.languageprofile.GcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-08 01:22:18.013  1077  1213 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.languageprofile.GcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 28 uptime_millis: 28 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-08 01:22:18.041  1077  1744 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.languageprofile.GcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-08 01:22:18.068  1077  1213 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.languageprofile.GcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 36 uptime_millis: 36 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-08 01:22:18.096  1077  1744 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.languageprofile.GcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-08 01:22:18.105  1077  1089 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/GoogleTTS/GoogleTTS.apk' with 1 weak references
+11-08 01:22:18.127  1077  1213 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.languageprofile.GcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 38 uptime_millis: 38 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-08 01:22:18.148  1077  1744 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.mdisync.service.MdiSyncBackgroundTaskService started execution. cause:5 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-08 01:22:18.150  1639  1963 I MdiSyncModule: Dispatching task '1_PERIODIC'...
+11-08 01:22:18.151  1639  1963 W MdiSyncModule: Task '1 PERIODIC (1_PERIODIC)' has no registered task handlers! [CONTEXT service_id=215 ratelimit_count=10 ]
+11-08 01:22:18.153  1077  1213 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.mdisync.service.MdiSyncBackgroundTaskService finished executing. cause:5 result: 2 elapsed_millis: 11 uptime_millis: 11 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-08 01:22:18.179  1077  1744 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.udc.service.UdcContextInitService started execution. cause:5 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-08 01:22:18.194  1077  1213 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.udc.service.UdcContextInitService finished executing. cause:5 result: 1 elapsed_millis: 26 uptime_millis: 26 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-08 01:22:18.210   631  1575 W ActivityManager: Unable to start service Intent { act=com.google.android.gms.credential.manager.tasks.PasswordSharingSubscriptionTaskBoundService.ACTION_TASK_READY pkg=com.google.android.gms } U=0: not found
+11-08 01:22:18.210  1077  1213 E NetworkScheduler.TED: Unable to bind to task service: ComponentInfo{com.google.android.gms/com.google.android.gms.credential.manager.tasks.PasswordSharingSubscriptionTaskBoundService}
+11-08 01:22:18.211  1077  1744 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.credential.manager.tasks.PasswordSharingSubscriptionTaskBoundService finished executing. cause:5 result: 7 elapsed_millis: 1 uptime_millis: 1 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-08 01:22:18.273  3052  3089 D WM-NetworkStateTracker: Network capabilities changed: [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&CAPTIVE_PORTAL&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED LinkUpBandwidth>=12000Kbps LinkDnBandwidth>=30000Kbps TransportInfo: <SSID: <unknown ssid>, BSSID: 02:00:00:00:00:00, MAC: 02:00:00:00:00:00, IP: /10.0.2.16, Security type: 0, Supplicant state: COMPLETED, Wi-Fi standard: legacy, RSSI: -50, Link speed: 2Mbps, Tx Link speed: 2Mbps, Max Supported Tx Link speed: 54Mbps, Rx Link speed: 2Mbps, Max Supported Rx Link speed: 54Mbps, Frequency: 2437MHz, Net ID: -1, Metered hint: false, score: 60, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: -1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none><none>MLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>> SignalStrength: -50 UnderlyingNetworks: Null]
+11-08 01:22:18.276  1489  2026 I BugleRcsEngine: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[84bebdf8-a019]>Handler" thread_id=63 ]
+11-08 01:22:18.277  1489  1759 I BugleRcsEngine: Connected state: [1], networkType: [WIFI] [CONTEXT thread_id=57 ]
+11-08 01:22:18.285  1077  1523 I ChimeraSrvcProxy: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl
+11-08 01:22:18.286  1077  1523 W .gms.persistent: Large reply transaction of 1056768 bytes, interface descriptor , code 1
+11-08 01:22:18.317  1639  3331 V NativeCrypto: SSL handshake aborted: ssl=0x76a5ebb32458: I/O error during system call, Connection reset by peer
+11-08 01:22:18.318  1639  3329 D TrafficStats: tagSocket(179) with statsTag=0x30002500, statsUid=-1
+11-08 01:22:18.327  1639  3329 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-08 01:22:18.327  1639  3329 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-08 01:22:18.327  1639  3329 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-08 01:22:18.484  1639  3329 V NativeCrypto: SSL handshake aborted: ssl=0x76a5ebb32398: I/O error during system call, Connection reset by peer
+11-08 01:22:18.485  1639  3325 D TrafficStats: tagSocket(179) with statsTag=0x30002500, statsUid=-1
+11-08 01:22:18.488  1639  3331 D TrafficStats: tagSocket(179) with statsTag=0x30002500, statsUid=-1
+11-08 01:22:18.491  1639  3329 D TrafficStats: tagSocket(179) with statsTag=0x30002500, statsUid=-1
+11-08 01:22:18.494  1639  3325 D TrafficStats: tagSocket(179) with statsTag=0x30002500, statsUid=-1
+11-08 01:22:18.496  1639  3329 D TrafficStats: tagSocket(179) with statsTag=0x30002500, statsUid=-1
+11-08 01:22:18.499  1639  3331 D TrafficStats: tagSocket(179) with statsTag=0x30002500, statsUid=-1
+11-08 01:22:18.501  1639  3325 D TrafficStats: tagSocket(179) with statsTag=0x30002500, statsUid=-1
+11-08 01:22:18.504  1639  3329 D TrafficStats: tagSocket(179) with statsTag=0x30002500, statsUid=-1
+11-08 01:22:18.506   427  3456 I resolv  : GetAddrInfoHandler::run: {101 786533 101 983141 10143 0}
+11-08 01:22:18.507   427  3458 I resolv  : res_nmkquery: (QUERY, IN, A)
+11-08 01:22:18.507   427  3457 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+11-08 01:22:18.507   427  3458 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x79fa074c9130
+11-08 01:22:18.507   427  3458 I resolv  : doQuery: rcode=0, ancount=8, return value=436
+11-08 01:22:18.507   427  3457 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x79f8c74cc3b0
+11-08 01:22:18.507   427  3457 I resolv  : doQuery: rcode=0, ancount=8, return value=504
+11-08 01:22:18.672  1618  1985 E chromium: [ERROR:ssl_client_socket_impl.cc(879)] handshake failed; returned -1, SSL error code 1, net_error -101
+11-08 01:22:18.800   631   733 D ActivityManager: freezing 2436 com.google.android.webview:webview_service
+11-08 01:22:18.802   631   797 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+11-08 01:22:18.804   631   797 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+11-08 01:22:18.804   631   797 D InetDiagMessage: Destroyed live tcp sockets for uids={10151} in 2ms
+11-08 01:22:18.808   918  3320 D android.hardware.gnss-service.ranchu: GnssHwListener:consume:87 sz=64
+11-08 01:22:18.810   918  3320 D android.hardware.gnss-service.ranchu: GnssHwListener:consume:87 sz=64
+11-08 01:22:18.810   918  3320 D android.hardware.gnss-service.ranchu: Gnss:onGnssLocationCb:311
+11-08 01:22:18.810   918  3320 D android.hardware.gnss-service.ranchu: Gnss:onGnssLocationCb:321

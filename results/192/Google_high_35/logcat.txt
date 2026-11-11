@@ -1,0 +1,764 @@
+--------- beginning of system
+11-09 01:18:04.551   639  2183 D BiometricService: Sensor ID(4), oemStrength: 15, updatedStrength: 15, modality 8, state: 0, cookie: 0, sensorId 4, hasEnrollments: false cannot participate in Keystore operations
+--------- beginning of main
+11-09 01:18:04.553  1563  2040 D TrafficStats: tagSocket(261) with statsTag=0x0, statsUid=-1
+11-09 01:18:04.556  1563  2048 D TrafficStats: tagSocket(260) with statsTag=0x0, statsUid=-1
+11-09 01:18:04.559  1563  2029 D TrafficStats: tagSocket(235) with statsTag=0x0, statsUid=-1
+11-09 01:18:04.560  1563  2040 D TrafficStats: tagSocket(260) with statsTag=0x0, statsUid=-1
+11-09 01:18:04.562  1142  2616 I TapAndPay: getInstance: new instance created [CONTEXT service_id=79 ]
+11-09 01:18:04.563  1563  2048 D TrafficStats: tagSocket(235) with statsTag=0x0, statsUid=-1
+11-09 01:18:04.566  1563  1730 D TrafficStats: tagSocket(260) with statsTag=0x0, statsUid=-1
+11-09 01:18:04.569  1563  2055 D TrafficStats: tagSocket(140) with statsTag=0x0, statsUid=-1
+11-09 01:18:04.569  1563  1730 D TrafficStats: tagSocket(260) with statsTag=0x0, statsUid=-1
+11-09 01:18:04.570  1142  2456 D TrafficStats: tagSocket(161) with statsTag=0x34000609, statsUid=10137
+11-09 01:18:04.571  1563  2049 D TrafficStats: tagSocket(261) with statsTag=0x0, statsUid=-1
+11-09 01:18:04.572  1563  2051 D TrafficStats: tagSocket(264) with statsTag=0x0, statsUid=-1
+11-09 01:18:04.572  1401  1741 I A       : (REDACTED) on opa visibility changed %s
+11-09 01:18:04.580  1563  2041 D TrafficStats: tagSocket(140) with statsTag=0x0, statsUid=-1
+11-09 01:18:04.582  1563  1708 D TrafficStats: tagSocket(245) with statsTag=0x0, statsUid=-1
+11-09 01:18:04.583  1142  1147 W .gms.persistent: Suspending all threads took: 5.337ms
+11-09 01:18:04.584  1563  2058 D TrafficStats: tagSocket(262) with statsTag=0x0, statsUid=-1
+11-09 01:18:04.589  1142  2181 D TrafficStats: tagSocket(161) with statsTag=0x34000609, statsUid=10137
+11-09 01:18:04.590  1563  2049 D TrafficStats: tagSocket(263) with statsTag=0x0, statsUid=-1
+11-09 01:18:04.592  1563  2055 D TrafficStats: tagSocket(261) with statsTag=0x0, statsUid=-1
+11-09 01:18:04.602  1142  2617 I TapAndPay: Maintaining payment bundles [CONTEXT service_id=79 ]
+11-09 01:18:04.603   432  3208 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10143 0}
+11-09 01:18:04.607  2110  2800 I BugleDataModel: SubscriptionsTracker bindToTrackingMap bound participants: [ParticipantId=1 subId=-1, ParticipantId=2 subId=1]
+11-09 01:18:04.607   432  3209 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+11-09 01:18:04.607   432  3209 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7bd572f24a50
+11-09 01:18:04.608   432  3210 I resolv  : res_nmkquery: (QUERY, IN, A)
+11-09 01:18:04.608  2110  2130 I .apps.messaging: Background concurrent mark compact GC freed 11MB AllocSpace bytes, 39(1996KB) LOS objects, 49% free, 11MB/22MB, paused 7.599ms,18.275ms total 151.192ms
+11-09 01:18:04.609   432  3209 I resolv  : doQuery: rcode=0, ancount=8, return value=499
+11-09 01:18:04.609  1563  2055 D TrafficStats: tagSocket(235) with statsTag=0x0, statsUid=-1
+11-09 01:18:04.610   432  3210 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7bd6a2f23df0
+11-09 01:18:04.610   432  3210 I resolv  : doQuery: rcode=0, ancount=8, return value=431
+11-09 01:18:04.612  1563  2051 D TrafficStats: tagSocket(261) with statsTag=0x0, statsUid=-1
+11-09 01:18:04.613  1563  2058 D TrafficStats: tagSocket(260) with statsTag=0x0, statsUid=-1
+11-09 01:18:04.616  1563  2050 D TrafficStats: tagSocket(262) with statsTag=0x0, statsUid=-1
+11-09 01:18:04.620  1563  1707 E MDD     : GddFileGroupPopulator: GDD Sync failed for corpus: GDD_APA_HOTWORD_MODEL, configuration: GddAgsaApaHotword
+11-09 01:18:04.620  1563  1707 E MDD     : com.google.android.libraries.mdi.download.aj: refresh failed [GDD_FAIL_IN_SYNC_RUNNER_PUBLIC]
+11-09 01:18:04.620  1563  1707 E MDD     : 	at com.google.android.libraries.mdi.download.ah.a(PG:28)
+11-09 01:18:04.620  1563  1707 E MDD     : 	at com.google.android.libraries.mdi.download.h.b.y.apply(PG:32)
+11-09 01:18:04.620  1563  1707 E MDD     : 	at com.google.apps.tiktok.tracing.ff.apply(PG:13)
+11-09 01:18:04.620  1563  1707 E MDD     : 	at com.google.common.util.concurrent.a.e(PG:3)
+11-09 01:18:04.620  1563  1707 E MDD     : 	at com.google.common.util.concurrent.c.run(PG:130)
+11-09 01:18:04.620  1563  1707 E MDD     : 	at com.google.android.libraries.k.x.run(PG:3)
+11-09 01:18:04.620  1563  1707 E MDD     : 	at com.google.common.n.c.c.run(PG:50)
+11-09 01:18:04.620  1563  1707 E MDD     : 	at com.google.android.libraries.k.e.run(PG:8)
+11-09 01:18:04.620  1563  1707 E MDD     : 	at java.lang.Thread.run(Thread.java:1012)
+11-09 01:18:04.620  1563  1707 E MDD     : 	at com.google.android.libraries.k.d.b.run(PG:74)
+11-09 01:18:04.620  1563  1707 E MDD     : Caused by: com.google.android.libraries.geller.h.bl: Geller batch sync rpc call failed
+11-09 01:18:04.620  1563  1707 E MDD     : 	at com.google.android.libraries.geller.h.bk.b(PG:30)
+11-09 01:18:04.620  1563  1707 E MDD     : 	at com.google.android.libraries.geller.h.bc.apply(PG:53)
+11-09 01:18:04.620  1563  1707 E MDD     : 	at com.google.apps.tiktok.tracing.fj.apply(PG:13)
+11-09 01:18:04.620  1563  1707 E MDD     : 	at com.google.common.util.concurrent.b.e(PG:3)
+11-09 01:18:04.620  1563  1707 E MDD     : 	... 6 more
+11-09 01:18:04.620  1563  1707 E MDD     : Caused by: io.grpc.fg: UNAVAILABLE
+11-09 01:18:04.620  1563  1707 E MDD     : 	at io.grpc.j.m.a(PG:42)
+11-09 01:18:04.620  1563  1707 E MDD     : 	at io.grpc.f.bq.run(PG:9)
+11-09 01:18:04.620  1563  1707 E MDD     : 	at io.grpc.f.bs.e(PG:14)
+11-09 01:18:04.620  1563  1707 E MDD     : 	at io.grpc.f.bs.a(PG:6)
+11-09 01:18:04.620  1563  1707 E MDD     : 	at io.grpc.f.ah.a(PG:32)
+11-09 01:18:04.620  1563  1707 E MDD     : 	at io.grpc.f.bc.run(PG:7)
+11-09 01:18:04.620  1563  1707 E MDD     : 	at io.grpc.f.kq.run(PG:17)
+11-09 01:18:04.620  1563  1707 E MDD     : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-09 01:18:04.620  1563  1707 E MDD     : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-09 01:18:04.620  1563  1707 E MDD     : 	at java.lang.Thread.run(Thread.java:1012)
+11-09 01:18:04.620  1563  1707 E MDD     : Caused by: java.net.ConnectException: failed to connect to geller-pa.googleapis.com/2001:4860:4842:400:: (port 443) from /:: (port 56344): connect failed: ECONNREFUSED (Connection refused)
+11-09 01:18:04.620  1563  1707 E MDD     : 	at libcore.io.IoBridge.connect(IoBridge.java:187)
+11-09 01:18:04.620  1563  1707 E MDD     : 	at java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:142)
+11-09 01:18:04.620  1563  1707 E MDD     : 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:390)
+11-09 01:18:04.620  1563  1707 E MDD     : 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:230)
+11-09 01:18:04.620  1563  1707 E MDD     : 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:212)
+11-09 01:18:04.620  1563  1707 E MDD     : 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:436)
+11-09 01:18:04.620  1563  1707 E MDD     : 	at java.net.Socket.connect(Socket.java:646)
+11-09 01:18:04.620  1563  1707 E MDD     : 	at java.net.Socket.connect(Socket.java:595)
+11-09 01:18:04.620  1563  1707 E MDD     : 	at java.net.Socket.<init>(Socket.java:475)
+11-09 01:18:04.620  1563  1707 E MDD     : 	at java.net.Socket.<init>(Socket.java:275)
+11-09 01:18:04.620  1563  1707 E MDD     : 	at javax.net.DefaultSocketFactory.createSocket(SocketFactory.java:285)
+11-09 01:18:04.620  1563  1707 E MDD     : 	at io.grpc.h.w.run(PG:50)
+11-09 01:18:04.620  1563  1707 E MDD     : 	at io.grpc.f.kq.run(PG:17)
+11-09 01:18:04.620  1563  1707 E MDD     : 	at com.google.android.libraries.geller.j.a.run(PG:7)
+11-09 01:18:04.620  1563  1707 E MDD     : 	at com.google.apps.tiktok.tracing.fl.run(PG:24)
+11-09 01:18:04.620  1563  1707 E MDD     : 	at com.google.android.libraries.k.x.run(PG:3)
+11-09 01:18:04.620  1563  1707 E MDD     : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-09 01:18:04.620  1563  1707 E MDD     : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-09 01:18:04.620  1563  1707 E MDD     : 	at com.google.android.libraries.k.b.run(PG:6)
+11-09 01:18:04.620  1563  1707 E MDD     : 	at java.lang.Thread.run(Thread.java:1012)
+11-09 01:18:04.620  1563  1707 E MDD     : 	at com.google.android.libraries.k.d.b.run(PG:74)
+11-09 01:18:04.620  1563  1707 E MDD     : Caused by: android.system.ErrnoException: connect failed: ECONNREFUSED (Connection refused)
+11-09 01:18:04.620  1563  1707 E MDD     : 	at libcore.io.Linux.connect(Native Method)
+11-09 01:18:04.620  1563  1707 E MDD     : 	at libcore.io.ForwardingOs.connect(ForwardingOs.java:201)
+11-09 01:18:04.620  1563  1707 E MDD     : 	at libcore.io.BlockGuardOs.connect(BlockGuardOs.java:158)
+11-09 01:18:04.620  1563  1707 E MDD     : 	at libcore.io.ForwardingOs.connect(ForwardingOs.java:201)
+11-09 01:18:04.620  1563  1707 E MDD     : 	at libcore.io.IoBridge.connectErrno(IoBridge.java:201)
+11-09 01:18:04.620  1563  1707 E MDD     : 	at libcore.io.IoBridge.connect(IoBridge.java:179)
+11-09 01:18:04.620  1563  1707 E MDD     : 	... 20 more
+11-09 01:18:04.628  1401  1910 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+11-09 01:18:04.633  1142  2617 I TapAndPay: Finished maintaining payment bundles [CONTEXT service_id=79 ]
+11-09 01:18:04.636  1563  1707 E MDD     : GddFileGroupPopulator: GDD Sync failed for corpus: GDD_APA_BISTO, configuration: GddAgsaApaBisto
+11-09 01:18:04.636  1563  1707 E MDD     : com.google.android.libraries.mdi.download.aj: refresh failed [GDD_FAIL_IN_SYNC_RUNNER_PUBLIC]
+11-09 01:18:04.636  1563  1707 E MDD     : 	at com.google.android.libraries.mdi.download.ah.a(PG:28)
+11-09 01:18:04.636  1563  1707 E MDD     : 	at com.google.android.libraries.mdi.download.h.b.y.apply(PG:32)
+11-09 01:18:04.636  1563  1707 E MDD     : 	at com.google.apps.tiktok.tracing.ff.apply(PG:13)
+11-09 01:18:04.636  1563  1707 E MDD     : 	at com.google.common.util.concurrent.a.e(PG:3)
+11-09 01:18:04.636  1563  1707 E MDD     : 	at com.google.common.util.concurrent.c.run(PG:130)
+11-09 01:18:04.636  1563  1707 E MDD     : 	at com.google.android.libraries.k.x.run(PG:3)
+11-09 01:18:04.636  1563  1707 E MDD     : 	at com.google.common.n.c.c.run(PG:50)
+11-09 01:18:04.636  1563  1707 E MDD     : 	at com.google.android.libraries.k.e.run(PG:8)
+11-09 01:18:04.636  1563  1707 E MDD     : 	at java.lang.Thread.run(Thread.java:1012)
+11-09 01:18:04.636  1563  1707 E MDD     : 	at com.google.android.libraries.k.d.b.run(PG:74)
+11-09 01:18:04.636  1563  1707 E MDD     : Caused by: com.google.android.libraries.geller.h.bl: Geller batch sync rpc call failed
+11-09 01:18:04.636  1563  1707 E MDD     : 	at com.google.android.libraries.geller.h.bk.b(PG:30)
+11-09 01:18:04.636  1563  1707 E MDD     : 	at com.google.android.libraries.geller.h.bc.apply(PG:53)
+11-09 01:18:04.636  1563  1707 E MDD     : 	at com.google.apps.tiktok.tracing.fj.apply(PG:13)
+11-09 01:18:04.636  1563  1707 E MDD     : 	at com.google.common.util.concurrent.b.e(PG:3)
+11-09 01:18:04.636  1563  1707 E MDD     : 	... 6 more
+11-09 01:18:04.636  1563  1707 E MDD     : Caused by: io.grpc.fg: UNAVAILABLE
+11-09 01:18:04.636  1563  1707 E MDD     : 	at io.grpc.j.m.a(PG:42)
+11-09 01:18:04.636  1563  1707 E MDD     : 	at io.grpc.f.bq.run(PG:9)
+11-09 01:18:04.636  1563  1707 E MDD     : 	at io.grpc.f.bs.e(PG:14)
+11-09 01:18:04.636  1563  1707 E MDD     : 	at io.grpc.f.bs.a(PG:6)
+11-09 01:18:04.636  1563  1707 E MDD     : 	at io.grpc.f.ah.a(PG:32)
+11-09 01:18:04.636  1563  1707 E MDD     : 	at io.grpc.f.bc.run(PG:7)
+11-09 01:18:04.636  1563  1707 E MDD     : 	at io.grpc.f.kq.run(PG:17)
+11-09 01:18:04.636  1563  1707 E MDD     : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-09 01:18:04.636  1563  1707 E MDD     : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-09 01:18:04.636  1563  1707 E MDD     : 	at java.lang.Thread.run(Thread.java:1012)
+11-09 01:18:04.636  1563  1707 E MDD     : Caused by: java.net.ConnectException: failed to connect to geller-pa.googleapis.com/2001:4860:4842:400:: (port 443) from /:: (port 56358): connect failed: ECONNREFUSED (Connection refused)
+11-09 01:18:04.636  1563  1707 E MDD     : 	at libcore.io.IoBridge.connect(IoBridge.java:187)
+11-09 01:18:04.636  1563  1707 E MDD     : 	at java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:142)
+11-09 01:18:04.636  1563  1707 E MDD     : 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:390)
+11-09 01:18:04.636  1563  1707 E MDD     : 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:230)
+11-09 01:18:04.636  1563  1707 E MDD     : 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:212)
+11-09 01:18:04.636  1563  1707 E MDD     : 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:436)
+11-09 01:18:04.636  1563  1707 E MDD     : 	at java.net.Socket.connect(Socket.java:646)
+11-09 01:18:04.636  1563  1707 E MDD     : 	at java.net.Socket.connect(Socket.java:595)
+11-09 01:18:04.636  1563  1707 E MDD     : 	at java.net.Socket.<init>(Socket.java:475)
+11-09 01:18:04.636  1563  1707 E MDD     : 	at java.net.Socket.<init>(Socket.java:275)
+11-09 01:18:04.636  1563  1707 E MDD     : 	at javax.net.DefaultSocketFactory.createSocket(SocketFactory.java:285)
+11-09 01:18:04.636  1563  1707 E MDD     : 	at io.grpc.h.w.run(PG:50)
+11-09 01:18:04.636  1563  1707 E MDD     : 	at io.grpc.f.kq.run(PG:17)
+11-09 01:18:04.636  1563  1707 E MDD     : 	at com.google.android.libraries.geller.j.a.run(PG:7)
+11-09 01:18:04.636  1563  1707 E MDD     : 	at com.google.apps.tiktok.tracing.fl.run(PG:24)
+11-09 01:18:04.636  1563  1707 E MDD     : 	at com.google.android.libraries.k.x.run(PG:3)
+11-09 01:18:04.636  1563  1707 E MDD     : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-09 01:18:04.636  1563  1707 E MDD     : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-09 01:18:04.636  1563  1707 E MDD     : 	at com.google.android.libraries.k.b.run(PG:6)
+11-09 01:18:04.636  1563  1707 E MDD     : 	at java.lang.Thread.run(Thread.java:1012)
+11-09 01:18:04.636  1563  1707 E MDD     : 	at com.google.android.libraries.k.d.b.run(PG:74)
+11-09 01:18:04.636  1563  1707 E MDD     : Caused by: android.system.ErrnoException: connect failed: ECONNREFUSED (Connection refused)
+11-09 01:18:04.636  1563  1707 E MDD     : 	at libcore.io.Linux.connect(Native Method)
+11-09 01:18:04.636  1563  1707 E MDD     : 	at libcore.io.ForwardingOs.connect(ForwardingOs.java:201)
+11-09 01:18:04.636  1563  1707 E MDD     : 	at libcore.io.BlockGuardOs.connect(BlockGuardOs.java:158)
+11-09 01:18:04.636  1563  1707 E MDD     : 	at libcore.io.ForwardingOs.connect(ForwardingOs.java:201)
+11-09 01:18:04.636  1563  1707 E MDD     : 	at libcore.io.IoBridge.connectErrno(IoBridge.java:201)
+11-09 01:18:04.636  1563  1707 E MDD     : 	at libcore.io.IoBridge.connect(IoBridge.java:179)
+11-09 01:18:04.636  1563  1707 E MDD     : 	... 20 more
+11-09 01:18:04.637  1401  1592 I A       : Initializing all components
+11-09 01:18:04.648  1401  1910 I A       : (REDACTED) onIsEnabledChanged, isEnabled: %s
+11-09 01:18:04.652  1401  1910 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:18:04.652  1401  1712 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+11-09 01:18:04.653  1401  1910 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:18:04.653  1401  1741 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+11-09 01:18:04.655  1401  1910 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:18:04.655  1401  1910 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:18:04.656  1563  2058 D TrafficStats: tagSocket(235) with statsTag=0x0, statsUid=-1
+11-09 01:18:04.656  1563  2055 D TrafficStats: tagSocket(140) with statsTag=0x0, statsUid=-1
+11-09 01:18:04.656  1401  1910 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:18:04.657  1401  1910 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:18:04.658  1401  1910 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:18:04.658  1401  1910 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:18:04.658  1401  1910 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:18:04.658  1401  1910 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:18:04.659  1401  1910 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:18:04.660  1401  1909 I ALT.ARCProvider: (REDACTED) #audio# activating audio request client(%s)
+11-09 01:18:04.661  1401  1909 I ALT.ClientsRegy: (REDACTED) #audio# activating audio client(token(%d), %s)
+11-09 01:18:04.662  1401  1909 I ALT.ClientsRegy: (REDACTED) #audio# enforcing concurrency state on a new client(%s, token(%d))
+11-09 01:18:04.663  1401  1741 I A       : Initialize
+11-09 01:18:04.664  1401  1712 I A       : (REDACTED) stopListening(%s, %s)
+11-09 01:18:04.665  1401  1910 I A       : (REDACTED) Setting session to type: %s
+11-09 01:18:04.665  1401  1910 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:18:04.665  1401  1910 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:18:04.665  1401  1910 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:18:04.666  1401  1910 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:18:04.666  1401  1910 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:18:04.666  1401  1910 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:18:04.666  1401  1910 I A       : (REDACTED) setNavBarVisible: %s
+11-09 01:18:04.666  1401  1910 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:18:04.667  1401  1910 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:18:04.667  1401  1910 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:18:04.667  1401  1910 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:18:04.667  1401  1910 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:18:04.667  1401  1910 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:18:04.669  1401  1909 I ALT.AudioRoutesRegy: (REDACTED) #audio# initializing the default route(%d) for %s
+11-09 01:18:04.671  1401  1712 I NgaEntryPointEventSendr: setupConnection
+11-09 01:18:04.672  1401  1910 I INV.SystemUI: showGestureNav
+11-09 01:18:04.672  1401  1910 I INV.SystemUI: (REDACTED) setUiHints(hints = %s)
+11-09 01:18:04.674  1563  1708 D TrafficStats: tagSocket(235) with statsTag=0x0, statsUid=-1
+11-09 01:18:04.674  1401  1909 I ALT.ARClient: (REDACTED) #audio# routing audio request client(token(%d)) to(%s)
+11-09 01:18:04.676  1401  1909 I ALT.HotwordRoutesRegy: (REDACTED) #audio# initializing the default route(%s) for hotword
+11-09 01:18:04.677  1401  1910 I A       : Ignoring as prefetch was recently called
+11-09 01:18:04.677  1401  1909 I ALT.AudioRoutesRegy: (REDACTED) #audio# updating to audio route(token(%d), %s) for %s
+11-09 01:18:04.678  1401  1909 I ALT.AudioRoutesRegy: (REDACTED) #audio# audio route(token(%d), %s) OK to update
+11-09 01:18:04.679  1401  1910 I A       : Successfully initialized all components
+11-09 01:18:04.680  1401  1712 I NgaEntryPointEventSendr: (REDACTED) State changed: %s => %s
+11-09 01:18:04.680  1401  1741 I INV.SystemUI: setUiHints: finished successfully
+11-09 01:18:04.682  1401  1909 I ALT.AudioRoutesRegy: (REDACTED) #audio# enforcing concurrency state on a new audio route of %s
+11-09 01:18:04.683  1401  1909 I ALT.AudioRoutesRegy: (REDACTED) #audio# disconnecting(%s) audio %s for %s
+11-09 01:18:04.683  1401  1741 I NgaEntryPointEventSendr: onServiceConnected
+11-09 01:18:04.683  1563  1576 I A       : Calling beginBinderSession().
+11-09 01:18:04.685  1401  1909 I ALT.AudioRoutesRegy: (REDACTED) #audio# starting connection to audio route(token(%d), %s) for %s
+11-09 01:18:04.685  1061  1080 V MmsProvider: accessRestricted=false
+11-09 01:18:04.686  1401  1712 I ALT.RefManager: (REDACTED) #audio# referencing(%s) to(%s), (%s)
+11-09 01:18:04.687  1401  1909 I A       : (REDACTED) State changed: %s => %s by %s and %s with %s
+11-09 01:18:04.688  1401  1909 I A       : (REDACTED) Recognizer choice: (recognizer_type: %s, recognizer_mode: %s, choice_reason: %s)
+11-09 01:18:04.689  1401  1910 I ALT.AudioEventsHolder: (REDACTED) #audio# route(%s) for audio request client(token(%d)) updated with status(%s)
+11-09 01:18:04.690  1563  1576 I A       : beginBinderSession(): calling binder
+11-09 01:18:04.691  1401  1909 I A       : (REDACTED) onActiveStateChangeEvent: %s => %s
+11-09 01:18:04.693  1401  1741 I NgaEntryPointEventSendr: (REDACTED) State changed: %s => %s
+11-09 01:18:04.694  1401  1712 I A       : (REDACTED) #audio# audio routing(%s) took %d(ms)
+11-09 01:18:04.705   639   716 W ActivityManager: Unable to start service Intent { cmp=com.google.android.apps.tachyon/.clientapi.ClientApiService } U=0: not found
+11-09 01:18:04.706  1061  1080 V MmsProvider: accessRestricted=false
+11-09 01:18:04.707  1401  1909 W A       : (REDACTED) Missing generator mapping for generator %s
+11-09 01:18:04.708  1401  1909 W A       : (REDACTED) Missing generator mapping for generator %s
+11-09 01:18:04.708  1401  1909 W A       : (REDACTED) Missing generator mapping for generator %s
+11-09 01:18:04.709  1563  1708 D TrafficStats: tagSocket(140) with statsTag=0x0, statsUid=-1
+11-09 01:18:04.710  1563  1718 E MDD     : GddFileGroupPopulator: GDD Sync failed for corpus: GDD_APA_HEAD_SUGGEST, configuration: GddAgsaApaHeadSuggest
+11-09 01:18:04.710  1563  1718 E MDD     : com.google.android.libraries.mdi.download.aj: refresh failed [GDD_FAIL_IN_SYNC_RUNNER_PUBLIC]
+11-09 01:18:04.710  1563  1718 E MDD     : 	at com.google.android.libraries.mdi.download.ah.a(PG:28)
+11-09 01:18:04.710  1563  1718 E MDD     : 	at com.google.android.libraries.mdi.download.h.b.y.apply(PG:32)
+11-09 01:18:04.710  1563  1718 E MDD     : 	at com.google.apps.tiktok.tracing.ff.apply(PG:13)
+11-09 01:18:04.710  1563  1718 E MDD     : 	at com.google.common.util.concurrent.a.e(PG:3)
+11-09 01:18:04.710  1563  1718 E MDD     : 	at com.google.common.util.concurrent.c.run(PG:130)
+11-09 01:18:04.710  1563  1718 E MDD     : 	at com.google.android.libraries.k.x.run(PG:3)
+11-09 01:18:04.710  1563  1718 E MDD     : 	at com.google.common.n.c.c.run(PG:50)
+11-09 01:18:04.710  1563  1718 E MDD     : 	at com.google.android.libraries.k.e.run(PG:8)
+11-09 01:18:04.710  1563  1718 E MDD     : 	at java.lang.Thread.run(Thread.java:1012)
+11-09 01:18:04.710  1563  1718 E MDD     : 	at com.google.android.libraries.k.d.b.run(PG:74)
+11-09 01:18:04.710  1563  1718 E MDD     : Caused by: com.google.android.libraries.geller.h.bl: Geller batch sync rpc call failed
+11-09 01:18:04.710  1563  1718 E MDD     : 	at com.google.android.libraries.geller.h.bk.b(PG:30)
+11-09 01:18:04.710  1563  1718 E MDD     : 	at com.google.android.libraries.geller.h.bc.apply(PG:53)
+11-09 01:18:04.710  1563  1718 E MDD     : 	at com.google.apps.tiktok.tracing.fj.apply(PG:13)
+11-09 01:18:04.710  1563  1718 E MDD     : 	at com.google.common.util.concurrent.b.e(PG:3)
+11-09 01:18:04.710  1563  1718 E MDD     : 	... 6 more
+11-09 01:18:04.710  1563  1718 E MDD     : Caused by: io.grpc.fg: UNAVAILABLE
+11-09 01:18:04.710  1563  1718 E MDD     : 	at io.grpc.j.m.a(PG:42)
+11-09 01:18:04.710  1563  1718 E MDD     : 	at io.grpc.f.ah.a(PG:32)
+11-09 01:18:04.710  1563  1718 E MDD     : 	at io.grpc.f.bc.run(PG:7)
+11-09 01:18:04.710  1563  1718 E MDD     : 	at io.grpc.f.kq.run(PG:17)
+11-09 01:18:04.710  1563  1718 E MDD     : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-09 01:18:04.710  1563  1718 E MDD     : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-09 01:18:04.710  1563  1718 E MDD     : 	at java.lang.Thread.run(Thread.java:1012)
+11-09 01:18:04.710  1563  1718 E MDD     : Caused by: java.net.ConnectException: failed to connect to geller-pa.googleapis.com/2001:4860:4842:400:: (port 443) from /:: (port 56372): connect failed: ECONNREFUSED (Connection refused)
+11-09 01:18:04.710  1563  1718 E MDD     : 	at libcore.io.IoBridge.connect(IoBridge.java:187)
+11-09 01:18:04.710  1563  1718 E MDD     : 	at java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:142)
+11-09 01:18:04.710  1563  1718 E MDD     : 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:390)
+11-09 01:18:04.710  1563  1718 E MDD     : 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:230)
+11-09 01:18:04.710  1563  1718 E MDD     : 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:212)
+11-09 01:18:04.710  1563  1718 E MDD     : 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:436)
+11-09 01:18:04.710  1563  1718 E MDD     : 	at java.net.Socket.connect(Socket.java:646)
+11-09 01:18:04.710  1563  1718 E MDD     : 	at java.net.Socket.connect(Socket.java:595)
+11-09 01:18:04.710  1563  1718 E MDD     : 	at java.net.Socket.<init>(Socket.java:475)
+11-09 01:18:04.710  1563  1718 E MDD     : 	at java.net.Socket.<init>(Socket.java:275)
+11-09 01:18:04.710  1563  1718 E MDD     : 	at javax.net.DefaultSocketFactory.createSocket(SocketFactory.java:285)
+11-09 01:18:04.710  1563  1718 E MDD     : 	at io.grpc.h.w.run(PG:50)
+11-09 01:18:04.710  1563  1718 E MDD     : 	at io.grpc.f.kq.run(PG:17)
+11-09 01:18:04.710  1563  1718 E MDD     : 	at com.google.android.libraries.geller.j.a.run(PG:7)
+11-09 01:18:04.710  1563  1718 E MDD     : 	at com.google.apps.tiktok.tracing.fl.run(PG:24)
+11-09 01:18:04.710  1563  1718 E MDD     : 	at com.google.android.libraries.k.x.run(PG:3)
+11-09 01:18:04.710  1563  1718 E MDD     : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-09 01:18:04.710  1563  1718 E MDD     : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-09 01:18:04.710  1563  1718 E MDD     : 	at com.google.android.libraries.k.b.run(PG:6)
+11-09 01:18:04.710  1563  1718 E MDD     : 	at java.lang.Thread.run(Thread.java:1012)
+11-09 01:18:04.710  1563  1718 E MDD     : 	at com.google.android.libraries.k.d.b.run(PG:74)
+11-09 01:18:04.710  1563  1718 E MDD     : Caused by: android.system.ErrnoException: connect failed: ECONNREFUSED (Connection refused)
+11-09 01:18:04.710  1563  1718 E MDD     : 	at libcore.io.Linux.connect(Native Method)
+11-09 01:18:04.710  1563  1718 E MDD     : 	at libcore.io.ForwardingOs.connect(ForwardingOs.java:201)
+11-09 01:18:04.710  1563  1718 E MDD     : 	at libcore.io.BlockGuardOs.connect(BlockGuardOs.java:158)
+11-09 01:18:04.710  1563  1718 E MDD     : 	at libcore.io.ForwardingOs.connect(ForwardingOs.java:201)
+11-09 01:18:04.710  1563  1718 E MDD     : 	at libcore.io.IoBridge.connectErrno(IoBridge.java:201)
+11-09 01:18:04.710  1563  1718 E MDD     : 	at libcore.io.IoBridge.connect(IoBridge.java:179)
+11-09 01:18:04.710  1563  1718 E MDD     : 	... 20 more
+11-09 01:18:04.731  1401  1909 I A       : (REDACTED) #onActiveStateChangeEvent, newState: %s, previousState: %s.
+11-09 01:18:04.735  1563  2051 D TrafficStats: tagSocket(260) with statsTag=0x0, statsUid=-1
+11-09 01:18:04.738  1597  2215 I ChimeraConfigurator: Starting update, reason: 2 urgentFeatures: 
+11-09 01:18:04.741  1061  1275 V MmsProvider: accessRestricted=false
+11-09 01:18:04.749  1563  1927 W A       : (REDACTED) %s task was not run. Callback from Service received after client was disposed.
+11-09 01:18:04.750  1563  2190 I PBSessionCacheImpl: (REDACTED) Deleted sessionId[%d] from persistence.
+11-09 01:18:04.750  1142  1147 I .gms.persistent: Background concurrent mark compact GC freed 14MB AllocSpace bytes, 12(248KB) LOS objects, 50% free, 15MB/31MB, paused 7.552ms,12.116ms total 365.313ms
+11-09 01:18:04.750  1401  1909 I NgaEntryPointEventSendr: (REDACTED) State changed: %s => %s (%s)
+11-09 01:18:04.755  1142  1142 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.nearby.connection.service.START pkg=com.google.android.gms }
+11-09 01:18:04.756  1142  1142 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.nearby.connection.service.START pkg=com.google.android.gms }
+11-09 01:18:04.762  1142  1295 W NearbySharing: No supported accounts found. [CONTEXT service_id=194 ]
+11-09 01:18:04.768  1563  1927 W SearchServiceCore: Abort, client detached.
+11-09 01:18:04.768  2110  2241 I SyncWorkManagerOneTimeS: Successfully scheduled next onetime workers
+11-09 01:18:04.770  1563  2055 D TrafficStats: tagSocket(140) with statsTag=0x0, statsUid=-1
+11-09 01:18:04.774  1142  1295 W NearbySharing: Cannot set visibility on DisabledNearbySharingProvider. [CONTEXT service_id=194 ]
+11-09 01:18:04.777  1142  1295 I NearbySharing: Not qualified for default opt-in. Multiple accounts are found. [CONTEXT service_id=194 ]
+11-09 01:18:04.781  1563  2058 D TrafficStats: tagSocket(140) with statsTag=0x0, statsUid=-1
+11-09 01:18:04.784  1142  1149 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PrebuiltBugle/PrebuiltBugle.apk' with 1 weak references
+11-09 01:18:04.785  1563  1708 D TrafficStats: tagSocket(140) with statsTag=0x0, statsUid=-1
+11-09 01:18:04.786  1142  1295 I NearbySharing: Broadcasting NearbySharing state change. [CONTEXT service_id=194 ]
+11-09 01:18:04.787  1142  1149 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/Velvet/Velvet.apk' with 1 weak references
+11-09 01:18:04.790  1563  2055 D TrafficStats: tagSocket(140) with statsTag=0x0, statsUid=-1
+11-09 01:18:04.790  1142  1297 I NearbyConnections: Client 161525507 requested setting downloads directory to null.
+11-09 01:18:04.791  1142  1297 I NearbyConnections: Client 161525507 with package name 0p:com.google.android.gms.nearby.sharing and sdk version 242335000 has connected, downloads dir is set to null.
+11-09 01:18:04.792  1142  1295 I NearbySharing: Screen is unlocked [CONTEXT service_id=194 ]
+11-09 01:18:04.792  1142  1295 I NearbySharing: Location is enabled [CONTEXT service_id=194 ]
+11-09 01:18:04.792  1142  1295 I NearbySharing: Uwb feature is off. [CONTEXT service_id=194 ]
+11-09 01:18:04.792  1142  1297 I NearbyConnections: Client 161525507 requested setting downloads directory to Quick Share.
+11-09 01:18:04.793  1142  1295 I NearbySharing: Stopping scanning because Bluetooth is disabled. [CONTEXT service_id=194 ]
+11-09 01:18:04.796  1142  1295 I NearbySharing: Stopping Fast Init advertisement because Bluetooth is off. [CONTEXT service_id=194 ]
+11-09 01:18:04.796  1142  1295 I NearbySharing: Stopping advertising because Bluetooth is disabled. [CONTEXT service_id=194 ]
+11-09 01:18:04.800  1563  2058 D TrafficStats: tagSocket(140) with statsTag=0x0, statsUid=-1
+11-09 01:18:04.803  1142  1295 I NearbySharing: Fast Initiation Scanning has stopped [CONTEXT service_id=194 ]
+11-09 01:18:04.803  1142  1295 I NearbySharing: Stopping FastInitiation scanning because Bluetooth is disabled. [CONTEXT service_id=194 ]
+11-09 01:18:04.804  1563  2050 D TrafficStats: tagSocket(140) with statsTag=0x0, statsUid=-1
+11-09 01:18:04.805  1061  1275 V MmsProvider: accessRestricted=false
+11-09 01:18:04.807  1563  2055 D TrafficStats: tagSocket(245) with statsTag=0x0, statsUid=-1
+11-09 01:18:04.811  1142  1295 I NearbySharing: Dismissing HUN as there's no device nearby. [CONTEXT service_id=194 ]
+11-09 01:18:04.815  2110  2241 I WM-WorkerWrapper: Work [ id=e44c92de-8383-432f-be75-90e09af46136, tags={ com.google.apps.tiktok.contrib.work.TikTokListenableWorker,com.google.apps.tiktok.sync.impl.workmanager.SyncWorker,TikTokWorker#com.google.apps.tiktok.sync.impl.workmanager.SyncWorker } ] was cancelled
+11-09 01:18:04.815  2110  2241 I WM-WorkerWrapper: oif
+11-09 01:18:04.815  2110  2241 I WM-WorkerWrapper: 	at ogw.e(PG:5)
+11-09 01:18:04.815  2110  2241 I WM-WorkerWrapper: 	at oou.b(PG:154)
+11-09 01:18:04.815  2110  2241 I WM-WorkerWrapper: 	at ooo.run(PG:80)
+11-09 01:18:04.815  2110  2241 I WM-WorkerWrapper: 	at nkm.o(PG:4)
+11-09 01:18:04.815  2110  2241 I WM-WorkerWrapper: 	at oou.c(PG:14)
+11-09 01:18:04.815  2110  2241 I WM-WorkerWrapper: 	at oow.b(PG:251)
+11-09 01:18:04.815  2110  2241 I WM-WorkerWrapper: 	at oow.a(PG:158)
+11-09 01:18:04.815  2110  2241 I WM-WorkerWrapper: 	at ohi.invoke(PG:3)
+11-09 01:18:04.815  2110  2241 I WM-WorkerWrapper: 	at off.run(PG:7)
+11-09 01:18:04.815  2110  2241 I WM-WorkerWrapper: 	at opp.run(PG:3)
+11-09 01:18:04.815  2110  2241 I WM-WorkerWrapper: 	at crzm.run(PG:3)
+11-09 01:18:04.815  2110  2241 I WM-WorkerWrapper: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-09 01:18:04.815  2110  2241 I WM-WorkerWrapper: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-09 01:18:04.815  2110  2241 I WM-WorkerWrapper: 	at cryq.run(PG:6)
+11-09 01:18:04.815  2110  2241 I WM-WorkerWrapper: 	at java.lang.Thread.run(Thread.java:1012)
+11-09 01:18:04.815  2110  2241 I WM-WorkerWrapper: 	at csaw.run(PG:64)
+11-09 01:18:04.820  1563  2051 D TrafficStats: tagSocket(140) with statsTag=0x0, statsUid=-1
+11-09 01:18:04.825  1142  1295 I NearbySharing: Bluetooth is enabled [CONTEXT service_id=194 ]
+11-09 01:18:04.825  1142  1295 I NearbySharing: Uwb feature is off. [CONTEXT service_id=194 ]
+11-09 01:18:04.827  1563  2050 D TrafficStats: tagSocket(140) with statsTag=0x0, statsUid=-1
+11-09 01:18:04.829  1142  1295 I NearbySharing: Stopping scanning because Nearby Sharing is disabled. [CONTEXT service_id=194 ]
+11-09 01:18:04.829  1142  1295 I NearbySharing: Stopping Fast Init advertisement because we're not scanning in the foreground. [CONTEXT service_id=194 ]
+11-09 01:18:04.832  1142  1295 I NearbySharing: Stopping advertising because Nearby Sharing is disabled. [CONTEXT service_id=194 ]
+11-09 01:18:04.838  1563  1716 E MDD     : GddFileGroupPopulator: GDD Sync failed for corpus: GDD_APA_SMART_ACTION_MODELS, configuration: GddAgsaApaSmartActionModels
+11-09 01:18:04.838  1563  1716 E MDD     : com.google.android.libraries.mdi.download.aj: refresh failed [GDD_FAIL_IN_SYNC_RUNNER_PUBLIC]
+11-09 01:18:04.838  1563  1716 E MDD     : 	at com.google.android.libraries.mdi.download.ah.a(PG:28)
+11-09 01:18:04.838  1563  1716 E MDD     : 	at com.google.android.libraries.mdi.download.h.b.y.apply(PG:32)
+11-09 01:18:04.838  1563  1716 E MDD     : 	at com.google.apps.tiktok.tracing.ff.apply(PG:13)
+11-09 01:18:04.838  1563  1716 E MDD     : 	at com.google.common.util.concurrent.a.e(PG:3)
+11-09 01:18:04.838  1563  1716 E MDD     : 	at com.google.common.util.concurrent.c.run(PG:130)
+11-09 01:18:04.838  1563  1716 E MDD     : 	at com.google.android.libraries.k.x.run(PG:3)
+11-09 01:18:04.838  1563  1716 E MDD     : 	at com.google.common.n.c.c.run(PG:50)
+11-09 01:18:04.838  1563  1716 E MDD     : 	at com.google.android.libraries.k.e.run(PG:8)
+11-09 01:18:04.838  1563  1716 E MDD     : 	at java.lang.Thread.run(Thread.java:1012)
+11-09 01:18:04.838  1563  1716 E MDD     : 	at com.google.android.libraries.k.d.b.run(PG:74)
+11-09 01:18:04.838  1563  1716 E MDD     : Caused by: com.google.android.libraries.geller.h.bl: Geller batch sync rpc call failed
+11-09 01:18:04.838  1563  1716 E MDD     : 	at com.google.android.libraries.geller.h.bk.b(PG:30)
+11-09 01:18:04.838  1563  1716 E MDD     : 	at com.google.android.libraries.geller.h.bc.apply(PG:53)
+11-09 01:18:04.838  1563  1716 E MDD     : 	at com.google.apps.tiktok.tracing.fj.apply(PG:13)
+11-09 01:18:04.838  1563  1716 E MDD     : 	at com.google.common.util.concurrent.b.e(PG:3)
+11-09 01:18:04.838  1563  1716 E MDD     : 	... 6 more
+11-09 01:18:04.838  1563  1716 E MDD     : Caused by: io.grpc.fg: UNAVAILABLE
+11-09 01:18:04.838  1563  1716 E MDD     : 	at io.grpc.j.m.a(PG:42)
+11-09 01:18:04.838  1563  1716 E MDD     : 	at io.grpc.f.bq.run(PG:9)
+11-09 01:18:04.838  1563  1716 E MDD     : 	at io.grpc.f.bs.e(PG:14)
+11-09 01:18:04.838  1563  1716 E MDD     : 	at io.grpc.f.bs.a(PG:6)
+11-09 01:18:04.838  1563  1716 E MDD     : 	at io.grpc.f.ah.a(PG:32)
+11-09 01:18:04.838  1563  1716 E MDD     : 	at io.grpc.f.bc.run(PG:7)
+11-09 01:18:04.838  1563  1716 E MDD     : 	at io.grpc.f.kq.run(PG:17)
+11-09 01:18:04.838  1563  1716 E MDD     : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-09 01:18:04.838  1563  1716 E MDD     : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-09 01:18:04.838  1563  1716 E MDD     : 	at java.lang.Thread.run(Thread.java:1012)
+11-09 01:18:04.838  1563  1716 E MDD     : Caused by: java.net.ConnectException: failed to connect to geller-pa.googleapis.com/2001:4860:4842:400:: (port 443) from /:: (port 56384): connect failed: ECONNREFUSED (Connection refused)
+11-09 01:18:04.838  1563  1716 E MDD     : 	at libcore.io.IoBridge.connect(IoBridge.java:187)
+11-09 01:18:04.838  1563  1716 E MDD     : 	at java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:142)
+11-09 01:18:04.838  1563  1716 E MDD     : 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:390)
+11-09 01:18:04.838  1563  1716 E MDD     : 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:230)
+11-09 01:18:04.838  1563  1716 E MDD     : 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:212)
+11-09 01:18:04.838  1563  1716 E MDD     : 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:436)
+11-09 01:18:04.838  1563  1716 E MDD     : 	at java.net.Socket.connect(Socket.java:646)
+11-09 01:18:04.838  1563  1716 E MDD     : 	at java.net.Socket.connect(Socket.java:595)
+11-09 01:18:04.838  1563  1716 E MDD     : 	at java.net.Socket.<init>(Socket.java:475)
+11-09 01:18:04.838  1563  1716 E MDD     : 	at java.net.Socket.<init>(Socket.java:275)
+11-09 01:18:04.838  1563  1716 E MDD     : 	at javax.net.DefaultSocketFactory.createSocket(SocketFactory.java:285)
+11-09 01:18:04.838  1563  1716 E MDD     : 	at io.grpc.h.w.run(PG:50)
+11-09 01:18:04.838  1563  1716 E MDD     : 	at io.grpc.f.kq.run(PG:17)
+11-09 01:18:04.838  1563  1716 E MDD     : 	at com.google.android.libraries.geller.j.a.run(PG:7)
+11-09 01:18:04.838  1563  1716 E MDD     : 	at com.google.apps.tiktok.tracing.fl.run(PG:24)
+11-09 01:18:04.838  1563  1716 E MDD     : 	at com.google.android.libraries.k.x.run(PG:3)
+11-09 01:18:04.838  1563  1716 E MDD     : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-09 01:18:04.838  1563  1716 E MDD     : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-09 01:18:04.838  1563  1716 E MDD     : 	at com.google.android.libraries.k.b.run(PG:6)
+11-09 01:18:04.838  1563  1716 E MDD     : 	at java.lang.Thread.run(Thread.java:1012)
+11-09 01:18:04.838  1563  1716 E MDD     : 	at com.google.android.libraries.k.d.b.run(PG:74)
+11-09 01:18:04.838  1563  1716 E MDD     : Caused by: android.system.ErrnoException: connect failed: ECONNREFUSED (Connection refused)
+11-09 01:18:04.838  1563  1716 E MDD     : 	at libcore.io.Linux.connect(Native Method)
+11-09 01:18:04.838  1563  1716 E MDD     : 	at libcore.io.ForwardingOs.connect(ForwardingOs.java:201)
+11-09 01:18:04.838  1563  1716 E MDD     : 	at libcore.io.BlockGuardOs.connect(BlockGuardOs.java:158)
+11-09 01:18:04.838  1563  1716 E MDD     : 	at libcore.io.ForwardingOs.connect(ForwardingOs.java:201)
+11-09 01:18:04.838  1563  1716 E MDD     : 	at libcore.io.IoBridge.connectErrno(IoBridge.java:201)
+11-09 01:18:04.838  1563  1716 E MDD     : 	at libcore.io.IoBridge.connect(IoBridge.java:179)
+11-09 01:18:04.838  1563  1716 E MDD     : 	... 20 more
+11-09 01:18:04.847  1142  1295 I NearbySharing: Stopping FastInitiation scanning because visibility is hidden. [CONTEXT service_id=194 ]
+11-09 01:18:04.850  1142  1295 I NearbySharing: Fast Initiation Scanning has stopped [CONTEXT service_id=194 ]
+11-09 01:18:04.853  2110  2241 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=a4c25556-316d-4729-92b5-8f2e6c35c5a8, tags={ com.google.android.apps.messaging.shared.datamodel.workqueue.WorkQueueWorkerShim,sim_state_update_queue-WORK_TYPE_UPDATE_PHONE_SIMS_STATE } ]
+11-09 01:18:04.855  1142  1295 I NearbySharing: Dismissing HUN as there's no device nearby. [CONTEXT service_id=194 ]
+11-09 01:18:04.858  1142  1295 I NearbySharing: Uwb feature is off. [CONTEXT service_id=194 ]
+11-09 01:18:04.859  1142  1295 I NearbySharing: Uwb feature is off. [CONTEXT service_id=194 ]
+11-09 01:18:04.860  1563  1708 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+11-09 01:18:04.860  1142  1295 I NearbySharing: Stopping scanning because Nearby Sharing is disabled. [CONTEXT service_id=194 ]
+11-09 01:18:04.863  1142  1295 I NearbySharing: Stopping Fast Init advertisement because we're not scanning in the foreground. [CONTEXT service_id=194 ]
+11-09 01:18:04.864  1142  1295 I NearbySharing: Stopping advertising because Nearby Sharing is disabled. [CONTEXT service_id=194 ]
+11-09 01:18:04.867  1142  1998 I NearbySharing: A new client has bound to the NearbySharingService ClientBridge for calling package com.google.android.gms and PID 1597 [CONTEXT service_id=194 ]
+11-09 01:18:04.869  3041  3102 W IndexableItem: indexing key is not set:Intent { act=com.google.android.gms.fido.fido2.ui.hybrid.LINKED_DEVICES_SETTINGS cat=[android.intent.category.DEFAULT] pkg=com.google.android.gms } [CONTEXT service_id=231 ]
+11-09 01:18:04.869  3041  3102 W IndexableItem: indexing key is not set:Intent { act=com.google.android.gms.fido.fido2.ui.hybrid.LINKED_DEVICES_SETTINGS cat=[android.intent.category.DEFAULT] pkg=com.google.android.gms } [CONTEXT service_id=231 ]
+11-09 01:18:04.874  3041  3102 W IndexableItem: indexing key is not set:Intent { cmp=com.google.android.gms/.romanesco.restore.settings.ContactsRestoreSettingsActivity } [CONTEXT service_id=231 ]
+11-09 01:18:04.874  1142  1295 I NearbySharing: Stopping FastInitiation scanning because visibility is hidden. [CONTEXT service_id=194 ]
+11-09 01:18:04.874  3041  3102 W IndexableItem: indexing key is not set:Intent { cmp=com.google.android.gms/.romanesco.restore.settings.ContactsRestoreSettingsActivity } [CONTEXT service_id=231 ]
+11-09 01:18:04.874  2110  2806 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=15faea40-be0e-454a-8abb-8e270cf1fdba, tags={ com.google.android.apps.messaging.shared.datamodel.workqueue.WorkQueueWorkerShim,sim_state_update_queue-WORK_TYPE_UPDATE_PHONE_SIMS_STATE } ]
+11-09 01:18:04.876  1142  1295 I NearbySharing: Fast Initiation Scanning has stopped [CONTEXT service_id=194 ]
+11-09 01:18:04.879  1142  1295 I NearbySharing: Dismissing HUN as there's no device nearby. [CONTEXT service_id=194 ]
+11-09 01:18:04.884  1142  1589 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.chimera.container.ConfigService started execution. cause:7 exec_start_elapsed_seconds: 39 [CONTEXT service_id=218 ]
+11-09 01:18:04.886  1563  2051 D TrafficStats: tagSocket(140) with statsTag=0x0, statsUid=-1
+11-09 01:18:04.886  3041  3102 W IndexableItem: indexing key is not set:Intent { act=com.google.android.gms.fido.fido2.ui.hybrid.LINKED_DEVICES_SETTINGS cat=[android.intent.category.DEFAULT] pkg=com.google.android.gms } [CONTEXT service_id=231 ]
+11-09 01:18:04.886  2110  2806 I .apps.messaging: IncrementDisableThreadFlip blocked for 11.690ms
+11-09 01:18:04.896  1563  2041 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+11-09 01:18:04.903  1061  1275 V MmsProvider: accessRestricted=false
+11-09 01:18:04.911  2110  2130 I .apps.messaging: Background concurrent mark compact GC freed 18MB AllocSpace bytes, 0(0B) LOS objects, 49% free, 12MB/24MB, paused 7.520ms,3.555ms total 114.523ms
+11-09 01:18:04.912  1563  1708 I A       : Mobalt: start observation generation
+11-09 01:18:04.912  1563  2058 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+11-09 01:18:04.913  1563  1708 I A       : (REDACTED) Mobalt: generating observations for day index %s for metric: %s-%s-%s
+11-09 01:18:04.913  1401  2360 V ClearcutMetricXmitter: Transmission is done.
+11-09 01:18:04.916  1563  1708 I A       : (REDACTED) Mobalt: generating observations for day index %s for metric: %s-%s-%s
+11-09 01:18:04.917  1401  2360 V ClearcutMetricXmitter: Transmission is done.
+11-09 01:18:04.917  2110  2241 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=fe2a2e03-0965-4629-a228-09ed5f744e81, tags={ com.google.android.libraries.mdi.download.workmanager.workers.PeriodicWorker,MDD.MAINTENANCE.PERIODIC.GCM.TASK } ]
+11-09 01:18:04.921  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s
+11-09 01:18:04.921  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s-%s-%s-%s
+11-09 01:18:04.922  1563  1718 I A       : (REDACTED) Mobalt: generated %s observations in %s observation batches for day index %s for report: %s-%s-%s-%s
+11-09 01:18:04.926  2110  2804 I BugleDataModel: ActionExecutorImpl: ACTION_RESPONSE_QUEUED_RecurringTelemetryUploaderAction
+11-09 01:18:04.927  2110  2802 I BugleDataModel: ActionExecutorImpl: Stopping ActionService
+11-09 01:18:04.936  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s
+11-09 01:18:04.936  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s-%s-%s-%s
+11-09 01:18:04.936  1563  1718 I A       : (REDACTED) Mobalt: generated %s observations in %s observation batches for day index %s for report: %s-%s-%s-%s
+11-09 01:18:04.937  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s
+11-09 01:18:04.937  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s-%s-%s-%s
+11-09 01:18:04.937  1563  1718 I A       : (REDACTED) Mobalt: generated %s observations in %s observation batches for day index %s for report: %s-%s-%s-%s
+11-09 01:18:04.937  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s
+11-09 01:18:04.949  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s-%s-%s-%s
+11-09 01:18:04.949  1563  1718 I A       : (REDACTED) Mobalt: generated %s observations in %s observation batches for day index %s for report: %s-%s-%s-%s
+11-09 01:18:04.951  1563  1707 I A       : Successfully scheduled next onetime workers
+11-09 01:18:04.957  1563  2058 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+11-09 01:18:04.964   893   893 D TileServices: Couldn't find tile for ComponentInfo{com.google.android.apps.wellbeing/com.google.android.apps.wellbeing.focusmode.quicksettings.FocusModeTileService}(0)
+11-09 01:18:04.974  2110  2803 I ClearcutUploader: Mobalt: start uploading logs to Clearcut log_source = TURQUOISE_COBALT_SHUFFLER_INPUT_PROD
+11-09 01:18:04.974  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s
+11-09 01:18:04.975  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s-%s-%s-%s
+11-09 01:18:04.976  1563  1718 I A       : (REDACTED) Mobalt: generated %s observations in %s observation batches for day index %s for report: %s-%s-%s-%s
+11-09 01:18:04.980  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s
+11-09 01:18:04.987  1340  1431 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=c782cda7-f54e-47c2-9a2f-a1a30baaf1ba, tags={ com.google.apps.tiktok.contrib.work.TikTokListenableWorker,com.google.apps.tiktok.sync.impl.workmanager.SyncWorker,TikTokWorker#com.google.apps.tiktok.sync.impl.workmanager.SyncWorker } ]
+11-09 01:18:04.989  2110  2806 I MobaltPeriodicJobImpl: Mobalt: uploading logs to the Cobalt Server, got 0 observations
+11-09 01:18:04.989  2110  2806 I MobaltPeriodicJobImpl: Mobalt: finish sending logs to the Cobalt Server successfully
+11-09 01:18:04.993  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s-%s-%s-%s
+11-09 01:18:04.994  1563  1718 I A       : (REDACTED) Mobalt: generated %s observations in %s observation batches for day index %s for report: %s-%s-%s-%s
+11-09 01:18:04.994  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s
+11-09 01:18:04.995  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s-%s-%s-%s
+11-09 01:18:04.995  1563  1718 I A       : (REDACTED) Mobalt: generated %s observations in %s observation batches for day index %s for report: %s-%s-%s-%s
+11-09 01:18:04.996  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s
+11-09 01:18:04.996  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s-%s-%s-%s
+11-09 01:18:04.997  1563  1718 I A       : (REDACTED) Mobalt: generated %s observations in %s observation batches for day index %s for report: %s-%s-%s-%s
+11-09 01:18:04.999  1563  1563 I GeofenceRecovery: #onReceive GeofenceRecoveryReceiver
+11-09 01:18:04.999  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s
+11-09 01:18:04.999  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s-%s-%s-%s
+11-09 01:18:05.000  1563  1718 I A       : (REDACTED) Mobalt: generated %s observations in %s observation batches for day index %s for report: %s-%s-%s-%s
+11-09 01:18:05.001  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s
+11-09 01:18:05.001  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s-%s-%s-%s
+11-09 01:18:05.001  1563  1718 I A       : (REDACTED) Mobalt: generated %s observations in %s observation batches for day index %s for report: %s-%s-%s-%s
+11-09 01:18:05.002  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s
+11-09 01:18:05.002  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s-%s-%s-%s
+11-09 01:18:05.002  1563  1718 I A       : (REDACTED) Mobalt: generated %s observations in %s observation batches for day index %s for report: %s-%s-%s-%s
+11-09 01:18:05.003  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s
+11-09 01:18:05.003  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s-%s-%s-%s
+11-09 01:18:05.003  1563  1718 I A       : (REDACTED) Mobalt: generated %s observations in %s observation batches for day index %s for report: %s-%s-%s-%s
+11-09 01:18:05.005  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s
+11-09 01:18:05.005  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s-%s-%s-%s
+11-09 01:18:05.007  1563  1718 I A       : (REDACTED) Mobalt: generated %s observations in %s observation batches for day index %s for report: %s-%s-%s-%s
+11-09 01:18:05.008  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s
+11-09 01:18:05.008  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s-%s-%s-%s
+11-09 01:18:05.008  1563  1718 I A       : (REDACTED) Mobalt: generated %s observations in %s observation batches for day index %s for report: %s-%s-%s-%s
+11-09 01:18:05.009  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s
+11-09 01:18:05.010  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s-%s-%s-%s
+11-09 01:18:05.010  1563  1718 I A       : (REDACTED) Mobalt: generated %s observations in %s observation batches for day index %s for report: %s-%s-%s-%s
+11-09 01:18:05.010  1563  1563 I GnpSdk  : (REDACTED) Intent received for action [%s] package [%s].
+11-09 01:18:05.010  1563  1563 I GnpSdk  : Phenotype initialized.
+11-09 01:18:05.011  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s
+11-09 01:18:05.012  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s-%s-%s-%s
+11-09 01:18:05.013  1563  1718 I A       : (REDACTED) Mobalt: generated %s observations in %s observation batches for day index %s for report: %s-%s-%s-%s
+11-09 01:18:05.015  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s
+11-09 01:18:05.015  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s-%s-%s-%s
+11-09 01:18:05.015  1563  1718 I A       : (REDACTED) Mobalt: generated %s observations in %s observation batches for day index %s for report: %s-%s-%s-%s
+11-09 01:18:05.016  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s
+11-09 01:18:05.016  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s-%s-%s-%s
+11-09 01:18:05.017  1563  1718 I A       : (REDACTED) Mobalt: generated %s observations in %s observation batches for day index %s for report: %s-%s-%s-%s
+11-09 01:18:05.017  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s
+11-09 01:18:05.018  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s-%s-%s-%s
+11-09 01:18:05.018  1563  1718 I A       : (REDACTED) Mobalt: generated %s observations in %s observation batches for day index %s for report: %s-%s-%s-%s
+11-09 01:18:05.019  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s
+11-09 01:18:05.019  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s-%s-%s-%s
+11-09 01:18:05.019  1563  1718 I A       : (REDACTED) Mobalt: generated %s observations in %s observation batches for day index %s for report: %s-%s-%s-%s
+11-09 01:18:05.021  1563  1563 I GnpSdk  : (REDACTED) Validation OK for action [%s].
+11-09 01:18:05.021  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s
+11-09 01:18:05.022  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s-%s-%s-%s
+11-09 01:18:05.022  1563  1718 I A       : (REDACTED) Mobalt: generated %s observations in %s observation batches for day index %s for report: %s-%s-%s-%s
+11-09 01:18:05.022  2110  2803 D MddListenableWorkerFactory: createWorker for class: com.google.android.apps.messaging.shared.datamodel.workqueue.WorkQueueWorkerShim
+11-09 01:18:05.022  1563  1563 I GnpSdk  : (REDACTED) Submitting Broadcast execution [%d] to tiktok executor.
+11-09 01:18:05.022  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s
+11-09 01:18:05.022  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s-%s-%s-%s
+11-09 01:18:05.023  1563  1718 I A       : (REDACTED) Mobalt: generated %s observations in %s observation batches for day index %s for report: %s-%s-%s-%s
+11-09 01:18:05.023   639  2182 D CompatChangeReporter: Compat change id reported: 261072174; UID 10132; state: ENABLED
+11-09 01:18:05.024  1563  1708 I GnpSdk  : (REDACTED) Executing action in BroadcastReceiver [%s].
+11-09 01:18:05.026  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s
+11-09 01:18:05.026  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s-%s-%s-%s
+11-09 01:18:05.027  1563  1718 I A       : (REDACTED) Mobalt: generated %s observations in %s observation batches for day index %s for report: %s-%s-%s-%s
+11-09 01:18:05.029  2110  2806 D MddListenableWorkerFactory: createWorker for class: com.google.android.apps.messaging.shared.datamodel.workqueue.WorkQueueWorkerShim
+11-09 01:18:05.030  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s
+11-09 01:18:05.030  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s-%s-%s-%s
+11-09 01:18:05.030  1563  1718 I A       : (REDACTED) Mobalt: generated %s observations in %s observation batches for day index %s for report: %s-%s-%s-%s
+11-09 01:18:05.033  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s
+11-09 01:18:05.033  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s-%s-%s-%s
+11-09 01:18:05.033  1563  1718 I A       : (REDACTED) Mobalt: generated %s observations in %s observation batches for day index %s for report: %s-%s-%s-%s
+11-09 01:18:05.034  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s
+11-09 01:18:05.034  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s-%s-%s-%s
+11-09 01:18:05.035  1563  1718 I A       : (REDACTED) Mobalt: generated %s observations in %s observation batches for day index %s for report: %s-%s-%s-%s
+11-09 01:18:05.036  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s
+11-09 01:18:05.036  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s-%s-%s-%s
+11-09 01:18:05.036  1563  1718 I A       : (REDACTED) Mobalt: generated %s observations in %s observation batches for day index %s for report: %s-%s-%s-%s
+11-09 01:18:05.037  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s
+11-09 01:18:05.037  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s-%s-%s-%s
+11-09 01:18:05.038  1563  1718 I A       : (REDACTED) Mobalt: generated %s observations in %s observation batches for day index %s for report: %s-%s-%s-%s
+11-09 01:18:05.040  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s
+11-09 01:18:05.040  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s-%s-%s-%s
+11-09 01:18:05.041  1563  1718 I A       : (REDACTED) Mobalt: generated %s observations in %s observation batches for day index %s for report: %s-%s-%s-%s
+11-09 01:18:05.041   432   432 I netd    : tetherGetStats() -> {[]} <0.52ms>
+11-09 01:18:05.041  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s
+11-09 01:18:05.041  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s-%s-%s-%s
+11-09 01:18:05.042  1563  1718 I A       : (REDACTED) Mobalt: generated %s observations in %s observation batches for day index %s for report: %s-%s-%s-%s
+11-09 01:18:05.042  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s
+11-09 01:18:05.042  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s-%s-%s-%s
+11-09 01:18:05.043  1563  1718 I A       : (REDACTED) Mobalt: generated %s observations in %s observation batches for day index %s for report: %s-%s-%s-%s
+11-09 01:18:05.043  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s
+11-09 01:18:05.043  1563  1718 I A       : (REDACTED) Mobalt: generating observations for day index %s for report: %s-%s-%s-%s
+11-09 01:18:05.044  1563  1718 I A       : (REDACTED) Mobalt: generated %s observations in %s observation batches for day index %s for report: %s-%s-%s-%s
+11-09 01:18:05.046  1563  1714 E A       : (REDACTED) Failed to recover geofences for LBT Routines using Geller data
+11-09 01:18:05.046  1563  1714 E A       : com.google.android.libraries.geller.portable.GellerException: Code: INVALID_ARGUMENT, Message: Account name is null.
+11-09 01:18:05.046  1563  1714 E A       : 	at com.google.android.libraries.search.l.t.a(PG:25)
+11-09 01:18:05.046  1563  1714 E A       : 	at com.google.apps.tiktok.tracing.fe.a(PG:13)
+11-09 01:18:05.046  1563  1714 E A       : 	at com.google.common.util.concurrent.ba.a(PG:3)
+11-09 01:18:05.046  1563  1714 E A       : 	at com.google.common.util.concurrent.cu.run(PG:21)
+11-09 01:18:05.046  1563  1714 E A       : 	at com.google.android.libraries.k.x.run(PG:3)
+11-09 01:18:05.046  1563  1714 E A       : 	at com.google.common.n.c.c.run(PG:50)
+11-09 01:18:05.046  1563  1714 E A       : 	at com.google.android.libraries.k.e.run(PG:8)
+11-09 01:18:05.046  1563  1714 E A       : 	at java.lang.Thread.run(Thread.java:1012)
+11-09 01:18:05.046  1563  1714 E A       : 	at com.google.android.libraries.k.d.b.run(PG:74)
+11-09 01:18:05.046  1563  2058 I A       : (REDACTED) Mobalt: successfully generated observations for %s reports
+11-09 01:18:05.049  1563  2058 I A       : (REDACTED) Mobalt: uploading logs to the Cobalt Server, got %s observations
+11-09 01:18:05.064  1618  2720 W IndexDataConverter: Skipping null deep link for raw indexable com.android.settings/Android Safe Browsing
+11-09 01:18:05.071  1618  2720 W IndexDataConverter: Skipping null deep link for raw indexable com.android.settings/Google
+11-09 01:18:05.072  1618  2720 W IndexDataConverter: Skipping null deep link for raw indexable com.android.settings/Android Safe Browsing
+11-09 01:18:05.088  2110  2806 D MddListenableWorkerFactory: createWorker for class: com.google.android.apps.messaging.shared.datamodel.workqueue.WorkQueueWorkerShim
+11-09 01:18:05.091  2110  2805 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=2a970c38-194c-497c-9c86-5f128922f065, tags={ com.google.android.apps.messaging.shared.datamodel.workqueue.WorkQueueWorkerShim,shared_notification_queue_name-NT_INCOMING_MESSAGE } ]
+11-09 01:18:05.100  2110  2805 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=e641fa0b-f2b4-4749-b7e2-bf17e9646ccf, tags={ com.google.android.apps.messaging.shared.datamodel.workqueue.WorkQueueWorkerShim,vendor_ims_call- } ]
+11-09 01:18:05.101  2110  2802 D MddListenableWorkerFactory: createWorker for class: com.google.android.libraries.mdi.download.workmanager.workers.PeriodicWorker
+11-09 01:18:05.102  2110  2110 D MddPeriodicWorker: PeriodicWorker: startWork
+11-09 01:18:05.128   893   897 I ndroid.systemui: Compiler allocated 4999KB to compile java.lang.Object com.google.android.systemui.dagger.DaggerSysUIGoogleGlobalRootComponent$WMComponentImpl$SwitchingProvider.get7()
+11-09 01:18:05.149  2110  2806 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=52a1018b-43bd-4dc8-b2b2-6e8d4b7e82bf, tags={ com.google.android.apps.messaging.shared.datamodel.workqueue.WorkQueueWorkerShim,expire_wap_push_si_message- } ]
+11-09 01:18:05.150  1401  2360 V ClearcutMetricXmitter: Transmission is done.
+11-09 01:18:05.170  1563  1707 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=1fe14ac7-2fce-4bde-9c65-d69576753d5a, tags={ com.google.apps.tiktok.contrib.work.TikTokListenableWorker,TikTokWorker#com.google.android.libraries.mdi.download.workmanager.tiktok.TikTokPeriodicWorker } ]
+11-09 01:18:05.234  1563  1563 W TaskServiceHelper: (REDACTED) Not enough time has passed between starts of two %s periodic tasks.
+11-09 01:18:05.235   893   897 I ndroid.systemui: Compiler allocated 6583KB to compile java.lang.Object com.google.android.systemui.dagger.DaggerSysUIGoogleGlobalRootComponent$WMComponentImpl$SwitchingProvider.get10()
+11-09 01:18:05.243   893   897 W ndroid.systemui: Missing inline cache for void com.android.systemui.statusbar.policy.Clock.onRestoreInstanceState(android.os.Parcelable)
+11-09 01:18:05.244   893   897 W ndroid.systemui: Missing inline cache for void com.android.systemui.statusbar.policy.Clock.onRestoreInstanceState(android.os.Parcelable)
+11-09 01:18:05.244   893   897 W ndroid.systemui: Missing inline cache for void com.android.systemui.statusbar.policy.Clock.onRestoreInstanceState(android.os.Parcelable)
+11-09 01:18:05.252  1563  1563 W TaskServiceHelper: (REDACTED) Not enough time has passed between starts of two %s periodic tasks.
+11-09 01:18:05.292   639   654 I system_server: Background concurrent mark compact GC freed 29MB AllocSpace bytes, 85(1708KB) LOS objects, 46% free, 27MB/51MB, paused 5.310ms,4.262ms total 346.711ms
+11-09 01:18:05.292  1563  1563 W TaskServiceHelper: (REDACTED) Not enough time has passed between starts of two %s periodic tasks.
+11-09 01:18:05.306   639  2183 I BroadcastQueue: BOOT_COMPLETED_BROADCAST_COMPLETION_LATENCY_REPORTED action:android.intent.action.BOOT_COMPLETED dispatchLatency:2118 completeLatency:17022 dispatchRealLatency:2118 completeRealLatency:17022 receiversSize:97 userId:0 userType:android.os.usertype.full.SYSTEM
+11-09 01:18:05.307   639   663 I ActivityManager: Finished processing BOOT_COMPLETED for u0
+11-09 01:18:05.309  1563  1708 I GnpSdk  : (REDACTED) Finished Broadcast execution [%d].
+11-09 01:18:05.314  2110  2804 E PhFileGroupPop: Failed to add file group 
+11-09 01:18:05.316  2110  2805 E MDD     : FileGroupManager: Trying to add expired group webref-model-local-index.
+11-09 01:18:05.316  2110  2805 W MDD     : MDDManager class cxev
+11-09 01:18:05.316  2110  2805 E PhFileGroupPop: Failed to add file group
+11-09 01:18:05.316  2110  2805 E PhFileGroupPop: cxev
+11-09 01:18:05.316  2110  2805 E PhFileGroupPop: 	at cxns.a(PG:941)
+11-09 01:18:05.316  2110  2805 E PhFileGroupPop: 	at dkqe.a(PG:13)
+11-09 01:18:05.316  2110  2805 E PhFileGroupPop: 	at dqoh.d(PG:3)
+11-09 01:18:05.316  2110  2805 E PhFileGroupPop: 	at dqoj.run(PG:42)
+11-09 01:18:05.316  2110  2805 E PhFileGroupPop: 	at dqso.run(PG:76)
+11-09 01:18:05.316  2110  2805 E PhFileGroupPop: 	at crzm.run(PG:3)
+11-09 01:18:05.316  2110  2805 E PhFileGroupPop: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-09 01:18:05.316  2110  2805 E PhFileGroupPop: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-09 01:18:05.316  2110  2805 E PhFileGroupPop: 	at cryq.run(PG:6)
+11-09 01:18:05.316  2110  2805 E PhFileGroupPop: 	at java.lang.Thread.run(Thread.java:1012)
+11-09 01:18:05.316  2110  2805 E PhFileGroupPop: 	at csaw.run(PG:64)
+11-09 01:18:05.319  2110  2804 E PhFileGroupPop: Failed to add file group 
+11-09 01:18:05.319  2110  2804 E PhFileGroupPop: Failed to add file group 
+11-09 01:18:05.320  2110  2804 E PhFileGroupPop: Failed to add file group 
+11-09 01:18:05.326  2110  2804 E PhFileGroupPop: Failed to add file group 
+11-09 01:18:05.326  2110  2804 E PhFileGroupPop: Failed to add file group 
+11-09 01:18:05.326  2110  2805 D PhFileGroupPop: Added file groups smart_actions_grammars
+11-09 01:18:05.327  2110  2804 E PhFileGroupPop: Failed to add file group 
+11-09 01:18:05.327  2110  2804 E PhFileGroupPop: Failed to add file group 
+11-09 01:18:05.327  2110  2804 E PhFileGroupPop: Failed to add file group 
+11-09 01:18:05.327  2110  2804 E PhFileGroupPop: Failed to add file group 
+11-09 01:18:05.328  2110  2804 E PhFileGroupPop: Failed to add file group 
+11-09 01:18:05.328  2110  2804 E PhFileGroupPop: Failed to add file group 
+11-09 01:18:05.328  2110  2804 E PhFileGroupPop: Failed to add file group 
+11-09 01:18:05.328  2110  2804 E PhFileGroupPop: Failed to add file group 
+11-09 01:18:05.332  2110  2804 E PhFileGroupPop: Failed to add file group 
+11-09 01:18:05.333  2110  2804 E PhFileGroupPop: Failed to add file group 
+11-09 01:18:05.334  2110  2804 E PhFileGroupPop: Failed to add file group 
+11-09 01:18:05.334   639   656 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/LicenseChecker/LicenseChecker.apk' with 1 weak references
+11-09 01:18:05.335   639   656 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk' with 1 weak references
+11-09 01:18:05.337   639   656 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.permission/priv-app/GooglePermissionController@350820360/GooglePermissionController.apk' with 1 weak references
+11-09 01:18:05.338   639   656 W system_server: ApkAssets: Deleting an ApkAssets object '/product/overlay/GooglePermissionControllerOverlay.apk' with 1 weak references
+11-09 01:18:05.339   639   656 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/InputDevices/InputDevices.apk' with 1 weak references
+11-09 01:18:05.334  2110  2804 E dqod    : RuntimeException while executing runnable dqra{dkqj@a79594f} with executor MoreExecutors.directExecutor()
+11-09 01:18:05.334  2110  2804 E dqod    : java.lang.NullPointerException: Attempt to read from field 'java.lang.String cwru.b' on a null object reference in method 'void cyar.b(java.lang.Object)'
+11-09 01:18:05.334  2110  2804 E dqod    : 	at cyar.b(PG:11)
+11-09 01:18:05.334  2110  2804 E dqod    : 	at dkqj.b(PG:13)
+11-09 01:18:05.334  2110  2804 E dqod    : 	at dqra.run(PG:30)
+11-09 01:18:05.334  2110  2804 E dqod    : 	at dqqd.execute(PG:1)
+11-09 01:18:05.334  2110  2804 E dqod    : 	at dqod.o(PG:1)
+11-09 01:18:05.334  2110  2804 E dqod    : 	at dqod.b(PG:41)
+11-09 01:18:05.334  2110  2804 E dqod    : 	at dqrh.s(PG:9)
+11-09 01:18:05.334  2110  2804 E dqod    : 	at dksz.l(PG:5)
+11-09 01:18:05.334  2110  2804 E dqod    : 	at cyat.a(PG:138)
+11-09 01:18:05.334  2110  2804 E dqod    : 	at bilp.a(PG:29)
+11-09 01:18:05.334  2110  2804 E dqod    : 	at cwzc.r(PG:24)
+11-09 01:18:05.334  2110  2804 E dqod    : 	at cwzc.v(PG:1)
+11-09 01:18:05.334  2110  2804 E dqod    : 	at cwzc.g(PG:85)
+11-09 01:18:05.334  2110  2804 E dqod    : 	at cyeb.a(PG:7)
+11-09 01:18:05.334  2110  2804 E dqod    : 	at dkqd.a(PG:13)
+11-09 01:18:05.334  2110  2804 E dqod    : 	at dqsx.a(PG:3)
+11-09 01:18:05.334  2110  2804 E dqod    : 	at dqrv.run(PG:21)
+11-09 01:18:05.334  2110  2804 E dqod    : 	at dqsz.run(PG:5)
+11-09 01:18:05.334  2110  2804 E dqod    : 	at crzm.run(PG:3)
+11-09 01:18:05.334  2110  2804 E dqod    : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-09 01:18:05.334  2110  2804 E dqod    : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-09 01:18:05.334  2110  2804 E dqod    : 	at cryq.run(PG:6)
+11-09 01:18:05.334  2110  2804 E dqod    : 	at java.lang.Thread.run(Thread.java:1012)
+11-09 01:18:05.334  2110  2804 E dqod    : 	at csaw.run(PG:64)
+11-09 01:18:05.341  2110  2804 E dqod    : RuntimeException while executing runnable dqra{dkqj@1593de5} with executor MoreExecutors.directExecutor()
+11-09 01:18:05.341  2110  2804 E dqod    : java.lang.NullPointerException: Attempt to read from field 'java.lang.String cwru.b' on a null object reference in method 'void cyar.b(java.lang.Object)'
+11-09 01:18:05.341  2110  2804 E dqod    : 	at cyar.b(PG:11)
+11-09 01:18:05.341  2110  2804 E dqod    : 	at dkqj.b(PG:13)
+11-09 01:18:05.341  2110  2804 E dqod    : 	at dqra.run(PG:30)
+11-09 01:18:05.341  2110  2804 E dqod    : 	at dqqd.execute(PG:1)
+11-09 01:18:05.341  2110  2804 E dqod    : 	at dqod.o(PG:1)
+11-09 01:18:05.341  2110  2804 E dqod    : 	at dqod.b(PG:41)
+11-09 01:18:05.341  2110  2804 E dqod    : 	at dqrh.s(PG:9)
+11-09 01:18:05.341  2110  2804 E dqod    : 	at dksz.l(PG:5)
+11-09 01:18:05.341  2110  2804 E dqod    : 	at cyat.a(PG:138)
+11-09 01:18:05.341  2110  2804 E dqod    : 	at bilp.a(PG:29)
+11-09 01:18:05.341  2110  2804 E dqod    : 	at cwzc.r(PG:24)
+11-09 01:18:05.341  2110  2804 E dqod    : 	at cwzc.v(PG:1)
+11-09 01:18:05.341  2110  2804 E dqod    : 	at cwzc.g(PG:85)
+11-09 01:18:05.341  2110  2804 E dqod    : 	at cyeb.a(PG:7)
+11-09 01:18:05.341  2110  2804 E dqod    : 	at dkqd.a(PG:13)
+11-09 01:18:05.341  2110  2804 E dqod    : 	at dqsx.a(PG:3)
+11-09 01:18:05.341  2110  2804 E dqod    : 	at dqrv.run(PG:21)
+11-09 01:18:05.341  2110  2804 E dqod    : 	at dqsz.run(PG:5)
+11-09 01:18:05.341  2110  2804 E dqod    : 	at crzm.run(PG:3)
+11-09 01:18:05.341  2110  2804 E dqod    : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-09 01:18:05.341  2110  2804 E dqod    : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-09 01:18:05.341  2110  2804 E dqod    : 	at cryq.run(PG:6)
+11-09 01:18:05.341  2110  2804 E dqod    : 	at java.lang.Thread.run(Thread.java:1012)
+11-09 01:18:05.341  2110  2804 E dqod    : 	at csaw.run(PG:64)
+11-09 01:18:05.341  2110  2804 E dqod    : RuntimeException while executing runnable dqra{dkqj@59c3b6b} with executor MoreExecutors.directExecutor()
+11-09 01:18:05.341  2110  2804 E dqod    : java.lang.NullPointerException: Attempt to read from field 'java.lang.String cwru.b' on a null object reference in method 'void cyar.b(java.lang.Object)'
+11-09 01:18:05.341  2110  2804 E dqod    : 	at cyar.b(PG:11)
+11-09 01:18:05.341  2110  2804 E dqod    : 	at dkqj.b(PG:13)
+11-09 01:18:05.341  2110  2804 E dqod    : 	at dqra.run(PG:30)
+11-09 01:18:05.341  2110  2804 E dqod    : 	at dqqd.execute(PG:1)
+11-09 01:18:05.341  2110  2804 E dqod    : 	at dqod.o(PG:1)
+11-09 01:18:05.341  2110  2804 E dqod    : 	at dqod.b(PG:41)
+11-09 01:18:05.341  2110  2804 E dqod    : 	at dqrh.s(PG:9)
+11-09 01:18:05.341  2110  2804 E dqod    : 	at dksz.l(PG:5)
+11-09 01:18:05.341  2110  2804 E dqod    : 	at cyat.a(PG:138)
+11-09 01:18:05.341  2110  2804 E dqod    : 	at bilp.a(PG:29)
+11-09 01:18:05.341  2110  2804 E dqod    : 	at cwzc.r(PG:24)
+11-09 01:18:05.341  2110  2804 E dqod    : 	at cwzc.v(PG:1)
+11-09 01:18:05.341  2110  2804 E dqod    : 	at cwzc.g(PG:85)
+11-09 01:18:05.341  2110  2804 E dqod    : 	at cyeb.a(PG:7)
+11-09 01:18:05.341  2110  2804 E dqod    : 	at dkqd.a(PG:13)
+11-09 01:18:05.341  2110  2804 E dqod    : 	at dqsx.a(PG:3)
+11-09 01:18:05.341  2110  2804 E dqod    : 	at dqrv.run(PG:21)
+11-09 01:18:05.341  2110  2804 E dqod    : 	at dqsz.run(PG:5)
+11-09 01:18:05.341  2110  2804 E dqod    : 	at crzm.run(PG:3)
+11-09 01:18:05.341  2110  2804 E dqod    : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-09 01:18:05.341  2110  2804 E dqod    : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-09 01:18:05.341  2110  2804 E dqod    : 	at cryq.run(PG:6)
+11-09 01:18:05.341  2110  2804 E dqod    : 	at java.lang.Thread.run(Thread.java:1012)
+11-09 01:18:05.341  2110  2804 E dqod    : 	at csaw.run(PG:64)
+11-09 01:18:05.342   639   656 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/LatinIMEGooglePrebuilt/LatinIMEGooglePrebuilt.apk' with 1 weak references
+11-09 01:18:05.343   639   656 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/WellbeingPrebuilt/WellbeingPrebuilt.apk' with 1 weak references
+11-09 01:18:05.344   639   656 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/GoogleTTS/GoogleTTS.apk' with 1 weak references
+11-09 01:18:05.345   639   656 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~F7wwgPOG8Wpz-Ci-rfB4Mw==/io.appium.settings-uxXMWuxGf2N5D0iqj4WldQ==/base.apk' with 1 weak references
+11-09 01:18:05.345   639   656 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/app/AccessibilityMenu/AccessibilityMenu.apk' with 1 weak references
+11-09 01:18:05.346   639   656 W system_server: ApkAssets: Deleting an ApkAssets object '/product/overlay/AccessibilityMenu__sdk_gphone64_x86_64__auto_generated_rro_product.apk' with 1 weak references
+11-09 01:18:05.346   639   656 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/talkback/talkback.apk' with 1 weak references
+11-09 01:18:05.346   639   656 W system_server: ApkAssets: Deleting an ApkAssets object '/vendor/overlay/EmulatorTalkBackOverlay/EmulatorTalkBackOverlay.apk' with 1 weak references
+11-09 01:18:05.347   639   656 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PrebuiltGmail/PrebuiltGmail.apk' with 1 weak references
+11-09 01:18:05.348  2110  2805 D PhFileGroupPop: Added file groups smart_actions_ml_models
+11-09 01:18:05.349  2110  2805 D PhFileGroupPop: Added file groups text_classifier
+11-09 01:18:05.353   639   656 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Drive/Drive.apk' with 1 weak references
+11-09 01:18:05.354   639   656 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/CalendarGooglePrebuilt/CalendarGooglePrebuilt.apk' with 1 weak references
+11-09 01:18:05.357  2110  2225 W MDD     : GddFileGroupPopulator: Account was not provided, skipping private sync for corpus: GDD_BUGLE_EMOJIFY, configuration: GddBugleEmojify
+11-09 01:18:05.357   639   656 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/Velvet/Velvet.apk' with 1 weak references
+11-09 01:18:05.358   639   805 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+11-09 01:18:05.358  2110  2225 D nativeloader: Load /product/priv-app/PrebuiltBugle/PrebuiltBugle.apk!/lib/x86_64/libgeller_jni_lite_lib.so using ns product-clns-8 from class loader (caller=/product/priv-app/PrebuiltBugle/PrebuiltBugle.apk!classes3.dex): ok
+11-09 01:18:05.359   639   805 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+11-09 01:18:05.359   639   805 D InetDiagMessage: Destroyed live tcp sockets for uids={10188} in 4ms
+11-09 01:18:05.361   639   805 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+11-09 01:18:05.363   639   805 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+11-09 01:18:05.367   639   805 D InetDiagMessage: Destroyed live tcp sockets for uids={20188} in 8ms
+11-09 01:18:05.369  1563  1563 I A       : Start work
+11-09 01:18:05.378  1563  1718 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=b2aab674-5abe-4bce-9629-ec1d2f6aa9b4, tags={ com.google.apps.tiktok.contrib.work.TikTokListenableWorker,TikTokWorker#com.google.android.apps.gsa.staticplugins.opa.worker.nudgeui.ResetOpaNgaQueryCounterTask } ]
+11-09 01:18:05.404  1563  1572 W earchbox:search: Suspending all threads took: 7.396ms
+11-09 01:18:05.405  2110  2555 I GellerSyncClient: Starting batch sync for corpora: [1037]
+11-09 01:18:05.418  1563  1714 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=a0490095-73f6-43ab-a4c0-e1794f218aef, tags={ com.google.apps.tiktok.contrib.work.TikTokListenableWorker,TikTokWorker#com.google.android.apps.search.assistant.surfaces.notification.DelayedNotificationWorker } ]
+11-09 01:18:05.425  1563  1708 D TrafficStats: tagSocket(140) with statsTag=0x0, statsUid=-1
+11-09 01:18:05.429  2110  2804 I GellerDatabaseImpl: Setting isLegacySQLite mode to false.
+11-09 01:18:05.441  2110  2804 I GellerDatabaseImpl: The GellerConfig is not present, returning null.
+11-09 01:18:05.441  2110  2804 I GellerDatabaseImpl: The GellerConfig is not present, defaulting isUploadEnabled for corpus GDD_BUGLE_EMOJIFY to true.
+11-09 01:18:05.441  1618  2720 W SQLiteLog: (28) double-quoted string literal: "GooglePasswordCheckup_personal"
+11-09 01:18:05.445  1618  2720 W SQLiteLog: (28) double-quoted string literal: "GooglePasswordCheckup_personal"
+11-09 01:18:05.445  1618  2720 W SQLiteLog: (28) double-quoted string literal: "GoogleBackupAndRestore_personal"
+11-09 01:18:05.449  1618  2720 W SQLiteLog: (28) double-quoted string literal: "GoogleBackupAndRestore_personal"
+11-09 01:18:05.449  1618  2720 W SQLiteLog: (28) double-quoted string literal: "AndroidHealthConnect_personal"
+11-09 01:18:05.453  2110  2804 I GellerSyncClient: The syncToken for corpus GDD_BUGLE_EMOJIFY is EgkI2bbg6+HtlwM=.
+11-09 01:18:05.466  2110  2236 W ectr    : Failed to create JWT helper. This is unexpected
+11-09 01:18:05.466  2110  2236 W ectr    : java.lang.NoSuchMethodException: dlno.getScopes []
+11-09 01:18:05.466  2110  2236 W ectr    : 	at java.lang.Class.getMethod(Class.java:2950)
+11-09 01:18:05.466  2110  2236 W ectr    : 	at java.lang.Class.getMethod(Class.java:2450)
+11-09 01:18:05.466  2110  2236 W ectr    : 	at ectp.<init>(PG:15)
+11-09 01:18:05.466  2110  2236 W ectr    : 	at ectr.<clinit>(PG:27)
+11-09 01:18:05.466  2110  2236 W ectr    : 	at ects.a(PG:1)
+11-09 01:18:05.466  2110  2236 W ectr    : 	at culd.b(PG:168)
+11-09 01:18:05.466  2110  2236 W ectr    : 	at cukx.a(PG:31)
+11-09 01:18:05.466  2110  2236 W ectr    : 	at dkpx.a(PG:18)
+11-09 01:18:05.466  2110  2236 W ectr    : 	at dqpb.a(PG:14)
+11-09 01:18:05.466  2110  2236 W ectr    : 	at dqoh.d(PG:3)
+11-09 01:18:05.466  2110  2236 W ectr    : 	at dqoj.run(PG:42)
+11-09 01:18:05.466  2110  2236 W ectr    : 	at crzm.run(PG:3)
+11-09 01:18:05.466  2110  2236 W ectr    : 	at dnmw.run(PG:50)
+11-09 01:18:05.466  2110  2236 W ectr    : 	at cscj.run(PG:18)
+11-09 01:18:05.466  2110  2236 W ectr    : 	at cryt.run(PG:8)
+11-09 01:18:05.466  2110  2236 W ectr    : 	at java.lang.Thread.run(Thread.java:1012)
+11-09 01:18:05.466  2110  2236 W ectr    : 	at csaw.run(PG:64)
+11-09 01:18:05.466  1618  3259 W AllowlistedPackageIdentifiers: Is debuggable: false
+11-09 01:18:05.481   639   659 W JobScheduler: Job didn't exist in JobStore: d24b1d1 {androidx.work.systemjobscheduler} #u0a144/169 @androidx.work.systemjobscheduler@com.google.android.googlequicksearchbox/androidx.work.impl.background.systemjob.SystemJobService
+--------- beginning of kernel
+11-09 01:18:05.460     0     0 I logd    : logdr: UID=2000 GID=2000 PID=3260 n tail=400 logMask=99 pid=0 start=0ns deadline=0ns

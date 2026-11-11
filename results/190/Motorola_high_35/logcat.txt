@@ -1,0 +1,443 @@
+--------- beginning of main
+11-07 01:19:28.671   422   487 I netd    : setProcSysNet(6, 2, wlan0, ucast_solicit, 10) <0.03ms>
+--------- beginning of system
+11-07 01:19:28.672   630   667 W ActivityManager: Slow operation: 86ms so far, now at startProcess: done updating battery stats
+11-07 01:19:28.672   630   667 W ActivityManager: Slow operation: 86ms so far, now at startProcess: building log message
+11-07 01:19:28.672   630   667 I ActivityManager: Start proc 2960:com.google.android.settings.intelligence/u0a140 for broadcast {com.google.android.settings.intelligence/com.google.android.settings.intelligence.modules.batterywidget.impl.BatteryWidgetBootBroadcastReceiver}
+11-07 01:19:28.672   630   667 W ActivityManager: Slow operation: 86ms so far, now at startProcess: starting to update pids map
+11-07 01:19:28.672   630   667 W ActivityManager: Slow operation: 86ms so far, now at startProcess: done updating pids map
+11-07 01:19:28.677  2960  2960 I gs.intelligence: Using CollectorTypeCMC GC.
+11-07 01:19:28.680  2960  2960 W gs.intelligence: Unexpected CPU variant for x86: x86_64.
+11-07 01:19:28.680  2960  2960 W gs.intelligence: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, goldmont-without-sha-xsaves, tremont, kabylake, default
+11-07 01:19:28.684  2130  2141 I .apps.messaging: Compiler allocated 8186KB to compile java.lang.Object aflc.A()
+11-07 01:19:28.688  2960  2960 E gs.intelligence: Not starting debugger since process cannot load the jdwp agent.
+11-07 01:19:28.700  2960  2960 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+11-07 01:19:28.711  2130  2141 I .apps.messaging: Compiler allocated 5097KB to compile java.lang.Object aflc.l()
+11-07 01:19:28.734   493   498 W GpuWork : Failed to attach bpf program to power/gpu_work_period tracepoint [2(No such file or directory)]
+11-07 01:19:28.782  2960  2960 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/org.apache.http.legacy.jar
+11-07 01:19:28.783  2960  2960 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+11-07 01:19:28.783  2960  2960 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+11-07 01:19:28.802  2946  2962 D WM-GreedyScheduler: Cancelling work ID 9e9c3fbd-223b-4ae2-a3e3-38447169810c
+11-07 01:19:28.817  1614  2492 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+11-07 01:19:28.836  2946  2962 D CompatChangeReporter: Compat change id reported: 253665015; UID 10193; state: ENABLED
+11-07 01:19:28.836  2946  2962 D WM-SystemJobScheduler: Scheduling work ID 2078a677-26bd-4b9e-9ffe-1eaf8fcc5ff7Job ID 8
+11-07 01:19:28.837   630  1032 D CompatChangeReporter: Compat change id reported: 271850009; UID 10193; state: ENABLED
+11-07 01:19:28.838   630  1032 D CompatChangeReporter: Compat change id reported: 253665015; UID 10193; state: ENABLED
+11-07 01:19:28.845   630  1032 D ConnectivityService: requestNetwork for uid/pid:1000/630 asUid: 10193 activeRequest: null callbackRequest: 109 [NetworkRequest [ REQUEST id=110, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10193 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false
+11-07 01:19:28.848   630   790 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=110, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10193 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+11-07 01:19:28.850   630   797 D ConnectivityService: NetReassign [110 : null → 100] [c 0] [a 2] [i 1]
+11-07 01:19:28.850  2946  2962 D WM-GreedyScheduler: Starting tracking for 2078a677-26bd-4b9e-9ffe-1eaf8fcc5ff7
+11-07 01:19:28.852   630   790 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=110, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10193 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+11-07 01:19:28.852   630   790 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=110, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10193 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+11-07 01:19:28.852   630   790 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=110, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10193 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+11-07 01:19:28.863  2960  2960 D nativeloader: InitLlndkLibrariesProduct: libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libRS.so:libandroid_net.so:libapexsupport.so:libbinder_ndk.so:libc.so:libcgrouprc.so:libclang_rt.asan-x86_64-android.so:libcom.android.tethering.connectivity_native.so:libdl.so:libft2.so:liblog.so:libm.so:libmediandk.so:libnativewindow.so:libneuralnetworks.so:libselinux.so:libsync.so:libvendorsupport.so:libvndksupport.so:libvulkan.so
+11-07 01:19:28.864  2960  2960 D nativeloader: Configuring product-clns-7 for unbundled product apk /product/priv-app/SettingsIntelligenceGooglePrebuilt/SettingsIntelligenceGooglePrebuilt.apk. target_sdk_version=35, uses_libraries=, library_path=/product/priv-app/SettingsIntelligenceGooglePrebuilt/lib/x86_64:/product/lib64:/system/product/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.settings.intelligence:/product/lib64:/system/product/lib64
+11-07 01:19:28.868  2960  2960 D nativeloader: InitVndkspLibrariesProduct: VNDK is deprecated with product
+11-07 01:19:28.870  2946  2974 D WM-SystemJobScheduler: Scheduling work ID d0bd8e46-9365-45c8-bed6-e34f1dd2156cJob ID 9
+11-07 01:19:28.872   630  1948 D CompatChangeReporter: Compat change id reported: 261072174; UID 10132; state: ENABLED
+11-07 01:19:28.876  2946  2974 D WM-GreedyScheduler: Starting tracking for 2078a677-26bd-4b9e-9ffe-1eaf8fcc5ff7,d0bd8e46-9365-45c8-bed6-e34f1dd2156c
+11-07 01:19:28.876  1538  2666 I SmartDevice: [CleanBufferedLogsService] Running task upload_buffered_logs_periodic
+11-07 01:19:28.876  1538  2666 I ConsentLogging: [LoggingStore] No events available for subdirectory
+11-07 01:19:28.879  2879  2879 I AccessibilityNodeInfoDumper: Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@57460; boundsInParent: Rect(0, 0 - 608, 0); boundsInScreen: Rect(56, 270 - 664, 270); boundsInWindow: Rect(56, 270 - 664, 270); packageName: com.google.android.apps.nexuslauncher; className: android.view.ViewGroup; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; containerTitle: null; viewIdResName: com.google.android.apps.nexuslauncher:id/smartspace_subtitle_group; uniqueId: null; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; granularScrollingSupported: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]; isTextSelectable: false
+11-07 01:19:28.884  2879  2879 W AccessibilityNodeInfoDumper: Fetch time: 5ms
+11-07 01:19:28.886  2946  2974 D WM-ConstraintTracker: NetworkStateTracker24: initial state = NetworkState(isConnected=true, isValidated=true, isMetered=false, isNotRoaming=true)
+11-07 01:19:28.876  1538  2666 W SmartDevice: [SmartDeviceBufferedLogs] No buffered logs for source SMART_SETUP after SUW is complete
+11-07 01:19:28.886  2946  2974 D WM-NetworkStateTracker: Registering network callback
+11-07 01:19:28.888  1538  2666 I ConsentLogging: [LoggingStore] No events available for subdirectory
+11-07 01:19:28.888  1538  2666 W SmartDevice: [SmartDeviceBufferedLogs] No buffered logs for source ANDROID_AUTH after SUW is complete
+11-07 01:19:28.888   630  1948 W MagnificationConnectionManager: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
+11-07 01:19:28.889   630  1948 D AccessibilityManagerService: restoreCurrentUserForTestAutomationIfNeededLocked(): ignoring because device doesn't support visible background users
+11-07 01:19:28.890   630  1927 D ConnectivityService: requestNetwork for uid/pid:10193/2946 activeRequest: null callbackRequest: 111 [NetworkRequest [ REQUEST id=112, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10193 RequestorUid: 10193 RequestorPkg: com.google.android.rkpdapp UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false
+11-07 01:19:28.897   630   797 D ConnectivityService: NetReassign [112 : null → 100] [c 1] [a 1] [i 1]
+11-07 01:19:28.898  2946  2974 D WM-PackageManagerHelper: Skipping component enablement for androidx.work.impl.background.systemalarm.RescheduleReceiver
+11-07 01:19:28.899  2946  2974 D WM-GreedyScheduler: Constraints met: Scheduling work ID WorkGenerationalId(workSpecId=2078a677-26bd-4b9e-9ffe-1eaf8fcc5ff7, generation=0)
+11-07 01:19:28.899  2946  2961 D WM-GreedyScheduler: Constraints met: Scheduling work ID WorkGenerationalId(workSpecId=d0bd8e46-9365-45c8-bed6-e34f1dd2156c, generation=0)
+11-07 01:19:28.900   630   790 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=112, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10193 RequestorUid: 10193 RequestorPkg: com.google.android.rkpdapp UnderlyingNetworks: Null] ]
+11-07 01:19:28.901   630   790 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=112, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10193 RequestorUid: 10193 RequestorPkg: com.google.android.rkpdapp UnderlyingNetworks: Null] ]
+11-07 01:19:28.901   630   790 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=112, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10193 RequestorUid: 10193 RequestorPkg: com.google.android.rkpdapp UnderlyingNetworks: Null] ]
+11-07 01:19:28.901   630   790 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=112, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10193 RequestorUid: 10193 RequestorPkg: com.google.android.rkpdapp UnderlyingNetworks: Null] ]
+11-07 01:19:28.902  2946  2961 D WM-Processor: Processor: processing WorkGenerationalId(workSpecId=2078a677-26bd-4b9e-9ffe-1eaf8fcc5ff7, generation=0)
+11-07 01:19:28.904  2946  2961 D WM-Processor: Processor: processing WorkGenerationalId(workSpecId=d0bd8e46-9365-45c8-bed6-e34f1dd2156c, generation=0)
+11-07 01:19:28.907   630   630 D BatterySaverPolicy: accessibility changed to false, updating policy.
+11-07 01:19:28.907  2946  2976 D WM-NetworkStateTracker: Network capabilities changed: [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED LinkUpBandwidth>=12000Kbps LinkDnBandwidth>=30000Kbps TransportInfo: <SSID: <unknown ssid>, BSSID: 02:00:00:00:00:00, MAC: 02:00:00:00:00:00, IP: /10.0.2.16, Security type: 0, Supplicant state: COMPLETED, Wi-Fi standard: legacy, RSSI: -50, Link speed: 1Mbps, Tx Link speed: 1Mbps, Max Supported Tx Link speed: 54Mbps, Rx Link speed: 2Mbps, Max Supported Rx Link speed: 54Mbps, Frequency: 2437MHz, Net ID: -1, Metered hint: false, score: 60, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: -1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none><none>MLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>> SignalStrength: -50 UnderlyingNetworks: Null]
+11-07 01:19:28.910  2946  2961 D CompatChangeReporter: Compat change id reported: 263076149; UID 10193; state: ENABLED
+11-07 01:19:28.911  1366  1747 I AiAiEcho: Settings changed for uri: content://settings/secure/accessibility_enabled
+11-07 01:19:28.912  1538  1538 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.smartdevice.logging.CleanBufferedLogsService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-07 01:19:28.913  2946  2946 D WM-WorkerWrapper: Starting work for com.android.rkpdapp.provisioner.PeriodicProvisioner
+11-07 01:19:28.916  1366  1508 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-07 01:19:28.916  1366  1508 I AiAiEcho: EchoTargets: 
+11-07 01:19:28.916  1366  1508 I AiAiEcho: Filtered by AiAi flag check: 
+11-07 01:19:28.916  1366  1508 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-07 01:19:28.919  2946  2946 D WM-WorkerWrapper: Starting work for com.android.rkpdapp.provisioner.WidevineProvisioner
+11-07 01:19:28.920  2946  2977 I RkpdPeriodicProvisioner: Waking up; checking provisioning state.
+11-07 01:19:28.929  1366  1508 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-07 01:19:28.929  1366  1508 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-07 01:19:28.930  2879  2879 D AndroidRuntime: Shutting down VM
+11-07 01:19:28.930  1366  1508 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+--------- beginning of kernel
+11-07 01:19:28.906     0     0 I servicemanager: Caller(pid=2946,uid=10193,sid=u:r:rkpdapp:s0:c193,c256,c512,c768) Found android.hardware.security.keymint.IRemotelyProvisionedComponent/default in device VINTF manifest.
+11-07 01:19:28.937  2960  2960 D CompatChangeReporter: Compat change id reported: 202956589; UID 10140; state: ENABLED
+11-07 01:19:28.938  2946  2978 I DrmHalHidl: No hidl drm factories found
+11-07 01:19:28.938  1366  1508 I AiAiEcho: EchoTargets: 
+11-07 01:19:28.938  1366  1508 I AiAiEcho: Filtered by AiAi flag check: 
+11-07 01:19:28.938  1366  1508 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-07 01:19:28.938   201   201 I hwservicemanager: getTransport: Cannot find entry android.hardware.drm@1.0::IDrmFactory/default in either framework or device VINTF manifest.
+11-07 01:19:28.938  1366  1508 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-07 01:19:28.939  2946  2978 E DrmHalHidl: Failed to find passthrough drm factories
+11-07 01:19:28.939  1366  1508 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-07 01:19:28.940  1366  1508 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-07 01:19:28.942  1366  1508 I AiAiEcho: EchoTargets: 
+11-07 01:19:28.942  1366  1508 I AiAiEcho: Filtered by AiAi flag check: 
+11-07 01:19:28.942  1366  1508 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-07 01:19:28.943  1366  1508 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-07 01:19:28.945  1614  1930 I A       : NGA enabled in interactor.
+11-07 01:19:28.945  1614  1930 I A       : (REDACTED) Nga state changed to %s
+11-07 01:19:28.945  1366  1508 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-07 01:19:28.945  1614  1930 I A       : (REDACTED) isTngActive=%s
+11-07 01:19:28.921     0     0 I servicemanager: Caller(pid=2946,uid=10193,sid=u:r:rkpdapp:s0:c193,c256,c512,c768) Since 'android.hardware.drm.IDrmFactory/clearkey' could not be found trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+11-07 01:19:28.947  1366  1508 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface media_data_manager with targets# 0 (types=[])
+11-07 01:19:28.948  1366  1508 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+11-07 01:19:28.949  1366  1508 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+11-07 01:19:28.949  1422  2440 I A       : Initializing all components
+11-07 01:19:28.950  1164  1164 D SsBaseTemplateCard: No text view can be set up
+11-07 01:19:28.951  1164  1164 D SsBaseTemplateCard: Passed-in item info is null
+11-07 01:19:28.951  1164  1164 D SsBaseTemplateCard: Passed-in item info is null
+11-07 01:19:28.952  1164  1164 D SsBaseTemplateCard: Passed-in item info is null
+11-07 01:19:28.952  1164  1164 I SsBaseTemplateCard: Secondary card pane is null
+11-07 01:19:28.929     0     0 I init    : starting service 'vendor.drm-clearkey-service'...
+11-07 01:19:28.952  1422  1628 I A       : (REDACTED) onIsEnabledChanged, isEnabled: %s
+11-07 01:19:28.953  1422  1628 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:19:28.953  1422  1628 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:19:28.954  1422  1628 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:19:28.954  1422  1628 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:19:28.954  1422  1628 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:19:28.955  1422  1628 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:19:28.955  1422  1628 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:19:28.955  1422  1628 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:19:28.955  1422  1628 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:19:28.955  1422  1628 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:19:28.955  1422  1628 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:19:28.956  1422  1628 I A       : (REDACTED) Setting session to type: %s
+11-07 01:19:28.956  1422  1628 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:19:28.956  1422  1628 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:19:28.956  1422  1628 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:19:28.958  1422  1628 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:19:28.958  1422  1628 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:19:28.958  1422  1628 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:19:28.958  1422  1736 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+11-07 01:19:28.958  1422  1628 I A       : (REDACTED) setNavBarVisible: %s
+11-07 01:19:28.959  1422  1736 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+11-07 01:19:28.959  1422  1628 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:19:28.959  1422  1628 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:19:28.959  1422  1628 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:19:28.960  1422  1628 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:19:28.960  1422  1628 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:19:28.960  2130  2142 W .apps.messaging: Suspending all threads took: 15.678ms
+11-07 01:19:28.960  1422  1628 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:19:28.969  1422  1622 I NgaEntryPointEventSendr: setupConnection
+11-07 01:19:28.972  1422  1628 I A       : (REDACTED) stopListening(%s, %s)
+11-07 01:19:28.976  1164  1559 D EGL_emulation: app_time_stats: avg=507.09ms min=24.37ms max=989.81ms count=2
+11-07 01:19:28.980  1422  1733 I ALT.ARCProvider: (REDACTED) #audio# activating audio request client(%s)
+11-07 01:19:28.982   882   882 D SsMediaDataProvider: Forwarding Smartspace updates []
+11-07 01:19:28.986   882   882 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+11-07 01:19:28.988  1129  1908 I NetworkScheduler.Stats: HousekeepingTask com.google.android.gms/com.google.android.gms.smartdevice.logging.CleanBufferedLogsService finished executing. cause:0 result: 1 elapsed_millis: 308 uptime_millis: 308 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-07 01:19:28.991  1422  1733 I ALT.ClientsRegy: (REDACTED) #audio# activating audio client(token(%d), %s)
+11-07 01:19:28.994  1422  1733 I ALT.ClientsRegy: (REDACTED) #audio# enforcing concurrency state on a new client(%s, token(%d))
+11-07 01:19:28.995  1422  1733 I ALT.AudioRoutesRegy: (REDACTED) #audio# initializing the default route(%d) for %s
+11-07 01:19:28.999  2946  2977 D CompatChangeReporter: Compat change id reported: 247079863; UID 10193; state: ENABLED
+11-07 01:19:29.001  1422  1733 I ALT.ARClient: (REDACTED) #audio# routing audio request client(token(%d)) to(%s)
+11-07 01:19:29.002  1422  1733 I ALT.HotwordRoutesRegy: (REDACTED) #audio# initializing the default route(%s) for hotword
+11-07 01:19:29.003  2946  2977 V RkpdServerInterface: Requesting data from server. Attempt 1
+11-07 01:19:29.005  1422  1733 I ALT.AudioRoutesRegy: (REDACTED) #audio# updating to audio route(token(%d), %s) for %s
+11-07 01:19:29.006  1422  1733 I ALT.AudioRoutesRegy: (REDACTED) #audio# audio route(token(%d), %s) OK to update
+11-07 01:19:29.006  1422  1733 I ALT.AudioRoutesRegy: (REDACTED) #audio# enforcing concurrency state on a new audio route of %s
+11-07 01:19:28.985     0     0 I init    : ... started service 'vendor.drm-clearkey-service' has pid 2980
+11-07 01:19:28.987     0     0 I init    : Control message: Processed ctl.interface_start for 'aidl/android.hardware.drm.IDrmFactory/clearkey' from pid: 200 (/system/bin/servicemanager)
+11-07 01:19:29.012  1422  1733 I ALT.AudioRoutesRegy: (REDACTED) #audio# disconnecting(%s) audio %s for %s
+11-07 01:19:29.015   422  2983 I resolv  : GetAddrInfoHandler::run: {100 100 100 983140 10193 0}
+11-07 01:19:29.016   422  2984 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+11-07 01:19:29.017   422  2985 I resolv  : res_nmkquery: (QUERY, IN, A)
+11-07 01:19:29.018  1422  1733 I ALT.AudioRoutesRegy: (REDACTED) #audio# starting connection to audio route(token(%d), %s) for %s
+11-07 01:19:29.020  1422  1733 I A       : (REDACTED) State changed: %s => %s by %s and %s with %s
+11-07 01:19:29.021   422  2984 I resolv  : res_nsend: used send_dg 505 terrno: 0
+11-07 01:19:29.021   422  2984 I resolv  : doQuery: rcode=0, ancount=8, return value=505
+11-07 01:19:29.022  1422  1622 I NgaEntryPointEventSendr: (REDACTED) State changed: %s => %s
+11-07 01:19:29.024   422  2985 I resolv  : res_nsend: used send_dg 437 terrno: 0
+11-07 01:19:29.025   422  2985 I resolv  : doQuery: rcode=0, ancount=8, return value=437
+11-07 01:19:29.025  2544  2544 D CompatChangeReporter: Compat change id reported: 311402873; UID 10100; state: ENABLED
+11-07 01:19:29.026  1422  1736 I A       : Initialize
+11-07 01:19:29.026  2544  2544 D CompatChangeReporter: Compat change id reported: 323349338; UID 10100; state: ENABLED
+11-07 01:19:29.027  2980  2980 I AidlLazyServiceRegistrar: Registering service android.hardware.drm.IDrmFactory/clearkey
+11-07 01:19:29.027  1422  1736 I A       : (REDACTED) on opa visibility changed %s
+11-07 01:19:29.029   630  1034 D CompatChangeReporter: Compat change id reported: 311402873; UID 10100; state: ENABLED
+11-07 01:19:29.027  1422  1736 I A       : (REDACTED) on opa visibility changed %s
+11-07 01:19:29.030   630  1034 D CompatChangeReporter: Compat change id reported: 323349338; UID 10100; state: ENABLED
+11-07 01:19:29.030  1422  1622 I INV.SystemUI: showGestureNav
+11-07 01:19:29.031  1422  1622 I INV.SystemUI: (REDACTED) setUiHints(hints = %s)
+11-07 01:19:29.031  1422  1733 I A       : (REDACTED) Recognizer choice: (recognizer_type: %s, recognizer_mode: %s, choice_reason: %s)
+11-07 01:19:29.032  2946  2977 D TrafficStats: tagSocket(95) with statsTag=0x1, statsUid=-1
+11-07 01:19:29.010     0     0 I servicemanager: Caller(pid=2980,uid=1013,sid=u:r:hal_drm_clearkey_aidl:s0) Found android.hardware.drm.IDrmFactory/clearkey in device VINTF manifest.
+11-07 01:19:29.039  2130  2142 I .apps.messaging: Background concurrent mark compact GC freed 18MB AllocSpace bytes, 1(20KB) LOS objects, 49% free, 14MB/29MB, paused 37.993ms,4.648ms total 211.642ms
+11-07 01:19:29.039  1422  1622 I ALT.RefManager: (REDACTED) #audio# referencing(%s) to(%s), (%s)
+11-07 01:19:29.042  1422  1622 I NgaEntryPointEventSendr: onServiceConnected
+11-07 01:19:29.043  2980  2980 I AidlLazyServiceRegistrar: Process has 1 (of 1 available) client(s) in use after notification android.hardware.drm.IDrmFactory/clearkey has clients: 1
+11-07 01:19:29.043  1422  1733 I A       : (REDACTED) onActiveStateChangeEvent: %s => %s
+11-07 01:19:29.044  1309  1309 I DeviceModeMonitor2: DeviceModeMonitor2.calculateAndNotify():101 Device mode 'phone' from display metrics 'DisplayMetrics{density=0.0, width=720, height=1604, scaledDensity=0.0, xdpi=264.0, ydpi=264.0}' or smallestScreenWidthDp: 436
+11-07 01:19:29.046  2946  2978 I DrmUtils: found IDrmFactory. Instance name:[android.hardware.drm.IDrmFactory/clearkey]
+11-07 01:19:29.047  1422  1736 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+11-07 01:19:29.047   630  1936 W system_server: Long monitor contention with owner appscheduling.default (721) at void com.android.server.job.JobSchedulerService$JobHandler.handleMessage(android.os.Message)(JobSchedulerService.java:3499) waiters=0 in void com.android.server.job.JobServiceContext.doCallback(com.android.server.job.JobServiceContext$JobCallback, boolean, java.lang.String) for 166ms
+11-07 01:19:29.050  2946  2978 I DrmUtils: found IDrmFactory. Instance name:[android.hardware.drm.IDrmFactory/widevine]
+11-07 01:19:29.020     0     0 I servicemanager: Notifying android.hardware.drm.IDrmFactory/clearkey they do (previously: don't) have clients when service is guaranteed to be in use
+11-07 01:19:29.024     0     0 I BpBinder: onLastStrongRef automatically unlinking death recipients:
+11-07 01:19:29.050  1309  2025 I PhenotypeModule: PhenotypeModule.handlePhenotypeConfigurationUpdatesInternal():538 Latency of updating configurations from phenotype (experiment v4): 15
+11-07 01:19:29.051  1309  2025 I PhenotypeModule: PhenotypeModule.handlePhenotypeConfigurationUpdates():478 Latency of updating configurations from phenotype (ExperimentV4): 15
+11-07 01:19:29.053  1309  2025 I PhenotypeModule: PhenotypeModule.handleResult():319 fetchAndUpdate() : Success, hasFlags=true, fetchStatus=2026-11-07 01:19:19{reason=ON_CREATE, isFullFetch=true, isEmpty=false, registeredFormFactor=phone, fetchedFormFactor=phone, success=true, failureMessage=null, isDelta=false, fetchedFlagsCount=1052, deletedFlagsCount=0, totalTime=9856}
+11-07 01:19:29.053  1614  1637 I A       : Calling beginBinderSession().
+11-07 01:19:29.054   483   483 I WVCdm   : [cdm_engine.cpp(1092):IsSecurityLevelSupported] level = L1
+11-07 01:19:29.059  1422  1628 I ALT.AudioEventsHolder: (REDACTED) #audio# route(%s) for audio request client(token(%d)) updated with status(%s)
+11-07 01:19:29.060   483   483 I WVCdm   : [file_utils.cpp(38):Exists] stat failed: ENOENT
+11-07 01:19:29.060   483   483 I WVCdm   : [oemcrypto_adapter_dynamic.cpp(826):Initialize] Level 3 Build Info (v18): {"soc_vendor":"L3_33100","soc_model":"X86 64 bit","ta_ver":"18.1.0+Feb 20 2024_20:28:28_","uses_opk":false,"tee_os":"none","tee_os_ver":"0.0.0","form_factor":"L3","implementer":"Widevine","fused":false}
+11-07 01:19:29.060   483  2988 I WVCdm   : [(0):] Level3 Library 33100 Feb 20 2024 20:28:28
+11-07 01:19:29.066   422   487 I netd    : tetherGetStats() -> {[]} <1.22ms>
+11-07 01:19:29.086  2960  2960 V GraphicsEnvironment: Currently set values for:
+11-07 01:19:29.086  2960  2960 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+11-07 01:19:29.086  2960  2960 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+11-07 01:19:29.086  2960  2960 V GraphicsEnvironment: Global.Settings values are invalid: number of packages: 0, number of values: 0
+11-07 01:19:29.086  2960  2960 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+11-07 01:19:29.092  1614  1637 I A       : beginBinderSession(): calling binder
+11-07 01:19:29.099   483   483 I WVCdm   : [oemcrypto_adapter_dynamic.cpp(841):Initialize] L3 Initialized. Trying L1.
+11-07 01:19:29.099  1422  1622 I NgaEntryPointEventSendr: (REDACTED) State changed: %s => %s
+11-07 01:19:29.103  1422  1736 I A       : (REDACTED) #audio# audio routing(%s) took %d(ms)
+11-07 01:19:29.103   483   483 W WVCdm   : [oemcrypto_adapter_dynamic.cpp(854):Initialize] Could not load oemcrypto from path liboemcrypto.so.  dlopen failed: library "liboemcrypto.so" not found
+11-07 01:19:29.103   483   483 W WVCdm   : [oemcrypto_adapter_dynamic.cpp(858):Initialize] Could not load oemcrypto. Falling back to L3.
+11-07 01:19:29.104   483   483 E WVCdm   : [oemcrypto_adapter_dynamic.cpp(1326):ValidateOrInstallL1KeyboxOrCert] L1 not initialized. Falling back to L3
+11-07 01:19:29.104  1422  1628 I A       : Ignoring as prefetch was recently called
+11-07 01:19:29.104   483   483 I WVCdm   : [file_utils.cpp(38):Exists] stat failed: ENOENT
+11-07 01:19:29.104   483   483 W WVCdm   : [oemcrypto_adapter_dynamic.cpp(1531):OEMCrypto_InitializeAndCheckKeybox] Keybox error: 25. Falling back to L3.
+11-07 01:19:29.104  1422  1622 I A       : Successfully initialized all components
+11-07 01:19:29.114   483   483 I WVCdm   : [oemcrypto_adapter_dynamic.cpp(890):Level1Terminate] L1 Terminate not needed
+11-07 01:19:29.114   483   483 D WVCdm   : [crypto_session.cpp(444):CacheVersion] OEMCrypto version (default security level): 18.3
+11-07 01:19:29.114   483   483 D WVCdm   : [crypto_session.cpp(453):CacheVersion] OEMCrypto version (L3 security level): 18.3
+11-07 01:19:29.123   483   483 I WVCdm   : [(0):] L3 Terminate.
+11-07 01:19:29.125   483   483 I WVCdm-DrmFactory: [app][com.google.android.rkpdapp] calling virtual ::ndk::ScopedAStatus wvdrm::hardware::drm::widevine::WVDrmFactory::createDrmPlugin(const Uuid &, const string &, std::shared_ptr< ::aidl::android::hardware::drm::IDrmPlugin> *)
+11-07 01:19:29.125   483   483 D WVCdm   : Instantiating CDM metrics queue
+11-07 01:19:29.125   483   483 D WVCdm   : Instantiating CDM.
+11-07 01:19:29.126  2130  2562 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=c5fb2350-460f-4c14-be76-ed0cdea2ca61, tags={ com.google.android.apps.messaging.shared.datamodel.workqueue.WorkQueueWorkerShim,sim_state_update_queue-WORK_TYPE_UPDATE_PHONE_SIMS_STATE } ]
+11-07 01:19:29.129  1422  1622 I INV.SystemUI: setUiHints: finished successfully
+11-07 01:19:29.132   483   483 D WVCdm   : [cdm_engine.cpp(583):QueryStatus] security_level = Default, query_token = WidevineCdmVersion
+11-07 01:19:29.132   483   483 I WVCdm   : [file_utils.cpp(38):Exists] stat failed: ENOENT
+11-07 01:19:29.132   483   483 I WVCdm   : [oemcrypto_adapter_dynamic.cpp(826):Initialize] Level 3 Build Info (v18): {"soc_vendor":"L3_33100","soc_model":"X86 64 bit","ta_ver":"18.1.0+Feb 20 2024_20:28:28_","uses_opk":false,"tee_os":"none","tee_os_ver":"0.0.0","form_factor":"L3","implementer":"Widevine","fused":false}
+11-07 01:19:29.133   483  2992 I WVCdm   : [(0):] Level3 Library 33100 Feb 20 2024 20:28:28
+11-07 01:19:29.135   630  1948 W ActivityManager: Unable to start service Intent { cmp=com.google.android.apps.tachyon/.clientapi.ClientApiService } U=0: not found
+11-07 01:19:29.135  1422  1733 W A       : (REDACTED) Missing generator mapping for generator %s
+11-07 01:19:29.136  1422  1733 W A       : (REDACTED) Missing generator mapping for generator %s
+11-07 01:19:29.136  1422  1733 W A       : (REDACTED) Missing generator mapping for generator %s
+11-07 01:19:29.143   483   483 I WVCdm   : [oemcrypto_adapter_dynamic.cpp(841):Initialize] L3 Initialized. Trying L1.
+11-07 01:19:29.143   483   483 W WVCdm   : [oemcrypto_adapter_dynamic.cpp(854):Initialize] Could not load oemcrypto from path liboemcrypto.so.  dlopen failed: library "liboemcrypto.so" not found
+11-07 01:19:29.143   483   483 W WVCdm   : [oemcrypto_adapter_dynamic.cpp(858):Initialize] Could not load oemcrypto. Falling back to L3.
+11-07 01:19:29.144   483   483 E WVCdm   : [oemcrypto_adapter_dynamic.cpp(1326):ValidateOrInstallL1KeyboxOrCert] L1 not initialized. Falling back to L3
+11-07 01:19:29.144   483   483 I WVCdm   : [file_utils.cpp(38):Exists] stat failed: ENOENT
+11-07 01:19:29.145   483   483 W WVCdm   : [oemcrypto_adapter_dynamic.cpp(1531):OEMCrypto_InitializeAndCheckKeybox] Keybox error: 25. Falling back to L3.
+11-07 01:19:29.145   483   483 I WVCdm   : [oemcrypto_adapter_dynamic.cpp(890):Level1Terminate] L1 Terminate not needed
+11-07 01:19:29.149   483   483 D WVCdm   : [crypto_session.cpp(444):CacheVersion] OEMCrypto version (default security level): 18.3
+11-07 01:19:29.149   483   483 D WVCdm   : [crypto_session.cpp(453):CacheVersion] OEMCrypto version (L3 security level): 18.3
+11-07 01:19:29.152   483   483 D WVCdm   : [cdm_engine.cpp(583):QueryStatus] security_level = Default, query_token = ProvisioningModel
+11-07 01:19:29.153  2946  2978 I RkpdWidevine: Not a WV provisioning 4.0 device. No provisioning required.
+11-07 01:19:29.155   630  1034 D CompatChangeReporter: Compat change id reported: 311208629; UID 10100; state: ENABLED
+11-07 01:19:29.166   554   564 D statsd_drm: statsd_mediadrm skipping empty entry
+11-07 01:19:29.175  2946  2962 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=d0bd8e46-9365-45c8-bed6-e34f1dd2156c, tags={ com.android.rkpdapp.provisioner.WidevineProvisioner,WidevineProvisioner } ]
+11-07 01:19:29.182   483   483 I WVCdm   : [(0):] L3 Terminate.
+11-07 01:19:29.190  2946  2946 D WM-Processor: Processor d0bd8e46-9365-45c8-bed6-e34f1dd2156c executed; reschedule = false
+11-07 01:19:29.192  2946  2946 D WM-GreedyScheduler: Stopping tracking for WorkGenerationalId(workSpecId=d0bd8e46-9365-45c8-bed6-e34f1dd2156c, generation=0)
+11-07 01:19:29.196   422   487 I netd    : tetherGetStats() -> {[]} <0.88ms>
+11-07 01:19:29.198  1422  1733 I A       : (REDACTED) #onActiveStateChangeEvent, newState: %s, previousState: %s.
+11-07 01:19:29.207  2946  2961 D WM-GreedyScheduler: Cancelling work ID d0bd8e46-9365-45c8-bed6-e34f1dd2156c
+11-07 01:19:29.211  1129  1833 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.gcm.HeartbeatAlarm$ConnectionInfoPersistService started execution. cause:2 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-07 01:19:29.212   554  2994 W s       : AIBinder_linkToDeath is being called with a non-null cookie and no onUnlink callback set. This might not be intended. AIBinder_DeathRecipient_setOnUnlinked should be called first.
+11-07 01:19:29.217   422   487 I netd    : bandwidthSetGlobalAlert(2097152) <0.12ms>
+11-07 01:19:29.246  2946  2977 V RkpdServerInterface: Network request completed successfully.
+11-07 01:19:29.250  2946  2977 I RkpdPeriodicProvisioner: Total services found implementing IRPC: 1
+11-07 01:19:29.251  2946  2977 I RkpdPeriodicProvisioner: Starting provisioning for com.android.rkpdapp.interfaces.SystemInterface{android.hardware.security.keymint.IRemotelyProvisionedComponent/default}
+11-07 01:19:29.253   882   888 I ndroid.systemui: Compiler allocated 4999KB to compile java.lang.Object com.google.android.systemui.dagger.DaggerSysUIGoogleGlobalRootComponent$WMComponentImpl$SwitchingProvider.get7()
+11-07 01:19:29.258  2946  2977 I RkpdKeyPoolStats: Sufficient keys are available, no CSR needed.
+11-07 01:19:29.259  2946  2977 I RkpdKeyPoolStats: PoolStats{keysInUse=1, idealTotalSignedKeys=13, keysToGenerate=0, keysUnassigned=11}
+11-07 01:19:29.259  2946  2977 I RkpdProvisioner: Requested number of keys for provisioning: 0
+11-07 01:19:29.260  2946  2977 I RkpdPeriodicProvisioner: Logging atom metric for pool status, total: 12, numExpiring: 0, numUnassigned: 11
+11-07 01:19:29.262  2946  2977 I RkpdPeriodicProvisioner: Successfully provisioned com.android.rkpdapp.interfaces.SystemInterface{android.hardware.security.keymint.IRemotelyProvisionedComponent/default}
+11-07 01:19:29.271  2946  2961 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=2078a677-26bd-4b9e-9ffe-1eaf8fcc5ff7, tags={ com.android.rkpdapp.provisioner.PeriodicProvisioner } ]
+11-07 01:19:29.284  2946  2946 D WM-Processor: Processor 2078a677-26bd-4b9e-9ffe-1eaf8fcc5ff7 executed; reschedule = false
+11-07 01:19:29.284  2946  2946 D WM-GreedyScheduler: Stopping tracking for WorkGenerationalId(workSpecId=2078a677-26bd-4b9e-9ffe-1eaf8fcc5ff7, generation=0)
+11-07 01:19:29.291  1422  1628 I NgaEntryPointEventSendr: (REDACTED) State changed: %s => %s (%s)
+11-07 01:19:29.297  1614  2169 W A       : (REDACTED) %s task was not run. Callback from Service received after client was disposed.
+11-07 01:19:29.311   422   487 I netd    : bandwidthRemoveInterfaceQuota(eth0) <3.54ms>
+11-07 01:19:29.312   422   487 I netd    : bandwidthSetInterfaceQuota(eth0, 9223372036854775807) <0.80ms>
+11-07 01:19:29.318   422   487 I netd    : bandwidthRemoveInterfaceQuota(eth0) <1.00ms>
+11-07 01:19:29.319  1614  2388 I PBSessionCacheImpl: (REDACTED) Deleted sessionId[%d] from persistence.
+11-07 01:19:29.324   422   422 I netd    : bandwidthSetInterfaceQuota(eth0, 9223372036854775807) <5.09ms>
+11-07 01:19:29.324  1129  1908 I NetworkScheduler.Stats: HousekeepingTask com.google.android.gms/com.google.android.gms.gcm.HeartbeatAlarm$ConnectionInfoPersistService finished executing. cause:0 result: 1 elapsed_millis: 236 uptime_millis: 236 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-07 01:19:29.340   630   788 D NetworkStatsObservers: Registering observer for RequestInfo from pid/uid:630/1000(android) for DataUsageRequest [ requestId=8, networkTemplate=NetworkTemplate: matchRule=MOBILE, matchSubscriberIds=[310260...], matchWifiNetworkKeys=[], metered=YES, defaultNetwork=NO, thresholdInBytes=21451443 ] accessLevel:3
+11-07 01:19:29.341   630   879 D NetworkStatsObservers: Unregistering RequestInfo from pid/uid:630/1000(android) for DataUsageRequest [ requestId=7, networkTemplate=NetworkTemplate: matchRule=MOBILE, matchSubscriberIds=[310260...], matchWifiNetworkKeys=[], metered=YES, defaultNetwork=NO, thresholdInBytes=21454703 ] accessLevel:3
+11-07 01:19:29.382  2130  2561 I ClearcutUploader: Mobalt: start uploading logs to Clearcut log_source = TURQUOISE_COBALT_SHUFFLER_INPUT_PROD
+11-07 01:19:29.394  2946  2961 D WM-GreedyScheduler: Cancelling work ID 2078a677-26bd-4b9e-9ffe-1eaf8fcc5ff7
+11-07 01:19:29.398   422   422 I netd    : tetherGetStats() -> {[]} <9.86ms>
+11-07 01:19:29.404  1614  2169 W SearchServiceCore: Abort, client detached.
+11-07 01:19:29.404  1614  2169 W SearchServiceCore: Abort, client detached.
+11-07 01:19:29.407  2946  2961 D WM-SystemJobScheduler: Scheduling work ID 2078a677-26bd-4b9e-9ffe-1eaf8fcc5ff7Job ID 10
+11-07 01:19:29.408   979   989 W System  : A resource failed to call close. 
+11-07 01:19:29.410  2960  2960 W BatterySettingsContentProvider: create content provider from null
+11-07 01:19:29.411  2130  2562 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=ce361ded-ff4c-4973-90e8-c8921a8aa010, tags={ com.google.android.apps.messaging.shared.datamodel.workqueue.WorkQueueWorkerShim,sim_state_update_queue-WORK_TYPE_UPDATE_PHONE_SIMS_STATE } ]
+11-07 01:19:29.426  1614  2169 W SearchServiceCore: Abort, client detached.
+11-07 01:19:29.426  2130  2252 I MobaltPeriodicJobImpl: Mobalt: uploading logs to the Cobalt Server, got 0 observations
+11-07 01:19:29.430  2130  2915 I MobaltPeriodicJobImpl: Mobalt: finish sending logs to the Cobalt Server successfully
+11-07 01:19:29.433  2946  2961 D WM-NetworkStateTracker: Unregistering network callback
+11-07 01:19:29.448  2960  2960 W PrimesLoggerHolder: Primes not initialized, returning default (no-op) Primes instance which will ignore all calls. Please call Primes.initialize(...) before using any Primes API.
+11-07 01:19:29.465  2130  2915 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=2a836176-3f85-42bf-848c-074068d1ed5d, tags={ com.google.android.libraries.communications.mobileconfiguration.sync.SyncWorker,SYNC } ]
+11-07 01:19:29.467  2130  2915 I WM-WorkerWrapper: Setting status to enqueued for 5f5d4fe2-f295-485e-a228-ca239dd07b03
+11-07 01:19:29.507  2960  2960 D CompatChangeReporter: Compat change id reported: 311402873; UID 10140; state: ENABLED
+11-07 01:19:29.507  2960  2960 D CompatChangeReporter: Compat change id reported: 323349338; UID 10140; state: ENABLED
+11-07 01:19:29.508  2960  2960 W JobInfo : Job 'com.google.android.settings.intelligence/.modules.routines.impl.RoutinesJobIntentService#1728' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+11-07 01:19:29.509   630  1827 D CompatChangeReporter: Compat change id reported: 311402873; UID 10140; state: ENABLED
+11-07 01:19:29.510   630  1827 D CompatChangeReporter: Compat change id reported: 323349338; UID 10140; state: ENABLED
+11-07 01:19:29.510   630  1827 W JobInfo : Job 'com.google.android.settings.intelligence/.modules.routines.impl.RoutinesJobIntentService#1728' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+11-07 01:19:29.532  1129  1129 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.gmscompliance.sync.BackgroundSyncGmsTaskService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentInternalBoundBrokerService }
+11-07 01:19:29.532  1129  1129 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.gmscompliance.sync.BackgroundSyncGmsTaskService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentInternalBoundBrokerService }
+11-07 01:19:29.538  1129  1833 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.gmscompliance.sync.BackgroundSyncGmsTaskService started execution. cause:2 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-07 01:19:29.555  1614  1930 I A       : Successfully scheduled next onetime workers
+11-07 01:19:29.572  1129  1908 I NetworkScheduler.Stats: HousekeepingTask com.google.android.gms/com.google.android.gms.gmscompliance.sync.BackgroundSyncGmsTaskService finished executing. cause:0 result: 1 elapsed_millis: 40 uptime_millis: 40 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-07 01:19:29.580  1129  1129 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.gmscompliance.sync.BackgroundSyncGmsTaskService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentInternalBoundBrokerService }
+11-07 01:19:29.613  1614  1614 D MddPeriodicWorker: PeriodicWorker: startWork
+11-07 01:19:29.617  1614  2491 E SingleDataFileGroupPop: Failed to add file group 
+11-07 01:19:29.618  1614  2491 E PhFileGroupPop: Failed to add file group 
+11-07 01:19:29.618  1614  2491 E PhFileGroupPop: Failed to add file group 
+11-07 01:19:29.618  1614  2491 E PhFileGroupPop: Failed to add file group 
+11-07 01:19:29.618  1614  2491 E PhFileGroupPop: Failed to add file group 
+11-07 01:19:29.619  1614  2491 E PhFileGroupPop: Failed to add file group 
+11-07 01:19:29.619  1614  2491 E PhFileGroupPop: Failed to add file group 
+11-07 01:19:29.620  1614  2491 E PhFileGroupPop: Failed to add file group 
+11-07 01:19:29.620  1614  2491 E PhFileGroupPop: Failed to add file group 
+11-07 01:19:29.620  1614  2491 I A       : Scheduling next refresh
+11-07 01:19:29.621  1614  2491 I A       : Scheduling next refresh
+11-07 01:19:29.622  1614  2491 I A       : Scheduling next refresh
+11-07 01:19:29.623  1614  2491 I A       : Scheduling next refresh
+11-07 01:19:29.624  1614  2491 I A       : Scheduling next refresh
+11-07 01:19:29.629  1614  2491 I A       : Scheduling next refresh
+11-07 01:19:29.630  1614  2491 E SingleDataFileGroupPop: Failed to add file group 
+11-07 01:19:29.633  1614  2491 I ZipLPPopulator: #scheduleLanguagePackDeletion
+11-07 01:19:29.633  1614  2491 I ZipLPPopulator: com.google.common.f.w: MEDIUM
+11-07 01:19:29.633  1614  2491 I ZipLPPopulator: 	at com.google.android.libraries.speech.b.b.k.aj.b(PG:22)
+11-07 01:19:29.633  1614  2491 I ZipLPPopulator: 	at com.google.android.libraries.mdi.download.gg.y(PG:24)
+11-07 01:19:29.633  1614  2491 I ZipLPPopulator: 	at com.google.android.libraries.mdi.download.gg.C(PG:1)
+11-07 01:19:29.633  1614  2491 I ZipLPPopulator: 	at com.google.android.libraries.mdi.download.gg.i(PG:90)
+11-07 01:19:29.633  1614  2491 I ZipLPPopulator: 	at com.google.android.libraries.search.integrations.g.b.p.i(PG:17)
+11-07 01:19:29.633  1614  2491 I ZipLPPopulator: 	at com.google.android.libraries.mdi.download.workmanager.workers.a.a(PG:7)
+11-07 01:19:29.633  1614  2491 I ZipLPPopulator: 	at com.google.apps.tiktok.tracing.fe.a(PG:13)
+11-07 01:19:29.633  1614  2491 I ZipLPPopulator: 	at com.google.common.util.concurrent.ds.a(PG:3)
+11-07 01:19:29.633  1614  2491 I ZipLPPopulator: 	at com.google.common.util.concurrent.cu.run(PG:21)
+11-07 01:19:29.633  1614  2491 I ZipLPPopulator: 	at com.google.common.util.concurrent.du.run(PG:5)
+11-07 01:19:29.633  1614  2491 I ZipLPPopulator: 	at com.google.android.libraries.k.x.run(PG:3)
+11-07 01:19:29.633  1614  2491 I ZipLPPopulator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-07 01:19:29.633  1614  2491 I ZipLPPopulator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-07 01:19:29.633  1614  2491 I ZipLPPopulator: 	at com.google.android.libraries.k.b.run(PG:6)
+11-07 01:19:29.633  1614  2491 I ZipLPPopulator: 	at java.lang.Thread.run(Thread.java:1012)
+11-07 01:19:29.633  1614  2491 I ZipLPPopulator: 	at com.google.android.libraries.k.d.b.run(PG:74)
+11-07 01:19:29.637  1538  1548 I gle.android.gms: Background concurrent mark compact GC freed 6624KB AllocSpace bytes, 93(4468KB) LOS objects, 49% free, 9620KB/18MB, paused 19.617ms,9.474ms total 375.394ms
+11-07 01:19:29.639  1614  2491 I ZipLPPopulator: #addNewFileGroups
+11-07 01:19:29.643  1614  2491 I A       : #getDownloadableLanguagePacks
+11-07 01:19:29.651  1614  2491 I A       : (REDACTED) Loaded languagepack (LP) flag value from latest config %s: %s
+11-07 01:19:29.651  1614  2491 I A       : (REDACTED) Download file group for language pack: %s
+11-07 01:19:29.651  1614  2491 W A       : (REDACTED) Locale %s is not compatible, please check manifest exists
+11-07 01:19:29.652  1614  1913 I LPRequestState: (REDACTED) [%s] #resolveDesiredLanguagePacks
+11-07 01:19:29.653  1614  2173 I A       : #getInstalledPackages
+11-07 01:19:29.653  1614  2491 I A       : getLocaleToModelSpecsMap
+11-07 01:19:29.653  1538  1550 W gle.android.gms: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/priv-app/SettingsGoogle/SettingsGoogle.apk' with 1 weak references
+11-07 01:19:29.653  1614  2491 I A       : Fetching latest config from MDD...
+11-07 01:19:29.654  1614  2491 I A       : (REDACTED) Found map of size: %d
+11-07 01:19:29.654  1538  1550 W gle.android.gms: ApkAssets: Deleting an ApkAssets object '/product/overlay/SettingsGoogle__sdk_gphone64_x86_64__auto_generated_rro_product.apk' with 1 weak references
+11-07 01:19:29.655  1614  2491 I HotwordModelPopulator: (REDACTED) #updateHotwordFileGroup group name: %s, raw locale: %s, locale: %s
+11-07 01:19:29.655  1614  2491 I A       : getLocaleToModelSpecsMap
+11-07 01:19:29.656  1614  2491 I A       : Fetching latest config from MDD...
+11-07 01:19:29.656  1614  2491 I A       : (REDACTED) Found map of size: %d
+11-07 01:19:29.656  1614  2491 I HotwordModelPopulator: (REDACTED) #updateHotwordFileGroup group name: %s, raw locale: %s, locale: %s
+11-07 01:19:29.666  1129  1129 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.nearby.fastpair.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiServiceNoInstantApps }
+11-07 01:19:29.666  1129  1129 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.nearby.fastpair.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiServiceNoInstantApps }
+11-07 01:19:29.689  1129  1781 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.auth.folsom.service.FolsomPublicKeyUpdateService started execution. cause:2 exec_start_elapsed_seconds: 39 [CONTEXT service_id=218 ]
+11-07 01:19:29.717   630  1746 W JobInfo : Job 'com.google.android.settings.intelligence/.modules.routines.impl.RoutinesJobIntentService#1728' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+11-07 01:19:29.719   630   650 W JobInfo : Job 'com.google.android.settings.intelligence/.modules.routines.impl.RoutinesJobIntentService#1728' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+11-07 01:19:29.735  1129  1781 I NetworkScheduler.Stats: HousekeepingTask com.google.android.gms/com.google.android.gms.auth.folsom.service.FolsomPublicKeyUpdateService finished executing. cause:0 result: 1 elapsed_millis: 90 uptime_millis: 90 exec_start_elapsed_seconds: 39 [CONTEXT service_id=218 ]
+11-07 01:19:29.751  2130  2562 D MddListenableWorkerFactory: createWorker for class: com.google.android.apps.messaging.shared.datamodel.workqueue.WorkQueueWorkerShim
+11-07 01:19:29.756  2960  2960 W BatteryWidgetBootBroadcastReceiver: onReceive: Intent { act=android.intent.action.BOOT_COMPLETED flg=0x89000010 cmp=com.google.android.settings.intelligence/.modules.batterywidget.impl.BatteryWidgetBootBroadcastReceiver (has extras) }
+11-07 01:19:29.756   630   666 D CompatChangeReporter: Compat change id reported: 151861875; UID 10103; state: ENABLED
+11-07 01:19:29.756   630   666 V GrammaticalInflectionUtils: AttributionSource: AttributionSource { uid = 10103, packageName = null, attributionTag = null, token = android.os.Binder@58f6a53, deviceId = 0, next = null } does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+11-07 01:19:29.776   630  1948 I AppWidgetServiceImpl: getInstalledProvidersForProfiles() 0
+11-07 01:19:29.776   630  1936 I AppWidgetServiceImpl: getAppWidgetIds() 0
+11-07 01:19:29.779   423   423 D Zygote  : Forked child process 3007
+11-07 01:19:29.786   630  1948 I AppWidgetServiceImpl: notifyProviderInheritance() 0
+11-07 01:19:29.788   630   667 I ActivityManager: Start proc 3007:com.android.externalstorage/u0a103 for broadcast {com.android.externalstorage/com.android.externalstorage.MountReceiver}
+11-07 01:19:29.791   882   888 W ndroid.systemui: Missing inline cache for void com.google.android.systemui.assist.uihints.NgaMessageHandler.processBundle(android.os.Bundle, java.lang.Runnable)
+11-07 01:19:29.791   882   888 W ndroid.systemui: Missing inline cache for void com.google.android.systemui.assist.uihints.NgaMessageHandler.processBundle(android.os.Bundle, java.lang.Runnable)
+11-07 01:19:29.794  1614  1623 I earchbox:search: Compiler allocated 5652KB to compile java.lang.Object com.google.android.apps.gsa.binaries.velvet.app.arq.f()
+11-07 01:19:29.803  3007  3007 I externalstorage: Using CollectorTypeCMC GC.
+11-07 01:19:29.806  3007  3007 W externalstorage: Unexpected CPU variant for x86: x86_64.
+11-07 01:19:29.806  3007  3007 W externalstorage: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, goldmont-without-sha-xsaves, tremont, kabylake, default
+11-07 01:19:29.815  3007  3007 E externalstorage: Not starting debugger since process cannot load the jdwp agent.
+11-07 01:19:29.819  1614  1932 I WM-WorkerWrapper: Work [ id=c8c4ef81-55d8-48d2-8a9e-21af4740ffd9, tags={ com.google.apps.tiktok.contrib.work.TikTokListenableWorker,com.google.apps.tiktok.sync.impl.workmanager.SyncWorker,TikTokWorker#com.google.apps.tiktok.sync.impl.workmanager.SyncWorker } ] was cancelled
+11-07 01:19:29.819  1614  1932 I WM-WorkerWrapper: androidx.work.impl.ba
+11-07 01:19:29.819  1614  1932 I WM-WorkerWrapper: 	at androidx.work.impl.r.e(PG:5)
+11-07 01:19:29.819  1614  1932 I WM-WorkerWrapper: 	at androidx.work.impl.utils.h.b(PG:91)
+11-07 01:19:29.819  1614  1932 I WM-WorkerWrapper: 	at androidx.work.impl.utils.b.run(PG:31)
+11-07 01:19:29.819  1614  1932 I WM-WorkerWrapper: 	at androidx.room.bi.w(PG:4)
+11-07 01:19:29.819  1614  1932 I WM-WorkerWrapper: 	at androidx.work.impl.utils.h.c(PG:14)
+11-07 01:19:29.819  1614  1932 I WM-WorkerWrapper: 	at androidx.work.impl.utils.j.a(PG:330)
+11-07 01:19:29.819  1614  1932 I WM-WorkerWrapper: 	at androidx.work.impl.ad.a(PG:3)
+11-07 01:19:29.819  1614  1932 I WM-WorkerWrapper: 	at androidx.work.ax.run(PG:7)
+11-07 01:19:29.819  1614  1932 I WM-WorkerWrapper: 	at androidx.work.impl.utils.aa.run(PG:3)
+11-07 01:19:29.819  1614  1932 I WM-WorkerWrapper: 	at com.google.android.libraries.k.x.run(PG:3)
+11-07 01:19:29.819  1614  1932 I WM-WorkerWrapper: 	at com.google.common.n.c.c.run(PG:50)
+11-07 01:19:29.819  1614  1932 I WM-WorkerWrapper: 	at com.google.android.libraries.k.e.run(PG:8)
+11-07 01:19:29.819  1614  1932 I WM-WorkerWrapper: 	at java.lang.Thread.run(Thread.java:1012)
+11-07 01:19:29.819  1614  1932 I WM-WorkerWrapper: 	at com.google.android.libraries.k.d.b.run(PG:74)
+11-07 01:19:29.820  1129  2731 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.security.safebrowsing.SafeBrowsingUpdateTaskService started execution. cause:2 exec_start_elapsed_seconds: 39 [CONTEXT service_id=218 ]
+11-07 01:19:29.822  2960  2960 W CardCollectorJobService: refreshJob, cancel job.
+11-07 01:19:29.841  1129  1781 I NetworkScheduler.Stats: HousekeepingTask com.google.android.gms/com.google.android.gms.security.safebrowsing.SafeBrowsingUpdateTaskService finished executing. cause:0 result: 1 elapsed_millis: 60 uptime_millis: 60 exec_start_elapsed_seconds: 39 [CONTEXT service_id=218 ]
+11-07 01:19:29.847  3007  3007 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+11-07 01:19:29.854  2980  2980 I AidlLazyServiceRegistrar: Process has 0 (of 1 available) client(s) in use after notification android.hardware.drm.IDrmFactory/clearkey has clients: 0
+11-07 01:19:29.854  2980  2980 I AidlLazyServiceRegistrar: Trying to shut down the service. No clients in use for any service in process.
+11-07 01:19:29.832     0     0 I servicemanager: Notifying android.hardware.drm.IDrmFactory/clearkey they don't (previously: do) have clients when we now have no record of a client
+11-07 01:19:29.836     0     0 I servicemanager: Caller(pid=2980,uid=1013,sid=u:r:hal_drm_clearkey_aidl:s0) Unregistering android.hardware.drm.IDrmFactory/clearkey
+11-07 01:19:29.839     0     0 I BpBinder: onLastStrongRef automatically unlinking death recipients:
+11-07 01:19:29.860  2980  2980 I AidlLazyServiceRegistrar: Unregistered all clients and exiting
+11-07 01:19:29.845     0     0 I init    : Service 'vendor.drm-clearkey-service' (pid 2980) exited with status 0 oneshot service took 0.904000 seconds in background
+11-07 01:19:29.846     0     0 I init    : Sending signal 9 to service 'vendor.drm-clearkey-service' (pid 2980) process group...
+11-07 01:19:29.852     0     0 I libprocessgroup: Removed cgroup /sys/fs/cgroup/uid_1013/pid_2980
+11-07 01:19:29.878  1538  1538 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.safetynet.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+11-07 01:19:29.889  1538  1538 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.safetynet.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+11-07 01:19:29.900  2130  2562 I FirebaseApp: Device unlocked: initializing all Firebase APIs for app [DEFAULT]
+11-07 01:19:29.917   882   888 W ndroid.systemui: Missing inline cache for boolean androidx.compose.ui.node.DepthSortedSet.remove(androidx.compose.ui.node.LayoutNode)
+11-07 01:19:29.947  1055  1076 D SlicesIndexer: Slices already indexed - returning.
+11-07 01:19:29.947  3007  3007 D nativeloader: Configuring clns-shared-7 for other apk /system/priv-app/ExternalStorageProvider/ExternalStorageProvider.apk. target_sdk_version=35, uses_libraries=, library_path=/system/priv-app/ExternalStorageProvider/lib/x86_64:/system/lib64:/system_ext/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.android.externalstorage:/system/priv-app/ExternalStorageProvider:/system/lib64:/system_ext/lib64
+11-07 01:19:29.950  3007  3007 D CompatChangeReporter: Compat change id reported: 202956589; UID 10103; state: ENABLED
+11-07 01:19:29.970  3007  3007 V GraphicsEnvironment: Currently set values for:
+11-07 01:19:29.970  3007  3007 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+11-07 01:19:29.974  3007  3007 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+11-07 01:19:29.974  3007  3007 V GraphicsEnvironment: Global.Settings values are invalid: number of packages: 0, number of values: 0
+11-07 01:19:29.974  3007  3007 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+11-07 01:19:29.976  1055  1076 D SettingsSliceProvider: provide 58 non-public slices
+11-07 01:19:29.976  1055  1076 D SlicesIndexer: Slices already indexed - returning.
+11-07 01:19:29.984  1055  1076 D SettingsSliceProvider: Allowlisting 70 uris to 3 pkgs.
+11-07 01:19:29.987  1055  1074 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.MemtagPreferenceController
+11-07 01:19:29.987  1055  1074 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.MemtagFooterPreferenceController
+11-07 01:19:29.988  1055  1074 W SettingsPrefController: Skipping updateNonIndexableKeys, key already in list. com.android.settings.security.MemtagFooterPreferenceController@66d920b
+11-07 01:19:29.988  1055  1074 V SettingsSearchProvider: com.android.settings.search.BaseSearchIndexProvider@ea8b8e8 tried to add an empty non-indexable key
+11-07 01:19:29.992  1055  1193 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.MemtagPreferenceController
+11-07 01:19:29.992  1055  1193 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.MemtagFooterPreferenceController
+11-07 01:19:29.993  1055  1193 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AccessibilityButtonPreferenceController
+11-07 01:19:29.997  3007  3007 D ExternalStorage: After updating volumes, found 1 active roots
+11-07 01:19:30.001  1055  1074 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AccessibilityButtonPreferenceController
+11-07 01:19:30.001  1055  1074 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AccessibilityShortcutPreferenceController
+11-07 01:19:30.002  1055  1193 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AccessibilityShortcutPreferenceController
+11-07 01:19:30.006  1055  1074 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.datausage.UnrestrictedDataAccessPreferenceController
+11-07 01:19:30.009  1538  1538 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.threadnetwork.service.firstparty.BorderRouterSyncBoundService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-07 01:19:30.009  1538  1538 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.threadnetwork.service.firstparty.BorderRouterSyncBoundService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-07 01:19:30.016  1055  1193 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.datausage.UnrestrictedDataAccessPreferenceController
+11-07 01:19:29.995     0     0 I logd    : logdr: UID=2000 GID=2000 PID=3053 n tail=400 logMask=99 pid=0 start=0ns deadline=0ns
+11-07 01:19:30.023  3007  3007 D ExternalStorage: After updating volumes, found 1 active roots

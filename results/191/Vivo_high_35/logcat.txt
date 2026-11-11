@@ -1,0 +1,732 @@
+--------- beginning of main
+11-08 01:06:26.628  1460  1602 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-08 01:06:26.628  1460  1602 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-08 01:06:26.628  1460  1602 I AiAiEcho: EchoTargets: 
+11-08 01:06:26.628  1460  1602 I AiAiEcho: Filtered by AiAi flag check: 
+11-08 01:06:26.628  1460  1602 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-08 01:06:26.628  1460  1602 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-08 01:06:26.628  1460  1602 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-08 01:06:26.628  1460  1602 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-08 01:06:26.628  1460  1602 I AiAiEcho: EchoTargets: 
+11-08 01:06:26.628  1460  1602 I AiAiEcho: Filtered by AiAi flag check: 
+11-08 01:06:26.628  1460  1602 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-08 01:06:26.628  1460  1602 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-08 01:06:26.628  1460  1602 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-08 01:06:26.628  1460  1602 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+11-08 01:06:26.628  1460  1602 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface media_data_manager with targets# 0 (types=[])
+11-08 01:06:26.629  1460  1602 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+11-08 01:06:26.629  1341  1341 D SsBaseTemplateCard: No text view can be set up
+11-08 01:06:26.629  1341  1341 D SsBaseTemplateCard: Passed-in item info is null
+11-08 01:06:26.629  1341  1341 D SsBaseTemplateCard: Passed-in item info is null
+11-08 01:06:26.629  1341  1341 D SsBaseTemplateCard: Passed-in item info is null
+11-08 01:06:26.629  1341  1341 I SsBaseTemplateCard: Secondary card pane is null
+11-08 01:06:26.630   889   889 D SsMediaDataProvider: Forwarding Smartspace updates []
+11-08 01:06:26.630  3521  3538 V UiAutomation: Init UiAutomation@857cf79[id=2, displayId=0, flags=0]
+11-08 01:06:26.630   889   889 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+--------- beginning of system
+11-08 01:06:26.634   638  1034 W MagnificationConnectionManager: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
+11-08 01:06:26.638  1460  3451 I AiAiEcho: Settings changed for uri: content://settings/secure/accessibility_enabled
+11-08 01:06:26.639  1460  1602 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-08 01:06:26.639  1460  1602 I AiAiEcho: EchoTargets: 
+11-08 01:06:26.639  1460  1602 I AiAiEcho: Filtered by AiAi flag check: 
+11-08 01:06:26.639  1460  1602 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-08 01:06:26.639  1460  1602 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-08 01:06:26.640  1460  1602 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-08 01:06:26.640  1460  1602 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-08 01:06:26.640  1460  1602 I AiAiEcho: EchoTargets: 
+11-08 01:06:26.640  1460  1602 I AiAiEcho: Filtered by AiAi flag check: 
+11-08 01:06:26.640  1460  1602 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-08 01:06:26.640  1460  1602 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-08 01:06:26.640  1341  1607 D EGL_emulation: app_time_stats: avg=966.80ms min=2.99ms max=3935.06ms count=5
+11-08 01:06:26.642   429   429 I netd    : tetherGetStats() -> {[]} <0.50ms>
+11-08 01:06:26.643  1460  1602 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-08 01:06:26.644  1460  1602 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-08 01:06:26.644  1460  1602 I AiAiEcho: EchoTargets: 
+11-08 01:06:26.644  1460  1602 I AiAiEcho: Filtered by AiAi flag check: 
+11-08 01:06:26.644  1460  1602 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-08 01:06:26.644  1460  1602 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-08 01:06:26.644  1460  1602 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-08 01:06:26.644  1460  1602 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+11-08 01:06:26.645  1460  1602 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface media_data_manager with targets# 0 (types=[])
+11-08 01:06:26.645  1460  1602 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+11-08 01:06:26.645  1341  1341 D SsBaseTemplateCard: No text view can be set up
+11-08 01:06:26.645  1341  1341 D SsBaseTemplateCard: Passed-in item info is null
+11-08 01:06:26.645  1341  1341 D SsBaseTemplateCard: Passed-in item info is null
+11-08 01:06:26.645  1341  1341 D SsBaseTemplateCard: Passed-in item info is null
+11-08 01:06:26.645  1341  1341 I SsBaseTemplateCard: Secondary card pane is null
+11-08 01:06:26.646  1585  1745 I A       : NGA disabled since it's running Panthera and at least one a11y feature is on.
+11-08 01:06:26.646  1585  1745 I A       : (REDACTED) Nga state changed to %s
+11-08 01:06:26.647   638   638 D BatterySaverPolicy: accessibility changed to true, updating policy.
+11-08 01:06:26.648  1585  1940 D TrafficStats: tagSocket(290) with statsTag=0x0, statsUid=-1
+11-08 01:06:26.648  1585  1745 I A       : (REDACTED) isTngActive=%s
+11-08 01:06:26.649   889   889 D SsMediaDataProvider: Forwarding Smartspace updates []
+11-08 01:06:26.649  1230  1259 D AccessibilitySourceService: enabled a11y services count 0
+11-08 01:06:26.649   889   889 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+11-08 01:06:26.649  1230  1259 D AccessibilitySourceService: a11y source sending 0 issue to sc
+11-08 01:06:26.650   638  2007 D SafetySourceDataValidat: No cert check requested for package com.google.android.permissioncontroller
+11-08 01:06:26.652  1585  1902 D TrafficStats: tagSocket(278) with statsTag=0x0, statsUid=-1
+11-08 01:06:26.653  1482  1938 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+11-08 01:06:26.654  1482  1938 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+11-08 01:06:26.655  1585  1934 D TrafficStats: tagSocket(289) with statsTag=0x0, statsUid=-1
+11-08 01:06:26.656  1482  1938 I A       : Unsubscribed to apa or classic variant change.
+11-08 01:06:26.681  1585  1950 D TrafficStats: tagSocket(290) with statsTag=0x0, statsUid=-1
+11-08 01:06:26.692  1585  1936 D TrafficStats: tagSocket(289) with statsTag=0x0, statsUid=-1
+11-08 01:06:26.694  1585  1940 D TrafficStats: tagSocket(294) with statsTag=0x0, statsUid=-1
+11-08 01:06:26.696  1585  1934 D TrafficStats: tagSocket(278) with statsTag=0x0, statsUid=-1
+11-08 01:06:26.699  1585  1902 D TrafficStats: tagSocket(278) with statsTag=0x0, statsUid=-1
+11-08 01:06:26.702  1585  1936 D TrafficStats: tagSocket(278) with statsTag=0x0, statsUid=-1
+11-08 01:06:26.704  1585  1934 D TrafficStats: tagSocket(278) with statsTag=0x0, statsUid=-1
+11-08 01:06:26.708  1585  1902 D TrafficStats: tagSocket(278) with statsTag=0x0, statsUid=-1
+11-08 01:06:26.710  1585  1936 D TrafficStats: tagSocket(278) with statsTag=0x0, statsUid=-1
+11-08 01:06:26.713  1585  1934 D TrafficStats: tagSocket(278) with statsTag=0x0, statsUid=-1
+11-08 01:06:26.717  1585  1934 D TrafficStats: tagSocket(278) with statsTag=0x0, statsUid=-1
+11-08 01:06:26.721  1585  1936 D TrafficStats: tagSocket(279) with statsTag=0x0, statsUid=-1
+11-08 01:06:26.723  1103  2629 W .gms.persistent: Long monitor contention with owner lowpool[8] (2706) at void dbyt.n(dbus, dbus, int)(:com.google.android.gms@242335041@24.23.35 (190800-646585959):49) waiters=0 in int dbyt.l(dbyf, bcsk) for 1.187s
+11-08 01:06:26.724  1585  1745 E MDD     : GddFileGroupPopulator: GDD Sync failed for corpus: GDD_APA_SMART_ACTION_MODELS, configuration: GddAgsaApaSmartActionModels
+11-08 01:06:26.724  1585  1745 E MDD     : com.google.android.libraries.mdi.download.aj: refresh failed [GDD_FAIL_IN_SYNC_RUNNER_PUBLIC]
+11-08 01:06:26.724  1585  1745 E MDD     : 	at com.google.android.libraries.mdi.download.ah.a(PG:28)
+11-08 01:06:26.724  1585  1745 E MDD     : 	at com.google.android.libraries.mdi.download.h.b.y.apply(PG:32)
+11-08 01:06:26.724  1585  1745 E MDD     : 	at com.google.apps.tiktok.tracing.ff.apply(PG:13)
+11-08 01:06:26.724  1585  1745 E MDD     : 	at com.google.common.util.concurrent.a.e(PG:3)
+11-08 01:06:26.724  1585  1745 E MDD     : 	at com.google.common.util.concurrent.c.run(PG:130)
+11-08 01:06:26.724  1585  1745 E MDD     : 	at com.google.android.libraries.k.x.run(PG:3)
+11-08 01:06:26.724  1585  1745 E MDD     : 	at com.google.common.n.c.c.run(PG:50)
+11-08 01:06:26.724  1585  1745 E MDD     : 	at com.google.android.libraries.k.e.run(PG:8)
+11-08 01:06:26.724  1585  1745 E MDD     : 	at java.lang.Thread.run(Thread.java:1012)
+11-08 01:06:26.724  1585  1745 E MDD     : 	at com.google.android.libraries.k.d.b.run(PG:74)
+11-08 01:06:26.724  1585  1745 E MDD     : Caused by: com.google.android.libraries.geller.h.bl: Geller batch sync rpc call failed
+11-08 01:06:26.724  1585  1745 E MDD     : 	at com.google.android.libraries.geller.h.bk.b(PG:30)
+11-08 01:06:26.724  1585  1745 E MDD     : 	at com.google.android.libraries.geller.h.bc.apply(PG:53)
+11-08 01:06:26.724  1585  1745 E MDD     : 	at com.google.apps.tiktok.tracing.fj.apply(PG:13)
+11-08 01:06:26.724  1585  1745 E MDD     : 	at com.google.common.util.concurrent.b.e(PG:3)
+11-08 01:06:26.724  1585  1745 E MDD     : 	... 6 more
+11-08 01:06:26.724  1585  1745 E MDD     : Caused by: io.grpc.fg: UNAVAILABLE
+11-08 01:06:26.724  1585  1745 E MDD     : 	at io.grpc.j.m.a(PG:42)
+11-08 01:06:26.724  1585  1745 E MDD     : 	at io.grpc.f.ah.a(PG:32)
+11-08 01:06:26.724  1585  1745 E MDD     : 	at io.grpc.f.bc.run(PG:7)
+11-08 01:06:26.724  1585  1745 E MDD     : 	at io.grpc.f.kq.run(PG:17)
+11-08 01:06:26.724  1585  1745 E MDD     : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-08 01:06:26.724  1585  1745 E MDD     : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-08 01:06:26.724  1585  1745 E MDD     : 	at java.lang.Thread.run(Thread.java:1012)
+11-08 01:06:26.724  1585  1745 E MDD     : Caused by: java.net.ConnectException: failed to connect to geller-pa.googleapis.com/2001:4860:4845:400:: (port 443) from /:: (port 56444): connect failed: ECONNREFUSED (Connection refused)
+11-08 01:06:26.724  1585  1745 E MDD     : 	at libcore.io.IoBridge.connect(IoBridge.java:187)
+11-08 01:06:26.724  1585  1745 E MDD     : 	at java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:142)
+11-08 01:06:26.724  1585  1745 E MDD     : 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:390)
+11-08 01:06:26.724  1585  1745 E MDD     : 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:230)
+11-08 01:06:26.724  1585  1745 E MDD     : 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:212)
+11-08 01:06:26.724  1585  1745 E MDD     : 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:436)
+11-08 01:06:26.724  1585  1745 E MDD     : 	at java.net.Socket.connect(Socket.java:646)
+11-08 01:06:26.724  1585  1745 E MDD     : 	at java.net.Socket.connect(Socket.java:595)
+11-08 01:06:26.724  1585  1745 E MDD     : 	at java.net.Socket.<init>(Socket.java:475)
+11-08 01:06:26.724  1585  1745 E MDD     : 	at java.net.Socket.<init>(Socket.java:275)
+11-08 01:06:26.724  1585  1745 E MDD     : 	at javax.net.DefaultSocketFactory.createSocket(SocketFactory.java:285)
+11-08 01:06:26.724  1585  1745 E MDD     : 	at io.grpc.h.w.run(PG:50)
+11-08 01:06:26.724  1585  1745 E MDD     : 	at io.grpc.f.kq.run(PG:17)
+11-08 01:06:26.724  1585  1745 E MDD     : 	at com.google.android.libraries.geller.j.a.run(PG:7)
+11-08 01:06:26.724  1585  1745 E MDD     : 	at com.google.apps.tiktok.tracing.fl.run(PG:24)
+11-08 01:06:26.724  1585  1745 E MDD     : 	at com.google.android.libraries.k.x.run(PG:3)
+11-08 01:06:26.724  1585  1745 E MDD     : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-08 01:06:26.724  1585  1745 E MDD     : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-08 01:06:26.724  1585  1745 E MDD     : 	at com.google.android.libraries.k.b.run(PG:6)
+11-08 01:06:26.724  1585  1745 E MDD     : 	at java.lang.Thread.run(Thread.java:1012)
+11-08 01:06:26.724  1585  1745 E MDD     : 	at com.google.android.libraries.k.d.b.run(PG:74)
+11-08 01:06:26.724  1585  1745 E MDD     : Caused by: android.system.ErrnoException: connect failed: ECONNREFUSED (Connection refused)
+11-08 01:06:26.724  1585  1745 E MDD     : 	at libcore.io.Linux.connect(Native Method)
+11-08 01:06:26.724  1585  1745 E MDD     : 	at libcore.io.ForwardingOs.connect(ForwardingOs.java:201)
+11-08 01:06:26.724  1585  1745 E MDD     : 	at libcore.io.BlockGuardOs.connect(BlockGuardOs.java:158)
+11-08 01:06:26.724  1585  1745 E MDD     : 	at libcore.io.ForwardingOs.connect(ForwardingOs.java:201)
+11-08 01:06:26.724  1585  1745 E MDD     : 	at libcore.io.IoBridge.connectErrno(IoBridge.java:201)
+11-08 01:06:26.724  1585  1745 E MDD     : 	at libcore.io.IoBridge.connect(IoBridge.java:179)
+11-08 01:06:26.724  1585  1745 E MDD     : 	... 20 more
+11-08 01:06:26.730  1585  1950 D TrafficStats: tagSocket(294) with statsTag=0x0, statsUid=-1
+11-08 01:06:26.748  1103  2706 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.auth.account.be.accountstate.GcmTaskService started execution. cause:7 exec_start_elapsed_seconds: 36 [CONTEXT service_id=218 ]
+11-08 01:06:26.749  1103  2706 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.auth.account.be.accountstate.GcmTaskService finished executing. cause:7 result: 1 elapsed_millis: 817 uptime_millis: 817 exec_start_elapsed_seconds: 36 [CONTEXT service_id=218 ]
+11-08 01:06:26.759  1669  2709 W SQLiteLog: (28) double-quoted string literal: "AndroidHealthConnect_personal"
+11-08 01:06:26.761  1585  1933 D TrafficStats: tagSocket(278) with statsTag=0x0, statsUid=-1
+11-08 01:06:26.761  1585  1940 D TrafficStats: tagSocket(289) with statsTag=0x0, statsUid=-1
+11-08 01:06:26.765  1669  2709 W SQLiteLog: (28) double-quoted string literal: "AndroidHealthConnect_personal"
+11-08 01:06:26.770  1585  1936 D TrafficStats: tagSocket(291) with statsTag=0x0, statsUid=-1
+11-08 01:06:26.773  1669  3542 W AllowlistedPackageIdentifiers: Is debuggable: false
+11-08 01:06:26.775  1585  1902 D TrafficStats: tagSocket(279) with statsTag=0x0, statsUid=-1
+11-08 01:06:26.794  1585  1939 D TrafficStats: tagSocket(278) with statsTag=0x0, statsUid=-1
+11-08 01:06:26.794  1585  1950 D TrafficStats: tagSocket(290) with statsTag=0x0, statsUid=-1
+11-08 01:06:26.798   638  1527 W AppSearchIcing: icing-search-engine.cc:321: Error: 5, Message: Failed to delete Document. namespace: VS#Pkg$VS#AndroidVDb/androidVOverlay, uri: com.google.android.settings.intelligence$settings/SettingsAppSearchDocument;Failed to find DocumentId by key: VS#Pkg$VS#AndroidVDb/androidVOverlay, com.google.android.settings.intelligence$settings/SettingsAppSearchDocument;Key not found VS#Pkg$VS#AndroidVDb/androidVOverlay in DynamicTrieKeyMapper /data/system_ce/0/appsearch/icing/document_dir/namespace_mapper/key_mapper_dir/key_mapper.
+11-08 01:06:26.805  1585  1940 D TrafficStats: tagSocket(291) with statsTag=0x0, statsUid=-1
+11-08 01:06:26.810  1585  1933 D TrafficStats: tagSocket(279) with statsTag=0x0, statsUid=-1
+11-08 01:06:26.825  1585  1936 D TrafficStats: tagSocket(289) with statsTag=0x0, statsUid=-1
+11-08 01:06:26.827  1585  1902 D TrafficStats: tagSocket(278) with statsTag=0x0, statsUid=-1
+11-08 01:06:26.835  1585  1950 D TrafficStats: tagSocket(291) with statsTag=0x0, statsUid=-1
+11-08 01:06:26.845  1585  1939 D TrafficStats: tagSocket(279) with statsTag=0x0, statsUid=-1
+11-08 01:06:26.859  1585  1940 D TrafficStats: tagSocket(289) with statsTag=0x0, statsUid=-1
+11-08 01:06:26.862  1585  1933 D TrafficStats: tagSocket(289) with statsTag=0x0, statsUid=-1
+11-08 01:06:26.863  1585  1936 D TrafficStats: tagSocket(278) with statsTag=0x0, statsUid=-1
+11-08 01:06:26.865  1585  1940 D TrafficStats: tagSocket(290) with statsTag=0x0, statsUid=-1
+11-08 01:06:26.866  1585  1902 D TrafficStats: tagSocket(289) with statsTag=0x0, statsUid=-1
+11-08 01:06:26.870  1585  1933 D TrafficStats: tagSocket(278) with statsTag=0x0, statsUid=-1
+11-08 01:06:26.871  1585  1936 D TrafficStats: tagSocket(289) with statsTag=0x0, statsUid=-1
+11-08 01:06:26.872  1585  1940 D TrafficStats: tagSocket(278) with statsTag=0x0, statsUid=-1
+11-08 01:06:26.874  1585  1902 D TrafficStats: tagSocket(289) with statsTag=0x0, statsUid=-1
+11-08 01:06:26.876  1585  1933 D TrafficStats: tagSocket(290) with statsTag=0x0, statsUid=-1
+11-08 01:06:26.877  1585  1936 D TrafficStats: tagSocket(291) with statsTag=0x0, statsUid=-1
+11-08 01:06:26.879  1585  1950 D TrafficStats: tagSocket(278) with statsTag=0x0, statsUid=-1
+11-08 01:06:26.884  1585  1940 D TrafficStats: tagSocket(290) with statsTag=0x0, statsUid=-1
+11-08 01:06:26.884  1585  1933 D TrafficStats: tagSocket(292) with statsTag=0x0, statsUid=-1
+11-08 01:06:26.884  1585  1934 D TrafficStats: tagSocket(278) with statsTag=0x0, statsUid=-1
+11-08 01:06:26.887  1585  1902 D TrafficStats: tagSocket(279) with statsTag=0x0, statsUid=-1
+11-08 01:06:26.888  1585  1950 D TrafficStats: tagSocket(291) with statsTag=0x0, statsUid=-1
+11-08 01:06:26.890  1044  1044 D CarrierSvcBindHelper: onPackageModified: com.google.android.apps.wellbeing
+11-08 01:06:26.892   638   832 I AppWidgetServiceImpl: Received broadcast: android.intent.action.PACKAGE_CHANGED on user 0
+11-08 01:06:26.893   638   832 D AppWidgetServiceImpl: Trying to notify widget providers changed
+11-08 01:06:26.894  1044  1044 D CarrierSvcBindHelper: No carrier app for: 0
+11-08 01:06:26.897  1230  3240 I PermissionControllerServiceImpl: Updating user sensitive for uid 10142
+11-08 01:06:26.898  1585  1902 D TrafficStats: tagSocket(279) with statsTag=0x0, statsUid=-1
+11-08 01:06:26.898   638  2007 I AppWidgetServiceImpl: getInstalledProvidersForProfiles() 0
+11-08 01:06:26.898  1585  1936 D TrafficStats: tagSocket(289) with statsTag=0x0, statsUid=-1
+11-08 01:06:26.899   638   854 D ShortcutService: received package broadcast intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package: flg=0x45000010 (has extras) }
+11-08 01:06:26.899   638   854 D ShortcutService: changing package: com.google.android.apps.wellbeing userId0
+11-08 01:06:26.899   638   854 D ShortcutService: handlePackageChanged: com.google.android.apps.wellbeing user=0
+11-08 01:06:26.899   638   854 D ShortcutService: rescanPackageIfNeeded 0@com.google.android.apps.wellbeing, forceRescan=true , isNewApp=true
+11-08 01:06:26.899   638   854 D ShortcutService: Package com.google.android.apps.wellbeing has 0 manifest shortcut(s), and 0 share target(s)
+11-08 01:06:26.904  1585  1947 D TrafficStats: tagSocket(289) with statsTag=0x0, statsUid=-1
+11-08 01:06:26.905   889   889 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+11-08 01:06:26.909  1585  1940 D TrafficStats: tagSocket(290) with statsTag=0x0, statsUid=-1
+11-08 01:06:26.910   638  2007 W ParceledListSlice: Element #25 is 20004 bytes.
+11-08 01:06:26.910   638  2007 W ParceledListSlice: Element #26 is 20040 bytes.
+11-08 01:06:26.912   638  2005 W ParceledListSlice: Element #27 is 19884 bytes.
+11-08 01:06:26.912   638  2005 W ParceledListSlice: Element #28 is 19792 bytes.
+11-08 01:06:26.912   638  2005 W ParceledListSlice: Element #29 is 19904 bytes.
+11-08 01:06:26.915   638   671 W MagnificationConnectionManager: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
+11-08 01:06:26.916   638   743 I RoleService: Granting default roles...
+11-08 01:06:26.916  1585  1933 D TrafficStats: tagSocket(292) with statsTag=0x0, statsUid=-1
+11-08 01:06:26.917  1585  1950 D TrafficStats: tagSocket(278) with statsTag=0x0, statsUid=-1
+11-08 01:06:26.919  1341  1361 W PackageManager: Failure retrieving text 0x7f130786 in package com.android.systemui
+11-08 01:06:26.919  1341  1361 W PackageManager: android.content.res.Resources$NotFoundException: String resource ID #0x7f130786
+11-08 01:06:26.919  1341  1361 W PackageManager: 	at android.content.res.Resources.getText(Resources.java:466)
+11-08 01:06:26.919  1341  1361 W PackageManager: 	at android.app.ApplicationPackageManager.getText(ApplicationPackageManager.java:2405)
+11-08 01:06:26.919  1341  1361 W PackageManager: 	at android.appwidget.AppWidgetProviderInfo.loadDescription(AppWidgetProviderInfo.java:484)
+11-08 01:06:26.919  1341  1361 W PackageManager: 	at com.android.launcher3.model.WidgetItem.<init>(go/retraceme 31f9979659277bb965985aff1272c33e3c3c9e755b77166d20a2465454178f2c:4)
+11-08 01:06:26.919  1341  1361 W PackageManager: 	at com.android.launcher3.model.WidgetsModel.update(go/retraceme 31f9979659277bb965985aff1272c33e3c3c9e755b77166d20a2465454178f2c:72)
+11-08 01:06:26.919  1341  1361 W PackageManager: 	at com.android.launcher3.p0.execute(go/retraceme 31f9979659277bb965985aff1272c33e3c3c9e755b77166d20a2465454178f2c:16)
+11-08 01:06:26.919  1341  1361 W PackageManager: 	at com.android.launcher3.LauncherModel.a(go/retraceme 31f9979659277bb965985aff1272c33e3c3c9e755b77166d20a2465454178f2c:27)
+11-08 01:06:26.919  1341  1361 W PackageManager: 	at com.android.launcher3.t0.run(go/retraceme 31f9979659277bb965985aff1272c33e3c3c9e755b77166d20a2465454178f2c:12)
+11-08 01:06:26.919  1341  1361 W PackageManager: 	at android.os.Handler.handleCallback(Handler.java:959)
+11-08 01:06:26.919  1341  1361 W PackageManager: 	at android.os.Handler.dispatchMessage(Handler.java:100)
+11-08 01:06:26.919  1341  1361 W PackageManager: 	at android.os.Looper.loopOnce(Looper.java:232)
+11-08 01:06:26.919  1341  1361 W PackageManager: 	at android.os.Looper.loop(Looper.java:317)
+11-08 01:06:26.919  1341  1361 W PackageManager: 	at android.os.HandlerThread.run(HandlerThread.java:85)
+11-08 01:06:26.919   638   657 I AppWidgetServiceImpl: getWidgetPreview() 0
+11-08 01:06:26.921   638   657 I AppWidgetServiceImpl: getWidgetPreview() 0
+11-08 01:06:26.922  1044  1044 E SmsApplication: com.google.android.apps.messaging lost android:read_cell_broadcasts:  (fixing)
+11-08 01:06:26.924  1585  1934 D TrafficStats: tagSocket(279) with statsTag=0x0, statsUid=-1
+11-08 01:06:26.925  1585  1939 D TrafficStats: tagSocket(291) with statsTag=0x0, statsUid=-1
+11-08 01:06:26.925   638   939 W Role    : Default holder doesn't have required signing certificate: com.google.android.retaildemo:6547c73dee150c103980bfdffe55cc9a011d785dd694a5f99afd8205bcaf1f80
+11-08 01:06:26.925   638   939 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.gms.supervision, role: android.app.role.SYSTEM_SUPERVISION
+11-08 01:06:26.926   429  3545 I resolv  : GetAddrInfoHandler::run: {101 262245 101 983141 10144 0}
+11-08 01:06:26.927   429  3547 I resolv  : res_nmkquery: (QUERY, IN, A)
+11-08 01:06:26.927   429  3547 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7b70c0e60160
+11-08 01:06:26.927   429  3547 I resolv  : doQuery: rcode=0, ancount=8, return value=428
+11-08 01:06:26.927   638  1956 W AppOpService: Ignored setUidMode call for runtime permission app op: uid = 10137, code = READ_CELL_BROADCASTS, mode = allow, callingUid = 1001, oldMode = allow
+11-08 01:06:26.928   429  3546 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+11-08 01:06:26.928   429  3546 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7b7180e5d790
+11-08 01:06:26.928   429  3546 I resolv  : doQuery: rcode=0, ancount=8, return value=496
+11-08 01:06:26.929  1585  1756 D TrafficStats: tagSocket(290) with statsTag=0x0, statsUid=-1
+11-08 01:06:26.934  1585  1933 D TrafficStats: tagSocket(279) with statsTag=0x0, statsUid=-1
+11-08 01:06:26.934   638   939 W Role    : Default holder doesn't have required signing certificate: com.google.android.apps.work.clouddpc:23962F4B43B9857638EA66F4D419518EAE282491ACDA4B94707BD59003C45E58
+11-08 01:06:26.937   429  3548 I resolv  : GetAddrInfoHandler::run: {101 262245 101 983141 10144 0}
+11-08 01:06:26.937   429  3549 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+11-08 01:06:26.938   429  3549 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7b7180e5d790
+11-08 01:06:26.938  1585  1940 D TrafficStats: tagSocket(278) with statsTag=0x0, statsUid=-1
+11-08 01:06:26.938   429  3549 I resolv  : doQuery: rcode=0, ancount=8, return value=496
+11-08 01:06:26.938   429  3550 I resolv  : res_nmkquery: (QUERY, IN, A)
+11-08 01:06:26.938   429  3550 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7b70c0e60160
+11-08 01:06:26.938   429  3550 I resolv  : doQuery: rcode=0, ancount=8, return value=428
+11-08 01:06:26.939  1585  1758 E MDD     : GddFileGroupPopulator: GDD Sync failed for corpus: GDD_APA_HOTWORD_MODEL, configuration: GddAgsaApaHotword
+11-08 01:06:26.939  1585  1758 E MDD     : com.google.android.libraries.mdi.download.aj: refresh failed [GDD_FAIL_IN_SYNC_RUNNER_PUBLIC]
+11-08 01:06:26.939  1585  1758 E MDD     : 	at com.google.android.libraries.mdi.download.ah.a(PG:28)
+11-08 01:06:26.939  1585  1758 E MDD     : 	at com.google.android.libraries.mdi.download.h.b.y.apply(PG:32)
+11-08 01:06:26.939  1585  1758 E MDD     : 	at com.google.apps.tiktok.tracing.ff.apply(PG:13)
+11-08 01:06:26.939  1585  1758 E MDD     : 	at com.google.common.util.concurrent.a.e(PG:3)
+11-08 01:06:26.939  1585  1758 E MDD     : 	at com.google.common.util.concurrent.c.run(PG:130)
+11-08 01:06:26.939  1585  1758 E MDD     : 	at com.google.android.libraries.k.x.run(PG:3)
+11-08 01:06:26.939  1585  1758 E MDD     : 	at com.google.common.n.c.c.run(PG:50)
+11-08 01:06:26.939  1585  1758 E MDD     : 	at com.google.android.libraries.k.e.run(PG:8)
+11-08 01:06:26.939  1585  1758 E MDD     : 	at java.lang.Thread.run(Thread.java:1012)
+11-08 01:06:26.939  1585  1758 E MDD     : 	at com.google.android.libraries.k.d.b.run(PG:74)
+11-08 01:06:26.939  1585  1758 E MDD     : Caused by: com.google.android.libraries.geller.h.bl: Geller batch sync rpc call failed
+11-08 01:06:26.939  1585  1758 E MDD     : 	at com.google.android.libraries.geller.h.bk.b(PG:30)
+11-08 01:06:26.939  1585  1758 E MDD     : 	at com.google.android.libraries.geller.h.bc.apply(PG:53)
+11-08 01:06:26.939  1585  1758 E MDD     : 	at com.google.apps.tiktok.tracing.fj.apply(PG:13)
+11-08 01:06:26.939  1585  1758 E MDD     : 	at com.google.common.util.concurrent.b.e(PG:3)
+11-08 01:06:26.939  1585  1758 E MDD     : 	... 6 more
+11-08 01:06:26.939  1585  1758 E MDD     : Caused by: io.grpc.fg: UNAVAILABLE
+11-08 01:06:26.939  1585  1758 E MDD     : 	at io.grpc.j.m.a(PG:42)
+11-08 01:06:26.939  1585  1758 E MDD     : 	at io.grpc.f.ah.a(PG:32)
+11-08 01:06:26.939  1585  1758 E MDD     : 	at io.grpc.f.bc.run(PG:7)
+11-08 01:06:26.939  1585  1758 E MDD     : 	at io.grpc.f.kq.run(PG:17)
+11-08 01:06:26.939  1585  1758 E MDD     : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-08 01:06:26.939  1585  1758 E MDD     : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-08 01:06:26.939  1585  1758 E MDD     : 	at java.lang.Thread.run(Thread.java:1012)
+11-08 01:06:26.939  1585  1758 E MDD     : Caused by: java.net.ConnectException: failed to connect to geller-pa.googleapis.com/2001:4860:4845:400:: (port 443) from /:: (port 56458): connect failed: ECONNREFUSED (Connection refused)
+11-08 01:06:26.939  1585  1758 E MDD     : 	at libcore.io.IoBridge.connect(IoBridge.java:187)
+11-08 01:06:26.939  1585  1758 E MDD     : 	at java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:142)
+11-08 01:06:26.939  1585  1758 E MDD     : 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:390)
+11-08 01:06:26.939  1585  1758 E MDD     : 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:230)
+11-08 01:06:26.939  1585  1758 E MDD     : 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:212)
+11-08 01:06:26.939  1585  1758 E MDD     : 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:436)
+11-08 01:06:26.939  1585  1758 E MDD     : 	at java.net.Socket.connect(Socket.java:646)
+11-08 01:06:26.939  1585  1758 E MDD     : 	at java.net.Socket.connect(Socket.java:595)
+11-08 01:06:26.939  1585  1758 E MDD     : 	at java.net.Socket.<init>(Socket.java:475)
+11-08 01:06:26.939  1585  1758 E MDD     : 	at java.net.Socket.<init>(Socket.java:275)
+11-08 01:06:26.939  1585  1758 E MDD     : 	at javax.net.DefaultSocketFactory.createSocket(SocketFactory.java:285)
+11-08 01:06:26.939  1585  1758 E MDD     : 	at io.grpc.h.w.run(PG:50)
+11-08 01:06:26.939  1585  1758 E MDD     : 	at io.grpc.f.kq.run(PG:17)
+11-08 01:06:26.939  1585  1758 E MDD     : 	at com.google.android.libraries.geller.j.a.run(PG:7)
+11-08 01:06:26.939  1585  1758 E MDD     : 	at com.google.apps.tiktok.tracing.fl.run(PG:24)
+11-08 01:06:26.939  1585  1758 E MDD     : 	at com.google.android.libraries.k.x.run(PG:3)
+11-08 01:06:26.939  1585  1758 E MDD     : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-08 01:06:26.939  1585  1758 E MDD     : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-08 01:06:26.939  1585  1758 E MDD     : 	at com.google.android.libraries.k.b.run(PG:6)
+11-08 01:06:26.939  1585  1758 E MDD     : 	at java.lang.Thread.run(Thread.java:1012)
+11-08 01:06:26.939  1585  1758 E MDD     : 	at com.google.android.libraries.k.d.b.run(PG:74)
+11-08 01:06:26.939  1585  1758 E MDD     : Caused by: android.system.ErrnoException: connect failed: ECONNREFUSED (Connection refused)
+11-08 01:06:26.939  1585  1758 E MDD     : 	at libcore.io.Linux.connect(Native Method)
+11-08 01:06:26.939  1585  1758 E MDD     : 	at libcore.io.ForwardingOs.connect(ForwardingOs.java:201)
+11-08 01:06:26.939  1585  1758 E MDD     : 	at libcore.io.BlockGuardOs.connect(BlockGuardOs.java:158)
+11-08 01:06:26.939  1585  1758 E MDD     : 	at libcore.io.ForwardingOs.connect(ForwardingOs.java:201)
+11-08 01:06:26.939  1585  1758 E MDD     : 	at libcore.io.IoBridge.connectErrno(IoBridge.java:201)
+11-08 01:06:26.939  1585  1758 E MDD     : 	at libcore.io.IoBridge.connect(IoBridge.java:179)
+11-08 01:06:26.939  1585  1758 E MDD     : 	... 20 more
+11-08 01:06:26.940  1585  1939 D TrafficStats: tagSocket(279) with statsTag=0x0, statsUid=-1
+11-08 01:06:26.942  1044  1044 E CellBroadcastUtils: getDefaultCellBroadcastReceiverPackageName: no package found
+11-08 01:06:26.943  1669  1695 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/SafetyHubPrebuilt/SafetyHubPrebuilt.apk' with 1 weak references
+11-08 01:06:26.943   638  1034 W AppOpService: Ignored setUidMode call for runtime permission app op: uid = 1001, code = READ_SMS, mode = allow, callingUid = 1001, oldMode = allow
+11-08 01:06:26.944  1669  1695 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.healthfitness/priv-app/HealthConnectControllerGoogle@350820300/HealthConnectControllerGoogle.apk' with 1 weak references
+11-08 01:06:26.952  1460  1460 I AiAiEcho: AppFetcherImpl onPackageChanged com.google.android.apps.wellbeing.
+11-08 01:06:26.959  1460  2952 I AiAiEcho: AppIndexer Package:[com.google.android.apps.wellbeing] UserProfile:[0] Enabled:[true].
+11-08 01:06:26.959  1460  2952 I AiAiEcho: AppFetcherImplV2 updateApps package:[com.google.android.apps.wellbeing], userId:[0], reason:[package is updated.].
+11-08 01:06:26.965  1585  1751 E MDD     : GddFileGroupPopulator: GDD Sync failed for corpus: GDD_APA_BISTO, configuration: GddAgsaApaBisto
+11-08 01:06:26.965  1585  1751 E MDD     : com.google.android.libraries.mdi.download.aj: refresh failed [GDD_FAIL_IN_SYNC_RUNNER_PUBLIC]
+11-08 01:06:26.965  1585  1751 E MDD     : 	at com.google.android.libraries.mdi.download.ah.a(PG:28)
+11-08 01:06:26.965  1585  1751 E MDD     : 	at com.google.android.libraries.mdi.download.h.b.y.apply(PG:32)
+11-08 01:06:26.965  1585  1751 E MDD     : 	at com.google.apps.tiktok.tracing.ff.apply(PG:13)
+11-08 01:06:26.965  1585  1751 E MDD     : 	at com.google.common.util.concurrent.a.e(PG:3)
+11-08 01:06:26.965  1585  1751 E MDD     : 	at com.google.common.util.concurrent.c.run(PG:130)
+11-08 01:06:26.965  1585  1751 E MDD     : 	at com.google.android.libraries.k.x.run(PG:3)
+11-08 01:06:26.965  1585  1751 E MDD     : 	at com.google.common.n.c.c.run(PG:50)
+11-08 01:06:26.965  1585  1751 E MDD     : 	at com.google.android.libraries.k.e.run(PG:8)
+11-08 01:06:26.965  1585  1751 E MDD     : 	at java.lang.Thread.run(Thread.java:1012)
+11-08 01:06:26.965  1585  1751 E MDD     : 	at com.google.android.libraries.k.d.b.run(PG:74)
+11-08 01:06:26.965  1585  1751 E MDD     : Caused by: com.google.android.libraries.geller.h.bl: Geller batch sync rpc call failed
+11-08 01:06:26.965  1585  1751 E MDD     : 	at com.google.android.libraries.geller.h.bk.b(PG:30)
+11-08 01:06:26.965  1585  1751 E MDD     : 	at com.google.android.libraries.geller.h.bc.apply(PG:53)
+11-08 01:06:26.965  1585  1751 E MDD     : 	at com.google.apps.tiktok.tracing.fj.apply(PG:13)
+11-08 01:06:26.965  1585  1751 E MDD     : 	at com.google.common.util.concurrent.b.e(PG:3)
+11-08 01:06:26.965  1585  1751 E MDD     : 	... 6 more
+11-08 01:06:26.965  1585  1751 E MDD     : Caused by: io.grpc.fg: UNAVAILABLE
+11-08 01:06:26.965  1585  1751 E MDD     : 	at io.grpc.j.m.a(PG:42)
+11-08 01:06:26.965  1585  1751 E MDD     : 	at io.grpc.f.ah.a(PG:32)
+11-08 01:06:26.965  1585  1751 E MDD     : 	at io.grpc.f.bc.run(PG:7)
+11-08 01:06:26.965  1585  1751 E MDD     : 	at io.grpc.f.kq.run(PG:17)
+11-08 01:06:26.965  1585  1751 E MDD     : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-08 01:06:26.965  1585  1751 E MDD     : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-08 01:06:26.965  1585  1751 E MDD     : 	at java.lang.Thread.run(Thread.java:1012)
+11-08 01:06:26.965  1585  1751 E MDD     : Caused by: java.net.ConnectException: failed to connect to geller-pa.googleapis.com/2001:4860:4845:400:: (port 443) from /:: (port 56464): connect failed: ECONNREFUSED (Connection refused)
+11-08 01:06:26.965  1585  1751 E MDD     : 	at libcore.io.IoBridge.connect(IoBridge.java:187)
+11-08 01:06:26.965  1585  1751 E MDD     : 	at java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:142)
+11-08 01:06:26.965  1585  1751 E MDD     : 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:390)
+11-08 01:06:26.965  1585  1751 E MDD     : 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:230)
+11-08 01:06:26.965  1585  1751 E MDD     : 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:212)
+11-08 01:06:26.965  1585  1751 E MDD     : 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:436)
+11-08 01:06:26.965  1585  1751 E MDD     : 	at java.net.Socket.connect(Socket.java:646)
+11-08 01:06:26.965  1585  1751 E MDD     : 	at java.net.Socket.connect(Socket.java:595)
+11-08 01:06:26.965  1585  1751 E MDD     : 	at java.net.Socket.<init>(Socket.java:475)
+11-08 01:06:26.965  1585  1751 E MDD     : 	at java.net.Socket.<init>(Socket.java:275)
+11-08 01:06:26.965  1585  1751 E MDD     : 	at javax.net.DefaultSocketFactory.createSocket(SocketFactory.java:285)
+11-08 01:06:26.965  1585  1751 E MDD     : 	at io.grpc.h.w.run(PG:50)
+11-08 01:06:26.965  1585  1751 E MDD     : 	at io.grpc.f.kq.run(PG:17)
+11-08 01:06:26.965  1585  1751 E MDD     : 	at com.google.android.libraries.geller.j.a.run(PG:7)
+11-08 01:06:26.965  1585  1751 E MDD     : 	at com.google.apps.tiktok.tracing.fl.run(PG:24)
+11-08 01:06:26.965  1585  1751 E MDD     : 	at com.google.android.libraries.k.x.run(PG:3)
+11-08 01:06:26.965  1585  1751 E MDD     : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-08 01:06:26.965  1585  1751 E MDD     : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-08 01:06:26.965  1585  1751 E MDD     : 	at com.google.android.libraries.k.b.run(PG:6)
+11-08 01:06:26.965  1585  1751 E MDD     : 	at java.lang.Thread.run(Thread.java:1012)
+11-08 01:06:26.965  1585  1751 E MDD     : 	at com.google.android.libraries.k.d.b.run(PG:74)
+11-08 01:06:26.965  1585  1751 E MDD     : Caused by: android.system.ErrnoException: connect failed: ECONNREFUSED (Connection refused)
+11-08 01:06:26.965  1585  1751 E MDD     : 	at libcore.io.Linux.connect(Native Method)
+11-08 01:06:26.965  1585  1751 E MDD     : 	at libcore.io.ForwardingOs.connect(ForwardingOs.java:201)
+11-08 01:06:26.965  1585  1751 E MDD     : 	at libcore.io.BlockGuardOs.connect(BlockGuardOs.java:158)
+11-08 01:06:26.965  1585  1751 E MDD     : 	at libcore.io.ForwardingOs.connect(ForwardingOs.java:201)
+11-08 01:06:26.965  1585  1751 E MDD     : 	at libcore.io.IoBridge.connectErrno(IoBridge.java:201)
+11-08 01:06:26.965  1585  1751 E MDD     : 	at libcore.io.IoBridge.connect(IoBridge.java:179)
+11-08 01:06:26.965  1585  1751 E MDD     : 	... 20 more
+11-08 01:06:26.968  1341  1361 D PackageUpdatedTask: Package updated: mOp=UPDATE packages=[com.google.android.apps.wellbeing]
+11-08 01:06:26.970  1585  1755 E MDD     : GddFileGroupPopulator: GDD Sync failed for corpus: GDD_APA_LIGHTWEIGHT_TOKENS, configuration: GddAgsaApaLightweightTokens
+11-08 01:06:26.970  1585  1755 E MDD     : com.google.android.libraries.mdi.download.aj: refresh failed [GDD_FAIL_IN_SYNC_RUNNER_PUBLIC]
+11-08 01:06:26.970  1585  1755 E MDD     : 	at com.google.android.libraries.mdi.download.ah.a(PG:28)
+11-08 01:06:26.970  1585  1755 E MDD     : 	at com.google.android.libraries.mdi.download.h.b.y.apply(PG:32)
+11-08 01:06:26.970  1585  1755 E MDD     : 	at com.google.apps.tiktok.tracing.ff.apply(PG:13)
+11-08 01:06:26.970  1585  1755 E MDD     : 	at com.google.common.util.concurrent.a.e(PG:3)
+11-08 01:06:26.970  1585  1755 E MDD     : 	at com.google.common.util.concurrent.c.run(PG:130)
+11-08 01:06:26.970  1585  1755 E MDD     : 	at com.google.android.libraries.k.x.run(PG:3)
+11-08 01:06:26.970  1585  1755 E MDD     : 	at com.google.common.n.c.c.run(PG:50)
+11-08 01:06:26.970  1585  1755 E MDD     : 	at com.google.android.libraries.k.e.run(PG:8)
+11-08 01:06:26.970  1585  1755 E MDD     : 	at java.lang.Thread.run(Thread.java:1012)
+11-08 01:06:26.970  1585  1755 E MDD     : 	at com.google.android.libraries.k.d.b.run(PG:74)
+11-08 01:06:26.970  1585  1755 E MDD     : Caused by: com.google.android.libraries.geller.h.bl: Geller batch sync rpc call failed
+11-08 01:06:26.970  1585  1755 E MDD     : 	at com.google.android.libraries.geller.h.bk.b(PG:30)
+11-08 01:06:26.970  1585  1755 E MDD     : 	at com.google.android.libraries.geller.h.bc.apply(PG:53)
+11-08 01:06:26.970  1585  1755 E MDD     : 	at com.google.apps.tiktok.tracing.fj.apply(PG:13)
+11-08 01:06:26.970  1585  1755 E MDD     : 	at com.google.common.util.concurrent.b.e(PG:3)
+11-08 01:06:26.970  1585  1755 E MDD     : 	... 6 more
+11-08 01:06:26.970  1585  1755 E MDD     : Caused by: io.grpc.fg: UNAVAILABLE
+11-08 01:06:26.970  1585  1755 E MDD     : 	at io.grpc.j.m.a(PG:42)
+11-08 01:06:26.970  1585  1755 E MDD     : 	at io.grpc.f.bq.run(PG:9)
+11-08 01:06:26.970  1585  1755 E MDD     : 	at io.grpc.f.bs.e(PG:14)
+11-08 01:06:26.970  1585  1755 E MDD     : 	at io.grpc.f.bs.a(PG:6)
+11-08 01:06:26.970  1585  1755 E MDD     : 	at io.grpc.f.ah.a(PG:32)
+11-08 01:06:26.970  1585  1755 E MDD     : 	at io.grpc.f.bc.run(PG:7)
+11-08 01:06:26.970  1585  1755 E MDD     : 	at io.grpc.f.kq.run(PG:17)
+11-08 01:06:26.970  1585  1755 E MDD     : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-08 01:06:26.970  1585  1755 E MDD     : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-08 01:06:26.970  1585  1755 E MDD     : 	at java.lang.Thread.run(Thread.java:1012)
+11-08 01:06:26.970  1585  1755 E MDD     : Caused by: java.net.ConnectException: failed to connect to geller-pa.googleapis.com/2001:4860:4845:400:: (port 443) from /:: (port 56476): connect failed: ECONNREFUSED (Connection refused)
+11-08 01:06:26.970  1585  1755 E MDD     : 	at libcore.io.IoBridge.connect(IoBridge.java:187)
+11-08 01:06:26.970  1585  1755 E MDD     : 	at java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:142)
+11-08 01:06:26.970  1585  1755 E MDD     : 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:390)
+11-08 01:06:26.970  1585  1755 E MDD     : 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:230)
+11-08 01:06:26.970  1585  1755 E MDD     : 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:212)
+11-08 01:06:26.970  1585  1755 E MDD     : 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:436)
+11-08 01:06:26.970  1585  1755 E MDD     : 	at java.net.Socket.connect(Socket.java:646)
+11-08 01:06:26.970  1585  1755 E MDD     : 	at java.net.Socket.connect(Socket.java:595)
+11-08 01:06:26.970  1585  1755 E MDD     : 	at java.net.Socket.<init>(Socket.java:475)
+11-08 01:06:26.970  1585  1755 E MDD     : 	at java.net.Socket.<init>(Socket.java:275)
+11-08 01:06:26.970  1585  1755 E MDD     : 	at javax.net.DefaultSocketFactory.createSocket(SocketFactory.java:285)
+11-08 01:06:26.970  1585  1755 E MDD     : 	at io.grpc.h.w.run(PG:50)
+11-08 01:06:26.970  1585  1755 E MDD     : 	at io.grpc.f.kq.run(PG:17)
+11-08 01:06:26.970  1585  1755 E MDD     : 	at com.google.android.libraries.geller.j.a.run(PG:7)
+11-08 01:06:26.970  1585  1755 E MDD     : 	at com.google.apps.tiktok.tracing.fl.run(PG:24)
+11-08 01:06:26.970  1585  1755 E MDD     : 	at com.google.android.libraries.k.x.run(PG:3)
+11-08 01:06:26.970  1585  1755 E MDD     : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-08 01:06:26.970  1585  1755 E MDD     : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-08 01:06:26.970  1585  1755 E MDD     : 	at com.google.android.libraries.k.b.run(PG:6)
+11-08 01:06:26.970  1585  1755 E MDD     : 	at java.lang.Thread.run(Thread.java:1012)
+11-08 01:06:26.970  1585  1755 E MDD     : 	at com.google.android.libraries.k.d.b.run(PG:74)
+11-08 01:06:26.970  1585  1755 E MDD     : Caused by: android.system.ErrnoException: connect failed: ECONNREFUSED (Connection refused)
+11-08 01:06:26.970  1585  1755 E MDD     : 	at libcore.io.Linux.connect(Native Method)
+11-08 01:06:26.970  1585  1755 E MDD     : 	at libcore.io.ForwardingOs.connect(ForwardingOs.java:201)
+11-08 01:06:26.970  1585  1755 E MDD     : 	at libcore.io.BlockGuardOs.connect(BlockGuardOs.java:158)
+11-08 01:06:26.970  1585  1755 E MDD     : 	at libcore.io.ForwardingOs.connect(ForwardingOs.java:201)
+11-08 01:06:26.970  1585  1755 E MDD     : 	at libcore.io.IoBridge.connectErrno(IoBridge.java:201)
+11-08 01:06:26.970  1585  1755 E MDD     : 	at libcore.io.IoBridge.connect(IoBridge.java:179)
+11-08 01:06:26.970  1585  1755 E MDD     : 	... 20 more
+11-08 01:06:26.970   638  1956 W AppOpService: Ignored setUidMode call for runtime permission app op: uid = 1001, code = RECEIVE_SMS, mode = allow, callingUid = 1001, oldMode = allow
+11-08 01:06:26.971   638  1956 W AppOpService: Ignored setUidMode call for runtime permission app op: uid = 1001, code = RECEIVE_WAP_PUSH, mode = allow, callingUid = 1001, oldMode = allow
+11-08 01:06:26.975   638  1034 W AppOpService: Ignored setUidMode call for runtime permission app op: uid = 1001, code = SEND_SMS, mode = allow, callingUid = 1001, oldMode = allow
+11-08 01:06:26.975  1585  1902 D TrafficStats: tagSocket(278) with statsTag=0x0, statsUid=-1
+11-08 01:06:26.976   638  1034 W AppOpService: Ignored setUidMode call for runtime permission app op: uid = 1001, code = READ_CELL_BROADCASTS, mode = allow, callingUid = 1001, oldMode = allow
+11-08 01:06:26.983  1044  1197 D ImsResolver: maybeAddedImsService, packageName: com.google.android.apps.wellbeing
+11-08 01:06:26.997  1585  1934 D TrafficStats: tagSocket(278) with statsTag=0x0, statsUid=-1
+11-08 01:06:27.003  1585  1939 D TrafficStats: tagSocket(278) with statsTag=0x0, statsUid=-1
+11-08 01:06:27.006   638   939 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.gms, role: android.app.role.WALLET
+11-08 01:06:27.013   638   939 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.devicelockcontroller, role: android.app.role.SYSTEM_FINANCED_DEVICE_CONTROLLER
+11-08 01:06:27.015  1585  1751 E MDD     : GddFileGroupPopulator: GDD Sync failed for corpus: GDD_APA_HEAD_SUGGEST, configuration: GddAgsaApaHeadSuggest
+11-08 01:06:27.015  1585  1751 E MDD     : com.google.android.libraries.mdi.download.aj: refresh failed [GDD_FAIL_IN_SYNC_RUNNER_PUBLIC]
+11-08 01:06:27.015  1585  1751 E MDD     : 	at com.google.android.libraries.mdi.download.ah.a(PG:28)
+11-08 01:06:27.015  1585  1751 E MDD     : 	at com.google.android.libraries.mdi.download.h.b.y.apply(PG:32)
+11-08 01:06:27.015  1585  1751 E MDD     : 	at com.google.apps.tiktok.tracing.ff.apply(PG:13)
+11-08 01:06:27.015  1585  1751 E MDD     : 	at com.google.common.util.concurrent.a.e(PG:3)
+11-08 01:06:27.015  1585  1751 E MDD     : 	at com.google.common.util.concurrent.c.run(PG:130)
+11-08 01:06:27.015  1585  1751 E MDD     : 	at com.google.android.libraries.k.x.run(PG:3)
+11-08 01:06:27.015  1585  1751 E MDD     : 	at com.google.common.n.c.c.run(PG:50)
+11-08 01:06:27.015  1585  1751 E MDD     : 	at com.google.android.libraries.k.e.run(PG:8)
+11-08 01:06:27.015  1585  1751 E MDD     : 	at java.lang.Thread.run(Thread.java:1012)
+11-08 01:06:27.015  1585  1751 E MDD     : 	at com.google.android.libraries.k.d.b.run(PG:74)
+11-08 01:06:27.015  1585  1751 E MDD     : Caused by: com.google.android.libraries.geller.h.bl: Geller batch sync rpc call failed
+11-08 01:06:27.015  1585  1751 E MDD     : 	at com.google.android.libraries.geller.h.bk.b(PG:30)
+11-08 01:06:27.015  1585  1751 E MDD     : 	at com.google.android.libraries.geller.h.bc.apply(PG:53)
+11-08 01:06:27.015  1585  1751 E MDD     : 	at com.google.apps.tiktok.tracing.fj.apply(PG:13)
+11-08 01:06:27.015  1585  1751 E MDD     : 	at com.google.common.util.concurrent.b.e(PG:3)
+11-08 01:06:27.015  1585  1751 E MDD     : 	... 6 more
+11-08 01:06:27.015  1585  1751 E MDD     : Caused by: io.grpc.fg: UNAVAILABLE
+11-08 01:06:27.015  1585  1751 E MDD     : 	at io.grpc.j.m.a(PG:42)
+11-08 01:06:27.015  1585  1751 E MDD     : 	at io.grpc.f.bq.run(PG:9)
+11-08 01:06:27.015  1585  1751 E MDD     : 	at io.grpc.f.bs.e(PG:14)
+11-08 01:06:27.015  1585  1751 E MDD     : 	at io.grpc.f.bs.a(PG:6)
+11-08 01:06:27.015  1585  1751 E MDD     : 	at io.grpc.f.ah.a(PG:32)
+11-08 01:06:27.015  1585  1751 E MDD     : 	at io.grpc.f.bc.run(PG:7)
+11-08 01:06:27.015  1585  1751 E MDD     : 	at io.grpc.f.kq.run(PG:17)
+11-08 01:06:27.015  1585  1751 E MDD     : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-08 01:06:27.015  1585  1751 E MDD     : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-08 01:06:27.015  1585  1751 E MDD     : 	at java.lang.Thread.run(Thread.java:1012)
+11-08 01:06:27.015  1585  1751 E MDD     : Caused by: java.net.ConnectException: failed to connect to geller-pa.googleapis.com/2001:4860:4845:400:: (port 443) from /:: (port 56490): connect failed: ECONNREFUSED (Connection refused)
+11-08 01:06:27.015  1585  1751 E MDD     : 	at libcore.io.IoBridge.connect(IoBridge.java:187)
+11-08 01:06:27.015  1585  1751 E MDD     : 	at java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:142)
+11-08 01:06:27.015  1585  1751 E MDD     : 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:390)
+11-08 01:06:27.015  1585  1751 E MDD     : 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:230)
+11-08 01:06:27.015  1585  1751 E MDD     : 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:212)
+11-08 01:06:27.015  1585  1751 E MDD     : 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:436)
+11-08 01:06:27.015  1585  1751 E MDD     : 	at java.net.Socket.connect(Socket.java:646)
+11-08 01:06:27.015  1585  1751 E MDD     : 	at java.net.Socket.connect(Socket.java:595)
+11-08 01:06:27.015  1585  1751 E MDD     : 	at java.net.Socket.<init>(Socket.java:475)
+11-08 01:06:27.015  1585  1751 E MDD     : 	at java.net.Socket.<init>(Socket.java:275)
+11-08 01:06:27.015  1585  1751 E MDD     : 	at javax.net.DefaultSocketFactory.createSocket(SocketFactory.java:285)
+11-08 01:06:27.015  1585  1751 E MDD     : 	at io.grpc.h.w.run(PG:50)
+11-08 01:06:27.015  1585  1751 E MDD     : 	at io.grpc.f.kq.run(PG:17)
+11-08 01:06:27.015  1585  1751 E MDD     : 	at com.google.android.libraries.geller.j.a.run(PG:7)
+11-08 01:06:27.015  1585  1751 E MDD     : 	at com.google.apps.tiktok.tracing.fl.run(PG:24)
+11-08 01:06:27.015  1585  1751 E MDD     : 	at com.google.android.libraries.k.x.run(PG:3)
+11-08 01:06:27.015  1585  1751 E MDD     : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-08 01:06:27.015  1585  1751 E MDD     : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-08 01:06:27.015  1585  1751 E MDD     : 	at com.google.android.libraries.k.b.run(PG:6)
+11-08 01:06:27.015  1585  1751 E MDD     : 	at java.lang.Thread.run(Thread.java:1012)
+11-08 01:06:27.015  1585  1751 E MDD     : 	at com.google.android.libraries.k.d.b.run(PG:74)
+11-08 01:06:27.015  1585  1751 E MDD     : Caused by: android.system.ErrnoException: connect failed: ECONNREFUSED (Connection refused)
+11-08 01:06:27.015  1585  1751 E MDD     : 	at libcore.io.Linux.connect(Native Method)
+11-08 01:06:27.015  1585  1751 E MDD     : 	at libcore.io.ForwardingOs.connect(ForwardingOs.java:201)
+11-08 01:06:27.015  1585  1751 E MDD     : 	at libcore.io.BlockGuardOs.connect(BlockGuardOs.java:158)
+11-08 01:06:27.015  1585  1751 E MDD     : 	at libcore.io.ForwardingOs.connect(ForwardingOs.java:201)
+11-08 01:06:27.015  1585  1751 E MDD     : 	at libcore.io.IoBridge.connectErrno(IoBridge.java:201)
+11-08 01:06:27.015  1585  1751 E MDD     : 	at libcore.io.IoBridge.connect(IoBridge.java:179)
+11-08 01:06:27.015  1585  1751 E MDD     : 	... 20 more
+11-08 01:06:27.017  1585  1902 I A       : (REDACTED) NGA Sync: MDD Task: %s done.
+11-08 01:06:27.020  1585  1902 I A       : (REDACTED) NGA Sync: isNgaSyncEnabled: %s; enableFileGroupPopulator: %s; requiresMddAssets: %s
+11-08 01:06:27.021  1585  1755 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=c9b98c49-3fee-4287-a5b0-a919f0d7eda8, tags={ com.google.apps.tiktok.contrib.work.TikTokListenableWorker,TikTokWorker#com.google.android.libraries.mdi.download.workmanager.tiktok.TikTokPeriodicWorker } ]
+11-08 01:06:27.028  1585  1595 I earchbox:search: Background concurrent mark compact GC freed 8833KB AllocSpace bytes, 32(4960KB) LOS objects, 49% free, 24MB/48MB, paused 241us,1.730ms total 109.709ms
+11-08 01:06:27.034  1625  1625 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.semanticlocationhistory.topplace.TopPlaceProcessingService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-08 01:06:27.034  1625  1625 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.semanticlocationhistory.topplace.TopPlaceProcessingService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-08 01:06:27.048  1625  1625 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.semanticlocationhistory.topplace.TopPlaceProcessingService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-08 01:06:27.388  1622  2765 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of buoi@bb6ba14
+11-08 01:06:27.433  1625  1625 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.safebrowsing.SafeBrowsingService.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+11-08 01:06:27.501  1585  1902 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+11-08 01:06:27.573  1625  1625 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.languageprofile.service.START pkg=com.google.android.gms }
+11-08 01:06:27.624   638   655 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/LatinIMEGooglePrebuilt/LatinIMEGooglePrebuilt.apk' with 1 weak references
+11-08 01:06:27.624  1103  2706 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.stats.PlatformStatsCollectorService started execution. cause:7 exec_start_elapsed_seconds: 40 [CONTEXT service_id=218 ]
+11-08 01:06:27.625   638   655 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/InputDevices/InputDevices.apk' with 1 weak references
+11-08 01:06:27.625  1103  2706 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.stats.PlatformStatsCollectorService finished executing. cause:7 result: 1 elapsed_millis: 18 uptime_millis: 18 exec_start_elapsed_seconds: 40 [CONTEXT service_id=218 ]
+11-08 01:06:27.626   638   655 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/GoogleTTS/GoogleTTS.apk' with 1 weak references
+11-08 01:06:27.626   638   655 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~g_49fF5u1CWg68Q3WzNU5g==/io.appium.settings-Bp6f1l8m1erMcX-fq6HY6Q==/base.apk' with 1 weak references
+11-08 01:06:27.626   638   655 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/WellbeingPrebuilt/WellbeingPrebuilt.apk' with 1 weak references
+11-08 01:06:27.626   638   655 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/app/AccessibilityMenu/AccessibilityMenu.apk' with 1 weak references
+11-08 01:06:27.626   638   655 W system_server: ApkAssets: Deleting an ApkAssets object '/product/overlay/AccessibilityMenu__sdk_gphone64_x86_64__auto_generated_rro_product.apk' with 1 weak references
+11-08 01:06:27.626   638   655 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/talkback/talkback.apk' with 1 weak references
+11-08 01:06:27.627   638   655 W system_server: ApkAssets: Deleting an ApkAssets object '/vendor/overlay/EmulatorTalkBackOverlay/EmulatorTalkBackOverlay.apk' with 1 weak references
+11-08 01:06:27.627   638   655 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk' with 1 weak references
+11-08 01:06:27.627   638   655 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PrebuiltGmail/PrebuiltGmail.apk' with 1 weak references
+11-08 01:06:27.628   638   655 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Drive/Drive.apk' with 1 weak references
+11-08 01:06:27.628   638   655 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/CalendarGooglePrebuilt/CalendarGooglePrebuilt.apk' with 1 weak references
+11-08 01:06:27.629   638   655 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/Velvet/Velvet.apk' with 1 weak references
+11-08 01:06:27.638  1103  1228 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(8, com.google.android.gms) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+11-08 01:06:27.646  1625  2680 I SystemUpdate: [Installation,ReceiverIntentOperation] Received intent: Intent { act=com.google.android.gms.update.BASE_MODULE_INIT cat=[targeted_intent_op_prefix:.update.control.ReceiverIntentOperation] cmp=com.google.android.gms/.chimera.GmsIntentOperationService }.
+11-08 01:06:27.650  1625  3375 I Auth    : [WorkAccount] update authenticator enabled for boot or update
+11-08 01:06:27.652  1103  1103 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.auth.account.workaccount.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+11-08 01:06:27.652  1103  1103 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.auth.account.workaccount.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+11-08 01:06:27.655  1625  2230 I Checkin : [CheckinApiChimeraService] onGetService
+11-08 01:06:27.656  3521  3521 I AccessibilityNodeInfoDumper: Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@4d2f9; boundsInParent: Rect(0, 0 - 606, 0); boundsInScreen: Rect(57, 218 - 663, 218); boundsInWindow: Rect(57, 218 - 663, 218); packageName: com.google.android.apps.nexuslauncher; className: android.view.ViewGroup; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; containerTitle: null; viewIdResName: com.google.android.apps.nexuslauncher:id/smartspace_subtitle_group; uniqueId: null; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; granularScrollingSupported: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]; isTextSelectable: false
+11-08 01:06:27.657  1103  1962 I Auth    : [WorkAccountServiceImpl] init work authenticator
+11-08 01:06:27.658  3521  3521 W AccessibilityNodeInfoDumper: Fetch time: 6ms
+11-08 01:06:27.659  1625  2066 W SystemServiceRegistry: No service published for: persistent_data_block
+11-08 01:06:27.661  1625  2691 I Auth    : [FRP,FrpUpdateIntentOperation] Intent received: Intent { act=com.google.android.gms.auth.FRP_CONFIG_CHANGED cat=[targeted_intent_op_prefix:.auth.frp.FrpUpdateIntentOperation] cmp=com.google.android.gms/.chimera.GmsIntentOperationService }
+11-08 01:06:27.661   638  1956 W MagnificationConnectionManager: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
+11-08 01:06:27.661   638  1956 D AccessibilityManagerService: restoreCurrentUserForTestAutomationIfNeededLocked(): ignoring because device doesn't support visible background users
+11-08 01:06:27.661  1625  2691 I Auth    : [FRP,FrpUpdateIntentOperation] FRP is not supported for this device / user
+11-08 01:06:27.663  3521  3521 D AndroidRuntime: Shutting down VM
+11-08 01:06:27.663  1460  3451 I AiAiEcho: Settings changed for uri: content://settings/secure/accessibility_enabled
+11-08 01:06:27.665  1460  1602 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-08 01:06:27.666  1460  1602 I AiAiEcho: EchoTargets: 
+11-08 01:06:27.666  1460  1602 I AiAiEcho: Filtered by AiAi flag check: 
+11-08 01:06:27.666  1460  1602 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-08 01:06:27.666   638   638 D BatterySaverPolicy: accessibility changed to false, updating policy.
+11-08 01:06:27.667  1460  1602 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-08 01:06:27.667  1460  1602 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-08 01:06:27.667  1585  1751 I A       : NGA enabled in interactor.
+11-08 01:06:27.667  1585  1751 I A       : (REDACTED) Nga state changed to %s
+11-08 01:06:27.667  1585  1751 I A       : (REDACTED) isTngActive=%s
+11-08 01:06:27.668  1460  1602 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-08 01:06:27.668  1460  1602 I AiAiEcho: EchoTargets: 
+11-08 01:06:27.668  1460  1602 I AiAiEcho: Filtered by AiAi flag check: 
+11-08 01:06:27.668  1460  1602 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-08 01:06:27.669  1460  1602 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-08 01:06:27.669  1482  1721 I A       : Initializing all components
+11-08 01:06:27.670  1460  1602 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-08 01:06:27.670  1482  1795 I A       : (REDACTED) onIsEnabledChanged, isEnabled: %s
+11-08 01:06:27.670  1482  1795 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-08 01:06:27.670  1482  1795 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-08 01:06:27.670  1482  1938 I A       : (REDACTED) State changed: %s => %s by %s and %s with %s
+11-08 01:06:27.671  1482  1795 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-08 01:06:27.671  1482  1795 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-08 01:06:27.671  1482  1795 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-08 01:06:27.671  1482  1795 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-08 01:06:27.671  1482  1938 I A       : (REDACTED) Recognizer choice: (recognizer_type: %s, recognizer_mode: %s, choice_reason: %s)
+11-08 01:06:27.671  1482  1795 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-08 01:06:27.671  1482  1795 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-08 01:06:27.671  1482  1795 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-08 01:06:27.671  1460  1602 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-08 01:06:27.671  1482  1795 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-08 01:06:27.671  1482  1795 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-08 01:06:27.671  1460  1602 I AiAiEcho: EchoTargets: 
+11-08 01:06:27.671  1460  1602 I AiAiEcho: Filtered by AiAi flag check: 
+11-08 01:06:27.671  1460  1602 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-08 01:06:27.671  1482  1935 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+11-08 01:06:27.671  1482  1795 I A       : (REDACTED) Setting session to type: %s
+11-08 01:06:27.671  1460  1602 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-08 01:06:27.671  1482  1795 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-08 01:06:27.671  1460  1602 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-08 01:06:27.671  1482  1795 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-08 01:06:27.671  1482  1795 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-08 01:06:27.671  1482  1795 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-08 01:06:27.671  1482  1795 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-08 01:06:27.671  1482  1795 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-08 01:06:27.671  1460  1602 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+11-08 01:06:27.671  1482  1938 I A       : (REDACTED) onActiveStateChangeEvent: %s => %s
+11-08 01:06:27.671  1482  1795 I A       : (REDACTED) setNavBarVisible: %s
+11-08 01:06:27.671  1482  1938 I A       : (REDACTED) #onActiveStateChangeEvent, newState: %s, previousState: %s.
+11-08 01:06:27.672  1460  1602 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface media_data_manager with targets# 0 (types=[])
+11-08 01:06:27.672  1482  1808 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+11-08 01:06:27.673  1482  1795 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-08 01:06:27.673  1482  1795 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-08 01:06:27.673  1482  1795 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-08 01:06:27.673  1460  1602 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+11-08 01:06:27.673  1482  1795 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-08 01:06:27.673  1482  1795 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-08 01:06:27.673  1482  1795 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-08 01:06:27.673   889   889 D SsMediaDataProvider: Forwarding Smartspace updates []
+11-08 01:06:27.674  1482  1795 I NgaEntryPointEventSendr: setupConnection
+11-08 01:06:27.674   889   889 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+11-08 01:06:27.678  1482  1935 I A       : (REDACTED) stopListening(%s, %s)
+11-08 01:06:27.678  1482  1935 I A       : (REDACTED) on opa visibility changed %s
+11-08 01:06:27.679  1482  1795 I NgaEntryPointEventSendr: (REDACTED) State changed: %s => %s
+11-08 01:06:27.679  1482  1795 I NgaEntryPointEventSendr: onServiceConnected
+11-08 01:06:27.680  1482  1935 I INV.SystemUI: showGestureNav
+11-08 01:06:27.680  1482  1935 I INV.SystemUI: (REDACTED) setUiHints(hints = %s)
+11-08 01:06:27.681  1482  1808 I A       : Initialize
+11-08 01:06:27.682  1482  1938 I A       : Ignoring as prefetch was recently called
+11-08 01:06:27.682  1585  2468 I A       : Calling beginBinderSession().
+11-08 01:06:27.682  1482  1935 I A       : (REDACTED) on opa visibility changed %s
+11-08 01:06:27.683  1482  1808 I INV.SystemUI: setUiHints: finished successfully
+11-08 01:06:27.685  1482  1938 I A       : Successfully initialized all components
+11-08 01:06:27.690  1585  2468 I A       : beginBinderSession(): calling binder
+11-08 01:06:27.691  1482  1721 V ClearcutMetricXmitter: Transmission is done.
+11-08 01:06:27.691  1482  1795 I NgaEntryPointEventSendr: (REDACTED) State changed: %s => %s
+11-08 01:06:27.691  1103  2079 I ChimeraSrvcProxy: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl
+11-08 01:06:27.692  1103  2079 W .gms.persistent: Large reply transaction of 1056768 bytes, interface descriptor , code 1
+11-08 01:06:27.694  3058  3282 D WM-NetworkStateTracker: Network capabilities changed: [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&CAPTIVE_PORTAL&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED LinkUpBandwidth>=12000Kbps LinkDnBandwidth>=30000Kbps TransportInfo: <SSID: <unknown ssid>, BSSID: 02:00:00:00:00:00, MAC: 02:00:00:00:00:00, IP: /10.0.2.16, Security type: 0, Supplicant state: COMPLETED, Wi-Fi standard: legacy, RSSI: -50, Link speed: 1Mbps, Tx Link speed: 1Mbps, Max Supported Tx Link speed: 54Mbps, Rx Link speed: 2Mbps, Max Supported Rx Link speed: 54Mbps, Frequency: 2437MHz, Net ID: -1, Metered hint: false, score: 60, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: -1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none><none>MLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>> SignalStrength: -50 UnderlyingNetworks: Null]
+11-08 01:06:27.696  1531  1831 I BugleRcsEngine: Connected state: [1], networkType: [WIFI] [CONTEXT thread_id=55 ]
+11-08 01:06:27.696  1531  2282 I BugleRcsEngine: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[452e0e76-624d]>Handler" thread_id=64 ]
+11-08 01:06:27.700   638  1572 W ActivityManager: Unable to start service Intent { cmp=com.google.android.apps.tachyon/.clientapi.ClientApiService } U=0: not found
+11-08 01:06:27.704  1531  2282 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=64 ]
+11-08 01:06:27.712  1585  1830 W A       : (REDACTED) %s task was not run. Callback from Service received after client was disposed.
+11-08 01:06:27.712  1585  1830 W A       : (REDACTED) %s task was not run. Callback from Service received after client was disposed.
+11-08 01:06:27.713  1482  1795 I NgaEntryPointEventSendr: (REDACTED) State changed: %s => %s (%s)
+11-08 01:06:27.714  1585  1882 I PBSessionCacheImpl: (REDACTED) Deleted sessionId[%d] from persistence.
+11-08 01:06:27.714  1585  1830 W A       : (REDACTED) %s task was not run. Callback from Service received after client was disposed.
+11-08 01:06:27.718  1585  1830 W SearchServiceCore: Abort, client detached.
+11-08 01:06:27.749  1103  1112 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PrebuiltBugle/PrebuiltBugle.apk' with 1 weak references
+11-08 01:06:27.750  1103  1112 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/GoogleTTS/GoogleTTS.apk' with 1 weak references
+11-08 01:06:27.751  1103  1112 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/WellbeingPrebuilt/WellbeingPrebuilt.apk' with 1 weak references
+11-08 01:06:27.759   638   806 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+11-08 01:06:27.760   638   806 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+11-08 01:06:27.760   638   806 D InetDiagMessage: Destroyed live tcp sockets for uids={10166} in 2ms
+11-08 01:06:27.760   638   806 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+11-08 01:06:27.760   638   806 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+11-08 01:06:27.761   638   806 D InetDiagMessage: Destroyed live tcp sockets for uids={20166} in 0ms
+11-08 01:06:27.803  1341  1361 W AllAppsList: updatePromiseInstallInfo: no Activities matched updated package, removing all apps from package=com.google.android.apps.wellbeing
+11-08 01:06:27.805  1341  1341 D SsBaseTemplateCard: No text view can be set up
+11-08 01:06:27.805  1341  1341 D SsBaseTemplateCard: Passed-in item info is null
+11-08 01:06:27.805  1341  1341 D SsBaseTemplateCard: Passed-in item info is null
+11-08 01:06:27.805  1341  1341 D SsBaseTemplateCard: Passed-in item info is null
+11-08 01:06:27.805  1341  1341 I SsBaseTemplateCard: Secondary card pane is null
+11-08 01:06:27.805  1482  1795 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+11-08 01:06:27.822  1341  1607 D EGL_emulation: app_time_stats: avg=590.83ms min=17.00ms max=1164.66ms count=2
+11-08 01:06:27.825   638   711 D WifiNl80211Manager: Scan result ready event
+11-08 01:06:27.825   638   711 D WifiNative: Scan result ready event
+11-08 01:06:27.827   638   799 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+11-08 01:06:27.860  1625  3375 I adservices: Register privacy sandbox mendel properties by handle intent
+11-08 01:06:27.953  1625  3375 I Auth    : [SupervisedAccountIntentOperation] onHandleIntent(): android.intent.action.BOOT_COMPLETED
+11-08 01:06:27.953  1625  2691 W Auth    : [PubsubPeriodicSyncherRuntimeInit] Initializing periodic tasks, IntentAction=android.intent.action.BOOT_COMPLETED, InitRuntimeState=2
+11-08 01:06:27.955  1103  1103 W SystemServiceRegistry: No service published for: persistent_data_block
+11-08 01:06:27.964  1625  3375 I RecoverableKeyStoreGms: [RecoverableKeyStoreGmsInitOperation] Initializing auth_folsom
+11-08 01:06:27.965  1625  3375 I RecoverableKeyStoreGms: [RecoverableKeyStoreGmsInitOperation] com.google.android.gms.auth.folsom.service.FolsomPublicKeyUpdateService is already enabled. Ignore.
+11-08 01:06:27.966  1625  3375 I RecoverableKeyStoreGms: [RecoverableKeyStoreGmsInitOperation] com.google.android.gms.auth.folsom.service.GcmReceiverService is already enabled. Ignore.
+11-08 01:06:27.967  1103  1962 W WearableService: onGetService: Wear is not available on this device.
+11-08 01:06:27.985  1625  3558 W ChimeraUtils: Module com.google.android.gms.auth_authzen__phone missing resource null(0)
+11-08 01:06:27.986  1625  3558 I Authzen : [AuthZenEventHandler] Handling event: android.intent.action.BOOT_COMPLETED
+11-08 01:06:27.986  1625  3558 I Authzen : [TransactionCache] Clearing transaction cache
+11-08 01:06:28.019  1103  1103 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.auth.proximity.devicesyncservice.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentBoundBrokerService }
+11-08 01:06:28.019  1103  1103 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.auth.proximity.devicesyncservice.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentBoundBrokerService }
+11-08 01:06:28.019  1103  1206 W EasyUnlock: [HostValidator] Invalid account list. [CONTEXT service_id=234 ]
+11-08 01:06:28.021   638  1034 D OomAdjuster: Not killing cached processes
+11-08 01:06:28.036  1625  2691 I Auth    : [AuthManaged, PasswordComplexityHelperImpl] Updating password complexity components state.
+11-08 01:06:28.036  1625  2691 I Auth    : [AuthManaged, PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+11-08 01:06:28.037  1625  2691 I Auth    : [AuthManaged, PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+11-08 01:06:28.037  1625  2691 I Auth    : [AuthManaged, AuthManagedModuleInitIntentOperation] enabling com.google.android.gms.auth.managed.ui.EmmActivity
+11-08 01:06:28.037  1625  2691 I Auth    : [AuthManaged, AuthManagedModuleInitIntentOperation] enabling com.google.android.gms.auth.managed.ui.PhoneskyDpcInstallActivity
+11-08 01:06:28.038  1625  2691 W Auth    : [AuthManaged, SettingsSecurityDeviceOwnerChimeraActivity] device owner: n/a
+11-08 01:06:28.038  1625  2691 I Auth    : [AuthManaged, AuthManagedModuleInitIntentOperation] disabling com.google.android.gms.auth.managed.ui.SettingsSecurityDeviceOwnerActivity
+11-08 01:06:28.039  1625  2691 I Auth    : [AuthManaged, PasswordComplexityHelperImpl] Updating password complexity components state.
+11-08 01:06:28.039  1625  2691 I Auth    : [AuthManaged, PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+11-08 01:06:28.039  1625  2691 I Auth    : [AuthManaged, PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+11-08 01:06:28.048  1625  2691 I ProximityAuth: [FeatureLoader] auth_easyunlock module load status: 2
+11-08 01:06:28.052  1103  1103 I ProximityAuth: [PhoneHubService] Handling intent for PhoneHubChimeraService.
+11-08 01:06:28.052  1103  1103 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.auth.proximity.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentBoundBrokerService }
+11-08 01:06:28.052  1103  1103 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.auth.proximity.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentBoundBrokerService }
+11-08 01:06:28.055  1103  1223 I ProximityAuth: [PhoneHubService] No enabled account, stopping service
+11-08 01:06:28.056  1103  2712 W ProximityAuth: [GetMyPublicKey] Failed to fetch public key.
+11-08 01:06:28.056  1103  2712 E etxo    : RuntimeException while executing runnable etyd{aasn@29481f5} with executor MoreExecutors.directExecutor()
+11-08 01:06:28.056  1103  2712 E etxo    : java.lang.NullPointerException: Attempt to get length of null array
+11-08 01:06:28.056  1103  2712 E etxo    : 	at android.util.Base64.encode(Base64.java:497)
+11-08 01:06:28.056  1103  2712 E etxo    : 	at android.util.Base64.encodeToString(Base64.java:459)
+11-08 01:06:28.056  1103  2712 E etxo    : 	at com.google.android.gms.auth.proximity.RemoteDevice.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):3)
+11-08 01:06:28.056  1103  2712 E etxo    : 	at aasn.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):3)
+11-08 01:06:28.056  1103  2712 E etxo    : 	at etyd.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):30)
+11-08 01:06:28.056  1103  2712 E etxo    : 	at etxk.execute(:com.google.android.gms@242335041@24.23.35 (190800-646585959):1)
+11-08 01:06:28.056  1103  2712 E etxo    : 	at etxo.c(:com.google.android.gms@242335041@24.23.35 (190800-646585959):1)
+11-08 01:06:28.056  1103  2712 E etxo    : 	at etxo.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):32)
+11-08 01:06:28.056  1103  2712 E etxo    : 	at angx.done(:com.google.android.gms@242335041@24.23.35 (190800-646585959):6)
+11-08 01:06:28.056  1103  2712 E etxo    : 	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:381)
+11-08 01:06:28.056  1103  2712 E etxo    : 	at java.util.concurrent.FutureTask.set(FutureTask.java:232)
+11-08 01:06:28.056  1103  2712 E etxo    : 	at java.util.concurrent.FutureTask.run(FutureTask.java:272)
+11-08 01:06:28.056  1103  2712 E etxo    : 	at angs.c(:com.google.android.gms@242335041@24.23.35 (190800-646585959):50)
+11-08 01:06:28.056  1103  2712 E etxo    : 	at angs.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):76)
+11-08 01:06:28.056  1103  2712 E etxo    : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-08 01:06:28.056  1103  2712 E etxo    : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-08 01:06:28.056  1103  2712 E etxo    : 	at anmg.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+11-08 01:06:28.056  1103  2712 E etxo    : 	at java.lang.Thread.run(Thread.java:1012)
+11-08 01:06:28.057  1103  1103 I ProximityAuth: [PhoneHubService] Destroying PhoneHubChimeraService.
+11-08 01:06:28.057  1103  1103 W ProximityAuth: [PhoneHubNotificationProcessor] shutdown(): context is null.
+11-08 01:06:28.057  1103  1103 I ProximityAuth: [PhoneHubService] All devices have disconnected. Performing cleanup...
+11-08 01:06:28.057  1103  1103 W ChimeraUtils: Module com.google.android.gms.auth_proximity missing resource null(0)
+11-08 01:06:28.059  1625  1625 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.potokens.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsApiService }
+11-08 01:06:28.123  1625  1625 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.credential.manager.service.firstparty.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsApiService }
+11-08 01:06:28.125  1625  2071 I Ads     : Parental control value is stale. Refreshing.
+11-08 01:06:28.126  1625  2071 W Ads     : Play store is not installed or the service for parental controls is not available.
+11-08 01:06:28.126  1625  2071 I Ads     : Initialized AdMob in container 24.23.35 (190800-646585959)
+11-08 01:06:28.131  1625  1625 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.auth.key.retrieval.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsApiService }
+11-08 01:06:28.131  1625  2071 I GmsCoreXrpcWrapper: Returning a channel provider with trafficStatsTag=18692 trafficStatsUid=-1
+11-08 01:06:28.137  1625  2071 I AutofillModuleInitInten: AutofillModuleInitIntentOperation onInitRuntimeState(2) [CONTEXT service_id=177 ]
+11-08 01:06:28.159  1625  1916 D nativeloader: Load /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64/libleveldbjni.so using ns product-clns-9 from class loader (caller=/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!classes3.dex): ok
+11-08 01:06:28.159   638   711 V RecoverableKeyStoreMgr: Not updating secret types - same as old value.
+11-08 01:06:28.161  1625  2902 I GmsSyncPolicyEngine: Periodic sync 4 disabled by policy, cancelled.
+11-08 01:06:28.185  1625  1641 W gle.android.gms: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/priv-app/SettingsGoogle/SettingsGoogle.apk' with 1 weak references
+11-08 01:06:28.186  1625  1641 W gle.android.gms: ApkAssets: Deleting an ApkAssets object '/product/overlay/SettingsGoogle__sdk_gphone64_x86_64__auto_generated_rro_product.apk' with 1 weak references
+11-08 01:06:28.316   638   864 I SdkSandboxManager: Reconciling sdk data package directories for 0
+11-08 01:06:28.402   638   638 W Looper  : Slow dispatch took 211ms main h=android.database.sqlite.SQLiteConnectionPool$IdleConnectionHandler c=null m=2
+11-08 01:06:28.402  1625  2680 D SharedPreferencesImpl: Time required to fsync /data/user/0/com.google.android.gms/shared_prefs/com.google.android.gms.update.storage.xml: [<1: 0, <2: 0, <4: 0, <8: 0, <16: 0, <32: 0, <64: 0, <128: 0, <256: 0, <512: 1, <1024: 0, <2048: 0, <4096: 0, <8192: 0, <16384: 0, >=16384: 0]
+11-08 01:06:28.403  1625  3375 I RecoverableKeyStoreGms: [RecoverableKeyStoreGmsInitOperation] Setting vault handle
+11-08 01:06:28.403  1625  2071 V Backup  : [MigrateUtil] Clearing migrate temp dir: /data/user/0/com.google.android.gms/files/migrate_dir
+11-08 01:06:28.404   638   657 V RecoverableKeyStoreMgr: Not updating server params - same as old value.
+11-08 01:06:28.405   638   657 I RecoverySnapshotLstnrs: Registered listener for agent with uid 10143
+11-08 01:06:28.406  1625  2071 D Backup  : [MigrateCleaner] D2D transport was not selected, not selecting cloud transport.
+11-08 01:06:28.407  1625  2071 W ChimeraUtils: Module com.google.android.gms.backup_g1 missing resource null(0)
+11-08 01:06:28.409  1625  2071 W ChimeraUtils: Module com.google.android.gms.backup_g1 missing resource null(0)
+11-08 01:06:28.410  1625  2071 W ChimeraUtils: Module com.google.android.gms.backup_g1 missing resource null(0)
+11-08 01:06:28.411  1625  2071 V Backup  : [SettingsModuleInit] onInitRuntimeState
+11-08 01:06:28.417  1625  2071 I Backup  : [GmsBackupAccountManager] Backup account not found in gmscore.
+11-08 01:06:28.420  1625  2071 V Backup  : [NoBackupNotification] Disabled, not scheduling
+11-08 01:06:28.421  1625  2071 V Backup  : [AccountChangedIO] Received intent, action = android.intent.action.BOOT_COMPLETED
+11-08 01:06:28.421  1103  1634 W ChimeraUtils: Module com.google.android.gms.backup_base missing resource null(0)
+11-08 01:06:28.422  1103  1634 V Backup  : [BackupAccountNotifier] Handling new intent. Show notification: true
+11-08 01:06:28.425  1625  2071 I Backup  : [GmsBackupAccountManager] Backup account not found in gmscore.
+11-08 01:06:28.428  1103  1634 W ChimeraUtils: Module com.google.android.gms.backup_base missing resource null(0)
+11-08 01:06:28.428  1103  1634 V Backup  : [BackupAccountNotifier] Handling new intent. Show notification: true
+11-08 01:06:28.525  1625  3375 I RecoverableKeyStoreGms: [EnrollmentManager] Returning certificates list from cache [CONTEXT service_id=172 ]

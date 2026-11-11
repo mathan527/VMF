@@ -1,0 +1,464 @@
+--------- beginning of main
+11-10 01:00:55.040  2655  4326 I gle.android.gm: Waiting for a blocking GC Alloc
+11-10 01:00:55.040  2655  4530 I gle.android.gm: Waiting for a blocking GC Alloc
+11-10 01:00:55.040  2655  2655 I gle.android.gm: IncrementDisableThreadFlip blocked for 34.679ms
+11-10 01:00:55.040  2655  4330 I gle.android.gm: IncrementDisableThreadFlip blocked for 31.795ms
+11-10 01:00:55.040  2655  4330 I gle.android.gm: Waiting for a blocking GC Alloc
+11-10 01:00:55.041  2655  3573 I gle.android.gm: Waiting for a blocking GC Alloc
+11-10 01:00:55.041  2655  4427 I gle.android.gm: Waiting for a blocking GC Alloc
+11-10 01:00:55.041  2655  3070 I gle.android.gm: Waiting for a blocking GC Alloc
+11-10 01:00:55.042  2655  4487 I gle.android.gm: Waiting for a blocking GC Alloc
+11-10 01:00:55.048  2655  4525 I gle.android.gm: Alloc young concurrent copying GC freed 21725(1723KB) AllocSpace objects, 20(456KB) LOS objects, 24% free, 6944KB/9197KB, paused 28.065ms total 56.399ms
+11-10 01:00:55.048  2655  4524 I gle.android.gm: WaitForGcToComplete blocked Alloc on HeapTrim for 55.331ms
+11-10 01:00:55.048  2655  4524 I gle.android.gm: Starting a blocking GC Alloc
+11-10 01:00:55.049  2655  4526 I gle.android.gm: WaitForGcToComplete blocked Alloc on HeapTrim for 54.852ms
+11-10 01:00:55.049  2655  4526 I gle.android.gm: Starting a blocking GC Alloc
+11-10 01:00:55.049  2655  4529 I gle.android.gm: WaitForGcToComplete blocked Alloc on HeapTrim for 53.187ms
+11-10 01:00:55.049  2655  4529 I gle.android.gm: Starting a blocking GC Alloc
+11-10 01:00:55.050  2655  2679 I gle.android.gm: WaitForGcToComplete blocked Background on HeapTrim for 50.807ms
+11-10 01:00:55.051  2655  4511 I gle.android.gm: WaitForGcToComplete blocked Alloc on HeapTrim for 11.772ms
+11-10 01:00:55.051  2655  4511 I gle.android.gm: Starting a blocking GC Alloc
+11-10 01:00:55.051  2655  2970 I gle.android.gm: WaitForGcToComplete blocked Alloc on HeapTrim for 11.628ms
+11-10 01:00:55.051  2655  2970 I gle.android.gm: Starting a blocking GC Alloc
+11-10 01:00:55.051  2655  3068 I gle.android.gm: WaitForGcToComplete blocked Alloc on HeapTrim for 11.564ms
+11-10 01:00:55.051  2655  3068 I gle.android.gm: Starting a blocking GC Alloc
+11-10 01:00:55.051  2655  4326 I gle.android.gm: WaitForGcToComplete blocked Alloc on HeapTrim for 11.529ms
+11-10 01:00:55.051  2655  4326 I gle.android.gm: Starting a blocking GC Alloc
+11-10 01:00:55.051  2655  2655 I LT_PhenotypeApiImplV12: Phenotype registration succeeded
+11-10 01:00:55.052  2655  4530 I gle.android.gm: WaitForGcToComplete blocked Alloc on HeapTrim for 11.811ms
+11-10 01:00:55.052  2655  4530 I gle.android.gm: Starting a blocking GC Alloc
+11-10 01:00:55.052  2655  4330 I gle.android.gm: WaitForGcToComplete blocked Alloc on HeapTrim for 11.678ms
+11-10 01:00:55.052  2655  4330 I gle.android.gm: Starting a blocking GC Alloc
+11-10 01:00:55.052  2655  3573 I gle.android.gm: WaitForGcToComplete blocked Alloc on HeapTrim for 11.682ms
+11-10 01:00:55.052  2655  3573 I gle.android.gm: Starting a blocking GC Alloc
+11-10 01:00:55.053  2655  4427 I gle.android.gm: WaitForGcToComplete blocked Alloc on HeapTrim for 11.666ms
+11-10 01:00:55.053  2655  4427 I gle.android.gm: Starting a blocking GC Alloc
+11-10 01:00:55.053  2655  3070 I gle.android.gm: WaitForGcToComplete blocked Alloc on HeapTrim for 11.424ms
+11-10 01:00:55.053  2655  3070 I gle.android.gm: Starting a blocking GC Alloc
+11-10 01:00:55.053  2655  2655 D LT_ClntIntrcptrFctryV12: Spatula header: CjYKFmNvbS5nb29nbGUuYW5kcm9pZC5nbXMaHFdPSEVFejkwUWV3OUxDY0NjS0ZJQXRwSHVnND0Yw4HIlOHi548/
+11-10 01:00:55.053  2655  4487 I gle.android.gm: WaitForGcToComplete blocked Alloc on HeapTrim for 11.640ms
+11-10 01:00:55.053  2655  4487 I gle.android.gm: Starting a blocking GC Alloc
+11-10 01:00:55.065  2655  4085 W MDM     : [158] agll.b: Unable to set as device admin.
+11-10 01:00:55.065  2655  4085 W MDM     : java.lang.reflect.InvocationTargetException
+11-10 01:00:55.065  2655  4085 W MDM     : 	at java.lang.reflect.Method.invoke(Native Method)
+11-10 01:00:55.065  2655  4085 W MDM     : 	at agkz.c(:com.google.android.gms@202414023@20.24.14 (040800-319035315):7)
+11-10 01:00:55.065  2655  4085 W MDM     : 	at agkz.b(:com.google.android.gms@202414023@20.24.14 (040800-319035315):3)
+11-10 01:00:55.065  2655  4085 W MDM     : 	at com.google.android.gms.security.snet.SecurityModuleInitIntentOperation.a(:com.google.android.gms@202414023@20.24.14 (040800-319035315):5)
+11-10 01:00:55.065  2655  4085 W MDM     : 	at com.google.android.gms.security.snet.SecurityModuleInitIntentOperation.a(:com.google.android.gms@202414023@20.24.14 (040800-319035315):17)
+11-10 01:00:55.065  2655  4085 W MDM     : 	at qme.onHandleIntent(:com.google.android.gms@202414023@20.24.14 (040800-319035315):11)
+11-10 01:00:55.065  2655  4085 W MDM     : 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@202414023@20.24.14 (040800-319035315):2)
+11-10 01:00:55.065  2655  4085 W MDM     : 	at qlx.onHandleIntent(:com.google.android.gms@202414023@20.24.14 (040800-319035315):4)
+11-10 01:00:55.065  2655  4085 W MDM     : 	at cuo.run(:com.google.android.gms@202414023@20.24.14 (040800-319035315):5)
+11-10 01:00:55.065  2655  4085 W MDM     : 	at cun.run(:com.google.android.gms@202414023@20.24.14 (040800-319035315):10)
+11-10 01:00:55.065  2655  4085 W MDM     : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+11-10 01:00:55.065  2655  4085 W MDM     : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+11-10 01:00:55.065  2655  4085 W MDM     : 	at java.lang.Thread.run(Thread.java:919)
+11-10 01:00:55.065  2655  4085 W MDM     : Caused by: java.lang.SecurityException: Neither user 10115 nor current process has android.permission.MANAGE_DEVICE_ADMINS.
+11-10 01:00:55.065  2655  4085 W MDM     : 	at android.os.Parcel.createException(Parcel.java:2071)
+11-10 01:00:55.065  2655  4085 W MDM     : 	at android.os.Parcel.readException(Parcel.java:2039)
+11-10 01:00:55.065  2655  4085 W MDM     : 	at android.os.Parcel.readException(Parcel.java:1987)
+11-10 01:00:55.065  2655  4085 W MDM     : 	at android.app.admin.IDevicePolicyManager$Stub$Proxy.setActiveAdmin(IDevicePolicyManager.java:8021)
+11-10 01:00:55.065  2655  4085 W MDM     : 	at android.app.admin.DevicePolicyManager.setActiveAdmin(DevicePolicyManager.java:5666)
+11-10 01:00:55.065  2655  4085 W MDM     : 	at android.app.admin.DevicePolicyManager.setActiveAdmin(DevicePolicyManager.java:5678)
+11-10 01:00:55.065  2655  4085 W MDM     : 	... 13 more
+11-10 01:00:55.065  2655  4085 W MDM     : Caused by: android.os.RemoteException: Remote stack trace:
+11-10 01:00:55.065  2655  4085 W MDM     : 	at android.app.ContextImpl.enforce(ContextImpl.java:1896)
+11-10 01:00:55.065  2655  4085 W MDM     : 	at android.app.ContextImpl.enforceCallingOrSelfPermission(ContextImpl.java:1924)
+11-10 01:00:55.065  2655  4085 W MDM     : 	at com.android.server.devicepolicy.DevicePolicyManagerService.setActiveAdmin(DevicePolicyManagerService.java:3788)
+11-10 01:00:55.065  2655  4085 W MDM     : 	at com.android.server.devicepolicy.DevicePolicyManagerService.setActiveAdmin(DevicePolicyManagerService.java:3783)
+11-10 01:00:55.065  2655  4085 W MDM     : 	at android.app.admin.IDevicePolicyManager$Stub.onTransact(IDevicePolicyManager.java:3060)
+11-10 01:00:55.065  2655  4085 W MDM     : 
+11-10 01:00:55.069  1910  3157 I system_server: Starting a blocking GC Alloc
+11-10 01:00:55.069  1910  3157 I system_server: Starting a blocking GC Alloc
+11-10 01:00:55.071  1910  3720 I system_server: Waiting for a blocking GC Alloc
+11-10 01:00:55.071  2445  3260 I aorp    : updateFromConfigurations using legacy put method [CONTEXT service_id=204 ]
+11-10 01:00:55.071  1910  3395 I system_server: Waiting for a blocking GC Alloc
+11-10 01:00:55.071  1910  2179 I system_server: Waiting for a blocking GC Alloc
+11-10 01:00:55.072  1910  4342 I system_server: Waiting for a blocking GC Alloc
+11-10 01:00:55.072  1910  2634 I system_server: Waiting for a blocking GC Alloc
+11-10 01:00:55.073  1910  2004 I system_server: Waiting for a blocking GC Alloc
+11-10 01:00:55.079  1703  1740 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 4612096
+11-10 01:00:55.080  1910  2901 I system_server: Waiting for a blocking GC Alloc
+11-10 01:00:55.080  4437  4497 I android.youtub: The ClassLoaderContext is a special shared library.
+11-10 01:00:55.082  1910  2809 I system_server: Waiting for a blocking GC Alloc
+11-10 01:00:55.082  1910  2258 I system_server: Waiting for a blocking GC Alloc
+11-10 01:00:55.083  1571  1571 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.
+11-10 01:00:55.083  4523  4523 W Gralloc3: mapper 3.x is not supported
+11-10 01:00:55.084  1910  3157 I system_server: Alloc young concurrent copying GC freed 15678(790KB) AllocSpace objects, 0(0B) LOS objects, 33% free, 10MB/16MB, paused 58us total 14.640ms
+11-10 01:00:55.084  1910  3720 I system_server: WaitForGcToComplete blocked Alloc on HeapTrim for 13.186ms
+11-10 01:00:55.084  1910  3720 I system_server: Starting a blocking GC Alloc
+11-10 01:00:55.085  1910  3395 I system_server: WaitForGcToComplete blocked Alloc on HeapTrim for 13.882ms
+11-10 01:00:55.085  1910  3395 I system_server: Starting a blocking GC Alloc
+11-10 01:00:55.086  1910  2179 I system_server: WaitForGcToComplete blocked Alloc on HeapTrim for 14.997ms
+11-10 01:00:55.086  1910  2179 I system_server: Starting a blocking GC Alloc
+11-10 01:00:55.088  4437  4497 I android.youtub: The ClassLoaderContext is a special shared library.
+11-10 01:00:55.092  1910  4342 I system_server: WaitForGcToComplete blocked Alloc on HeapTrim for 19.597ms
+11-10 01:00:55.092  1910  4342 I system_server: Starting a blocking GC Alloc
+11-10 01:00:55.092  1910  2634 I system_server: WaitForGcToComplete blocked Alloc on HeapTrim for 20.169ms
+11-10 01:00:55.092  1910  2634 I system_server: Starting a blocking GC Alloc
+11-10 01:00:55.093  1910  2004 I system_server: WaitForGcToComplete blocked Alloc on HeapTrim for 19.280ms
+11-10 01:00:55.093  1910  2004 I system_server: Starting a blocking GC Alloc
+11-10 01:00:55.093  1910  2901 I system_server: WaitForGcToComplete blocked Alloc on HeapTrim for 13.474ms
+11-10 01:00:55.093  1910  2901 I system_server: Starting a blocking GC Alloc
+11-10 01:00:55.093  1910  2809 I system_server: WaitForGcToComplete blocked Alloc on HeapTrim for 11.739ms
+11-10 01:00:55.093  1910  2809 I system_server: Starting a blocking GC Alloc
+11-10 01:00:55.094  1910  2258 I system_server: WaitForGcToComplete blocked Alloc on HeapTrim for 11.221ms
+11-10 01:00:55.094  1910  2258 I system_server: Starting a blocking GC Alloc
+11-10 01:00:55.113  2655  4330 I SubscribedFeeds: Collected 10 certs in 12ms [CONTEXT service_id=250 ]
+11-10 01:00:55.121  2655  4326 I TelephonySpam: SpamListSync - scheduleOneTimeTask
+11-10 01:00:55.131  4437  4504 E GEL_DELAYED_EVENT_DEBUG: Failed delayed event dispatch, no dispatchers.
+11-10 01:00:55.139  4437  4497 W android.youtub: Unsupported class loader
+11-10 01:00:55.162  2445  3260 I aorp    : updateFromConfigurations using legacy put method [CONTEXT service_id=204 ]
+11-10 01:00:55.182  2445  4561 I .gms.persisten: Starting a blocking GC Alloc
+11-10 01:00:55.182  2445  4561 I .gms.persisten: Starting a blocking GC Alloc
+11-10 01:00:55.185  4523  4523 D HostConnection: createUnique: call
+11-10 01:00:55.185  2445  3892 I .gms.persisten: Waiting for a blocking GC Alloc
+11-10 01:00:55.185  2445  2445 I .gms.persisten: Waiting for a blocking GC Alloc
+11-10 01:00:55.189  2445  2810 I .gms.persisten: Waiting for a blocking GC Alloc
+11-10 01:00:55.195  2445  3005 I .gms.persisten: Waiting for a blocking GC Alloc
+11-10 01:00:55.200  2445  4561 I .gms.persisten: Alloc young concurrent copying GC freed 29289(1992KB) AllocSpace objects, 17(440KB) LOS objects, 25% free, 9150KB/12MB, paused 13us total 18.238ms
+11-10 01:00:55.200  2445  3892 I .gms.persisten: WaitForGcToComplete blocked Alloc on HeapTrim for 15.175ms
+11-10 01:00:55.200  2445  3892 I .gms.persisten: Starting a blocking GC Alloc
+11-10 01:00:55.200  2445  2445 I .gms.persisten: WaitForGcToComplete blocked Alloc on HeapTrim for 15.312ms
+11-10 01:00:55.200  2445  2445 I .gms.persisten: Starting a blocking GC Alloc
+11-10 01:00:55.201  2445  2810 I .gms.persisten: WaitForGcToComplete blocked Alloc on HeapTrim for 11.704ms
+11-10 01:00:55.201  2445  2810 I .gms.persisten: Starting a blocking GC Alloc
+11-10 01:00:55.203  2445  3005 I .gms.persisten: WaitForGcToComplete blocked Alloc on HeapTrim for 8.666ms
+11-10 01:00:55.204  2445  3005 I .gms.persisten: Starting a blocking GC Alloc
+11-10 01:00:55.208  4523  4523 D HostConnection: HostConnection::get() New Host Connection established 0x7fb8301305a0, tid 4523
+11-10 01:00:55.243  4523  4523 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_hwc_color_transform GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_2 
+11-10 01:00:55.243  4523  4523 D eglCodecCommon: allocate: Ask for block of size 0x1000
+11-10 01:00:55.243  4523  4523 D eglCodecCommon: allocate: ioctl allocate returned offset 0x3ffff6000 size 0x2000
+11-10 01:00:55.244  2655  4330 I Wear_Controller: Wear requires a companion app to be installed.
+11-10 01:00:55.244  2655  4330 I Wear_Controller: onStartup - Wear is not available on this device.
+11-10 01:00:55.273  4523  4523 D eglCodecCommon: allocate: Ask for block of size 0x466000
+11-10 01:00:55.273  4523  4523 D eglCodecCommon: allocate: ioctl allocate returned offset 0x3ff724000 size 0x467000
+--------- beginning of system
+11-10 01:00:55.280  1910  2901 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-10 01:00:55.280  1910  2901 D PackageManager: Clear ephemeral installer activity
+11-10 01:00:55.280  1910  2634 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-10 01:00:55.280  1910  2634 D PackageManager: Clear ephemeral installer activity
+11-10 01:00:55.280  1910  2258 D ConnectivityService: requestNetwork for uid/pid:10144/4437 NetworkRequest [ TRACK_DEFAULT id=20, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10144] ]
+11-10 01:00:55.281  1910  2012 D WifiNetworkFactory: got request NetworkRequest [ TRACK_DEFAULT id=20, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10144] ] with score 20 and serial -1
+11-10 01:00:55.281  1910  2012 D UntrustedWifiNetworkFactory: got request NetworkRequest [ TRACK_DEFAULT id=20, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10144] ] with score 20 and serial -1
+11-10 01:00:55.281  2206  2206 D PhoneSwitcherNetworkRequstListener: got request NetworkRequest [ TRACK_DEFAULT id=20, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10144] ] with score 20 and serial -1
+11-10 01:00:55.295  4437  4501 V NativeCrypto: Registering com/google/android/gms/org/conscrypt/NativeCrypto's 286 native methods...
+11-10 01:00:55.299  2655  2940 I Vision  : Supported ABIS: [x86_64, x86]
+11-10 01:00:55.311  4437  4572 I android.youtub: Starting a blocking GC Alloc
+11-10 01:00:55.311  4437  4572 I android.youtub: Starting a blocking GC Alloc
+11-10 01:00:55.329  2655  3328 E WakeLock: DG:service ** IS FORCE-RELEASED ON TIMEOUT **
+11-10 01:00:55.332  4437  4571 I android.youtub: Waiting for a blocking GC Alloc
+11-10 01:00:55.338  2655  4330 I Vision  : Requesting optional module download of ocr.
+11-10 01:00:55.344  4437  4577 I android.youtub: Waiting for a blocking GC Alloc
+11-10 01:00:55.354  2655  4330 I Vision  : Checking for download completion for 44469 -- ocr
+11-10 01:00:55.356  4437  4451 I android.youtub: Waiting for a blocking GC Alloc
+11-10 01:00:55.357  4437  4499 I android.youtub: Waiting for a blocking GC Alloc
+11-10 01:00:55.357  4437  4560 I android.youtub: Waiting for a blocking GC Alloc
+11-10 01:00:55.357  4437  4535 I android.youtub: Waiting for a blocking GC Alloc
+11-10 01:00:55.357  4437  4497 I android.youtub: Waiting for a blocking GC Alloc
+11-10 01:00:55.359  2655  4085 I ChimeraConfigurator: Starting update, reason: 4 urgentFeatures: vision.ocr:-1
+11-10 01:00:55.360  1910  1928 I system_server: Starting a blocking GC Alloc
+11-10 01:00:55.360  1910  1928 I system_server: Starting a blocking GC Alloc
+11-10 01:00:55.362  1910  2015 I system_server: Waiting for a blocking GC Alloc
+11-10 01:00:55.362  1910  2634 I system_server: Waiting for a blocking GC Alloc
+11-10 01:00:55.362  1910  2901 I system_server: Waiting for a blocking GC Alloc
+11-10 01:00:55.363  1910  2258 I system_server: Waiting for a blocking GC Alloc
+11-10 01:00:55.370  1910  4342 I system_server: Waiting for a blocking GC Alloc
+11-10 01:00:55.370  2655  2659 I gle.android.gm: Starting a blocking GC Alloc
+11-10 01:00:55.370  2655  2659 I gle.android.gm: Starting a blocking GC Alloc
+11-10 01:00:55.372  2655  2979 I gle.android.gm: Waiting for a blocking GC Alloc
+11-10 01:00:55.381  1910  1928 I system_server: Alloc young concurrent copying GC freed 8701(649KB) AllocSpace objects, 5(188KB) LOS objects, 33% free, 10MB/16MB, paused 21us total 21.154ms
+11-10 01:00:55.381  1910  2015 I system_server: WaitForGcToComplete blocked Alloc on HeapTrim for 19.282ms
+11-10 01:00:55.381  1910  2015 I system_server: Starting a blocking GC Alloc
+11-10 01:00:55.381  1910  2634 I system_server: WaitForGcToComplete blocked Alloc on HeapTrim for 19.149ms
+11-10 01:00:55.382  1910  2634 I system_server: Starting a blocking GC Alloc
+11-10 01:00:55.382  1910  2901 I system_server: WaitForGcToComplete blocked Alloc on HeapTrim for 19.219ms
+11-10 01:00:55.382  1910  2901 I system_server: Starting a blocking GC Alloc
+11-10 01:00:55.384  2655  2659 I gle.android.gm: Alloc young concurrent copying GC freed 8237(1030KB) AllocSpace objects, 20(464KB) LOS objects, 21% free, 7181KB/9197KB, paused 12us total 14.193ms
+11-10 01:00:55.392  2655  2979 I gle.android.gm: WaitForGcToComplete blocked Alloc on HeapTrim for 20.177ms
+11-10 01:00:55.392  2655  2979 I gle.android.gm: Starting a blocking GC Alloc
+11-10 01:00:55.392  1910  2258 I system_server: WaitForGcToComplete blocked Alloc on HeapTrim for 29.628ms
+11-10 01:00:55.392  1910  2258 I system_server: Starting a blocking GC Alloc
+11-10 01:00:55.393  1910  4342 I system_server: WaitForGcToComplete blocked Alloc on HeapTrim for 23.074ms
+11-10 01:00:55.393  1910  4342 I system_server: Starting a blocking GC Alloc
+11-10 01:00:55.417  2655  4530 W gle.android.gm: Long monitor contention with owner LIT-UnlimitedExecutor #0 (4511) at boolean android.os.BinderProxy.transactNative(int, android.os.Parcel, android.os.Parcel, int)(BinderProxy.java:-2) waiters=0 in java.util.Map bfrc.a() for 145ms
+11-10 01:00:55.418  4437  4571 I android.youtub: WaitForGcToComplete blocked Alloc on ClassLinker for 86.390ms
+11-10 01:00:55.418  4437  4571 I android.youtub: Starting a blocking GC Alloc
+11-10 01:00:55.419  4437  4577 I android.youtub: WaitForGcToComplete blocked Alloc on ClassLinker for 74.557ms
+11-10 01:00:55.419  4437  4577 I android.youtub: Starting a blocking GC Alloc
+11-10 01:00:55.419  4437  4451 I android.youtub: WaitForGcToComplete blocked Alloc on ClassLinker for 62.654ms
+11-10 01:00:55.419  4437  4451 I android.youtub: Starting a blocking GC Alloc
+11-10 01:00:55.420  4437  4499 I android.youtub: WaitForGcToComplete blocked Alloc on ClassLinker for 62.890ms
+11-10 01:00:55.420  4437  4499 I android.youtub: Starting a blocking GC Alloc
+11-10 01:00:55.420  4437  4560 I android.youtub: WaitForGcToComplete blocked Alloc on ClassLinker for 63.141ms
+11-10 01:00:55.420  4437  4560 I android.youtub: Starting a blocking GC Alloc
+11-10 01:00:55.420  4437  4535 I android.youtub: WaitForGcToComplete blocked Alloc on ClassLinker for 62.810ms
+11-10 01:00:55.420  4437  4535 I android.youtub: Starting a blocking GC Alloc
+11-10 01:00:55.420  4437  4497 I android.youtub: WaitForGcToComplete blocked Alloc on ClassLinker for 62.535ms
+11-10 01:00:55.420  4437  4497 I android.youtub: Starting a blocking GC Alloc
+11-10 01:00:55.425  4437  4497 I DynamiteModule: Considering local module com.google.android.gms.ads.dynamite:0 and remote module com.google.android.gms.ads.dynamite:21400
+11-10 01:00:55.425  4437  4497 I DynamiteModule: Selected remote version of com.google.android.gms.ads.dynamite, version >= 21400
+11-10 01:00:55.443  2445  2688 I GCoreUlr: DispatchingService ignoring Intent { act=android.net.wifi.WIFI_STATE_CHANGED flg=0x4000010 (has extras) } because ULR inactive
+11-10 01:00:55.459  2445  2688 I GCoreUlr: WorldUpdater received intent Intent { act=com.google.android.location.reporting.ACTION_UPDATE_WORLD cmp=com.google.android.gms/com.google.android.location.reporting.service.DispatchingService (has extras) } with receiverAction init
+11-10 01:00:55.502  2445  2688 I GCoreUlr: WorldUpdater:init: Ensuring that reporting is stopped because of reasons: (no Google accounts)
+11-10 01:00:55.523  2445  2688 I GCoreUlr: Unbound from all signal providers.
+11-10 01:00:55.539  2445  2445 I GCoreUlr: Unbound from all signal providers.
+11-10 01:00:55.539  2445  2445 I GCoreUlr: Stopping handler for UlrDispSvcFast
+11-10 01:00:55.542  4437  4497 I DynamiteLoaderV2: [71] AdsFdrDynamite.integ
+11-10 01:00:55.569  4437  4437 V MediaRouter: Selecting route: RouteInfo{ name=Phone, description=null, status=null, category=RouteCategory{ name=System types=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO  groupable=false }, supportedTypes=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO , presentationDisplay=null }
+11-10 01:00:55.574  4437  4501 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: false
+11-10 01:00:55.575  4437  4501 I ProviderInstaller: Installed default security provider GmsCore_OpenSSL
+11-10 01:00:55.576  4437  4497 W android.youtub: Unsupported class loader
+11-10 01:00:55.591  2445  3010 I .gms.persisten: Starting a blocking GC Alloc
+11-10 01:00:55.591  2445  3010 I .gms.persisten: Starting a blocking GC Alloc
+11-10 01:00:55.624  2445  3010 I .gms.persisten: Alloc young concurrent copying GC freed 33641(2151KB) AllocSpace objects, 15(464KB) LOS objects, 22% free, 9546KB/12MB, paused 12us total 33.299ms
+11-10 01:00:55.660  4437  4497 W android.youtub: Skipping duplicate class check due to unsupported classloader
+11-10 01:00:55.660  4437  4497 I android.youtub: Waiting for a blocking GC ClassLinker
+11-10 01:00:55.662  4437  4437 W YT.MDX.aeto: CastAppId for type 0 not found. Defaulting to mainCastAppId.
+11-10 01:00:55.671  4437  4437 W YT.MDX.aeto: CastAppId for type 0 not found. Defaulting to mainCastAppId.
+11-10 01:00:55.675  4437  4498 I android.youtub: Waiting for a blocking GC Alloc
+11-10 01:00:55.676  4437  4509 I android.youtub: Waiting for a blocking GC Alloc
+11-10 01:00:55.689  4437  4571 I android.youtub: Waiting for a blocking GC Alloc
+11-10 01:00:55.708  4437  4497 I android.youtub: WaitForGcToComplete blocked ClassLinker on ClassLinker for 47.274ms
+11-10 01:00:55.708  4437  4498 I android.youtub: WaitForGcToComplete blocked Alloc on ClassLinker for 32.556ms
+11-10 01:00:55.708  4437  4498 I android.youtub: Starting a blocking GC Alloc
+11-10 01:00:55.708  4437  4509 I android.youtub: WaitForGcToComplete blocked Alloc on ClassLinker for 32.614ms
+11-10 01:00:55.708  4437  4509 I android.youtub: Starting a blocking GC Alloc
+11-10 01:00:55.708  4437  4571 I android.youtub: WaitForGcToComplete blocked Alloc on ClassLinker for 18.959ms
+11-10 01:00:55.708  4437  4571 I android.youtub: Starting a blocking GC Alloc
+11-10 01:00:55.712  4437  4437 V MediaRouter: Selecting route: RouteInfo{ name=Phone, description=null, status=null, category=RouteCategory{ name=System types=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO  groupable=false }, supportedTypes=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO , presentationDisplay=null }
+11-10 01:00:55.732  4437  4497 D DynamitePackage: Instantiated singleton DynamitePackage.
+11-10 01:00:55.732  4437  4497 D DynamitePackage: Instantiating com.google.android.gms.ads.adshield.ChimeraAdShieldCreatorImpl
+11-10 01:00:55.804  1910  4342 D ConnectivityService: requestNetwork for uid/pid:10144/4437 NetworkRequest [ TRACK_DEFAULT id=22, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10144] ]
+11-10 01:00:55.804  4437  4613 I android.youtub: Waiting for a blocking GC ClassLinker
+11-10 01:00:55.804  1910  2012 D WifiNetworkFactory: got request NetworkRequest [ TRACK_DEFAULT id=22, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10144] ] with score 20 and serial -1
+11-10 01:00:55.804  1910  2012 D UntrustedWifiNetworkFactory: got request NetworkRequest [ TRACK_DEFAULT id=22, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10144] ] with score 20 and serial -1
+11-10 01:00:55.804  2206  2206 D PhoneSwitcherNetworkRequstListener: got request NetworkRequest [ TRACK_DEFAULT id=22, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10144] ] with score 20 and serial -1
+11-10 01:00:55.804  4437  4612 I android.youtub: Waiting for a blocking GC ClassLinker
+11-10 01:00:55.806  1910  4342 I ActivityManager: Finished processing BOOT_COMPLETED for u0
+11-10 01:00:55.808  1910  4342 I ActivityManager: Killing 3864:com.google.android.calendar/u0a141 (adj 985): empty #17
+11-10 01:00:55.829  4437  4625 I android.youtub: Waiting for a blocking GC ClassLinker
+11-10 01:00:55.829  4437  4628 I android.youtub: Waiting for a blocking GC ClassLinker
+11-10 01:00:55.830  1910  2258 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.net.conn.NETWORK_CONDITIONS_MEASURED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+11-10 01:00:55.831  1910  1937 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+11-10 01:00:55.831  1910  1937 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+11-10 01:00:55.833  3097  4633 I MediaProvider: Begin Intent { act=android.intent.action.MEDIA_MOUNTED dat=file:///storage/emulated/0 flg=0x5000010 cmp=com.android.providers.media/.MediaService (has extras) }
+11-10 01:00:55.838  4437  4624 I android.youtub: Waiting for a blocking GC ClassLinker
+11-10 01:00:55.838  4437  4630 I android.youtub: Waiting for a blocking GC ClassLinker
+11-10 01:00:55.839  4437  4626 I android.youtub: Waiting for a blocking GC ClassLinker
+11-10 01:00:55.843  1665  1665 I Zygote  : Process 3864 exited due to signal 9 (Killed)
+11-10 01:00:55.844  3097  4633 W ModernMediaScanner: Failed to visit /system/media: java.nio.file.NoSuchFileException: /system/media
+11-10 01:00:55.844  4437  4636 I android.youtub: Waiting for a blocking GC ClassLinker
+11-10 01:00:55.854  1910  1939 I libprocessgroup: Successfully killed process cgroup uid 10141 pid 3864 in 40ms
+11-10 01:00:55.858  4437  4629 I android.youtub: Waiting for a blocking GC ClassLinker
+11-10 01:00:55.862  1910  2009 I system_server: Starting a blocking GC Alloc
+11-10 01:00:55.862  1910  2009 I system_server: Starting a blocking GC Alloc
+11-10 01:00:55.863  1910  1928 I system_server: Waiting for a blocking GC Alloc
+11-10 01:00:55.863  1910  2258 I system_server: Waiting for a blocking GC Alloc
+11-10 01:00:55.863  1910  4635 I system_server: Waiting for a blocking GC Alloc
+11-10 01:00:55.867  1910  2634 I system_server: Waiting for a blocking GC Alloc
+11-10 01:00:55.867  4437  4637 I android.youtub: Waiting for a blocking GC ClassLinker
+11-10 01:00:55.868  1910  2009 I system_server: Alloc young concurrent copying GC freed 11368(806KB) AllocSpace objects, 6(248KB) LOS objects, 33% free, 10MB/16MB, paused 12us total 6.097ms
+11-10 01:00:55.869  1910  1928 I system_server: WaitForGcToComplete blocked Alloc on HeapTrim for 5.941ms
+11-10 01:00:55.869  1910  1928 I system_server: Starting a blocking GC Alloc
+11-10 01:00:55.870  1664  4623 E ResolverController: No valid NAT64 prefix (101, <unspecified>/0)
+11-10 01:00:55.870  1910  2258 I system_server: WaitForGcToComplete blocked Alloc on HeapTrim for 7.311ms
+11-10 01:00:55.870  1910  2258 I system_server: Starting a blocking GC Alloc
+11-10 01:00:55.870  1910  4635 I system_server: WaitForGcToComplete blocked Alloc on HeapTrim for 7.199ms
+11-10 01:00:55.870  1910  4635 I system_server: Starting a blocking GC Alloc
+11-10 01:00:55.871  1910  2634 I system_server: Starting a blocking GC Alloc
+11-10 01:00:55.874  4437  4632 I android.youtub: Waiting for a blocking GC ClassLinker
+11-10 01:00:55.875  4437  4614 I android.youtub: Waiting for a blocking GC ClassLinker
+11-10 01:00:55.879  3097  4633 W ModernMediaScanner: Failed to visit /oem/media: java.nio.file.NoSuchFileException: /oem/media
+11-10 01:00:55.896  4437  4649 I android.youtub: Waiting for a blocking GC ClassLinker
+11-10 01:00:55.896  4437  4650 I android.youtub: Waiting for a blocking GC ClassLinker
+11-10 01:00:55.896  4437  4652 I android.youtub: Waiting for a blocking GC ClassLinker
+11-10 01:00:55.896  4437  4641 I android.youtub: Waiting for a blocking GC ClassLinker
+11-10 01:00:55.897  4437  4651 I android.youtub: Waiting for a blocking GC ClassLinker
+11-10 01:00:55.897  4437  4653 I android.youtub: Waiting for a blocking GC ClassLinker
+11-10 01:00:55.897  4437  4648 I android.youtub: Waiting for a blocking GC ClassLinker
+11-10 01:00:55.903  4437  4613 I android.youtub: WaitForGcToComplete blocked ClassLinker on ClassLinker for 99.339ms
+11-10 01:00:55.903  4437  4612 I android.youtub: Waiting for a blocking GC ClassLinker
+11-10 01:00:55.904  4437  4625 I android.youtub: Waiting for a blocking GC ClassLinker
+11-10 01:00:55.904  4437  4628 I android.youtub: Waiting for a blocking GC ClassLinker
+11-10 01:00:55.904  4437  4624 I android.youtub: Waiting for a blocking GC ClassLinker
+11-10 01:00:55.904  4437  4630 I android.youtub: Waiting for a blocking GC ClassLinker
+11-10 01:00:55.904  4437  4626 I android.youtub: Waiting for a blocking GC ClassLinker
+11-10 01:00:55.904  4437  4626 I android.youtub: WaitForGcToComplete blocked ClassLinker on ClassLinker for 65.159ms
+11-10 01:00:55.904  4437  4632 I android.youtub: WaitForGcToComplete blocked ClassLinker on ClassLinker for 29.340ms
+11-10 01:00:55.904  4437  4636 I android.youtub: WaitForGcToComplete blocked ClassLinker on ClassLinker for 59.932ms
+11-10 01:00:55.904  4437  4650 I android.youtub: Waiting for a blocking GC ClassLinker
+11-10 01:00:55.904  4437  4637 I android.youtub: Waiting for a blocking GC ClassLinker
+11-10 01:00:55.904  4437  4629 I android.youtub: Waiting for a blocking GC ClassLinker
+11-10 01:00:55.904  4437  4651 I android.youtub: Waiting for a blocking GC ClassLinker
+11-10 01:00:55.904  4437  4641 I android.youtub: Waiting for a blocking GC ClassLinker
+11-10 01:00:55.904  4437  4653 I android.youtub: Waiting for a blocking GC ClassLinker
+11-10 01:00:55.904  4437  4648 I android.youtub: Waiting for a blocking GC ClassLinker
+11-10 01:00:55.904  4437  4625 I android.youtub: Waiting for a blocking GC ClassLinker
+11-10 01:00:55.904  4437  4628 I android.youtub: Waiting for a blocking GC ClassLinker
+11-10 01:00:55.904  4437  4612 I android.youtub: Waiting for a blocking GC ClassLinker
+11-10 01:00:55.904  4437  4630 I android.youtub: Waiting for a blocking GC ClassLinker
+11-10 01:00:55.904  4437  4624 I android.youtub: Waiting for a blocking GC ClassLinker
+11-10 01:00:55.904  4437  4649 I android.youtub: Waiting for a blocking GC ClassLinker
+11-10 01:00:55.904  4437  4614 I android.youtub: Waiting for a blocking GC ClassLinker
+11-10 01:00:55.904  4437  4652 I android.youtub: Waiting for a blocking GC ClassLinker
+11-10 01:00:55.904  4437  4650 I android.youtub: WaitForGcToComplete blocked ClassLinker on ClassLinker for 8.404ms
+11-10 01:00:55.904  4437  4637 I android.youtub: WaitForGcToComplete blocked ClassLinker on ClassLinker for 37.059ms
+11-10 01:00:55.905  4437  4629 I android.youtub: WaitForGcToComplete blocked ClassLinker on ClassLinker for 46.365ms
+11-10 01:00:55.914  4437  4651 I android.youtub: WaitForGcToComplete blocked ClassLinker on ClassLinker for 8.224ms
+11-10 01:00:55.914  4437  4625 I android.youtub: WaitForGcToComplete blocked ClassLinker on ClassLinker for 85.252ms
+11-10 01:00:55.914  4437  4628 I android.youtub: WaitForGcToComplete blocked ClassLinker on ClassLinker for 85.073ms
+11-10 01:00:55.914  4437  4624 I android.youtub: WaitForGcToComplete blocked ClassLinker on ClassLinker for 76.921ms
+11-10 01:00:55.915  4437  4652 I android.youtub: WaitForGcToComplete blocked ClassLinker on ClassLinker for 18.244ms
+11-10 01:00:55.915  4437  4614 I android.youtub: WaitForGcToComplete blocked ClassLinker on ClassLinker for 39.984ms
+11-10 01:00:55.915  4437  4641 I android.youtub: WaitForGcToComplete blocked ClassLinker on ClassLinker for 18.163ms
+11-10 01:00:55.915  4437  4649 I android.youtub: WaitForGcToComplete blocked ClassLinker on ClassLinker for 19.226ms
+11-10 01:00:55.915  4437  4648 I android.youtub: WaitForGcToComplete blocked ClassLinker on ClassLinker for 17.703ms
+11-10 01:00:55.915  4437  4653 I android.youtub: WaitForGcToComplete blocked ClassLinker on ClassLinker for 18.011ms
+11-10 01:00:55.915  4437  4630 I android.youtub: WaitForGcToComplete blocked ClassLinker on ClassLinker for 77.187ms
+11-10 01:00:55.915  4437  4612 I android.youtub: WaitForGcToComplete blocked ClassLinker on ClassLinker for 110.931ms
+11-10 01:00:55.924  2445  3010 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-10 01:00:55.925  2445  3010 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@202414023@20.24.14 (040800-319035315):2)
+11-10 01:00:55.925  2445  3010 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@202414023@20.24.14 (040800-319035315):0)
+11-10 01:00:55.957  4437  4609 V NativeCrypto: SSL handshake aborted: ssl=0x75df43453b48: I/O error during system call, Connection reset by peer
+11-10 01:00:55.958  4437  4609 E GoogleConversionReporter: Error sending ping
+11-10 01:00:55.958  4437  4609 E GoogleConversionReporter: javax.net.ssl.SSLHandshakeException: SSL handshake aborted: ssl=0x75df43453b48: I/O error during system call, Connection reset by peer
+11-10 01:00:55.958  4437  4609 E GoogleConversionReporter: 	at com.google.android.gms.org.conscrypt.NativeCrypto.SSL_do_handshake(Native Method)
+11-10 01:00:55.958  4437  4609 E GoogleConversionReporter: 	at com.google.android.gms.org.conscrypt.NativeSsl.doHandshake(:com.google.android.gms@202414023@20.24.14 (040800-319035315):6)
+11-10 01:00:55.958  4437  4609 E GoogleConversionReporter: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.startHandshake(:com.google.android.gms@202414023@20.24.14 (040800-319035315):16)
+11-10 01:00:55.958  4437  4609 E GoogleConversionReporter: 	at com.android.okhttp.internal.io.RealConnection.connectTls(RealConnection.java:196)
+11-10 01:00:55.958  4437  4609 E GoogleConversionReporter: 	at com.android.okhttp.internal.io.RealConnection.connectSocket(RealConnection.java:153)
+11-10 01:00:55.958  4437  4609 E GoogleConversionReporter: 	at com.android.okhttp.internal.io.RealConnection.connect(RealConnection.java:116)
+11-10 01:00:55.958  4437  4609 E GoogleConversionReporter: 	at com.android.okhttp.internal.http.StreamAllocation.findConnection(StreamAllocation.java:186)
+11-10 01:00:55.958  4437  4609 E GoogleConversionReporter: 	at com.android.okhttp.internal.http.StreamAllocation.findHealthyConnection(StreamAllocation.java:128)
+11-10 01:00:55.958  4437  4609 E GoogleConversionReporter: 	at com.android.okhttp.internal.http.StreamAllocation.newStream(StreamAllocation.java:97)
+11-10 01:00:55.958  4437  4609 E GoogleConversionReporter: 	at com.android.okhttp.internal.http.HttpEngine.connect(HttpEngine.java:289)
+11-10 01:00:55.958  4437  4609 E GoogleConversionReporter: 	at com.android.okhttp.internal.http.HttpEngine.sendRequest(HttpEngine.java:232)
+11-10 01:00:55.958  4437  4609 E GoogleConversionReporter: 	at com.android.okhttp.internal.huc.HttpURLConnectionImpl.execute(HttpURLConnectionImpl.java:465)
+11-10 01:00:55.958  4437  4609 E GoogleConversionReporter: 	at com.android.okhttp.internal.huc.HttpURLConnectionImpl.getResponse(HttpURLConnectionImpl.java:411)
+11-10 01:00:55.958  4437  4609 E GoogleConversionReporter: 	at com.android.okhttp.internal.huc.HttpURLConnectionImpl.getResponseCode(HttpURLConnectionImpl.java:542)
+11-10 01:00:55.958  4437  4609 E GoogleConversionReporter: 	at com.android.okhttp.internal.huc.DelegatingHttpsURLConnection.getResponseCode(DelegatingHttpsURLConnection.java:106)
+11-10 01:00:55.958  4437  4609 E GoogleConversionReporter: 	at com.android.okhttp.internal.huc.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:30)
+11-10 01:00:55.958  4437  4609 E GoogleConversionReporter: 	at dhl.run(PG:15)
+11-10 01:00:55.958  4437  4609 E GoogleConversionReporter: 	at java.lang.Thread.run(Thread.java:919)
+11-10 01:00:55.959  2445  3010 V NativeCrypto: SSL handshake aborted: ssl=0x75df497da2c8: I/O error during system call, Connection reset by peer
+11-10 01:00:55.984  4437  4604 E WM-WorkerWrapper: Didn't find WorkSpec for id 9d0833ae-3350-4cdd-b3b5-e75ba8d3c97c
+11-10 01:00:55.994  2445  3010 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-10 01:00:55.994  2445  3010 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@202414023@20.24.14 (040800-319035315):2)
+11-10 01:00:55.994  2445  3010 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@202414023@20.24.14 (040800-319035315):0)
+11-10 01:00:56.015  4437  4604 E WM-WorkerWrapper: Didn't find WorkSpec for id 9d0833ae-3350-4cdd-b3b5-e75ba8d3c97c
+11-10 01:00:56.017  2445  3010 V NativeCrypto: SSL handshake aborted: ssl=0x75df497da2c8: I/O error during system call, Connection reset by peer
+11-10 01:00:56.018  4437  4604 E WM-WorkerWrapper: Didn't find WorkSpec for id 9d0833ae-3350-4cdd-b3b5-e75ba8d3c97c
+11-10 01:00:56.025  2445  3010 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-10 01:00:56.026  2445  3010 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@202414023@20.24.14 (040800-319035315):2)
+11-10 01:00:56.027  2445  3010 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@202414023@20.24.14 (040800-319035315):0)
+11-10 01:00:56.053  2445  3010 V NativeCrypto: SSL handshake aborted: ssl=0x75df497da2c8: I/O error during system call, Connection reset by peer
+11-10 01:00:56.061  2445  3010 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-10 01:00:56.061  2445  3010 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@202414023@20.24.14 (040800-319035315):2)
+11-10 01:00:56.061  2445  3010 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@202414023@20.24.14 (040800-319035315):0)
+11-10 01:00:56.074  4437  4588 I FA      : App measurement disabled by setAnalyticsCollectionEnabled(false)
+11-10 01:00:56.076  4437  4588 I FA      : App measurement initialized, version: 26017
+11-10 01:00:56.076  4437  4588 I FA      : To enable debug logging run: adb shell setprop log.tag.FA VERBOSE
+11-10 01:00:56.076  4437  4588 I FA      : To enable faster debug mode event logging run:
+11-10 01:00:56.076  4437  4588 I FA      :   adb shell setprop debug.firebase.analytics.app com.google.android.youtube
+11-10 01:00:56.089  2445  3010 V NativeCrypto: SSL handshake aborted: ssl=0x75df497da2c8: I/O error during system call, Connection reset by peer
+11-10 01:00:56.090  1910  2015 D ConnectivityService: releasing NetworkRequest [ TRACK_DEFAULT id=22, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10144] ] (release request)
+11-10 01:00:56.101  2445  3010 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-10 01:00:56.101  2445  3010 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@202414023@20.24.14 (040800-319035315):2)
+11-10 01:00:56.101  2445  3010 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@202414023@20.24.14 (040800-319035315):0)
+11-10 01:00:56.121  2445  3010 V NativeCrypto: SSL handshake aborted: ssl=0x75df497da2c8: I/O error during system call, Connection reset by peer
+11-10 01:00:56.150  2445  3010 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-10 01:00:56.151  2445  3010 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@202414023@20.24.14 (040800-319035315):2)
+11-10 01:00:56.151  2445  3010 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@202414023@20.24.14 (040800-319035315):0)
+11-10 01:00:56.178  2445  3010 V NativeCrypto: SSL handshake aborted: ssl=0x75df497da2c8: I/O error during system call, Connection reset by peer
+11-10 01:00:56.186  2445  3010 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-10 01:00:56.186  2445  3010 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@202414023@20.24.14 (040800-319035315):2)
+11-10 01:00:56.186  2445  3010 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@202414023@20.24.14 (040800-319035315):0)
+11-10 01:00:56.209  2445  3010 V NativeCrypto: SSL handshake aborted: ssl=0x75df497da2c8: I/O error during system call, Connection reset by peer
+11-10 01:00:56.220  2445  3010 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-10 01:00:56.220  2445  3010 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@202414023@20.24.14 (040800-319035315):2)
+11-10 01:00:56.220  2445  3010 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@202414023@20.24.14 (040800-319035315):0)
+11-10 01:00:56.251  2445  3010 V NativeCrypto: SSL handshake aborted: ssl=0x75df497da2c8: I/O error during system call, Connection reset by peer
+11-10 01:00:56.290  4685  4685 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-10 01:00:56.296  4685  4685 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_apex_image"
+11-10 01:00:56.296  4685  4685 I AndroidRuntime: Using default boot image
+11-10 01:00:56.296  4685  4685 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.disable_lock_profiling"
+11-10 01:00:56.296  4685  4685 I AndroidRuntime: Leaving lock profiling enabled
+11-10 01:00:56.296  4685  4685 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_generational_cc"
+11-10 01:00:56.297  4685  4685 I app_process: Core platform API reporting enabled, enforcing=false
+11-10 01:00:56.273  4685  4685 W app_process: type=1400 audit(0.0:16): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=6751 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+11-10 01:00:56.293  4685  4685 I chatty  : uid=2000(shell) app_process identical 1 line
+11-10 01:00:56.293  4685  4685 W app_process: type=1400 audit(0.0:18): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=6751 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+11-10 01:00:56.421  3097  4633 E SQLiteLog: (1) no such table: audio_genres
+11-10 01:00:56.422  3097  4633 I chatty  : uid=10056(com.android.providers.media) android.process.media identical 1 line
+11-10 01:00:56.428  3097  4633 E SQLiteLog: (1) no such table: audio_genres
+11-10 01:00:56.441  4685  4685 D ICU     : Time zone APEX file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+11-10 01:00:56.444  4685  4685 W app_process: Unexpected CPU variant for X86 using defaults: x86_64
+11-10 01:00:56.445  4685  4685 I app_process: The ClassLoaderContext is a special shared library.
+11-10 01:00:56.445  4685  4685 I app_process: The ClassLoaderContext is a special shared library.
+11-10 01:00:56.470  4685  4685 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+11-10 01:00:56.472  4685  4685 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-10 01:00:56.480  1910  1910 V SettingsProvider: Notifying for 0: content://settings/secure/accessibility_enabled
+11-10 01:00:56.540  3097  4633 I MediaProvider: End Intent { act=android.intent.action.MEDIA_MOUNTED dat=file:///storage/emulated/0 flg=0x5000010 cmp=com.android.providers.media/.MediaService (has extras) }
+11-10 01:00:56.689  1910  1943 I system_server: Starting a blocking GC Alloc
+11-10 01:00:56.689  1910  1943 I system_server: Starting a blocking GC Alloc
+11-10 01:00:56.692  1910  1997 I system_server: Waiting for a blocking GC Alloc
+11-10 01:00:56.695  1910  1943 I system_server: Alloc young concurrent copying GC freed 5995(593KB) AllocSpace objects, 10(200KB) LOS objects, 32% free, 10MB/16MB, paused 138us total 6.045ms
+11-10 01:00:56.695  1910  1997 I system_server: Starting a blocking GC Alloc
+11-10 01:00:56.727  1910  4342 D AlarmManagerService: Kernel timezone updated to -330 minutes west of GMT
+11-10 01:00:56.837  1910  4342 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.location.PROVIDERS_CHANGED flg=0x10 (has extras) } to com.google.android.apps.maps/com.google.android.apps.gmm.locationsharing.usr.LocationAvailabilityChecker$LocationProvidersChangedBroadcastReceiver
+11-10 01:00:56.838  1910  1937 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.location.PROVIDERS_CHANGED flg=0x10 (has extras) } to com.google.android.gms/com.google.android.location.internal.NlpNetworkProviderSettingsUpdateReceiver
+11-10 01:00:56.838  1910  1937 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.location.PROVIDERS_CHANGED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+11-10 01:00:56.838  1910  1937 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.location.PROVIDERS_CHANGED flg=0x10 (has extras) } to com.google.android.googlequicksearchbox/com.google.android.apps.gsa.broadcastreceiver.external.ExternalCommonBroadcastReceiver
+11-10 01:00:56.838  1910  1937 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.location.PROVIDERS_CHANGED flg=0x10 (has extras) } to com.google.android.apps.maps/com.google.android.apps.gmm.locationsharing.usr.LocationAvailabilityChecker$LocationProvidersChangedBroadcastReceiver
+11-10 01:00:56.838  1910  1937 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.location.PROVIDERS_CHANGED flg=0x10 (has extras) } to com.google.android.gms/com.google.android.location.internal.NlpNetworkProviderSettingsUpdateReceiver
+11-10 01:00:56.838  1910  1937 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.location.PROVIDERS_CHANGED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+11-10 01:00:56.838  1910  1937 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.location.PROVIDERS_CHANGED flg=0x10 (has extras) } to com.google.android.googlequicksearchbox/com.google.android.apps.gsa.broadcastreceiver.external.ExternalCommonBroadcastReceiver
+11-10 01:00:56.838  1910  1937 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+11-10 01:00:56.838  1910  1937 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+11-10 01:00:56.838  1910  1937 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+11-10 01:00:56.838  1910  1937 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+11-10 01:00:56.838  1910  1937 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+11-10 01:00:56.838  1910  1937 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+11-10 01:00:56.846  1910  1937 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.net.conn.NETWORK_CONDITIONS_MEASURED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+11-10 01:00:56.846  1910  1937 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+11-10 01:00:56.846  1910  1937 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+11-10 01:00:56.846  1910  1937 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+11-10 01:00:56.846  1910  1937 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+11-10 01:00:56.866  1910  2258 W ActivityManager: Background start not allowed: service Intent { cmp=com.google.android.apps.messaging/.shared.datamodel.action.execution.ActionExecutorImpl$EmptyService } to com.google.android.apps.messaging/.shared.datamodel.action.execution.ActionExecutorImpl$EmptyService from pid=3469 uid=10131 pkg=com.google.android.apps.messaging startFg?=false
+11-10 01:00:56.930  2445  2445 I GeofencerStateMachine: sendQueryLocationOptIn
+11-10 01:00:56.975  2445  2445 I chatty  : uid=10115 com.google.android.gms.persistent identical 4 lines
+11-10 01:00:56.985  2445  2445 I GeofencerStateMachine: sendQueryLocationOptIn
+11-10 01:00:57.162  2655  2655 I GAv4-SVC: Google Analytics 202.4.14 is starting up.
+11-10 01:00:57.494  4685  4685 I AccessibilityNodeInfoDumper: Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@2d82b; boundsInParent: Rect(0, 0 - 0, 24); boundsInScreen: Rect(360, 1476 - 360, 1500); packageName: com.google.android.apps.nexuslauncher; className: android.widget.TextView; text: null; error: null; maxTextLength: -1; contentDescription: ; tooltipText: null; viewIdResName: com.google.android.apps.nexuslauncher:id/qsb_hint; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
+11-10 01:00:57.494  2607  4097 E BluetoothAdapter: Bluetooth binder is null
+11-10 01:00:57.494  4685  4685 I AccessibilityNodeInfoDumper: Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@2dbec; boundsInParent: Rect(0, 0 - 122, 101); boundsInScreen: Rect(567, 1485 - 689, 1586); packageName: com.google.android.apps.nexuslauncher; className: android.widget.TextView; text: null; error: null; maxTextLength: -1; contentDescription: null; tooltipText: null; viewIdResName: com.google.android.apps.nexuslauncher:id/fast_scroller_popup; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
+11-10 01:00:57.495  4685  4685 W AccessibilityNodeInfoDumper: Fetch time: 2ms
+11-10 01:00:57.496  1910  4342 W WindowManager: removeWindowToken: Attempted to remove non-existing token: android.os.Binder@d00c09c
+11-10 01:00:57.497  1910  1910 V SettingsProvider: Notifying for 0: content://settings/secure/accessibility_enabled
+11-10 01:00:57.499  1910  1931 I system_server: Starting a blocking GC Alloc
+11-10 01:00:57.499  1910  1931 I system_server: Starting a blocking GC Alloc
+11-10 01:00:57.501  1910  4342 I system_server: Waiting for a blocking GC Alloc
+11-10 01:00:57.503  1910  1932 I system_server: Waiting for a blocking GC Alloc
+11-10 01:00:57.511  1910  1931 I system_server: Alloc young concurrent copying GC freed 7045(647KB) AllocSpace objects, 0(0B) LOS objects, 32% free, 10MB/16MB, paused 82us total 11.972ms
+11-10 01:00:57.512  1910  4342 I system_server: WaitForGcToComplete blocked Alloc on HeapTrim for 10.481ms
+11-10 01:00:57.512  1910  4342 I system_server: Starting a blocking GC Alloc
+11-10 01:00:57.512  1910  1932 I system_server: WaitForGcToComplete blocked Alloc on HeapTrim for 8.902ms
+11-10 01:00:57.512  1910  1932 I system_server: Starting a blocking GC Alloc
+11-10 01:00:57.515  4685  4685 D AndroidRuntime: Shutting down VM
+11-10 01:00:57.589  2445  3555 W LogUtils: [Places]: ?: Failed to download inference model weights SLS
+11-10 01:00:57.589  2445  3555 W LogUtils: ckdr: DEADLINE_EXCEEDED: deadline exceeded after 9.993361807s. [buffered_nanos=9995640276, waiting_for_connection]
+11-10 01:00:57.589  2445  3555 W LogUtils: 	at ckdq.c(:com.google.android.gms@202414023@20.24.14 (040800-319035315):3)
+11-10 01:00:57.589  2445  3555 W LogUtils: 	at sjo.a(:com.google.android.gms@202414023@20.24.14 (040800-319035315):57)
+11-10 01:00:57.589  2445  3555 W LogUtils: 	at bjxj.call(:com.google.android.gms@202414023@20.24.14 (040800-319035315):0)
+11-10 01:00:57.589  2445  3555 W LogUtils: 	at bjvu.run(:com.google.android.gms@202414023@20.24.14 (040800-319035315):1)
+11-10 01:00:57.589  2445  3555 W LogUtils: 	at soy.b(:com.google.android.gms@202414023@20.24.14 (040800-319035315):12)
+11-10 01:00:57.589  2445  3555 W LogUtils: 	at soy.run(:com.google.android.gms@202414023@20.24.14 (040800-319035315):7)
+11-10 01:00:57.589  2445  3555 W LogUtils: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+11-10 01:00:57.589  2445  3555 W LogUtils: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+11-10 01:00:57.589  2445  3555 W LogUtils: 	at sux.run(:com.google.android.gms@202414023@20.24.14 (040800-319035315):0)
+11-10 01:00:57.589  2445  3555 W LogUtils: 	at java.lang.Thread.run(Thread.java:919)
+11-10 01:00:57.589  2445  3555 W LogUtils: 
+11-10 01:00:57.589  2445  3555 W LogUtils: [CONTEXT service_id=253 ]
+11-10 01:00:57.594  2445  3555 W PlacesLogger: [PlaceInferenceEngine]: Failed to download model weights. Status code: 7 [CONTEXT service_id=253 ]
+11-10 01:00:57.595  2445  2550 I LogUtils: [Places]: ?: Couldn't find platform key file. [CONTEXT service_id=253 ]

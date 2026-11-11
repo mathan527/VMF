@@ -1,0 +1,549 @@
+--------- beginning of main
+11-10 01:09:48.574  1392  1748 I A       : (REDACTED) setNavBarVisible: %s
+11-10 01:09:48.574  3190  3190 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+--------- beginning of system
+11-10 01:09:48.576   635  1843 D CompatChangeReporter: Compat change id reported: 161145287; UID 10143; state: ENABLED
+11-10 01:09:48.581  1392  1748 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:09:48.583  1392  1845 I INV.SystemUI: showGestureNav
+11-10 01:09:48.583  1392  1845 I INV.SystemUI: (REDACTED) setUiHints(hints = %s)
+11-10 01:09:48.584  1392  1748 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:09:48.584  1392  1841 I A       : Successfully initialized all components
+11-10 01:09:48.584  1563  2774 W RemoteCallableBase: Null cursor. Cannot add index data for Uri: content://com.google.android.marvin.talkback.preference.search.TalkBackSearchIndexablesProvider/settings/dynamic_indexables_raw
+11-10 01:09:48.586  1392  1748 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:09:48.586  1392  1748 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:09:48.587  1392  1748 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:09:48.587  3190  3190 D CompatChangeReporter: Compat change id reported: 242716250; UID 10185; state: ENABLED
+11-10 01:09:48.588  1563  2774 W RemoteCallableBase: Null cursor. Cannot add index data for Uri: content://com.google.android.marvin.talkback.preference.search.TalkBackSearchIndexablesProvider/settings/non_indexables_key
+11-10 01:09:48.589  1392  1748 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:09:48.596  1392  1748 I NgaEntryPointEventSendr: setupConnection
+11-10 01:09:48.602  3074  3074 W JobInfo : Job 'com.google.android.partnersetup/.RlzPingJobService#4097' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+11-10 01:09:48.603   635  1850 W JobInfo : Job 'com.google.android.partnersetup/.RlzPingJobService#4097' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+11-10 01:09:48.603  1392  1845 I INV.SystemUI: setUiHints: finished successfully
+11-10 01:09:48.605  3115  3115 W ProviderHelper: Unknown dynamite feature providerinstaller.dynamite
+11-10 01:09:48.605  3115  3115 I DynamiteModule: Considering local module com.google.android.gms.providerinstaller.dynamite:1 and remote module com.google.android.gms.providerinstaller.dynamite:0
+11-10 01:09:48.606  3115  3115 I DynamiteModule: Selected local version of com.google.android.gms.providerinstaller.dynamite
+11-10 01:09:48.613  1392  1748 I NgaEntryPointEventSendr: (REDACTED) State changed: %s => %s
+11-10 01:09:48.613   635   800 W BestClock: java.time.DateTimeException: Missing network time fix
+11-10 01:09:48.615  3115  3157 I DynamiteModule: Considering local module com.google.android.gms.googlecertificates:7 and remote module com.google.android.gms.googlecertificates:7
+11-10 01:09:48.615  3115  3157 I DynamiteModule: Selected local version of com.google.android.gms.googlecertificates
+11-10 01:09:48.625   635   804 D WifiConfigStore: Writing to stores completed in 17 ms.
+11-10 01:09:48.627  1563  1572 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/Traceur/Traceur.apk' with 1 weak references
+11-10 01:09:48.627  1563  1572 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PrebuiltBugle/PrebuiltBugle.apk' with 1 weak references
+11-10 01:09:48.628  1563  1572 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/priv-app/NexusLauncherRelease/NexusLauncherRelease.apk' with 1 weak references
+11-10 01:09:48.629  1563  1572 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/SafetyHubPrebuilt/SafetyHubPrebuilt.apk' with 1 weak references
+11-10 01:09:48.633  3190  3190 D nativeloader: Configuring clns-shared-7 for other apk /apex/com.android.rkpd/priv-app/rkpdapp.google@350820300/rkpdapp.google.apk. target_sdk_version=34, uses_libraries=, library_path=/apex/com.android.rkpd/priv-app/rkpdapp.google@350820300/lib/x86_64:/system/lib64:/system_ext/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.rkpdapp:/apex/com.android.rkpd/priv-app/rkpdapp.google@350820300:/system/lib64:/system_ext/lib64
+11-10 01:09:48.633  3115  3115 D nativeloader: Load /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64/libconscrypt_gmscore_jni.so using ns product-clns-9 from class loader (caller=/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!classes3.dex): ok
+11-10 01:09:48.633  3115  3115 V NativeCrypto: Registering com/google/android/gms/org/conscrypt/NativeCrypto's 305 native methods...
+11-10 01:09:48.634  1563  1572 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/WellbeingPrebuilt/WellbeingPrebuilt.apk' with 1 weak references
+11-10 01:09:48.634  1563  1572 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.cellbroadcast/priv-app/GoogleCellBroadcastApp@350820300/GoogleCellBroadcastApp.apk' with 1 weak references
+11-10 01:09:48.635  3190  3190 D nativeloader: InitApexLibraries:
+11-10 01:09:48.635  3190  3190 D nativeloader:   com_android_adservices: libhpke_jni.so:libtflite_support_classifiers_native.so
+11-10 01:09:48.635  3190  3190 D nativeloader:   com_android_appsearch: libicing.so
+11-10 01:09:48.635  3190  3190 D nativeloader:   com_android_art: libartservice.so
+11-10 01:09:48.635  3190  3190 D nativeloader:   com_android_btservices: libbluetooth_jni.so
+11-10 01:09:48.635  3190  3190 D nativeloader:   com_android_conscrypt: libjavacrypto.so
+11-10 01:09:48.635  3190  3190 D nativeloader:   com_android_mediaprovider: libpdfclient.so
+11-10 01:09:48.635  3190  3190 D nativeloader:   com_android_nfcservices: libnfc_nci_jni.so
+11-10 01:09:48.635  3190  3190 D nativeloader:   com_android_ondevicepersonalization: libfcp_cpp_dep_jni.so:libfcp_hpke_jni.so
+11-10 01:09:48.635  3190  3190 D nativeloader:   com_android_os_statsd: libstats_jni.so
+11-10 01:09:48.635  3190  3190 D nativeloader:   com_android_tethering: libandroid_net_connectivity_com_android_net_module_util_jni.so:libcrypto.so:libframework-connectivity-jni.so:libframework-connectivity-tiramisu-jni.so:libmainlinecronet.121.0.6167.71.so:libservice-connectivity.so:libservice-thread-jni.so:libssl.so
+11-10 01:09:48.635  3190  3190 D nativeloader:   com_android_uwb: libuwb_uci_jni_rust.so
+11-10 01:09:48.635  3190  3190 D nativeloader:   com_android_virt: libvirtualizationservice_jni.so:libvirtualmachine_jni.so
+11-10 01:09:48.635  1563  1572 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/Velvet/Velvet.apk' with 1 weak references
+11-10 01:09:48.639  1563  1572 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.healthfitness/priv-app/HealthConnectControllerGoogle@350820300/HealthConnectControllerGoogle.apk' with 1 weak references
+11-10 01:09:48.639  1563  1572 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/LatinIMEGooglePrebuilt/LatinIMEGooglePrebuilt.apk' with 1 weak references
+11-10 01:09:48.640  1563  1572 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.permission/priv-app/GooglePermissionController@350820360/GooglePermissionController.apk' with 1 weak references
+11-10 01:09:48.641  1563  1572 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '/product/overlay/GooglePermissionControllerOverlay.apk' with 1 weak references
+11-10 01:09:48.641  3115  3115 I ProviderInstaller: Installed default security provider GmsCore_OpenSSL
+11-10 01:09:48.643  1563  3105 W RemoteCallableBase: Null cursor. Cannot add index data for Uri: content://com.google.android.gms.accountsettings.content/settings/dynamic_indexables_raw
+11-10 01:09:48.649  1392  1748 I NgaEntryPointEventSendr: onServiceConnected
+11-10 01:09:48.650  1517  2138 I A       : Calling beginBinderSession().
+11-10 01:09:48.657  1517  2138 I A       : beginBinderSession(): calling binder
+11-10 01:09:48.657  3115  3218 I GMS_MM_Logger: Start time: 299315
+11-10 01:09:48.657  3115  3218 I GMS_MM_Logger: Started.
+11-10 01:09:48.658  1392  1748 I NgaEntryPointEventSendr: (REDACTED) State changed: %s => %s
+11-10 01:09:48.658  3190  3190 V GraphicsEnvironment: Currently set values for:
+11-10 01:09:48.658  3190  3190 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+11-10 01:09:48.659  3190  3190 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+11-10 01:09:48.659  3190  3190 V GraphicsEnvironment: Global.Settings values are invalid: number of packages: 0, number of values: 0
+11-10 01:09:48.659  3190  3190 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+11-10 01:09:48.674  3190  3190 D WM-WrkMgrInitializer: Initializing WorkManager with default configuration.
+11-10 01:09:48.679  3115  3115 I GmsApplication: [gms_startup_benchmark] Static start time (ms): 38931, Startup latency (ms): 170, Is system user: true
+11-10 01:09:48.679  3115  3115 W ebcf    : Primes not initialized, returning default (no-op) Primes instance which will ignore all calls. Please call Primes.initialize(...) before using any Primes API.
+11-10 01:09:48.680  3190  3190 D WM-PackageManagerHelper: Skipping component enablement for androidx.work.impl.background.systemjob.SystemJobService
+11-10 01:09:48.681  3190  3190 D WM-Schedulers: Created SystemJobScheduler and enabled SystemJobService
+11-10 01:09:48.681  3190  3221 D WM-ForceStopRunnable: The default process name was not specified.
+11-10 01:09:48.682  3190  3221 D WM-ForceStopRunnable: Performing cleanup operations.
+11-10 01:09:48.688   422   422 I netd    : tetherGetStats() -> {[]} <1.55ms>
+11-10 01:09:48.690   635   800 W BestClock: java.time.DateTimeException: Missing network time fix
+11-10 01:09:48.693   635  1003 W ActivityManager: Unable to start service Intent { cmp=com.google.android.apps.tachyon/.clientapi.ClientApiService } U=0: not found
+11-10 01:09:48.696   635   802 W BestClock: java.time.DateTimeException: Missing network time fix
+11-10 01:09:48.699   635   802 W BestClock: java.time.DateTimeException: Missing network time fix
+11-10 01:09:48.699   422   422 I netd    : bandwidthSetGlobalAlert(2097152) <0.11ms>
+11-10 01:09:48.708   635   802 W BestClock: java.time.DateTimeException: Missing network time fix
+11-10 01:09:48.710   635  1449 D CompatChangeReporter: Compat change id reported: 261072174; UID 10131; state: ENABLED
+11-10 01:09:48.710   422   422 I netd    : bandwidthRemoveInterfaceQuota(eth0) <0.49ms>
+11-10 01:09:48.712  3190  3190 I RkpdBootReceiver: Caught boot intent, waking up.
+11-10 01:09:48.712   422   422 I netd    : bandwidthSetInterfaceQuota(eth0, 9223372036854775807) <0.70ms>
+11-10 01:09:48.715   635   802 W BestClock: java.time.DateTimeException: Missing network time fix
+11-10 01:09:48.719  3190  3190 I RkpdBootReceiver: Queueing a one-time provisioning job for widevine provisioning.
+11-10 01:09:48.719   635   802 W BestClock: java.time.DateTimeException: Missing network time fix
+11-10 01:09:48.721   635   802 W BestClock: java.time.DateTimeException: Missing network time fix
+11-10 01:09:48.721  3190  3190 D WM-RescheduleReceiver: Received intent Intent { act=android.intent.action.BOOT_COMPLETED flg=0x89000010 cmp=com.google.android.rkpdapp/androidx.work.impl.background.systemalarm.RescheduleReceiver (has extras) }
+11-10 01:09:48.723   635   802 W BestClock: java.time.DateTimeException: Missing network time fix
+11-10 01:09:48.726   635   802 W BestClock: java.time.DateTimeException: Missing network time fix
+11-10 01:09:48.728   635   894 D NetworkStatsObservers: Unregistering RequestInfo from pid/uid:635/1000(android) for DataUsageRequest [ requestId=7, networkTemplate=NetworkTemplate: matchRule=MOBILE, matchSubscriberIds=[310260...], matchWifiNetworkKeys=[], metered=YES, defaultNetwork=NO, thresholdInBytes=53592482 ] accessLevel:3
+11-10 01:09:48.728   635   802 D NetworkStatsObservers: Registering observer for RequestInfo from pid/uid:635/1000(android) for DataUsageRequest [ requestId=8, networkTemplate=NetworkTemplate: matchRule=MOBILE, matchSubscriberIds=[310260...], matchWifiNetworkKeys=[], metered=YES, defaultNetwork=NO, thresholdInBytes=53588245 ] accessLevel:3
+11-10 01:09:48.733  1517  1797 W A       : (REDACTED) %s task was not run. Callback from Service received after client was disposed.
+11-10 01:09:48.737   635   800 W BestClock: java.time.DateTimeException: Missing network time fix
+11-10 01:09:48.741  1517  2159 I PBSessionCacheImpl: (REDACTED) Deleted sessionId[%d] from persistence.
+11-10 01:09:48.741  1392  1841 I NgaEntryPointEventSendr: (REDACTED) State changed: %s => %s (%s)
+11-10 01:09:48.746  3190  3229 D WM-Processor: Processor cancelling 6bcae653-a444-4b55-acd0-f18abb866918
+11-10 01:09:48.746  3190  3229 D WM-Processor: WorkerWrapper could not be found for 6bcae653-a444-4b55-acd0-f18abb866918
+11-10 01:09:48.746  1517  1797 W A       : (REDACTED) %s task was not run. Callback from Service received after client was disposed.
+11-10 01:09:48.746  1322  1412 W BrowserUsageLoader: <DWB> Failed to query website usage
+11-10 01:09:48.746  1322  1412 W BrowserUsageLoader: ftw: Service rejected request (status=5)
+11-10 01:09:48.746  1322  1412 W BrowserUsageLoader: 	at exi.a(PG:211)
+11-10 01:09:48.746  1322  1412 W BrowserUsageLoader: 	at lfc.a(PG:57)
+11-10 01:09:48.746  1322  1412 W BrowserUsageLoader: 	at leo.e(PG:3)
+11-10 01:09:48.746  1322  1412 W BrowserUsageLoader: 	at leq.run(PG:42)
+11-10 01:09:48.746  1322  1412 W BrowserUsageLoader: 	at hur.run(PG:7)
+11-10 01:09:48.746  1322  1412 W BrowserUsageLoader: 	at lcx.run(PG:50)
+11-10 01:09:48.746  1322  1412 W BrowserUsageLoader: 	at hld.run(PG:450)
+11-10 01:09:48.746  1322  1412 W BrowserUsageLoader: 	at java.lang.Thread.run(Thread.java:1012)
+11-10 01:09:48.746  1322  1412 W BrowserUsageLoader: 	at hwd.run(PG:64)
+11-10 01:09:48.751  3190  3229 D WM-GreedyScheduler: Cancelling work ID 6bcae653-a444-4b55-acd0-f18abb866918
+11-10 01:09:48.758   635   839 I AppWidgetServiceImpl: Received broadcast: android.intent.action.PACKAGE_CHANGED on user 0
+11-10 01:09:48.758   635   839 D AppWidgetServiceImpl: Trying to notify widget providers changed
+11-10 01:09:48.759   635   860 D ShortcutService: received package broadcast intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package: flg=0x45000010 (has extras) }
+11-10 01:09:48.759   635   860 D ShortcutService: changing package: com.google.android.apps.wellbeing userId0
+11-10 01:09:48.759   635   860 D ShortcutService: handlePackageChanged: com.google.android.apps.wellbeing user=0
+11-10 01:09:48.759   635   860 D ShortcutService: rescanPackageIfNeeded 0@com.google.android.apps.wellbeing, forceRescan=true , isNewApp=true
+11-10 01:09:48.760   635   860 D ShortcutService: Package com.google.android.apps.wellbeing has 0 manifest shortcut(s), and 0 share target(s)
+11-10 01:09:48.766   635  1859 I AppWidgetServiceImpl: getInstalledProvidersForProfiles() 0
+11-10 01:09:48.766   897   897 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+11-10 01:09:48.766  1066  1066 D CarrierSvcBindHelper: onPackageModified: com.google.android.apps.wellbeing
+11-10 01:09:48.767  3190  3229 D CompatChangeReporter: Compat change id reported: 253665015; UID 10185; state: ENABLED
+11-10 01:09:48.767  1066  1066 D CarrierSvcBindHelper: No carrier app for: 0
+11-10 01:09:48.767  3190  3229 D WM-SystemJobScheduler: Scheduling work ID 3dd88777-aeb6-40c8-b7a4-7c6487cbc19dJob ID 9
+11-10 01:09:48.770  1886  2238 W BugleRcsEngine: Unable to send RCS extension log [CONTEXT thread_id=66 ]
+11-10 01:09:48.771   635  1850 D CompatChangeReporter: Compat change id reported: 271850009; UID 10185; state: ENABLED
+11-10 01:09:48.771   635  1850 D CompatChangeReporter: Compat change id reported: 253665015; UID 10185; state: ENABLED
+11-10 01:09:48.773   635  1850 D ConnectivityService: requestNetwork for uid/pid:1000/635 asUid: 10185 activeRequest: null callbackRequest: 112 [NetworkRequest [ REQUEST id=113, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10185 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false
+11-10 01:09:48.775   635  1859 W ParceledListSlice: Element #25 is 20004 bytes.
+11-10 01:09:48.775   635  1859 W ParceledListSlice: Element #26 is 20040 bytes.
+11-10 01:09:48.777   635  1859 W ParceledListSlice: Element #27 is 19884 bytes.
+11-10 01:09:48.777   635  1859 W ParceledListSlice: Element #28 is 19792 bytes.
+11-10 01:09:48.777   635  1859 W ParceledListSlice: Element #29 is 19904 bytes.
+11-10 01:09:48.777  1373  1373 I AiAiEcho: AppFetcherImpl onPackageChanged com.google.android.apps.wellbeing.
+11-10 01:09:48.779  3190  3229 D WM-GreedyScheduler: Starting tracking for 3dd88777-aeb6-40c8-b7a4-7c6487cbc19d
+11-10 01:09:48.782  1373  2528 I AiAiEcho: AppIndexer Package:[com.google.android.apps.wellbeing] UserProfile:[0] Enabled:[true].
+11-10 01:09:48.783  1373  2528 I AiAiEcho: AppFetcherImplV2 updateApps package:[com.google.android.apps.wellbeing], userId:[0], reason:[package is updated.].
+11-10 01:09:48.784   635   811 D ConnectivityService: NetReassign [113 : null → 100] [c 1] [a 1] [i 7]
+11-10 01:09:48.785   635   804 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=113, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10185 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+11-10 01:09:48.785   635   804 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=113, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10185 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+11-10 01:09:48.785   635   804 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=113, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10185 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+11-10 01:09:48.785   635   804 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=113, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10185 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+11-10 01:09:48.786   897   897 D TileServices: Couldn't find tile for ComponentInfo{com.google.android.apps.wellbeing/com.google.android.apps.wellbeing.focusmode.quicksettings.FocusModeTileService}(0)
+11-10 01:09:48.788  1114  1206 W PackageManager: Failure retrieving text 0x7f130786 in package com.android.systemui
+11-10 01:09:48.788  1114  1206 W PackageManager: android.content.res.Resources$NotFoundException: String resource ID #0x7f130786
+11-10 01:09:48.788  1114  1206 W PackageManager: 	at android.content.res.Resources.getText(Resources.java:466)
+11-10 01:09:48.788  1114  1206 W PackageManager: 	at android.app.ApplicationPackageManager.getText(ApplicationPackageManager.java:2405)
+11-10 01:09:48.788  1114  1206 W PackageManager: 	at android.appwidget.AppWidgetProviderInfo.loadDescription(AppWidgetProviderInfo.java:484)
+11-10 01:09:48.788  1114  1206 W PackageManager: 	at com.android.launcher3.model.WidgetItem.<init>(go/retraceme 31f9979659277bb965985aff1272c33e3c3c9e755b77166d20a2465454178f2c:4)
+11-10 01:09:48.788  1114  1206 W PackageManager: 	at com.android.launcher3.model.WidgetsModel.update(go/retraceme 31f9979659277bb965985aff1272c33e3c3c9e755b77166d20a2465454178f2c:72)
+11-10 01:09:48.788  1114  1206 W PackageManager: 	at com.android.launcher3.p0.execute(go/retraceme 31f9979659277bb965985aff1272c33e3c3c9e755b77166d20a2465454178f2c:16)
+11-10 01:09:48.788  1114  1206 W PackageManager: 	at com.android.launcher3.LauncherModel.a(go/retraceme 31f9979659277bb965985aff1272c33e3c3c9e755b77166d20a2465454178f2c:27)
+11-10 01:09:48.788  1114  1206 W PackageManager: 	at com.android.launcher3.t0.run(go/retraceme 31f9979659277bb965985aff1272c33e3c3c9e755b77166d20a2465454178f2c:12)
+11-10 01:09:48.788  1114  1206 W PackageManager: 	at android.os.Handler.handleCallback(Handler.java:959)
+11-10 01:09:48.788  1114  1206 W PackageManager: 	at android.os.Handler.dispatchMessage(Handler.java:100)
+11-10 01:09:48.788  1114  1206 W PackageManager: 	at android.os.Looper.loopOnce(Looper.java:232)
+11-10 01:09:48.788  1114  1206 W PackageManager: 	at android.os.Looper.loop(Looper.java:317)
+11-10 01:09:48.788  1114  1206 W PackageManager: 	at android.os.HandlerThread.run(HandlerThread.java:85)
+11-10 01:09:48.788   635  1843 I AppWidgetServiceImpl: getWidgetPreview() 0
+11-10 01:09:48.792  1066  1066 E SmsApplication: com.google.android.apps.messaging lost android:read_cell_broadcasts:  (fixing)
+11-10 01:09:48.792   635  1859 D CompatChangeReporter: Compat change id reported: 229362273; UID 10143; state: ENABLED
+11-10 01:09:48.793   635  1850 W AppOpService: Ignored setUidMode call for runtime permission app op: uid = 10137, code = READ_CELL_BROADCASTS, mode = allow, callingUid = 1001, oldMode = allow
+11-10 01:09:48.793   635  1449 I AppWidgetServiceImpl: getWidgetPreview() 0
+11-10 01:09:48.799   635   680 W MagnificationConnectionManager: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
+11-10 01:09:48.800  1308  1320 I PermissionControllerServiceImpl: Updating user sensitive for uid 10142
+11-10 01:09:48.801  1373  2877 I AiAiEcho: Settings changed for uri: content://settings/secure/accessibility_enabled
+11-10 01:09:48.802   422   422 I netd    : tetherGetStats() -> {[]} <0.68ms>
+11-10 01:09:48.808  3190  3235 D WM-SystemJobScheduler: Scheduling work ID 4d4039f6-1090-4dfd-abc6-f0a2f338fa07Job ID 10
+11-10 01:09:48.815  1066  1066 E CellBroadcastUtils: getDefaultCellBroadcastReceiverPackageName: no package found
+11-10 01:09:48.816   635  1850 W AppOpService: Ignored setUidMode call for runtime permission app op: uid = 1001, code = READ_SMS, mode = allow, callingUid = 1001, oldMode = allow
+11-10 01:09:48.819  1373  1629 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-10 01:09:48.819  1373  1629 I AiAiEcho: EchoTargets: 
+11-10 01:09:48.819  1373  1629 I AiAiEcho: Filtered by AiAi flag check: 
+11-10 01:09:48.819  1373  1629 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-10 01:09:48.820  1373  1629 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-10 01:09:48.820  1373  1629 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-10 01:09:48.820  1373  1629 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-10 01:09:48.820  1373  1629 I AiAiEcho: EchoTargets: 
+11-10 01:09:48.820  1373  1629 I AiAiEcho: Filtered by AiAi flag check: 
+11-10 01:09:48.820  1373  1629 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-10 01:09:48.821  1373  1629 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-10 01:09:48.821  1373  1629 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-10 01:09:48.821  1373  1629 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-10 01:09:48.821  1373  1629 I AiAiEcho: EchoTargets: 
+11-10 01:09:48.821  1373  1629 I AiAiEcho: Filtered by AiAi flag check: 
+11-10 01:09:48.821  1373  1629 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-10 01:09:48.821  1373  1629 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-10 01:09:48.822  1373  1629 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-10 01:09:48.822  1373  1629 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface media_data_manager with targets# 0 (types=[])
+11-10 01:09:48.828   635   800 W BestClock: java.time.DateTimeException: Missing network time fix
+11-10 01:09:48.829  3190  3235 D WM-GreedyScheduler: Starting tracking for 3dd88777-aeb6-40c8-b7a4-7c6487cbc19d,4d4039f6-1090-4dfd-abc6-f0a2f338fa07
+11-10 01:09:48.831   635  1449 D CompatChangeReporter: Compat change id reported: 261072174; UID 10143; state: ENABLED
+11-10 01:09:48.836   635  1449 W AppOpService: Ignored setUidMode call for runtime permission app op: uid = 1001, code = RECEIVE_SMS, mode = allow, callingUid = 1001, oldMode = allow
+11-10 01:09:48.839   635  1843 W AppOpService: Ignored setUidMode call for runtime permission app op: uid = 1001, code = RECEIVE_WAP_PUSH, mode = allow, callingUid = 1001, oldMode = allow
+11-10 01:09:48.841   635  1850 W AppOpService: Ignored setUidMode call for runtime permission app op: uid = 1001, code = SEND_SMS, mode = allow, callingUid = 1001, oldMode = allow
+11-10 01:09:48.843   635  1843 W AppOpService: Ignored setUidMode call for runtime permission app op: uid = 1001, code = READ_CELL_BROADCASTS, mode = allow, callingUid = 1001, oldMode = allow
+11-10 01:09:48.862  1517  1797 W SearchServiceCore: Abort, client detached.
+11-10 01:09:48.865  1114  1206 D PackageUpdatedTask: Package updated: mOp=UPDATE packages=[com.google.android.apps.wellbeing]
+11-10 01:09:48.867  3190  3235 D WM-ConstraintTracker: NetworkStateTracker24: initial state = NetworkState(isConnected=true, isValidated=false, isMetered=false, isNotRoaming=true)
+11-10 01:09:48.867  3190  3235 D WM-NetworkStateTracker: Registering network callback
+11-10 01:09:48.868  1373  1629 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+11-10 01:09:48.869   897   897 D SsMediaDataProvider: Forwarding Smartspace updates []
+11-10 01:09:48.871   635  1843 D ConnectivityService: requestNetwork for uid/pid:10185/3190 activeRequest: null callbackRequest: 114 [NetworkRequest [ REQUEST id=115, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10185 RequestorUid: 10185 RequestorPkg: com.google.android.rkpdapp UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false
+11-10 01:09:48.875  3115  3234 D Backup  : [BackupGoogleSettingsIO] Back up or restore entry point is not enabled
+11-10 01:09:48.877   635   811 D ConnectivityService: NetReassign [115 : null → 100] [c 1] [a 0] [i 1]
+11-10 01:09:48.878  1322  1398 D CompatChangeReporter: Compat change id reported: 289878283; UID 10142; state: ENABLED
+11-10 01:09:48.879   635   804 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=115, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10185 RequestorUid: 10185 RequestorPkg: com.google.android.rkpdapp UnderlyingNetworks: Null] ]
+11-10 01:09:48.879   635   804 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=115, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10185 RequestorUid: 10185 RequestorPkg: com.google.android.rkpdapp UnderlyingNetworks: Null] ]
+11-10 01:09:48.879   635   804 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=115, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10185 RequestorUid: 10185 RequestorPkg: com.google.android.rkpdapp UnderlyingNetworks: Null] ]
+11-10 01:09:48.879   635   804 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=115, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10185 RequestorUid: 10185 RequestorPkg: com.google.android.rkpdapp UnderlyingNetworks: Null] ]
+11-10 01:09:48.880  1373  1629 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+11-10 01:09:48.881   897   897 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+11-10 01:09:48.883  3190  3235 D WM-PackageManagerHelper: Skipping component enablement for androidx.work.impl.background.systemalarm.RescheduleReceiver
+11-10 01:09:48.884  3190  3240 D WM-NetworkStateTracker: Network capabilities changed: [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&CAPTIVE_PORTAL&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED LinkUpBandwidth>=12000Kbps LinkDnBandwidth>=30000Kbps TransportInfo: <SSID: <unknown ssid>, BSSID: 02:00:00:00:00:00, MAC: 02:00:00:00:00:00, IP: /10.0.2.16, Security type: 0, Supplicant state: COMPLETED, Wi-Fi standard: legacy, RSSI: -50, Link speed: 1Mbps, Tx Link speed: 1Mbps, Max Supported Tx Link speed: 54Mbps, Rx Link speed: 2Mbps, Max Supported Rx Link speed: 54Mbps, Frequency: 2437MHz, Net ID: -1, Metered hint: false, score: 60, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: -1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none><none>MLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>> SignalStrength: -50 UnderlyingNetworks: Null]
+11-10 01:09:48.884  3190  3235 D WM-GreedyScheduler: Constraints not met: Cancelling work ID WorkGenerationalId(workSpecId=3dd88777-aeb6-40c8-b7a4-7c6487cbc19d, generation=0)
+11-10 01:09:48.884  3190  3235 D WM-GreedyScheduler: Constraints not met: Cancelling work ID WorkGenerationalId(workSpecId=4d4039f6-1090-4dfd-abc6-f0a2f338fa07, generation=0)
+11-10 01:09:48.891   635   752 I RoleService: Granting default roles...
+11-10 01:09:48.893  1886  2238 D TrafficStats: tagSocket(134) with statsTag=0x0, statsUid=-1
+11-10 01:09:48.899   897   897 D TileServices: Couldn't find tile for ComponentInfo{com.google.android.apps.wellbeing/com.google.android.apps.wellbeing.focusmode.quicksettings.FocusModeTileService}(0)
+11-10 01:09:48.905   635  1002 W Role    : Default holder doesn't have required signing certificate: com.google.android.retaildemo:6547c73dee150c103980bfdffe55cc9a011d785dd694a5f99afd8205bcaf1f80
+11-10 01:09:48.905   635  1002 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.gms.supervision, role: android.app.role.SYSTEM_SUPERVISION
+11-10 01:09:48.906  3115  3236 I CAR.DRIVINGMODE: DrivingMode Settings Indexed from the location module
+11-10 01:09:48.912   635  1002 W Role    : Default holder doesn't have required signing certificate: com.google.android.apps.work.clouddpc:23962F4B43B9857638EA66F4D419518EAE282491ACDA4B94707BD59003C45E58
+11-10 01:09:48.917  1066  1262 D ImsResolver: maybeAddedImsService, packageName: com.google.android.apps.wellbeing
+11-10 01:09:48.917  1322  1389 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=99e4357e-a701-4c28-b98d-1f85be0f474a, tags={ com.google.apps.tiktok.contrib.work.TikTokListenableWorker,task_manager_work,TikTokWorker#com.google.android.apps.wellbeing.task.Task } ]
+11-10 01:09:48.924  1114  1206 W AllAppsList: updatePromiseInstallInfo: no Activities matched updated package, removing all apps from package=com.google.android.apps.wellbeing
+11-10 01:09:48.928  1114  1114 D SsBaseTemplateCard: No text view can be set up
+11-10 01:09:48.928  1114  1114 D SsBaseTemplateCard: Passed-in item info is null
+11-10 01:09:48.929  1114  1114 D SsBaseTemplateCard: Passed-in item info is null
+11-10 01:09:48.929  1114  1114 D SsBaseTemplateCard: Passed-in item info is null
+11-10 01:09:48.929  1114  1114 I SsBaseTemplateCard: Secondary card pane is null
+11-10 01:09:48.942   635  1034 D CompatChangeReporter: Compat change id reported: 261072174; UID 10144; state: ENABLED
+11-10 01:09:48.948  1170  1170 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.instantapps.START pkg=com.google.android.gms }
+11-10 01:09:48.949  1170  1170 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.instantapps.START pkg=com.google.android.gms }
+11-10 01:09:48.958  3115  3237 W Multidevice: [bvtr] function enableLinkYourDevices (Kotlin reflection is not available) flag set, skipping launch checks. [CONTEXT service_id=348 ]
+11-10 01:09:48.975   635  1859 D CompatChangeReporter: Compat change id reported: 311208629; UID 10143; state: ENABLED
+11-10 01:09:48.984  3115  3239 I Nearby  : is blocked device type false, isAuto=false, isIot=false, isLatchsky=false, isChinaWearable=false, isTv=false, isWearable=false (supportWearOs=false), isChromeOsDevice=false (supportChromeOs=false) [CONTEXT service_id=49 ]
+11-10 01:09:48.985  3115  3234 W SettingsIntentOperation: No accounts
+11-10 01:09:48.998   635  1002 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.gms, role: android.app.role.WALLET
+11-10 01:09:48.999  1517  1522 I earchbox:search: Background concurrent mark compact GC freed 25MB AllocSpace bytes, 176(3520KB) LOS objects, 50% free, 22MB/45MB, paused 6.237ms,7.747ms total 180.869ms
+11-10 01:09:49.002  1170  1170 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.nearby.sharing.START_SERVICE dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiServiceNoInstantApps }
+11-10 01:09:49.003  1170  1170 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.nearby.sharing.START_SERVICE dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiServiceNoInstantApps }
+11-10 01:09:49.008   635  1002 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.devicelockcontroller, role: android.app.role.SYSTEM_FINANCED_DEVICE_CONTROLLER
+11-10 01:09:49.016  1517  1725 I A       : Successfully scheduled next onetime workers
+11-10 01:09:49.021  1170  1170 I NearbySharing: NearbySharingService onCreate [CONTEXT service_id=194 ]
+11-10 01:09:49.026  1170  1303 I NearbySharing: Create pesudo logger. [CONTEXT service_id=194 ]
+11-10 01:09:49.028  1322  1389 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=b732227c-7ef2-401e-b9f7-88da88faafc3, tags={ com.google.apps.tiktok.contrib.work.TikTokListenableWorker,com.google.apps.tiktok.sync.impl.workmanager.SyncWorker,TikTokWorker#com.google.apps.tiktok.sync.impl.workmanager.SyncWorker } ]
+11-10 01:09:49.043  1170  1170 W ChimeraUtils: Module com.google.android.gms.nearby missing resource null(0)
+11-10 01:09:49.044  1170  1170 W ChimeraUtils: Module com.google.android.gms.nearby missing resource null(0)
+11-10 01:09:49.058  1170  1303 I GmsCoreXrpcWrapper: Returning a channel provider with trafficStatsTag=67118596 trafficStatsUid=10143
+11-10 01:09:49.071  1886  2235 W BugleRcsEngine: Unable to send RCS extension log [CONTEXT thread_id=63 ]
+11-10 01:09:49.086  1170  1170 I NearbySharing: NearbySharingService created [CONTEXT service_id=194 ]
+11-10 01:09:49.092  1170  1170 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.tapandpay.service.BIND dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+11-10 01:09:49.092  1170  1170 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.tapandpay.service.BIND dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+11-10 01:09:49.094  1170  1180 I NearbySharing: A new client has bound to the NearbySharingService ClientBridge for calling package com.google.android.gms and PID 3115 [CONTEXT service_id=194 ]
+11-10 01:09:49.114   635  2115 W BestClock: java.time.DateTimeException: Missing network time fix
+11-10 01:09:49.114   635  2115 W BestClock: java.time.DateTimeException: Missing network time fix
+11-10 01:09:49.115   635  2115 W BestClock: java.time.DateTimeException: Missing network time fix
+11-10 01:09:49.115   635  2115 W BestClock: java.time.DateTimeException: Missing network time fix
+11-10 01:09:49.117   635  2115 W BestClock: java.time.DateTimeException: Missing network time fix
+11-10 01:09:49.122  1170  1303 W NearbySharing: No supported accounts found. [CONTEXT service_id=194 ]
+11-10 01:09:49.127  1170  1303 W NearbySharing: Cannot set visibility on DisabledNearbySharingProvider. [CONTEXT service_id=194 ]
+11-10 01:09:49.128  1517  1718 I WM-WorkerWrapper: Work [ id=d17e2b86-130d-4e0c-99aa-8dc485608308, tags={ com.google.apps.tiktok.contrib.work.TikTokListenableWorker,TikTokWorker#com.google.android.libraries.mdi.download.workmanager.tiktok.TikTokPeriodicWorker } ] was cancelled
+11-10 01:09:49.128  1517  1718 I WM-WorkerWrapper: androidx.work.impl.ba
+11-10 01:09:49.128  1517  1718 I WM-WorkerWrapper: 	at androidx.work.impl.r.e(PG:5)
+11-10 01:09:49.128  1517  1718 I WM-WorkerWrapper: 	at androidx.work.impl.utils.ag.run(PG:94)
+11-10 01:09:49.128  1517  1718 I WM-WorkerWrapper: 	at androidx.work.impl.utils.aa.run(PG:3)
+11-10 01:09:49.128  1517  1718 I WM-WorkerWrapper: 	at com.google.android.libraries.k.x.run(PG:3)
+11-10 01:09:49.128  1517  1718 I WM-WorkerWrapper: 	at com.google.common.n.c.c.run(PG:50)
+11-10 01:09:49.128  1517  1718 I WM-WorkerWrapper: 	at com.google.android.libraries.k.e.run(PG:8)
+11-10 01:09:49.128  1517  1718 I WM-WorkerWrapper: 	at java.lang.Thread.run(Thread.java:1012)
+11-10 01:09:49.128  1517  1718 I WM-WorkerWrapper: 	at com.google.android.libraries.k.d.b.run(PG:74)
+11-10 01:09:49.128  1170  1611 I TapAndPay: Initialize tap and pay services [CONTEXT service_id=79 ]
+11-10 01:09:49.128  1170  1611 I TapAndPay: deviceSupportsHce has detected emulator [CONTEXT service_id=79 ]
+11-10 01:09:49.129  1170  1611 I TapAndPay: Enabling TapAndPay HCE service [CONTEXT service_id=79 ]
+11-10 01:09:49.132  1170  1303 I NearbySharing: Not qualified for default opt-in. Multiple accounts are found. [CONTEXT service_id=194 ]
+11-10 01:09:49.136  1170  1303 I NearbySharing: Broadcasting NearbySharing state change. [CONTEXT service_id=194 ]
+11-10 01:09:49.140  1170  1303 I NearbySharing: Screen is unlocked [CONTEXT service_id=194 ]
+11-10 01:09:49.141  1170  1303 I NearbySharing: Location is enabled [CONTEXT service_id=194 ]
+11-10 01:09:49.142  1170  1303 I NearbySharing: Uwb feature is off. [CONTEXT service_id=194 ]
+11-10 01:09:49.144  1170  1303 I NearbySharing: Stopping scanning because Bluetooth is disabled. [CONTEXT service_id=194 ]
+11-10 01:09:49.145  1170  1303 I NearbySharing: Stopping Fast Init advertisement because Bluetooth is off. [CONTEXT service_id=194 ]
+11-10 01:09:49.150  1170  1303 I NearbySharing: Stopping advertising because Bluetooth is disabled. [CONTEXT service_id=194 ]
+11-10 01:09:49.151   635  1850 W BestClock: java.time.DateTimeException: Missing network time fix
+11-10 01:09:49.152   635  1850 W BestClock: java.time.DateTimeException: Missing network time fix
+11-10 01:09:49.152   635  1850 W BestClock: java.time.DateTimeException: Missing network time fix
+11-10 01:09:49.153   635  1850 W BestClock: java.time.DateTimeException: Missing network time fix
+11-10 01:09:49.157  1170  1303 I NearbySharing: Fast Initiation Scanning has stopped [CONTEXT service_id=194 ]
+11-10 01:09:49.158  1170  1303 I NearbySharing: Stopping FastInitiation scanning because Bluetooth is disabled. [CONTEXT service_id=194 ]
+11-10 01:09:49.160   635  1843 D BiometricService: Sensor ID(0), oemStrength: 15, updatedStrength: 15, modality 2, state: 0, cookie: 0, sensorId 0, hasEnrollments: false cannot participate in Keystore operations
+11-10 01:09:49.160   635  1843 D BiometricService: Sensor ID(4), oemStrength: 15, updatedStrength: 15, modality 8, state: 0, cookie: 0, sensorId 4, hasEnrollments: false cannot participate in Keystore operations
+11-10 01:09:49.160  1170  1303 I NearbySharing: Dismissing HUN as there's no device nearby. [CONTEXT service_id=194 ]
+11-10 01:09:49.165  1517  1714 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=03c639bf-225f-401e-89ba-aad29c0e5d80, tags={ com.google.apps.tiktok.contrib.work.TikTokListenableWorker,TikTokWorker#com.google.android.libraries.mdi.download.workmanager.tiktok.TikTokPeriodicWorker } ]
+11-10 01:09:49.174  1517  1517 I GeofenceRecovery: #onReceive GeofenceRecoveryReceiver
+11-10 01:09:49.175  1170  1303 I NearbySharing: Bluetooth is enabled [CONTEXT service_id=194 ]
+11-10 01:09:49.176  1170  1303 I NearbySharing: Uwb feature is off. [CONTEXT service_id=194 ]
+11-10 01:09:49.177  1170  1303 I NearbySharing: Stopping scanning because Nearby Sharing is disabled. [CONTEXT service_id=194 ]
+11-10 01:09:49.177   635  1846 W BestClock: java.time.DateTimeException: Missing network time fix
+11-10 01:09:49.178   635  1846 W BestClock: java.time.DateTimeException: Missing network time fix
+11-10 01:09:49.178  1170  1303 I NearbySharing: Stopping Fast Init advertisement because we're not scanning in the foreground. [CONTEXT service_id=194 ]
+11-10 01:09:49.180   635  1846 W BestClock: java.time.DateTimeException: Missing network time fix
+11-10 01:09:49.180   635  1846 W BestClock: java.time.DateTimeException: Missing network time fix
+11-10 01:09:49.180  1170  1303 I NearbySharing: Stopping advertising because Nearby Sharing is disabled. [CONTEXT service_id=194 ]
+11-10 01:09:49.181  1170  1303 I NearbySharing: Stopping FastInitiation scanning because visibility is hidden. [CONTEXT service_id=194 ]
+11-10 01:09:49.182  1170  1303 I NearbySharing: Fast Initiation Scanning has stopped [CONTEXT service_id=194 ]
+11-10 01:09:49.183  1170  1303 I NearbySharing: Dismissing HUN as there's no device nearby. [CONTEXT service_id=194 ]
+11-10 01:09:49.184  1517  1718 E A       : (REDACTED) Failed to recover geofences for LBT Routines using Geller data
+11-10 01:09:49.184  1517  1718 E A       : com.google.android.libraries.geller.portable.GellerException: Code: INVALID_ARGUMENT, Message: Account name is null.
+11-10 01:09:49.184  1517  1718 E A       : 	at com.google.android.libraries.search.l.t.a(PG:25)
+11-10 01:09:49.184  1517  1718 E A       : 	at com.google.apps.tiktok.tracing.fe.a(PG:13)
+11-10 01:09:49.184  1517  1718 E A       : 	at com.google.common.util.concurrent.ba.a(PG:3)
+11-10 01:09:49.184  1517  1718 E A       : 	at com.google.common.util.concurrent.cu.run(PG:21)
+11-10 01:09:49.184  1517  1718 E A       : 	at com.google.android.libraries.k.x.run(PG:3)
+11-10 01:09:49.184  1517  1718 E A       : 	at com.google.common.n.c.c.run(PG:50)
+11-10 01:09:49.184  1517  1718 E A       : 	at com.google.android.libraries.k.e.run(PG:8)
+11-10 01:09:49.184  1517  1718 E A       : 	at java.lang.Thread.run(Thread.java:1012)
+11-10 01:09:49.184  1517  1718 E A       : 	at com.google.android.libraries.k.d.b.run(PG:74)
+11-10 01:09:49.184  3115  3243 W PersonalSafety: Debug page in internal setting true, true, false  [CONTEXT service_id=310 ]
+11-10 01:09:49.186  1170  1303 I NearbySharing: Uwb feature is off. [CONTEXT service_id=194 ]
+11-10 01:09:49.186  1170  1303 I NearbySharing: Uwb feature is off. [CONTEXT service_id=194 ]
+11-10 01:09:49.188  1170  1303 I NearbySharing: Stopping scanning because Nearby Sharing is disabled. [CONTEXT service_id=194 ]
+11-10 01:09:49.188   635  1846 W JobScheduler: Job didn't exist in JobStore: 95538e2 {androidx.work.systemjobscheduler} #u0a144/50 @androidx.work.systemjobscheduler@com.google.android.googlequicksearchbox/androidx.work.impl.background.systemjob.SystemJobService
+11-10 01:09:49.188  1170  1303 I NearbySharing: Stopping Fast Init advertisement because we're not scanning in the foreground. [CONTEXT service_id=194 ]
+11-10 01:09:49.189  1170  1303 I NearbySharing: Stopping advertising because Nearby Sharing is disabled. [CONTEXT service_id=194 ]
+11-10 01:09:49.190  3115  3243 I PersonalSafety: Displaying Google Setting item true, true, true  [CONTEXT service_id=310 ]
+11-10 01:09:49.192   635  1846 W BestClock: java.time.DateTimeException: Missing network time fix
+11-10 01:09:49.192   635  1846 W BestClock: java.time.DateTimeException: Missing network time fix
+11-10 01:09:49.193  1170  1303 I NearbySharing: Stopping FastInitiation scanning because visibility is hidden. [CONTEXT service_id=194 ]
+11-10 01:09:49.193   635  1846 W BestClock: java.time.DateTimeException: Missing network time fix
+11-10 01:09:49.194  1170  1303 I NearbySharing: Fast Initiation Scanning has stopped [CONTEXT service_id=194 ]
+11-10 01:09:49.195  1170  1303 I NearbySharing: Dismissing HUN as there's no device nearby. [CONTEXT service_id=194 ]
+11-10 01:09:49.195   635  1846 W BestClock: java.time.DateTimeException: Missing network time fix
+11-10 01:09:49.197  1517  1517 I GnpSdk  : (REDACTED) Intent received for action [%s] package [%s].
+11-10 01:09:49.197  1517  1517 I GnpSdk  : Phenotype initialized.
+11-10 01:09:49.200  1170  1170 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.nearby.connection.service.START pkg=com.google.android.gms }
+11-10 01:09:49.200  1170  1170 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.nearby.connection.service.START pkg=com.google.android.gms }
+11-10 01:09:49.221  1170  2143 I AlarmManager: set [name: SystemMemoryCache type: 2 triggerAtMillis: 315360039643 windowMillis: -1 intervalMillis: 0]
+11-10 01:09:49.221  1517  1517 I GnpSdk  : (REDACTED) Validation OK for action [%s].
+11-10 01:09:49.223  1170  1179 I NearbySharing: A new client has bound to the NearbySharingService ClientBridge for calling package com.google.android.gms and PID 1626 [CONTEXT service_id=194 ]
+11-10 01:09:49.225  1517  1517 I GnpSdk  : (REDACTED) Submitting Broadcast execution [%d] to tiktok executor.
+11-10 01:09:49.227  1517  1956 I GnpSdk  : (REDACTED) Executing action in BroadcastReceiver [%s].
+11-10 01:09:49.229  1170  2143 I TapAndPay: getInstance: new instance created [CONTEXT service_id=79 ]
+11-10 01:09:49.232  1170  1310 I NearbyConnections: Client 248992204 requested setting downloads directory to null.
+11-10 01:09:49.233  1170  1310 I NearbyConnections: Client 248992204 with package name 0p:com.google.android.gms.nearby.sharing and sdk version 242335000 has connected, downloads dir is set to null.
+11-10 01:09:49.237  1517  1517 D MddPeriodicWorker: PeriodicWorker: startWork
+11-10 01:09:49.238  1517  2202 E SingleDataFileGroupPop: Failed to add file group 
+11-10 01:09:49.239  1517  1957 I A       : (REDACTED) Mobalt: start uploading logs to Clearcut log_source = %s
+11-10 01:09:49.240   635  1449 W BestClock: java.time.DateTimeException: Missing network time fix
+11-10 01:09:49.240  1170  1310 I NearbyConnections: Client 248992204 requested setting downloads directory to Quick Share.
+11-10 01:09:49.241   635  1449 W BestClock: java.time.DateTimeException: Missing network time fix
+11-10 01:09:49.242   635  1449 W BestClock: java.time.DateTimeException: Missing network time fix
+11-10 01:09:49.242   635  1449 W BestClock: java.time.DateTimeException: Missing network time fix
+11-10 01:09:49.243  1517  2202 E PhFileGroupPop: Failed to add file group 
+11-10 01:09:49.244  1517  2202 E PhFileGroupPop: Failed to add file group 
+11-10 01:09:49.246  1170  2143 I TapAndPay: Maintaining payment bundles [CONTEXT service_id=79 ]
+11-10 01:09:49.247   635  1449 W JobScheduler: Job didn't exist in JobStore: 53d4d39 {androidx.work.systemjobscheduler} #u0a144/127 @androidx.work.systemjobscheduler@com.google.android.googlequicksearchbox/androidx.work.impl.background.systemjob.SystemJobService
+11-10 01:09:49.250   635   843 D SntpClient: request time failed: java.net.SocketTimeoutException: Poll timed out
+11-10 01:09:49.251  1170  2143 I TapAndPay: Finished maintaining payment bundles [CONTEXT service_id=79 ]
+11-10 01:09:49.252   635   843 D TrafficStats: tagSocket(449) with statsTag=0xffffff41, statsUid=-1
+11-10 01:09:49.258  1886  2235 D TrafficStats: tagSocket(134) with statsTag=0x0, statsUid=-1
+11-10 01:09:49.262  1886  2313 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of buoi@1aca227
+11-10 01:09:49.266  1517  2202 E PhFileGroupPop: Failed to add file group 
+11-10 01:09:49.267  1517  2202 E PhFileGroupPop: Failed to add file group 
+11-10 01:09:49.268  1517  1715 I A       : (REDACTED) Mobalt: uploading logs to the Cobalt Server, got %s observations
+11-10 01:09:49.269  1517  1717 D PhFileGroupPop: Added file groups assistant_appintegration_appactions_config
+11-10 01:09:49.270  1517  2202 E PhFileGroupPop: Failed to add file group 
+11-10 01:09:49.271  1517  2202 E PhFileGroupPop: Failed to add file group 
+11-10 01:09:49.272  1040  1047 W System  : A resource failed to call close. 
+11-10 01:09:49.272  1517  2202 E PhFileGroupPop: Failed to add file group 
+11-10 01:09:49.274  1517  2202 E PhFileGroupPop: Failed to add file group 
+11-10 01:09:49.274  1517  2202 I A       : Scheduling next refresh
+11-10 01:09:49.277  1517  1717 D PhFileGroupPop: Added file groups fedass_policy_config_group
+11-10 01:09:49.278  1517  2202 I A       : Scheduling next refresh
+11-10 01:09:49.278  1517  1715 I A       : Mobalt: finish sending logs to the Cobalt Server successfully
+11-10 01:09:49.279  1517  2202 I A       : Scheduling next refresh
+11-10 01:09:49.279  1517  2202 I A       : Scheduling next refresh
+11-10 01:09:49.279  1517  1717 D PhFileGroupPop: Added file groups smart_dictation_policy_config_group
+11-10 01:09:49.280  1517  1717 D PhFileGroupPop: Added file groups tapas_cortex
+11-10 01:09:49.282  1517  2202 I A       : Scheduling next refresh
+11-10 01:09:49.283  1517  2202 I A       : Scheduling next refresh
+11-10 01:09:49.284  1517  2202 E SingleDataFileGroupPop: Failed to add file group 
+11-10 01:09:49.289  1517  2202 I ZipLPPopulator: #scheduleLanguagePackDeletion
+11-10 01:09:49.289  1517  2202 I ZipLPPopulator: com.google.common.f.w: MEDIUM
+11-10 01:09:49.289  1517  2202 I ZipLPPopulator: 	at com.google.android.libraries.speech.b.b.k.aj.b(PG:22)
+11-10 01:09:49.289  1517  2202 I ZipLPPopulator: 	at com.google.android.libraries.mdi.download.gg.y(PG:24)
+11-10 01:09:49.289  1517  2202 I ZipLPPopulator: 	at com.google.android.libraries.mdi.download.gg.C(PG:1)
+11-10 01:09:49.289  1517  2202 I ZipLPPopulator: 	at com.google.android.libraries.mdi.download.gg.i(PG:85)
+11-10 01:09:49.289  1517  2202 I ZipLPPopulator: 	at com.google.android.libraries.search.integrations.g.b.p.i(PG:17)
+11-10 01:09:49.289  1517  2202 I ZipLPPopulator: 	at com.google.android.libraries.mdi.download.workmanager.workers.a.a(PG:7)
+11-10 01:09:49.289  1517  2202 I ZipLPPopulator: 	at com.google.apps.tiktok.tracing.fe.a(PG:13)
+11-10 01:09:49.289  1517  2202 I ZipLPPopulator: 	at com.google.common.util.concurrent.ds.a(PG:3)
+11-10 01:09:49.289  1517  2202 I ZipLPPopulator: 	at com.google.common.util.concurrent.cu.run(PG:21)
+11-10 01:09:49.289  1517  2202 I ZipLPPopulator: 	at com.google.common.util.concurrent.du.run(PG:5)
+11-10 01:09:49.289  1517  2202 I ZipLPPopulator: 	at com.google.android.libraries.k.x.run(PG:3)
+11-10 01:09:49.289  1517  2202 I ZipLPPopulator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-10 01:09:49.289  1517  2202 I ZipLPPopulator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-10 01:09:49.289  1517  2202 I ZipLPPopulator: 	at com.google.android.libraries.k.b.run(PG:6)
+11-10 01:09:49.289  1517  2202 I ZipLPPopulator: 	at java.lang.Thread.run(Thread.java:1012)
+11-10 01:09:49.289  1517  2202 I ZipLPPopulator: 	at com.google.android.libraries.k.d.b.run(PG:74)
+11-10 01:09:49.289  1517  2202 I ZipLPPopulator: #addNewFileGroups
+11-10 01:09:49.289  1517  2202 I A       : #getDownloadableLanguagePacks
+11-10 01:09:49.290  1517  2202 I A       : (REDACTED) Loaded languagepack (LP) flag value from latest config %s: %s
+11-10 01:09:49.292  1517  1795 I LPRequestState: (REDACTED) [%s] #resolveDesiredLanguagePacks
+11-10 01:09:49.293  1517  1716 I A       : #getInstalledPackages
+11-10 01:09:49.297  1886  2238 D TrafficStats: tagSocket(134) with statsTag=0x0, statsUid=-1
+11-10 01:09:49.301  1517  2202 I A       : (REDACTED) Download file group for language pack: %s
+11-10 01:09:49.302  1517  2202 W A       : (REDACTED) Locale %s is not compatible, please check manifest exists
+11-10 01:09:49.305  1886  2277 D TrafficStats: tagSocket(134) with statsTag=0x0, statsUid=-1
+11-10 01:09:49.306  1517  1795 I LPRequestState: (REDACTED) [%s] #resolveUnusedLanguagePacks
+11-10 01:09:49.306  1517  1795 I LPRequestState: (REDACTED) [%s] #resolveDesiredLanguagePacks
+11-10 01:09:49.316  1886  2235 D TrafficStats: tagSocket(134) with statsTag=0x0, statsUid=-1
+11-10 01:09:49.323  1517  2202 I A       : getLocaleToModelSpecsMap
+11-10 01:09:49.323  1517  2202 I A       : Fetching latest config from MDD...
+11-10 01:09:49.324  1517  2202 I A       : (REDACTED) Found map of size: %d
+11-10 01:09:49.325  1517  2202 I HotwordModelPopulator: (REDACTED) #updateHotwordFileGroup group name: %s, raw locale: %s, locale: %s
+11-10 01:09:49.326  1886  2238 D TrafficStats: tagSocket(134) with statsTag=0x0, statsUid=-1
+11-10 01:09:49.327  1517  1725 I MicroModelsUtil: (REDACTED) #getHotwordModelFromMobstore [mobstoreUri: %s]
+11-10 01:09:49.332  1886  2277 D TrafficStats: tagSocket(134) with statsTag=0x0, statsUid=-1
+11-10 01:09:49.335  1517  2202 I A       : getLocaleToModelSpecsMap
+11-10 01:09:49.335  1517  2202 I A       : Fetching latest config from MDD...
+11-10 01:09:49.336  1517  2202 I A       : (REDACTED) Found map of size: %d
+11-10 01:09:49.340  1517  2202 I HotwordModelPopulator: (REDACTED) #updateHotwordFileGroup group name: %s, raw locale: %s, locale: %s
+11-10 01:09:49.343  1886  2235 D TrafficStats: tagSocket(134) with statsTag=0x0, statsUid=-1
+11-10 01:09:49.343  1517  1725 I HotwordModelPopulator: (REDACTED) Updated file group for locale '%s' from location: %s. Download already finished. Version: %d
+11-10 01:09:49.343  1517  1517 I A       : Start work
+11-10 01:09:49.345  1517  1725 I HotwordModelPopulator: (REDACTED) Updated file group for locale '%s' from location: %s. Download in progress, but older model found. Expected version: %d. Found version: %d
+11-10 01:09:49.351  1517  2366 E chromium: [1110/010949.351064:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -101
+11-10 01:09:49.352  1886  2238 D TrafficStats: tagSocket(134) with statsTag=0x0, statsUid=-1
+11-10 01:09:49.355  1886  2277 D TrafficStats: tagSocket(134) with statsTag=0x0, statsUid=-1
+11-10 01:09:49.362  1886  2235 D TrafficStats: tagSocket(135) with statsTag=0x0, statsUid=-1
+11-10 01:09:49.368  1886  2035 E MDD     : GddFileGroupPopulator: GDD Sync failed for corpus: GDD_BUGLE_EMOJIFY, configuration: GddBugleEmojify
+11-10 01:09:49.368  1886  2035 E MDD     : cwsw: refresh failed [GDD_FAIL_IN_SYNC_RUNNER_PUBLIC]
+11-10 01:09:49.368  1886  2035 E MDD     : 	at cwsu.a(PG:28)
+11-10 01:09:49.368  1886  2035 E MDD     : 	at cybz.a(PG:29)
+11-10 01:09:49.368  1886  2035 E MDD     : 	at dkqe.a(PG:13)
+11-10 01:09:49.368  1886  2035 E MDD     : 	at dqoa.d(PG:3)
+11-10 01:09:49.368  1886  2035 E MDD     : 	at dqoc.run(PG:130)
+11-10 01:09:49.368  1886  2035 E MDD     : 	at crzm.run(PG:3)
+11-10 01:09:49.368  1886  2035 E MDD     : 	at dnmw.run(PG:50)
+11-10 01:09:49.368  1886  2035 E MDD     : 	at cscj.run(PG:18)
+11-10 01:09:49.368  1886  2035 E MDD     : 	at cryt.run(PG:8)
+11-10 01:09:49.368  1886  2035 E MDD     : 	at java.lang.Thread.run(Thread.java:1012)
+11-10 01:09:49.368  1886  2035 E MDD     : 	at csaw.run(PG:64)
+11-10 01:09:49.368  1886  2035 E MDD     : Caused by: cule: Geller batch sync rpc call failed
+11-10 01:09:49.368  1886  2035 E MDD     : 	at culd.d(PG:27)
+11-10 01:09:49.368  1886  2035 E MDD     : 	at cukv.apply(PG:47)
+11-10 01:09:49.368  1886  2035 E MDD     : 	at dkqi.apply(PG:13)
+11-10 01:09:49.368  1886  2035 E MDD     : 	at dqob.d(PG:3)
+11-10 01:09:49.368  1886  2035 E MDD     : 	... 7 more
+11-10 01:09:49.368  1886  2035 E MDD     : Caused by: ecta: UNAVAILABLE
+11-10 01:09:49.368  1886  2035 E MDD     : 	at io.grpc.Status.f(PG:3)
+11-10 01:09:49.368  1886  2035 E MDD     : 	at edqa.a(PG:38)
+11-10 01:09:49.368  1886  2035 E MDD     : 	at edaf.run(PG:9)
+11-10 01:09:49.368  1886  2035 E MDD     : 	at edah.e(PG:14)
+11-10 01:09:49.368  1886  2035 E MDD     : 	at edah.a(PG:6)
+11-10 01:09:49.368  1886  2035 E MDD     : 	at ecyw.a(PG:32)
+11-10 01:09:49.368  1886  2035 E MDD     : 	at eczr.run(PG:7)
+11-10 01:09:49.368  1886  2035 E MDD     : 	at edjo.run(PG:17)
+11-10 01:09:49.368  1886  2035 E MDD     : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-10 01:09:49.368  1886  2035 E MDD     : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-10 01:09:49.368  1886  2035 E MDD     : 	at java.lang.Thread.run(Thread.java:1012)
+11-10 01:09:49.368  1886  2035 E MDD     : Caused by: java.net.ConnectException: failed to connect to geller-pa.googleapis.com/2001:4860:4840:400:: (port 443) from /:: (port 36706): connect failed: ECONNREFUSED (Connection refused)
+11-10 01:09:49.368  1886  2035 E MDD     : 	at libcore.io.IoBridge.connect(IoBridge.java:187)
+11-10 01:09:49.368  1886  2035 E MDD     : 	at java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:142)
+11-10 01:09:49.368  1886  2035 E MDD     : 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:390)
+11-10 01:09:49.368  1886  2035 E MDD     : 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:230)
+11-10 01:09:49.368  1886  2035 E MDD     : 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:212)
+11-10 01:09:49.368  1886  2035 E MDD     : 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:436)
+11-10 01:09:49.368  1886  2035 E MDD     : 	at java.net.Socket.connect(Socket.java:646)
+11-10 01:09:49.368  1886  2035 E MDD     : 	at java.net.Socket.connect(Socket.java:595)
+11-10 01:09:49.368  1886  2035 E MDD     : 	at java.net.Socket.<init>(Socket.java:475)
+11-10 01:09:49.368  1886  2035 E MDD     : 	at java.net.Socket.<init>(Socket.java:275)
+11-10 01:09:49.368  1886  2035 E MDD     : 	at javax.net.DefaultSocketFactory.createSocket(SocketFactory.java:285)
+11-10 01:09:49.368  1886  2035 E MDD     : 	at ednk.run(PG:50)
+11-10 01:09:49.368  1886  2035 E MDD     : 	at edjo.run(PG:17)
+11-10 01:09:49.368  1886  2035 E MDD     : 	at cunp.run(PG:7)
+11-10 01:09:49.368  1886  2035 E MDD     : 	at dkqk.run(PG:21)
+11-10 01:09:49.368  1886  2035 E MDD     : 	at crzm.run(PG:3)
+11-10 01:09:49.368  1886  2035 E MDD     : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-10 01:09:49.368  1886  2035 E MDD     : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-10 01:09:49.368  1886  2035 E MDD     : 	at cryq.run(PG:6)
+11-10 01:09:49.368  1886  2035 E MDD     : 	at java.lang.Thread.run(Thread.java:1012)
+11-10 01:09:49.368  1886  2035 E MDD     : 	at csaw.run(PG:64)
+11-10 01:09:49.368  1886  2035 E MDD     : Caused by: android.system.ErrnoException: connect failed: ECONNREFUSED (Connection refused)
+11-10 01:09:49.368  1886  2035 E MDD     : 	at libcore.io.Linux.connect(Native Method)
+11-10 01:09:49.368  1886  2035 E MDD     : 	at libcore.io.ForwardingOs.connect(ForwardingOs.java:201)
+11-10 01:09:49.368  1886  2035 E MDD     : 	at libcore.io.BlockGuardOs.connect(BlockGuardOs.java:158)
+11-10 01:09:49.368  1886  2035 E MDD     : 	at libcore.io.ForwardingOs.connect(ForwardingOs.java:201)
+11-10 01:09:49.368  1886  2035 E MDD     : 	at libcore.io.IoBridge.connectErrno(IoBridge.java:201)
+11-10 01:09:49.368  1886  2035 E MDD     : 	at libcore.io.IoBridge.connect(IoBridge.java:179)
+11-10 01:09:49.368  1886  2035 E MDD     : 	... 20 more
+11-10 01:09:49.377  1517  2366 E chromium: [1110/010949.377558:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -101
+11-10 01:09:49.384   635   804 W BestClock: java.time.DateTimeException: Missing network time fix
+11-10 01:09:49.388   635   804 W BestClock: java.time.DateTimeException: Missing network time fix
+11-10 01:09:49.389   635   804 W BestClock: java.time.DateTimeException: Missing network time fix
+11-10 01:09:49.390  1517  1732 I WM-WorkerWrapper: Work [ id=d17e2b86-130d-4e0c-99aa-8dc485608308, tags={ com.google.apps.tiktok.contrib.work.TikTokListenableWorker,TikTokWorker#com.google.android.libraries.mdi.download.workmanager.tiktok.TikTokPeriodicWorker } ] was cancelled
+11-10 01:09:49.390  1517  1732 I WM-WorkerWrapper: androidx.work.impl.ba
+11-10 01:09:49.390  1517  1732 I WM-WorkerWrapper: 	at androidx.work.impl.r.e(PG:5)
+11-10 01:09:49.390  1517  1732 I WM-WorkerWrapper: 	at androidx.work.impl.utils.ag.run(PG:94)
+11-10 01:09:49.390  1517  1732 I WM-WorkerWrapper: 	at androidx.work.impl.utils.aa.run(PG:3)
+11-10 01:09:49.390  1517  1732 I WM-WorkerWrapper: 	at com.google.android.libraries.k.x.run(PG:3)
+11-10 01:09:49.390  1517  1732 I WM-WorkerWrapper: 	at com.google.common.n.c.c.run(PG:50)
+11-10 01:09:49.390  1517  1732 I WM-WorkerWrapper: 	at com.google.android.libraries.k.e.run(PG:8)
+11-10 01:09:49.390  1517  1732 I WM-WorkerWrapper: 	at java.lang.Thread.run(Thread.java:1012)
+11-10 01:09:49.390  1517  1732 I WM-WorkerWrapper: 	at com.google.android.libraries.k.d.b.run(PG:74)
+11-10 01:09:49.391   635   804 W BestClock: java.time.DateTimeException: Missing network time fix
+11-10 01:09:49.392  1517  1732 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=1b6deaa2-da8a-4d1c-961c-799eca641ad9, tags={ com.google.apps.tiktok.contrib.work.TikTokListenableWorker,TikTokWorker#com.google.android.apps.gsa.staticplugins.opa.worker.nudgeui.ResetOpaNgaQueryCounterTask } ]
+11-10 01:09:49.392  1517  1956 I GnpSdk  : (REDACTED) Finished Broadcast execution [%d].
+11-10 01:09:49.393  1170  1170 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.scheduler.standalone.housekeeping.HousekeepingTrainTaskService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentInternalBoundBrokerService }
+11-10 01:09:49.393  1170  1170 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.scheduler.standalone.housekeeping.HousekeepingTrainTaskService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentInternalBoundBrokerService }
+11-10 01:09:49.396   635   804 W BestClock: java.time.DateTimeException: Missing network time fix
+11-10 01:09:49.399   635  1034 W BestClock: java.time.DateTimeException: Missing network time fix
+11-10 01:09:49.401   635  1034 W BestClock: java.time.DateTimeException: Missing network time fix
+11-10 01:09:49.401  1517  1725 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=75f8eac5-e037-482b-a52f-fe770b9a0ef0, tags={ com.google.apps.tiktok.contrib.work.TikTokListenableWorker,TikTokWorker#com.google.android.apps.search.assistant.surfaces.notification.DelayedNotificationWorker } ]
+11-10 01:09:49.407  1517  2366 E chromium: [1110/010949.407775:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -101
+11-10 01:09:49.408   635  1034 W BestClock: java.time.DateTimeException: Missing network time fix
+11-10 01:09:49.409   635  1034 W BestClock: java.time.DateTimeException: Missing network time fix
+11-10 01:09:49.417  3115  3171 W IndexableItem: indexing key is not set:Intent { act=com.google.android.gms.fido.fido2.ui.hybrid.LINKED_DEVICES_SETTINGS cat=[android.intent.category.DEFAULT] pkg=com.google.android.gms } [CONTEXT service_id=231 ]
+11-10 01:09:49.417  3115  3171 W IndexableItem: indexing key is not set:Intent { act=com.google.android.gms.fido.fido2.ui.hybrid.LINKED_DEVICES_SETTINGS cat=[android.intent.category.DEFAULT] pkg=com.google.android.gms } [CONTEXT service_id=231 ]
+11-10 01:09:49.420  1517  2366 E chromium: [1110/010949.420743:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -101
+11-10 01:09:49.423   635  2113 I BroadcastQueue: BOOT_COMPLETED_BROADCAST_COMPLETION_LATENCY_REPORTED action:android.intent.action.BOOT_COMPLETED dispatchLatency:2123 completeLatency:16604 dispatchRealLatency:2123 completeRealLatency:16604 receiversSize:97 userId:0 userType:android.os.usertype.full.SYSTEM
+11-10 01:09:49.424   635   668 I ActivityManager: Finished processing BOOT_COMPLETED for u0
+11-10 01:09:49.432  3115  3171 W IndexableItem: indexing key is not set:Intent { cmp=com.google.android.gms/.romanesco.restore.settings.ContactsRestoreSettingsActivity } [CONTEXT service_id=231 ]
+11-10 01:09:49.433  3115  3171 W IndexableItem: indexing key is not set:Intent { cmp=com.google.android.gms/.romanesco.restore.settings.ContactsRestoreSettingsActivity } [CONTEXT service_id=231 ]
+11-10 01:09:49.438   635  1034 W BestClock: java.time.DateTimeException: Missing network time fix
+11-10 01:09:49.439   635  1034 W BestClock: java.time.DateTimeException: Missing network time fix
+11-10 01:09:49.440  3115  3171 W IndexableItem: indexing key is not set:Intent { act=com.google.android.gms.fido.fido2.ui.hybrid.LINKED_DEVICES_SETTINGS cat=[android.intent.category.DEFAULT] pkg=com.google.android.gms } [CONTEXT service_id=231 ]
+11-10 01:09:49.441   635  1034 W BestClock: java.time.DateTimeException: Missing network time fix
+11-10 01:09:49.442   635  1034 W BestClock: java.time.DateTimeException: Missing network time fix
+11-10 01:09:49.442  1517  1714 I MicroModelsUtil: (REDACTED) #getHotwordModelFromMobstore [mobstoreUri: %s]
+11-10 01:09:49.449  1517  1714 I HotwordModelPopulator: (REDACTED) Updated file group for locale '%s' from location: %s. Download already finished. Version: %d
+11-10 01:09:49.449  1517  1714 I HotwordModelPopulator: (REDACTED) Updated file group for locale '%s' from location: %s. Download in progress, but older model found. Expected version: %d. Found version: %d
+11-10 01:09:49.450  1170  1309 D TrafficStats: tagSocket(180) with statsTag=0x34000609, statsUid=10136
+11-10 01:09:49.454  1517  2366 E chromium: [1110/010949.454710:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -101
+11-10 01:09:49.463  1170  1309 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-10 01:09:49.463  1170  1309 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-10 01:09:49.463  1170  1309 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-10 01:09:49.465   897   901 I ndroid.systemui: Compiler allocated 5200KB to compile java.lang.Object com.google.android.systemui.dagger.DaggerSysUIGoogleGlobalRootComponent$WMComponentImpl$SwitchingProvider.get1$1()
+11-10 01:09:49.468   635  1003 W BestClock: java.time.DateTimeException: Missing network time fix
+11-10 01:09:49.473   635  1003 W BestClock: java.time.DateTimeException: Missing network time fix
+11-10 01:09:49.474   635  1003 W BestClock: java.time.DateTimeException: Missing network time fix
+11-10 01:09:49.475   635  1003 W BestClock: java.time.DateTimeException: Missing network time fix
+11-10 01:09:49.493  1170  1309 V NativeCrypto: SSL handshake aborted: ssl=0x70341d394e58: I/O error during system call, Connection reset by peer
+11-10 01:09:49.495  1517  2366 E chromium: [1110/010949.495478:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -101
+11-10 01:09:49.497  1170  2285 D TrafficStats: tagSocket(180) with statsTag=0x34000609, statsUid=10136

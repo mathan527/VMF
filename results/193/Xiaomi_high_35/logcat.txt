@@ -1,0 +1,689 @@
+--------- beginning of main
+11-10 01:14:03.724  1120  1120 D SsBaseTemplateCard: Passed-in item info is null
+11-10 01:14:03.724  1120  1120 D SsBaseTemplateCard: Passed-in item info is null
+11-10 01:14:03.725  1364  1506 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-10 01:14:03.725  1120  1120 I SsBaseTemplateCard: Secondary card pane is null
+11-10 01:14:03.725   885   885 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+11-10 01:14:03.725  1364  1506 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-10 01:14:03.726  1364  1506 I AiAiEcho: EchoTargets: 
+11-10 01:14:03.726  1364  1506 I AiAiEcho: Filtered by AiAi flag check: 
+11-10 01:14:03.726  1364  1506 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-10 01:14:03.726  1364  1506 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-10 01:14:03.726  1364  1506 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-10 01:14:03.727  1364  1506 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-10 01:14:03.727  1364  1506 I AiAiEcho: EchoTargets: 
+11-10 01:14:03.727  1364  1506 I AiAiEcho: Filtered by AiAi flag check: 
+11-10 01:14:03.727  1364  1506 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-10 01:14:03.728  1364  1506 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-10 01:14:03.729  1364  1506 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-10 01:14:03.730  1364  1506 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface media_data_manager with targets# 0 (types=[])
+11-10 01:14:03.730  1618  2298 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-10 01:14:03.730  1618  2298 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-10 01:14:03.730   885   885 D SsMediaDataProvider: Forwarding Smartspace updates []
+11-10 01:14:03.730  1618  2298 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-10 01:14:03.731  1364  1506 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+11-10 01:14:03.732  1364  1506 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+11-10 01:14:03.733   885   885 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+11-10 01:14:03.733  1167  2824 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.libraries.mdi.sync#com.google.android.gms [CONTEXT service_id=204 ]
+11-10 01:14:03.733  1167  2824 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.libraries.mdi.sync#com.google.android.gms
+11-10 01:14:03.733  1167  2824 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+11-10 01:14:03.733  1167  2824 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+11-10 01:14:03.733  1167  2824 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+11-10 01:14:03.733  1167  2824 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+11-10 01:14:03.733  1167  2824 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+11-10 01:14:03.733  1167  2824 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+11-10 01:14:03.733  1167  2824 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+11-10 01:14:03.733  1167  2824 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+11-10 01:14:03.733  1167  2824 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-10 01:14:03.733  1167  2824 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-10 01:14:03.733  1167  2824 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+11-10 01:14:03.736  1364  1381 I AiAiEcho: Settings changed for uri: content://settings/secure/active_unlock_on_biometric_fail
+11-10 01:14:03.737  1364  1506 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-10 01:14:03.737  1364  1506 I AiAiEcho: EchoTargets: 
+11-10 01:14:03.737  1364  1506 I AiAiEcho: Filtered by AiAi flag check: 
+11-10 01:14:03.737  1364  1506 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-10 01:14:03.737  1364  1506 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-10 01:14:03.738  1120  1120 D SsBaseTemplateCard: No text view can be set up
+11-10 01:14:03.738  1364  1506 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-10 01:14:03.738  1120  1120 D SsBaseTemplateCard: Passed-in item info is null
+11-10 01:14:03.738  1120  1120 D SsBaseTemplateCard: Passed-in item info is null
+11-10 01:14:03.738  1120  1120 D SsBaseTemplateCard: Passed-in item info is null
+11-10 01:14:03.738  1120  1120 I SsBaseTemplateCard: Secondary card pane is null
+11-10 01:14:03.739  1364  1506 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-10 01:14:03.739  1120  1120 D SsBaseTemplateCard: No text view can be set up
+11-10 01:14:03.739  1120  1120 D SsBaseTemplateCard: Passed-in item info is null
+11-10 01:14:03.739  1120  1120 D SsBaseTemplateCard: Passed-in item info is null
+11-10 01:14:03.739  1120  1120 D SsBaseTemplateCard: Passed-in item info is null
+11-10 01:14:03.740  1364  1506 I AiAiEcho: EchoTargets: 
+11-10 01:14:03.740  1364  1506 I AiAiEcho: Filtered by AiAi flag check: 
+11-10 01:14:03.740  1364  1506 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-10 01:14:03.740  1120  1120 I SsBaseTemplateCard: Secondary card pane is null
+11-10 01:14:03.742  1364  1381 I AiAiEcho: Settings changed for uri: content://settings/secure/active_unlock_on_face_errors
+11-10 01:14:03.742  1364  1381 I AiAiEcho: Settings changed for uri: content://settings/secure/active_unlock_wakeups_considered_unlock_intents
+11-10 01:14:03.743  1364  1506 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-10 01:14:03.744  1364  1506 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-10 01:14:03.744   424  3171 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10143 0}
+11-10 01:14:03.745  1364  1506 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-10 01:14:03.745  1364  1506 I AiAiEcho: EchoTargets: 
+11-10 01:14:03.745  1364  1506 I AiAiEcho: Filtered by AiAi flag check: 
+11-10 01:14:03.745  1364  1506 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-10 01:14:03.745  1167  2826 I UsageReportingOptionsSt: User 0 is opted-in? false [CONTEXT service_id=41 ]
+11-10 01:14:03.745  1167  2826 I UsageReportingOptionsSt: Updating global setting to unknown [CONTEXT service_id=41 ]
+11-10 01:14:03.745  1364  1506 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-10 01:14:03.746   424  3172 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+11-10 01:14:03.746   424  3173 I resolv  : res_nmkquery: (QUERY, IN, A)
+11-10 01:14:03.747  1364  1506 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-10 01:14:03.751   424  3172 I resolv  : res_nsend: used send_dg 499 terrno: 0
+11-10 01:14:03.751   424  3172 I resolv  : doQuery: rcode=0, ancount=8, return value=499
+11-10 01:14:03.752   424  3173 I resolv  : res_nsend: used send_dg 431 terrno: 0
+11-10 01:14:03.752   424  3173 I resolv  : doQuery: rcode=0, ancount=8, return value=431
+11-10 01:14:03.753  1364  1506 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface media_data_manager with targets# 0 (types=[])
+11-10 01:14:03.755  1364  1506 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-10 01:14:03.755  1618  2298 V NativeCrypto: SSL handshake aborted: ssl=0x7aa3836ce6d8: I/O error during system call, Connection reset by peer
+11-10 01:14:03.757  1618  2189 I Vision  : Supported ABIS: [x86_64, arm64-v8a]
+11-10 01:14:03.757  1618  1764 D TrafficStats: tagSocket(192) with statsTag=0x30002500, statsUid=-1
+11-10 01:14:03.757   885   885 D SsMediaDataProvider: Forwarding Smartspace updates []
+11-10 01:14:03.758  1364  1506 I AiAiEcho: EchoTargets: 
+11-10 01:14:03.758  1364  1506 I AiAiEcho: Filtered by AiAi flag check: 
+11-10 01:14:03.758  1364  1506 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-10 01:14:03.759  1364  1506 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-10 01:14:03.760  1364  1506 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-10 01:14:03.760  1364  1506 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-10 01:14:03.760  1364  1506 I AiAiEcho: EchoTargets: 
+11-10 01:14:03.760  1364  1506 I AiAiEcho: Filtered by AiAi flag check: 
+11-10 01:14:03.760  1364  1506 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-10 01:14:03.760  1364  1506 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-10 01:14:03.761  1364  1506 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-10 01:14:03.761  1364  1506 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-10 01:14:03.761  1364  1506 I AiAiEcho: EchoTargets: 
+11-10 01:14:03.761  1364  1506 I AiAiEcho: Filtered by AiAi flag check: 
+11-10 01:14:03.761  1364  1506 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-10 01:14:03.762  1364  1506 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-10 01:14:03.762  1364  1506 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-10 01:14:03.769  1167  2824 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.mdocstore#com.google.android.gms [CONTEXT service_id=204 ]
+11-10 01:14:03.769  1167  2824 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.mdocstore#com.google.android.gms
+11-10 01:14:03.769  1167  2824 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+11-10 01:14:03.769  1167  2824 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+11-10 01:14:03.769  1167  2824 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+11-10 01:14:03.769  1167  2824 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+11-10 01:14:03.769  1167  2824 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+11-10 01:14:03.769  1167  2824 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+11-10 01:14:03.769  1167  2824 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+11-10 01:14:03.769  1167  2824 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+11-10 01:14:03.769  1167  2824 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-10 01:14:03.769  1167  2824 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-10 01:14:03.769  1167  2824 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+11-10 01:14:03.774  1618  1764 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-10 01:14:03.762  1364  1506 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-10 01:14:03.774  1364  1506 I AiAiEcho: EchoTargets: 
+11-10 01:14:03.774  1364  1506 I AiAiEcho: Filtered by AiAi flag check: 
+11-10 01:14:03.774  1364  1506 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-10 01:14:03.775  1364  1506 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-10 01:14:03.775  1364  1506 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-10 01:14:03.775  1364  1506 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-10 01:14:03.776  1618  1764 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-10 01:14:03.776  1364  1506 I AiAiEcho: EchoTargets: 
+11-10 01:14:03.776  1364  1506 I AiAiEcho: Filtered by AiAi flag check: 
+11-10 01:14:03.776  1364  1506 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-10 01:14:03.776  1618  1764 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-10 01:14:03.777  1364  1506 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-10 01:14:03.777  1364  1506 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-10 01:14:03.778  1364  1506 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-10 01:14:03.778  1364  1506 I AiAiEcho: EchoTargets: 
+11-10 01:14:03.778  1364  1506 I AiAiEcho: Filtered by AiAi flag check: 
+11-10 01:14:03.778  1364  1506 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-10 01:14:03.780  1167  1590 D TrafficStats: tagSocket(207) with statsTag=0x34000609, statsUid=10143
+11-10 01:14:03.780  1364  1506 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-10 01:14:03.781  1364  1506 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-10 01:14:03.787  1167  2050 I DynamiteModule: Considering local module com.google.android.gms.cronet_dynamite:0 and remote module com.google.android.gms.cronet_dynamite:3111
+11-10 01:14:03.787  1167  2050 I DynamiteModule: Selected remote version of com.google.android.gms.cronet_dynamite, version >= 3111
+11-10 01:14:03.788  1364  1506 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+11-10 01:14:03.789  1120  1120 D SsBaseTemplateCard: No text view can be set up
+11-10 01:14:03.790  1120  1120 D SsBaseTemplateCard: Passed-in item info is null
+11-10 01:14:03.790  1120  1120 D SsBaseTemplateCard: Passed-in item info is null
+11-10 01:14:03.790  1120  1120 D SsBaseTemplateCard: Passed-in item info is null
+11-10 01:14:03.790  1120  1120 I SsBaseTemplateCard: Secondary card pane is null
+11-10 01:14:03.792  1167  1167 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.time.trustedtime.singleuserapi.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentSingleUserInternalApiService }
+11-10 01:14:03.792  1167  1167 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.time.trustedtime.singleuserapi.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentSingleUserInternalApiService }
+11-10 01:14:03.794  1167  1590 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-10 01:14:03.795  1167  1590 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-10 01:14:03.795  1167  1590 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-10 01:14:03.797  1364  2128 I AiAiEcho: Settings changed for uri: content://settings/secure/active_unlock_on_face_acquire_info
+11-10 01:14:03.797  1167  2824 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.icing.mdd#com.google.android.gms [CONTEXT service_id=204 ]
+11-10 01:14:03.797  1167  2824 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.icing.mdd#com.google.android.gms
+11-10 01:14:03.797  1167  2824 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+11-10 01:14:03.797  1167  2824 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+11-10 01:14:03.797  1167  2824 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+11-10 01:14:03.797  1167  2824 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+11-10 01:14:03.797  1167  2824 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+11-10 01:14:03.797  1167  2824 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+11-10 01:14:03.797  1167  2824 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+11-10 01:14:03.797  1167  2824 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+11-10 01:14:03.797  1167  2824 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-10 01:14:03.797  1167  2824 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-10 01:14:03.797  1167  2824 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+11-10 01:14:03.797  1364  1506 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+11-10 01:14:03.799  1167  2050 W ziparchive: Unable to open '/data/user_de/0/com.google.android.gms/app_chimera/m/00000009/CronetDynamite.uncompressed.dm': No such file or directory
+11-10 01:14:03.799   885   885 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+11-10 01:14:03.802  1364  1506 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface media_data_manager with targets# 0 (types=[])
+11-10 01:14:03.803   885   885 D SsMediaDataProvider: Forwarding Smartspace updates []
+11-10 01:14:03.803  1364  1506 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+11-10 01:14:03.804  1364  1506 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+11-10 01:14:03.804  1120  1120 D SsBaseTemplateCard: No text view can be set up
+11-10 01:14:03.805  1120  1120 D SsBaseTemplateCard: Passed-in item info is null
+11-10 01:14:03.806  1120  1120 D SsBaseTemplateCard: Passed-in item info is null
+11-10 01:14:03.806  1120  1120 D SsBaseTemplateCard: Passed-in item info is null
+11-10 01:14:03.806  1120  1120 I SsBaseTemplateCard: Secondary card pane is null
+11-10 01:14:03.806  1618  1764 V NativeCrypto: SSL handshake aborted: ssl=0x7aa3836ce6d8: I/O error during system call, Connection reset by peer
+11-10 01:14:03.806   885   885 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+11-10 01:14:03.809  1364  1506 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface media_data_manager with targets# 0 (types=[])
+11-10 01:14:03.809   885   885 D SsMediaDataProvider: Forwarding Smartspace updates []
+11-10 01:14:03.810  1364  1506 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+11-10 01:14:03.811  1364  1506 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+11-10 01:14:03.812   885   885 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+11-10 01:14:03.813  1364  1506 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-10 01:14:03.813  1364  1506 I AiAiEcho: EchoTargets: 
+11-10 01:14:03.813  1364  1506 I AiAiEcho: Filtered by AiAi flag check: 
+11-10 01:14:03.813  1364  1506 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-10 01:14:03.814  1364  1506 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-10 01:14:03.820  1120  1120 D SsBaseTemplateCard: No text view can be set up
+11-10 01:14:03.821  1120  1120 D SsBaseTemplateCard: Passed-in item info is null
+11-10 01:14:03.821  1120  1120 D SsBaseTemplateCard: Passed-in item info is null
+11-10 01:14:03.821  1120  1120 D SsBaseTemplateCard: Passed-in item info is null
+11-10 01:14:03.821  1120  1120 I SsBaseTemplateCard: Secondary card pane is null
+11-10 01:14:03.824  1167  1327 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.trustagent.activeunlock.associated#com.google.android.gms [CONTEXT service_id=204 ]
+11-10 01:14:03.824  1167  1327 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.trustagent.activeunlock.associated#com.google.android.gms
+11-10 01:14:03.824  1167  1327 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+11-10 01:14:03.824  1167  1327 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+11-10 01:14:03.824  1167  1327 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+11-10 01:14:03.824  1167  1327 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+11-10 01:14:03.824  1167  1327 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+11-10 01:14:03.824  1167  1327 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+11-10 01:14:03.824  1167  1327 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+11-10 01:14:03.824  1167  1327 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+11-10 01:14:03.824  1167  1327 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-10 01:14:03.824  1167  1327 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-10 01:14:03.824  1167  1327 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+11-10 01:14:03.828  1618  2251 D TrafficStats: tagSocket(192) with statsTag=0x30002500, statsUid=-1
+11-10 01:14:03.830  1364  1506 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-10 01:14:03.830  1364  1506 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-10 01:14:03.830  1167  1590 V NativeCrypto: SSL handshake aborted: ssl=0x7aa3836cf098: I/O error during system call, Connection reset by peer
+11-10 01:14:03.830  1364  1506 I AiAiEcho: EchoTargets: 
+11-10 01:14:03.830  1364  1506 I AiAiEcho: Filtered by AiAi flag check: 
+11-10 01:14:03.830  1364  1506 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-10 01:14:03.831  1364  1506 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-10 01:14:03.831  1364  1506 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-10 01:14:03.832  1364  1506 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-10 01:14:03.832  1167  3176 D TrafficStats: tagSocket(194) with statsTag=0x34000609, statsUid=10143
+11-10 01:14:03.836  1364  1506 I AiAiEcho: EchoTargets: 
+11-10 01:14:03.836  1364  1506 I AiAiEcho: Filtered by AiAi flag check: 
+11-10 01:14:03.836  1364  1506 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-10 01:14:03.838  1364  1506 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-10 01:14:03.838  1364  1506 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-10 01:14:03.838  1618  2592 I ChimeraConfigurator: Starting update, reason: 4 urgentFeatures: vision.ocr:-1
+11-10 01:14:03.839  1618  2251 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-10 01:14:03.839  1618  2251 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-10 01:14:03.839  1618  2251 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-10 01:14:03.840  1167  3176 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-10 01:14:03.840  1167  3176 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-10 01:14:03.841  1167  3176 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-10 01:14:03.842  1364  1506 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface media_data_manager with targets# 0 (types=[])
+11-10 01:14:03.844   885   885 D SsMediaDataProvider: Forwarding Smartspace updates []
+11-10 01:14:03.849  1364  1506 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+11-10 01:14:03.850  1167  1167 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.telemetry.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+11-10 01:14:03.850  1167  1167 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.telemetry.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+11-10 01:14:03.851  1120  1120 D SsBaseTemplateCard: No text view can be set up
+11-10 01:14:03.851  1364  1506 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+11-10 01:14:03.851  1120  1120 D SsBaseTemplateCard: Passed-in item info is null
+11-10 01:14:03.851  1120  1120 D SsBaseTemplateCard: Passed-in item info is null
+11-10 01:14:03.851  1120  1120 D SsBaseTemplateCard: Passed-in item info is null
+11-10 01:14:03.851  1120  1120 I SsBaseTemplateCard: Secondary card pane is null
+11-10 01:14:03.852   885   885 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+11-10 01:14:03.860  1167  2824 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.homegraph#com.google.android.gms [CONTEXT service_id=204 ]
+11-10 01:14:03.860  1167  2824 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.homegraph#com.google.android.gms
+11-10 01:14:03.860  1167  2824 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+11-10 01:14:03.860  1167  2824 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+11-10 01:14:03.860  1167  2824 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+11-10 01:14:03.860  1167  2824 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+11-10 01:14:03.860  1167  2824 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+11-10 01:14:03.860  1167  2824 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+11-10 01:14:03.860  1167  2824 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+11-10 01:14:03.860  1167  2824 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+11-10 01:14:03.860  1167  2824 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-10 01:14:03.860  1167  2824 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-10 01:14:03.860  1167  2824 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+11-10 01:14:03.869  1618  2251 V NativeCrypto: SSL handshake aborted: ssl=0x7aa3836cae98: I/O error during system call, Connection reset by peer
+11-10 01:14:03.871  1167  3176 V NativeCrypto: SSL handshake aborted: ssl=0x7aa3836cf098: I/O error during system call, Connection reset by peer
+11-10 01:14:03.877  1618  2298 D TrafficStats: tagSocket(192) with statsTag=0x30002500, statsUid=-1
+11-10 01:14:03.878  1167  3177 D TrafficStats: tagSocket(194) with statsTag=0x34000609, statsUid=10143
+11-10 01:14:03.882  1618  2041 I Wear_Controller: Wearable module requires a companion app to be installed.
+11-10 01:14:03.883  1618  2041 I Wear_Controller: onStartup - Wear is not available on this device.
+11-10 01:14:03.888  1618  2298 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-10 01:14:03.888  1618  2298 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-10 01:14:03.888  1618  2298 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-10 01:14:03.890  1167  2825 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.appsearch#com.google.android.gms [CONTEXT service_id=204 ]
+11-10 01:14:03.890  1167  2825 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.appsearch#com.google.android.gms
+11-10 01:14:03.890  1167  2825 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+11-10 01:14:03.890  1167  2825 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+11-10 01:14:03.890  1167  2825 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+11-10 01:14:03.890  1167  2825 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+11-10 01:14:03.890  1167  2825 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+11-10 01:14:03.890  1167  2825 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+11-10 01:14:03.890  1167  2825 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+11-10 01:14:03.890  1167  2825 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+11-10 01:14:03.890  1167  2825 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-10 01:14:03.890  1167  2825 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-10 01:14:03.890  1167  2825 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+11-10 01:14:03.898  1618  2592 I ChimeraConfigurator: Detected pending changes for urgent request: [vision.ocr]. Pending module sets: container:2423359190800+mlkit.ocr.common+vision.ocr,tflite_dynamite:2640104055100800+tflite_dynamite
+11-10 01:14:03.899  1167  2050 I .gms.persistent: Waiting for a blocking GC ClassLinker
+11-10 01:14:03.902  1167  3177 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-10 01:14:03.902  1167  3177 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-10 01:14:03.904  1167  3177 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-10 01:14:03.912  1618  2592 I GmsDebugLogger: [73] 1801
+11-10 01:14:03.914  1618  2298 V NativeCrypto: SSL handshake aborted: ssl=0x7aa3836ce6d8: I/O error during system call, Connection reset by peer
+11-10 01:14:03.916  1618  1764 D TrafficStats: tagSocket(192) with statsTag=0x30002500, statsUid=-1
+11-10 01:14:03.918  1618  2592 W ZappDownloader: No successful Zapp module downloads for requested modules [VisionOcr.optional:242335100000:permitMetered, MlkitOcrCommon.optional:242335100800:permitMetered, TfliteDynamiteDynamite.integ:264010405100800:permitMetered].
+11-10 01:14:03.918  1618  2592 I GmsDebugLogger: [30] [VisionOcr.optional:242335100000],[MlkitOcrCommon.optional:242335100800],[TfliteDynamiteDynamite.integ:264010405100800]
+11-10 01:14:03.919  1167  2825 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.castauth#com.google.android.gms [CONTEXT service_id=204 ]
+11-10 01:14:03.919  1167  2825 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.castauth#com.google.android.gms
+11-10 01:14:03.919  1167  2825 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+11-10 01:14:03.919  1167  2825 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+11-10 01:14:03.919  1167  2825 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+11-10 01:14:03.919  1167  2825 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+11-10 01:14:03.919  1167  2825 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+11-10 01:14:03.919  1167  2825 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+11-10 01:14:03.919  1167  2825 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+11-10 01:14:03.919  1167  2825 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+11-10 01:14:03.919  1167  2825 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-10 01:14:03.919  1167  2825 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-10 01:14:03.919  1167  2825 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+11-10 01:14:03.924  1618  1764 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-10 01:14:03.924  1618  1764 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-10 01:14:03.924  1618  1764 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-10 01:14:03.939  3100  3100 I AccessibilityNodeInfoDumper: Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@53fd6; boundsInParent: Rect(0, 0 - 597, 0); boundsInScreen: Rect(62, 218 - 659, 218); boundsInWindow: Rect(62, 218 - 659, 218); packageName: com.google.android.apps.nexuslauncher; className: android.view.ViewGroup; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; containerTitle: null; viewIdResName: com.google.android.apps.nexuslauncher:id/smartspace_subtitle_group; uniqueId: null; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; granularScrollingSupported: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]; isTextSelectable: false
+11-10 01:14:03.941  1618  2592 W ChimeraConfigService: Retry attempt was throttled. [CONTEXT service_id=264 ]
+11-10 01:14:03.941  3100  3100 W AccessibilityNodeInfoDumper: Fetch time: 4ms
+11-10 01:14:03.941  1618  2592 I GmsDebugLogger: [83] 1 [vision.ocr]
+--------- beginning of system
+11-10 01:14:03.944   637  1732 W MagnificationConnectionManager: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
+11-10 01:14:03.945   637  1732 D AccessibilityManagerService: restoreCurrentUserForTestAutomationIfNeededLocked(): ignoring because device doesn't support visible background users
+11-10 01:14:03.945  1167  3177 V NativeCrypto: SSL handshake aborted: ssl=0x7aa3836ca7d8: I/O error during system call, Connection reset by peer
+11-10 01:14:03.949  1167  1256 D TrafficStats: tagSocket(194) with statsTag=0x34000609, statsUid=10143
+11-10 01:14:03.949  3100  3100 D AndroidRuntime: Shutting down VM
+11-10 01:14:03.953  1364  2128 I AiAiEcho: Settings changed for uri: content://settings/secure/accessibility_enabled
+11-10 01:14:03.955   637   637 D BatterySaverPolicy: accessibility changed to false, updating policy.
+11-10 01:14:03.956  1364  1506 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-10 01:14:03.956  1364  1506 I AiAiEcho: EchoTargets: 
+11-10 01:14:03.956  1364  1506 I AiAiEcho: Filtered by AiAi flag check: 
+11-10 01:14:03.956  1364  1506 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-10 01:14:03.956  1364  1506 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-10 01:14:03.957  1364  1506 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-10 01:14:03.958  1364  1506 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-10 01:14:03.956  1618  1764 V NativeCrypto: SSL handshake aborted: ssl=0x7aa3836ce6d8: I/O error during system call, Connection reset by peer
+11-10 01:14:03.959  1364  1506 I AiAiEcho: EchoTargets: 
+11-10 01:14:03.959  1364  1506 I AiAiEcho: Filtered by AiAi flag check: 
+11-10 01:14:03.959  1364  1506 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-10 01:14:03.962  1167  1327 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.play_cloud_search#com.google.android.gms [CONTEXT service_id=204 ]
+11-10 01:14:03.962  1167  1327 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.play_cloud_search#com.google.android.gms
+11-10 01:14:03.962  1167  1327 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+11-10 01:14:03.962  1167  1327 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+11-10 01:14:03.962  1167  1327 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+11-10 01:14:03.962  1167  1327 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+11-10 01:14:03.962  1167  1327 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+11-10 01:14:03.962  1167  1327 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+11-10 01:14:03.962  1167  1327 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+11-10 01:14:03.962  1167  1327 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+11-10 01:14:03.962  1167  1327 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-10 01:14:03.962  1167  1327 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-10 01:14:03.962  1167  1327 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+11-10 01:14:03.962  1618  2189 W Vision  : Request for optional module download of ocr failed. Request again.
+11-10 01:14:03.964  1618  2189 W Vision  : Would have logged:
+11-10 01:14:03.964  1618  2189 W Vision  : # fbxl@44f943d5
+11-10 01:14:03.964  1618  2189 I Vision  : Schedule retrying download ocr at 39487 with backoff 10 seconds
+11-10 01:14:03.964  1364  1506 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-10 01:14:03.965  1364  1506 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-10 01:14:03.966  1364  1506 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-10 01:14:03.966  1364  1506 I AiAiEcho: EchoTargets: 
+11-10 01:14:03.966  1364  1506 I AiAiEcho: Filtered by AiAi flag check: 
+11-10 01:14:03.966  1364  1506 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-10 01:14:03.966  1364  1506 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-10 01:14:03.967  1364  1506 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-10 01:14:03.968  1364  1506 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface media_data_manager with targets# 0 (types=[])
+11-10 01:14:03.968  1364  1506 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+11-10 01:14:03.968  1608  1842 I A       : NGA enabled in interactor.
+11-10 01:14:03.968   885   885 D SsMediaDataProvider: Forwarding Smartspace updates []
+11-10 01:14:03.970  1364  1506 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+11-10 01:14:03.970  1608  1842 I A       : (REDACTED) Nga state changed to %s
+11-10 01:14:03.970  1618  2251 D TrafficStats: tagSocket(192) with statsTag=0x30002500, statsUid=-1
+11-10 01:14:03.972   885   885 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+11-10 01:14:03.972  1120  1120 D SsBaseTemplateCard: No text view can be set up
+11-10 01:14:03.972  1608  1842 I A       : (REDACTED) isTngActive=%s
+11-10 01:14:03.973  1120  1120 D SsBaseTemplateCard: Passed-in item info is null
+11-10 01:14:03.973  1120  1120 D SsBaseTemplateCard: Passed-in item info is null
+11-10 01:14:03.973  1120  1120 D SsBaseTemplateCard: Passed-in item info is null
+11-10 01:14:03.973  1120  1120 I SsBaseTemplateCard: Secondary card pane is null
+11-10 01:14:03.974  1410  1426 I A       : Initializing all components
+11-10 01:14:03.975  1410  1875 I A       : (REDACTED) onIsEnabledChanged, isEnabled: %s
+11-10 01:14:03.975  1410  1809 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+11-10 01:14:03.975  1410  1875 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:14:03.976  1410  1875 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:14:03.976  1410  1809 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+11-10 01:14:03.976  1410  1875 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:14:03.976  1410  1875 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:14:03.976  1410  1875 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:14:03.977  1410  1875 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:14:03.977  1410  1875 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:14:03.977  1410  1875 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:14:03.977  1410  1875 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:14:03.977  1410  1875 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:14:03.978  1410  1875 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:14:03.978  1410  1875 I A       : (REDACTED) Setting session to type: %s
+11-10 01:14:03.979  1410  1875 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:14:03.979  1410  1875 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:14:03.980  1410  1877 I A       : (REDACTED) stopListening(%s, %s)
+11-10 01:14:03.980  1410  1875 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:14:03.981  1410  1875 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:14:03.981  1410  1875 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:14:03.982  1410  1858 I ALT.ARCProvider: (REDACTED) #audio# activating audio request client(%s)
+11-10 01:14:03.983  1410  1875 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:14:03.983  1410  1875 I A       : (REDACTED) setNavBarVisible: %s
+11-10 01:14:03.984  1410  1858 I ALT.ClientsRegy: (REDACTED) #audio# activating audio client(token(%d), %s)
+11-10 01:14:03.985  1167  1256 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-10 01:14:03.986  1410  1809 I A       : Initialize
+11-10 01:14:03.986  1410  1858 I ALT.ClientsRegy: (REDACTED) #audio# enforcing concurrency state on a new client(%s, token(%d))
+11-10 01:14:03.988  1410  1858 I ALT.AudioRoutesRegy: (REDACTED) #audio# initializing the default route(%d) for %s
+11-10 01:14:03.988  1410  1875 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:14:03.989  1410  1875 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:14:03.989  1410  1875 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:14:03.990  1410  1875 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:14:03.990  1410  1875 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:14:03.991  1410  1875 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:14:03.991  1410  1858 I ALT.ARClient: (REDACTED) #audio# routing audio request client(token(%d)) to(%s)
+11-10 01:14:03.992  1167  1256 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-10 01:14:03.992  1410  1858 I ALT.HotwordRoutesRegy: (REDACTED) #audio# initializing the default route(%s) for hotword
+11-10 01:14:03.993  1410  1858 I ALT.AudioRoutesRegy: (REDACTED) #audio# updating to audio route(token(%d), %s) for %s
+11-10 01:14:03.994  1410  1875 I NgaEntryPointEventSendr: setupConnection
+11-10 01:14:03.995  1410  1809 I INV.SystemUI: showGestureNav
+11-10 01:14:03.996  1410  1809 I INV.SystemUI: (REDACTED) setUiHints(hints = %s)
+11-10 01:14:03.999  1410  1809 I A       : Successfully initialized all components
+11-10 01:14:03.999  1410  1858 I ALT.AudioRoutesRegy: (REDACTED) #audio# audio route(token(%d), %s) OK to update
+11-10 01:14:03.999  1410  1858 I ALT.AudioRoutesRegy: (REDACTED) #audio# enforcing concurrency state on a new audio route of %s
+11-10 01:14:04.000  1410  1809 I A       : (REDACTED) on opa visibility changed %s
+11-10 01:14:04.001  1410  1875 I NgaEntryPointEventSendr: (REDACTED) State changed: %s => %s
+11-10 01:14:04.002  1410  1875 I NgaEntryPointEventSendr: onServiceConnected
+11-10 01:14:04.002  1618  2251 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-10 01:14:04.002  1410  1858 I ALT.AudioRoutesRegy: (REDACTED) #audio# disconnecting(%s) audio %s for %s
+11-10 01:14:04.003  1608  1862 I A       : Calling beginBinderSession().
+11-10 01:14:04.003  1167  1256 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-10 01:14:04.005  1618  2251 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-10 01:14:04.006  1608  1862 I A       : beginBinderSession(): calling binder
+11-10 01:14:04.006  1410  1875 I NgaEntryPointEventSendr: (REDACTED) State changed: %s => %s
+11-10 01:14:04.007  1410  1877 I A       : Ignoring as prefetch was recently called
+11-10 01:14:04.009  1410  1809 I INV.SystemUI: setUiHints: finished successfully
+11-10 01:14:04.010  1618  2251 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-10 01:14:04.011  1410  1858 I ALT.AudioRoutesRegy: (REDACTED) #audio# starting connection to audio route(token(%d), %s) for %s
+11-10 01:14:04.011  1167  2827 W PlatformConfigurator: Update for unknown DeviceConfig package com.android.billingclient#com.google.android.gms [CONTEXT service_id=204 ]
+11-10 01:14:04.011  1167  2827 W PlatformConfigurator: daaf: No package exists for config package: com.android.billingclient#com.google.android.gms
+11-10 01:14:04.011  1167  2827 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+11-10 01:14:04.011  1167  2827 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+11-10 01:14:04.011  1167  2827 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+11-10 01:14:04.011  1167  2827 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+11-10 01:14:04.011  1167  2827 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+11-10 01:14:04.011  1167  2827 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+11-10 01:14:04.011  1167  2827 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+11-10 01:14:04.011  1167  2827 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+11-10 01:14:04.011  1167  2827 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-10 01:14:04.011  1167  2827 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-10 01:14:04.011  1167  2827 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+11-10 01:14:04.011  1410  1877 I ALT.RefManager: (REDACTED) #audio# referencing(%s) to(%s), (%s)
+11-10 01:14:04.015  1410  1858 I A       : (REDACTED) State changed: %s => %s by %s and %s with %s
+11-10 01:14:04.015  1410  1877 I ALT.AudioEventsHolder: (REDACTED) #audio# route(%s) for audio request client(token(%d)) updated with status(%s)
+11-10 01:14:04.019  1410  1858 I A       : (REDACTED) Recognizer choice: (recognizer_type: %s, recognizer_mode: %s, choice_reason: %s)
+11-10 01:14:04.019  1167  1172 I .gms.persistent: Background concurrent mark compact GC freed 14MB AllocSpace bytes, 21(676KB) LOS objects, 49% free, 15MB/30MB, paused 4.298ms,3.864ms total 133.725ms
+11-10 01:14:04.023  1167  2050 I .gms.persistent: WaitForGcToComplete blocked ClassLinker on Background for 124.151ms
+11-10 01:14:04.024  1410  1809 I A       : (REDACTED) #audio# audio routing(%s) took %d(ms)
+11-10 01:14:04.025  1167  2050 W .gms.persistent: Verification of long m.mx.a() took 126.693ms (221.01 bytecodes/s) (2696B approximate peak alloc)
+11-10 01:14:04.026  1410  1858 I A       : (REDACTED) onActiveStateChangeEvent: %s => %s
+11-10 01:14:04.026  1410  1877 I A       : (REDACTED) on opa visibility changed %s
+11-10 01:14:04.029  1410  1875 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+11-10 01:14:04.031   637  1730 W ActivityManager: Unable to start service Intent { cmp=com.google.android.apps.tachyon/.clientapi.ClientApiService } U=0: not found
+11-10 01:14:04.034  1167  1175 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Photos/Photos.apk' with 1 weak references
+11-10 01:14:04.035  1167  1175 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/CalendarGooglePrebuilt/CalendarGooglePrebuilt.apk' with 1 weak references
+11-10 01:14:04.037  1167  1175 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/SettingsIntelligenceGooglePrebuilt/SettingsIntelligenceGooglePrebuilt.apk' with 1 weak references
+11-10 01:14:04.038  1167  1175 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/AndroidAutoStubPrebuilt/AndroidAutoStubPrebuilt.apk' with 1 weak references
+11-10 01:14:04.039  1618  2251 V NativeCrypto: SSL handshake aborted: ssl=0x7aa3836cae98: I/O error during system call, Connection reset by peer
+11-10 01:14:04.040  1167  2825 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.kids#com.google.android.gms [CONTEXT service_id=204 ]
+11-10 01:14:04.040  1167  2825 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.kids#com.google.android.gms
+11-10 01:14:04.040  1167  2825 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+11-10 01:14:04.040  1167  2825 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+11-10 01:14:04.040  1167  2825 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+11-10 01:14:04.040  1167  2825 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+11-10 01:14:04.040  1167  2825 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+11-10 01:14:04.040  1167  2825 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+11-10 01:14:04.040  1167  2825 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+11-10 01:14:04.040  1167  2825 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+11-10 01:14:04.040  1167  2825 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-10 01:14:04.040  1167  2825 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-10 01:14:04.040  1167  2825 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+11-10 01:14:04.042  1618  2298 D TrafficStats: tagSocket(192) with statsTag=0x30002500, statsUid=-1
+11-10 01:14:04.043  1167  1175 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/YouTubeMusicPrebuilt/YouTubeMusicPrebuilt.apk' with 1 weak references
+11-10 01:14:04.046  1167  1175 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/LatinIMEGooglePrebuilt/LatinIMEGooglePrebuilt.apk' with 1 weak references
+11-10 01:14:04.048  1167  1256 V NativeCrypto: SSL handshake aborted: ssl=0x7aa3836d1b58: I/O error during system call, Connection reset by peer
+11-10 01:14:04.049  1167  1175 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/GoogleRestorePrebuilt-v526684/GoogleRestorePrebuilt-v526684.apk' with 1 weak references
+11-10 01:14:04.049  1618  2298 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-10 01:14:04.049  1167  3176 D TrafficStats: tagSocket(183) with statsTag=0x34000609, statsUid=10143
+11-10 01:14:04.049  1618  2298 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-10 01:14:04.050  1618  2298 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-10 01:14:04.055  1410  1858 W A       : (REDACTED) Missing generator mapping for generator %s
+11-10 01:14:04.055  1410  1858 W A       : (REDACTED) Missing generator mapping for generator %s
+11-10 01:14:04.055  1410  1858 W A       : (REDACTED) Missing generator mapping for generator %s
+11-10 01:14:04.056  1167  3176 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-10 01:14:04.057  1167  3176 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-10 01:14:04.057  1167  3176 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-10 01:14:04.058  1167  1175 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/YouTube/YouTube.apk' with 1 weak references
+11-10 01:14:04.059  1167  2825 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.idunderstanding#com.google.android.gms [CONTEXT service_id=204 ]
+11-10 01:14:04.059  1167  2825 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.idunderstanding#com.google.android.gms
+11-10 01:14:04.059  1167  2825 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+11-10 01:14:04.059  1167  2825 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+11-10 01:14:04.059  1167  2825 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+11-10 01:14:04.059  1167  2825 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+11-10 01:14:04.059  1167  2825 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+11-10 01:14:04.059  1167  2825 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+11-10 01:14:04.059  1167  2825 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+11-10 01:14:04.059  1167  2825 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+11-10 01:14:04.059  1167  2825 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-10 01:14:04.059  1167  2825 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-10 01:14:04.059  1167  2825 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+11-10 01:14:04.069  1410  1858 I A       : (REDACTED) #onActiveStateChangeEvent, newState: %s, previousState: %s.
+11-10 01:14:04.072  1608  2160 I PBSessionCacheImpl: (REDACTED) Deleted sessionId[%d] from persistence.
+11-10 01:14:04.073  1167  2050 D nativeloader: Configuring clns-10 for other apk . target_sdk_version=34, uses_libraries=ALL, library_path=/data/user_de/0/com.google.android.gms/app_chimera/m/00000009/CronetDynamite.uncompressed.apk!/lib/x86_64:/data/user_de/0/com.google.android.gms/app_chimera/m/00000009/CronetDynamite.uncompressed.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand
+11-10 01:14:04.074  1410  1875 I NgaEntryPointEventSendr: (REDACTED) State changed: %s => %s (%s)
+11-10 01:14:04.074  1608  2018 W A       : (REDACTED) %s task was not run. Callback from Service received after client was disposed.
+11-10 01:14:04.080  1167  2827 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.libraries.onegoogle#com.google.android.gms [CONTEXT service_id=204 ]
+11-10 01:14:04.080  1167  2827 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.libraries.onegoogle#com.google.android.gms
+11-10 01:14:04.080  1167  2827 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+11-10 01:14:04.080  1167  2827 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+11-10 01:14:04.080  1167  2827 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+11-10 01:14:04.080  1167  2827 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+11-10 01:14:04.080  1167  2827 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+11-10 01:14:04.080  1167  2827 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+11-10 01:14:04.080  1167  2827 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+11-10 01:14:04.080  1167  2827 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+11-10 01:14:04.080  1167  2827 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-10 01:14:04.080  1167  2827 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-10 01:14:04.080  1167  2827 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+11-10 01:14:04.080  1618  2298 V NativeCrypto: SSL handshake aborted: ssl=0x7aa3836ce6d8: I/O error during system call, Connection reset by peer
+11-10 01:14:04.082  1618  1764 D TrafficStats: tagSocket(192) with statsTag=0x30002500, statsUid=-1
+11-10 01:14:04.082  1167  2050 D nativeloader: Load /data/user_de/0/com.google.android.gms/app_chimera/m/00000009/CronetDynamite.uncompressed.apk!/lib/x86_64/libcronet.126.0.6452.4.so using isolated ns clns-10 (caller=/data/user_de/0/com.google.android.gms/app_chimera/m/00000009/CronetDynamite.uncompressed.apk): ok
+11-10 01:14:04.084  1167  3176 V NativeCrypto: SSL handshake aborted: ssl=0x7aa3836cd7d8: I/O error during system call, Connection reset by peer
+11-10 01:14:04.085  1608  2018 W SearchServiceCore: Abort, client detached.
+11-10 01:14:04.088  1167  3177 D TrafficStats: tagSocket(183) with statsTag=0x34000609, statsUid=10143
+11-10 01:14:04.094  1167  2824 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.wallet_dynamite#com.google.android.gms [CONTEXT service_id=204 ]
+11-10 01:14:04.094  1167  2824 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.wallet_dynamite#com.google.android.gms
+11-10 01:14:04.094  1167  2824 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+11-10 01:14:04.094  1167  2824 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+11-10 01:14:04.094  1167  2824 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+11-10 01:14:04.094  1167  2824 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+11-10 01:14:04.094  1167  2824 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+11-10 01:14:04.094  1167  2824 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+11-10 01:14:04.094  1167  2824 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+11-10 01:14:04.094  1167  2824 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+11-10 01:14:04.094  1167  2824 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-10 01:14:04.094  1167  2824 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-10 01:14:04.094  1167  2824 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+11-10 01:14:04.097  1167  3177 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-10 01:14:04.097  1167  3177 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-10 01:14:04.097  1167  3177 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-10 01:14:04.103  1167  1931 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.blindauth#com.google.android.gms [CONTEXT service_id=204 ]
+11-10 01:14:04.103  1167  1931 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.blindauth#com.google.android.gms
+11-10 01:14:04.103  1167  1931 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+11-10 01:14:04.103  1167  1931 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+11-10 01:14:04.103  1167  1931 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+11-10 01:14:04.103  1167  1931 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+11-10 01:14:04.103  1167  1931 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+11-10 01:14:04.103  1167  1931 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+11-10 01:14:04.103  1167  1931 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+11-10 01:14:04.103  1167  1931 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+11-10 01:14:04.103  1167  1931 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-10 01:14:04.103  1167  1931 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-10 01:14:04.103  1167  1931 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+11-10 01:14:04.117  1167  2015 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.finder_shared#com.google.android.gms [CONTEXT service_id=204 ]
+11-10 01:14:04.117  1167  2015 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.finder_shared#com.google.android.gms
+11-10 01:14:04.117  1167  2015 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+11-10 01:14:04.117  1167  2015 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+11-10 01:14:04.117  1167  2015 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+11-10 01:14:04.117  1167  2015 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+11-10 01:14:04.117  1167  2015 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+11-10 01:14:04.117  1167  2015 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+11-10 01:14:04.117  1167  2015 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+11-10 01:14:04.117  1167  2015 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+11-10 01:14:04.117  1167  2015 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-10 01:14:04.117  1167  2015 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-10 01:14:04.117  1167  2015 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+11-10 01:14:04.124  1167  3177 V NativeCrypto: SSL handshake aborted: ssl=0x7aa3836cc398: I/O error during system call, Connection reset by peer
+11-10 01:14:04.126  1167  1256 D TrafficStats: tagSocket(183) with statsTag=0x34000609, statsUid=10143
+11-10 01:14:04.126  1167  2050 I cr_CronetLibraryLoader: Cronet version: 126.0.6452.4, arch: x86_64
+11-10 01:14:04.129   637  2208 D ConnectivityService: requestNetwork for uid/pid:10143/1167 activeRequest: null callbackRequest: 112 [NetworkRequest [ REQUEST id=113, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10143 RequestorUid: 10143 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false
+11-10 01:14:04.130  1167  2015 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.identitycredentials#com.google.android.gms [CONTEXT service_id=204 ]
+11-10 01:14:04.130  1167  2015 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.identitycredentials#com.google.android.gms
+11-10 01:14:04.130  1167  2015 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+11-10 01:14:04.130  1167  2015 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+11-10 01:14:04.130  1167  2015 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+11-10 01:14:04.130  1167  2015 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+11-10 01:14:04.130  1167  2015 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+11-10 01:14:04.130  1167  2015 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+11-10 01:14:04.130  1167  2015 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+11-10 01:14:04.130  1167  2015 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+11-10 01:14:04.130  1167  2015 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-10 01:14:04.130  1167  2015 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-10 01:14:04.130  1167  2015 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+11-10 01:14:04.133   637   799 D ConnectivityService: NetReassign [113 : null → 100] [c 0] [a 1] [i 2]
+11-10 01:14:04.134   637   792 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=113, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10143 RequestorUid: 10143 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+11-10 01:14:04.134   637   792 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=113, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10143 RequestorUid: 10143 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+11-10 01:14:04.134  1167  1256 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-10 01:14:04.134  1167  1256 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-10 01:14:04.134   637   792 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=113, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10143 RequestorUid: 10143 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+11-10 01:14:04.134  1167  1256 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-10 01:14:04.134   637   792 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=113, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10143 RequestorUid: 10143 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+11-10 01:14:04.137   637   799 D ConnectivityService: NetReassign [no changes] [c 0] [a 1] [i 0]
+11-10 01:14:04.142  1167  2824 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.gaia_experiments#com.google.android.gms [CONTEXT service_id=204 ]
+11-10 01:14:04.142  1167  2824 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.gaia_experiments#com.google.android.gms
+11-10 01:14:04.142  1167  2824 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+11-10 01:14:04.142  1167  2824 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+11-10 01:14:04.142  1167  2824 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+11-10 01:14:04.142  1167  2824 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+11-10 01:14:04.142  1167  2824 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+11-10 01:14:04.142  1167  2824 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+11-10 01:14:04.142  1167  2824 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+11-10 01:14:04.142  1167  2824 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+11-10 01:14:04.142  1167  2824 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-10 01:14:04.142  1167  2824 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-10 01:14:04.142  1167  2824 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+11-10 01:14:04.152  1167  2050 D nativeloader: Load /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64/libbrotli_native.so using ns product-clns-9 from class loader (caller=/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!classes3.dex): ok
+11-10 01:14:04.162  2648  2659 V ClearcutMetricXmitter: Transmission is done.
+11-10 01:14:04.162  1167  3009 W CCTFlatFileLogStore: Excessive logging: 256 events, 673992 bytes from log source PHENOTYPE last 8s
+11-10 01:14:04.162  1167  2825 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.dtdi_logging#com.google.android.gms [CONTEXT service_id=204 ]
+11-10 01:14:04.162  1167  2825 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.dtdi_logging#com.google.android.gms
+11-10 01:14:04.162  1167  2825 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+11-10 01:14:04.162  1167  2825 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+11-10 01:14:04.162  1167  2825 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+11-10 01:14:04.162  1167  2825 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+11-10 01:14:04.162  1167  2825 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+11-10 01:14:04.162  1167  2825 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+11-10 01:14:04.162  1167  2825 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+11-10 01:14:04.162  1167  2825 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+11-10 01:14:04.162  1167  2825 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-10 01:14:04.162  1167  2825 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-10 01:14:04.162  1167  2825 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+11-10 01:14:04.162  2648  2675 V ClearcutMetricXmitter: Transmission is done.
+11-10 01:14:04.162  2648  2658 V ClearcutMetricXmitter: Transmission is done.
+11-10 01:14:04.168  1167  1256 V NativeCrypto: SSL handshake aborted: ssl=0x7aa3836cd7d8: I/O error during system call, Connection reset by peer
+11-10 01:14:04.171  1167  3176 D TrafficStats: tagSocket(183) with statsTag=0x34000609, statsUid=10143
+11-10 01:14:04.177  1167  2825 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.device_performance#com.google.android.gms [CONTEXT service_id=204 ]
+11-10 01:14:04.177  1167  2825 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.device_performance#com.google.android.gms
+11-10 01:14:04.177  1167  2825 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+11-10 01:14:04.177  1167  2825 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+11-10 01:14:04.177  1167  2825 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+11-10 01:14:04.177  1167  2825 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+11-10 01:14:04.177  1167  2825 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+11-10 01:14:04.177  1167  2825 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+11-10 01:14:04.177  1167  2825 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+11-10 01:14:04.177  1167  2825 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+11-10 01:14:04.177  1167  2825 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-10 01:14:04.177  1167  2825 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-10 01:14:04.177  1167  2825 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+11-10 01:14:04.178  1167  3176 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-10 01:14:04.178  1167  3176 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-10 01:14:04.178  1167  3176 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-10 01:14:04.186  1167  1931 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.inappreach#com.google.android.gms [CONTEXT service_id=204 ]
+11-10 01:14:04.186  1167  1931 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.inappreach#com.google.android.gms
+11-10 01:14:04.186  1167  1931 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+11-10 01:14:04.186  1167  1931 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+11-10 01:14:04.186  1167  1931 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+11-10 01:14:04.186  1167  1931 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+11-10 01:14:04.186  1167  1931 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+11-10 01:14:04.186  1167  1931 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+11-10 01:14:04.186  1167  1931 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+11-10 01:14:04.186  1167  1931 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+11-10 01:14:04.186  1167  1931 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-10 01:14:04.186  1167  1931 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-10 01:14:04.186  1167  1931 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+11-10 01:14:04.194  1167  1931 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.security.fmd#com.google.android.gms [CONTEXT service_id=204 ]
+11-10 01:14:04.194  1167  1931 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.security.fmd#com.google.android.gms
+11-10 01:14:04.194  1167  1931 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+11-10 01:14:04.194  1167  1931 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+11-10 01:14:04.194  1167  1931 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+11-10 01:14:04.194  1167  1931 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+11-10 01:14:04.194  1167  1931 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+11-10 01:14:04.194  1167  1931 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+11-10 01:14:04.194  1167  1931 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+11-10 01:14:04.194  1167  1931 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+11-10 01:14:04.194  1167  1931 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-10 01:14:04.194  1167  1931 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-10 01:14:04.194  1167  1931 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+11-10 01:14:04.205  1167  3176 V NativeCrypto: SSL handshake aborted: ssl=0x7aa3836cd7d8: I/O error during system call, Connection reset by peer
+11-10 01:14:04.206  1167  3177 D TrafficStats: tagSocket(183) with statsTag=0x34000609, statsUid=10143
+11-10 01:14:04.215   424  3191 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10143 0}
+11-10 01:14:04.216   424  3192 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+11-10 01:14:04.216   424  3193 I resolv  : res_nmkquery: (QUERY, IN, A)
+11-10 01:14:04.217   424  3192 I resolv  : res_nsend: used send_dg 491 terrno: 0
+11-10 01:14:04.218   424  3192 I resolv  : doQuery: rcode=0, ancount=8, return value=491
+11-10 01:14:04.221   424  3193 I resolv  : res_nsend: used send_dg 423 terrno: 0
+11-10 01:14:04.221   424  3193 I resolv  : doQuery: rcode=0, ancount=8, return value=423
+11-10 01:14:04.224  1167  3185 D TrafficStats: tagSocket(242) with statsTag=0x1065fff, statsUid=10139
+11-10 01:14:04.236  1410  1421 V ClearcutMetricXmitter: Transmission is done.
+11-10 01:14:04.287  1167  3185 D TrafficStats: tagSocket(243) with statsTag=0x1065fff, statsUid=10139
+11-10 01:14:04.541  1167  3185 D TrafficStats: tagSocket(259) with statsTag=0x1065fff, statsUid=10139
+11-10 01:14:04.590  1167  3185 D TrafficStats: tagSocket(262) with statsTag=0x1065fff, statsUid=10139
+11-10 01:14:04.605   637  1731 W BestClock: java.time.DateTimeException: Missing network time fix
+11-10 01:14:04.606   637  1731 W BestClock: java.time.DateTimeException: Missing network time fix
+11-10 01:14:04.607   637  1731 W BestClock: java.time.DateTimeException: Missing network time fix
+11-10 01:14:04.621  1167  3185 E chromium: [1110/011404.620640:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -101
+11-10 01:14:04.621  1167  3185 D TrafficStats: tagSocket(243) with statsTag=0x1065fff, statsUid=10139
+11-10 01:14:04.661   637   829 D SntpClient: request time failed: java.net.SocketTimeoutException: Poll timed out
+11-10 01:14:04.661   637   829 D TrafficStats: tagSocket(437) with statsTag=0xffffff41, statsUid=-1
+11-10 01:14:04.847  1167  3185 D TrafficStats: tagSocket(271) with statsTag=0x1065fff, statsUid=10139
+11-10 01:14:04.881  1167  2137 I HeterodyneSyncer: Removed 0 invalid users [CONTEXT service_id=51 ]
+11-10 01:14:04.883  1167  3185 E chromium: [1110/011404.883818:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -101
+11-10 01:14:04.885  1167  3185 D TrafficStats: tagSocket(271) with statsTag=0x1065fff, statsUid=10139
+11-10 01:14:04.929  1167  3185 D TrafficStats: tagSocket(272) with statsTag=0x1065fff, statsUid=10139

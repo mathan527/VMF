@@ -1,0 +1,459 @@
+--------- beginning of main
+11-10 01:17:28.626   920  3214 D android.hardware.gnss-service.ranchu: Gnss:onGnssLocationCb:321
+11-10 01:17:28.626   920  3214 D android.hardware.gnss-service.ranchu: GnssHwListener:consume:87 sz=64
+11-10 01:17:28.627  1098  3210 D TrafficStats: tagSocket(219) with statsTag=0x1203, statsUid=10143
+11-10 01:17:28.627   920  3214 D android.hardware.gnss-service.ranchu: GnssHwListener:consume:87 sz=64
+11-10 01:17:28.627   920  3214 D android.hardware.gnss-service.ranchu: Gnss:onGnssLocationCb:311
+11-10 01:17:28.627   920  3214 D android.hardware.gnss-service.ranchu: Gnss:onGnssLocationCb:321
+11-10 01:17:28.627   920  3214 D android.hardware.gnss-service.ranchu: GnssHwListener:consume:87 sz=64
+11-10 01:17:28.628   920  3214 D android.hardware.gnss-service.ranchu: GnssHwListener:consume:87 sz=64
+11-10 01:17:28.628   920  3214 D android.hardware.gnss-service.ranchu: Gnss:onGnssLocationCb:311
+11-10 01:17:28.628   920  3214 D android.hardware.gnss-service.ranchu: Gnss:onGnssLocationCb:321
+11-10 01:17:28.628   920  3214 D android.hardware.gnss-service.ranchu: GnssHwListener:consume:87 sz=64
+11-10 01:17:28.630   920  3214 D android.hardware.gnss-service.ranchu: GnssHwListener:consume:87 sz=64
+11-10 01:17:28.630   920  3214 D android.hardware.gnss-service.ranchu: Gnss:onGnssLocationCb:311
+11-10 01:17:28.630   920  3214 D android.hardware.gnss-service.ranchu: Gnss:onGnssLocationCb:321
+11-10 01:17:28.630   920  3214 D android.hardware.gnss-service.ranchu: GnssHwListener:consume:87 sz=64
+11-10 01:17:28.631  1660  1941 V NativeCrypto: SSL handshake aborted: ssl=0x75ba28a59a98: I/O error during system call, Connection reset by peer
+11-10 01:17:28.632   920  3214 D android.hardware.gnss-service.ranchu: GnssHwListener:consume:87 sz=64
+11-10 01:17:28.632   920  3214 D android.hardware.gnss-service.ranchu: Gnss:onGnssLocationCb:311
+11-10 01:17:28.632   920  3214 D android.hardware.gnss-service.ranchu: Gnss:onGnssLocationCb:321
+11-10 01:17:28.632   920  3214 D android.hardware.gnss-service.ranchu: GnssHwListener:consume:87 sz=64
+11-10 01:17:28.633   920  3214 D android.hardware.gnss-service.ranchu: GnssHwListener:consume:87 sz=64
+11-10 01:17:28.633   920  3214 D android.hardware.gnss-service.ranchu: Gnss:onGnssLocationCb:311
+11-10 01:17:28.633   920  3214 D android.hardware.gnss-service.ranchu: Gnss:onGnssLocationCb:321
+11-10 01:17:28.633   920  3214 D android.hardware.gnss-service.ranchu: GnssHwListener:consume:87 sz=64
+11-10 01:17:28.635   920  3214 D android.hardware.gnss-service.ranchu: GnssHwListener:consume:87 sz=64
+11-10 01:17:28.635  1660  1966 D TrafficStats: tagSocket(113) with statsTag=0x30002500, statsUid=-1
+11-10 01:17:28.635   920  3214 D android.hardware.gnss-service.ranchu: Gnss:onGnssLocationCb:311
+11-10 01:17:28.635   920  3214 D android.hardware.gnss-service.ranchu: Gnss:onGnssLocationCb:321
+11-10 01:17:28.635   920  3214 D android.hardware.gnss-service.ranchu: GnssHwListener:consume:87 sz=64
+11-10 01:17:28.638   920  3214 D android.hardware.gnss-service.ranchu: GnssHwListener:consume:87 sz=64
+11-10 01:17:28.638   920  3214 D android.hardware.gnss-service.ranchu: Gnss:onGnssLocationCb:311
+11-10 01:17:28.638   920  3214 D android.hardware.gnss-service.ranchu: Gnss:onGnssLocationCb:321
+11-10 01:17:28.638   920  3214 D android.hardware.gnss-service.ranchu: GnssHwListener:consume:87 sz=64
+11-10 01:17:28.642   920  3214 D android.hardware.gnss-service.ranchu: GnssHwListener:consume:87 sz=64
+11-10 01:17:28.642   920  3214 D android.hardware.gnss-service.ranchu: Gnss:onGnssLocationCb:311
+11-10 01:17:28.642   920  3214 D android.hardware.gnss-service.ranchu: Gnss:onGnssLocationCb:321
+11-10 01:17:28.642   920  3214 D android.hardware.gnss-service.ranchu: GnssHwListener:consume:87 sz=64
+11-10 01:17:28.643   920  3214 D android.hardware.gnss-service.ranchu: GnssHwListener:consume:87 sz=64
+11-10 01:17:28.643   920  3214 D android.hardware.gnss-service.ranchu: Gnss:onGnssLocationCb:311
+11-10 01:17:28.643   920  3214 D android.hardware.gnss-service.ranchu: Gnss:onGnssLocationCb:321
+11-10 01:17:28.643   920  3214 D android.hardware.gnss-service.ranchu: GnssHwListener:consume:87 sz=64
+11-10 01:17:28.643  1660  1966 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-10 01:17:28.644  1660  1966 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-10 01:17:28.644  1660  1966 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-10 01:17:28.648   948   963 W System  : A resource failed to call close. 
+11-10 01:17:28.648   920  3214 D android.hardware.gnss-service.ranchu: GnssHwListener:consume:87 sz=64
+11-10 01:17:28.648   920  3214 D android.hardware.gnss-service.ranchu: Gnss:onGnssLocationCb:311
+11-10 01:17:28.648   920  3214 D android.hardware.gnss-service.ranchu: Gnss:onGnssLocationCb:321
+11-10 01:17:28.648   920  3214 D android.hardware.gnss-service.ranchu: GnssHwListener:consume:87 sz=64
+11-10 01:17:28.649   920  3214 D android.hardware.gnss-service.ranchu: GnssHwListener:consume:87 sz=64
+11-10 01:17:28.649   920  3214 D android.hardware.gnss-service.ranchu: Gnss:onGnssLocationCb:311
+11-10 01:17:28.649   920  3214 D android.hardware.gnss-service.ranchu: Gnss:onGnssLocationCb:321
+11-10 01:17:28.649   920  3214 D android.hardware.gnss-service.ranchu: GnssHwListener:consume:87 sz=64
+11-10 01:17:28.649   920  3214 D android.hardware.gnss-service.ranchu: GnssHwListener:consume:87 sz=64
+11-10 01:17:28.650   920  3214 D android.hardware.gnss-service.ranchu: Gnss:onGnssLocationCb:311
+11-10 01:17:28.650   920  3214 D android.hardware.gnss-service.ranchu: Gnss:onGnssLocationCb:321
+11-10 01:17:28.708  1098  3210 D TrafficStats: tagSocket(221) with statsTag=0x1203, statsUid=10143
+11-10 01:17:28.713  1660  1966 V NativeCrypto: SSL handshake aborted: ssl=0x75ba28a5a458: I/O error during system call, Connection reset by peer
+11-10 01:17:28.713  1098  3210 D TrafficStats: tagSocket(221) with statsTag=0x1203, statsUid=10143
+11-10 01:17:28.714  1660  1716 D TrafficStats: tagSocket(113) with statsTag=0x30002500, statsUid=-1
+11-10 01:17:28.716  1098  3210 D TrafficStats: tagSocket(221) with statsTag=0x1203, statsUid=10143
+11-10 01:17:28.719  1098  3210 D TrafficStats: tagSocket(221) with statsTag=0x1203, statsUid=10143
+11-10 01:17:28.722  1660  1716 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-10 01:17:28.722  1660  1716 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-10 01:17:28.722  1660  1716 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-10 01:17:28.722  1098  3210 D TrafficStats: tagSocket(221) with statsTag=0x1203, statsUid=10143
+11-10 01:17:28.725  1098  3210 D TrafficStats: tagSocket(221) with statsTag=0x1203, statsUid=10143
+11-10 01:17:28.727  1098  3210 D TrafficStats: tagSocket(221) with statsTag=0x1203, statsUid=10143
+11-10 01:17:28.730  1098  3210 D TrafficStats: tagSocket(221) with statsTag=0x1203, statsUid=10143
+11-10 01:17:28.732  1098  3210 D TrafficStats: tagSocket(221) with statsTag=0x1203, statsUid=10143
+11-10 01:17:28.748  1660  1716 V NativeCrypto: SSL handshake aborted: ssl=0x75ba28a5a458: I/O error during system call, Connection reset by peer
+11-10 01:17:28.751  1660  1941 D TrafficStats: tagSocket(113) with statsTag=0x30002500, statsUid=-1
+11-10 01:17:28.759  1660  1941 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-10 01:17:28.759  1660  1941 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-10 01:17:28.759  1660  1941 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-10 01:17:28.762   920  3214 D android.hardware.gnss-service.ranchu: GnssHwListener:consume:87 sz=64
+11-10 01:17:28.762   920  3214 D android.hardware.gnss-service.ranchu: GnssHwListener:consume:87 sz=64
+11-10 01:17:28.763   920  3214 D android.hardware.gnss-service.ranchu: Gnss:onGnssLocationCb:311
+11-10 01:17:28.763   920  3214 D android.hardware.gnss-service.ranchu: Gnss:onGnssLocationCb:321
+11-10 01:17:28.764  1098  3210 E chromium: [1110/011728.764797:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -101
+11-10 01:17:28.765  1098  3210 D TrafficStats: tagSocket(221) with statsTag=0x1203, statsUid=10143
+11-10 01:17:28.768  1098  3210 D TrafficStats: tagSocket(221) with statsTag=0x1203, statsUid=10143
+11-10 01:17:28.770  1098  3210 D TrafficStats: tagSocket(221) with statsTag=0x1203, statsUid=10143
+11-10 01:17:28.772  1098  3210 D TrafficStats: tagSocket(221) with statsTag=0x1203, statsUid=10143
+11-10 01:17:28.774  1098  3210 D TrafficStats: tagSocket(221) with statsTag=0x1203, statsUid=10143
+11-10 01:17:28.777  1098  3210 D TrafficStats: tagSocket(221) with statsTag=0x1203, statsUid=10143
+11-10 01:17:28.780  1098  3210 D TrafficStats: tagSocket(221) with statsTag=0x1203, statsUid=10143
+11-10 01:17:28.782  1098  3210 D TrafficStats: tagSocket(221) with statsTag=0x1203, statsUid=10143
+11-10 01:17:28.785  1098  3210 D TrafficStats: tagSocket(221) with statsTag=0x1203, statsUid=10143
+11-10 01:17:28.788  1660  1941 V NativeCrypto: SSL handshake aborted: ssl=0x75ba28a59a98: I/O error during system call, Connection reset by peer
+11-10 01:17:28.789  1660  1966 D TrafficStats: tagSocket(113) with statsTag=0x30002500, statsUid=-1
+11-10 01:17:28.794  1660  1716 D TrafficStats: tagSocket(113) with statsTag=0x30002500, statsUid=-1
+11-10 01:17:28.797  1660  1941 D TrafficStats: tagSocket(113) with statsTag=0x30002500, statsUid=-1
+11-10 01:17:28.801  1660  1966 D TrafficStats: tagSocket(113) with statsTag=0x30002500, statsUid=-1
+11-10 01:17:28.804  1660  1716 D TrafficStats: tagSocket(113) with statsTag=0x30002500, statsUid=-1
+11-10 01:17:28.808  1660  1966 D TrafficStats: tagSocket(113) with statsTag=0x30002500, statsUid=-1
+11-10 01:17:28.811  1660  1941 D TrafficStats: tagSocket(113) with statsTag=0x30002500, statsUid=-1
+11-10 01:17:28.812  1098  3210 E chromium: [1110/011728.812804:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -101
+11-10 01:17:28.815  1660  1966 D TrafficStats: tagSocket(113) with statsTag=0x30002500, statsUid=-1
+11-10 01:17:28.974  2482  2945 V ClearcutMetricXmitter: Transmission is done.
+11-10 01:17:28.975  2482  2945 V ClearcutMetricXmitter: Transmission is done.
+11-10 01:17:28.975  2482  2945 V ClearcutMetricXmitter: Transmission is done.
+11-10 01:17:29.003  2662  3253 D ProfileInstaller: Installing profile for com.google.android.configupdater
+11-10 01:17:29.030  3251  3251 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-10 01:17:29.038  3251  3251 I AndroidRuntime: Using default boot image
+11-10 01:17:29.038  3251  3251 I AndroidRuntime: Leaving lock profiling enabled
+11-10 01:17:29.042  3251  3251 I app_process: Core platform API reporting enabled, enforcing=false
+11-10 01:17:29.043  3251  3251 I app_process: Using CollectorTypeCMC GC.
+11-10 01:17:29.328  1660  1716 D TrafficStats: tagSocket(113) with statsTag=0x30002500, statsUid=-1
+11-10 01:17:29.338  1660  1716 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-10 01:17:29.339  1660  1716 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-10 01:17:29.339  1660  1716 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-10 01:17:29.360  3251  3251 D nativeloader: InitDefaultPublicLibraries for_preload=1: libandroid.so:libaaudio.so:libamidi.so:libbinder_ndk.so:libc.so:libcamera2ndk.so:libdl.so:libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libicu.so:libicui18n.so:libicuuc.so:libjnigraphics.so:liblog.so:libmediandk.so:libm.so:libnativehelper.so:libnativewindow.so:libOpenMAXAL.so:libOpenSLES.so:libRS.so:libstdc++.so:libsync.so:libvulkan.so:libwebviewchromium_plat_support.so:libz.so
+11-10 01:17:29.367  1660  1716 V NativeCrypto: SSL handshake aborted: ssl=0x75ba28a5a458: I/O error during system call, Connection reset by peer
+11-10 01:17:29.367  3251  3251 D nativeloader: Load libicu_jni.so using APEX ns com_android_art for caller /apex/com.android.art/javalib/core-oj.jar: ok
+11-10 01:17:29.368  3251  3251 D app_process: u_setTimeZoneFilesDirectory("/apex/com.android.tzdata/etc/tz/versioned/8/icu") succeeded. 
+11-10 01:17:29.368  3251  3251 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt75l.dat
+11-10 01:17:29.368  3251  3251 D nativeloader: Load libjavacore.so using APEX ns com_android_art for caller /apex/com.android.art/javalib/core-oj.jar: ok
+11-10 01:17:29.369  1660  1966 D TrafficStats: tagSocket(113) with statsTag=0x30002500, statsUid=-1
+11-10 01:17:29.370  3251  3251 D nativeloader: Load libopenjdk.so using APEX ns com_android_art for caller /apex/com.android.art/javalib/core-oj.jar: ok
+11-10 01:17:29.371  3251  3251 W app_process: Unexpected CPU variant for x86: x86_64.
+11-10 01:17:29.371  3251  3251 W app_process: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, goldmont-without-sha-xsaves, tremont, kabylake, default
+11-10 01:17:29.372  3251  3251 W app_process: ClassLoaderContext shared library size mismatch. Expected=2, found=0 (PCL[]{PCL[/system/framework/android.test.base.jar*724373495]#PCL[/system/framework/android.test.mock.jar*1452759902]} | PCL[])
+11-10 01:17:29.373  3251  3251 W app_process: ClassLoaderContext classpath size mismatch. expected=0, found=1 (PCL[]{PCL[/system/framework/android.test.runner.jar*2496447986]#PCL[/system/framework/android.test.base.jar*724373495]} | PCL[/system/framework/android.test.runner.jar*2496447986])
+11-10 01:17:29.376  1660  1966 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-10 01:17:29.376  1660  1966 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-10 01:17:29.376  1660  1966 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-10 01:17:29.390  3251  3251 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+11-10 01:17:29.391  3251  3251 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-10 01:17:29.394  3251  3251 D UiAutomationConnection: Created on user UserHandle{0}
+11-10 01:17:29.394  3251  3251 I UiAutomation: Initialized for user 0 on display 0
+11-10 01:17:29.394  3251  3251 W UiAutomation: Created with deprecatead constructor, assumes DEFAULT_DISPLAY
+--------- beginning of system
+11-10 01:17:29.395   637  1094 D AccessibilityManagerService: changeCurrentUserForTestAutomationIfNeededLocked(0): ignoring because device doesn't support visible background users
+11-10 01:17:29.395   637  1094 I UiAutomationManager: Registering UiTestAutomationService (id=com.android.server.accessibility/UiAutomation, flags=0x0) when called by user 0
+11-10 01:17:29.397   637  1094 W MagnificationConnectionManager: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
+11-10 01:17:29.397  1447  2205 I AiAiEcho: Settings changed for uri: content://settings/secure/accessibility_enabled
+11-10 01:17:29.398  1447  1814 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-10 01:17:29.398  1447  1814 I AiAiEcho: EchoTargets: 
+11-10 01:17:29.398  1447  1814 I AiAiEcho: Filtered by AiAi flag check: 
+11-10 01:17:29.398  1447  1814 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-10 01:17:29.399  1447  1814 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-10 01:17:29.399  1447  1814 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-10 01:17:29.399  1447  1814 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-10 01:17:29.400  1447  1814 I AiAiEcho: EchoTargets: 
+11-10 01:17:29.400  1447  1814 I AiAiEcho: Filtered by AiAi flag check: 
+11-10 01:17:29.400  1447  1814 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-10 01:17:29.400  1447  1814 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-10 01:17:29.400  1447  1814 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-10 01:17:29.400  3251  3264 V UiAutomation: Init UiAutomation@389f2c8[id=2, displayId=0, flags=0]
+11-10 01:17:29.400  1447  1814 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-10 01:17:29.400  1447  1814 I AiAiEcho: EchoTargets: 
+11-10 01:17:29.400  1447  1814 I AiAiEcho: Filtered by AiAi flag check: 
+11-10 01:17:29.400  1447  1814 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-10 01:17:29.401  1447  1814 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-10 01:17:29.401  1447  1814 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-10 01:17:29.401   637   637 D BatterySaverPolicy: accessibility changed to true, updating policy.
+11-10 01:17:29.401  1447  1814 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+11-10 01:17:29.401  1447  1814 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface media_data_manager with targets# 0 (types=[])
+11-10 01:17:29.402  1447  1814 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+11-10 01:17:29.402  1447  2205 I AiAiEcho: Settings changed for uri: content://settings/secure/accessibility_enabled
+11-10 01:17:29.402   637  1094 W MagnificationConnectionManager: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
+11-10 01:17:29.402  1447  1814 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-10 01:17:29.403  1447  1814 I AiAiEcho: EchoTargets: 
+11-10 01:17:29.403  1447  1814 I AiAiEcho: Filtered by AiAi flag check: 
+11-10 01:17:29.403  1447  1814 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-10 01:17:29.403  1447  1814 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-10 01:17:29.403  1447  1814 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-10 01:17:29.403  1447  1814 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-10 01:17:29.403  1447  1814 I AiAiEcho: EchoTargets: 
+11-10 01:17:29.403  1447  1814 I AiAiEcho: Filtered by AiAi flag check: 
+11-10 01:17:29.403  1447  1814 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-10 01:17:29.403  1447  1814 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-10 01:17:29.404  1447  1814 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-10 01:17:29.404  1447  1814 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-10 01:17:29.404  1447  1814 I AiAiEcho: EchoTargets: 
+11-10 01:17:29.404  1447  1814 I AiAiEcho: Filtered by AiAi flag check: 
+11-10 01:17:29.404  1447  1814 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-10 01:17:29.404  1447  1814 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-10 01:17:29.404  1447  1814 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-10 01:17:29.405  1447  1814 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+11-10 01:17:29.406  1447  1814 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface media_data_manager with targets# 0 (types=[])
+11-10 01:17:29.407  1447  1814 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+11-10 01:17:29.409   889   889 D SsMediaDataProvider: Forwarding Smartspace updates []
+11-10 01:17:29.410   889   889 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+11-10 01:17:29.410   889   889 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+11-10 01:17:29.410   889   889 D SsMediaDataProvider: Forwarding Smartspace updates []
+11-10 01:17:29.411  1339  1339 D SsBaseTemplateCard: No text view can be set up
+11-10 01:17:29.411  1339  1339 D SsBaseTemplateCard: Passed-in item info is null
+11-10 01:17:29.412  1339  1339 D SsBaseTemplateCard: Passed-in item info is null
+11-10 01:17:29.412  1339  1339 D SsBaseTemplateCard: Passed-in item info is null
+11-10 01:17:29.412  1339  1339 I SsBaseTemplateCard: Secondary card pane is null
+11-10 01:17:29.412  1339  1339 D SsBaseTemplateCard: No text view can be set up
+11-10 01:17:29.412  1339  1339 D SsBaseTemplateCard: Passed-in item info is null
+11-10 01:17:29.412  1339  1339 D SsBaseTemplateCard: Passed-in item info is null
+11-10 01:17:29.412  1339  1339 D SsBaseTemplateCard: Passed-in item info is null
+11-10 01:17:29.412  1339  1339 I SsBaseTemplateCard: Secondary card pane is null
+11-10 01:17:29.412  1591  1809 I A       : NGA disabled since it's running Panthera and at least one a11y feature is on.
+11-10 01:17:29.412  1591  1809 I A       : (REDACTED) Nga state changed to %s
+11-10 01:17:29.412  1591  1809 I A       : (REDACTED) isTngActive=%s
+11-10 01:17:29.414  1228  1257 D AccessibilitySourceService: enabled a11y services count 0
+11-10 01:17:29.414  1228  1257 D AccessibilitySourceService: a11y source sending 0 issue to sc
+11-10 01:17:29.415   637  1094 D SafetySourceDataValidat: No cert check requested for package com.google.android.permissioncontroller
+11-10 01:17:29.416  1463  1713 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+11-10 01:17:29.416  1463  1719 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+11-10 01:17:29.417  1463  1719 I A       : Unsubscribed to apa or classic variant change.
+11-10 01:17:29.427  1339  1564 D EGL_emulation: app_time_stats: avg=351.88ms min=12.79ms max=2349.87ms count=7
+11-10 01:17:29.609  1748  2524 D PhFileGroupPop: Added file groups smarts_expressive_content_scoped_v1
+11-10 01:17:29.628  1748  2524 D PhFileGroupPop: Added file groups smart_actions_sensitive_classifier_models
+11-10 01:17:29.629  1748  2524 D PhFileGroupPop: Added file groups scripted_reply
+11-10 01:17:29.672  1748  2524 D PhFileGroupPop: Added file groups multitask_experiment
+11-10 01:17:29.673  1748  2524 D PhFileGroupPop: Added file groups spam_verdict_enforcement_policy_config
+11-10 01:17:29.674  1748  2524 D PhFileGroupPop: Added file groups smart_suggestion_reranker_models
+11-10 01:17:29.674  1748  2524 D PhFileGroupPop: Added file groups supersort_us_grammars
+11-10 01:17:29.710  1748  2524 D PhFileGroupPop: Added file groups nudge
+11-10 01:17:29.710  1748  2524 D PhFileGroupPop: Added file groups calendar_appointment_grammar
+11-10 01:17:29.711  1748  2524 D PhFileGroupPop: Added file groups birthday_suggestion
+11-10 01:17:29.737  1748  2524 D PhFileGroupPop: Added file groups birthday_grammars
+11-10 01:17:29.762   920  3214 D android.hardware.gnss-service.ranchu: GnssHwListener:consume:87 sz=64
+11-10 01:17:29.764   920  3214 D android.hardware.gnss-service.ranchu: GnssHwListener:consume:87 sz=64
+11-10 01:17:29.764   920  3214 D android.hardware.gnss-service.ranchu: Gnss:onGnssLocationCb:311
+11-10 01:17:29.764   920  3214 D android.hardware.gnss-service.ranchu: Gnss:onGnssLocationCb:321
+11-10 01:17:29.848   637  1568 D ShortcutService: Getting shortcuts for launcher= com.google.android.asuser=0 pkg=com.google.android.gms
+11-10 01:17:29.876  1660  1966 V NativeCrypto: SSL handshake aborted: ssl=0x75ba28a5a458: I/O error during system call, Connection reset by peer
+11-10 01:17:29.876  1660  1941 D TrafficStats: tagSocket(113) with statsTag=0x30002500, statsUid=-1
+11-10 01:17:29.884  1660  1941 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-10 01:17:29.884  1660  1941 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-10 01:17:29.884  1660  1941 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-10 01:17:29.972   637   671 D OomAdjuster: Not killing cached processes
+11-10 01:17:30.317   637   742 D ActivityManager: freezing 1518 com.android.printspooler
+11-10 01:17:30.322   637   805 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+11-10 01:17:30.323   637   805 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+11-10 01:17:30.323   637   805 D InetDiagMessage: Destroyed live tcp sockets for uids={10126} in 2ms
+11-10 01:17:30.391  1660  1941 V NativeCrypto: SSL handshake aborted: ssl=0x75ba28a59a98: I/O error during system call, Connection reset by peer
+11-10 01:17:30.392  1660  1716 D TrafficStats: tagSocket(113) with statsTag=0x30002500, statsUid=-1
+11-10 01:17:30.399  1660  1716 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-10 01:17:30.399  1660  1716 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-10 01:17:30.399  1660  1716 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-10 01:17:30.422  3251  3251 I AccessibilityNodeInfoDumper: Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@4d6b9; boundsInParent: Rect(0, 0 - 916, 0); boundsInScreen: Rect(82, 343 - 998, 343); boundsInWindow: Rect(82, 343 - 998, 343); packageName: com.google.android.apps.nexuslauncher; className: android.view.ViewGroup; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; containerTitle: null; viewIdResName: com.google.android.apps.nexuslauncher:id/smartspace_subtitle_group; uniqueId: null; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; granularScrollingSupported: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]; isTextSelectable: false
+11-10 01:17:30.424  3251  3251 W AccessibilityNodeInfoDumper: Fetch time: 6ms
+11-10 01:17:30.428   637   655 W MagnificationConnectionManager: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
+11-10 01:17:30.428   637   655 D AccessibilityManagerService: restoreCurrentUserForTestAutomationIfNeededLocked(): ignoring because device doesn't support visible background users
+11-10 01:17:30.428  1447  2880 I AiAiEcho: Settings changed for uri: content://settings/secure/accessibility_enabled
+11-10 01:17:30.430  3251  3251 D AndroidRuntime: Shutting down VM
+11-10 01:17:30.432  1447  1814 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-10 01:17:30.432  1447  1814 I AiAiEcho: EchoTargets: 
+11-10 01:17:30.432  1447  1814 I AiAiEcho: Filtered by AiAi flag check: 
+11-10 01:17:30.432  1447  1814 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-10 01:17:30.435  1447  1814 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-10 01:17:30.435  1447  1814 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-10 01:17:30.435  1447  1814 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-10 01:17:30.435  1447  1814 I AiAiEcho: EchoTargets: 
+11-10 01:17:30.435  1447  1814 I AiAiEcho: Filtered by AiAi flag check: 
+11-10 01:17:30.435  1447  1814 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-10 01:17:30.435  1447  1814 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-10 01:17:30.435  1447  1814 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-10 01:17:30.436  1447  1814 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-10 01:17:30.436  1447  1814 I AiAiEcho: EchoTargets: 
+11-10 01:17:30.436  1447  1814 I AiAiEcho: Filtered by AiAi flag check: 
+11-10 01:17:30.436  1447  1814 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-10 01:17:30.436  1447  1814 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-10 01:17:30.436  1447  1814 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-10 01:17:30.436  1447  1814 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+11-10 01:17:30.438  1339  1339 D SsBaseTemplateCard: No text view can be set up
+11-10 01:17:30.438  1447  1814 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface media_data_manager with targets# 0 (types=[])
+11-10 01:17:30.439   637   637 D BatterySaverPolicy: accessibility changed to false, updating policy.
+11-10 01:17:30.439  1447  1814 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+11-10 01:17:30.440   889   889 D SsMediaDataProvider: Forwarding Smartspace updates []
+11-10 01:17:30.440  1339  1339 D SsBaseTemplateCard: Passed-in item info is null
+11-10 01:17:30.440  1339  1339 D SsBaseTemplateCard: Passed-in item info is null
+11-10 01:17:30.440  1339  1339 D SsBaseTemplateCard: Passed-in item info is null
+11-10 01:17:30.440  1339  1339 I SsBaseTemplateCard: Secondary card pane is null
+11-10 01:17:30.440   889   889 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+11-10 01:17:30.446  1591  1789 I A       : NGA enabled in interactor.
+11-10 01:17:30.446  1591  1789 I A       : (REDACTED) Nga state changed to %s
+11-10 01:17:30.446  1591  1789 I A       : (REDACTED) isTngActive=%s
+11-10 01:17:30.452  1463  1720 I A       : (REDACTED) on opa visibility changed %s
+11-10 01:17:30.457  1463  1720 I A       : (REDACTED) on opa visibility changed %s
+11-10 01:17:30.459  1463  2400 I A       : Initializing all components
+11-10 01:17:30.459  1463  1713 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+11-10 01:17:30.459  1463  1719 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+11-10 01:17:30.459  1463  1712 I A       : (REDACTED) onIsEnabledChanged, isEnabled: %s
+11-10 01:17:30.459  1463  1719 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+11-10 01:17:30.459  1463  1712 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:17:30.459  1463  1712 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:17:30.460  1463  1712 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:17:30.460  1463  1712 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:17:30.460  1463  1713 I A       : (REDACTED) State changed: %s => %s by %s and %s with %s
+11-10 01:17:30.460  1463  1712 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:17:30.460  1463  1712 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:17:30.460  1463  1713 I A       : (REDACTED) Recognizer choice: (recognizer_type: %s, recognizer_mode: %s, choice_reason: %s)
+11-10 01:17:30.460  1463  1712 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:17:30.460  1463  1712 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:17:30.460  1463  1712 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:17:30.460  1463  1712 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:17:30.460  1463  1712 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:17:30.460  1463  1713 I A       : (REDACTED) onActiveStateChangeEvent: %s => %s
+11-10 01:17:30.461  1463  1712 I A       : (REDACTED) Setting session to type: %s
+11-10 01:17:30.461  1463  1713 I A       : (REDACTED) #onActiveStateChangeEvent, newState: %s, previousState: %s.
+11-10 01:17:30.461  1463  1712 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:17:30.461  1463  1712 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:17:30.461  1463  1712 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:17:30.461  1463  1712 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:17:30.461  1463  1712 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:17:30.462  1463  1712 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:17:30.462  1463  1712 I A       : (REDACTED) setNavBarVisible: %s
+11-10 01:17:30.463  1339  1564 D EGL_emulation: app_time_stats: avg=1035.91ms min=1035.91ms max=1035.91ms count=1
+11-10 01:17:30.463  1463  1712 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:17:30.463  1463  1712 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:17:30.463  1463  1712 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:17:30.464  1463  1712 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:17:30.464  1463  1712 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:17:30.464  1463  1712 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:17:30.464  1463  1713 I A       : (REDACTED) stopListening(%s, %s)
+11-10 01:17:30.465  1463  1720 I NgaEntryPointEventSendr: setupConnection
+11-10 01:17:30.467  1463  1719 I A       : Initialize
+11-10 01:17:30.470  1463  1713 I INV.SystemUI: showGestureNav
+11-10 01:17:30.470  1463  1713 I INV.SystemUI: (REDACTED) setUiHints(hints = %s)
+11-10 01:17:30.471  1463  1713 I A       : Ignoring as prefetch was recently called
+11-10 01:17:30.474  1463  1720 I NgaEntryPointEventSendr: (REDACTED) State changed: %s => %s
+11-10 01:17:30.475  1463  1712 I NgaEntryPointEventSendr: onServiceConnected
+11-10 01:17:30.476  1591  1618 I A       : Calling beginBinderSession().
+11-10 01:17:30.476  1463  1713 I A       : Successfully initialized all components
+11-10 01:17:30.479  1591  1618 I A       : beginBinderSession(): calling binder
+11-10 01:17:30.479  1463  1719 I INV.SystemUI: setUiHints: finished successfully
+11-10 01:17:30.480  1463  1712 I NgaEntryPointEventSendr: (REDACTED) State changed: %s => %s
+11-10 01:17:30.488   637  1705 W ActivityManager: Unable to start service Intent { cmp=com.google.android.apps.tachyon/.clientapi.ClientApiService } U=0: not found
+11-10 01:17:30.507  1463  1720 I NgaEntryPointEventSendr: (REDACTED) State changed: %s => %s (%s)
+11-10 01:17:30.509  1591  2239 I PBSessionCacheImpl: (REDACTED) Deleted sessionId[%d] from persistence.
+11-10 01:17:30.510  1591  1926 W A       : (REDACTED) %s task was not run. Callback from Service received after client was disposed.
+11-10 01:17:30.514  1591  1926 W SearchServiceCore: Abort, client detached.
+11-10 01:17:30.576   637   798 W BestClock: java.time.DateTimeException: Missing network time fix
+11-10 01:17:30.577   637   798 W BestClock: java.time.DateTimeException: Missing network time fix
+11-10 01:17:30.578   637   798 W BestClock: java.time.DateTimeException: Missing network time fix
+11-10 01:17:30.579   637   798 W BestClock: java.time.DateTimeException: Missing network time fix
+11-10 01:17:30.579   637   798 W BestClock: java.time.DateTimeException: Missing network time fix
+11-10 01:17:30.586  1488  1969 I BugleRcsEngine: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[79c4bb72-8d03]>Handler" thread_id=65 ]
+11-10 01:17:30.586  3058  3101 D WM-NetworkStateTracker: Network capabilities changed: [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&CAPTIVE_PORTAL&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED LinkUpBandwidth>=12000Kbps LinkDnBandwidth>=30000Kbps TransportInfo: <SSID: <unknown ssid>, BSSID: 02:00:00:00:00:00, MAC: 02:00:00:00:00:00, IP: /10.0.2.16, Security type: 0, Supplicant state: COMPLETED, Wi-Fi standard: legacy, RSSI: -50, Link speed: 6Mbps, Tx Link speed: 6Mbps, Max Supported Tx Link speed: 54Mbps, Rx Link speed: 2Mbps, Max Supported Rx Link speed: 54Mbps, Frequency: 2437MHz, Net ID: -1, Metered hint: false, score: 60, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: -1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none><none>MLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>> SignalStrength: -50 UnderlyingNetworks: Null]
+11-10 01:17:30.586  1488  1778 I BugleRcsEngine: Connected state: [1], networkType: [WIFI] [CONTEXT thread_id=58 ]
+11-10 01:17:30.603  1098  1980 I ChimeraSrvcProxy: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl
+11-10 01:17:30.603  1098  1980 W .gms.persistent: Large reply transaction of 1056768 bytes, interface descriptor , code 1
+11-10 01:17:30.677   493   509 W GpuWork : Failed to attach bpf program to power/gpu_work_period tracepoint [2(No such file or directory)]
+11-10 01:17:30.763   920  3214 D android.hardware.gnss-service.ranchu: GnssHwListener:consume:87 sz=64
+11-10 01:17:30.764   920  3214 D android.hardware.gnss-service.ranchu: GnssHwListener:consume:87 sz=64
+11-10 01:17:30.764   920  3214 D android.hardware.gnss-service.ranchu: Gnss:onGnssLocationCb:311
+11-10 01:17:30.764   920  3214 D android.hardware.gnss-service.ranchu: Gnss:onGnssLocationCb:321
+11-10 01:17:30.910  1660  1716 V NativeCrypto: SSL handshake aborted: ssl=0x75ba28a5a458: I/O error during system call, Connection reset by peer
+11-10 01:17:30.911  1660  1966 D TrafficStats: tagSocket(113) with statsTag=0x30002500, statsUid=-1
+11-10 01:17:30.919  1660  1966 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-10 01:17:30.920  1660  1966 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-10 01:17:30.920  1660  1966 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-10 01:17:31.002  1098  1679 D TrafficStats: tagSocket(254) with statsTag=0x34000609, statsUid=10137
+11-10 01:17:31.004  1660  1966 V NativeCrypto: SSL handshake aborted: ssl=0x75ba28a5a458: I/O error during system call, Connection reset by peer
+11-10 01:17:31.008  1660  1941 D TrafficStats: tagSocket(113) with statsTag=0x30002500, statsUid=-1
+11-10 01:17:31.010  1098  1679 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-10 01:17:31.010  1098  1679 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-10 01:17:31.010  1098  1679 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-10 01:17:31.016  1660  1941 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-10 01:17:31.017  1660  1941 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-10 01:17:31.017  1660  1941 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-10 01:17:31.032  1098  1679 V NativeCrypto: SSL handshake aborted: ssl=0x75ba28a58dd8: I/O error during system call, Connection reset by peer
+11-10 01:17:31.033  1098  1912 D TrafficStats: tagSocket(254) with statsTag=0x34000609, statsUid=10137
+11-10 01:17:31.040  1660  1941 V NativeCrypto: SSL handshake aborted: ssl=0x75ba28a59a98: I/O error during system call, Connection reset by peer
+11-10 01:17:31.041  1660  1716 D TrafficStats: tagSocket(113) with statsTag=0x30002500, statsUid=-1
+11-10 01:17:31.041  1098  1912 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-10 01:17:31.042  1098  1912 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-10 01:17:31.042  1098  1912 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-10 01:17:31.051  1660  1716 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-10 01:17:31.053  1660  1716 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-10 01:17:31.053  1660  1716 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-10 01:17:31.065  1098  1912 V NativeCrypto: SSL handshake aborted: ssl=0x75ba28a58dd8: I/O error during system call, Connection reset by peer
+11-10 01:17:31.066  1098  2036 D TrafficStats: tagSocket(254) with statsTag=0x34000609, statsUid=10137
+11-10 01:17:31.077  1098  2036 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-10 01:17:31.077  1098  2036 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-10 01:17:31.077  1098  2036 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-10 01:17:31.080  1660  1716 V NativeCrypto: SSL handshake aborted: ssl=0x75ba28a5a458: I/O error during system call, Connection reset by peer
+11-10 01:17:31.081  1660  1966 D TrafficStats: tagSocket(113) with statsTag=0x30002500, statsUid=-1
+11-10 01:17:31.088  1660  1966 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-10 01:17:31.088  1660  1966 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-10 01:17:31.088  1660  1966 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-10 01:17:31.109  1098  2036 V NativeCrypto: SSL handshake aborted: ssl=0x75ba28a58dd8: I/O error during system call, Connection reset by peer
+11-10 01:17:31.110  1660  1966 V NativeCrypto: SSL handshake aborted: ssl=0x75ba28a5a458: I/O error during system call, Connection reset by peer
+11-10 01:17:31.111  1660  1941 D TrafficStats: tagSocket(113) with statsTag=0x30002500, statsUid=-1
+11-10 01:17:31.113  1098  1679 D TrafficStats: tagSocket(254) with statsTag=0x34000609, statsUid=10137
+11-10 01:17:31.115  1660  1716 D TrafficStats: tagSocket(113) with statsTag=0x30002500, statsUid=-1
+11-10 01:17:31.118  1660  1966 D TrafficStats: tagSocket(113) with statsTag=0x30002500, statsUid=-1
+11-10 01:17:31.121  1660  1941 D TrafficStats: tagSocket(113) with statsTag=0x30002500, statsUid=-1
+11-10 01:17:31.124  1098  1679 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-10 01:17:31.124  1098  1679 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-10 01:17:31.124  1098  1679 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-10 01:17:31.125  1660  1716 D TrafficStats: tagSocket(113) with statsTag=0x30002500, statsUid=-1
+11-10 01:17:31.129  1660  1966 D TrafficStats: tagSocket(113) with statsTag=0x30002500, statsUid=-1
+11-10 01:17:31.131  1660  1941 D TrafficStats: tagSocket(113) with statsTag=0x30002500, statsUid=-1
+11-10 01:17:31.134  1660  1716 D TrafficStats: tagSocket(113) with statsTag=0x30002500, statsUid=-1
+11-10 01:17:31.138   431  3266 I resolv  : GetAddrInfoHandler::run: {101 786533 101 983141 10143 0}
+11-10 01:17:31.139   431  3267 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+11-10 01:17:31.139   431  3267 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7de88d593470
+11-10 01:17:31.139   431  3267 I resolv  : doQuery: rcode=0, ancount=8, return value=504
+11-10 01:17:31.139   431  3268 I resolv  : res_nmkquery: (QUERY, IN, A)
+11-10 01:17:31.139   431  3268 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7dea5d5a25d0
+11-10 01:17:31.139   431  3268 I resolv  : doQuery: rcode=0, ancount=8, return value=436
+11-10 01:17:31.152  1098  1679 V NativeCrypto: SSL handshake aborted: ssl=0x75ba28a58dd8: I/O error during system call, Connection reset by peer
+11-10 01:17:31.153  1098  1912 D TrafficStats: tagSocket(254) with statsTag=0x34000609, statsUid=10137
+11-10 01:17:31.158  1098  1912 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-10 01:17:31.159  1098  1912 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-10 01:17:31.159  1098  1912 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-10 01:17:31.298  1660  1660 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.auth.service.START pkg=com.google.android.gms }
+11-10 01:17:31.319   637   805 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+11-10 01:17:31.320   637   805 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+11-10 01:17:31.320   637   805 D InetDiagMessage: Destroyed live tcp sockets for uids={10167} in 1ms
+11-10 01:17:31.321   637   805 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+11-10 01:17:31.322   637   805 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+11-10 01:17:31.322   637   805 D InetDiagMessage: Destroyed live tcp sockets for uids={20167} in 2ms
+11-10 01:17:31.392  1660  1827 W DataCollectionRegistryC: missing CollectionDefinition for digitalassetlinks.googleapis.com/google.digitalassetlinks.v1.AssetLinks/Check
+11-10 01:17:31.393  1660  1827 W AppLinksAsyncVerifierV2: Error performing check:  [CONTEXT service_id=244 ]
+11-10 01:17:31.393  1660  1827 W AppLinksAsyncVerifierV2: gbzz: UNAVAILABLE
+11-10 01:17:31.393  1660  1827 W AppLinksAsyncVerifierV2: 	at gbzy.h(:com.google.android.gms@242335041@24.23.35 (190800-646585959):3)
+11-10 01:17:31.393  1660  1827 W AppLinksAsyncVerifierV2: 	at anbi.u(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+11-10 01:17:31.393  1660  1827 W AppLinksAsyncVerifierV2: 	at anbi.f(:com.google.android.gms@242335041@24.23.35 (190800-646585959):57)
+11-10 01:17:31.393  1660  1827 W AppLinksAsyncVerifierV2: 	at dhgf.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):39)
+11-10 01:17:31.393  1660  1827 W AppLinksAsyncVerifierV2: 	at dhfl.c(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+11-10 01:17:31.393  1660  1827 W AppLinksAsyncVerifierV2: 	at dhfl.c(:com.google.android.gms@242335041@24.23.35 (190800-646585959):106)
+11-10 01:17:31.393  1660  1827 W AppLinksAsyncVerifierV2: 	at dhfl.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):3)
+11-10 01:17:31.393  1660  1827 W AppLinksAsyncVerifierV2: 	at ajis.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):5)
+11-10 01:17:31.393  1660  1827 W AppLinksAsyncVerifierV2: 	at angs.c(:com.google.android.gms@242335041@24.23.35 (190800-646585959):50)
+11-10 01:17:31.393  1660  1827 W AppLinksAsyncVerifierV2: 	at angs.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):76)
+11-10 01:17:31.393  1660  1827 W AppLinksAsyncVerifierV2: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-10 01:17:31.393  1660  1827 W AppLinksAsyncVerifierV2: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-10 01:17:31.393  1660  1827 W AppLinksAsyncVerifierV2: 	at anmg.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+11-10 01:17:31.393  1660  1827 W AppLinksAsyncVerifierV2: 	at java.lang.Thread.run(Thread.java:1012)
+11-10 01:17:31.393  1660  1827 W AppLinksAsyncVerifierV2: Caused by: java.net.ConnectException: failed to connect to digitalassetlinks.googleapis.com/2001:4860:4847:400:: (port 443) from /:: (port 49880): connect failed: ECONNREFUSED (Connection refused)
+11-10 01:17:31.393  1660  1827 W AppLinksAsyncVerifierV2: 	at libcore.io.IoBridge.connect(IoBridge.java:187)
+11-10 01:17:31.393  1660  1827 W AppLinksAsyncVerifierV2: 	at java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:142)
+11-10 01:17:31.393  1660  1827 W AppLinksAsyncVerifierV2: 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:390)
+11-10 01:17:31.393  1660  1827 W AppLinksAsyncVerifierV2: 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:230)
+11-10 01:17:31.393  1660  1827 W AppLinksAsyncVerifierV2: 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:212)
+11-10 01:17:31.393  1660  1827 W AppLinksAsyncVerifierV2: 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:436)
+11-10 01:17:31.393  1660  1827 W AppLinksAsyncVerifierV2: 	at java.net.Socket.connect(Socket.java:646)
+11-10 01:17:31.393  1660  1827 W AppLinksAsyncVerifierV2: 	at java.net.Socket.connect(Socket.java:595)
+11-10 01:17:31.393  1660  1827 W AppLinksAsyncVerifierV2: 	at java.net.Socket.<init>(Socket.java:475)
+11-10 01:17:31.393  1660  1827 W AppLinksAsyncVerifierV2: 	at java.net.Socket.<init>(Socket.java:275)
+11-10 01:17:31.393  1660  1827 W AppLinksAsyncVerifierV2: 	at javax.net.DefaultSocketFactory.createSocket(SocketFactory.java:285)
+11-10 01:17:31.393  1660  1827 W AppLinksAsyncVerifierV2: 	at gcsp.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):50)
+11-10 01:17:31.393  1660  1827 W AppLinksAsyncVerifierV2: 	at gcpn.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):17)
+11-10 01:17:31.393  1660  1827 W AppLinksAsyncVerifierV2: 	... 6 more
+11-10 01:17:31.393  1660  1827 W AppLinksAsyncVerifierV2: Caused by: android.system.ErrnoException: connect failed: ECONNREFUSED (Connection refused)
+11-10 01:17:31.393  1660  1827 W AppLinksAsyncVerifierV2: 	at libcore.io.Linux.connect(Native Method)
+11-10 01:17:31.393  1660  1827 W AppLinksAsyncVerifierV2: 	at libcore.io.ForwardingOs.connect(ForwardingOs.java:201)
+11-10 01:17:31.393  1660  1827 W AppLinksAsyncVerifierV2: 	at libcore.io.BlockGuardOs.connect(BlockGuardOs.java:158)
+11-10 01:17:31.393  1660  1827 W AppLinksAsyncVerifierV2: 	at libcore.io.ForwardingOs.connect(ForwardingOs.java:201)
+11-10 01:17:31.393  1660  1827 W AppLinksAsyncVerifierV2: 	at libcore.io.IoBridge.connectErrno(IoBridge.java:201)
+11-10 01:17:31.393  1660  1827 W AppLinksAsyncVerifierV2: 	at libcore.io.IoBridge.connect(IoBridge.java:179)
+11-10 01:17:31.393  1660  1827 W AppLinksAsyncVerifierV2: 	... 18 more
+11-10 01:17:31.415  1098  1912 V NativeCrypto: SSL handshake aborted: ssl=0x75ba28a58dd8: I/O error during system call, Connection reset by peer
+11-10 01:17:31.416  1098  1679 D TrafficStats: tagSocket(254) with statsTag=0x34000609, statsUid=10137
+11-10 01:17:31.424  1098  1679 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-10 01:17:31.424  1098  1679 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-10 01:17:31.424  1098  1679 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)

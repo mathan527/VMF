@@ -1,0 +1,517 @@
+--------- beginning of main
+11-07 01:06:37.133   891   891 D SsMediaDataProvider: Forwarding Smartspace updates []
+11-07 01:06:37.135  1404  1640 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+11-07 01:06:37.136  1404  1640 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+11-07 01:06:37.136  1164  1164 D SsBaseTemplateCard: No text view can be set up
+11-07 01:06:37.137  1164  1164 D SsBaseTemplateCard: Passed-in item info is null
+11-07 01:06:37.137  1164  1164 D SsBaseTemplateCard: Passed-in item info is null
+11-07 01:06:37.137  1164  1164 D SsBaseTemplateCard: Passed-in item info is null
+11-07 01:06:37.137  1164  1164 I SsBaseTemplateCard: Secondary card pane is null
+11-07 01:06:37.138   891   891 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+11-07 01:06:37.139  1353  1813 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+11-07 01:06:37.139   430   430 I netd    : tetherGetStats() -> {[]} <0.96ms>
+11-07 01:06:37.147  1769  1777 I .apps.messaging: Compiler allocated 8184KB to compile java.lang.Object aflc.A()
+11-07 01:06:37.153  1769  2052 W ectr    : Failed to create JWT helper. This is unexpected
+11-07 01:06:37.153  1769  2052 W ectr    : java.lang.NoSuchMethodException: dlno.getScopes []
+11-07 01:06:37.153  1769  2052 W ectr    : 	at java.lang.Class.getMethod(Class.java:2950)
+11-07 01:06:37.153  1769  2052 W ectr    : 	at java.lang.Class.getMethod(Class.java:2450)
+11-07 01:06:37.153  1769  2052 W ectr    : 	at ectp.<init>(PG:15)
+11-07 01:06:37.153  1769  2052 W ectr    : 	at ectr.<clinit>(PG:27)
+11-07 01:06:37.153  1769  2052 W ectr    : 	at ects.a(PG:1)
+11-07 01:06:37.153  1769  2052 W ectr    : 	at culd.b(PG:168)
+11-07 01:06:37.153  1769  2052 W ectr    : 	at cukx.a(PG:31)
+11-07 01:06:37.153  1769  2052 W ectr    : 	at dkpx.a(PG:18)
+11-07 01:06:37.153  1769  2052 W ectr    : 	at dqpb.a(PG:14)
+11-07 01:06:37.153  1769  2052 W ectr    : 	at dqoh.d(PG:3)
+11-07 01:06:37.153  1769  2052 W ectr    : 	at dqoj.run(PG:42)
+11-07 01:06:37.153  1769  2052 W ectr    : 	at crzm.run(PG:3)
+11-07 01:06:37.153  1769  2052 W ectr    : 	at dnmw.run(PG:50)
+11-07 01:06:37.153  1769  2052 W ectr    : 	at cscj.run(PG:18)
+11-07 01:06:37.153  1769  2052 W ectr    : 	at cryt.run(PG:8)
+11-07 01:06:37.153  1769  2052 W ectr    : 	at java.lang.Thread.run(Thread.java:1012)
+11-07 01:06:37.153  1769  2052 W ectr    : 	at csaw.run(PG:64)
+11-07 01:06:37.156   430  3013 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10137 0}
+--------- beginning of system
+11-07 01:06:37.157   644  2154 D CompatChangeReporter: Compat change id reported: 161145287; UID 10138; state: ENABLED
+11-07 01:06:37.157   430  3014 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+11-07 01:06:37.158   430  3015 I resolv  : res_nmkquery: (QUERY, IN, A)
+11-07 01:06:37.158   430  3014 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x709da8890e30
+11-07 01:06:37.158   430  3014 I resolv  : doQuery: rcode=0, ancount=8, return value=496
+11-07 01:06:37.159  1164  1522 D EGL_emulation: app_time_stats: avg=516.27ms min=32.90ms max=999.64ms count=2
+11-07 01:06:37.160   430  3015 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x709db888b2c0
+11-07 01:06:37.160   430  3015 I resolv  : doQuery: rcode=0, ancount=8, return value=428
+11-07 01:06:37.173  1548  1554 I earchbox:search: Background concurrent mark compact GC freed 18MB AllocSpace bytes, 1(16KB) LOS objects, 49% free, 20MB/41MB, paused 3.837ms,13.363ms total 253.359ms
+11-07 01:06:37.175  1055  1068 V MmsProvider: accessRestricted=false
+11-07 01:06:37.176  1769  2363 D PhFileGroupPop: Added file groups animated_emoji
+11-07 01:06:37.177  1769  2363 D PhFileGroupPop: Added file groups voice_moods
+11-07 01:06:37.179  1769  2363 D PhFileGroupPop: Added file groups screen_effects
+11-07 01:06:37.179  1548  1751 I A       : NGA enabled in interactor.
+11-07 01:06:37.180  1769  2104 D TrafficStats: tagSocket(107) with statsTag=0x0, statsUid=-1
+11-07 01:06:37.189  1353  1569 W Pay     : Active account was null, notification task will be cancelled. [CONTEXT service_id=198 ]
+11-07 01:06:37.190   644  2170 D CompatChangeReporter: Compat change id reported: 311208749; UID 10137; state: ENABLED
+11-07 01:06:37.193   644  2170 I ActivityManager: Background started FGS: Allowed [callingPackage: com.google.android.apps.messaging; callingUid: 10137; uidState: BFGS; uidBFSL: [BFSL]; intent: Intent { cmp=com.google.android.apps.messaging/com.google.apps.tiktok.concurrent.InternalForegroundService (has extras) }; code:PROC_STATE_BFGS; tempAllowListReason:<ca53e7d android.intent.action.BOOT_COMPLETED/u0,reasonCode:BOOT_COMPLETED,duration:20000,callingUid:1000>; targetSdkVersion:35; callerTargetSdkVersion:35; startForegroundCount:0; bindFromPackage:null: isBindService:false]
+11-07 01:06:37.194   644  2170 D CompatChangeReporter: Compat change id reported: 319471980; UID 10137; state: ENABLED
+11-07 01:06:37.202  1548  1751 I A       : (REDACTED) Nga state changed to %s
+11-07 01:06:37.202  1548  1751 I A       : (REDACTED) isTngActive=%s
+11-07 01:06:37.203  1055  1068 V MmsProvider: accessRestricted=false
+11-07 01:06:37.206   644  1774 D CompatChangeReporter: Compat change id reported: 296558535; UID 10137; state: ENABLED
+11-07 01:06:37.206  1769  2363 D PhFileGroupPop: Added file groups screen_effect_suggestions
+11-07 01:06:37.207   644  1774 D CompatChangeReporter: Compat change id reported: 317799821; UID 10137; state: ENABLED
+11-07 01:06:37.208   644  1774 D CompatChangeReporter: Compat change id reported: 313677553; UID 10137; state: ENABLED
+11-07 01:06:37.208  1769  2363 D PhFileGroupPop: Added file groups text_classifier
+11-07 01:06:37.208   644  1774 W ActivityManager: Foreground service started from background can not have location/camera/microphone access: service com.google.android.apps.messaging/com.google.apps.tiktok.concurrent.InternalForegroundService
+11-07 01:06:37.209   644  1774 W ForegroundServiceTypeLoggerModule: Foreground service start for UID: 10137 does not have any types
+11-07 01:06:37.211  1769  2363 D PhFileGroupPop: Added file groups selfie_gif_grammars
+11-07 01:06:37.213  1425  1742 I A       : (REDACTED) on opa visibility changed %s
+11-07 01:06:37.214  1425  1746 I A       : (REDACTED) on opa visibility changed %s
+11-07 01:06:37.218  1769  2363 D PhFileGroupPop: Added file groups spam_fm_templates
+11-07 01:06:37.221  1548  1876 I TimeContextManager: (REDACTED) #maybeCreateTimeTrigger: time trigger= %s with start time=%d, stop time=%d in seconds.
+11-07 01:06:37.231  1149  1278 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:2 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-07 01:06:37.237  1425  1438 I A       : Initializing all components
+11-07 01:06:37.238  1425  1718 I A       : (REDACTED) onIsEnabledChanged, isEnabled: %s
+11-07 01:06:37.238   644   950 D FileUtils: Rounded bytes from 8331366400 to 16000000000
+11-07 01:06:37.238  1425  1718 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:06:37.238  1425  1718 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:06:37.239  1425  1718 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:06:37.239  1425  1718 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:06:37.240  1425  1746 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+11-07 01:06:37.240  1425  1746 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+11-07 01:06:37.243  1425  1718 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:06:37.243  1425  1718 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:06:37.245  1425  1718 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:06:37.246  1425  1718 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:06:37.246  1425  1718 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:06:37.247  1425  1718 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:06:37.247  1425  1718 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:06:37.247  1425  1718 I A       : (REDACTED) Setting session to type: %s
+11-07 01:06:37.247  1425  1718 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:06:37.248  1425  1718 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:06:37.248  1425  1718 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:06:37.249  1425  1718 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:06:37.249  1425  1718 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:06:37.249  1425  1742 I A       : (REDACTED) stopListening(%s, %s)
+11-07 01:06:37.249  1425  1718 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:06:37.252  1769  2363 D PhFileGroupPop: Added file groups smart_actions_emotive_models
+11-07 01:06:37.253  1425  1718 I A       : (REDACTED) setNavBarVisible: %s
+11-07 01:06:37.253  1425  1746 I A       : Initialize
+11-07 01:06:37.254  1353  1813 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+11-07 01:06:37.255  1425  1718 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:06:37.255  1149  1149 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.cast.firstparty.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+11-07 01:06:37.255  1425  1718 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:06:37.255  1425  1718 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:06:37.255  1425  1718 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:06:37.256  1425  1718 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:06:37.258  1149  2764 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-07 01:06:37.259  1149  2764 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-07 01:06:37.259  1425  1718 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:06:37.259  1149  2764 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-07 01:06:37.260  1425  1669 I ALT.ARCProvider: (REDACTED) #audio# activating audio request client(%s)
+11-07 01:06:37.260  1425  1669 I ALT.ClientsRegy: (REDACTED) #audio# activating audio client(token(%d), %s)
+11-07 01:06:37.265  1425  1746 I NgaEntryPointEventSendr: setupConnection
+11-07 01:06:37.265  1425  1718 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+11-07 01:06:37.267  1425  1742 I INV.SystemUI: showGestureNav
+11-07 01:06:37.269  1425  1742 I INV.SystemUI: (REDACTED) setUiHints(hints = %s)
+11-07 01:06:37.270  1425  1742 I A       : Successfully initialized all components
+11-07 01:06:37.273  1425  1669 I ALT.ClientsRegy: (REDACTED) #audio# enforcing concurrency state on a new client(%s, token(%d))
+11-07 01:06:37.278  1425  1742 I A       : Ignoring as prefetch was recently called
+11-07 01:06:37.279  1425  1746 I NgaEntryPointEventSendr: (REDACTED) State changed: %s => %s
+11-07 01:06:37.280  1425  1669 I ALT.AudioRoutesRegy: (REDACTED) #audio# initializing the default route(%d) for %s
+11-07 01:06:37.283  1548  1876 I CtfManager: (REDACTED) remove request for trigger key: %s, isClientInitiated: %s
+11-07 01:06:37.285  1425  1746 I NgaEntryPointEventSendr: onServiceConnected
+11-07 01:06:37.287  1425  1742 I INV.SystemUI: setUiHints: finished successfully
+11-07 01:06:37.290  1548  2523 I A       : Calling beginBinderSession().
+11-07 01:06:37.294  1548  2523 I A       : beginBinderSession(): calling binder
+11-07 01:06:37.294  1425  1669 I ALT.ARClient: (REDACTED) #audio# routing audio request client(token(%d)) to(%s)
+11-07 01:06:37.295  1425  1669 I ALT.HotwordRoutesRegy: (REDACTED) #audio# initializing the default route(%s) for hotword
+11-07 01:06:37.296  1353  1813 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+11-07 01:06:37.298  1425  1669 I ALT.AudioRoutesRegy: (REDACTED) #audio# updating to audio route(token(%d), %s) for %s
+11-07 01:06:37.299  1769  2726 I BugleNotifications: Creating notification input ids [CONTEXT im_entry_input="" im_notification_input="" im_settings_store_input="" im_final_input="" ]
+11-07 01:06:37.299  2987  3008 D CompatChangeReporter: Compat change id reported: 253665015; UID 10138; state: ENABLED
+11-07 01:06:37.299  1769  2742 I BugleNotifications: New set of conversations empty, canceling notifications
+11-07 01:06:37.300  1769  2736 I BugleNotifications: Conversation and messages data list is empty, not creating summary builder info
+11-07 01:06:37.300  1769  2736 I BugleNotifications: No builder infos, not creating notification creation package
+11-07 01:06:37.301  1425  1746 I NgaEntryPointEventSendr: (REDACTED) State changed: %s => %s
+11-07 01:06:37.302   644  2162 D CompatChangeReporter: Compat change id reported: 253665015; UID 10138; state: ENABLED
+11-07 01:06:37.303  1769  2742 I BugleNotifications: Notification creation package is null, not creating notification [CONTEXT notification_type="2" ]
+11-07 01:06:37.303  1425  1669 I ALT.AudioRoutesRegy: (REDACTED) #audio# audio route(token(%d), %s) OK to update
+11-07 01:06:37.304  1425  1669 I ALT.AudioRoutesRegy: (REDACTED) #audio# enforcing concurrency state on a new audio route of %s
+11-07 01:06:37.306  1425  1669 I ALT.AudioRoutesRegy: (REDACTED) #audio# disconnecting(%s) audio %s for %s
+11-07 01:06:37.308  1425  1669 I ALT.AudioRoutesRegy: (REDACTED) #audio# starting connection to audio route(token(%d), %s) for %s
+11-07 01:06:37.311  1425  1742 I ALT.RefManager: (REDACTED) #audio# referencing(%s) to(%s), (%s)
+11-07 01:06:37.313  1425  1746 I ALT.AudioEventsHolder: (REDACTED) #audio# route(%s) for audio request client(token(%d)) updated with status(%s)
+11-07 01:06:37.316  1425  1669 I A       : (REDACTED) State changed: %s => %s by %s and %s with %s
+11-07 01:06:37.317  1548  1876 I TimeContextManager: (REDACTED) #remove: subTriggerId=%s
+11-07 01:06:37.318   644   675 V GrammaticalInflectionUtils: AttributionSource: AttributionSource { uid = 10129, packageName = null, attributionTag = null, token = android.os.Binder@d80d0ef, deviceId = 0, next = null } does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+11-07 01:06:37.328  1425  1669 I A       : (REDACTED) Recognizer choice: (recognizer_type: %s, recognizer_mode: %s, choice_reason: %s)
+11-07 01:06:37.330   644  2170 D CompatChangeReporter: Compat change id reported: 311208629; UID 10139; state: ENABLED
+11-07 01:06:37.331  1425  1742 I A       : (REDACTED) #audio# audio routing(%s) took %d(ms)
+11-07 01:06:37.331  1353  1813 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+11-07 01:06:37.335  1353  1813 I Icing   : Indexing com.google.android.gms-emails_data_id from com.google.android.gms
+11-07 01:06:37.338  1769  2738 I SyncScheduler: scheduling sync for 15182 seconds later, policy = APPEND
+11-07 01:06:37.339  1425  1669 I A       : (REDACTED) onActiveStateChangeEvent: %s => %s
+11-07 01:06:37.340   431   431 D Zygote  : Forked child process 3022
+11-07 01:06:37.340   644   676 I ActivityManager: Start proc 3022:com.google.android.apps.safetyhub/u0a129 for broadcast {com.google.android.apps.safetyhub/com.google.android.apps.safetyhub.startup.StartupBroadcastReceiver_Receiver}
+11-07 01:06:37.341   644  2158 W ActivityManager: Unable to start service Intent { cmp=com.google.android.apps.tachyon/.clientapi.ClientApiService } U=0: not found
+11-07 01:06:37.353   644  2170 W ForegroundServiceTypeLoggerModule: FGS stop call for: 10137 has no types!
+11-07 01:06:37.359  1149  2032 W GlsClientGrpc: Voilatile gRPC failure INVALID_ARGUMENT: Application credential header not valid. Please fix the client to pass a valid application credential header. [CONTEXT service_id=6 ]
+11-07 01:06:37.359  1149  2032 W GlsClientGrpc: gbzz: INVALID_ARGUMENT: Application credential header not valid. Please fix the client to pass a valid application credential header.
+11-07 01:06:37.359  1149  2032 W GlsClientGrpc: 	at gbzy.h(:com.google.android.gms@242335041@24.23.35 (190800-646585959):3)
+11-07 01:06:37.359  1149  2032 W GlsClientGrpc: 	at anbi.u(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+11-07 01:06:37.359  1149  2032 W GlsClientGrpc: 	at anbi.g(:com.google.android.gms@242335041@24.23.35 (190800-646585959):97)
+11-07 01:06:37.359  1149  2032 W GlsClientGrpc: 	at efkz.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):39)
+11-07 01:06:37.359  1149  2032 W GlsClientGrpc: 	at efkr.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):274)
+11-07 01:06:37.359  1149  2032 W GlsClientGrpc: 	at ehaz.call(:com.google.android.gms@242335041@24.23.35 (190800-646585959):1026)
+11-07 01:06:37.359  1149  2032 W GlsClientGrpc: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+11-07 01:06:37.359  1149  2032 W GlsClientGrpc: 	at angs.c(:com.google.android.gms@242335041@24.23.35 (190800-646585959):50)
+11-07 01:06:37.359  1149  2032 W GlsClientGrpc: 	at angs.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):76)
+11-07 01:06:37.359  1149  2032 W GlsClientGrpc: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-07 01:06:37.359  1149  2032 W GlsClientGrpc: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-07 01:06:37.359  1149  2032 W GlsClientGrpc: 	at anmg.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+11-07 01:06:37.359  1149  2032 W GlsClientGrpc: 	at java.lang.Thread.run(Thread.java:1012)
+11-07 01:06:37.362  1769  2738 I SyncHelper: [49a91cf5-e188-43f4-9730-839473535d51] sync succeeded, workRequestId:377bdec6-8eb4-4577-a676-30bb2a10122a
+11-07 01:06:37.365  1769  2740 D nativeloader: Load /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64/libconscrypt_gmscore_jni.so using ns product-clns-12 from class loader (caller=/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!classes3.dex): ok
+11-07 01:06:37.366  1769  2740 I .apps.messaging: Waiting for a blocking GC ClassLinker
+11-07 01:06:37.369  3022  3022 I .apps.safetyhub: Using CollectorTypeCMC GC.
+11-07 01:06:37.372  3022  3022 W .apps.safetyhub: Unexpected CPU variant for x86: x86_64.
+11-07 01:06:37.372  3022  3022 W .apps.safetyhub: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, goldmont-without-sha-xsaves, tremont, kabylake, default
+11-07 01:06:37.377  1425  1669 W A       : (REDACTED) Missing generator mapping for generator %s
+11-07 01:06:37.379  1425  1669 W A       : (REDACTED) Missing generator mapping for generator %s
+11-07 01:06:37.381  1425  1669 W A       : (REDACTED) Missing generator mapping for generator %s
+11-07 01:06:37.386  1055  1271 V MmsProvider: accessRestricted=false
+11-07 01:06:37.390  1425  1669 I A       : (REDACTED) #onActiveStateChangeEvent, newState: %s, previousState: %s.
+11-07 01:06:37.407  1769  2102 I Bugle   : BootAndPackageReplacedReceiver: run post-reboot oobe tasks
+11-07 01:06:37.412  2592  2724 I ComposerWrapperImpl: Done initializing en-us-x-tpf-seanet-embedded
+11-07 01:06:37.413  2592  2724 I GoogleTTSServiceImpl: Synthesis request for locale eng-USA and name en-us-x-tpf-local
+11-07 01:06:37.422  1769  2102 W JobInfo : Job 'com.google.android.apps.messaging/.shared.datamodel.action.execution.ActionJobService#124' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+11-07 01:06:37.422  1548  1876 I TimeContextManager: (REDACTED) #maybeCreateTimeTrigger: time trigger= %s with start time=%d, stop time=%d in seconds.
+11-07 01:06:37.423  2592  2724 I GoogleTTSServiceImpl: TTS dispatch: en-us-x-tpf-seanet-embedded
+11-07 01:06:37.423  1353  1353 D BoundBrokerSvc: onBind: Intent { act=com.google.android.location.geofencer.service.RandomDailyTaskSchedulerService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-07 01:06:37.423  1353  1353 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.location.geofencer.service.RandomDailyTaskSchedulerService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-07 01:06:37.425   644  2158 W JobInfo : Job 'com.google.android.apps.messaging/.shared.datamodel.action.execution.ActionJobService#124' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+11-07 01:06:37.436   430  3025 I resolv  : GetAddrInfoHandler::run: {100 100 100 983140 10145 0}
+11-07 01:06:37.436  1769  1777 W .apps.messaging: Missing inline cache for dmse cxnz.a(java.util.List)
+11-07 01:06:37.436   430  3025 I resolv  : GetAddrInfoHandler::run: network access blocked
+11-07 01:06:37.440   430  3026 I resolv  : GetAddrInfoHandler::run: {100 100 100 983140 10145 0}
+11-07 01:06:37.440   430  3026 I resolv  : GetAddrInfoHandler::run: network access blocked
+11-07 01:06:37.447  1353  1813 I Icing   : Indexing done com.google.android.gms-emails_data_id
+11-07 01:06:37.448  1353  1813 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms
+11-07 01:06:37.449  1353  1813 I Icing   : Indexing done com.google.android.gms-apps
+11-07 01:06:37.450  1353  1813 I Icing   : Indexing com.google.android.gms-postals_data_id from com.google.android.gms
+11-07 01:06:37.455  1353  1813 I Icing   : Indexing done com.google.android.gms-postals_data_id
+11-07 01:06:37.456  1353  1813 I Icing   : Indexing com.google.android.gms-contacts_contact_id from com.google.android.gms
+11-07 01:06:37.457  1353  1813 I Icing   : Indexing done com.google.android.gms-contacts_contact_id
+11-07 01:06:37.457  1353  1813 I Icing   : Indexing com.google.android.gms-phones_data_id from com.google.android.gms
+11-07 01:06:37.459  1353  1813 I Icing   : Indexing done com.google.android.gms-phones_data_id
+11-07 01:06:37.466   644   644 W Looper  : Slow dispatch took 117ms main h=android.app.ActivityThread$H c=android.app.LoadedApk$ServiceDispatcher$RunConnection@d14cca7 m=0
+11-07 01:06:37.479  1769  1778 W .apps.messaging: Suspending all threads took: 21.427ms
+11-07 01:06:37.496  1769  2363 D PhFileGroupPop: Added file groups smarts_expressive_content_scoped_v1
+11-07 01:06:37.511  1769  1778 I .apps.messaging: Background concurrent mark compact GC freed 15MB AllocSpace bytes, 6(236KB) LOS objects, 49% free, 12MB/25MB, paused 22.832ms,5.426ms total 205.506ms
+11-07 01:06:37.512  1769  2740 I .apps.messaging: WaitForGcToComplete blocked ClassLinker on Background for 146.058ms
+11-07 01:06:37.513  1769  2740 V NativeCrypto: Registering com/google/android/gms/org/conscrypt/NativeCrypto's 305 native methods...
+11-07 01:06:37.523  1353  1353 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.location.geofencer.service.RandomDailyTaskSchedulerService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-07 01:06:37.526  1548  1942 W A       : (REDACTED) %s task was not run. Callback from Service received after client was disposed.
+11-07 01:06:37.526  1769  2363 D PhFileGroupPop: Added file groups smart_actions_sensitive_classifier_models
+11-07 01:06:37.527  1769  2363 D PhFileGroupPop: Added file groups scripted_reply
+11-07 01:06:37.529  1769  2363 D PhFileGroupPop: Added file groups multitask_experiment
+11-07 01:06:37.529  1769  2363 D PhFileGroupPop: Added file groups spam_verdict_enforcement_policy_config
+11-07 01:06:37.530  1548  2219 I PBSessionCacheImpl: (REDACTED) Deleted sessionId[%d] from persistence.
+11-07 01:06:37.533  1425  1669 I NgaEntryPointEventSendr: (REDACTED) State changed: %s => %s (%s)
+11-07 01:06:37.535  1548  1942 W SearchServiceCore: Abort, client detached.
+11-07 01:06:37.536  1149  1319 W BpBinder: Large outgoing transaction of 408000 bytes, interface descriptor , code 4
+11-07 01:06:37.544  1324  1333 W .apps.wellbeing: Suspending all threads took: 5.598ms
+11-07 01:06:37.553  1769  2102 I BugleRcsProvisioning: BugleSystemBindingManager: onBootComplete
+11-07 01:06:37.558  1769  2104 W BugleRcsEngine: Unable to send RCS extension log [CONTEXT thread_id=50 ]
+11-07 01:06:37.559   644  1774 W JobScheduler: Job didn't exist in JobStore: f97a685 {androidx.work.systemjobscheduler} #u0a137/1117 @androidx.work.systemjobscheduler@com.google.android.apps.messaging/androidx.work.impl.background.systemjob.SystemJobService
+11-07 01:06:37.560  1769  2740 I ProviderInstaller: Installed default security provider GmsCore_OpenSSL
+11-07 01:06:37.560  1769  2981 W .apps.messaging: Long monitor contention with owner Blocking Thread #8 (2740) at void chfw.a(android.content.Context)(PG:150) waiters=0 in void chfw.a(android.content.Context) for 684ms
+11-07 01:06:37.591  1769  2740 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=67 ]
+11-07 01:06:37.592  1769  2116 I BugleRcsEngine: SystemBinding enabled: true [CONTEXT log_prefix="SystemBindingManager" thread_id=52 ]
+11-07 01:06:37.593  1769  2104 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=50 ]
+11-07 01:06:37.597  1769  2726 I BugleContacts: Enqueueing periodic contacts import work.
+11-07 01:06:37.598  1769  2363 D PhFileGroupPop: Added file groups smart_suggestion_reranker_models
+11-07 01:06:37.599  1769  2363 D PhFileGroupPop: Added file groups supersort_us_grammars
+11-07 01:06:37.600  1769  2363 D PhFileGroupPop: Added file groups nudge
+11-07 01:06:37.600  1769  2363 D PhFileGroupPop: Added file groups calendar_appointment_grammar
+11-07 01:06:37.601  1769  2363 D PhFileGroupPop: Added file groups birthday_suggestion
+11-07 01:06:37.604  1769  2079 I BugleRcsEngine: System Binding updated [CONTEXT thread_id=46 ]
+11-07 01:06:37.614  1324  1333 I .apps.wellbeing: Background concurrent mark compact GC freed 3401KB AllocSpace bytes, 0(0B) LOS objects, 49% free, 4785KB/9571KB, paused 6.541ms,1.166ms total 121.695ms
+11-07 01:06:37.618  1324  1335 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/YouTube/YouTube.apk' with 1 weak references
+11-07 01:06:37.619  1324  1335 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/overlay/DisplayCutoutEmulationCorner/DisplayCutoutEmulationCornerOverlay.apk' with 1 weak references
+11-07 01:06:37.619  1324  1335 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.extservices/priv-app/GoogleExtServices@350820300/GoogleExtServices.apk' with 1 weak references
+11-07 01:06:37.620  1324  1335 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/overlay/DisplayCutoutEmulationDouble/DisplayCutoutEmulationDoubleOverlay.apk' with 1 weak references
+11-07 01:06:37.620  1324  1335 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/TelephonyProvider/TelephonyProvider.apk' with 1 weak references
+11-07 01:06:37.620  1324  1335 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/product/overlay/TelephonyProvider__sdk_gphone64_x86_64__auto_generated_rro_product.apk' with 1 weak references
+11-07 01:06:37.621  1324  1335 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/DynamicSystemInstallationService/DynamicSystemInstallationService.apk' with 1 weak references
+11-07 01:06:37.622  1324  1335 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~g_49fF5u1CWg68Q3WzNU5g==/io.appium.settings-Bp6f1l8m1erMcX-fq6HY6Q==/base.apk' with 1 weak references
+11-07 01:06:37.622  1324  1335 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/Velvet/Velvet.apk' with 1 weak references
+11-07 01:06:37.623  1324  1335 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/CalendarProvider/CalendarProvider.apk' with 1 weak references
+11-07 01:06:37.623  1324  1335 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/GoogleOneTimeInitializer/GoogleOneTimeInitializer.apk' with 1 weak references
+11-07 01:06:37.623  1324  1335 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/GoogleExtShared/GoogleExtShared.apk' with 1 weak references
+11-07 01:06:37.624  1324  1335 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/ExternalStorageProvider/ExternalStorageProvider.apk' with 1 weak references
+11-07 01:06:37.624  1324  1335 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/HTMLViewer/HTMLViewer.apk' with 1 weak references
+11-07 01:06:37.624  1324  1335 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/CompanionDeviceManager/CompanionDeviceManager.apk' with 1 weak references
+11-07 01:06:37.625  1324  1335 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/DownloadProvider/DownloadProvider.apk' with 1 weak references
+11-07 01:06:37.625  1324  1335 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PrebuiltBugle/PrebuiltBugle.apk' with 1 weak references
+11-07 01:06:37.636  1769  2102 I BugleRcsProvisioning: RcsProvisioningTrigger: onBootComplete
+11-07 01:06:37.637  1769  2102 I BugleRcsProvisioning: RcsProvisioningTrigger: updateAvailabilityForAllSimsAsync : hint = BOOT_COMPLETE logTriggerEvent = true
+11-07 01:06:37.641  1149  1303 W ctxmgr  : [PendingIntentCompat] Timed out delivering to pendingIntent=PendingIntent{8a98287: android.os.BinderProxy@68d127}, package=com.google.android.apps.wellbeing, permission=null [CONTEXT service_id=47 ]
+11-07 01:06:37.642  1324  1335 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/SoundPickerPrebuilt/SoundPickerPrebuilt.apk' with 1 weak references
+11-07 01:06:37.643  1324  1335 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.mediaprovider/priv-app/MediaProviderGoogle@350820300/MediaProviderGoogle.apk' with 1 weak references
+11-07 01:06:37.643  1324  1335 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/SafetyHubPrebuilt/SafetyHubPrebuilt.apk' with 1 weak references
+11-07 01:06:37.643  1324  1335 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/DownloadProviderUi/DownloadProviderUi.apk' with 1 weak references
+11-07 01:06:37.643  1324  1335 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.wifi/app/OsuLoginGoogle@350820300/OsuLoginGoogle.apk' with 1 weak references
+11-07 01:06:37.643  1324  1335 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/PacProcessor/PacProcessor.apk' with 1 weak references
+11-07 01:06:37.643  1324  1335 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/SimAppDialog/SimAppDialog.apk' with 1 weak references
+11-07 01:06:37.644  1324  1335 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/product/overlay/SimAppDialog__sdk_gphone64_x86_64__auto_generated_rro_product.apk' with 1 weak references
+11-07 01:06:37.646  1149  1303 W ctxmgr  : [WorkManager] Long workInfo: pkg=com.google.android.gms, lbl=DispatcherDeliver, start=2026-11-07 01:06:32.555+0530, stop=2026-11-07 01:06:37.646+0530, durtn=5091ms [CONTEXT service_id=47 ]
+11-07 01:06:37.648  1769  2363 D PhFileGroupPop: Added file groups birthday_grammars
+11-07 01:06:37.653  1769  2726 I Bugle   : Stopped tracking messages [] for tracking purpose RCS_STILL_SENDING
+11-07 01:06:37.660  1769  2744 I ClearcutUploader: Mobalt: start uploading logs to Clearcut log_source = TURQUOISE_COBALT_SHUFFLER_INPUT_PROD
+11-07 01:06:37.661  1769  2102 I Bugle   : RcsAvailabilityUtilForProvisioningEngineV2: updateAvailabilityForAllSimsAsync, hint: BOOT_COMPLETE
+11-07 01:06:37.664  2592  2724 I tflite  : Created TensorFlow Lite XNNPACK delegate for CPU.
+11-07 01:06:37.665  2592  2724 W tflite  : Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#26 is a dynamic-sized tensor).
+11-07 01:06:37.687  1769  2102 I RcsAvailabilityUpdaterL: updateAvailabilityForAllSimsAsync: scheduling updateAvailabilityForRcsProvisioningId call. Hint: BOOT_COMPLETE, enableWelcomePopupWithoutGoogleTos: false, reshowSuccessPopup: false
+11-07 01:06:37.687  1769  2104 I MobaltPeriodicJobImpl: Mobalt: uploading logs to the Cobalt Server, got 0 observations
+11-07 01:06:37.689  1769  2740 I RcsAvailabilityUpdaterL: updateRcsAvailabilityForMultipleSims: hint: BOOT_COMPLETE, canReshowWelcomeMessage: false
+11-07 01:06:37.690  1769  2746 I RcsNotDeliveredMessageT: Refreshing notification for 0 not yet delivered RCS
+11-07 01:06:37.695  1769  2746 I MobaltPeriodicJobImpl: Mobalt: finish sending logs to the Cobalt Server successfully
+11-07 01:06:37.697  1769  2740 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=67 ]
+11-07 01:06:37.697  1769  2740 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=67 ]
+11-07 01:06:37.698  1769  2740 I RcsAvailabilityUpdaterL: RcsAvailability configuration availability and enabled status: simId: redacted-pii:sim_id[chars:20,last3:897], SipConnectionType: DUAL_REG, isConfigurationAvailableAndEnabled: false
+11-07 01:06:37.699  1769  2740 I BugleRcsEngine: Using config server URL from biuf [CONTEXT log_prefix="ProvisioningServerUtil" thread_id=67 ]
+11-07 01:06:37.702  1548  1548 I BgTaskExecutorImpl: (REDACTED) Starting %s background task %s.
+11-07 01:06:37.713  1769  2740 W BugleRcsProvisioning: Failed to get RCS configuration from the cached provider, configuration is empty.
+11-07 01:06:37.713  1769  2740 W BugleRcsProvisioning: dncp: FULL
+11-07 01:06:37.713  1769  2740 W BugleRcsProvisioning: 	at afzl.c(PG:130)
+11-07 01:06:37.713  1769  2740 W BugleRcsProvisioning: 	at afzl.f(PG:13)
+11-07 01:06:37.713  1769  2740 W BugleRcsProvisioning: 	at afwq.a(PG:9)
+11-07 01:06:37.713  1769  2740 W BugleRcsProvisioning: 	at bluy.apply(PG:125)
+11-07 01:06:37.713  1769  2740 W BugleRcsProvisioning: 	at j$.util.Optional.map(SourceFile:17)
+11-07 01:06:37.713  1769  2740 W BugleRcsProvisioning: 	at blve.s(PG:255)
+11-07 01:06:37.713  1769  2740 W BugleRcsProvisioning: 	at blve.o(PG:58)
+11-07 01:06:37.713  1769  2740 W BugleRcsProvisioning: 	at bluo.run(PG:6)
+11-07 01:06:37.713  1769  2740 W BugleRcsProvisioning: 	at dkqk.run(PG:21)
+11-07 01:06:37.713  1769  2740 W BugleRcsProvisioning: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:487)
+11-07 01:06:37.713  1769  2740 W BugleRcsProvisioning: 	at dqsy.a(PG:3)
+11-07 01:06:37.713  1769  2740 W BugleRcsProvisioning: 	at dqrv.run(PG:21)
+11-07 01:06:37.713  1769  2740 W BugleRcsProvisioning: 	at dqsz.run(PG:5)
+11-07 01:06:37.713  1769  2740 W BugleRcsProvisioning: 	at crzm.run(PG:3)
+11-07 01:06:37.713  1769  2740 W BugleRcsProvisioning: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-07 01:06:37.713  1769  2740 W BugleRcsProvisioning: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-07 01:06:37.713  1769  2740 W BugleRcsProvisioning: 	at cryq.run(PG:6)
+11-07 01:06:37.713  1769  2740 W BugleRcsProvisioning: 	at java.lang.Thread.run(Thread.java:1012)
+11-07 01:06:37.713  1769  2740 W BugleRcsProvisioning: 	at csaw.run(PG:64)
+11-07 01:06:37.715  1769  2740 I RcsAvailabilityUpdaterL: RcsAvailability: Subscription Id: 1, simId: redacted-pii:sim_id[chars:20,last3:897], sipConnectionType: DUAL_REG, isRcsAvailable: false
+11-07 01:06:37.716  1769  2740 I RcsAvailabilityUpdaterL: updateAvailabilityForRcsProvisioningId. SimId: redacted-pii:sim_id[chars:20,last3:897], currentAvailability: 9, newAvailability: 10, hint: BOOT_COMPLETE
+11-07 01:06:37.720  1769  2740 I BugleRcsEngine: Receive onRcsAvailabilityUpdate, SIM = redacted-pii:sim_id[chars:20,last3:897], availability = RcsAvailability{mAvailability=CARRIER_SETUP_PENDING (Carrier RCS is not set up)} [CONTEXT log_prefix="RcsProvisioningManager" thread_id=67 ]
+11-07 01:06:37.721  1769  2104 W BugleRcs: getAvailableProvisioningIds: accessing uninitialized provisioning identities.
+11-07 01:06:37.721  1769  2104 W BugleRcs: dncp: FULL
+11-07 01:06:37.721  1769  2104 W BugleRcs: 	at cjmd.i(PG:53)
+11-07 01:06:37.721  1769  2104 W BugleRcs: 	at cjuu.a(PG:3)
+11-07 01:06:37.721  1769  2104 W BugleRcs: 	at cjux.a(PG:17)
+11-07 01:06:37.721  1769  2104 W BugleRcs: 	at cknu.run(PG:9)
+11-07 01:06:37.721  1769  2104 W BugleRcs: 	at dkqk.run(PG:21)
+11-07 01:06:37.721  1769  2104 W BugleRcs: 	at crzm.run(PG:3)
+11-07 01:06:37.721  1769  2104 W BugleRcs: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-07 01:06:37.721  1769  2104 W BugleRcs: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-07 01:06:37.721  1769  2104 W BugleRcs: 	at cryq.run(PG:6)
+11-07 01:06:37.721  1769  2104 W BugleRcs: 	at java.lang.Thread.run(Thread.java:1012)
+11-07 01:06:37.721  1769  2104 W BugleRcs: 	at csaw.run(PG:64)
+11-07 01:06:37.727  1769  2104 I BugleRcsEngine: CommonRcsProvisioningChangeListenerHandler.notifyListener : Notify RcsProvisioningChangeListener bjbz@45bcde2 onRcsProvisioningChange, SIM = redacted-pii:sim_id[chars:35,last3:97)], available rcs provisioning ids  =  [CONTEXT log_prefix="RcsProvisioningManager" thread_id=50 ]
+11-07 01:06:37.730  1769  2682 W BugleRcs: getAvailableProvisioningIds: accessing uninitialized provisioning identities.
+11-07 01:06:37.730  1769  2682 W BugleRcs: dncp: FULL
+11-07 01:06:37.730  1769  2682 W BugleRcs: 	at cjmd.i(PG:53)
+11-07 01:06:37.730  1769  2682 W BugleRcs: 	at cjvb.q(PG:169)
+11-07 01:06:37.730  1769  2682 W BugleRcs: 	at brts.a(PG:27)
+11-07 01:06:37.730  1769  2682 W BugleRcs: 	at brsg.b(PG:24)
+11-07 01:06:37.730  1769  2682 W BugleRcs: 	at brsg.a(PG:13)
+11-07 01:06:37.730  1769  2682 W BugleRcs: 	at efhn.a(PG:14)
+11-07 01:06:37.730  1769  2682 W BugleRcs: 	at eerl.a(PG:10)
+11-07 01:06:37.730  1769  2682 W BugleRcs: 	at dlmg.b(PG:84)
+11-07 01:06:37.730  1769  2682 W BugleRcs: 	at eegr.w(PG:11)
+11-07 01:06:37.730  1769  2682 W BugleRcs: 	at eerz.run(PG:109)
+11-07 01:06:37.730  1769  2682 W BugleRcs: 	at djfc.run(PG:3)
+11-07 01:06:37.730  1769  2682 W BugleRcs: 	at dkqk.run(PG:21)
+11-07 01:06:37.730  1769  2682 W BugleRcs: 	at crzm.run(PG:3)
+11-07 01:06:37.730  1769  2682 W BugleRcs: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-07 01:06:37.730  1769  2682 W BugleRcs: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-07 01:06:37.730  1769  2682 W BugleRcs: 	at cryq.run(PG:6)
+11-07 01:06:37.730  1769  2682 W BugleRcs: 	at java.lang.Thread.run(Thread.java:1012)
+11-07 01:06:37.730  1769  2682 W BugleRcs: 	at csaw.run(PG:64)
+11-07 01:06:37.737  1769  2739 I BugleRcsEngine: AvailabilityObserver.onUpdate : Notify RcsAvailabilityListener brtj@f0056ad onRcsAvailabilityUpdate, SIM = redacted-pii:sim_id[chars:20,last3:897], availability = 10 [CONTEXT log_prefix="RcsProvisioningManager" thread_id=66 ]
+11-07 01:06:37.744  1769  2682 I BugleTransport: Retrieved RCS available simIds: []
+11-07 01:06:37.757  1769  2744 I BugleTransport: Deregister all SIMs except for SIMs with subIds: [] from chat transport: SINGLE_REGISTRATION.
+11-07 01:06:37.758  1769  2104 I BugleTransport: Deregister all SIMs except for SIMs with subIds: [] from chat transport: DUAL_REGISTRATION.
+11-07 01:06:37.762  1769  2739 I BugleTransport: Deregister all SIMs except for SIMs with subIds: [] from chat transport: TACHYGRAM.
+11-07 01:06:37.763  1353  1813 I Icing   : Removing corpus key com.google.android.deskclock-internal.3p:Alarm_cross_device for package com.google.android.deskclock
+11-07 01:06:37.767  3022  3022 I berberis: Initialized Berberis (aarch64), version 0.2.3
+11-07 01:06:37.801  1769  2363 D PhFileGroupPop: Added file groups animated_emoji
+11-07 01:06:37.803  1149  1159 W .gms.persistent: Missing inline cache for fkeq aldi.b(android.content.Context, byte[], int[], java.lang.String[], int[], byte[][], com.google.android.gms.phenotype.ExperimentTokens[], boolean, java.lang.String[], java.lang.String, boolean, java.lang.String, double, czub, alcy)
+11-07 01:06:37.803  1149  1159 W .gms.persistent: Missing inline cache for fkeq aldi.b(android.content.Context, byte[], int[], java.lang.String[], int[], byte[][], com.google.android.gms.phenotype.ExperimentTokens[], boolean, java.lang.String[], java.lang.String, boolean, java.lang.String, double, czub, alcy)
+11-07 01:06:37.803  1149  1159 W .gms.persistent: Missing inline cache for fkeq aldi.b(android.content.Context, byte[], int[], java.lang.String[], int[], byte[][], com.google.android.gms.phenotype.ExperimentTokens[], boolean, java.lang.String[], java.lang.String, boolean, java.lang.String, double, czub, alcy)
+11-07 01:06:37.804  1548  1548 I BgTaskExecutorImpl: (REDACTED) Starting %s background task %s.
+11-07 01:06:37.804  1149  1159 W .gms.persistent: Missing inline cache for fkeq aldi.b(android.content.Context, byte[], int[], java.lang.String[], int[], byte[][], com.google.android.gms.phenotype.ExperimentTokens[], boolean, java.lang.String[], java.lang.String, boolean, java.lang.String, double, czub, alcy)
+11-07 01:06:37.804  1149  1159 W .gms.persistent: Missing inline cache for fkeq aldi.b(android.content.Context, byte[], int[], java.lang.String[], int[], byte[][], com.google.android.gms.phenotype.ExperimentTokens[], boolean, java.lang.String[], java.lang.String, boolean, java.lang.String, double, czub, alcy)
+11-07 01:06:37.804  1149  1159 W .gms.persistent: Missing inline cache for fkeq aldi.b(android.content.Context, byte[], int[], java.lang.String[], int[], byte[][], com.google.android.gms.phenotype.ExperimentTokens[], boolean, java.lang.String[], java.lang.String, boolean, java.lang.String, double, czub, alcy)
+11-07 01:06:37.804  1769  2363 D PhFileGroupPop: Added file groups voice_moods
+11-07 01:06:37.806  1769  2363 D PhFileGroupPop: Added file groups screen_effects
+11-07 01:06:37.807  1769  2363 D PhFileGroupPop: Added file groups screen_effect_suggestions
+11-07 01:06:37.808  1769  2363 D PhFileGroupPop: Added file groups selfie_gif_grammars
+11-07 01:06:37.808  1769  2363 D PhFileGroupPop: Added file groups spam_fm_templates
+11-07 01:06:37.813  1548  2250 I A       : (REDACTED) Attempting to cache the data for corpora %s.
+11-07 01:06:37.815  1769  1778 I .apps.messaging: Background concurrent mark compact GC freed 14MB AllocSpace bytes, 21(952KB) LOS objects, 49% free, 14MB/28MB, paused 6.767ms,3.957ms total 176.343ms
+11-07 01:06:37.824  1769  2092 I RcsClientLib: Connecting RcsEngineLifecycleServiceV2
+11-07 01:06:37.825  1769  2363 I RcsClientLib: Connecting RcsEngineLifecycleServiceV2
+11-07 01:06:37.828  1769  3041 I BugleRcsProvisioning: RcsProvisioningTrigger: onRcsAvailabilityUpdate : availability is updated to Carrier RCS is not set up, lastAvailabilityLocal is RCS is disabled due to SIM absent, simId hash = -6328418159303776093, simId = redacted-pii:sim_id[chars:20,last3:897], isPev3Enabled = true
+11-07 01:06:37.837  1769  2092 W RcsClientLib: No CS.apk RCS service found. Is RCS running in Bugle?
+11-07 01:06:37.838  1769  2363 W RcsClientLib: No CS.apk RCS service found. Is RCS running in Bugle?
+11-07 01:06:37.839  1769  2092 I RcsClientLib: shouldUseCarrierServicesJibeService: false, CarrierServices rcs service found: false
+11-07 01:06:37.853  1769  2363 I RcsClientLib: shouldUseCarrierServicesJibeService: false, CarrierServices rcs service found: false
+11-07 01:06:37.864  3022  3022 E .apps.safetyhub: Not starting debugger since process cannot load the jdwp agent.
+11-07 01:06:37.866  1548  2241 I A       : (REDACTED) Mobalt: start uploading logs to Clearcut log_source = %s
+11-07 01:06:37.869  3022  3022 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+11-07 01:06:37.871  1149  1149 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.clearcut.bootcount.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentBoundBrokerService }
+11-07 01:06:37.871  2592  3024 I tflite  : Replacing 301 out of 301 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 1 partitions for the whole graph.
+11-07 01:06:37.872  1769  2744 I GellerDatabaseImpl: Writing metadata key: _sync_timestamp_micros, corpus: GDD_BUGLE_EMOJIFY
+11-07 01:06:37.876   999  1005 W System  : A resource failed to call close. 
+11-07 01:06:37.880  1769  2363 I RcsClientLib: com.google.android.rcs.client.lifecycle.RcsEngineLifecycleServiceV2 connected
+11-07 01:06:37.882  1477  2067 I BugleRcsEngine: stopAllRcsTransportsExcept: ignoring stopping the RcsEngine. RcsEngine is still running [CONTEXT log_prefix="RcsEngineProxyImpl:[8d9e37d8-a7e0]" thread_id=53 ]
+11-07 01:06:37.884  1769  2726 I RcsClientLib: Disconnecting RcsEngineLifecycleServiceV2
+11-07 01:06:37.895  1769  2124 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.receiver.PhoneBootAndPackageReplacedReceiver@53a51a3
+11-07 01:06:37.895  1353  1813 I native  : I0000 00:00:1793993797.895920    1813 flash-index.cc:1533] Flash index sort hb 3 prefix-hits 6 -> 6 at 16.660ms
+11-07 01:06:37.903  3022  3022 D CompatChangeReporter: Compat change id reported: 242716250; UID 10129; state: ENABLED
+11-07 01:06:37.906  1769  3041 I BugleRcsEngine: getRcsProvisioningGoogleTosConfiguration # bnuv@5d5fcd, consentState = 0, ServerUpdateTime = 0 [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=95 ]
+11-07 01:06:37.910  1350  1860 I LauncherIconVisibilityInitializer: LauncherIconVisibilityInitializer.lambda$doUpdate$1():73 doUpdate() : Visible = false
+11-07 01:06:37.910  1769  2745 I RcsClientLib: com.google.android.rcs.client.lifecycle.RcsEngineLifecycleServiceV2 connected
+11-07 01:06:37.912  1548  2241 I A       : (REDACTED) Mobalt: uploading logs to the Cobalt Server, got %s observations
+11-07 01:06:37.915  1769  3041 I BugleRcsProvisioning: RcsProvisioningTrigger: Should not schedule Revoke Google Consent Task because both the consent types are empty in the Storage
+11-07 01:06:37.916  1769  2745 I BugleRcsProvisioning: RcsProvisioningTrigger: Did not schedule RevokeGoogleConsentTask
+11-07 01:06:37.917  1769  3041 I BugleRcsEngine: Receive onRcsAvailabilityUpdate, SIM = redacted-pii:sim_id[chars:20,last3:897], availability = RcsAvailability{mAvailability=CARRIER_SETUP_PENDING (Carrier RCS is not set up)} [CONTEXT log_prefix="RcsProvisioningManager" thread_id=95 ]
+11-07 01:06:37.917  1769  2102 W BugleRcs: getAvailableProvisioningIds: accessing uninitialized provisioning identities.
+11-07 01:06:37.917  1769  2102 W BugleRcs: dncp: FULL
+11-07 01:06:37.917  1769  2102 W BugleRcs: 	at cjmd.i(PG:53)
+11-07 01:06:37.917  1769  2102 W BugleRcs: 	at cjuu.a(PG:3)
+11-07 01:06:37.917  1769  2102 W BugleRcs: 	at cjux.a(PG:17)
+11-07 01:06:37.917  1769  2102 W BugleRcs: 	at cknu.run(PG:9)
+11-07 01:06:37.917  1769  2102 W BugleRcs: 	at dkqk.run(PG:21)
+11-07 01:06:37.917  1769  2102 W BugleRcs: 	at crzm.run(PG:3)
+11-07 01:06:37.917  1769  2102 W BugleRcs: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-07 01:06:37.917  1769  2102 W BugleRcs: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-07 01:06:37.917  1769  2102 W BugleRcs: 	at cryq.run(PG:6)
+11-07 01:06:37.917  1769  2102 W BugleRcs: 	at java.lang.Thread.run(Thread.java:1012)
+11-07 01:06:37.917  1769  2102 W BugleRcs: 	at csaw.run(PG:64)
+11-07 01:06:37.918  1769  3041 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=95 ]
+11-07 01:06:37.918  1769  2102 I BugleRcsEngine: CommonRcsProvisioningChangeListenerHandler.notifyListener : Notify RcsProvisioningChangeListener bjbz@45bcde2 onRcsProvisioningChange, SIM = redacted-pii:sim_id[chars:35,last3:97)], available rcs provisioning ids  =  [CONTEXT log_prefix="RcsProvisioningManager" thread_id=49 ]
+11-07 01:06:37.919  1769  3041 I BugleRcsProvisioning: RcsProvisioningTrigger: onRcsAvailabilityUpdate : isPreviousDisabled = true, isCurrentDisabled = false, config[simId:redacted-pii:sim_id[chars:20,last3:897]] = [Type: 0, Version: 0, Validity: 0, Last updated: 0, Remaining validity: 0, Reconfiguration requested: false, Messaging technology: SIMPLE_IM, rcsVolteSingleRegistration: false], hasToken: false, isValidAndUpdated: false
+11-07 01:06:37.919  1769  3041 I BugleRcsProvisioning: RcsProvisioningTrigger: Schedule KEEP provision when trigger configuration not valid
+11-07 01:06:37.920  1769  3041 I BugleRcsProvisioning: scheduleProvisioningForRcsProvisioningId rcsProvisioningId: redacted-pii:sim_id[chars:35,last3:97)], provisioningTriggerEvent: 1
+11-07 01:06:37.920  1769  2745 I afym    : scheduleProvisioningForRcsProvisioningId: rcsProvisioningId: SimId(idValue=89860318640220133897) operationTrigger: 6 bugle trigger event: 1
+11-07 01:06:37.922  1769  2745 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=71 ]
+11-07 01:06:37.922  1769  2745 I afym    : RcsProvisioningTrigger: DR is active, initializing DR provisioning. DUAL_REG
+11-07 01:06:37.923  1769  3041 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=95 ]
+11-07 01:06:37.927  1769  3041 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=95 ]
+11-07 01:06:37.928  3022  3022 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/org.apache.http.legacy.jar
+11-07 01:06:37.928  3022  3022 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+11-07 01:06:37.928  1769  3041 I BugleRcsEngine: Scheduled provisioning task with 0 seconds delay, KEEP policy, trigger is BOOT_COMPLETE, workerId is 024f8e0d-8b95-4961-a3f9-b7d50fa21114, simId is redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="provisioning" thread_id=95 ]
+11-07 01:06:37.929  3022  3022 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+11-07 01:06:37.934  1477  2067 I BugleRcsEngine: stopAllRcsTransportsExcept: ignoring stopping the RcsEngine. RcsEngine is still running [CONTEXT log_prefix="RcsEngineProxyImpl:[8d9e37d8-a7e0]" thread_id=53 ]
+11-07 01:06:37.934  1769  2746 I FirebaseApp: Device unlocked: initializing all Firebase APIs for app [DEFAULT]
+11-07 01:06:37.934  1769  2517 I RcsClientLib: Disconnecting RcsEngineLifecycleServiceV2
+11-07 01:06:37.937  1548  1553 I earchbox:search: Compiler allocated 4570KB to compile java.lang.Object com.google.android.apps.gsa.binaries.velvet.app.ahh.a()
+11-07 01:06:37.939  1548  2241 I A       : Mobalt: finish sending logs to the Cobalt Server successfully
+11-07 01:06:37.950  1149  1278 I NetworkScheduler.Stats: HousekeepingTask com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:0 result: 2 elapsed_millis: 342 uptime_millis: 342 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-07 01:06:37.951  1149  1278 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.scheduler.standalone.housekeeping.HousekeepingTrainTaskService started execution. cause:5 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-07 01:06:37.951  1149  1278 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.location.geofencer.service.RandomDailyTaskSchedulerService started execution. cause:5 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-07 01:06:37.951  1769  2363 I BugleRcsEngine: AvailabilityObserver.onUpdate : Notify RcsAvailabilityListener brtj@f0056ad onRcsAvailabilityUpdate, SIM = redacted-pii:sim_id[chars:20,last3:897], availability = 10 [CONTEXT log_prefix="RcsProvisioningManager" thread_id=54 ]
+11-07 01:06:37.951  1149  1278 I NetworkScheduler.Stats: HousekeepingTask com.google.android.gms/com.google.android.location.geofencer.service.RandomDailyTaskSchedulerService finished executing. cause:0 result: 1 elapsed_millis: 111 uptime_millis: 111 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-07 01:06:37.958  1769  1986 I Bugle   : CountryCodeDetector: updateSmsNetworkCountry from default subscription network country. detected country: us
+11-07 01:06:37.962  1548  1719 I A       : Successfully scheduled next onetime workers
+11-07 01:06:37.963  1548  1751 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=463acc5b-1c86-46f1-b3f8-4cbdc6312dd8, tags={ com.google.apps.tiktok.contrib.work.TikTokListenableWorker,TikTokWorker#com.google.android.libraries.mdi.download.workmanager.tiktok.TikTokPeriodicWorker } ]
+11-07 01:06:37.965  1769  2363 W BugleRcs: getAvailableProvisioningIds: accessing uninitialized provisioning identities.
+11-07 01:06:37.965  1769  2363 W BugleRcs: dncp: FULL
+11-07 01:06:37.965  1769  2363 W BugleRcs: 	at cjmd.i(PG:53)
+11-07 01:06:37.965  1769  2363 W BugleRcs: 	at cjvb.q(PG:169)
+11-07 01:06:37.965  1769  2363 W BugleRcs: 	at brts.a(PG:27)
+11-07 01:06:37.965  1769  2363 W BugleRcs: 	at brsg.b(PG:24)
+11-07 01:06:37.965  1769  2363 W BugleRcs: 	at brsg.a(PG:13)
+11-07 01:06:37.965  1769  2363 W BugleRcs: 	at efhn.a(PG:14)
+11-07 01:06:37.965  1769  2363 W BugleRcs: 	at eerl.a(PG:10)
+11-07 01:06:37.965  1769  2363 W BugleRcs: 	at dlmg.b(PG:84)
+11-07 01:06:37.965  1769  2363 W BugleRcs: 	at eegr.w(PG:11)
+11-07 01:06:37.965  1769  2363 W BugleRcs: 	at eerz.run(PG:109)
+11-07 01:06:37.965  1769  2363 W BugleRcs: 	at djfc.run(PG:3)
+11-07 01:06:37.965  1769  2363 W BugleRcs: 	at dkqk.run(PG:21)
+11-07 01:06:37.965  1769  2363 W BugleRcs: 	at crzm.run(PG:3)
+11-07 01:06:37.965  1769  2363 W BugleRcs: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-07 01:06:37.965  1769  2363 W BugleRcs: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-07 01:06:37.965  1769  2363 W BugleRcs: 	at cryq.run(PG:6)
+11-07 01:06:37.965  1769  2363 W BugleRcs: 	at java.lang.Thread.run(Thread.java:1012)
+11-07 01:06:37.965  1769  2363 W BugleRcs: 	at csaw.run(PG:64)
+11-07 01:06:37.965  1769  2363 I BugleTransport: Retrieved RCS available simIds: []
+11-07 01:06:37.970  1769  3041 I BugleTransport: Deregister all SIMs except for SIMs with subIds: [] from chat transport: SINGLE_REGISTRATION.
+11-07 01:06:37.972  1769  2092 I BugleTransport: Deregister all SIMs except for SIMs with subIds: [] from chat transport: TACHYGRAM.
+11-07 01:06:37.972  1769  2363 I RcsClientLib: Connecting RcsEngineLifecycleServiceV2
+11-07 01:06:37.975  1769  2363 W RcsClientLib: No CS.apk RCS service found. Is RCS running in Bugle?
+11-07 01:06:37.979  1404  3061 I AiAiCaptions: TtsSynthesizerImpl::handleRequestSuccess(): requestId: requestId: 1
+11-07 01:06:37.981  1769  2363 I RcsClientLib: shouldUseCarrierServicesJibeService: false, CarrierServices rcs service found: false
+11-07 01:06:37.984  1769  2102 I BugleTransport: Deregister all SIMs except for SIMs with subIds: [] from chat transport: DUAL_REGISTRATION.
+11-07 01:06:37.986  1769  2092 I RcsClientLib: Connecting RcsEngineLifecycleServiceV2
+11-07 01:06:37.987  1548  1548 I BgTaskExecutorImpl: (REDACTED) Starting %s background task %s.
+11-07 01:06:37.989  1769  2092 W RcsClientLib: No CS.apk RCS service found. Is RCS running in Bugle?
+11-07 01:06:37.990  1149  1159 W .gms.persistent: Missing inline cache for void aldi.c(android.content.Context, fkgb)
+11-07 01:06:37.990  1149  1159 W .gms.persistent: Missing inline cache for void aldi.c(android.content.Context, fkgb)
+11-07 01:06:37.990  1149  1159 W .gms.persistent: Missing inline cache for void aldi.c(android.content.Context, fkgb)
+11-07 01:06:37.990  1149  1159 W .gms.persistent: Missing inline cache for void aldi.c(android.content.Context, fkgb)
+11-07 01:06:37.990  1149  1159 W .gms.persistent: Missing inline cache for void aldi.c(android.content.Context, fkgb)
+11-07 01:06:37.991  1149  1159 W .gms.persistent: Missing inline cache for void aldi.c(android.content.Context, fkgb)
+11-07 01:06:37.991  1149  1159 W .gms.persistent: Missing inline cache for void aldi.c(android.content.Context, fkgb)
+11-07 01:06:37.991  1149  1159 W .gms.persistent: Missing inline cache for void aldi.c(android.content.Context, fkgb)
+11-07 01:06:37.994  1309  1309 D CompatChangeReporter: Compat change id reported: 311402873; UID 10195; state: ENABLED
+11-07 01:06:37.995  1548  2241 I A       : (REDACTED) Attempting to cache the data for corpora %s.
+11-07 01:06:37.997  1309  1309 D CompatChangeReporter: Compat change id reported: 323349338; UID 10195; state: ENABLED
+11-07 01:06:37.998   644  1774 D CompatChangeReporter: Compat change id reported: 311402873; UID 10195; state: ENABLED
+11-07 01:06:37.998   644  1774 D CompatChangeReporter: Compat change id reported: 323349338; UID 10195; state: ENABLED
+11-07 01:06:37.998  1769  2092 I RcsClientLib: shouldUseCarrierServicesJibeService: false, CarrierServices rcs service found: false
+11-07 01:06:38.000  1769  2102 I RcsClientLib: com.google.android.rcs.client.lifecycle.RcsEngineLifecycleServiceV2 connected
+11-07 01:06:38.002  1477  2067 I BugleRcsEngine: stopAllRcsTransportsExcept: ignoring stopping the RcsEngine. RcsEngine is still running [CONTEXT log_prefix="RcsEngineProxyImpl:[8d9e37d8-a7e0]" thread_id=53 ]
+11-07 01:06:38.003  1149  1278 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:2 exec_start_elapsed_seconds: 39 [CONTEXT service_id=218 ]
+11-07 01:06:38.003  1769  2726 I RcsClientLib: Disconnecting RcsEngineLifecycleServiceV2
+11-07 01:06:38.010  1149  1303 I NetworkScheduler.Stats: HousekeepingTask com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:0 result: 2 elapsed_millis: 27 uptime_millis: 27 exec_start_elapsed_seconds: 39 [CONTEXT service_id=218 ]
+11-07 01:06:38.011  1769  2092 I RcsClientLib: com.google.android.rcs.client.lifecycle.RcsEngineLifecycleServiceV2 connected
+11-07 01:06:38.013  1477  2067 I BugleRcsEngine: stopAllRcsTransportsExcept: ignoring stopping the RcsEngine. RcsEngine is still running [CONTEXT log_prefix="RcsEngineProxyImpl:[8d9e37d8-a7e0]" thread_id=53 ]
+11-07 01:06:38.013  1769  2726 I RcsClientLib: Disconnecting RcsEngineLifecycleServiceV2
+11-07 01:06:38.033  1548  1548 W TaskServiceHelper: (REDACTED) Not enough time has passed between starts of two %s periodic tasks.
+11-07 01:06:38.115  1548  1553 I earchbox:search: Compiler allocated 5652KB to compile java.lang.Object com.google.android.apps.gsa.binaries.velvet.app.arq.f()
+11-07 01:06:38.159   644   807 D InetDiagMessage: Destroyed 1 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+11-07 01:06:38.161   644   807 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+11-07 01:06:38.161   644   807 D InetDiagMessage: Destroyed live tcp sockets for uids={10167} in 3ms
+11-07 01:06:38.162  1580  1999 W SQLiteLog: (28) double-quoted string literal: "9a84e1d6-d332-41fc-9f43-458e4a66d298"
+11-07 01:06:38.162  1580  1999 W SQLiteLog: (28) double-quoted string literal: "016952c7-9b51-4f75-b407-c316d4228834"
+11-07 01:06:38.162   644   807 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+11-07 01:06:38.162  1580  1999 W SQLiteLog: (28) double-quoted string literal: "42a341f0-8103-4d37-97c9-c2f158d44711"
+11-07 01:06:38.162  1580  1999 W SQLiteLog: (28) double-quoted string literal: "43bbec5f-87cd-4714-8a26-ae4ffe2f4cf1"
+11-07 01:06:38.163   644   807 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+11-07 01:06:38.163  1580  1999 W SQLiteLog: (28) double-quoted string literal: "854127da-be6d-4e3c-837c-f5eb0af47018"
+11-07 01:06:38.163  1580  1999 W SQLiteLog: (28) double-quoted string literal: "410e38a8-4a8d-40b0-85c2-e4d93d489830"
+11-07 01:06:38.163   644   807 D InetDiagMessage: Destroyed live tcp sockets for uids={20167} in 1ms
+11-07 01:06:38.163  1580  1999 W SQLiteLog: (28) double-quoted string literal: "72d97976-73ea-4110-9495-c4726c2cedd7"
+11-07 01:06:38.163  1580  1999 W SQLiteLog: (28) double-quoted string literal: "26ed4684-c854-4e83-a137-95245da6dce6"
+11-07 01:06:38.163  1580  1999 W SQLiteLog: (28) double-quoted string literal: "aed13cd9-4a0b-4683-97fc-8f9986e43184"
+11-07 01:06:38.164  1580  1999 W SQLiteLog: (28) double-quoted string literal: "a588c19c-2058-4341-8dc0-39f121979ee1"
+11-07 01:06:38.164  1580  1999 W SQLiteLog: (28) double-quoted string literal: "5ce47da1-d1e0-42cd-b0ac-6e123092a83c"
+11-07 01:06:38.164  1580  1999 W SQLiteLog: (28) double-quoted string literal: "b7023d05-6034-49ed-a4ea-400f61dd1a3e"
+11-07 01:06:38.164  1580  1999 W SQLiteLog: (28) double-quoted string literal: "c5cfea2a-d211-40e3-ba07-13dd6e0f0a38"
+11-07 01:06:38.164  1580  1999 W SQLiteLog: (28) double-quoted string literal: "e39bcebf-04c6-402a-a46b-7a00055e02e3"
+11-07 01:06:38.164  1580  1999 W SQLiteLog: (28) double-quoted string literal: "af820f70-7443-430d-bec3-5600759caae4"
+11-07 01:06:38.164  1580  1999 W SQLiteLog: (28) double-quoted string literal: "a8815aee-d5e4-4415-a976-96429afba786"
+11-07 01:06:38.165  1580  1999 W SQLiteLog: (28) double-quoted string literal: "2e02e806-8023-40b8-83e9-c00f831c76b4"
+11-07 01:06:38.166  1769  1986 I BugleDataModel: ExpireWapPushSiMessageAction: no WAP Push SI messages.
+11-07 01:06:38.168   644  2167 D TextToSpeechManagerPerUserService: Unbinding TTS engine: com.google.android.tts. Reason: client disconnection request
+11-07 01:06:38.168  1404  2765 I AiAiCaptions: TtsLangFetcherImpl::fetch(). Fetching 1 lang packs is finished. Failures count: 0
+11-07 01:06:38.177   644   644 W TextToSpeechManagerPerUserService: Disconnected from TTS engine
+11-07 01:06:38.177   644   644 W ServiceConnector.Impl: mayInterruptIfRunning not supported - ignoring
+11-07 01:06:38.181  1404  1416 I TextToSpeech: Disconnected from TTS engine
+11-07 01:06:38.185  1769  2744 I GellerDatabaseImpl: Writing metadata key: _sync_token, corpus: GDD_BUGLE_EMOJIFY
+11-07 01:06:38.193  1353  1353 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.stats.FeatureLoggingTask.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-07 01:06:38.193  1353  1353 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.stats.FeatureLoggingTask.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-07 01:06:38.196   430   430 I netd    : tetherGetStats() -> {[]} <1.74ms>

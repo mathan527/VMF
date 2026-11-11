@@ -1,0 +1,477 @@
+--------- beginning of main
+11-07 01:16:18.490   922  3276 D android.hardware.gnss-service.ranchu: Gnss:onGnssLocationCb:311
+11-07 01:16:18.490   922  3276 D android.hardware.gnss-service.ranchu: Gnss:onGnssLocationCb:321
+11-07 01:16:18.490   922  3276 D android.hardware.gnss-service.ranchu: GnssHwListener:consume:87 sz=64
+11-07 01:16:18.492   922  3276 D android.hardware.gnss-service.ranchu: GnssHwListener:consume:87 sz=64
+11-07 01:16:18.492   922  3276 D android.hardware.gnss-service.ranchu: Gnss:onGnssLocationCb:311
+11-07 01:16:18.492   922  3276 D android.hardware.gnss-service.ranchu: Gnss:onGnssLocationCb:321
+11-07 01:16:18.540  1091  1954 W GlsClientGrpc: Voilatile gRPC failure INVALID_ARGUMENT: Application credential header not valid. Please fix the client to pass a valid application credential header. [CONTEXT service_id=6 ]
+11-07 01:16:18.540  1091  1954 W GlsClientGrpc: gbzz: INVALID_ARGUMENT: Application credential header not valid. Please fix the client to pass a valid application credential header.
+11-07 01:16:18.540  1091  1954 W GlsClientGrpc: 	at gbzy.h(:com.google.android.gms@242335041@24.23.35 (190800-646585959):3)
+11-07 01:16:18.540  1091  1954 W GlsClientGrpc: 	at anbi.u(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+11-07 01:16:18.540  1091  1954 W GlsClientGrpc: 	at anbi.g(:com.google.android.gms@242335041@24.23.35 (190800-646585959):97)
+11-07 01:16:18.540  1091  1954 W GlsClientGrpc: 	at efkz.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):39)
+11-07 01:16:18.540  1091  1954 W GlsClientGrpc: 	at efkr.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):274)
+11-07 01:16:18.540  1091  1954 W GlsClientGrpc: 	at ehaz.call(:com.google.android.gms@242335041@24.23.35 (190800-646585959):1026)
+11-07 01:16:18.540  1091  1954 W GlsClientGrpc: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+11-07 01:16:18.540  1091  1954 W GlsClientGrpc: 	at angs.c(:com.google.android.gms@242335041@24.23.35 (190800-646585959):50)
+11-07 01:16:18.540  1091  1954 W GlsClientGrpc: 	at angs.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):76)
+11-07 01:16:18.540  1091  1954 W GlsClientGrpc: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-07 01:16:18.540  1091  1954 W GlsClientGrpc: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-07 01:16:18.540  1091  1954 W GlsClientGrpc: 	at anmg.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+11-07 01:16:18.540  1091  1954 W GlsClientGrpc: 	at java.lang.Thread.run(Thread.java:1012)
+11-07 01:16:18.542  1091  1988 I PlatformStatsUtil: canLog says can't log [CONTEXT service_id=254 ]
+11-07 01:16:18.573  1091  2031 I NetworkScheduler: ignoring stale queue check message
+11-07 01:16:18.576  1592  2788 E WorkSourceUtil: Could not find package: com.google.android.gms.westworld
+11-07 01:16:18.600  1091  1217 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.stats.PlatformStatsCollectorService started execution. cause:7 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-07 01:16:18.607  1091  1217 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.stats.PlatformStatsCollectorService finished executing. cause:7 result: 1 elapsed_millis: 73 uptime_millis: 73 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-07 01:16:18.627  2883  2891 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/Traceur/Traceur.apk' with 1 weak references
+11-07 01:16:18.628  2883  2891 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PrebuiltBugle/PrebuiltBugle.apk' with 1 weak references
+11-07 01:16:18.628  2883  2891 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/priv-app/NexusLauncherRelease/NexusLauncherRelease.apk' with 1 weak references
+11-07 01:16:18.629  2883  2891 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/SafetyHubPrebuilt/SafetyHubPrebuilt.apk' with 1 weak references
+11-07 01:16:18.629  2883  2891 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/WellbeingPrebuilt/WellbeingPrebuilt.apk' with 1 weak references
+11-07 01:16:18.630  2883  2891 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.cellbroadcast/priv-app/GoogleCellBroadcastApp@350820300/GoogleCellBroadcastApp.apk' with 1 weak references
+11-07 01:16:18.631  2883  2891 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/Velvet/Velvet.apk' with 1 weak references
+11-07 01:16:18.632  2883  2891 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.healthfitness/priv-app/HealthConnectControllerGoogle@350820300/HealthConnectControllerGoogle.apk' with 1 weak references
+11-07 01:16:18.632  2883  2891 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/LatinIMEGooglePrebuilt/LatinIMEGooglePrebuilt.apk' with 1 weak references
+11-07 01:16:18.633  2883  2891 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/talkback/talkback.apk' with 1 weak references
+11-07 01:16:18.634  2883  2891 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '/vendor/overlay/EmulatorTalkBackOverlay/EmulatorTalkBackOverlay.apk' with 1 weak references
+11-07 01:16:18.634  2883  2891 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.permission/priv-app/GooglePermissionController@350820360/GooglePermissionController.apk' with 1 weak references
+11-07 01:16:18.634  2883  2891 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '/product/overlay/GooglePermissionControllerOverlay.apk' with 1 weak references
+11-07 01:16:18.635  1410  1416 W putmethod.latin: Missing inline cache for int rto.a(java.lang.Object)
+11-07 01:16:18.655  1091  1990 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.google.android.gsf
+11-07 01:16:18.659  1592  1592 D BoundBrokerSvc: onBind: Intent { act=.cobalt.service.ObservationGenerationTask.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-07 01:16:18.659  1592  1592 D BoundBrokerSvc: Loading bound service for intent: Intent { act=.cobalt.service.ObservationGenerationTask.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-07 01:16:18.660  1091  1990 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.google.android.tag
+11-07 01:16:18.664  1091  1954 I NetworkScheduler.Stats: Task com.google.android.gms/.cobalt.service.ObservationGenerationTask started execution. cause:5 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-07 01:16:18.667  1592  1982 I CobaltLoggerImpl: Running periodic Cobalt Observation Generation task. [CONTEXT service_id=364 ]
+11-07 01:16:18.668  1592  1982 I CobaltLoggerImpl: Loading/parsing Cobalt registry from asset [CONTEXT service_id=364 ]
+11-07 01:16:18.669  1592  1982 I CobaltLoggerImpl: Loading Cobalt database from disk [CONTEXT service_id=364 ]
+11-07 01:16:18.673  1592  1982 I CobaltLoggerImpl: Start generating and sending logs to the Cobalt Server [CONTEXT service_id=364 ]
+11-07 01:16:18.675  1592  1982 W CobaltLoggerImpl: Skipping observation generation for project 200000-4, no project configuration found [CONTEXT service_id=364 ]
+11-07 01:16:18.685  1091  1990 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.google.android.apps.nexuslauncher
+11-07 01:16:18.711  1592  1982 I CobaltLoggerImpl: Generating observations for project 200007-1 [CONTEXT service_id=364 ]
+11-07 01:16:18.712  1732  1747 W .apps.messaging: Suspending all threads took: 5.165ms
+11-07 01:16:18.712  1592  1982 I CobaltLoggerImpl: Generating observations up to day index 20762 for metric: 200007-1-1 [CONTEXT service_id=364 ]
+11-07 01:16:18.713  1091  1990 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.google.android.feedback
+11-07 01:16:18.727  1592  1982 I CobaltLoggerImpl: Generating observations up to day index 20762 for metric: 200007-1-2 [CONTEXT service_id=364 ]
+11-07 01:16:18.731  1592  1982 I CobaltLoggerImpl: Generating observations for project 200008-1 [CONTEXT service_id=364 ]
+11-07 01:16:18.732  1592  1982 I CobaltLoggerImpl: Generating observations up to day index 20762 for metric: 200008-1-1 [CONTEXT service_id=364 ]
+11-07 01:16:18.736  1592  1982 I CobaltLoggerImpl: Encrypting 24 Observation Batches that need uploading [CONTEXT service_id=364 ]
+11-07 01:16:18.740  1732  1747 I .apps.messaging: Background concurrent mark compact GC freed 964KB AllocSpace bytes, 258(13MB) LOS objects, 49% free, 12MB/25MB, paused 5.488ms,7.702ms total 57.580ms
+11-07 01:16:18.802   922  3276 D android.hardware.gnss-service.ranchu: GnssHwListener:consume:87 sz=64
+11-07 01:16:18.807   922  3276 D android.hardware.gnss-service.ranchu: GnssHwListener:consume:87 sz=64
+11-07 01:16:18.808   922  3276 D android.hardware.gnss-service.ranchu: Gnss:onGnssLocationCb:311
+11-07 01:16:18.808   922  3276 D android.hardware.gnss-service.ranchu: Gnss:onGnssLocationCb:321
+11-07 01:16:18.854  1091  1095 W .gms.persistent: Missing inline cache for epbl ecbh.b(android.content.pm.PackageInfo)
+11-07 01:16:18.874  1592  1604 I gle.android.gms: Background concurrent mark compact GC freed 24MB AllocSpace bytes, 93(3548KB) LOS objects, 49% free, 23MB/46MB, paused 1.164ms,1.899ms total 109.016ms
+11-07 01:16:18.891  1592  1606 W gle.android.gms: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/priv-app/GoogleServicesFramework/GoogleServicesFramework.apk' with 1 weak references
+11-07 01:16:18.904  1592  1982 I CobaltLoggerImpl: Uploading to Clearcut an Envelope for 24 of the ObservationStore Batches [CONTEXT service_id=364 ]
+11-07 01:16:18.904  1592  1982 I CobaltLoggerImpl: start uploading logs to Clearcut log_source = PROD [CONTEXT service_id=364 ]
+11-07 01:16:18.906  1592  1982 I CobaltLoggerImpl: Finished sending logs to the Cobalt Server [CONTEXT service_id=364 ]
+11-07 01:16:18.914  1091  1217 I NetworkScheduler.Stats: Task com.google.android.gms/.cobalt.service.ObservationGenerationTask finished executing. cause:5 result: 1 elapsed_millis: 256 uptime_millis: 256 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-07 01:16:18.914  1592  1592 D BoundBrokerSvc: onUnbind: Intent { act=.cobalt.service.ObservationGenerationTask.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-07 01:16:18.920  1091  1990 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.google.android.gms.supervision
+11-07 01:16:18.921  1091  1095 W .gms.persistent: Missing inline cache for fowt anht.k(android.content.Context, boolean, int, java.lang.Integer, anic, eqdz)
+11-07 01:16:18.921  1091  1095 W .gms.persistent: Missing inline cache for fowt anht.k(android.content.Context, boolean, int, java.lang.Integer, anic, eqdz)
+11-07 01:16:18.921  1091  1095 W .gms.persistent: Missing inline cache for fowt anht.k(android.content.Context, boolean, int, java.lang.Integer, anic, eqdz)
+11-07 01:16:18.921  1091  1095 W .gms.persistent: Missing inline cache for fowt anht.k(android.content.Context, boolean, int, java.lang.Integer, anic, eqdz)
+11-07 01:16:18.921  1091  1095 W .gms.persistent: Missing inline cache for fowt anht.k(android.content.Context, boolean, int, java.lang.Integer, anic, eqdz)
+11-07 01:16:18.921  1091  1095 W .gms.persistent: Missing inline cache for fowt anht.k(android.content.Context, boolean, int, java.lang.Integer, anic, eqdz)
+11-07 01:16:18.921  1091  1095 W .gms.persistent: Missing inline cache for fowt anht.k(android.content.Context, boolean, int, java.lang.Integer, anic, eqdz)
+11-07 01:16:18.921  1091  1095 W .gms.persistent: Missing inline cache for fowt anht.k(android.content.Context, boolean, int, java.lang.Integer, anic, eqdz)
+11-07 01:16:18.921  1091  1095 W .gms.persistent: Missing inline cache for fowt anht.k(android.content.Context, boolean, int, java.lang.Integer, anic, eqdz)
+11-07 01:16:18.921  1091  1095 W .gms.persistent: Missing inline cache for fowt anht.k(android.content.Context, boolean, int, java.lang.Integer, anic, eqdz)
+11-07 01:16:18.921  1091  1095 W .gms.persistent: Missing inline cache for fowt anht.k(android.content.Context, boolean, int, java.lang.Integer, anic, eqdz)
+11-07 01:16:18.921  1091  1095 W .gms.persistent: Missing inline cache for fowt anht.k(android.content.Context, boolean, int, java.lang.Integer, anic, eqdz)
+11-07 01:16:18.921  1091  1095 W .gms.persistent: Missing inline cache for fowt anht.k(android.content.Context, boolean, int, java.lang.Integer, anic, eqdz)
+11-07 01:16:18.921  1091  1095 W .gms.persistent: Missing inline cache for fowt anht.k(android.content.Context, boolean, int, java.lang.Integer, anic, eqdz)
+11-07 01:16:18.921  1091  1095 W .gms.persistent: Missing inline cache for fowt anht.k(android.content.Context, boolean, int, java.lang.Integer, anic, eqdz)
+11-07 01:16:18.921  1091  1095 W .gms.persistent: Missing inline cache for fowt anht.k(android.content.Context, boolean, int, java.lang.Integer, anic, eqdz)
+11-07 01:16:18.921  1091  1095 W .gms.persistent: Missing inline cache for fowt anht.k(android.content.Context, boolean, int, java.lang.Integer, anic, eqdz)
+11-07 01:16:18.921  1091  1095 W .gms.persistent: Missing inline cache for fowt anht.k(android.content.Context, boolean, int, java.lang.Integer, anic, eqdz)
+11-07 01:16:18.922  1091  1095 W .gms.persistent: Missing inline cache for fowt anht.k(android.content.Context, boolean, int, java.lang.Integer, anic, eqdz)
+11-07 01:16:18.922  1091  1095 W .gms.persistent: Missing inline cache for fowt anht.k(android.content.Context, boolean, int, java.lang.Integer, anic, eqdz)
+11-07 01:16:18.922  1091  1095 W .gms.persistent: Missing inline cache for fowt anht.k(android.content.Context, boolean, int, java.lang.Integer, anic, eqdz)
+11-07 01:16:18.922  1091  1095 W .gms.persistent: Missing inline cache for fowt anht.k(android.content.Context, boolean, int, java.lang.Integer, anic, eqdz)
+11-07 01:16:18.922  1091  1095 W .gms.persistent: Missing inline cache for fowt anht.k(android.content.Context, boolean, int, java.lang.Integer, anic, eqdz)
+11-07 01:16:18.922  1091  1095 W .gms.persistent: Missing inline cache for fowt anht.k(android.content.Context, boolean, int, java.lang.Integer, anic, eqdz)
+11-07 01:16:18.922  1091  1095 W .gms.persistent: Missing inline cache for fowt anht.k(android.content.Context, boolean, int, java.lang.Integer, anic, eqdz)
+11-07 01:16:18.922  1091  1095 W .gms.persistent: Missing inline cache for fowt anht.k(android.content.Context, boolean, int, java.lang.Integer, anic, eqdz)
+11-07 01:16:18.922  1091  1095 W .gms.persistent: Missing inline cache for fowt anht.k(android.content.Context, boolean, int, java.lang.Integer, anic, eqdz)
+11-07 01:16:18.930  1091  1990 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.android.settings
+11-07 01:16:18.974  1592  1592 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.semanticlocationhistory.settings.LocationHistoryActiveProcessingService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-07 01:16:18.974  1592  1592 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.semanticlocationhistory.settings.LocationHistoryActiveProcessingService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-07 01:16:18.981  1091  1954 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.semanticlocationhistory.settings.LocationHistoryActiveProcessingService started execution. cause:5 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-07 01:16:18.994  1592  1592 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.semanticlocationhistory.settings.LocationHistoryActiveProcessingService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-07 01:16:18.997  1091  1217 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.semanticlocationhistory.settings.LocationHistoryActiveProcessingService finished executing. cause:5 result: 1 elapsed_millis: 21 uptime_millis: 21 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-07 01:16:18.999  1091  1096 I .gms.persistent: Background concurrent mark compact GC freed 20MB AllocSpace bytes, 13(636KB) LOS objects, 49% free, 17MB/35MB, paused 754us,1.095ms total 109.463ms
+11-07 01:16:19.008  1091  1990 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.google.android.apps.wallpaper
+11-07 01:16:19.025  1091  1098 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/talkback/talkback.apk' with 1 weak references
+11-07 01:16:19.026  1091  1098 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '/vendor/overlay/EmulatorTalkBackOverlay/EmulatorTalkBackOverlay.apk' with 1 weak references
+11-07 01:16:19.026  1091  1098 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PrebuiltDeskClockGoogle/PrebuiltDeskClockGoogle.apk' with 1 weak references
+11-07 01:16:19.027  1091  1098 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/DevicePersonalizationPrebuiltPixel2021-aiai_20240329.00_RC16/DevicePersonalizationPrebuiltPixel2021-aiai_20240329.00_RC16.apk' with 1 weak references
+11-07 01:16:19.027  1091  1098 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PrebuiltGmail/PrebuiltGmail.apk' with 1 weak references
+11-07 01:16:19.029  1091  1098 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/WellbeingPrebuilt/WellbeingPrebuilt.apk' with 1 weak references
+11-07 01:16:19.030  1091  1098 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/GoogleDialer/GoogleDialer.apk' with 1 weak references
+11-07 01:16:19.030  1091  1098 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Drive/Drive.apk' with 1 weak references
+11-07 01:16:19.032  1091  1098 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Maps/Maps.apk' with 1 weak references
+11-07 01:16:19.033  1091  1098 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/GoogleContacts/GoogleContacts.apk' with 1 weak references
+11-07 01:16:19.034  1091  1098 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~NEcS8JVSJeCGG9tZk-nT6A==/com.android.chrome-i8GzBMloAgk7-I8AlGgkWA==/Chrome.apk' with 1 weak references
+11-07 01:16:19.034  1091  1098 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~RiohQHo-s5U-segMeLK24w==/com.google.android.trichromelibrary_636771938-9T_5Nb78-FMJN8NL3YUB6w==/TrichromeLibrary.apk' with 1 weak references
+11-07 01:16:19.035  1091  1098 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/GoogleTTS/GoogleTTS.apk' with 1 weak references
+11-07 01:16:19.036  1091  1098 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PartnerSetupPrebuilt/PartnerSetupPrebuilt.apk' with 1 weak references
+11-07 01:16:19.036  1091  1098 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Photos/Photos.apk' with 1 weak references
+11-07 01:16:19.037  1091  1098 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/CalendarGooglePrebuilt/CalendarGooglePrebuilt.apk' with 1 weak references
+11-07 01:16:19.051  1592  1592 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.semanticlocationhistory.settings.SettingsSyncService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-07 01:16:19.051  1592  1592 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.semanticlocationhistory.settings.SettingsSyncService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-07 01:16:19.056  1091  1954 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.semanticlocationhistory.settings.SettingsSyncService started execution. cause:5 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-07 01:16:19.057  1091  1990 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.android.systemui
+11-07 01:16:19.078  1592  1962 I LocationHistory: [SettingsSync] Synced ODLH settings for all accounts. [CONTEXT service_id=314 ]
+11-07 01:16:19.081  1592  1592 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.semanticlocationhistory.settings.SettingsSyncService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-07 01:16:19.082  1091  1217 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.semanticlocationhistory.settings.SettingsSyncService finished executing. cause:5 result: 1 elapsed_millis: 31 uptime_millis: 31 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-07 01:16:19.116  1592  1592 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.semanticlocationhistory.settings.OdlhTombstonesCleanupJob.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-07 01:16:19.116  1592  1592 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.semanticlocationhistory.settings.OdlhTombstonesCleanupJob.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-07 01:16:19.120  1091  1954 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.semanticlocationhistory.settings.OdlhTombstonesCleanupJob started execution. cause:5 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-07 01:16:19.135  1592  1592 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.semanticlocationhistory.settings.OdlhTombstonesCleanupJob.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-07 01:16:19.136  1091  1988 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.semanticlocationhistory.settings.OdlhTombstonesCleanupJob finished executing. cause:5 result: 1 elapsed_millis: 19 uptime_millis: 19 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-07 01:16:19.143  3235  3235 I AccessibilityNodeInfoDumper: Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@35f53; boundsInParent: Rect(0, 0 - 916, 0); boundsInScreen: Rect(82, 343 - 998, 343); boundsInWindow: Rect(82, 343 - 998, 343); packageName: com.google.android.apps.nexuslauncher; className: android.view.ViewGroup; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; containerTitle: null; viewIdResName: com.google.android.apps.nexuslauncher:id/smartspace_subtitle_group; uniqueId: null; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; granularScrollingSupported: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]; isTextSelectable: false
+11-07 01:16:19.155  3235  3235 W AccessibilityNodeInfoDumper: Fetch time: 22ms
+--------- beginning of system
+11-07 01:16:19.162   637  1108 W MagnificationConnectionManager: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
+11-07 01:16:19.162   637  1108 D AccessibilityManagerService: restoreCurrentUserForTestAutomationIfNeededLocked(): ignoring because device doesn't support visible background users
+11-07 01:16:19.165  1463  2198 I AiAiEcho: Settings changed for uri: content://settings/secure/accessibility_enabled
+11-07 01:16:19.167  3235  3235 D AndroidRuntime: Shutting down VM
+11-07 01:16:19.169  1463  1879 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-07 01:16:19.169  1463  1879 I AiAiEcho: EchoTargets: 
+11-07 01:16:19.169  1463  1879 I AiAiEcho: Filtered by AiAi flag check: 
+11-07 01:16:19.169  1463  1879 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-07 01:16:19.169  1463  1879 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-07 01:16:19.169  1463  1879 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-07 01:16:19.169  1463  1879 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-07 01:16:19.170  1463  1879 I AiAiEcho: EchoTargets: 
+11-07 01:16:19.170  1463  1879 I AiAiEcho: Filtered by AiAi flag check: 
+11-07 01:16:19.170  1463  1879 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-07 01:16:19.170  1463  1879 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-07 01:16:19.172   890   976 W Looper  : Drained
+11-07 01:16:19.173  1463  1879 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-07 01:16:19.174  1463  1879 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-07 01:16:19.174  1463  1879 I AiAiEcho: EchoTargets: 
+11-07 01:16:19.174  1463  1879 I AiAiEcho: Filtered by AiAi flag check: 
+11-07 01:16:19.174  1463  1879 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-07 01:16:19.174  1463  1879 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-07 01:16:19.175  1463  1879 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-07 01:16:19.176  1463  1879 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface media_data_manager with targets# 0 (types=[])
+11-07 01:16:19.177  1463  1879 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+11-07 01:16:19.178  1463  1879 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+11-07 01:16:19.180  1550  1717 I A       : NGA enabled in interactor.
+11-07 01:16:19.181  1550  1717 I A       : (REDACTED) Nga state changed to %s
+11-07 01:16:19.181  1550  1717 I A       : (REDACTED) isTngActive=%s
+11-07 01:16:19.182   890   890 D SsMediaDataProvider: Forwarding Smartspace updates []
+11-07 01:16:19.182   890   890 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+11-07 01:16:19.184   637   637 D BatterySaverPolicy: accessibility changed to false, updating policy.
+11-07 01:16:19.185  1342  1342 D SsBaseTemplateCard: No text view can be set up
+11-07 01:16:19.186  1342  1342 D SsBaseTemplateCard: Passed-in item info is null
+11-07 01:16:19.186  1342  1342 D SsBaseTemplateCard: Passed-in item info is null
+11-07 01:16:19.186  1342  1342 D SsBaseTemplateCard: Passed-in item info is null
+11-07 01:16:19.186  1342  1342 I SsBaseTemplateCard: Secondary card pane is null
+11-07 01:16:19.189  1474  2760 I A       : Initializing all components
+11-07 01:16:19.189  1474  1786 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+11-07 01:16:19.192  1474  1785 I A       : (REDACTED) onIsEnabledChanged, isEnabled: %s
+11-07 01:16:19.192  1474  1785 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:16:19.192  1474  1785 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:16:19.192  1474  1785 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:16:19.192  1474  1786 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+11-07 01:16:19.193  1474  1785 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:16:19.193  1474  1785 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:16:19.193  1474  1785 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:16:19.193  1474  1785 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:16:19.193  1474  1785 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:16:19.193  1474  1785 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:16:19.193  1474  1785 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:16:19.193  1474  1785 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:16:19.193  1474  1785 I A       : (REDACTED) Setting session to type: %s
+11-07 01:16:19.196  1474  1765 I A       : (REDACTED) State changed: %s => %s by %s and %s with %s
+11-07 01:16:19.197  1474  1765 I A       : (REDACTED) Recognizer choice: (recognizer_type: %s, recognizer_mode: %s, choice_reason: %s)
+11-07 01:16:19.199  1474  1785 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:16:19.199  1474  1785 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:16:19.199  1474  1785 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:16:19.199  1474  1785 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:16:19.199  1474  1785 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:16:19.199  1474  1785 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:16:19.199  1474  1785 I A       : (REDACTED) setNavBarVisible: %s
+11-07 01:16:19.203  1474  1785 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:16:19.203  1474  1785 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:16:19.204  1474  1785 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:16:19.204  1474  1785 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:16:19.204  1474  1785 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:16:19.204  1474  1785 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:16:19.204  1474  1766 I A       : (REDACTED) stopListening(%s, %s)
+11-07 01:16:19.204  1342  1574 D EGL_emulation: app_time_stats: avg=138.30ms min=14.03ms max=1081.17ms count=9
+11-07 01:16:19.205  1474  1765 I A       : (REDACTED) onActiveStateChangeEvent: %s => %s
+11-07 01:16:19.206  1474  1765 I A       : (REDACTED) #onActiveStateChangeEvent, newState: %s, previousState: %s.
+11-07 01:16:19.206  1474  1785 I NgaEntryPointEventSendr: setupConnection
+11-07 01:16:19.212  1474  1785 I NgaEntryPointEventSendr: (REDACTED) State changed: %s => %s
+11-07 01:16:19.213  1474  1786 I A       : Initialize
+11-07 01:16:19.214  1474  1765 I A       : (REDACTED) on opa visibility changed %s
+11-07 01:16:19.214  1474  1765 I A       : Ignoring as prefetch was recently called
+11-07 01:16:19.216  1474  1785 I INV.SystemUI: showGestureNav
+11-07 01:16:19.216  1474  1785 I INV.SystemUI: (REDACTED) setUiHints(hints = %s)
+11-07 01:16:19.219  1474  1786 I A       : Successfully initialized all components
+11-07 01:16:19.221  1474  1785 I NgaEntryPointEventSendr: onServiceConnected
+11-07 01:16:19.221  1550  3000 I A       : Calling beginBinderSession().
+11-07 01:16:19.222  1474  1766 I INV.SystemUI: setUiHints: finished successfully
+11-07 01:16:19.228  1550  3000 I A       : beginBinderSession(): calling binder
+11-07 01:16:19.228  1474  1785 I NgaEntryPointEventSendr: (REDACTED) State changed: %s => %s
+11-07 01:16:19.231  1474  1785 I A       : (REDACTED) on opa visibility changed %s
+11-07 01:16:19.236  1474  1766 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+11-07 01:16:19.237  1592  1592 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.semanticlocationhistory.db.OdlhDatabaseCleanupJob.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-07 01:16:19.238  1592  1592 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.semanticlocationhistory.db.OdlhDatabaseCleanupJob.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-07 01:16:19.244   637  1967 W ActivityManager: Unable to start service Intent { cmp=com.google.android.apps.tachyon/.clientapi.ClientApiService } U=0: not found
+11-07 01:16:19.245  1091  2095 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.semanticlocationhistory.db.OdlhDatabaseCleanupJob started execution. cause:5 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-07 01:16:19.245  1732  2329 I Bugle   : BugleStartup: Registering SIM change receiver...
+11-07 01:16:19.246  1732  2329 I Bugle   : BugleStartup: Updating app config...
+11-07 01:16:19.251  1732  2329 I Bugle   : BugleStartup: Done with SIM change receiver & app config.
+11-07 01:16:19.253  1732  2329 I Bugle   : BugleStartup: Handling shared prefs upgrade & Load MMS Configuration...
+11-07 01:16:19.274  1732  3281 I BugleRcsEngine: do not delay first event [CONTEXT thread_id=110 ]
+11-07 01:16:19.274  1732  2329 I Bugle   : BugleStartup: Initializing RCS availability...
+11-07 01:16:19.279  1732  2300 I BugleSimStateTracker: Updating PhoneSimState
+11-07 01:16:19.281  1732  2329 I Bugle   : BugleStartup: Done with RCS availability.
+11-07 01:16:19.281  1474  1766 I NgaEntryPointEventSendr: (REDACTED) State changed: %s => %s (%s)
+11-07 01:16:19.282  1732  2329 I Bugle   : BugleStartup: Done initializing with enabled individual init failures.
+11-07 01:16:19.283  1550  1913 W A       : (REDACTED) %s task was not run. Callback from Service received after client was disposed.
+11-07 01:16:19.283  1550  1913 W A       : (REDACTED) %s task was not run. Callback from Service received after client was disposed.
+11-07 01:16:19.286  1550  1913 W A       : (REDACTED) %s task was not run. Callback from Service received after client was disposed.
+11-07 01:16:19.287  1550  2848 I PBSessionCacheImpl: (REDACTED) Deleted sessionId[%d] from persistence.
+11-07 01:16:19.291  1550  1913 W SearchServiceCore: Abort, client detached.
+11-07 01:16:19.292  1732  1821 I BugleRcsEngine: SIM state event delay enabled: attempts 0, maxAttempts 3, delaySeconds 90 MSIM delayseconds 90, effective delay seconds 90 [CONTEXT thread_id=44 ]
+11-07 01:16:19.292  1732  1821 I BugleRcsEngine: posted simEventProcessTask to handler with delay 90 [CONTEXT thread_id=44 ]
+11-07 01:16:19.292  1732  1821 I BugleRcsEngine: delay SIM event: android.intent.action.SIM_STATE_CHANGED, LOADED [CONTEXT log_prefix="(Sim)" thread_id=44 ]
+11-07 01:16:19.297  1732  2300 I BugleSimStateTracker: Is carrier config for identified carrier: true
+11-07 01:16:19.298  1732  2300 I BugleSimStateTracker: default call SIM: redacted-pii:sim_id[chars:20,last3:897], default sms SIM redacted-pii:sim_id[chars:20,last3:897]. default data SIM redacted-pii:sim_id[chars:20,last3:897].
+11-07 01:16:19.299  1732  3281 I BugleRcsEngine: Processing an intent [CONTEXT log_prefix="(Sim)" thread_id=110 ]
+11-07 01:16:19.299  1732  3281 I BugleRcsEngine: SIM state LOADED [CONTEXT log_prefix="(Sim)" thread_id=110 ]
+11-07 01:16:19.302  1732  1834 W Bugle   : BuglePhoneNumberUtils: canonicalizeMccMnc: invalid mccmnc. mcc: null, mnc: null
+11-07 01:16:19.312  1732  3281 I BugleRcsEngine: SIM changed: false. current id: redacted-pii:sim_id[chars:20,last3:897]; stored id: redacted-pii:sim_id[chars:20,last3:897]; isFiDevice: false; subId: 1; slotIndex: 0 [CONTEXT log_prefix="(Sim)" thread_id=110 ]
+11-07 01:16:19.316  1732  1821 I GnpSdk  : set is [].
+11-07 01:16:19.322  1732  2329 I BugleJobs: Starts to observe table change.
+11-07 01:16:19.324  1732  2300 I BugleSimStateTracker: Looking up Fi through package names.
+11-07 01:16:19.329  1732  1841 I BugleJobs: Icing index repair service is not scheduled. [CONTEXT class_name="IcingMonitoringUtils" ]
+11-07 01:16:19.335  1732  2195 I Forking : Starting analysis.
+11-07 01:16:19.336  1732  2195 I Misthreading: Starting analysis.
+11-07 01:16:19.337  1592  1592 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.semanticlocationhistory.db.OdlhDatabaseCleanupJob.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-07 01:16:19.337  1732  3281 I BugleRcsEngine: Skipping writing subId because this is main bugle process. [CONTEXT log_prefix="(Sim)" thread_id=110 ]
+11-07 01:16:19.337  1732  2300 I BugleSimStateTracker: allNewlyBuiltSimSubscriptionInfos (simId, loggableGuid): [(redacted-pii:sim_id[chars:20,last3:897], 6ce6f11d-513f-427a-9a31-845c706d64ce)]
+11-07 01:16:19.338  1091  1988 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.semanticlocationhistory.db.OdlhDatabaseCleanupJob finished executing. cause:5 result: 1 elapsed_millis: 107 uptime_millis: 107 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-07 01:16:19.339  1732  3281 I BugleRcsEngine: Updated SIM info: currentSimId: redacted-pii:sim_id[chars:20,last3:897]; imsi: redacted-pii:imsi[chars:15]; rawMsisdn: redacted-pii:phone_number[chars:12,last2:67]; formattedMsisdn: redacted-pii:phone_number[chars:12,last2:67]; mccmnc: redacted-pii:sim_operator[chars:6]; gid1: redacted-pii:sim_gid[chars:0]; isFiDevice: false; subId: 1; slotIndex: 0 [CONTEXT log_prefix="(Sim)" thread_id=110 ]
+11-07 01:16:19.339  1732  2300 I BugleSimStateTracker: Storing updatedSimSubscriptionInfos: [(redacted-pii:sim_id[chars:20,last3:897], 6ce6f11d-513f-427a-9a31-845c706d64ce)]
+11-07 01:16:19.344  1732  3281 I BugleRcsEngine: Handling SIM_LOADED in PhoneSimsStateUpdater. [CONTEXT log_prefix="(Sim)" thread_id=110 ]
+11-07 01:16:19.345  1732  2300 I BugleNetwork: FirebaseRegistrationStartupTask: Enabling Firebase component
+11-07 01:16:19.354  1732  2300 D nativeloader: Load /product/priv-app/PrebuiltBugle/PrebuiltBugle.apk!/lib/x86_64/libscytale_v2_jni.so using ns product-clns-8 from class loader (caller=/product/priv-app/PrebuiltBugle/PrebuiltBugle.apk!classes3.dex): ok
+11-07 01:16:19.356  1732  2300 W BugleEtouffee: E2eeStartupTask: No identities to perform prekey checking for.
+11-07 01:16:19.370  1091  1104 W WearableService: onGetService: Wear is not available on this device.
+11-07 01:16:19.376  1732  2300 D ProfileInstaller: Installing profile for com.google.android.apps.messaging
+11-07 01:16:19.380  1592  1592 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.semanticlocationhistory.edit.EditMergeJob.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-07 01:16:19.380  1592  1592 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.semanticlocationhistory.edit.EditMergeJob.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-07 01:16:19.380  1732  2300 I BugleRcsProvisioning: RcsProvisioningTrigger: Schedule provisioning on app startup
+11-07 01:16:19.381  1732  2300 I BugleRcsProvisioning: RcsProvisioningTrigger: updateAvailabilityForAllSimsAsync : hint = NO_HINT logTriggerEvent = false
+11-07 01:16:19.381  1732  2300 I Bugle   : RcsAvailabilityUtilForProvisioningEngineV2: updateAvailabilityForAllSimsAsync, hint: NO_HINT
+11-07 01:16:19.381  1732  2300 I RcsAvailabilityUpdaterL: updateAvailabilityForAllSimsAsync: scheduling updateAvailabilityForRcsProvisioningId call. Hint: NO_HINT, enableWelcomePopupWithoutGoogleTos: false, reshowSuccessPopup: false
+11-07 01:16:19.382  1732  1836 I RcsAvailabilityUpdaterL: updateRcsAvailabilityForMultipleSims: hint: NO_HINT, canReshowWelcomeMessage: false
+11-07 01:16:19.382  1732  2329 I BugleNetwork: Startup: registering tachyon.
+11-07 01:16:19.386  1732  1836 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=50 ]
+11-07 01:16:19.386  1091  1217 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.semanticlocationhistory.edit.EditMergeJob started execution. cause:5 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-07 01:16:19.389  1732  1836 I RcsAvailabilityUpdaterL: RcsAvailability configuration availability and enabled status: simId: redacted-pii:sim_id[chars:20,last3:897], SipConnectionType: DUAL_REG, isConfigurationAvailableAndEnabled: false
+11-07 01:16:19.391  1732  1836 I BugleRcsEngine: Using config server URL from biuf [CONTEXT log_prefix="ProvisioningServerUtil" thread_id=50 ]
+11-07 01:16:19.393  1091  1988 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.semanticlocationhistory.edit.EditMergeJob finished executing. cause:5 result: 1 elapsed_millis: 16 uptime_millis: 16 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-07 01:16:19.396  1732  1836 I RcsAvailabilityUpdaterL: RcsAvailability: Subscription Id: 1, simId: redacted-pii:sim_id[chars:20,last3:897], sipConnectionType: DUAL_REG, isRcsAvailable: false
+11-07 01:16:19.397  1732  1836 I RcsAvailabilityUpdaterL: updateAvailabilityForRcsProvisioningId. SimId: redacted-pii:sim_id[chars:20,last3:897], currentAvailability: 10, newAvailability: 10, hint: NO_HINT
+11-07 01:16:19.397  1732  1834 I BugleRcsProvisioning: scheduleProvisioningForEligibleSims
+11-07 01:16:19.398  1732  2328 I BugleRcsProvisioning: RcsProvisioningTrigger: onRcsAvailabilityUpdate : availability is updated to Carrier RCS is not set up, lastAvailabilityLocal is Carrier RCS is not set up, simId hash = 8906227750429061921, simId = redacted-pii:sim_id[chars:20,last3:897], isPev3Enabled = true
+11-07 01:16:19.399  1732  2229 I afym    : scheduleProvisioningForEligibleSims: operationTrigger: 5 bugle trigger event: 4
+11-07 01:16:19.399  1732  2229 I afym    : scheduleProvisioningForAllEligibleSims: operationTrigger: 5 bugle trigger event: 4
+11-07 01:16:19.400  1732  2229 I afym    : scheduleProvisioningForDefaultSimIfEligible: defaultSimType: DEFAULT_CALL_SIM operationTrigger: 5 bugle trigger event: 4
+11-07 01:16:19.400  1732  2229 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=64 ]
+11-07 01:16:19.400  1732  2229 I afym    : RcsProvisioningTrigger: DR is active, initializing DR provisioning. DUAL_REG
+11-07 01:16:19.401  1592  1592 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.semanticlocationhistory.edit.EditMergeJob.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-07 01:16:19.404  1732  2229 I afym    : scheduleProvisioningForDefaultSimIfEligible: defaultSimType: DEFAULT_SMS_SIM operationTrigger: 5 bugle trigger event: 4
+11-07 01:16:19.405  1732  1836 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=50 ]
+11-07 01:16:19.405  1732  2229 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=64 ]
+11-07 01:16:19.405  1732  2229 I afym    : RcsProvisioningTrigger: DR is active, initializing DR provisioning. DUAL_REG
+11-07 01:16:19.406  1732  2327 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=71 ]
+11-07 01:16:19.408  1732  2329 I BugleNetwork: Startup: registering tachyon for phone.
+11-07 01:16:19.408  1732  2329 I BugleNetwork: Profile service is not connected at startup task.
+11-07 01:16:19.411  1732  2329 I Bugle   : VerifiedSmsEnabledCheckerImpl: VSMS is disabled via Phenotype flag.
+11-07 01:16:19.416  1732  1821 I Bugle   : VerifiedSmsStartupTask: Checking if Verified SMS tasks should be enqueued. feature supported: false, feature enabled: false, eligible / has registered key: false, C11N: false
+11-07 01:16:19.417  1732  1821 I Bugle   : VerifiedSmsStartupTask: Not enqueuing VSMS periodic task, VSMS is disabled or not supported.
+11-07 01:16:19.417  1732  1836 I BugleRcsEngine: Scheduled provisioning task with 0 seconds delay, KEEP policy, trigger is APP_STARTUP, workerId is afe981bf-4c3a-4881-a7fb-79944d87b680, simId is redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="provisioning" thread_id=50 ]
+11-07 01:16:19.418  1732  2195 I Bugle   : VerifiedSmsStartupTask: Not calling C11N to get phone numbers.
+11-07 01:16:19.421  1732  2327 I BugleRcsEngine: Scheduled provisioning task with 0 seconds delay, KEEP policy, trigger is APP_STARTUP, workerId is 5547247b-b1ae-4f41-9803-5f2e70528ff6, simId is redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="provisioning" thread_id=71 ]
+11-07 01:16:19.431  1592  1592 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.semanticlocationhistory.db.OdlhUserEditSyncJob.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-07 01:16:19.431  1592  1592 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.semanticlocationhistory.db.OdlhUserEditSyncJob.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-07 01:16:19.434  1091  1217 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.semanticlocationhistory.db.OdlhUserEditSyncJob started execution. cause:5 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-07 01:16:19.446  1592  1592 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.semanticlocationhistory.db.OdlhUserEditSyncJob.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-07 01:16:19.448  1091  1988 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.semanticlocationhistory.db.OdlhUserEditSyncJob finished executing. cause:5 result: 1 elapsed_millis: 14 uptime_millis: 14 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-07 01:16:19.487  1592  1592 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.semanticlocationhistory.monitoring.MonitoringService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-07 01:16:19.487  1592  1592 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.semanticlocationhistory.monitoring.MonitoringService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-07 01:16:19.493  1091  1217 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.semanticlocationhistory.monitoring.MonitoringService started execution. cause:5 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-07 01:16:19.499  1592  1592 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.semanticlocationhistory.monitoring.MonitoringService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-07 01:16:19.499  1091  1988 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.semanticlocationhistory.monitoring.MonitoringService finished executing. cause:5 result: 1 elapsed_millis: 14 uptime_millis: 14 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-07 01:16:19.549  1091  1217 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-07 01:16:19.554  1091  1954 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 14 uptime_millis: 14 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-07 01:16:19.621  1091  1217 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-07 01:16:19.635  1091  1988 I TapAndPay: Not syncing Tap Doodles: tap doodle sync disabled [CONTEXT service_id=79 ]
+11-07 01:16:19.638  1091  1988 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 31 uptime_millis: 31 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-07 01:16:19.664  1091  1217 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.languageprofile.GcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 39 [CONTEXT service_id=218 ]
+11-07 01:16:19.693  1091  1988 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.languageprofile.GcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 37 uptime_millis: 37 exec_start_elapsed_seconds: 39 [CONTEXT service_id=218 ]
+11-07 01:16:19.704   430   430 I netd    : tetherGetStats() -> {[]} <0.49ms>
+11-07 01:16:19.710   430   430 I netd    : bandwidthSetGlobalAlert(2097152) <0.06ms>
+11-07 01:16:19.721  1091  1217 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.phenotype.service.sync.PhenotypeConfigurator started execution. cause:5 exec_start_elapsed_seconds: 39 [CONTEXT service_id=218 ]
+11-07 01:16:19.734  1091  1990 I HeterodyneSyncer: Removed 0 invalid users [CONTEXT service_id=51 ]
+11-07 01:16:19.802  1091  1813 W BpBinder: Large outgoing transaction of 408608 bytes, interface descriptor , code 4
+11-07 01:16:19.811   922  3276 D android.hardware.gnss-service.ranchu: GnssHwListener:consume:87 sz=64
+11-07 01:16:19.812   922  3276 D android.hardware.gnss-service.ranchu: GnssHwListener:consume:87 sz=64
+11-07 01:16:19.812   922  3276 D android.hardware.gnss-service.ranchu: Gnss:onGnssLocationCb:311
+11-07 01:16:19.812   922  3276 D android.hardware.gnss-service.ranchu: Gnss:onGnssLocationCb:321
+11-07 01:16:19.827  1091  1988 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.google.android.onetimeinitializer
+11-07 01:16:19.843  1091  1990 I DynamiteModule: Considering local module com.google.android.gms.cronet_dynamite:0 and remote module com.google.android.gms.cronet_dynamite:3111
+11-07 01:16:19.843  1091  1990 I DynamiteModule: Selected remote version of com.google.android.gms.cronet_dynamite, version >= 3111
+11-07 01:16:19.846  1091  1990 W ziparchive: Unable to open '/data/user_de/0/com.google.android.gms/app_chimera/m/00000009/CronetDynamite.uncompressed.dm': No such file or directory
+11-07 01:16:19.852  1091  1990 I .gms.persistent: Waiting for a blocking GC ClassLinker
+11-07 01:16:19.874  1091  1095 I .gms.persistent: Compiler allocated 6591KB to compile czza czzb.t(epcy, evmz, java.lang.String, boolean, epbw, epcy, boolean, fkgb)
+11-07 01:16:19.906  1732  2328 I BugleRcsProvisioning: BugleSystemBindingManager: onBuglePhenotypeFlagChanged
+11-07 01:16:19.908  1732  1821 I BugleRcsEngine: SystemBinding enabled: true [CONTEXT log_prefix="SystemBindingManager" thread_id=44 ]
+11-07 01:16:19.909  1732  1821 I BugleRcsEngine: System Binding updated [CONTEXT thread_id=44 ]
+11-07 01:16:19.909  1732  2327 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=71 ]
+11-07 01:16:19.911  1732  1836 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=50 ]
+11-07 01:16:19.919  1732  1836 W BugleRcs: getAvailableProvisioningIds: accessing uninitialized provisioning identities.
+11-07 01:16:19.919  1732  1836 W BugleRcs: dncp: FULL
+11-07 01:16:19.919  1732  1836 W BugleRcs: 	at cjmd.i(PG:53)
+11-07 01:16:19.919  1732  1836 W BugleRcs: 	at cjvb.q(PG:169)
+11-07 01:16:19.919  1732  1836 W BugleRcs: 	at brts.a(PG:27)
+11-07 01:16:19.919  1732  1836 W BugleRcs: 	at brsg.b(PG:24)
+11-07 01:16:19.919  1732  1836 W BugleRcs: 	at brsg.a(PG:13)
+11-07 01:16:19.919  1732  1836 W BugleRcs: 	at efhn.a(PG:14)
+11-07 01:16:19.919  1732  1836 W BugleRcs: 	at eerl.a(PG:10)
+11-07 01:16:19.919  1732  1836 W BugleRcs: 	at dlmg.b(PG:84)
+11-07 01:16:19.919  1732  1836 W BugleRcs: 	at eegr.w(PG:11)
+11-07 01:16:19.919  1732  1836 W BugleRcs: 	at eerz.run(PG:109)
+11-07 01:16:19.919  1732  1836 W BugleRcs: 	at djfc.run(PG:3)
+11-07 01:16:19.919  1732  1836 W BugleRcs: 	at dkqk.run(PG:21)
+11-07 01:16:19.919  1732  1836 W BugleRcs: 	at crzm.run(PG:3)
+11-07 01:16:19.919  1732  1836 W BugleRcs: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-07 01:16:19.919  1732  1836 W BugleRcs: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-07 01:16:19.919  1732  1836 W BugleRcs: 	at cryq.run(PG:6)
+11-07 01:16:19.919  1732  1836 W BugleRcs: 	at java.lang.Thread.run(Thread.java:1012)
+11-07 01:16:19.919  1732  1836 W BugleRcs: 	at csaw.run(PG:64)
+11-07 01:16:19.920  1732  1836 I BugleTransport: Retrieved RCS available simIds: []
+11-07 01:16:19.925  1732  1834 I BugleTransport: Deregister all SIMs except for SIMs with subIds: [] from chat transport: TACHYGRAM.
+11-07 01:16:19.928  1732  2329 I BugleTransport: Deregister all SIMs except for SIMs with subIds: [] from chat transport: SINGLE_REGISTRATION.
+11-07 01:16:19.928  1732  2300 I BugleTransport: Deregister all SIMs except for SIMs with subIds: [] from chat transport: DUAL_REGISTRATION.
+11-07 01:16:19.929  1732  1838 I RcsClientLib: Connecting RcsEngineLifecycleServiceV2
+11-07 01:16:19.929  1732  2229 I RcsClientLib: Connecting RcsEngineLifecycleServiceV2
+11-07 01:16:19.930  1732  2229 W RcsClientLib: No CS.apk RCS service found. Is RCS running in Bugle?
+11-07 01:16:19.931  1732  1838 W RcsClientLib: No CS.apk RCS service found. Is RCS running in Bugle?
+11-07 01:16:19.932  1732  2229 I RcsClientLib: shouldUseCarrierServicesJibeService: false, CarrierServices rcs service found: false
+11-07 01:16:19.932  1732  1838 I RcsClientLib: shouldUseCarrierServicesJibeService: false, CarrierServices rcs service found: false
+11-07 01:16:19.939  1732  1834 I RcsClientLib: com.google.android.rcs.client.lifecycle.RcsEngineLifecycleServiceV2 connected
+11-07 01:16:19.941  1732  1834 I RcsClientLib: com.google.android.rcs.client.lifecycle.RcsEngineLifecycleServiceV2 connected
+11-07 01:16:19.941  1732  2327 D MddListenableWorkerFactory: createWorker for class: com.google.android.apps.messaging.shared.datamodel.workqueue.WorkQueueWorkerShim
+11-07 01:16:19.942  1483  2263 I BugleRcsEngine: stopAllRcsTransportsExcept: ignoring stopping the RcsEngine. RcsEngine is still running [CONTEXT log_prefix="RcsEngineProxyImpl:[f499f9d1-2b71]" thread_id=64 ]
+11-07 01:16:19.942  1483  1538 I BugleRcsEngine: stopAllRcsTransportsExcept: ignoring stopping the RcsEngine. RcsEngine is still running [CONTEXT log_prefix="RcsEngineProxyImpl:[f499f9d1-2b71]" thread_id=37 ]
+11-07 01:16:19.943  1732  2064 I RcsClientLib: Disconnecting RcsEngineLifecycleServiceV2
+11-07 01:16:19.944  1732  2194 I RcsClientLib: Disconnecting RcsEngineLifecycleServiceV2
+11-07 01:16:19.945  1732  2327 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=f8e4da4b-fbf1-48f1-a209-f6a19e2091c7, tags={ com.google.android.apps.messaging.shared.datamodel.workqueue.WorkQueueWorkerShim,data_upgrade- } ]
+11-07 01:16:19.952  1091  1096 I .gms.persistent: Background concurrent mark compact GC freed 18MB AllocSpace bytes, 13(640KB) LOS objects, 49% free, 17MB/35MB, paused 372us,2.277ms total 132.839ms
+11-07 01:16:19.952  1091  1990 I .gms.persistent: WaitForGcToComplete blocked ClassLinker on Background for 100.671ms
+11-07 01:16:19.956  1091  1098 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/SettingsIntelligenceGooglePrebuilt/SettingsIntelligenceGooglePrebuilt.apk' with 1 weak references
+11-07 01:16:19.956  1091  1098 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/AndroidAutoStubPrebuilt/AndroidAutoStubPrebuilt.apk' with 1 weak references
+11-07 01:16:19.958  1091  1098 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/YouTubeMusicPrebuilt/YouTubeMusicPrebuilt.apk' with 1 weak references
+11-07 01:16:19.959  1091  1098 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/LatinIMEGooglePrebuilt/LatinIMEGooglePrebuilt.apk' with 1 weak references
+11-07 01:16:19.960  1091  1098 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/GoogleRestorePrebuilt-v526684/GoogleRestorePrebuilt-v526684.apk' with 1 weak references
+11-07 01:16:19.962  1091  1098 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/YouTube/YouTube.apk' with 1 weak references
+11-07 01:16:19.966  1091  1098 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/Velvet/Velvet.apk' with 1 weak references
+11-07 01:16:19.971  1091  1098 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PrebuiltBugle/PrebuiltBugle.apk' with 1 weak references
+11-07 01:16:19.972  2437  2521 E MDD     : FileValidator: Downloaded file at uri = android://com.google.android.tts/files/datadownload/shared/public/datadownloadfile_1793773470957_feeffe09a4f88ca77c6f3515f7e2b99cbfeb6873, checksum = feeffe09a4f88ca77c6f3515f7e2b99cbfeb6873, size = 63360223 verification failed
+11-07 01:16:19.976  1091  1990 D nativeloader: Configuring clns-10 for other apk . target_sdk_version=34, uses_libraries=ALL, library_path=/data/user_de/0/com.google.android.gms/app_chimera/m/00000009/CronetDynamite.uncompressed.apk!/lib/x86_64:/data/user_de/0/com.google.android.gms/app_chimera/m/00000009/CronetDynamite.uncompressed.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand
+11-07 01:16:19.977  1091  1098 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/SoundPickerPrebuilt/SoundPickerPrebuilt.apk' with 1 weak references
+11-07 01:16:19.978  1091  1098 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/SafetyHubPrebuilt/SafetyHubPrebuilt.apk' with 1 weak references
+11-07 01:16:19.982  1091  1098 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/talkback/talkback.apk' with 1 weak references
+11-07 01:16:19.983  1091  1098 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '/vendor/overlay/EmulatorTalkBackOverlay/EmulatorTalkBackOverlay.apk' with 1 weak references
+11-07 01:16:19.984  1091  1098 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PrebuiltDeskClockGoogle/PrebuiltDeskClockGoogle.apk' with 1 weak references
+11-07 01:16:19.985  1091  1098 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/DevicePersonalizationPrebuiltPixel2021-aiai_20240329.00_RC16/DevicePersonalizationPrebuiltPixel2021-aiai_20240329.00_RC16.apk' with 1 weak references
+11-07 01:16:19.988  1091  1098 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PrebuiltGmail/PrebuiltGmail.apk' with 1 weak references
+11-07 01:16:19.990  2437  2521 E MDD     : FileGroupManager downloadFileGroup langpack-domain_en-US_3056_zipfile com.google.android.tts can't finish!
+11-07 01:16:19.994  1091  1098 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/WellbeingPrebuilt/WellbeingPrebuilt.apk' with 1 weak references
+11-07 01:16:19.996  1091  1098 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/GoogleDialer/GoogleDialer.apk' with 1 weak references
+11-07 01:16:19.997  2437  2530 E LanguagePackMaintenance: Error when background downloading LanguagePacks
+11-07 01:16:19.997  2437  2530 E LanguagePackMaintenance: cuf: Failed to download file group langpack-domain_en-US_3056_zipfile
+11-07 01:16:19.997  2437  2530 E LanguagePackMaintenance: 	at dej.M(PG:22)
+11-07 01:16:19.997  2437  2530 E LanguagePackMaintenance: 	at cxo.a(PG:1016)
+11-07 01:16:19.997  2437  2530 E LanguagePackMaintenance: 	at hhd.a(PG:57)
+11-07 01:16:19.997  2437  2530 E LanguagePackMaintenance: 	at hgo.d(PG:3)
+11-07 01:16:19.997  2437  2530 E LanguagePackMaintenance: 	at hgq.run(PG:42)
+11-07 01:16:19.997  2437  2530 E LanguagePackMaintenance: 	at hjb.run(PG:219)
+11-07 01:16:19.997  2437  2530 E LanguagePackMaintenance: 	at cqr.run(PG:7)
+11-07 01:16:19.997  2437  2530 E LanguagePackMaintenance: 	at hdx.run(PG:50)
+11-07 01:16:19.997  2437  2530 E LanguagePackMaintenance: 	at bxx.run(PG:327)
+11-07 01:16:19.997  2437  2530 E LanguagePackMaintenance: 	at java.lang.Thread.run(Thread.java:1012)
+11-07 01:16:19.997  2437  2530 E LanguagePackMaintenance: 	at csb.run(PG:64)
+11-07 01:16:19.997  2437  2530 E LanguagePackMaintenance: Caused by: cup: Download result code: DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:16:19.997  2437  2530 E LanguagePackMaintenance: 	at bor.c(PG:32)
+11-07 01:16:19.997  2437  2530 E LanguagePackMaintenance: 	at dad.c(PG:57)
+11-07 01:16:19.997  2437  2530 E LanguagePackMaintenance: 	at dac.a(PG:29)
+11-07 01:16:19.997  2437  2530 E LanguagePackMaintenance: 	at czg.a(PG:1063)
+11-07 01:16:19.997  2437  2530 E LanguagePackMaintenance: 	... 9 more
+11-07 01:16:20.002  1091  1098 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Drive/Drive.apk' with 1 weak references
+11-07 01:16:20.003  1091  1098 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Maps/Maps.apk' with 1 weak references
+11-07 01:16:20.004  1091  1098 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/GoogleContacts/GoogleContacts.apk' with 1 weak references
+11-07 01:16:20.004  2437  2532 W ZipfileLPSourceImpl: Pending LP download pings failed.
+11-07 01:16:20.004  2437  2532 W ZipfileLPSourceImpl: cuf: Failed to download file group langpack-domain_en-US_3056_zipfile
+11-07 01:16:20.004  2437  2532 W ZipfileLPSourceImpl: 	at dej.M(PG:22)
+11-07 01:16:20.004  2437  2532 W ZipfileLPSourceImpl: 	at cxo.a(PG:1016)
+11-07 01:16:20.004  2437  2532 W ZipfileLPSourceImpl: 	at hhd.a(PG:57)
+11-07 01:16:20.004  2437  2532 W ZipfileLPSourceImpl: 	at hgo.d(PG:3)
+11-07 01:16:20.004  2437  2532 W ZipfileLPSourceImpl: 	at hgq.run(PG:42)
+11-07 01:16:20.004  2437  2532 W ZipfileLPSourceImpl: 	at hjb.run(PG:219)
+11-07 01:16:20.004  2437  2532 W ZipfileLPSourceImpl: 	at cqr.run(PG:7)
+11-07 01:16:20.004  2437  2532 W ZipfileLPSourceImpl: 	at hdx.run(PG:50)
+11-07 01:16:20.004  2437  2532 W ZipfileLPSourceImpl: 	at bxx.run(PG:327)
+11-07 01:16:20.004  2437  2532 W ZipfileLPSourceImpl: 	at java.lang.Thread.run(Thread.java:1012)
+11-07 01:16:20.004  2437  2532 W ZipfileLPSourceImpl: 	at csb.run(PG:64)
+11-07 01:16:20.004  2437  2532 W ZipfileLPSourceImpl: Caused by: cup: Download result code: DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:16:20.004  2437  2532 W ZipfileLPSourceImpl: 	at bor.c(PG:32)
+11-07 01:16:20.004  2437  2532 W ZipfileLPSourceImpl: 	at dad.c(PG:57)
+11-07 01:16:20.004  2437  2532 W ZipfileLPSourceImpl: 	at dac.a(PG:29)
+11-07 01:16:20.004  2437  2532 W ZipfileLPSourceImpl: 	at czg.a(PG:1063)
+11-07 01:16:20.004  2437  2532 W ZipfileLPSourceImpl: 	... 9 more
+11-07 01:16:20.007   637  1967 D ConnectivityService: requestNetwork for uid/pid:10143/1091 activeRequest: null callbackRequest: 119 [NetworkRequest [ REQUEST id=120, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10143 RequestorUid: 10143 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false
+11-07 01:16:20.010   637   803 D ConnectivityService: NetReassign [120 : null → 101] [c 0] [a 0] [i 1]
+11-07 01:16:20.010   637   796 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=120, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10143 RequestorUid: 10143 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+11-07 01:16:20.010  1091  1990 D nativeloader: Load /data/user_de/0/com.google.android.gms/app_chimera/m/00000009/CronetDynamite.uncompressed.apk!/lib/x86_64/libcronet.126.0.6452.4.so using isolated ns clns-10 (caller=/data/user_de/0/com.google.android.gms/app_chimera/m/00000009/CronetDynamite.uncompressed.apk): ok
+11-07 01:16:20.010   637   796 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=120, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10143 RequestorUid: 10143 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+11-07 01:16:20.010   637   796 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=120, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10143 RequestorUid: 10143 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+11-07 01:16:20.010   637   796 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=120, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10143 RequestorUid: 10143 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+11-07 01:16:20.011   637   711 D CompatChangeReporter: Compat change id reported: 319212206; UID 10143; state: ENABLED
+11-07 01:16:20.012  1091  1098 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/GoogleTTS/GoogleTTS.apk' with 1 weak references
+11-07 01:16:20.014   637   803 D ConnectivityService: NetReassign [no changes] [c 0] [a 1] [i 1]
+11-07 01:16:20.015  1091  1098 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PartnerSetupPrebuilt/PartnerSetupPrebuilt.apk' with 1 weak references
+11-07 01:16:20.016  1091  1098 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Photos/Photos.apk' with 1 weak references
+11-07 01:16:20.021  1091  1990 I cr_CronetLibraryLoader: Cronet version: 126.0.6452.4, arch: x86_64
+11-07 01:16:20.023  1091  1098 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/CalendarGooglePrebuilt/CalendarGooglePrebuilt.apk' with 1 weak references
+11-07 01:16:20.039  1091  1098 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/ConfigUpdater/ConfigUpdater.apk' with 1 weak references
+11-07 01:16:20.062  1091  1990 D nativeloader: Load /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64/libbrotli_native.so using ns product-clns-9 from class loader (caller=/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!classes3.dex): ok
+11-07 01:16:20.093   430  3302 I resolv  : GetAddrInfoHandler::run: {101 786533 101 983141 10143 0}
+11-07 01:16:20.093  1091  1988 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.google.android.devicelockcontroller
+11-07 01:16:20.095   430  3304 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+11-07 01:16:20.095   430  3304 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x75529764cab0
+11-07 01:16:20.095   430  3304 I resolv  : doQuery: rcode=0, ancount=8, return value=490
+11-07 01:16:20.095   430  3305 I resolv  : res_nmkquery: (QUERY, IN, A)
+11-07 01:16:20.095   430  3305 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7552e764bdf0
+11-07 01:16:20.095   430  3305 I resolv  : doQuery: rcode=0, ancount=8, return value=422
+11-07 01:16:20.100  1091  3286 D TrafficStats: tagSocket(264) with statsTag=0x1203, statsUid=10143
+11-07 01:16:20.132  1091  1988 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.google.android.modulemetadata
+11-07 01:16:20.173  1091  1988 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.google.android.gsf
+11-07 01:16:20.174  1091  1988 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.google.android.tag
+11-07 01:16:20.190  1091  1988 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.google.android.apps.nexuslauncher
+11-07 01:16:20.204  1091  1988 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.google.android.feedback

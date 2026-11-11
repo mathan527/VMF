@@ -1,0 +1,826 @@
+--------- beginning of main
+11-11 01:21:48.137   497  1685 W APM::HwModule: getDeviceDescriptor: could not find HW module for device  (AUDIO_DEVICE_OUT_WIRED_HEADPHONE, 00000008) address 
+11-11 01:21:48.139   635   650 W system_server: ApkAssets: Deleting an ApkAssets object '/product/overlay/GooglePermissionControllerOverlay.apk' with 1 weak references
+--------- beginning of kernel
+11-11 01:21:48.124     0     0 W servicemanager: Isolated app with UID 99000 requested 'network_management', but the service is not allowed for isolated apps.
+11-11 01:21:48.148  3179  3179 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+11-11 01:21:48.148   497  1685 W APM::HwModule: getDeviceDescriptor: could not find HW module for device  (AUDIO_DEVICE_OUT_USB_HEADSET, 04000000) address 
+11-11 01:21:48.152  3198  3198 I ackageinstaller: Using CollectorTypeCMC GC.
+11-11 01:21:48.153  3198  3198 W ackageinstaller: Unexpected CPU variant for x86: x86_64.
+11-11 01:21:48.153  3198  3198 W ackageinstaller: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, goldmont-without-sha-xsaves, tremont, kabylake, default
+11-11 01:21:48.156  1932  2093 I SyncManagerImpl: #sync() complete
+11-11 01:21:48.158  3198  3198 E ackageinstaller: Not starting debugger since process cannot load the jdwp agent.
+11-11 01:21:48.162  3198  3198 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+--------- beginning of system
+11-11 01:21:48.172   635   671 W ActivityManager: Slow operation: 354ms so far, now at startProcess: done updating battery stats
+11-11 01:21:48.172   635   671 W ActivityManager: Slow operation: 355ms so far, now at startProcess: building log message
+11-11 01:21:48.173   635   671 I ActivityManager: Start proc 3198:com.google.android.packageinstaller/u0a100 for broadcast {com.google.android.packageinstaller/com.android.packageinstaller.common.TemporaryFileManager}
+11-11 01:21:48.174   427   487 I netd    : bandwidthRemoveInterfaceQuota(eth0) <1.18ms>
+11-11 01:21:48.175   427   487 I netd    : bandwidthSetInterfaceQuota(eth0, 9223372036854775807) <0.56ms>
+11-11 01:21:48.176   635   671 W ActivityManager: Slow operation: 359ms so far, now at startProcess: starting to update pids map
+11-11 01:21:48.177   635   671 W ActivityManager: Slow operation: 359ms so far, now at startProcess: done updating pids map
+11-11 01:21:48.177  1932  2554 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=f63bb7c4-bca0-4b90-a25a-2256d6e9fe3d, tags={ com.google.apps.tiktok.contrib.work.TikTokListenableWorker,com.google.apps.tiktok.sync.impl.workmanager.SyncWorker,TikTokWorker#com.google.apps.tiktok.sync.impl.workmanager.SyncWorker } ]
+11-11 01:21:48.156     0     0 W servicemanager: Isolated app with UID 99000 requested 'connectivity', but the service is not allowed for isolated apps.
+11-11 01:21:48.184  3179  3179 I LoadedApk: No resource references to update in package com.google.android.trichromelibrary
+11-11 01:21:48.185  3179  3179 I cr_WebViewApkApp: Launched version=124.0.6367.219 minSdkVersion=29 isBundle=false processName=com.google.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0
+11-11 01:21:48.173     0     0 W servicemanager: Isolated app with UID 99000 requested 'content_capture', but the service is not allowed for isolated apps.
+11-11 01:21:48.204  3179  3179 I cr_ChildProcessService: Creating new ChildProcessService pid=3179
+11-11 01:21:48.208   428   428 D Zygote  : Forked child process 3210
+11-11 01:21:48.216  3210  3210 I .adservices.api: Using CollectorTypeCMC GC.
+11-11 01:21:48.217  3210  3210 W .adservices.api: Unexpected CPU variant for x86: x86_64.
+11-11 01:21:48.217  3210  3210 W .adservices.api: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, goldmont-without-sha-xsaves, tremont, kabylake, default
+11-11 01:21:48.220  3210  3210 E .adservices.api: Not starting debugger since process cannot load the jdwp agent.
+11-11 01:21:48.224  1581  1867 W ProviderHelper: Unknown dynamite feature providerinstaller.dynamite
+11-11 01:21:48.233   635   671 W ActivityManager: Slow operation: 94ms so far, now at startProcess: returned from zygote!
+11-11 01:21:48.234  3210  3210 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+11-11 01:21:48.245  1581  1867 I DynamiteModule: Considering local module com.google.android.gms.providerinstaller.dynamite:1 and remote module com.google.android.gms.providerinstaller.dynamite:0
+11-11 01:21:48.246  1109  1667 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.google.android.feedback
+11-11 01:21:48.246  1581  1867 I DynamiteModule: Selected local version of com.google.android.gms.providerinstaller.dynamite
+11-11 01:21:48.267  1932  2725 I BugleDataModel: ActionExecutorImpl: ACTION_RESPONSE_QUEUED_RecurringTelemetryUploaderAction
+11-11 01:21:48.279  1932  2554 I BugleDataModel: ActionExecutorImpl: Stopping ActionService
+11-11 01:21:48.286  1520  2038 I A       : The GellerConfig is not present, returning null.
+11-11 01:21:48.286  1520  2038 I A       : (REDACTED) The GellerConfig is not present, defaulting isUploadEnabled for corpus %s to true.
+11-11 01:21:48.289  1520  2038 I A       : (REDACTED) The syncToken for corpus %s is %s.
+11-11 01:21:48.298   427   487 I netd    : tetherGetStats() -> {[]} <0.73ms>
+11-11 01:21:48.300   635   671 W ActivityManager: Slow operation: 161ms so far, now at startProcess: done updating battery stats
+11-11 01:21:48.300   635   671 W ActivityManager: Slow operation: 162ms so far, now at startProcess: building log message
+11-11 01:21:48.300   635   671 I ActivityManager: Start proc 3210:com.google.android.adservices.api/u0a207 for service {com.google.android.adservices.api/com.android.adservices.measurement.MeasurementService}
+11-11 01:21:48.301   635   671 W ActivityManager: Slow operation: 162ms so far, now at startProcess: starting to update pids map
+11-11 01:21:48.301   635   671 W ActivityManager: Slow operation: 163ms so far, now at startProcess: done updating pids map
+11-11 01:21:48.318   635   993 W ActivityManager: Slow operation: 74ms so far, now at finishAttachApplicationInner: after mServices.attachApplicationLocked
+11-11 01:21:48.318   635   993 W ActivityManager: Slow operation: 75ms so far, now at finishAttachApplicationInner: after dispatching broadcasts
+11-11 01:21:48.318  3210  3210 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+11-11 01:21:48.318  3210  3210 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+11-11 01:21:48.329  1109  1114 W .gms.persistent: Suspending all threads took: 73.423ms
+11-11 01:21:48.340  3210  3210 D nativeloader: Configuring clns-shared-7 for other apk /apex/com.android.adservices/priv-app/AdServicesApkGoogle@350820260/AdServicesApkGoogle.apk. target_sdk_version=35, uses_libraries=, library_path=/apex/com.android.adservices/priv-app/AdServicesApkGoogle@350820260/lib/x86_64:/system/lib64:/system_ext/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.adservices.api:/apex/com.android.adservices/priv-app/AdServicesApkGoogle@350820260:/system/lib64:/system_ext/lib64
+11-11 01:21:48.345  3210  3210 D nativeloader: InitApexLibraries:
+11-11 01:21:48.345  3210  3210 D nativeloader:   com_android_adservices: libhpke_jni.so:libtflite_support_classifiers_native.so
+11-11 01:21:48.345  3210  3210 D nativeloader:   com_android_appsearch: libicing.so
+11-11 01:21:48.345  3210  3210 D nativeloader:   com_android_art: libartservice.so
+11-11 01:21:48.345  3210  3210 D nativeloader:   com_android_btservices: libbluetooth_jni.so
+11-11 01:21:48.345  3210  3210 D nativeloader:   com_android_conscrypt: libjavacrypto.so
+11-11 01:21:48.345  3210  3210 D nativeloader:   com_android_mediaprovider: libpdfclient.so
+11-11 01:21:48.345  3210  3210 D nativeloader:   com_android_nfcservices: libnfc_nci_jni.so
+11-11 01:21:48.345  3210  3210 D nativeloader:   com_android_ondevicepersonalization: libfcp_cpp_dep_jni.so:libfcp_hpke_jni.so
+11-11 01:21:48.345  3210  3210 D nativeloader:   com_android_os_statsd: libstats_jni.so
+11-11 01:21:48.345  3210  3210 D nativeloader:   com_android_tethering: libandroid_net_connectivity_com_android_net_module_util_jni.so:libcrypto.so:libframework-connectivity-jni.so:libframework-connectivity-tiramisu-jni.so:libmainlinecronet.121.0.6167.71.so:libservice-connectivity.so:libservice-thread-jni.so:libssl.so
+11-11 01:21:48.345  3210  3210 D nativeloader:   com_android_uwb: libuwb_uci_jni_rust.so
+11-11 01:21:48.345  3210  3210 D nativeloader:   com_android_virt: libvirtualizationservice_jni.so:libvirtualmachine_jni.so
+11-11 01:21:48.347  3210  3210 D CompatChangeReporter: Compat change id reported: 202956589; UID 10207; state: ENABLED
+11-11 01:21:48.362  3210  3210 V GraphicsEnvironment: Currently set values for:
+11-11 01:21:48.363  3210  3210 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+11-11 01:21:48.363  3210  3210 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+11-11 01:21:48.366  3210  3210 V GraphicsEnvironment: Global.Settings values are invalid: number of packages: 0, number of values: 0
+11-11 01:21:48.366  3210  3210 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+11-11 01:21:48.378  3210  3210 I adservices-shared: Set singleton context as android.app.Application@83887d7
+11-11 01:21:48.422  3198  3198 D nativeloader: Configuring clns-shared-7 for other apk /system/priv-app/GooglePackageInstaller/GooglePackageInstaller.apk. target_sdk_version=35, uses_libraries=, library_path=/system/priv-app/GooglePackageInstaller/lib/x86_64:/system/lib64:/system_ext/lib64, permitted_path=/data:/mnt/expand:/data/user_de/0/com.google.android.packageinstaller:/system/priv-app/GooglePackageInstaller:/system/lib64:/system_ext/lib64
+11-11 01:21:48.425  1109  1114 I .gms.persistent: Background concurrent mark compact GC freed 13MB AllocSpace bytes, 27(840KB) LOS objects, 49% free, 15MB/30MB, paused 94.284ms,2.252ms total 325.275ms
+11-11 01:21:48.435  3198  3198 D CompatChangeReporter: Compat change id reported: 202956589; UID 10100; state: ENABLED
+11-11 01:21:48.440   635  1143 D CompatChangeReporter: Compat change id reported: 261072174; UID 10151; state: ENABLED
+11-11 01:21:48.444  1520  1727 I A       : NGA enabled in interactor.
+11-11 01:21:48.444  1520  1727 I A       : (REDACTED) Nga state changed to %s
+11-11 01:21:48.444   635  1984 D CompatChangeReporter: Compat change id reported: 311208629; UID 10101; state: ENABLED
+11-11 01:21:48.447  1520  1727 I A       : (REDACTED) isTngActive=%s
+11-11 01:21:48.449  1520  1733 V ProtoDataStoreWithLams: read()
+11-11 01:21:48.457  3198  3198 V GraphicsEnvironment: Currently set values for:
+11-11 01:21:48.479  3198  3198 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+11-11 01:21:48.480  3198  3198 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+11-11 01:21:48.480  3198  3198 V GraphicsEnvironment: Global.Settings values are invalid: number of packages: 0, number of values: 0
+11-11 01:21:48.480  3198  3198 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+11-11 01:21:48.491  3210  3210 E adservices: Measurement API is disabled
+11-11 01:21:48.491  3210  3210 E adservices: Measurement API is disabled
+11-11 01:21:48.493  1581  1867 W ProviderHelper: Unknown dynamite feature providerinstaller.dynamite
+11-11 01:21:48.494  1581  1867 I DynamiteModule: Considering local module com.google.android.gms.providerinstaller.dynamite:1 and remote module com.google.android.gms.providerinstaller.dynamite:0
+11-11 01:21:48.496  1581  1867 I DynamiteModule: Selected local version of com.google.android.gms.providerinstaller.dynamite
+11-11 01:21:48.499  1520  1532 E adservices: onNullBinding android.adservices.MEASUREMENT_SERVICE
+11-11 01:21:48.499  1109  1116 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PrebuiltGmail/PrebuiltGmail.apk' with 1 weak references
+11-11 01:21:48.505   635  1552 D CompatChangeReporter: Compat change id reported: 311208629; UID 10207; state: ENABLED
+11-11 01:21:48.510  1581  1867 W ProviderHelper: Unknown dynamite feature providerinstaller.dynamite
+11-11 01:21:48.510  1581  1867 I DynamiteModule: Considering local module com.google.android.gms.providerinstaller.dynamite:1 and remote module com.google.android.gms.providerinstaller.dynamite:0
+11-11 01:21:48.510  1581  1867 I DynamiteModule: Selected local version of com.google.android.gms.providerinstaller.dynamite
+11-11 01:21:48.513  1581  1867 I GmsModuleFndr: Beginning GMS chimera module scan
+11-11 01:21:48.518  1581  1867 I ModuleSetResolution: Computing pending module set with APKs: [[AdsFdrDynamite.integ:241199801100000], [Cronetdynamite:242335190800], [Dynamiteloader:242335190000], [Dynamitemodulesa:242335190000], [Dynamitemodulesc:242335190000], [Googlecertificates:242335190000], [Mapsdynamite:242335190000], [Measurementdynamite:242335190000]]
+11-11 01:21:48.524  1581  1867 I ModuleSetResolution: Pending container module APKs: []
+11-11 01:21:48.524  1581  1867 I ModuleSetResolution: Pending non-container module APKs: []
+11-11 01:21:48.540  1109  1116 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/WellbeingPrebuilt/WellbeingPrebuilt.apk' with 1 weak references
+11-11 01:21:48.540  1109  1116 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/GoogleDialer/GoogleDialer.apk' with 1 weak references
+11-11 01:21:48.541  1109  1234 I AlarmManager: setExactAndAllowWhileIdle [name: GCM_CONN_ALARM type: 2 triggerAtMillis: 48891]
+11-11 01:21:48.542  1109  1116 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Drive/Drive.apk' with 1 weak references
+11-11 01:21:48.542  1109  1116 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Maps/Maps.apk' with 1 weak references
+11-11 01:21:48.544  1109  1116 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/GoogleTTS/GoogleTTS.apk' with 1 weak references
+11-11 01:21:48.547  1109  1116 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/GoogleContacts/GoogleContacts.apk' with 1 weak references
+11-11 01:21:48.548  1109  1116 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~TqloaYONI2b2pcNDAa6Zlw==/com.android.chrome-P1yYlQWh--rk9XnyhRuL3A==/Chrome.apk' with 1 weak references
+11-11 01:21:48.548  1109  1116 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~G2h5O3jpBf1U4W1ZYWrHhw==/com.google.android.trichromelibrary_636771938-7VqCgghbrSqe_eft0huZDg==/TrichromeLibrary.apk' with 1 weak references
+11-11 01:21:48.549  1109  1116 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PrebuiltBugle/PrebuiltBugle.apk' with 1 weak references
+11-11 01:21:48.550  1109  1116 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PartnerSetupPrebuilt/PartnerSetupPrebuilt.apk' with 1 weak references
+11-11 01:21:48.554  2846  2867 D nativeloader: Configuring clns-10 for other apk . target_sdk_version=34, uses_libraries=ALL, library_path=, permitted_path=/data:/mnt/expand
+11-11 01:21:48.560  2846  2867 D nativeloader: Load /data/user/0/com.google.android.gms/app_dg_cache/476A36E35ABF01578AB5E50CBAEDC9FC525822EA/the.apk!/libdAC7A1C580925.so using isolated ns clns-10 (caller=/data/user/0/com.google.android.gms/app_dg_cache/476A36E35ABF01578AB5E50CBAEDC9FC525822EA/the.apk): ok
+11-11 01:21:48.561   635   635 W Looper  : Slow dispatch took 124ms main h=android.app.ActivityThread$H c=android.app.LoadedApk$ServiceDispatcher$RunConnection@5d80c7b m=0
+11-11 01:21:48.561  3144  3229 I cr_VariationsUtils: Scheduling seed download job
+11-11 01:21:48.562  3144  3229 D CompatChangeReporter: Compat change id reported: 253665015; UID 10151; state: ENABLED
+11-11 01:21:48.563   635   715 D CompatChangeReporter: Compat change id reported: 271850009; UID 10151; state: ENABLED
+11-11 01:21:48.566   635   715 D CompatChangeReporter: Compat change id reported: 253665015; UID 10151; state: ENABLED
+11-11 01:21:48.571   427  3234 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10143 0}
+11-11 01:21:48.574   427  3236 I resolv  : res_nmkquery: (QUERY, IN, A)
+11-11 01:21:48.574   427  3235 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+11-11 01:21:48.575   635  2102 D ConnectivityService: requestNetwork for uid/pid:1000/635 asUid: 10151 activeRequest: null callbackRequest: 120 [NetworkRequest [ REQUEST id=121, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10151 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false
+11-11 01:21:48.577   635   670 V GrammaticalInflectionUtils: AttributionSource: AttributionSource { uid = 10131, packageName = null, attributionTag = null, token = android.os.Binder@e055ba3, deviceId = 0, next = null } does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+11-11 01:21:48.578   635   802 D ConnectivityService: NetReassign [121 : null → 100] [c 0] [a 1] [i 1]
+11-11 01:21:48.580   427  3236 I resolv  : res_nsend: used send_dg 337 terrno: 0
+11-11 01:21:48.580   635   795 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=121, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10151 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+11-11 01:21:48.580   427  3236 I resolv  : doQuery: rcode=0, ancount=2, return value=337
+11-11 01:21:48.580   635   795 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=121, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10151 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+11-11 01:21:48.580   635   795 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=121, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10151 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+11-11 01:21:48.580   635   795 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=121, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10151 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+11-11 01:21:48.582  1109  1109 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.instantapps.START pkg=com.google.android.gms }
+11-11 01:21:48.582  1109  1109 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.instantapps.START pkg=com.google.android.gms }
+11-11 01:21:48.590  1520  1959 I A       : The GellerConfig is not present, returning null.
+11-11 01:21:48.591  1520  1959 I A       : (REDACTED) The GellerConfig is not present, defaulting isUploadEnabled for corpus %s to true.
+11-11 01:21:48.592  1520  3196 E adservices: Failed to bind to measurement service: com.android.adservices.shared.common.exception.ServiceUnavailableException: Service is not available.
+11-11 01:21:48.592  1520  1995 W ProductIdClientStreamz: (REDACTED) Product id propagation is missing (traffic tag: %s).
+11-11 01:21:48.605  1109  1109 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.nearby.sharing.START_SERVICE dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiServiceNoInstantApps }
+11-11 01:21:48.607   428   428 D Zygote  : Forked child process 3237
+11-11 01:21:48.607  1109  1109 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.nearby.sharing.START_SERVICE dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiServiceNoInstantApps }
+11-11 01:21:48.610   635   671 I ActivityManager: Start proc 3237:com.google.android.partnersetup/u0a131 for broadcast {com.google.android.partnersetup/com.google.android.partnersetup.BootReceiver}
+11-11 01:21:48.617  1932  2727 I GellerDatabaseImpl: Writing metadata key: _sync_timestamp_micros, corpus: GDD_BUGLE_EMOJIFY
+11-11 01:21:48.617  1109  1109 I NearbySharing: NearbySharingService onCreate [CONTEXT service_id=194 ]
+11-11 01:21:48.620  3237  3237 I id.partnersetup: Using CollectorTypeCMC GC.
+11-11 01:21:48.621  1109  1578 I NearbySharing: Create pesudo logger. [CONTEXT service_id=194 ]
+11-11 01:21:48.623  3237  3237 W id.partnersetup: Unexpected CPU variant for x86: x86_64.
+11-11 01:21:48.623  3237  3237 W id.partnersetup: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, goldmont-without-sha-xsaves, tremont, kabylake, default
+11-11 01:21:48.625  1109  1109 W ChimeraUtils: Module com.google.android.gms.nearby missing resource null(0)
+11-11 01:21:48.627  1109  1109 W ChimeraUtils: Module com.google.android.gms.nearby missing resource null(0)
+11-11 01:21:48.631  3237  3237 E id.partnersetup: Not starting debugger since process cannot load the jdwp agent.
+11-11 01:21:48.632  1421  2127 I A       : Initializing all components
+11-11 01:21:48.634  1421  1730 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+11-11 01:21:48.634  1421  1821 I A       : (REDACTED) onIsEnabledChanged, isEnabled: %s
+11-11 01:21:48.634  3018  3107 W SettingsIntentOperation: No accounts
+11-11 01:21:48.634  1421  1730 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+11-11 01:21:48.635  1421  1821 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:21:48.635  1421  1821 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:21:48.635  1421  1821 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:21:48.637  1421  1724 I A       : (REDACTED) State changed: %s => %s by %s and %s with %s
+11-11 01:21:48.638  1421  1724 I A       : (REDACTED) Recognizer choice: (recognizer_type: %s, recognizer_mode: %s, choice_reason: %s)
+11-11 01:21:48.639  1421  1821 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:21:48.639  1421  1821 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:21:48.640  1421  1821 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:21:48.640  1421  1821 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:21:48.640  1421  1821 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:21:48.640  1421  1821 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:21:48.640  1421  1821 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:21:48.640  1421  1821 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:21:48.641  1421  1821 I A       : (REDACTED) Setting session to type: %s
+11-11 01:21:48.641  1421  1724 I A       : (REDACTED) onActiveStateChangeEvent: %s => %s
+11-11 01:21:48.642  1421  1821 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:21:48.643  1421  1821 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:21:48.644   886   890 I ndroid.systemui: Compiler allocated 4999KB to compile java.lang.Object com.google.android.systemui.dagger.DaggerSysUIGoogleGlobalRootComponent$WMComponentImpl$SwitchingProvider.get7()
+11-11 01:21:48.644  1421  1821 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:21:48.644  1421  1821 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:21:48.644  1421  1821 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:21:48.644  1421  1821 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:21:48.645  1421  1821 I A       : (REDACTED) setNavBarVisible: %s
+11-11 01:21:48.645  1421  1821 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:21:48.645  1421  1821 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:21:48.645  1421  1821 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:21:48.646  1421  1821 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:21:48.646  1421  1821 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:21:48.646  1421  1821 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:21:48.648  1109  1576 I GmsCoreXrpcWrapper: Returning a channel provider with trafficStatsTag=67118596 trafficStatsUid=10143
+11-11 01:21:48.648  1421  1730 I A       : Initialize
+11-11 01:21:48.648   427  3235 I resolv  : res_nsend: used send_dg 349 terrno: 0
+11-11 01:21:48.648   427  3235 I resolv  : doQuery: rcode=0, ancount=2, return value=349
+11-11 01:21:48.649  1421  1730 I A       : (REDACTED) stopListening(%s, %s)
+11-11 01:21:48.649  1109  1234 D StrictMode: StrictMode policy violation: android.os.strictmode.NonSdkApiUsedViolation: Ljava/net/Socket;->impl:Ljava/net/SocketImpl;
+11-11 01:21:48.649  1109  1234 D StrictMode: 	at android.os.StrictMode.lambda$static$1(StrictMode.java:436)
+11-11 01:21:48.649  1109  1234 D StrictMode: 	at android.os.StrictMode$$ExternalSyntheticLambda2.accept(D8$$SyntheticClass:0)
+11-11 01:21:48.649  1109  1234 D StrictMode: 	at java.lang.Class.getDeclaredField(Native Method)
+11-11 01:21:48.649  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.Platform.getFileDescriptor(:com.google.android.gms@242335041@24.23.35 (190800-646585959):5)
+11-11 01:21:48.649  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.Platform.getFileDescriptorFromSSLSocket(:com.google.android.gms@242335041@24.23.35 (190800-646585959):1)
+11-11 01:21:48.649  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.AbstractConscryptSocket.getFileDescriptor$(:com.google.android.gms@242335041@24.23.35 (190800-646585959):14)
+11-11 01:21:48.649  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.OpenSSLSocketImpl.getFileDescriptor$(:com.google.android.gms@242335041@24.23.35 (190800-646585959):1)
+11-11 01:21:48.649  1109  1234 D StrictMode: 	at dalvik.system.SocketTagger.tag(SocketTagger.java:92)
+11-11 01:21:48.649  1109  1234 D StrictMode: 	at android.net.TrafficStats.tagSocket(TrafficStats.java:473)
+11-11 01:21:48.649  1109  1234 D StrictMode: 	at anbp.h(:com.google.android.gms@242335041@24.23.35 (190800-646585959):1)
+11-11 01:21:48.649  1109  1234 D StrictMode: 	at anbn.d(:com.google.android.gms@242335041@24.23.35 (190800-646585959):3)
+11-11 01:21:48.649  1109  1234 D StrictMode: 	at bckf.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):31)
+11-11 01:21:48.649  1109  1234 D StrictMode: 	at bcku.t(:com.google.android.gms@242335041@24.23.35 (190800-646585959):26)
+11-11 01:21:48.649  1109  1234 D StrictMode: 	at bckk.call(:com.google.android.gms@242335041@24.23.35 (190800-646585959):7)
+11-11 01:21:48.649  1109  1234 D StrictMode: 	at dkkb.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):5)
+11-11 01:21:48.649  1109  1234 D StrictMode: 	at angs.c(:com.google.android.gms@242335041@24.23.35 (190800-646585959):50)
+11-11 01:21:48.649  1109  1234 D StrictMode: 	at angs.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):76)
+11-11 01:21:48.649  1109  1234 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-11 01:21:48.649  1109  1234 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-11 01:21:48.649  1109  1234 D StrictMode: 	at anmg.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+11-11 01:21:48.649  1109  1234 D StrictMode: 	at java.lang.Thread.run(Thread.java:1012)
+11-11 01:21:48.650  1421  1724 I A       : (REDACTED) #onActiveStateChangeEvent, newState: %s, previousState: %s.
+11-11 01:21:48.650  1421  1821 I NgaEntryPointEventSendr: setupConnection
+11-11 01:21:48.652  1421  1730 I INV.SystemUI: showGestureNav
+11-11 01:21:48.653  1421  1730 I INV.SystemUI: (REDACTED) setUiHints(hints = %s)
+11-11 01:21:48.656  1109  1234 D TrafficStats: tagSocket(-1) with statsTag=0x30000407, statsUid=-1
+11-11 01:21:48.657  1109  1234 I TrafficStats: tagSocketFd(-1, 805307399, -1) failed with errno-9
+11-11 01:21:48.657  1109  1234 D TrafficStats: tagSocket(159) with statsTag=0x30000407, statsUid=-1
+11-11 01:21:48.658  3018  3102 W PersonalSafety: Debug page in internal setting true, true, false  [CONTEXT service_id=310 ]
+11-11 01:21:48.659  1109  1234 D StrictMode: StrictMode policy violation: android.os.strictmode.NonSdkApiUsedViolation: Ljava/net/Socket;->impl:Ljava/net/SocketImpl;
+11-11 01:21:48.659  1109  1234 D StrictMode: 	at android.os.StrictMode.lambda$static$1(StrictMode.java:436)
+11-11 01:21:48.659  1109  1234 D StrictMode: 	at android.os.StrictMode$$ExternalSyntheticLambda2.accept(D8$$SyntheticClass:0)
+11-11 01:21:48.659  1109  1234 D StrictMode: 	at java.lang.Class.getDeclaredField(Native Method)
+11-11 01:21:48.659  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.Platform.getFileDescriptor(:com.google.android.gms@242335041@24.23.35 (190800-646585959):5)
+11-11 01:21:48.659  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.Platform.getFileDescriptorFromSSLSocket(:com.google.android.gms@242335041@24.23.35 (190800-646585959):1)
+11-11 01:21:48.659  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.AbstractConscryptSocket.getFileDescriptor$(:com.google.android.gms@242335041@24.23.35 (190800-646585959):14)
+11-11 01:21:48.659  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.OpenSSLSocketImpl.getFileDescriptor$(:com.google.android.gms@242335041@24.23.35 (190800-646585959):1)
+11-11 01:21:48.659  1109  1234 D StrictMode: 	at java.lang.reflect.Method.invoke(Native Method)
+11-11 01:21:48.659  1109  1234 D StrictMode: 	at bckf.e(:com.google.android.gms@242335041@24.23.35 (190800-646585959):16)
+11-11 01:21:48.659  1109  1234 D StrictMode: 	at bckf.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):47)
+11-11 01:21:48.659  1109  1234 D StrictMode: 	at bcku.t(:com.google.android.gms@242335041@24.23.35 (190800-646585959):26)
+11-11 01:21:48.659  1109  1234 D StrictMode: 	at bckk.call(:com.google.android.gms@242335041@24.23.35 (190800-646585959):7)
+11-11 01:21:48.659  1109  1234 D StrictMode: 	at dkkb.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):5)
+11-11 01:21:48.659  1109  1234 D StrictMode: 	at angs.c(:com.google.android.gms@242335041@24.23.35 (190800-646585959):50)
+11-11 01:21:48.659  1109  1234 D StrictMode: 	at angs.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):76)
+11-11 01:21:48.659  1109  1234 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-11 01:21:48.659  1109  1234 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-11 01:21:48.659  1109  1234 D StrictMode: 	at anmg.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+11-11 01:21:48.659  1109  1234 D StrictMode: 	at java.lang.Thread.run(Thread.java:1012)
+11-11 01:21:48.660  1109  1234 D StrictMode: StrictMode policy violation: android.os.strictmode.NonSdkApiUsedViolation: Ljava/net/Socket;->impl:Ljava/net/SocketImpl;
+11-11 01:21:48.660  1109  1234 D StrictMode: 	at android.os.StrictMode.lambda$static$1(StrictMode.java:436)
+11-11 01:21:48.660  1109  1234 D StrictMode: 	at android.os.StrictMode$$ExternalSyntheticLambda2.accept(D8$$SyntheticClass:0)
+11-11 01:21:48.660  1109  1234 D StrictMode: 	at java.lang.Class.getDeclaredField(Native Method)
+11-11 01:21:48.660  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.Platform.getFileDescriptor(:com.google.android.gms@242335041@24.23.35 (190800-646585959):5)
+11-11 01:21:48.660  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.Platform.getFileDescriptorFromSSLSocket(:com.google.android.gms@242335041@24.23.35 (190800-646585959):1)
+11-11 01:21:48.660  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.AbstractConscryptSocket.getFileDescriptor$(:com.google.android.gms@242335041@24.23.35 (190800-646585959):14)
+11-11 01:21:48.660  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.OpenSSLSocketImpl.getFileDescriptor$(:com.google.android.gms@242335041@24.23.35 (190800-646585959):1)
+11-11 01:21:48.660  1109  1234 D StrictMode: 	at android.os.ParcelFileDescriptor.fromSocket(ParcelFileDescriptor.java:489)
+11-11 01:21:48.660  1109  1234 D StrictMode: 	at android.net.Network.bindSocket(Network.java:408)
+11-11 01:21:48.660  1109  1234 D StrictMode: 	at bckf.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):55)
+11-11 01:21:48.660  1109  1234 D StrictMode: 	at bcku.t(:com.google.android.gms@242335041@24.23.35 (190800-646585959):26)
+11-11 01:21:48.660  1109  1234 D StrictMode: 	at bckk.call(:com.google.android.gms@242335041@24.23.35 (190800-646585959):7)
+11-11 01:21:48.660  1109  1234 D StrictMode: 	at dkkb.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):5)
+11-11 01:21:48.660  1109  1234 D StrictMode: 	at angs.c(:com.google.android.gms@242335041@24.23.35 (190800-646585959):50)
+11-11 01:21:48.660  1109  1234 D StrictMode: 	at angs.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):76)
+11-11 01:21:48.660  1109  1234 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-11 01:21:48.660  1109  1234 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-11 01:21:48.660  1109  1234 D StrictMode: 	at anmg.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+11-11 01:21:48.660  1109  1234 D StrictMode: 	at java.lang.Thread.run(Thread.java:1012)
+11-11 01:21:48.660  3018  3102 I PersonalSafety: Displaying Google Setting item true, true, true  [CONTEXT service_id=310 ]
+11-11 01:21:48.660  1421  1724 I INV.SystemUI: setUiHints: finished successfully
+11-11 01:21:48.662  1421  1821 I NgaEntryPointEventSendr: (REDACTED) State changed: %s => %s
+11-11 01:21:48.663  1932  2727 I GellerDatabaseImpl: Writing metadata key: _sync_token, corpus: GDD_BUGLE_EMOJIFY
+11-11 01:21:48.679  1520  1959 I A       : The GellerConfig is not present, returning null.
+11-11 01:21:48.679  1520  1959 I A       : (REDACTED) The GellerConfig is not present, defaulting isUploadEnabled for corpus %s to true.
+11-11 01:21:48.680  1520  1713 I A       : (REDACTED) The syncToken for corpus %s is %s.
+11-11 01:21:48.682  1520  1713 I A       : (REDACTED) The syncToken for corpus %s is %s.
+11-11 01:21:48.682  1520  1959 I A       : The GellerConfig is not present, returning null.
+11-11 01:21:48.683  1520  1959 I A       : (REDACTED) The GellerConfig is not present, defaulting isUploadEnabled for corpus %s to true.
+11-11 01:21:48.684  1520  1959 I A       : (REDACTED) Writing metadata key: %s, corpus: %s
+11-11 01:21:48.685  1520  1713 I A       : (REDACTED) The syncToken for corpus %s is %s.
+11-11 01:21:48.686  1520  1959 I A       : (REDACTED) Writing metadata key: %s, corpus: %s
+11-11 01:21:48.689  3018  3106 W NearbySharing: Failed to get user opt-in status, assuming opted out. [CONTEXT service_id=194 ]
+11-11 01:21:48.689  3018  3106 W NearbySharing: java.util.concurrent.TimeoutException: Timed out waiting for Task
+11-11 01:21:48.689  3018  3106 W NearbySharing: 	at dkkh.n(:com.google.android.gms@242335041@24.23.35 (190800-646585959):53)
+11-11 01:21:48.689  3018  3106 W NearbySharing: 	at com.google.android.gms.nearby.sharing.SettingsIntentOperation.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):30)
+11-11 01:21:48.689  3018  3106 W NearbySharing: 	at ajje.d(:com.google.android.gms@242335041@24.23.35 (190800-646585959):1)
+11-11 01:21:48.689  3018  3106 W NearbySharing: 	at ajje.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):100)
+11-11 01:21:48.689  3018  3106 W NearbySharing: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+11-11 01:21:48.689  3018  3106 W NearbySharing: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+11-11 01:21:48.689  3018  3106 W NearbySharing: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+11-11 01:21:48.689  3018  3106 W NearbySharing: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+11-11 01:21:48.689  3018  3106 W NearbySharing: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+11-11 01:21:48.689  3018  3106 W NearbySharing: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-11 01:21:48.689  3018  3106 W NearbySharing: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-11 01:21:48.689  3018  3106 W NearbySharing: 	at java.lang.Thread.run(Thread.java:1012)
+11-11 01:21:48.689  1109  1109 I NearbySharing: NearbySharingService created [CONTEXT service_id=194 ]
+11-11 01:21:48.693   427  3245 I resolv  : GetAddrInfoHandler::run: {100 262244 100 983140 10144 0}
+11-11 01:21:48.694   427  3247 I resolv  : res_nmkquery: (QUERY, IN, A)
+11-11 01:21:48.694   427  3246 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+11-11 01:21:48.694   427  3247 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x743188982130
+11-11 01:21:48.694   427  3247 I resolv  : doQuery: rcode=0, ancount=8, return value=428
+11-11 01:21:48.694   427  3246 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x74327897d6d0
+11-11 01:21:48.695   427  3246 I resolv  : doQuery: rcode=0, ancount=8, return value=496
+11-11 01:21:48.699  1581  1581 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.auth.service.START pkg=com.google.android.gms }
+11-11 01:21:48.699  1581  1581 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.auth.service.START pkg=com.google.android.gms }
+11-11 01:21:48.700  1520  1959 D TrafficStats: tagSocket(282) with statsTag=0x0, statsUid=-1
+11-11 01:21:48.701  1109  1234 D StrictMode: StrictMode policy violation: android.os.strictmode.NonSdkApiUsedViolation: Ljava/net/Socket;->impl:Ljava/net/SocketImpl;
+11-11 01:21:48.701  1109  1234 D StrictMode: 	at android.os.StrictMode.lambda$static$1(StrictMode.java:436)
+11-11 01:21:48.701  1109  1234 D StrictMode: 	at android.os.StrictMode$$ExternalSyntheticLambda2.accept(D8$$SyntheticClass:0)
+11-11 01:21:48.701  1109  1234 D StrictMode: 	at java.lang.Class.getDeclaredField(Native Method)
+11-11 01:21:48.701  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.Platform.getFileDescriptor(:com.google.android.gms@242335041@24.23.35 (190800-646585959):5)
+11-11 01:21:48.701  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):1)
+11-11 01:21:48.701  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-11 01:21:48.701  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.startHandshake(:com.google.android.gms@242335041@24.23.35 (190800-646585959):85)
+11-11 01:21:48.701  1109  1234 D StrictMode: 	at bckf.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):144)
+11-11 01:21:48.701  1109  1234 D StrictMode: 	at bcku.t(:com.google.android.gms@242335041@24.23.35 (190800-646585959):26)
+11-11 01:21:48.701  1109  1234 D StrictMode: 	at bckk.call(:com.google.android.gms@242335041@24.23.35 (190800-646585959):7)
+11-11 01:21:48.701  1109  1234 D StrictMode: 	at dkkb.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):5)
+11-11 01:21:48.701  1109  1234 D StrictMode: 	at angs.c(:com.google.android.gms@242335041@24.23.35 (190800-646585959):50)
+11-11 01:21:48.701  1109  1234 D StrictMode: 	at angs.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):76)
+11-11 01:21:48.701  1109  1234 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-11 01:21:48.701  1109  1234 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-11 01:21:48.701  1109  1234 D StrictMode: 	at anmg.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+11-11 01:21:48.701  1109  1234 D StrictMode: 	at java.lang.Thread.run(Thread.java:1012)
+11-11 01:21:48.705  1421  1724 I A       : Successfully initialized all components
+11-11 01:21:48.711  1520  1713 D TrafficStats: tagSocket(285) with statsTag=0x0, statsUid=-1
+11-11 01:21:48.711  1109  1234 D StrictMode: StrictMode policy violation: android.os.strictmode.NonSdkApiUsedViolation: Llibcore/io/Libcore;->os:Llibcore/io/Os;
+11-11 01:21:48.711  1109  1234 D StrictMode: 	at android.os.StrictMode.lambda$static$1(StrictMode.java:436)
+11-11 01:21:48.711  1109  1234 D StrictMode: 	at android.os.StrictMode$$ExternalSyntheticLambda2.accept(D8$$SyntheticClass:0)
+11-11 01:21:48.711  1109  1234 D StrictMode: 	at java.lang.Class.getPublicFieldRecursive(Native Method)
+11-11 01:21:48.711  1109  1234 D StrictMode: 	at java.lang.Class.getField(Class.java:2335)
+11-11 01:21:48.711  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):84)
+11-11 01:21:48.711  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-11 01:21:48.711  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.startHandshake(:com.google.android.gms@242335041@24.23.35 (190800-646585959):85)
+11-11 01:21:48.711  1109  1234 D StrictMode: 	at bckf.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):144)
+11-11 01:21:48.711  1109  1234 D StrictMode: 	at bcku.t(:com.google.android.gms@242335041@24.23.35 (190800-646585959):26)
+11-11 01:21:48.711  1109  1234 D StrictMode: 	at bckk.call(:com.google.android.gms@242335041@24.23.35 (190800-646585959):7)
+11-11 01:21:48.711  1109  1234 D StrictMode: 	at dkkb.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):5)
+11-11 01:21:48.711  1109  1234 D StrictMode: 	at angs.c(:com.google.android.gms@242335041@24.23.35 (190800-646585959):50)
+11-11 01:21:48.711  1109  1234 D StrictMode: 	at angs.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):76)
+11-11 01:21:48.711  1109  1234 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-11 01:21:48.711  1109  1234 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-11 01:21:48.711  1109  1234 D StrictMode: 	at anmg.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+11-11 01:21:48.711  1109  1234 D StrictMode: 	at java.lang.Thread.run(Thread.java:1012)
+11-11 01:21:48.714  1421  1821 I NgaEntryPointEventSendr: onServiceConnected
+11-11 01:21:48.715  1520  1532 I A       : Calling beginBinderSession().
+11-11 01:21:48.716  3237  3237 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+11-11 01:21:48.716  1520  1995 I A       : Omnient is not available - canInvokeOmnient returns false
+11-11 01:21:48.718   886   890 W ndroid.systemui: Missing inline cache for boolean androidx.compose.ui.node.DepthSortedSet.remove(androidx.compose.ui.node.LayoutNode)
+11-11 01:21:48.719  1520  1532 I A       : beginBinderSession(): calling binder
+11-11 01:21:48.720  1421  1821 I NgaEntryPointEventSendr: (REDACTED) State changed: %s => %s
+11-11 01:21:48.721  1109  1234 D StrictMode: StrictMode policy violation: android.os.strictmode.NonSdkApiUsedViolation: Llibcore/io/ForwardingOs;->setsockoptTimeval(Ljava/io/FileDescriptor;IILandroid/system/StructTimeval;)V
+11-11 01:21:48.721  1109  1234 D StrictMode: 	at android.os.StrictMode.lambda$static$1(StrictMode.java:436)
+11-11 01:21:48.721  1109  1234 D StrictMode: 	at android.os.StrictMode$$ExternalSyntheticLambda2.accept(D8$$SyntheticClass:0)
+11-11 01:21:48.721  1109  1234 D StrictMode: 	at java.lang.Class.getDeclaredMethodInternal(Native Method)
+11-11 01:21:48.721  1109  1234 D StrictMode: 	at java.lang.Class.getPublicMethodRecursive(Class.java:2957)
+11-11 01:21:48.721  1109  1234 D StrictMode: 	at java.lang.Class.getMethod(Class.java:2944)
+11-11 01:21:48.721  1109  1234 D StrictMode: 	at java.lang.Class.getMethod(Class.java:2450)
+11-11 01:21:48.721  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):172)
+11-11 01:21:48.721  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-11 01:21:48.721  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.startHandshake(:com.google.android.gms@242335041@24.23.35 (190800-646585959):85)
+11-11 01:21:48.721  1109  1234 D StrictMode: 	at bckf.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):144)
+11-11 01:21:48.721  1109  1234 D StrictMode: 	at bcku.t(:com.google.android.gms@242335041@24.23.35 (190800-646585959):26)
+11-11 01:21:48.721  1109  1234 D StrictMode: 	at bckk.call(:com.google.android.gms@242335041@24.23.35 (190800-646585959):7)
+11-11 01:21:48.721  1109  1234 D StrictMode: 	at dkkb.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):5)
+11-11 01:21:48.721  1109  1234 D StrictMode: 	at angs.c(:com.google.android.gms@242335041@24.23.35 (190800-646585959):50)
+11-11 01:21:48.721  1109  1234 D StrictMode: 	at angs.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):76)
+11-11 01:21:48.721  1109  1234 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-11 01:21:48.721  1109  1234 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-11 01:21:48.721  1109  1234 D StrictMode: 	at anmg.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+11-11 01:21:48.721  1109  1234 D StrictMode: 	at java.lang.Thread.run(Thread.java:1012)
+11-11 01:21:48.725  1421  1728 I A       : (REDACTED) on opa visibility changed %s
+11-11 01:21:48.730  1520  1717 D TrafficStats: tagSocket(288) with statsTag=0x0, statsUid=-1
+11-11 01:21:48.734  1109  1234 D StrictMode: StrictMode policy violation: android.os.strictmode.NonSdkApiUsedViolation: Ljava/net/Socket;->impl:Ljava/net/SocketImpl;
+11-11 01:21:48.734  1109  1234 D StrictMode: 	at android.os.StrictMode.lambda$static$1(StrictMode.java:436)
+11-11 01:21:48.734  1109  1234 D StrictMode: 	at android.os.StrictMode$$ExternalSyntheticLambda2.accept(D8$$SyntheticClass:0)
+11-11 01:21:48.734  1109  1234 D StrictMode: 	at java.lang.Class.getDeclaredField(Native Method)
+11-11 01:21:48.734  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.Platform.getFileDescriptor(:com.google.android.gms@242335041@24.23.35 (190800-646585959):5)
+11-11 01:21:48.734  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.startHandshake(:com.google.android.gms@242335041@24.23.35 (190800-646585959):118)
+11-11 01:21:48.734  1109  1234 D StrictMode: 	at bckf.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):144)
+11-11 01:21:48.734  1109  1234 D StrictMode: 	at bcku.t(:com.google.android.gms@242335041@24.23.35 (190800-646585959):26)
+11-11 01:21:48.734  1109  1234 D StrictMode: 	at bckk.call(:com.google.android.gms@242335041@24.23.35 (190800-646585959):7)
+11-11 01:21:48.734  1109  1234 D StrictMode: 	at dkkb.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):5)
+11-11 01:21:48.734  1109  1234 D StrictMode: 	at angs.c(:com.google.android.gms@242335041@24.23.35 (190800-646585959):50)
+11-11 01:21:48.734  1109  1234 D StrictMode: 	at angs.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):76)
+11-11 01:21:48.734  1109  1234 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-11 01:21:48.734  1109  1234 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-11 01:21:48.734  1109  1234 D StrictMode: 	at anmg.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+11-11 01:21:48.734  1109  1234 D StrictMode: 	at java.lang.Thread.run(Thread.java:1012)
+11-11 01:21:48.738  1520  1995 I A       : Omnient is not available - canInvokeOmnient returns false
+11-11 01:21:48.746  1520  2040 D TrafficStats: tagSocket(292) with statsTag=0x0, statsUid=-1
+11-11 01:21:48.750  1421  1821 I A       : (REDACTED) on opa visibility changed %s
+11-11 01:21:48.764   635   635 W Looper  : Slow dispatch took 159ms main h=android.app.ActivityThread$H c=android.app.LoadedApk$ReceiverDispatcher$Args$$ExternalSyntheticLambda0@d2b74d5 m=0
+11-11 01:21:48.765  1421  1728 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+11-11 01:21:48.768  1109  1119 I NearbySharing: A new client has bound to the NearbySharingService ClientBridge for calling package com.google.android.gms and PID 3018 [CONTEXT service_id=194 ]
+11-11 01:21:48.776  1932  2727 E PhFileGroupPop: Failed to add file group 
+11-11 01:21:48.781  1932  2727 E PhFileGroupPop: Failed to add file group 
+11-11 01:21:48.784  1109  1109 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.tapandpay.service.BIND dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+11-11 01:21:48.784  1109  1109 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.tapandpay.service.BIND dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+11-11 01:21:48.784  1520  1711 I PCPv2.CtfListener: #entry Received background refresh worker run
+11-11 01:21:48.787  3237  3237 D CompatChangeReporter: Compat change id reported: 242716250; UID 10131; state: ENABLED
+11-11 01:21:48.788  1932  2727 E PhFileGroupPop: Failed to add file group 
+11-11 01:21:48.789  1520  1995 I PCPv2.BackgroundWorker: #entry Starting PCP background refresh worker...
+11-11 01:21:48.792   635  2100 I AppWidgetServiceImpl: getAppWidgetIds() 0
+11-11 01:21:48.793   635  2091 I AppWidgetServiceImpl: getAppWidgetIds() 0
+11-11 01:21:48.794   635  2091 I AppWidgetServiceImpl: getAppWidgetIds() 0
+11-11 01:21:48.798   635  2100 I AppWidgetServiceImpl: getAppWidgetIds() 0
+11-11 01:21:48.799   635   715 I AppWidgetServiceImpl: getAppWidgetIds() 0
+11-11 01:21:48.799   635  1564 I AppWidgetServiceImpl: getAppWidgetIds() 0
+11-11 01:21:48.800  1932  2727 E PhFileGroupPop: Failed to add file group 
+11-11 01:21:48.800   635  2100 I AppWidgetServiceImpl: getAppWidgetIds() 0
+11-11 01:21:48.802  1932  2727 E PhFileGroupPop: Failed to add file group 
+11-11 01:21:48.804  1932  2727 E PhFileGroupPop: Failed to add file group 
+11-11 01:21:48.805  1932  2727 E PhFileGroupPop: Failed to add file group 
+11-11 01:21:48.806  1932  2727 E PhFileGroupPop: Failed to add file group 
+11-11 01:21:48.806  1932  2727 E PhFileGroupPop: Failed to add file group 
+11-11 01:21:48.808  1520  1711 I A       : Facts logged
+11-11 01:21:48.812  1109  1576 W NearbySharing: No supported accounts found. [CONTEXT service_id=194 ]
+11-11 01:21:48.816  3237  3237 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/org.apache.http.legacy.jar
+11-11 01:21:48.819  1932  2727 E PhFileGroupPop: Failed to add file group 
+11-11 01:21:48.819   635  2407 W ActivityManager: Unable to start service Intent { cmp=com.google.android.apps.tachyon/.clientapi.ClientApiService } U=0: not found
+11-11 01:21:48.820  1109  1109 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.nearby.connection.service.START pkg=com.google.android.gms }
+11-11 01:21:48.820  1109  1109 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.nearby.connection.service.START pkg=com.google.android.gms }
+11-11 01:21:48.820   635  2407 D FileUtils: Rounded bytes from 8331362304 to 16000000000
+11-11 01:21:48.822  1109  1576 W NearbySharing: Cannot set visibility on DisabledNearbySharingProvider. [CONTEXT service_id=194 ]
+11-11 01:21:48.823  1932  2727 E PhFileGroupPop: Failed to add file group 
+11-11 01:21:48.825  1109  1576 I NearbySharing: Not qualified for default opt-in. Multiple accounts are found. [CONTEXT service_id=194 ]
+11-11 01:21:48.829  1932  2727 E PhFileGroupPop: Failed to add file group 
+11-11 01:21:48.830  1932  2727 E PhFileGroupPop: Failed to add file group 
+11-11 01:21:48.831  1932  2727 E PhFileGroupPop: Failed to add file group 
+11-11 01:21:48.832  1932  2727 E PhFileGroupPop: Failed to add file group 
+11-11 01:21:48.837  1109  1576 I NearbySharing: Broadcasting NearbySharing state change. [CONTEXT service_id=194 ]
+11-11 01:21:48.841  1109  1576 I NearbySharing: Screen is unlocked [CONTEXT service_id=194 ]
+11-11 01:21:48.842  1109  1576 I NearbySharing: Location is enabled [CONTEXT service_id=194 ]
+11-11 01:21:48.843  1109  1576 I NearbySharing: Uwb feature is off. [CONTEXT service_id=194 ]
+11-11 01:21:48.843  1109  1576 I NearbySharing: Stopping scanning because Bluetooth is disabled. [CONTEXT service_id=194 ]
+11-11 01:21:48.843  1520  1911 I CtfManager: (REDACTED) remove request for trigger key: %s, isClientInitiated: %s
+11-11 01:21:48.845  1109  1299 I NearbyConnections: Client 167910519 requested setting downloads directory to null.
+11-11 01:21:48.845  1109  1576 I NearbySharing: Stopping Fast Init advertisement because Bluetooth is off. [CONTEXT service_id=194 ]
+11-11 01:21:48.845  1109  1576 I NearbySharing: Stopping advertising because Bluetooth is disabled. [CONTEXT service_id=194 ]
+11-11 01:21:48.848  1109  1299 I NearbyConnections: Client 167910519 with package name 0p:com.google.android.gms.nearby.sharing and sdk version 242335000 has connected, downloads dir is set to null.
+11-11 01:21:48.848  1109  1576 I NearbySharing: Fast Initiation Scanning has stopped [CONTEXT service_id=194 ]
+11-11 01:21:48.848  1109  1576 I NearbySharing: Stopping FastInitiation scanning because Bluetooth is disabled. [CONTEXT service_id=194 ]
+11-11 01:21:48.849  1109  1299 I NearbyConnections: Client 167910519 requested setting downloads directory to Quick Share.
+11-11 01:21:48.850  1109  1576 I NearbySharing: Dismissing HUN as there's no device nearby. [CONTEXT service_id=194 ]
+11-11 01:21:48.850  1109  1667 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.google.android.gms.supervision
+11-11 01:21:48.851  3237  3237 D nativeloader: InitLlndkLibrariesProduct: libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libRS.so:libandroid_net.so:libapexsupport.so:libbinder_ndk.so:libc.so:libcgrouprc.so:libclang_rt.asan-x86_64-android.so:libcom.android.tethering.connectivity_native.so:libdl.so:libft2.so:liblog.so:libm.so:libmediandk.so:libnativewindow.so:libneuralnetworks.so:libselinux.so:libsync.so:libvendorsupport.so:libvndksupport.so:libvulkan.so
+11-11 01:21:48.851  3237  3237 D nativeloader: Configuring product-clns-7 for unbundled product apk /product/priv-app/PartnerSetupPrebuilt/PartnerSetupPrebuilt.apk. target_sdk_version=34, uses_libraries=, library_path=/product/priv-app/PartnerSetupPrebuilt/lib/x86_64:/product/lib64:/system/product/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.partnersetup:/product/lib64:/system/product/lib64
+11-11 01:21:48.852  3237  3237 D nativeloader: InitVndkspLibrariesProduct: VNDK is deprecated with product
+11-11 01:21:48.857  1109  1576 I NearbySharing: Bluetooth is enabled [CONTEXT service_id=194 ]
+11-11 01:21:48.858  1109  1576 I NearbySharing: Uwb feature is off. [CONTEXT service_id=194 ]
+11-11 01:21:48.858  1520  1733 I DPContextParams: Building Device Properties.
+11-11 01:21:48.862  1520  1995 I TimeContextManager: (REDACTED) #remove: subTriggerId=%s
+11-11 01:21:48.863   886   890 I ndroid.systemui: Compiler allocated 6599KB to compile java.lang.Object com.google.android.systemui.dagger.DaggerSysUIGoogleGlobalRootComponent$WMComponentImpl$SwitchingProvider.get10()
+11-11 01:21:48.863  1109  1576 I NearbySharing: Stopping scanning because Nearby Sharing is disabled. [CONTEXT service_id=194 ]
+11-11 01:21:48.865   497   517 W APM::HwModule: getDeviceDescriptor: could not find HW module for device  (AUDIO_DEVICE_OUT_WIRED_HEADSET, 00000004) address 
+11-11 01:21:48.866   497   517 W APM::HwModule: getDeviceDescriptor: could not find HW module for device  (AUDIO_DEVICE_OUT_WIRED_HEADPHONE, 00000008) address 
+11-11 01:21:48.866   497   517 W APM::HwModule: getDeviceDescriptor: could not find HW module for device  (AUDIO_DEVICE_OUT_USB_HEADSET, 04000000) address 
+11-11 01:21:48.867  1109  1576 I NearbySharing: Stopping Fast Init advertisement because we're not scanning in the foreground. [CONTEXT service_id=194 ]
+11-11 01:21:48.873   886   890 W ndroid.systemui: Missing inline cache for void com.android.systemui.statusbar.policy.Clock.onRestoreInstanceState(android.os.Parcelable)
+11-11 01:21:48.873   886   890 W ndroid.systemui: Missing inline cache for void com.android.systemui.statusbar.policy.Clock.onRestoreInstanceState(android.os.Parcelable)
+11-11 01:21:48.873   886   890 W ndroid.systemui: Missing inline cache for void com.android.systemui.statusbar.policy.Clock.onRestoreInstanceState(android.os.Parcelable)
+11-11 01:21:48.874  1520  1913 W A       : (REDACTED) %s task was not run. Callback from Service received after client was disposed.
+11-11 01:21:48.875  1520  1740 I PCPv2.MoreFutures: (REDACTED) Future execution failed
+11-11 01:21:48.875  1520  1740 I PCPv2.MoreFutures: java.lang.IllegalStateException: Cannot access resource aware Context Supplier due to background policy: LOCATION(resource=LOCATION). Next allowed time to access the resource: +1000000000-12-31T23:59:59.999999999Z
+11-11 01:21:48.875  1520  1740 I PCPv2.MoreFutures: 	at com.google.android.libraries.assistant.pcp.b.c.ao.apply(PG:151)
+11-11 01:21:48.875  1520  1740 I PCPv2.MoreFutures: 	at com.google.apps.tiktok.tracing.ff.apply(PG:13)
+11-11 01:21:48.875  1520  1740 I PCPv2.MoreFutures: 	at com.google.common.util.concurrent.h.e(PG:3)
+11-11 01:21:48.875  1520  1740 I PCPv2.MoreFutures: 	at com.google.common.util.concurrent.j.run(PG:42)
+11-11 01:21:48.875  1520  1740 I PCPv2.MoreFutures: 	at com.google.android.libraries.k.x.run(PG:3)
+11-11 01:21:48.875  1520  1740 I PCPv2.MoreFutures: 	at com.google.common.n.c.c.run(PG:50)
+11-11 01:21:48.875  1520  1740 I PCPv2.MoreFutures: 	at com.google.android.libraries.k.e.run(PG:8)
+11-11 01:21:48.875  1520  1740 I PCPv2.MoreFutures: 	at java.lang.Thread.run(Thread.java:1012)
+11-11 01:21:48.875  1520  1740 I PCPv2.MoreFutures: 	at com.google.android.libraries.k.d.b.run(PG:74)
+11-11 01:21:48.876  1520  2232 I PBSessionCacheImpl: (REDACTED) Deleted sessionId[%d] from persistence.
+11-11 01:21:48.879  3237  3237 V GraphicsEnvironment: Currently set values for:
+11-11 01:21:48.881  3237  3237 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+11-11 01:21:48.881  3237  3237 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+11-11 01:21:48.881  3237  3237 V GraphicsEnvironment: Global.Settings values are invalid: number of packages: 0, number of values: 0
+11-11 01:21:48.881  3237  3237 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+11-11 01:21:48.887  1520  1913 W SearchServiceCore: Abort, client detached.
+11-11 01:21:48.888  1520  1727 W ProductIdClientStreamz: (REDACTED) Product id propagation is missing (traffic tag: %s).
+11-11 01:21:48.889  1421  1821 I NgaEntryPointEventSendr: (REDACTED) State changed: %s => %s (%s)
+11-11 01:21:48.891  1109  1234 D StrictMode: StrictMode policy violation: android.os.strictmode.NonSdkApiUsedViolation: Ljava/security/spec/ECParameterSpec;->setCurveName(Ljava/lang/String;)V
+11-11 01:21:48.891  1109  1234 D StrictMode: 	at android.os.StrictMode.lambda$static$1(StrictMode.java:436)
+11-11 01:21:48.891  1109  1234 D StrictMode: 	at android.os.StrictMode$$ExternalSyntheticLambda2.accept(D8$$SyntheticClass:0)
+11-11 01:21:48.891  1109  1234 D StrictMode: 	at java.lang.Class.getDeclaredMethodInternal(Native Method)
+11-11 01:21:48.891  1109  1234 D StrictMode: 	at java.lang.Class.getMethod(Class.java:2945)
+11-11 01:21:48.891  1109  1234 D StrictMode: 	at java.lang.Class.getDeclaredMethod(Class.java:2929)
+11-11 01:21:48.891  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.Platform.setCurveName(:com.google.android.gms@242335041@24.23.35 (190800-646585959):13)
+11-11 01:21:48.891  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.OpenSSLECGroupContext.getECParameterSpec(:com.google.android.gms@242335041@24.23.35 (190800-646585959):96)
+11-11 01:21:48.891  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.OpenSSLECPublicKey.getParams(:com.google.android.gms@242335041@24.23.35 (190800-646585959):3)
+11-11 01:21:48.891  1109  1234 D StrictMode: 	at com.android.org.conscrypt.ChainStrengthAnalyzer.checkKeyLength(ChainStrengthAnalyzer.java:87)
+11-11 01:21:48.891  1109  1234 D StrictMode: 	at com.android.org.conscrypt.ChainStrengthAnalyzer.checkCert(ChainStrengthAnalyzer.java:73)
+11-11 01:21:48.891  1109  1234 D StrictMode: 	at com.android.org.conscrypt.TrustManagerImpl.checkTrustedRecursive(TrustManagerImpl.java:606)
+11-11 01:21:48.891  1109  1234 D StrictMode: 	at com.android.org.conscrypt.TrustManagerImpl.checkTrusted(TrustManagerImpl.java:505)
+11-11 01:21:48.891  1109  1234 D StrictMode: 	at com.android.org.conscrypt.TrustManagerImpl.checkTrusted(TrustManagerImpl.java:425)
+11-11 01:21:48.891  1109  1234 D StrictMode: 	at com.android.org.conscrypt.TrustManagerImpl.getTrustedChainForServer(TrustManagerImpl.java:353)
+11-11 01:21:48.891  1109  1234 D StrictMode: 	at android.security.net.config.NetworkSecurityTrustManager.checkServerTrusted(NetworkSecurityTrustManager.java:94)
+11-11 01:21:48.891  1109  1234 D StrictMode: 	at android.security.net.config.RootTrustManager.checkServerTrusted(RootTrustManager.java:90)
+11-11 01:21:48.891  1109  1234 D StrictMode: 	at java.lang.reflect.Method.invoke(Native Method)
+11-11 01:21:48.891  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.Platform.checkTrusted(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+11-11 01:21:48.891  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.Platform.checkServerTrusted(:com.google.android.gms@242335041@24.23.35 (190800-646585959):1)
+11-11 01:21:48.891  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.verifyCertificateChain(:com.google.android.gms@242335041@24.23.35 (190800-646585959):37)
+11-11 01:21:48.891  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.NativeCrypto.SSL_do_handshake(Native Method)
+11-11 01:21:48.891  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.NativeSsl.doHandshake(:com.google.android.gms@242335041@24.23.35 (190800-646585959):11)
+11-11 01:21:48.891  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.startHandshake(:com.google.android.gms@242335041@24.23.35 (190800-646585959):126)
+11-11 01:21:48.891  1109  1234 D StrictMode: 	at bckf.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):144)
+11-11 01:21:48.891  1109  1234 D StrictMode: 	at bcku.t(:com.google.android.gms@242335041@24.23.35 (190800-646585959):26)
+11-11 01:21:48.891  1109  1234 D StrictMode: 	at bckk.call(:com.google.android.gms@242335041@24.23.35 (190800-646585959):7)
+11-11 01:21:48.891  1109  1234 D StrictMode: 	at dkkb.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):5)
+11-11 01:21:48.891  1109  1234 D StrictMode: 	at angs.c(:com.google.android.gms@242335041@24.23.35 (190800-646585959):50)
+11-11 01:21:48.891  1109  1234 D StrictMode: 	at angs.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):76)
+11-11 01:21:48.891  1109  1234 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-11 01:21:48.891  1109  1234 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-11 01:21:48.891  1109  1234 D StrictMode: 	at anmg.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+11-11 01:21:48.891  1109  1234 D StrictMode: 	at java.lang.Thread.run(Thread.java:1012)
+11-11 01:21:48.895  1109  1578 I TapAndPay: Initialize tap and pay services [CONTEXT service_id=79 ]
+11-11 01:21:48.895  1109  1578 I TapAndPay: deviceSupportsHce has detected emulator [CONTEXT service_id=79 ]
+11-11 01:21:48.896  1109  1578 I TapAndPay: Enabling TapAndPay HCE service [CONTEXT service_id=79 ]
+11-11 01:21:48.900  1109  1576 I NearbySharing: Stopping advertising because Nearby Sharing is disabled. [CONTEXT service_id=194 ]
+11-11 01:21:48.900  2846  2867 W libc    : Access denied finding property "persist.adb.tls_server.enable"
+11-11 01:21:48.900  2846  2867 W libc    : Access denied finding property "service.adb.tls.port"
+11-11 01:21:48.896  2846  2846 W binder:2846_3: type=1400 audit(0.0:25): avc:  denied  { read } for  name="u:object_r:system_adbd_prop:s0" dev="tmpfs" ino=318 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:system_adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+11-11 01:21:48.883     0     0 I logd    : start watching /data/system/packages.list ...
+11-11 01:21:48.892     0     0 I logd    : ReadPackageList, total packages: 220
+11-11 01:21:48.910  1520  2044 I A       : (REDACTED) Writing metadata key: %s, corpus: %s
+11-11 01:21:48.910  1520  2044 I A       : (REDACTED) Writing metadata key: %s, corpus: %s
+11-11 01:21:48.896  2846  2846 W binder:2846_3: type=1400 audit(0.0:26): avc:  denied  { read } for  name="u:object_r:adbd_prop:s0" dev="tmpfs" ino=63 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+11-11 01:21:48.915   427  3258 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10143 0}
+11-11 01:21:48.915  2846  2867 D TrafficStats: tagSocket(113) with statsTag=0x1809, statsUid=-1
+11-11 01:21:48.916  1520  2035 I A       : (REDACTED) Writing metadata key: %s, corpus: %s
+11-11 01:21:48.917  1520  2035 I A       : (REDACTED) Writing metadata key: %s, corpus: %s
+11-11 01:21:48.923  1109  1113 W .gms.persistent: Missing inline cache for epbl ecbh.b(android.content.pm.PackageInfo)
+11-11 01:21:48.933  1109  1667 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.android.settings
+11-11 01:21:48.934  1520  2035 I A       : (REDACTED) Writing metadata key: %s, corpus: %s
+11-11 01:21:48.937  1932  2727 E PhFileGroupPop: Failed to add file group 
+11-11 01:21:48.938  1520  2035 I A       : (REDACTED) Writing metadata key: %s, corpus: %s
+11-11 01:21:48.942  1109  2826 I AlarmManager: set [name: SystemMemoryCache type: 2 triggerAtMillis: 315360039396 windowMillis: -1 intervalMillis: 0]
+11-11 01:21:48.944  1932  2727 E PhFileGroupPop: Failed to add file group 
+11-11 01:21:48.945  1932  2727 E dqod    : RuntimeException while executing runnable dqra{dkqj@447f253} with executor MoreExecutors.directExecutor()
+11-11 01:21:48.945  1932  2727 E dqod    : java.lang.NullPointerException: Attempt to read from field 'java.lang.String cwru.b' on a null object reference in method 'void cyar.b(java.lang.Object)'
+11-11 01:21:48.945  1932  2727 E dqod    : 	at cyar.b(PG:11)
+11-11 01:21:48.945  1932  2727 E dqod    : 	at dkqj.b(PG:13)
+11-11 01:21:48.945  1932  2727 E dqod    : 	at dqra.run(PG:30)
+11-11 01:21:48.945  1932  2727 E dqod    : 	at dqqd.execute(PG:1)
+11-11 01:21:48.945  1932  2727 E dqod    : 	at dqod.o(PG:1)
+11-11 01:21:48.945  1932  2727 E dqod    : 	at dqod.b(PG:41)
+11-11 01:21:48.945  1932  2727 E dqod    : 	at dqrh.s(PG:9)
+11-11 01:21:48.945  1932  2727 E dqod    : 	at dksz.l(PG:5)
+11-11 01:21:48.945  1932  2727 E dqod    : 	at cyat.a(PG:138)
+11-11 01:21:48.945  1932  2727 E dqod    : 	at bilp.a(PG:29)
+11-11 01:21:48.945  1932  2727 E dqod    : 	at cwzc.r(PG:24)
+11-11 01:21:48.945  1932  2727 E dqod    : 	at cwws.a(PG:5)
+11-11 01:21:48.945  1932  2727 E dqod    : 	at dkqe.a(PG:13)
+11-11 01:21:48.945  1932  2727 E dqod    : 	at dqoh.d(PG:3)
+11-11 01:21:48.945  1932  2727 E dqod    : 	at dqoj.run(PG:42)
+11-11 01:21:48.945  1932  2727 E dqod    : 	at dqso.run(PG:76)
+11-11 01:21:48.945  1932  2727 E dqod    : 	at crzm.run(PG:3)
+11-11 01:21:48.945  1932  2727 E dqod    : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-11 01:21:48.945  1932  2727 E dqod    : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-11 01:21:48.945  1932  2727 E dqod    : 	at cryq.run(PG:6)
+11-11 01:21:48.945  1932  2727 E dqod    : 	at java.lang.Thread.run(Thread.java:1012)
+11-11 01:21:48.945  1932  2727 E dqod    : 	at csaw.run(PG:64)
+11-11 01:21:48.948  1932  2727 E dqod    : RuntimeException while executing runnable dqra{dkqj@baa6889} with executor MoreExecutors.directExecutor()
+11-11 01:21:48.948  1932  2727 E dqod    : java.lang.NullPointerException: Attempt to read from field 'java.lang.String cwru.b' on a null object reference in method 'void cyar.b(java.lang.Object)'
+11-11 01:21:48.948  1932  2727 E dqod    : 	at cyar.b(PG:11)
+11-11 01:21:48.948  1932  2727 E dqod    : 	at dkqj.b(PG:13)
+11-11 01:21:48.948  1932  2727 E dqod    : 	at dqra.run(PG:30)
+11-11 01:21:48.948  1932  2727 E dqod    : 	at dqqd.execute(PG:1)
+11-11 01:21:48.948  1932  2727 E dqod    : 	at dqod.o(PG:1)
+11-11 01:21:48.948  1932  2727 E dqod    : 	at dqod.b(PG:41)
+11-11 01:21:48.948  1932  2727 E dqod    : 	at dqrh.s(PG:9)
+11-11 01:21:48.948  1932  2727 E dqod    : 	at dksz.l(PG:5)
+11-11 01:21:48.948  1932  2727 E dqod    : 	at cyat.a(PG:138)
+11-11 01:21:48.948  1932  2727 E dqod    : 	at bilp.a(PG:29)
+11-11 01:21:48.948  1932  2727 E dqod    : 	at cwzc.r(PG:24)
+11-11 01:21:48.948  1932  2727 E dqod    : 	at cwws.a(PG:5)
+11-11 01:21:48.948  1932  2727 E dqod    : 	at dkqe.a(PG:13)
+11-11 01:21:48.948  1932  2727 E dqod    : 	at dqoh.d(PG:3)
+11-11 01:21:48.948  1932  2727 E dqod    : 	at dqoj.run(PG:42)
+11-11 01:21:48.948  1932  2727 E dqod    : 	at dqso.run(PG:76)
+11-11 01:21:48.948  1932  2727 E dqod    : 	at crzm.run(PG:3)
+11-11 01:21:48.948  1932  2727 E dqod    : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-11 01:21:48.948  1932  2727 E dqod    : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-11 01:21:48.948  1932  2727 E dqod    : 	at cryq.run(PG:6)
+11-11 01:21:48.948  1932  2727 E dqod    : 	at java.lang.Thread.run(Thread.java:1012)
+11-11 01:21:48.948  1932  2727 E dqod    : 	at csaw.run(PG:64)
+11-11 01:21:48.949  1932  2727 E dqod    : RuntimeException while executing runnable dqra{dkqj@85560af} with executor MoreExecutors.directExecutor()
+11-11 01:21:48.949  1932  2727 E dqod    : java.lang.NullPointerException: Attempt to read from field 'java.lang.String cwru.b' on a null object reference in method 'void cyar.b(java.lang.Object)'
+11-11 01:21:48.949  1932  2727 E dqod    : 	at cyar.b(PG:11)
+11-11 01:21:48.949  1932  2727 E dqod    : 	at dkqj.b(PG:13)
+11-11 01:21:48.949  1932  2727 E dqod    : 	at dqra.run(PG:30)
+11-11 01:21:48.949  1932  2727 E dqod    : 	at dqqd.execute(PG:1)
+11-11 01:21:48.949  1932  2727 E dqod    : 	at dqod.o(PG:1)
+11-11 01:21:48.949  1932  2727 E dqod    : 	at dqod.b(PG:41)
+11-11 01:21:48.949  1932  2727 E dqod    : 	at dqrh.s(PG:9)
+11-11 01:21:48.949  1932  2727 E dqod    : 	at dksz.l(PG:5)
+11-11 01:21:48.949  1932  2727 E dqod    : 	at cyat.a(PG:138)
+11-11 01:21:48.949  1932  2727 E dqod    : 	at bilp.a(PG:29)
+11-11 01:21:48.949  1932  2727 E dqod    : 	at cwzc.r(PG:24)
+11-11 01:21:48.949  1932  2727 E dqod    : 	at cwws.a(PG:5)
+11-11 01:21:48.949  1932  2727 E dqod    : 	at dkqe.a(PG:13)
+11-11 01:21:48.949  1932  2727 E dqod    : 	at dqoh.d(PG:3)
+11-11 01:21:48.949  1932  2727 E dqod    : 	at dqoj.run(PG:42)
+11-11 01:21:48.949  1932  2727 E dqod    : 	at dqso.run(PG:76)
+11-11 01:21:48.949  1932  2727 E dqod    : 	at crzm.run(PG:3)
+11-11 01:21:48.949  1932  2727 E dqod    : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-11 01:21:48.949  1932  2727 E dqod    : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-11 01:21:48.949  1932  2727 E dqod    : 	at cryq.run(PG:6)
+11-11 01:21:48.949  1932  2727 E dqod    : 	at java.lang.Thread.run(Thread.java:1012)
+11-11 01:21:48.949  1932  2727 E dqod    : 	at csaw.run(PG:64)
+11-11 01:21:48.955  1932  2727 E MDD     : FileGroupManager: Trying to add expired group webref-model-local-index.
+11-11 01:21:48.956  1932  2727 W MDD     : MDDManager class cxev
+11-11 01:21:48.956  1932  2087 W MDD     : GddFileGroupPopulator: Account was not provided, skipping private sync for corpus: GDD_BUGLE_EMOJIFY, configuration: GddBugleEmojify
+11-11 01:21:48.957  1932  2727 E PhFileGroupPop: Failed to add file group
+11-11 01:21:48.957  1932  2727 E PhFileGroupPop: cxev
+11-11 01:21:48.957  1932  2727 E PhFileGroupPop: 	at cxns.a(PG:941)
+11-11 01:21:48.957  1932  2727 E PhFileGroupPop: 	at dkqe.a(PG:13)
+11-11 01:21:48.957  1932  2727 E PhFileGroupPop: 	at dqoh.d(PG:3)
+11-11 01:21:48.957  1932  2727 E PhFileGroupPop: 	at dqoj.run(PG:42)
+11-11 01:21:48.957  1932  2727 E PhFileGroupPop: 	at dqso.run(PG:76)
+11-11 01:21:48.957  1932  2727 E PhFileGroupPop: 	at crzm.run(PG:3)
+11-11 01:21:48.957  1932  2727 E PhFileGroupPop: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-11 01:21:48.957  1932  2727 E PhFileGroupPop: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-11 01:21:48.957  1932  2727 E PhFileGroupPop: 	at cryq.run(PG:6)
+11-11 01:21:48.957  1932  2727 E PhFileGroupPop: 	at java.lang.Thread.run(Thread.java:1012)
+11-11 01:21:48.957  1932  2727 E PhFileGroupPop: 	at csaw.run(PG:64)
+11-11 01:21:48.959  1109  1981 W NetworkScheduler: Immediate task was not started com.google.android.gms/.tapandpay.gcmtask.TapAndPayGcmTaskService{u=0 tag="hce.dynamic_aid_registration.oneoff" trigger=window{start=0s,end=1s,earliest=0s,latest=0s} requirements=[NET_ANY,PREFERRED_CHARGING] attributes=[] scheduled=0s last_run=N/A exec_window_multiplier=1.0000 jid=N/A status=PENDING retries=0 client_lib=GMS_TASK_SCHEDULER-242335000}. Rescheduling immediate tasks can cause excessive battery drain.
+11-11 01:21:48.961  1932  2373 I GellerSyncClient: Starting batch sync for corpora: [1037]
+11-11 01:21:48.970  1932  2727 D PhFileGroupPop: Added file groups smart_actions_grammars
+11-11 01:21:48.970  1109  1576 I NearbySharing: Stopping FastInitiation scanning because visibility is hidden. [CONTEXT service_id=194 ]
+11-11 01:21:48.971  1109  1234 D StrictMode: StrictMode policy violation: android.os.strictmode.NonSdkApiUsedViolation: Ljava/security/spec/ECParameterSpec;->setCurveName(Ljava/lang/String;)V
+11-11 01:21:48.971  1109  1234 D StrictMode: 	at android.os.StrictMode.lambda$static$1(StrictMode.java:436)
+11-11 01:21:48.971  1109  1234 D StrictMode: 	at android.os.StrictMode$$ExternalSyntheticLambda2.accept(D8$$SyntheticClass:0)
+11-11 01:21:48.971  1109  1234 D StrictMode: 	at java.lang.Class.getDeclaredMethodInternal(Native Method)
+11-11 01:21:48.971  1109  1234 D StrictMode: 	at java.lang.Class.getMethod(Class.java:2945)
+11-11 01:21:48.971  1109  1234 D StrictMode: 	at java.lang.Class.getDeclaredMethod(Class.java:2929)
+11-11 01:21:48.971  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.Platform.setCurveName(:com.google.android.gms@242335041@24.23.35 (190800-646585959):13)
+11-11 01:21:48.971  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.OpenSSLECGroupContext.getECParameterSpec(:com.google.android.gms@242335041@24.23.35 (190800-646585959):96)
+11-11 01:21:48.971  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.OpenSSLECPublicKey.getParams(:com.google.android.gms@242335041@24.23.35 (190800-646585959):3)
+11-11 01:21:48.971  1109  1234 D StrictMode: 	at com.android.org.conscrypt.ChainStrengthAnalyzer.checkKeyLength(ChainStrengthAnalyzer.java:87)
+11-11 01:21:48.971  1109  1234 D StrictMode: 	at com.android.org.conscrypt.ChainStrengthAnalyzer.checkCert(ChainStrengthAnalyzer.java:73)
+11-11 01:21:48.971  1109  1234 D StrictMode: 	at com.android.org.conscrypt.ChainStrengthAnalyzer.check(ChainStrengthAnalyzer.java:64)
+11-11 01:21:48.971  1109  1234 D StrictMode: 	at com.android.org.conscrypt.TrustManagerImpl.verifyChain(TrustManagerImpl.java:702)
+11-11 01:21:48.971  1109  1234 D StrictMode: 	at com.android.org.conscrypt.TrustManagerImpl.checkTrustedRecursive(TrustManagerImpl.java:549)
+11-11 01:21:48.971  1109  1234 D StrictMode: 	at com.android.org.conscrypt.TrustManagerImpl.checkTrustedRecursive(TrustManagerImpl.java:570)
+11-11 01:21:48.971  1109  1234 D StrictMode: 	at com.android.org.conscrypt.TrustManagerImpl.checkTrustedRecursive(TrustManagerImpl.java:615)
+11-11 01:21:48.971  1109  1234 D StrictMode: 	at com.android.org.conscrypt.TrustManagerImpl.checkTrusted(TrustManagerImpl.java:505)
+11-11 01:21:48.971  1109  1234 D StrictMode: 	at com.android.org.conscrypt.TrustManagerImpl.checkTrusted(TrustManagerImpl.java:425)
+11-11 01:21:48.971  1109  1234 D StrictMode: 	at com.android.org.conscrypt.TrustManagerImpl.getTrustedChainForServer(TrustManagerImpl.java:353)
+11-11 01:21:48.971  1109  1234 D StrictMode: 	at android.security.net.config.NetworkSecurityTrustManager.checkServerTrusted(NetworkSecurityTrustManager.java:94)
+11-11 01:21:48.971  1109  1234 D StrictMode: 	at android.security.net.config.RootTrustManager.checkServerTrusted(RootTrustManager.java:90)
+11-11 01:21:48.971  1109  1234 D StrictMode: 	at java.lang.reflect.Method.invoke(Native Method)
+11-11 01:21:48.971  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.Platform.checkTrusted(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+11-11 01:21:48.971  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.Platform.checkServerTrusted(:com.google.android.gms@242335041@24.23.35 (190800-646585959):1)
+11-11 01:21:48.971  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.verifyCertificateChain(:com.google.android.gms@242335041@24.23.35 (190800-646585959):37)
+11-11 01:21:48.971  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.NativeCrypto.SSL_do_handshake(Native Method)
+11-11 01:21:48.971  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.NativeSsl.doHandshake(:com.google.android.gms@242335041@24.23.35 (190800-646585959):11)
+11-11 01:21:48.971  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.startHandshake(:com.google.android.gms@242335041@24.23.35 (190800-646585959):126)
+11-11 01:21:48.971  1109  1234 D StrictMode: 	at bckf.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):144)
+11-11 01:21:48.971  1109  1234 D StrictMode: 	at bcku.t(:com.google.android.gms@242335041@24.23.35 (190800-646585959):26)
+11-11 01:21:48.971  1109  1234 D StrictMode: 	at bckk.call(:com.google.android.gms@242335041@24.23.35 (190800-646585959):7)
+11-11 01:21:48.971  1109  1234 D StrictMode: 	at dkkb.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):5)
+11-11 01:21:48.971  1109  1234 D StrictMode: 	at angs.c(:com.google.android.gms@242335041@24.23.35 (190800-646585959):50)
+11-11 01:21:48.971  1109  1234 D StrictMode: 	at angs.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):76)
+11-11 01:21:48.971  1109  1234 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-11 01:21:48.971  1109  1234 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-11 01:21:48.971  1109  1234 D StrictMode: 	at anmg.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+11-11 01:21:48.971  1109  1234 D StrictMode: 	at java.lang.Thread.run(Thread.java:1012)
+11-11 01:21:48.972   635  2091 D BiometricService: Sensor ID(0), oemStrength: 15, updatedStrength: 15, modality 2, state: 0, cookie: 0, sensorId 0, hasEnrollments: false cannot participate in Keystore operations
+11-11 01:21:48.972   635  2091 D BiometricService: Sensor ID(4), oemStrength: 15, updatedStrength: 15, modality 8, state: 0, cookie: 0, sensorId 4, hasEnrollments: false cannot participate in Keystore operations
+11-11 01:21:48.973  1109  1576 I NearbySharing: Fast Initiation Scanning has stopped [CONTEXT service_id=194 ]
+11-11 01:21:48.974  1109  1234 D StrictMode: StrictMode policy violation: android.os.strictmode.NonSdkApiUsedViolation: Ljava/security/spec/ECParameterSpec;->setCurveName(Ljava/lang/String;)V
+11-11 01:21:48.974  1109  1234 D StrictMode: 	at android.os.StrictMode.lambda$static$1(StrictMode.java:436)
+11-11 01:21:48.974  1109  1234 D StrictMode: 	at android.os.StrictMode$$ExternalSyntheticLambda2.accept(D8$$SyntheticClass:0)
+11-11 01:21:48.974  1109  1234 D StrictMode: 	at java.lang.Class.getDeclaredMethodInternal(Native Method)
+11-11 01:21:48.974  1109  1234 D StrictMode: 	at java.lang.Class.getMethod(Class.java:2945)
+11-11 01:21:48.974  1109  1234 D StrictMode: 	at java.lang.Class.getDeclaredMethod(Class.java:2929)
+11-11 01:21:48.974  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.Platform.setCurveName(:com.google.android.gms@242335041@24.23.35 (190800-646585959):13)
+11-11 01:21:48.974  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.OpenSSLECGroupContext.getECParameterSpec(:com.google.android.gms@242335041@24.23.35 (190800-646585959):96)
+11-11 01:21:48.974  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.OpenSSLECPublicKey.getParams(:com.google.android.gms@242335041@24.23.35 (190800-646585959):3)
+11-11 01:21:48.974  1109  1234 D StrictMode: 	at sun.security.util.KeyUtil.getKeySize(KeyUtil.java:82)
+11-11 01:21:48.974  1109  1234 D StrictMode: 	at sun.security.util.DisabledAlgorithmConstraints$KeySizeConstraint.permitsImpl(DisabledAlgorithmConstraints.java:551)
+11-11 01:21:48.974  1109  1234 D StrictMode: 	at sun.security.util.DisabledAlgorithmConstraints$KeySizeConstraint.permits(DisabledAlgorithmConstraints.java:518)
+11-11 01:21:48.974  1109  1234 D StrictMode: 	at sun.security.util.DisabledAlgorithmConstraints$Constraints.permits(DisabledAlgorithmConstraints.java:369)
+11-11 01:21:48.974  1109  1234 D StrictMode: 	at sun.security.util.DisabledAlgorithmConstraints.checkConstraints(DisabledAlgorithmConstraints.java:215)
+11-11 01:21:48.974  1109  1234 D StrictMode: 	at sun.security.util.DisabledAlgorithmConstraints.permits(DisabledAlgorithmConstraints.java:140)
+11-11 01:21:48.974  1109  1234 D StrictMode: 	at sun.security.provider.certpath.AlgorithmChecker.check(AlgorithmChecker.java:261)
+11-11 01:21:48.974  1109  1234 D StrictMode: 	at sun.security.provider.certpath.PKIXMasterCertPathValidator.validate(PKIXMasterCertPathValidator.java:125)
+11-11 01:21:48.974  1109  1234 D StrictMode: 	at sun.security.provider.certpath.PKIXCertPathValidator.validate(PKIXCertPathValidator.java:222)
+11-11 01:21:48.974  1109  1234 D StrictMode: 	at sun.security.provider.certpath.PKIXCertPathValidator.validate(PKIXCertPathValidator.java:140)
+11-11 01:21:48.974  1109  1234 D StrictMode: 	at sun.security.provider.certpath.PKIXCertPathValidator.engineValidate(PKIXCertPathValidator.java:79)
+11-11 01:21:48.974  1109  1234 D StrictMode: 	at java.security.cert.CertPathValidator.validate(CertPathValidator.java:309)
+11-11 01:21:48.974  1109  1234 D StrictMode: 	at com.android.org.conscrypt.TrustManagerImpl.verifyChain(TrustManagerImpl.java:715)
+11-11 01:21:48.974  1109  1234 D StrictMode: 	at com.android.org.conscrypt.TrustManagerImpl.checkTrustedRecursive(TrustManagerImpl.java:549)
+11-11 01:21:48.974  1109  1234 D StrictMode: 	at com.android.org.conscrypt.TrustManagerImpl.checkTrustedRecursive(TrustManagerImpl.java:570)
+11-11 01:21:48.974  1109  1234 D StrictMode: 	at com.android.org.conscrypt.TrustManagerImpl.checkTrustedRecursive(TrustManagerImpl.java:615)
+11-11 01:21:48.974  1109  1234 D StrictMode: 	at com.android.org.conscrypt.TrustManagerImpl.checkTrusted(TrustManagerImpl.java:505)
+11-11 01:21:48.974  1109  1234 D StrictMode: 	at com.android.org.conscrypt.TrustManagerImpl.checkTrusted(TrustManagerImpl.java:425)
+11-11 01:21:48.974  1109  1234 D StrictMode: 	at com.android.org.conscrypt.TrustManagerImpl.getTrustedChainForServer(TrustManagerImpl.java:353)
+11-11 01:21:48.974  1109  1234 D StrictMode: 	at android.security.net.config.NetworkSecurityTrustManager.checkServerTrusted(NetworkSecurityTrustManager.java:94)
+11-11 01:21:48.974  1109  1234 D StrictMode: 	at android.security.net.config.RootTrustManager.checkServerTrusted(RootTrustManager.java:90)
+11-11 01:21:48.974  1109  1234 D StrictMode: 	at java.lang.reflect.Method.invoke(Native Method)
+11-11 01:21:48.974  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.Platform.checkTrusted(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+11-11 01:21:48.974  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.Platform.checkServerTrusted(:com.google.android.gms@242335041@24.23.35 (190800-646585959):1)
+11-11 01:21:48.974  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.verifyCertificateChain(:com.google.android.gms@242335041@24.23.35 (190800-646585959):37)
+11-11 01:21:48.974  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.NativeCrypto.SSL_do_handshake(Native Method)
+11-11 01:21:48.974  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.NativeSsl.doHandshake(:com.google.android.gms@242335041@24.23.35 (190800-646585959):11)
+11-11 01:21:48.974  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.startHandshake(:com.google.android.gms@242335041@24.23.35 (190800-646585959):126)
+11-11 01:21:48.974  1109  1234 D StrictMode: 	at bckf.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):144)
+11-11 01:21:48.974  1109  1234 D StrictMode: 	at bcku.t(:com.google.android.gms@242335041@24.23.35 (190800-646585959):26)
+11-11 01:21:48.974  1109  1234 D StrictMode: 	at bckk.call(:com.google.android.gms@242335041@24.23.35 (190800-646585959):7)
+11-11 01:21:48.974  1109  1234 D StrictMode: 	at dkkb.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):5)
+11-11 01:21:48.974  1109  1234 D StrictMode: 	at angs.c(:com.google.android.gms@242335041@24.23.35 (190800-646585959):50)
+11-11 01:21:48.974  1109  1234 D StrictMode: 	at angs.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):76)
+11-11 01:21:48.974  1109  1234 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-11 01:21:48.974  1109  1234 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-11 01:21:48.974  1109  1234 D StrictMode: 	at anmg.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+11-11 01:21:48.974  1109  1234 D StrictMode: 	at java.lang.Thread.run(Thread.java:1012)
+11-11 01:21:48.977  1932  2727 D PhFileGroupPop: Added file groups smart_actions_ml_models
+11-11 01:21:48.978  1932  2727 D PhFileGroupPop: Added file groups text_classifier
+11-11 01:21:48.979  1932  2118 I GellerDatabaseImpl: The GellerConfig is not present, returning null.
+11-11 01:21:48.979  1932  2118 I GellerDatabaseImpl: The GellerConfig is not present, defaulting isUploadEnabled for corpus GDD_BUGLE_EMOJIFY to true.
+11-11 01:21:48.979  1109  1576 I NearbySharing: Dismissing HUN as there's no device nearby. [CONTEXT service_id=194 ]
+11-11 01:21:48.984  1109  1576 I NearbySharing: Uwb feature is off. [CONTEXT service_id=194 ]
+11-11 01:21:48.984  1109  1576 I NearbySharing: Uwb feature is off. [CONTEXT service_id=194 ]
+11-11 01:21:48.987  1109  1576 I NearbySharing: Stopping scanning because Nearby Sharing is disabled. [CONTEXT service_id=194 ]
+11-11 01:21:48.992  1109  1576 I NearbySharing: Stopping Fast Init advertisement because we're not scanning in the foreground. [CONTEXT service_id=194 ]
+11-11 01:21:48.995  1109  1576 I NearbySharing: Stopping advertising because Nearby Sharing is disabled. [CONTEXT service_id=194 ]
+11-11 01:21:48.997  1932  2725 I GellerSyncClient: The syncToken for corpus GDD_BUGLE_EMOJIFY is EgkIlvj/xJb+lwM=.
+11-11 01:21:48.998  1932  2727 D PhFileGroupPop: Added file groups smart_actions_emotive_models
+11-11 01:21:49.000  1109  2826 I TapAndPay: getInstance: new instance created [CONTEXT service_id=79 ]
+11-11 01:21:49.003  1109  1234 D StrictMode: StrictMode policy violation: android.os.strictmode.NonSdkApiUsedViolation: Ljava/security/spec/ECParameterSpec;->setCurveName(Ljava/lang/String;)V
+11-11 01:21:49.003  1109  1234 D StrictMode: 	at android.os.StrictMode.lambda$static$1(StrictMode.java:436)
+11-11 01:21:49.003  1109  1234 D StrictMode: 	at android.os.StrictMode$$ExternalSyntheticLambda2.accept(D8$$SyntheticClass:0)
+11-11 01:21:49.003  1109  1234 D StrictMode: 	at java.lang.Class.getDeclaredMethodInternal(Native Method)
+11-11 01:21:49.003  1109  1234 D StrictMode: 	at java.lang.Class.getMethod(Class.java:2945)
+11-11 01:21:49.003  1109  1234 D StrictMode: 	at java.lang.Class.getDeclaredMethod(Class.java:2929)
+11-11 01:21:49.003  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.Platform.setCurveName(:com.google.android.gms@242335041@24.23.35 (190800-646585959):13)
+11-11 01:21:49.003  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.OpenSSLECGroupContext.getECParameterSpec(:com.google.android.gms@242335041@24.23.35 (190800-646585959):96)
+11-11 01:21:49.003  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.OpenSSLECPublicKey.getParams(:com.google.android.gms@242335041@24.23.35 (190800-646585959):3)
+11-11 01:21:49.003  1109  1234 D StrictMode: 	at sun.security.util.KeyUtil.getKeySize(KeyUtil.java:82)
+11-11 01:21:49.003  1109  1234 D StrictMode: 	at sun.security.util.DisabledAlgorithmConstraints$KeySizeConstraint.permitsImpl(DisabledAlgorithmConstraints.java:551)
+11-11 01:21:49.003  1109  1234 D StrictMode: 	at sun.security.util.DisabledAlgorithmConstraints$KeySizeConstraint.permits(DisabledAlgorithmConstraints.java:542)
+11-11 01:21:49.003  1109  1234 D StrictMode: 	at sun.security.util.DisabledAlgorithmConstraints$Constraints.permits(DisabledAlgorithmConstraints.java:332)
+11-11 01:21:49.003  1109  1234 D StrictMode: 	at sun.security.util.DisabledAlgorithmConstraints.checkConstraints(DisabledAlgorithmConstraints.java:185)
+11-11 01:21:49.003  1109  1234 D StrictMode: 	at sun.security.util.DisabledAlgorithmConstraints.permits(DisabledAlgorithmConstraints.java:128)
+11-11 01:21:49.003  1109  1234 D StrictMode: 	at sun.security.provider.certpath.AlgorithmChecker.check(AlgorithmChecker.java:306)
+11-11 01:21:49.003  1109  1234 D StrictMode: 	at sun.security.provider.certpath.PKIXMasterCertPathValidator.validate(PKIXMasterCertPathValidator.java:125)
+11-11 01:21:49.003  1109  1234 D StrictMode: 	at sun.security.provider.certpath.PKIXCertPathValidator.validate(PKIXCertPathValidator.java:222)
+11-11 01:21:49.003  1109  1234 D StrictMode: 	at sun.security.provider.certpath.PKIXCertPathValidator.validate(PKIXCertPathValidator.java:140)
+11-11 01:21:49.003  1109  1234 D StrictMode: 	at sun.security.provider.certpath.PKIXCertPathValidator.engineValidate(PKIXCertPathValidator.java:79)
+11-11 01:21:49.003  1109  1234 D StrictMode: 	at java.security.cert.CertPathValidator.validate(CertPathValidator.java:309)
+11-11 01:21:49.003  1109  1234 D StrictMode: 	at com.android.org.conscrypt.TrustManagerImpl.verifyChain(TrustManagerImpl.java:715)
+11-11 01:21:49.003  1109  1234 D StrictMode: 	at com.android.org.conscrypt.TrustManagerImpl.checkTrustedRecursive(TrustManagerImpl.java:549)
+11-11 01:21:49.003  1109  1234 D StrictMode: 	at com.android.org.conscrypt.TrustManagerImpl.checkTrustedRecursive(TrustManagerImpl.java:570)
+11-11 01:21:49.003  1109  1234 D StrictMode: 	at com.android.org.conscrypt.TrustManagerImpl.checkTrustedRecursive(TrustManagerImpl.java:615)
+11-11 01:21:49.003  1109  1234 D StrictMode: 	at com.android.org.conscrypt.TrustManagerImpl.checkTrusted(TrustManagerImpl.java:505)
+11-11 01:21:49.003  1109  1234 D StrictMode: 	at com.android.org.conscrypt.TrustManagerImpl.checkTrusted(TrustManagerImpl.java:425)
+11-11 01:21:49.003  1109  1234 D StrictMode: 	at com.android.org.conscrypt.TrustManagerImpl.getTrustedChainForServer(TrustManagerImpl.java:353)
+11-11 01:21:49.003  1109  1234 D StrictMode: 	at android.security.net.config.NetworkSecurityTrustManager.checkServerTrusted(NetworkSecurityTrustManager.java:94)
+11-11 01:21:49.003  1109  1234 D StrictMode: 	at android.security.net.config.RootTrustManager.checkServerTrusted(RootTrustManager.java:90)
+11-11 01:21:49.003  1109  1234 D StrictMode: 	at java.lang.reflect.Method.invoke(Native Method)
+11-11 01:21:49.003  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.Platform.checkTrusted(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+11-11 01:21:49.003  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.Platform.checkServerTrusted(:com.google.android.gms@242335041@24.23.35 (190800-646585959):1)
+11-11 01:21:49.003  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.verifyCertificateChain(:com.google.android.gms@242335041@24.23.35 (190800-646585959):37)
+11-11 01:21:49.003  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.NativeCrypto.SSL_do_handshake(Native Method)
+11-11 01:21:49.003  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.NativeSsl.doHandshake(:com.google.android.gms@242335041@24.23.35 (190800-646585959):11)
+11-11 01:21:49.003  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.startHandshake(:com.google.android.gms@242335041@24.23.35 (190800-646585959):126)
+11-11 01:21:49.003  1109  1234 D StrictMode: 	at bckf.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):144)
+11-11 01:21:49.003  1109  1234 D StrictMode: 	at bcku.t(:com.google.android.gms@242335041@24.23.35 (190800-646585959):26)
+11-11 01:21:49.003  1109  1234 D StrictMode: 	at bckk.call(:com.google.android.gms@242335041@24.23.35 (190800-646585959):7)
+11-11 01:21:49.003  1109  1234 D StrictMode: 	at dkkb.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):5)
+11-11 01:21:49.003  1109  1234 D StrictMode: 	at angs.c(:com.google.android.gms@242335041@24.23.35 (190800-646585959):50)
+11-11 01:21:49.003  1109  1234 D StrictMode: 	at angs.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):76)
+11-11 01:21:49.003  1109  1234 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-11 01:21:49.003  1109  1234 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-11 01:21:49.003  1109  1234 D StrictMode: 	at anmg.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+11-11 01:21:49.003  1109  1234 D StrictMode: 	at java.lang.Thread.run(Thread.java:1012)
+11-11 01:21:49.008   427  3268 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10137 0}
+11-11 01:21:49.008   427  3269 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+11-11 01:21:49.008   427  3269 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x74327897d6d0
+11-11 01:21:49.008   427  3269 I resolv  : doQuery: rcode=0, ancount=8, return value=496
+11-11 01:21:49.009   427  3270 I resolv  : res_nmkquery: (QUERY, IN, A)
+11-11 01:21:49.009   427  3270 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x743188982130
+11-11 01:21:49.010   427  3270 I resolv  : doQuery: rcode=0, ancount=8, return value=428
+11-11 01:21:49.011  1932  2725 D TrafficStats: tagSocket(168) with statsTag=0x0, statsUid=-1
+11-11 01:21:49.020   635   825 W JobServiceContext: Sending onNetworkChanged for a job that isn't started. JobStatus{ec1dade #u0a168/605010999 com.google.android.apps.photos/com.google.android.libraries.notifications.entrypoints.scheduled.ScheduledTaskService u=0 s=10168 NET PERSISTED READY}
+11-11 01:21:49.021  1520  2309 I cr_CronetUrlRequestContext: destroyNativeStreamLocked org.chromium.net.impl.CronetBidirectionalStream@d8d1354
+11-11 01:21:49.022  1443  2005 I BugleRcsEngine: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[c3abe674-5797]>Handler" thread_id=62 ]
+11-11 01:21:49.025  1932  1932 W JobService: onNetworkChanged() not implemented in androidx.work.impl.background.systemjob.SystemJobService. Must override in a subclass.
+11-11 01:21:49.025  1109  1576 I NearbySharing: Stopping FastInitiation scanning because visibility is hidden. [CONTEXT service_id=194 ]
+11-11 01:21:49.026  3237  3237 D CompatChangeReporter: Compat change id reported: 253665015; UID 10131; state: ENABLED
+11-11 01:21:49.026  3237  3237 W JobInfo : Job 'com.google.android.partnersetup/.PhenotypeJobService#1' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+11-11 01:21:49.026  1109  1863 I NearbySharing: A new client has bound to the NearbySharingService ClientBridge for calling package com.google.android.gms and PID 1581 [CONTEXT service_id=194 ]
+11-11 01:21:49.027   635  1984 D CompatChangeReporter: Compat change id reported: 253665015; UID 10131; state: ENABLED
+11-11 01:21:49.027  1443  1726 I BugleRcsEngine: Connected state: [1], networkType: [WIFI] [CONTEXT thread_id=57 ]
+11-11 01:21:49.027   635  1984 W JobInfo : Job 'com.google.android.partnersetup/.PhenotypeJobService#1' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+11-11 01:21:49.032  1932  1932 W JobService: onNetworkChanged() not implemented in androidx.work.impl.background.systemjob.SystemJobService. Must override in a subclass.
+11-11 01:21:49.028  1109  1576 I NearbySharing: Fast Initiation Scanning has stopped [CONTEXT service_id=194 ]
+11-11 01:21:49.033  1109  2827 I TapAndPay: Maintaining payment bundles [CONTEXT service_id=79 ]
+11-11 01:21:49.034  1109  1119 I ChimeraSrvcProxy: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl
+11-11 01:21:49.036  1109  1119 W .gms.persistent: Large reply transaction of 1056768 bytes, interface descriptor , code 1
+11-11 01:21:49.036  1109  1576 I NearbySharing: Dismissing HUN as there's no device nearby. [CONTEXT service_id=194 ]
+11-11 01:21:49.039   635   635 W Looper  : Slow dispatch took 105ms main h=android.app.ActivityThread$H c=android.app.LoadedApk$ServiceDispatcher$RunConnection@f242b6c m=0
+11-11 01:21:49.042  1581  1784 I Checkin : [CheckinApiChimeraService] onGetService
+11-11 01:21:49.044  1109  1120 W GLSUser : [DeviceKeyStore] Cannot load key: Device key file not found.
+11-11 01:21:49.045  1109  1120 W GLSUser : [DeviceKeyStore] Cannot load key: Device key file not found.
+11-11 01:21:49.053   635   670 V GrammaticalInflectionUtils: AttributionSource: AttributionSource { uid = 10196, packageName = null, attributionTag = null, token = android.os.Binder@e055ba3, deviceId = 0, next = null } does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+11-11 01:21:49.053   635  2091 D CompatChangeReporter: Compat change id reported: 161145287; UID 10131; state: ENABLED
+11-11 01:21:49.055  1109  2827 I TapAndPay: Finished maintaining payment bundles [CONTEXT service_id=79 ]
+11-11 01:21:49.059  3237  3237 W JobInfo : Job 'com.google.android.partnersetup/.ClientIdJobService#8192' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+11-11 01:21:49.061   635  1126 W JobInfo : Job 'com.google.android.partnersetup/.ClientIdJobService#8192' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+11-11 01:21:49.063  1109  1234 D StrictMode: StrictMode policy violation: android.os.strictmode.NonSdkApiUsedViolation: Ljava/net/Socket;->impl:Ljava/net/SocketImpl;
+11-11 01:21:49.063  1109  1234 D StrictMode: 	at android.os.StrictMode.lambda$static$1(StrictMode.java:436)
+11-11 01:21:49.063  1109  1234 D StrictMode: 	at android.os.StrictMode$$ExternalSyntheticLambda2.accept(D8$$SyntheticClass:0)
+11-11 01:21:49.063  1109  1234 D StrictMode: 	at java.lang.Class.getDeclaredField(Native Method)
+11-11 01:21:49.063  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.Platform.getFileDescriptor(:com.google.android.gms@242335041@24.23.35 (190800-646585959):5)
+11-11 01:21:49.063  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):1)
+11-11 01:21:49.063  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-11 01:21:49.063  1109  1234 D StrictMode: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.startHandshake(:com.google.android.gms@242335041@24.23.35 (190800-646585959):174)
+11-11 01:21:49.063  1109  1234 D StrictMode: 	at bckf.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):144)
+11-11 01:21:49.063  1109  1234 D StrictMode: 	at bcku.t(:com.google.android.gms@242335041@24.23.35 (190800-646585959):26)
+11-11 01:21:49.063  1109  1234 D StrictMode: 	at bckk.call(:com.google.android.gms@242335041@24.23.35 (190800-646585959):7)
+11-11 01:21:49.063  1109  1234 D StrictMode: 	at dkkb.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):5)
+11-11 01:21:49.063  1109  1234 D StrictMode: 	at angs.c(:com.google.android.gms@242335041@24.23.35 (190800-646585959):50)
+11-11 01:21:49.063  1109  1234 D StrictMode: 	at angs.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):76)
+11-11 01:21:49.063  1109  1234 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-11 01:21:49.063  1109  1234 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-11 01:21:49.063  1109  1234 D StrictMode: 	at anmg.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+11-11 01:21:49.063  1109  1234 D StrictMode: 	at java.lang.Thread.run(Thread.java:1012)

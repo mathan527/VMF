@@ -1,0 +1,428 @@
+--------- beginning of system
+11-09 01:06:17.367   653   677 V WindowManager: Sent Transition (#9) createdAt=11-09 01:06:13.715 via request=TransitionRequestInfo { type = CHANGE, triggerTask = null, pipTask = null, remoteTransition = RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@692f1e3, appThread = null, debugName = null }, displayChange = null, flags = 0, debugId = 9 }
+11-09 01:06:17.367   653   677 V WindowManager:     startWCT=WindowContainerTransaction { changes = {} hops = [] errorCallbackToken=null taskFragmentOrganizer=null }
+11-09 01:06:17.367   653   677 V WindowManager:     info={id=9 t=CHANGE f=0x0 trk=3 r=[] c=[]}
+11-09 01:06:17.367   904   970 V WindowManagerShell: onTransitionReady (#9) android.os.BinderProxy@d0d65e9: {id=9 t=CHANGE f=0x0 trk=3 r=[] c=[]}
+11-09 01:06:17.367   904   970 V WindowManagerShell: No transition roots in (#9) android.os.BinderProxy@d0d65e9@3 so abort
+11-09 01:06:17.368   904   970 V WindowManagerShell: Transition animation finished (aborted=true), notifying core (#9) android.os.BinderProxy@d0d65e9@3
+11-09 01:06:17.370   653   677 V WindowManager: Finish Transition (#9): created at 11-09 01:06:13.715 collect-started=3632.393ms request-sent=3634.454ms started=3636.191ms ready=3650.631ms sent=3651.145ms finished=3654.177ms
+11-09 01:06:17.370   904   970 V WindowManagerShell: Track 3 became idle
+11-09 01:06:17.370   904   970 V WindowManagerShell: All active transition animations finished
+11-09 01:06:17.370   904   970 V WindowManagerShell: Transition requested (#10): android.os.BinderProxy@d1b0d0f TransitionRequestInfo { type = CLOSE, triggerTask = null, pipTask = null, remoteTransition = RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@b19519c, appThread = null, debugName = null }, displayChange = null, flags = 0, debugId = 10 }
+11-09 01:06:17.370   904   970 V WindowManagerShell: RemoteTransition directly requested for (#10) android.os.BinderProxy@d1b0d0f: RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@b19519c, appThread = null, debugName = null }
+11-09 01:06:17.371   653  1931 W UserManagerService: Requested status bar icon for non-badged user 0
+11-09 01:06:17.371   904   926 V WindowManagerShell: onTransitionReady(transaction=2804613644677)
+11-09 01:06:17.372   653   677 V WindowManager: Sent Transition (#10) createdAt=11-09 01:06:17.364 via request=TransitionRequestInfo { type = CLOSE, triggerTask = null, pipTask = null, remoteTransition = RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@ad657e0, appThread = null, debugName = null }, displayChange = null, flags = 0, debugId = 10 }
+11-09 01:06:17.372   653   677 V WindowManager:     startWCT=WindowContainerTransaction { changes = {} hops = [] errorCallbackToken=null taskFragmentOrganizer=null }
+11-09 01:06:17.372   653   677 V WindowManager:     info={id=10 t=CLOSE f=0x0 trk=4 r=[] c=[]}
+11-09 01:06:17.372   904   970 V WindowManagerShell: onTransitionReady (#10) android.os.BinderProxy@d1b0d0f: {id=10 t=CLOSE f=0x0 trk=4 r=[] c=[]}
+11-09 01:06:17.373   904   970 V WindowManagerShell: No transition roots in (#10) android.os.BinderProxy@d1b0d0f@4 so abort
+11-09 01:06:17.373   904   970 V WindowManagerShell: Transition animation finished (aborted=true), notifying core (#10) android.os.BinderProxy@d1b0d0f@4
+11-09 01:06:17.374   653   677 V WindowManager: Finish Transition (#10): created at 11-09 01:06:17.364 collect-started=2.482ms request-sent=4.642ms started=6.337ms ready=6.326ms sent=6.834ms finished=9.15ms
+11-09 01:06:17.374   904   970 V WindowManagerShell: Track 4 became idle
+11-09 01:06:17.374   904   970 V WindowManagerShell: All active transition animations finished
+11-09 01:06:17.374   653  1931 W UserManagerService: Requested status bar icon for non-badged user 0
+11-09 01:06:17.436   226   237 W keystore2: system/security/keystore2/watchdog/src/lib.rs:114 - ### Keystore Watchdog report - BEGIN ###
+11-09 01:06:17.436   226   237 W keystore2: system/security/keystore2/watchdog/src/lib.rs:123 - When extracting from a bug report, please include this header
+11-09 01:06:17.436   226   237 W keystore2: system/security/keystore2/watchdog/src/lib.rs:124 - and all 1 records below.
+11-09 01:06:17.436   226   237 W keystore2: system/security/keystore2/watchdog/src/lib.rs:164 - ThreadId(6) Calling get_rkpd_attestation_key() Pending: 1.503093791s Overdue 1.003095093s
+11-09 01:06:17.436   226   237 W keystore2: system/security/keystore2/watchdog/src/lib.rs:175 - ### Keystore Watchdog report - END ###
+--------- beginning of main
+11-09 01:06:17.492  2861  2861 W BpBinder: Linking to death on android.gui.ISurfaceComposer but there are no threads (yet?) listening to incoming transactions. See ProcessState::startThreadPool and ProcessState::setThreadPoolMaxThreadCount. Generally you should setup the binder threadpool before other initialization steps.
+11-09 01:06:17.492  2861  2861 W ProcessState: Extra binder thread started, but 0 threads requested. Do not use *startThreadPool when zero threads are requested.
+11-09 01:06:17.500   200   200 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+11-09 01:06:17.501  2861  2862 I Gralloc4: mapper 4.x is not supported
+--------- beginning of kernel
+11-09 01:06:17.480     0     0 I servicemanager: Caller(pid=2861,uid=2000,sid=u:r:shell:s0) Could not find android.hardware.graphics.allocator.IAllocator/default in the VINTF manifest. No alternative instances declared in VINTF.
+11-09 01:06:17.675  2848  2848 D nativeloader: Configuring clns-shared-7 for other apk /apex/com.android.rkpd/priv-app/rkpdapp.google@350820300/rkpdapp.google.apk. target_sdk_version=34, uses_libraries=, library_path=/apex/com.android.rkpd/priv-app/rkpdapp.google@350820300/lib/x86_64:/system/lib64:/system_ext/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.rkpdapp:/apex/com.android.rkpd/priv-app/rkpdapp.google@350820300:/system/lib64:/system_ext/lib64
+11-09 01:06:17.675  2848  2848 D nativeloader: InitApexLibraries:
+11-09 01:06:17.675  2848  2848 D nativeloader:   com_android_adservices: libhpke_jni.so:libtflite_support_classifiers_native.so
+11-09 01:06:17.675  2848  2848 D nativeloader:   com_android_appsearch: libicing.so
+11-09 01:06:17.675  2848  2848 D nativeloader:   com_android_art: libartservice.so
+11-09 01:06:17.675  2848  2848 D nativeloader:   com_android_btservices: libbluetooth_jni.so
+11-09 01:06:17.675  2848  2848 D nativeloader:   com_android_conscrypt: libjavacrypto.so
+11-09 01:06:17.675  2848  2848 D nativeloader:   com_android_mediaprovider: libpdfclient.so
+11-09 01:06:17.675  2848  2848 D nativeloader:   com_android_nfcservices: libnfc_nci_jni.so
+11-09 01:06:17.675  2848  2848 D nativeloader:   com_android_ondevicepersonalization: libfcp_cpp_dep_jni.so:libfcp_hpke_jni.so
+11-09 01:06:17.675  2848  2848 D nativeloader:   com_android_os_statsd: libstats_jni.so
+11-09 01:06:17.675  2848  2848 D nativeloader:   com_android_tethering: libandroid_net_connectivity_com_android_net_module_util_jni.so:libcrypto.so:libframework-connectivity-jni.so:libframework-connectivity-tiramisu-jni.so:libmainlinecronet.121.0.6167.71.so:libservice-connectivity.so:libservice-thread-jni.so:libssl.so
+11-09 01:06:17.675  2848  2848 D nativeloader:   com_android_uwb: libuwb_uci_jni_rust.so
+11-09 01:06:17.675  2848  2848 D nativeloader:   com_android_virt: libvirtualizationservice_jni.so:libvirtualmachine_jni.so
+11-09 01:06:17.739  1078  1241 V NativeCrypto: SSL handshake aborted: ssl=0x775bfb46e918: I/O error during system call, Connection reset by peer
+11-09 01:06:17.740  1078  2204 D TrafficStats: tagSocket(198) with statsTag=0x34000609, statsUid=10136
+11-09 01:06:17.749  1078  2204 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-09 01:06:17.749  1078  2204 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-09 01:06:17.749  1078  2204 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-09 01:06:17.895  2895  2895 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-09 01:06:17.898  2895  2895 I AndroidRuntime: Using default boot image
+11-09 01:06:17.898  2895  2895 I AndroidRuntime: Leaving lock profiling enabled
+11-09 01:06:17.900  2895  2895 I app_process: Core platform API reporting enabled, enforcing=false
+11-09 01:06:17.901  2895  2895 I app_process: Using CollectorTypeCMC GC.
+11-09 01:06:17.973  2895  2895 D nativeloader: InitDefaultPublicLibraries for_preload=1: libandroid.so:libaaudio.so:libamidi.so:libbinder_ndk.so:libc.so:libcamera2ndk.so:libdl.so:libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libicu.so:libicui18n.so:libicuuc.so:libjnigraphics.so:liblog.so:libmediandk.so:libm.so:libnativehelper.so:libnativewindow.so:libOpenMAXAL.so:libOpenSLES.so:libRS.so:libstdc++.so:libsync.so:libvulkan.so:libwebviewchromium_plat_support.so:libz.so
+11-09 01:06:17.982  2895  2895 D nativeloader: Load libicu_jni.so using APEX ns com_android_art for caller /apex/com.android.art/javalib/core-oj.jar: ok
+11-09 01:06:17.982  2895  2895 D app_process: u_setTimeZoneFilesDirectory("/apex/com.android.tzdata/etc/tz/versioned/8/icu") succeeded. 
+11-09 01:06:17.982  2895  2895 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt75l.dat
+11-09 01:06:17.983  2895  2895 D nativeloader: Load libjavacore.so using APEX ns com_android_art for caller /apex/com.android.art/javalib/core-oj.jar: ok
+11-09 01:06:17.984  2895  2895 D nativeloader: Load libopenjdk.so using APEX ns com_android_art for caller /apex/com.android.art/javalib/core-oj.jar: ok
+11-09 01:06:17.986  2895  2895 W app_process: Unexpected CPU variant for x86: x86_64.
+11-09 01:06:17.986  2895  2895 W app_process: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, goldmont-without-sha-xsaves, tremont, kabylake, default
+11-09 01:06:17.987  2895  2895 W app_process: ClassLoaderContext shared library size mismatch. Expected=2, found=0 (PCL[]{PCL[/system/framework/android.test.base.jar*724373495]#PCL[/system/framework/android.test.mock.jar*1452759902]} | PCL[])
+11-09 01:06:17.987  2895  2895 W app_process: ClassLoaderContext classpath size mismatch. expected=0, found=1 (PCL[]{PCL[/system/framework/android.test.runner.jar*2496447986]#PCL[/system/framework/android.test.base.jar*724373495]} | PCL[/system/framework/android.test.runner.jar*2496447986])
+11-09 01:06:17.997  1596  1942 E native  : E0000 00:00:1794166577.997914    1942 flash-index.cc:708] Lite index failed to initialize; clearing: INTERNAL: Lite index header magic mismatch
+11-09 01:06:18.004  2895  2895 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+11-09 01:06:18.004  2895  2895 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-09 01:06:18.007  2895  2895 D UiAutomationConnection: Created on user UserHandle{0}
+11-09 01:06:18.007  2895  2895 I UiAutomation: Initialized for user 0 on display 0
+11-09 01:06:18.007  2895  2895 W UiAutomation: Created with deprecatead constructor, assumes DEFAULT_DISPLAY
+11-09 01:06:18.008   653  1931 D AccessibilityManagerService: changeCurrentUserForTestAutomationIfNeededLocked(0): ignoring because device doesn't support visible background users
+11-09 01:06:18.008   653  1931 I UiAutomationManager: Registering UiTestAutomationService (id=com.android.server.accessibility/UiAutomation, flags=0x0) when called by user 0
+11-09 01:06:18.010   653  1931 W MagnificationConnectionManager: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
+11-09 01:06:18.011  1474  2135 I AiAiEcho: Settings changed for uri: content://settings/secure/accessibility_enabled
+11-09 01:06:18.012  2895  2906 V UiAutomation: Init UiAutomation@6671da8[id=2, displayId=0, flags=0]
+11-09 01:06:18.013  1474  1932 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-09 01:06:18.014   653   653 D BatterySaverPolicy: accessibility changed to true, updating policy.
+11-09 01:06:18.015  1474  1932 I AiAiEcho: EchoTargets: 
+11-09 01:06:18.015  1474  1932 I AiAiEcho: Filtered by AiAi flag check: 
+11-09 01:06:18.015  1474  1932 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-09 01:06:18.015  1474  1932 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-09 01:06:18.016   653   673 W MagnificationConnectionManager: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
+11-09 01:06:18.017  1474  1932 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-09 01:06:18.017  1474  1932 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-09 01:06:18.017  1474  1932 I AiAiEcho: EchoTargets: 
+11-09 01:06:18.017  1474  1932 I AiAiEcho: Filtered by AiAi flag check: 
+11-09 01:06:18.017  1474  1932 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-09 01:06:18.017  1474  1932 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-09 01:06:18.018  1474  2135 I AiAiEcho: Settings changed for uri: content://settings/secure/accessibility_enabled
+11-09 01:06:18.018  1474  1932 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-09 01:06:18.018  1474  1932 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-09 01:06:18.018  1474  1932 I AiAiEcho: EchoTargets: 
+11-09 01:06:18.018  1474  1932 I AiAiEcho: Filtered by AiAi flag check: 
+11-09 01:06:18.018  1474  1932 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-09 01:06:18.018  1474  1932 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-09 01:06:18.018  1474  1932 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-09 01:06:18.021  1474  1932 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+11-09 01:06:18.022  1245  1287 D AccessibilitySourceService: enabled a11y services count 0
+11-09 01:06:18.022  1245  1287 D AccessibilitySourceService: a11y source sending 0 issue to sc
+11-09 01:06:18.022  1474  1932 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface media_data_manager with targets# 0 (types=[])
+11-09 01:06:18.022   904   904 D SsMediaDataProvider: Forwarding Smartspace updates []
+11-09 01:06:18.023   653   983 D SafetySourceDataValidat: No cert check requested for package com.google.android.permissioncontroller
+11-09 01:06:18.023  1474  1932 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-09 01:06:18.023  1474  1932 I AiAiEcho: EchoTargets: 
+11-09 01:06:18.023  1474  1932 I AiAiEcho: Filtered by AiAi flag check: 
+11-09 01:06:18.023  1474  1932 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-09 01:06:18.023  1474  1932 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-09 01:06:18.024  1474  1932 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-09 01:06:18.024  1474  1932 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-09 01:06:18.024  1474  1932 I AiAiEcho: EchoTargets: 
+11-09 01:06:18.024  1474  1932 I AiAiEcho: Filtered by AiAi flag check: 
+11-09 01:06:18.024  1474  1932 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-09 01:06:18.025  1474  1932 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-09 01:06:18.025  1474  1932 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-09 01:06:18.025  1474  1932 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-09 01:06:18.026  1474  1932 I AiAiEcho: EchoTargets: 
+11-09 01:06:18.026  1474  1932 I AiAiEcho: Filtered by AiAi flag check: 
+11-09 01:06:18.026  1474  1932 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-09 01:06:18.027  1626  1811 I A       : NGA disabled since it's running Panthera and at least one a11y feature is on.
+11-09 01:06:18.027  1474  1932 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-09 01:06:18.027  1626  1811 I A       : (REDACTED) Nga state changed to %s
+11-09 01:06:18.027  1474  1932 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-09 01:06:18.027  1626  1811 I A       : (REDACTED) isTngActive=%s
+11-09 01:06:18.028  1474  1932 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+11-09 01:06:18.028   904   904 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+11-09 01:06:18.028  1474  1932 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+11-09 01:06:18.029  1474  1932 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface media_data_manager with targets# 0 (types=[])
+11-09 01:06:18.029   904   904 D SsMediaDataProvider: Forwarding Smartspace updates []
+11-09 01:06:18.030  1474  1932 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+11-09 01:06:18.031  1479  1904 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+11-09 01:06:18.031   904   904 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+11-09 01:06:18.031  1479  1904 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+11-09 01:06:18.031  1479  1904 I A       : Unsubscribed to apa or classic variant change.
+11-09 01:06:18.053  1474  1484 I BpBinder: onLastStrongRef automatically unlinking death recipients: 
+11-09 01:06:18.055  1474  1485 W ogle.android.as: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.extservices/priv-app/GoogleExtServices@350820300/GoogleExtServices.apk' with 1 weak references
+11-09 01:06:18.055  1474  1485 W ogle.android.as: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Camera2/Camera2.apk' with 1 weak references
+11-09 01:06:18.055  1474  1485 W ogle.android.as: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~lFvGeXT8bSDwAR4RaJDAlA==/com.android.chrome-1Oo-9MMmKNRIs4uygkXSsA==/Chrome.apk' with 1 weak references
+11-09 01:06:18.055  1474  1485 W ogle.android.as: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~k1U6xEm7zqc5ZzuemFsKhQ==/com.google.android.trichromelibrary_636771938-VTb1ofhSakuEuXrqJoptAA==/TrichromeLibrary.apk' with 1 weak references
+11-09 01:06:18.055  1474  1485 W ogle.android.as: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/priv-app/SettingsGoogle/SettingsGoogle.apk' with 1 weak references
+11-09 01:06:18.055  1474  1485 W ogle.android.as: ApkAssets: Deleting an ApkAssets object '/product/overlay/SettingsGoogle__sdk_gphone64_x86_64__auto_generated_rro_product.apk' with 1 weak references
+11-09 01:06:18.056  1474  1485 W ogle.android.as: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Drive/Drive.apk' with 1 weak references
+11-09 01:06:18.056  1474  1485 W ogle.android.as: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Maps/Maps.apk' with 1 weak references
+11-09 01:06:18.056  1474  1485 W ogle.android.as: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PrebuiltBugle/PrebuiltBugle.apk' with 1 weak references
+11-09 01:06:18.056  1474  1485 W ogle.android.as: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Photos/Photos.apk' with 1 weak references
+11-09 01:06:18.057  1474  1485 W ogle.android.as: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/SafetyHubPrebuilt/SafetyHubPrebuilt.apk' with 1 weak references
+11-09 01:06:18.057  1474  1485 W ogle.android.as: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/YouTubeMusicPrebuilt/YouTubeMusicPrebuilt.apk' with 1 weak references
+11-09 01:06:18.057  1474  1485 W ogle.android.as: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/CalendarGooglePrebuilt/CalendarGooglePrebuilt.apk' with 1 weak references
+11-09 01:06:18.057  1474  1485 W ogle.android.as: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/GoogleContacts/GoogleContacts.apk' with 1 weak references
+11-09 01:06:18.057  1474  1485 W ogle.android.as: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PrebuiltDeskClockGoogle/PrebuiltDeskClockGoogle.apk' with 1 weak references
+11-09 01:06:18.058  1474  1485 W ogle.android.as: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/GoogleDialer/GoogleDialer.apk' with 1 weak references
+11-09 01:06:18.058  1474  1485 W ogle.android.as: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/DocumentsUIGoogle/DocumentsUIGoogle.apk' with 1 weak references
+11-09 01:06:18.058  1474  1485 W ogle.android.as: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PrebuiltGmail/PrebuiltGmail.apk' with 1 weak references
+11-09 01:06:18.058  1474  1485 W ogle.android.as: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/Velvet/Velvet.apk' with 1 weak references
+11-09 01:06:18.059  1474  1485 W ogle.android.as: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/YouTube/YouTube.apk' with 1 weak references
+11-09 01:06:18.059  1474  1485 W ogle.android.as: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~-K-34f7wqjyaJA2w-9YgMQ==/com.saucelabs.mydemoapp.rn-tc3Q_j7o8LCJzuDMgm49Sw==/base.apk' with 1 weak references
+11-09 01:06:18.059  1474  1485 W ogle.android.as: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~g_49fF5u1CWg68Q3WzNU5g==/io.appium.settings-Bp6f1l8m1erMcX-fq6HY6Q==/base.apk' with 1 weak references
+11-09 01:06:18.101  2812  2825 E platform: Failed to open rendernode: No such file or directory
+11-09 01:06:18.109  2812  2825 D vulkan  : searching for layers in '/data/app/~~lFvGeXT8bSDwAR4RaJDAlA==/com.android.chrome-1Oo-9MMmKNRIs4uygkXSsA==/lib/x86_64'
+11-09 01:06:18.109  2812  2825 D vulkan  : searching for layers in '/data/app/~~lFvGeXT8bSDwAR4RaJDAlA==/com.android.chrome-1Oo-9MMmKNRIs4uygkXSsA==/Chrome.apk!/lib/x86_64'
+11-09 01:06:18.133  1633  1936 W SQLiteLog: (28) double-quoted string literal: "2777afa6-2dc2-4db9-9273-99066ba4022e"
+11-09 01:06:18.133  1633  1936 W SQLiteLog: (28) double-quoted string literal: "443e0555-08fd-47e0-b0b2-2871f6f08bc7"
+11-09 01:06:18.133  1633  1936 W SQLiteLog: (28) double-quoted string literal: "890e14d9-6acc-477f-8498-8483e3b80c87"
+11-09 01:06:18.133  1633  1936 W SQLiteLog: (28) double-quoted string literal: "9a5d4808-d577-4499-9d9b-e16407dd2a3d"
+11-09 01:06:18.133  1633  1936 W SQLiteLog: (28) double-quoted string literal: "14840d39-a8b2-4eb3-978a-3b5446965330"
+11-09 01:06:18.133  1633  1936 W SQLiteLog: (28) double-quoted string literal: "75e9562a-70c8-4333-acc5-7bed613df35b"
+11-09 01:06:18.133  1633  1936 W SQLiteLog: (28) double-quoted string literal: "b1f57677-d545-49c0-9ae1-54b8b7701485"
+11-09 01:06:18.133  1633  1936 W SQLiteLog: (28) double-quoted string literal: "52cac6b2-4d24-4876-95d4-5a6f67074f7c"
+11-09 01:06:18.133  1633  1936 W SQLiteLog: (28) double-quoted string literal: "20db1abc-a3b8-4dbb-a0c8-4d404ac1628a"
+11-09 01:06:18.133  1633  1936 W SQLiteLog: (28) double-quoted string literal: "25d9b51f-65c2-4199-830b-e0ccaaabfdeb"
+11-09 01:06:18.133  1633  1936 W SQLiteLog: (28) double-quoted string literal: "89cd9f4e-ee73-42e9-ad55-6e0231bb0be7"
+11-09 01:06:18.133  1633  1936 W SQLiteLog: (28) double-quoted string literal: "07bb6040-f61d-42b2-b16c-0925f19c577d"
+11-09 01:06:18.133  1633  1936 W SQLiteLog: (28) double-quoted string literal: "436c663a-9307-4538-b7e8-02767050514f"
+11-09 01:06:18.133  1633  1936 W SQLiteLog: (28) double-quoted string literal: "be236088-536a-41c1-bdc2-8de7bbf9833d"
+11-09 01:06:18.133  1633  1936 W SQLiteLog: (28) double-quoted string literal: "9ab75e5f-a216-4dbe-af62-9638448e59de"
+11-09 01:06:18.133  1633  1936 W SQLiteLog: (28) double-quoted string literal: "a057b1b5-06a5-4e90-ad52-353ea96ead09"
+11-09 01:06:18.133  1633  1936 W SQLiteLog: (28) double-quoted string literal: "9b8de1db-b4cd-46ce-bb1a-f3ea040009d1"
+11-09 01:06:18.151   653   689 W MagnificationConnectionManager: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
+11-09 01:06:18.152  1474  1474 I AiAiEcho: AppFetcherImpl onPackageChanged com.google.android.apps.wellbeing.
+11-09 01:06:18.153  1474  2710 I AiAiEcho: AppIndexer Package:[com.google.android.apps.wellbeing] UserProfile:[0] Enabled:[true].
+11-09 01:06:18.153  1474  2710 I AiAiEcho: AppFetcherImplV2 updateApps package:[com.google.android.apps.wellbeing], userId:[0], reason:[package is updated.].
+11-09 01:06:18.181  2620  2620 D CompatChangeReporter: Compat change id reported: 311402873; UID 10100; state: ENABLED
+11-09 01:06:18.181  2620  2620 D CompatChangeReporter: Compat change id reported: 323349338; UID 10100; state: ENABLED
+11-09 01:06:18.181   653  2689 D CompatChangeReporter: Compat change id reported: 311402873; UID 10100; state: ENABLED
+11-09 01:06:18.181   653  2689 D CompatChangeReporter: Compat change id reported: 323349338; UID 10100; state: ENABLED
+11-09 01:06:18.209   445   445 I netd    : tetherGetStats() -> {[]} <0.45ms>
+11-09 01:06:18.256  1078  2204 V NativeCrypto: SSL handshake aborted: ssl=0x775bfb46e918: I/O error during system call, Connection reset by peer
+11-09 01:06:18.257  1078  2301 D TrafficStats: tagSocket(198) with statsTag=0x34000609, statsUid=10136
+11-09 01:06:18.259  2812  2825 D vulkan  : searching for layers in '/data/app/~~k1U6xEm7zqc5ZzuemFsKhQ==/com.google.android.trichromelibrary_636771938-VTb1ofhSakuEuXrqJoptAA==/TrichromeLibrary.apk!/lib/x86_64'
+11-09 01:06:18.265  1078  2301 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-09 01:06:18.265  1078  2301 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-09 01:06:18.265  1078  2301 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-09 01:06:18.410   653  1131 D CompatChangeReporter: Compat change id reported: 311208629; UID 10100; state: ENABLED
+11-09 01:06:18.437   226   237 W keystore2: system/security/keystore2/watchdog/src/lib.rs:114 - ### Keystore Watchdog report - BEGIN ###
+11-09 01:06:18.437   226   237 W keystore2: system/security/keystore2/watchdog/src/lib.rs:123 - When extracting from a bug report, please include this header
+11-09 01:06:18.437   226   237 W keystore2: system/security/keystore2/watchdog/src/lib.rs:124 - and all 1 records below.
+11-09 01:06:18.437   226   237 W keystore2: system/security/keystore2/watchdog/src/lib.rs:164 - ThreadId(6) Calling get_rkpd_attestation_key() Pending: 2.504132732s Overdue 2.004134009s
+11-09 01:06:18.437   226   237 W keystore2: system/security/keystore2/watchdog/src/lib.rs:175 - ### Keystore Watchdog report - END ###
+11-09 01:06:18.585  2848  2848 V GraphicsEnvironment: Currently set values for:
+11-09 01:06:18.585  2848  2848 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+11-09 01:06:18.585  2848  2848 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+11-09 01:06:18.585  2848  2848 V GraphicsEnvironment: Global.Settings values are invalid: number of packages: 0, number of values: 0
+11-09 01:06:18.585  2848  2848 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+11-09 01:06:18.755  2848  2848 D WM-WrkMgrInitializer: Initializing WorkManager with default configuration.
+11-09 01:06:18.770  1078  2301 V NativeCrypto: SSL handshake aborted: ssl=0x775bfb46c2d8: I/O error during system call, Connection reset by peer
+11-09 01:06:18.771  1078  2204 D TrafficStats: tagSocket(198) with statsTag=0x34000609, statsUid=10136
+11-09 01:06:18.780  1078  2204 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-09 01:06:18.780  1078  2204 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-09 01:06:18.780  1078  2204 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-09 01:06:18.851  2848  2848 D WM-PackageManagerHelper: Skipping component enablement for androidx.work.impl.background.systemjob.SystemJobService
+11-09 01:06:18.851  2848  2848 D WM-Schedulers: Created SystemJobScheduler and enabled SystemJobService
+11-09 01:06:18.852  2848  2922 D WM-ForceStopRunnable: The default process name was not specified.
+11-09 01:06:18.856   653   653 I RegistrationProxy: onServiceConnected: com.android.rkpdapp.service.RemoteProvisioningService
+11-09 01:06:18.877   653  1923 I AppWidgetServiceImpl: getAppWidgetIds() 0
+11-09 01:06:18.878   653  1923 I AppWidgetServiceImpl: getAppWidgetIds() 0
+11-09 01:06:18.882  1626  1903 I CtfManager: (REDACTED) remove request for trigger key: %s, isClientInitiated: %s
+11-09 01:06:18.917  2848  2922 D WM-ForceStopRunnable: Performing cleanup operations.
+11-09 01:06:19.004   653  1923 D CompatChangeReporter: Compat change id reported: 261072174; UID 10145; state: ENABLED
+11-09 01:06:19.030  1078  1243 W ctxmgr  : [PendingIntentCompat] Timed out delivering to pendingIntent=PendingIntent{a82942f: android.os.BinderProxy@a9db8fb}, package=com.google.android.settings.intelligence, permission=null [CONTEXT service_id=47 ]
+11-09 01:06:19.034  2895  2895 I AccessibilityNodeInfoDumper: Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@35051; boundsInParent: Rect(0, 0 - 606, 0); boundsInScreen: Rect(57, 218 - 663, 218); boundsInWindow: Rect(57, 218 - 663, 218); packageName: com.google.android.apps.nexuslauncher; className: android.view.ViewGroup; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; containerTitle: null; viewIdResName: com.google.android.apps.nexuslauncher:id/smartspace_subtitle_group; uniqueId: null; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; granularScrollingSupported: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]; isTextSelectable: false
+11-09 01:06:19.035  2895  2895 W AccessibilityNodeInfoDumper: Fetch time: 2ms
+11-09 01:06:19.037   653  2689 W MagnificationConnectionManager: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
+11-09 01:06:19.037   653  2689 D AccessibilityManagerService: restoreCurrentUserForTestAutomationIfNeededLocked(): ignoring because device doesn't support visible background users
+11-09 01:06:19.040  2895  2895 D AndroidRuntime: Shutting down VM
+11-09 01:06:19.041   653   653 D BatterySaverPolicy: accessibility changed to false, updating policy.
+11-09 01:06:19.044  1626  1804 I A       : NGA enabled in interactor.
+11-09 01:06:19.045  1626  1804 I A       : (REDACTED) Nga state changed to %s
+11-09 01:06:19.045  1626  1804 I A       : (REDACTED) isTngActive=%s
+11-09 01:06:19.048  1479  2800 I A       : Initializing all components
+11-09 01:06:19.048  1838  2587 I DataService: Mobalt: generating observations for day index 20761 for report: 200006-1-1-3
+11-09 01:06:19.048  1479  1835 I A       : (REDACTED) onIsEnabledChanged, isEnabled: %s
+11-09 01:06:19.048  1479  1835 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:06:19.048  1479  1835 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:06:19.048  1479  1902 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+11-09 01:06:19.048  1479  1835 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:06:19.048  1479  1835 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:06:19.048  1479  1835 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:06:19.048  1479  1835 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:06:19.048  1479  1835 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:06:19.048  1479  1835 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:06:19.048  1479  1902 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+11-09 01:06:19.048  1479  1835 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:06:19.048  1479  1835 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:06:19.048  1479  1835 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:06:19.049  1479  1835 I A       : (REDACTED) Setting session to type: %s
+11-09 01:06:19.049  1479  1835 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:06:19.049  1479  1835 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:06:19.049  1479  1904 I A       : (REDACTED) State changed: %s => %s by %s and %s with %s
+11-09 01:06:19.025     0     0 I servicemanager: Caller(pid=2848,uid=10203,sid=u:r:rkpdapp:s0:c203,c256,c512,c768) Found android.hardware.security.keymint.IRemotelyProvisionedComponent/default in device VINTF manifest.
+11-09 01:06:19.049  1479  1904 I A       : (REDACTED) Recognizer choice: (recognizer_type: %s, recognizer_mode: %s, choice_reason: %s)
+11-09 01:06:19.049   653  1469 I RegistrationProxy: IGetRegistrationCallback.onSuccess
+11-09 01:06:19.049  1479  1835 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:06:19.049  1479  1835 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:06:19.049  1479  1835 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:06:19.049  1479  1835 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:06:19.049  1479  1835 I A       : (REDACTED) setNavBarVisible: %s
+11-09 01:06:19.050  1479  1835 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:06:19.050  1838  2587 I AtLeastOnceObservationG: Mobalt: generating observations for day index 20761 for report: 200006-1-1-3
+11-09 01:06:19.050  1479  1835 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:06:19.050  1479  1835 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:06:19.050  1479  1835 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:06:19.050  1479  1835 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:06:19.050  1479  1835 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:06:19.050  1479  1904 I A       : (REDACTED) onActiveStateChangeEvent: %s => %s
+11-09 01:06:19.052  1479  1904 I A       : (REDACTED) #onActiveStateChangeEvent, newState: %s, previousState: %s.
+11-09 01:06:19.052   653  1469 I RemoteProvisionSysSvc: Fetching key 10143 for client 104978852
+11-09 01:06:19.052   653  1469 I RegistrationProxy: getKeyAsync operation started with callback 53596941
+11-09 01:06:19.052  1838  2587 I AtLeastOnceObservationG: Mobalt: generated 2 observations in 1 observation batches for day index 20761 for report: 200006-1-1-3
+11-09 01:06:19.052  2848  2926 I RkpdRegistrationBinder: Key requested for : android.hardware.security.keymint.IRemotelyProvisionedComponent/default, clientUid: 1017, keyId: 10143, callback: 33071859
+11-09 01:06:19.054  1838  2587 I DataService: Mobalt: generating observations for day index 20762 for report: 200006-1-1-3
+11-09 01:06:19.054  1479  1904 I NgaEntryPointEventSendr: setupConnection
+11-09 01:06:19.054  1479  1864 I A       : (REDACTED) stopListening(%s, %s)
+11-09 01:06:19.055  1838  2587 I AtLeastOnceObservationG: Mobalt: generating observations for day index 20762 for report: 200006-1-1-3
+11-09 01:06:19.055  1479  1902 I A       : Initialize
+11-09 01:06:19.056  1838  2587 I AtLeastOnceObservationG: Mobalt: generated 3 observations in 1 observation batches for day index 20762 for report: 200006-1-1-3
+11-09 01:06:19.057  1479  1864 I INV.SystemUI: showGestureNav
+11-09 01:06:19.057  1479  1864 I INV.SystemUI: (REDACTED) setUiHints(hints = %s)
+11-09 01:06:19.058  1838  2587 I DataService: Mobalt: generating observations for day index 20763 for report: 200006-1-1-3
+11-09 01:06:19.058  1838  2587 I AtLeastOnceObservationG: Mobalt: generating observations for day index 20763 for report: 200006-1-1-3
+11-09 01:06:19.058  1479  1902 I A       : (REDACTED) on opa visibility changed %s
+11-09 01:06:19.058  1479  1902 I A       : Ignoring as prefetch was recently called
+11-09 01:06:19.058  1479  1904 I NgaEntryPointEventSendr: (REDACTED) State changed: %s => %s
+11-09 01:06:19.058  1838  2587 I AtLeastOnceObservationG: Mobalt: generated 2 observations in 1 observation batches for day index 20763 for report: 200006-1-1-3
+11-09 01:06:19.059  1838  2587 I DataService: Mobalt: generating observations for day index 20764 for report: 200006-1-1-3
+11-09 01:06:19.059  1479  1835 I NgaEntryPointEventSendr: onServiceConnected
+11-09 01:06:19.059  1838  2587 I AtLeastOnceObservationG: Mobalt: generating observations for day index 20764 for report: 200006-1-1-3
+11-09 01:06:19.060  1479  1904 I A       : Successfully initialized all components
+11-09 01:06:19.060  1838  2587 I AtLeastOnceObservationG: Mobalt: generated 3 observations in 1 observation batches for day index 20764 for report: 200006-1-1-3
+11-09 01:06:19.060  1626  1656 I A       : Calling beginBinderSession().
+11-09 01:06:19.060  1479  1902 I INV.SystemUI: setUiHints: finished successfully
+11-09 01:06:19.062  1479  1904 I A       : (REDACTED) on opa visibility changed %s
+11-09 01:06:19.062  1626  1656 I A       : beginBinderSession(): calling binder
+11-09 01:06:19.063  1838  2587 I DataService: Mobalt: generating observations for day index 20761 for report: 200006-1-1-5
+11-09 01:06:19.063  1479  1835 I NgaEntryPointEventSendr: (REDACTED) State changed: %s => %s
+11-09 01:06:19.064  1838  2587 I AtLeastOnceObservationG: Mobalt: generating observations for day index 20761 for report: 200006-1-1-5
+11-09 01:06:19.064  1838  2606 I LogWriter: Mobalt: logged event to 3 reports
+11-09 01:06:19.064  1838  2587 I AtLeastOnceObservationG: Mobalt: generated 2 observations in 1 observation batches for day index 20761 for report: 200006-1-1-5
+11-09 01:06:19.065  1838  2587 I DataService: Mobalt: generating observations for day index 20762 for report: 200006-1-1-5
+11-09 01:06:19.065  1838  2587 I AtLeastOnceObservationG: Mobalt: generating observations for day index 20762 for report: 200006-1-1-5
+11-09 01:06:19.065  1838  2587 I AtLeastOnceObservationG: Mobalt: generated 1 observations in 1 observation batches for day index 20762 for report: 200006-1-1-5
+11-09 01:06:19.066  1838  2587 I DataService: Mobalt: generating observations for day index 20763 for report: 200006-1-1-5
+11-09 01:06:19.066  1838  2587 I AtLeastOnceObservationG: Mobalt: generating observations for day index 20763 for report: 200006-1-1-5
+11-09 01:06:19.066  1838  2587 I AtLeastOnceObservationG: Mobalt: generated 1 observations in 1 observation batches for day index 20763 for report: 200006-1-1-5
+11-09 01:06:19.067  1838  2587 I DataService: Mobalt: generating observations for day index 20764 for report: 200006-1-1-5
+11-09 01:06:19.067  1838  2587 I AtLeastOnceObservationG: Mobalt: generating observations for day index 20764 for report: 200006-1-1-5
+11-09 01:06:19.067  1838  2587 I AtLeastOnceObservationG: Mobalt: generated 1 observations in 1 observation batches for day index 20764 for report: 200006-1-1-5
+11-09 01:06:19.067  1479  1904 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+11-09 01:06:19.068  1838  2587 I DataService: Mobalt: generating observations for day index 20761 for report: 200006-1-1-7
+11-09 01:06:19.069  1838  2587 I AtLeastOnceObservationG: Mobalt: generating observations for day index 20761 for report: 200006-1-1-7
+11-09 01:06:19.069  1838  2587 I AtLeastOnceObservationG: Mobalt: generated 1 observations in 1 observation batches for day index 20761 for report: 200006-1-1-7
+11-09 01:06:19.069  1838  2587 I DataService: Mobalt: generating observations for day index 20762 for report: 200006-1-1-7
+11-09 01:06:19.070  1838  2587 I AtLeastOnceObservationG: Mobalt: generating observations for day index 20762 for report: 200006-1-1-7
+11-09 01:06:19.071  1838  2587 I AtLeastOnceObservationG: Mobalt: generated 2 observations in 1 observation batches for day index 20762 for report: 200006-1-1-7
+11-09 01:06:19.071   653  1469 W ActivityManager: Unable to start service Intent { cmp=com.google.android.apps.tachyon/.clientapi.ClientApiService } U=0: not found
+11-09 01:06:19.071  1838  2587 I DataService: Mobalt: generating observations for day index 20763 for report: 200006-1-1-7
+11-09 01:06:19.072  1838  2587 I AtLeastOnceObservationG: Mobalt: generating observations for day index 20763 for report: 200006-1-1-7
+11-09 01:06:19.072  1838  2587 I AtLeastOnceObservationG: Mobalt: generated 2 observations in 1 observation batches for day index 20763 for report: 200006-1-1-7
+11-09 01:06:19.073  1838  2587 I DataService: Mobalt: generating observations for day index 20764 for report: 200006-1-1-7
+11-09 01:06:19.073  1838  2587 I AtLeastOnceObservationG: Mobalt: generating observations for day index 20764 for report: 200006-1-1-7
+11-09 01:06:19.073  1838  2587 I AtLeastOnceObservationG: Mobalt: generated 2 observations in 1 observation batches for day index 20764 for report: 200006-1-1-7
+11-09 01:06:19.074  1838  2587 I DataService: Mobalt: generating observations for day index 20761 for report: 200006-1-2-3
+11-09 01:06:19.075  1838  2587 I AtLeastOnceObservationG: Mobalt: generating observations for day index 20761 for report: 200006-1-2-3
+11-09 01:06:19.075  1838  2587 I AtLeastOnceObservationG: Mobalt: generated 1 observations in 1 observation batches for day index 20761 for report: 200006-1-2-3
+11-09 01:06:19.075  1838  2587 I DataService: Mobalt: generating observations for day index 20762 for report: 200006-1-2-3
+11-09 01:06:19.076  1838  2587 I AtLeastOnceObservationG: Mobalt: generating observations for day index 20762 for report: 200006-1-2-3
+11-09 01:06:19.076  1838  2587 I AtLeastOnceObservationG: Mobalt: generated 1 observations in 1 observation batches for day index 20762 for report: 200006-1-2-3
+11-09 01:06:19.076  1838  2587 I DataService: Mobalt: generating observations for day index 20763 for report: 200006-1-2-3
+11-09 01:06:19.076  1838  2587 I AtLeastOnceObservationG: Mobalt: generating observations for day index 20763 for report: 200006-1-2-3
+11-09 01:06:19.077  1838  2587 I AtLeastOnceObservationG: Mobalt: generated 1 observations in 1 observation batches for day index 20763 for report: 200006-1-2-3
+11-09 01:06:19.077  1838  2587 I DataService: Mobalt: generating observations for day index 20764 for report: 200006-1-2-3
+11-09 01:06:19.077  1838  2587 I AtLeastOnceObservationG: Mobalt: generating observations for day index 20764 for report: 200006-1-2-3
+11-09 01:06:19.077  1838  2587 I AtLeastOnceObservationG: Mobalt: generated 1 observations in 1 observation batches for day index 20764 for report: 200006-1-2-3
+11-09 01:06:19.079  1838  2587 I DataService: Mobalt: generating observations for day index 20761 for report: 200006-1-2-5
+11-09 01:06:19.079  1838  2587 I AtLeastOnceObservationG: Mobalt: generating observations for day index 20761 for report: 200006-1-2-5
+11-09 01:06:19.080  1838  2587 I AtLeastOnceObservationG: Mobalt: generated 3 observations in 1 observation batches for day index 20761 for report: 200006-1-2-5
+11-09 01:06:19.081  1838  2587 I DataService: Mobalt: generating observations for day index 20762 for report: 200006-1-2-5
+11-09 01:06:19.081  1838  2587 I AtLeastOnceObservationG: Mobalt: generating observations for day index 20762 for report: 200006-1-2-5
+11-09 01:06:19.081  1838  2587 I AtLeastOnceObservationG: Mobalt: generated 2 observations in 1 observation batches for day index 20762 for report: 200006-1-2-5
+11-09 01:06:19.081  1838  2587 I DataService: Mobalt: generating observations for day index 20763 for report: 200006-1-2-5
+11-09 01:06:19.082  1838  2587 I AtLeastOnceObservationG: Mobalt: generating observations for day index 20763 for report: 200006-1-2-5
+11-09 01:06:19.082  1838  2587 I AtLeastOnceObservationG: Mobalt: generated 2 observations in 1 observation batches for day index 20763 for report: 200006-1-2-5
+11-09 01:06:19.083  1838  2587 I DataService: Mobalt: generating observations for day index 20764 for report: 200006-1-2-5
+11-09 01:06:19.083  1838  2587 I AtLeastOnceObservationG: Mobalt: generating observations for day index 20764 for report: 200006-1-2-5
+11-09 01:06:19.083  1838  2587 I AtLeastOnceObservationG: Mobalt: generated 2 observations in 1 observation batches for day index 20764 for report: 200006-1-2-5
+11-09 01:06:19.084  1838  2587 I DataService: Mobalt: generating observations for day index 20761 for report: 200006-1-2-7
+11-09 01:06:19.084  1838  2587 I AtLeastOnceObservationG: Mobalt: generating observations for day index 20761 for report: 200006-1-2-7
+11-09 01:06:19.085  1838  2587 I AtLeastOnceObservationG: Mobalt: generated 2 observations in 1 observation batches for day index 20761 for report: 200006-1-2-7
+11-09 01:06:19.085  1479  1904 I NgaEntryPointEventSendr: (REDACTED) State changed: %s => %s (%s)
+11-09 01:06:19.086  1838  2587 I DataService: Mobalt: generating observations for day index 20762 for report: 200006-1-2-7
+11-09 01:06:19.086  1626  2235 I PBSessionCacheImpl: (REDACTED) Deleted sessionId[%d] from persistence.
+11-09 01:06:19.086  1838  2587 I AtLeastOnceObservationG: Mobalt: generating observations for day index 20762 for report: 200006-1-2-7
+11-09 01:06:19.086  1626  1906 W A       : (REDACTED) %s task was not run. Callback from Service received after client was disposed.
+11-09 01:06:19.086  1838  2587 I AtLeastOnceObservationG: Mobalt: generated 2 observations in 1 observation batches for day index 20762 for report: 200006-1-2-7
+11-09 01:06:19.086  1838  2587 I DataService: Mobalt: generating observations for day index 20763 for report: 200006-1-2-7
+11-09 01:06:19.087  1838  2587 I AtLeastOnceObservationG: Mobalt: generating observations for day index 20763 for report: 200006-1-2-7
+11-09 01:06:19.087  1838  2587 I AtLeastOnceObservationG: Mobalt: generated 2 observations in 1 observation batches for day index 20763 for report: 200006-1-2-7
+11-09 01:06:19.088  1838  2587 I DataService: Mobalt: generating observations for day index 20764 for report: 200006-1-2-7
+11-09 01:06:19.088  1838  2587 I AtLeastOnceObservationG: Mobalt: generating observations for day index 20764 for report: 200006-1-2-7
+11-09 01:06:19.088  1838  2587 I AtLeastOnceObservationG: Mobalt: generated 2 observations in 1 observation batches for day index 20764 for report: 200006-1-2-7
+11-09 01:06:19.089  1838  2148 I MobaltPeriodicJobImpl: Mobalt: successfully generated observations for 6 reports
+11-09 01:06:19.091  1626  1906 W SearchServiceCore: Abort, client detached.
+11-09 01:06:19.091  1626  1906 W SearchServiceCore: Abort, client detached.
+11-09 01:06:19.092  1838  2148 I MobaltPeriodicJobImpl: Mobalt: uploading logs to the Cobalt Server, got 24 observations
+11-09 01:06:19.093  1626  1906 W SearchServiceCore: Abort, client detached.
+11-09 01:06:19.095  1429  2477 I MediaProvider: Scanned internal due to REASON_MOUNTED, found 227 items in 6118ms, 0 inserts 7 updates 0 deletes
+11-09 01:06:19.097  1429  2477 V MediaProvider: attachVolume() called for external_primary with state:null
+11-09 01:06:19.210   653  1131 D CompatChangeReporter: Compat change id reported: 161145287; UID 10145; state: ENABLED
+11-09 01:06:19.288  1078  2204 V NativeCrypto: SSL handshake aborted: ssl=0x775bfb46e918: I/O error during system call, Connection reset by peer
+11-09 01:06:19.289  1078  1241 D TrafficStats: tagSocket(198) with statsTag=0x34000609, statsUid=10136
+11-09 01:06:19.297  1078  1241 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-09 01:06:19.297  1078  1241 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-09 01:06:19.297  1078  1241 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-09 01:06:19.334  1838  2148 I ClearcutUploader: Mobalt: start uploading logs to Clearcut log_source = TURQUOISE_COBALT_SHUFFLER_INPUT_PROD
+11-09 01:06:19.336  1838  2148 I MobaltPeriodicJobImpl: Mobalt: uploading logs to the Cobalt Server, got 0 observations
+11-09 01:06:19.336  1838  2148 I MobaltPeriodicJobImpl: Mobalt: finish sending logs to the Cobalt Server successfully
+11-09 01:06:19.366  1429  2477 I MediaProvider: Scanned external_primary due to REASON_MOUNTED, found 15 items in 267ms, 0 inserts 0 updates 0 deletes
+11-09 01:06:19.367  1429  2477 I MediaProvider: End Intent { act=com.android.providers.media.action.SCAN_VOLUME (has extras) }
+11-09 01:06:19.369   653  1131 D CompatChangeReporter: Compat change id reported: 311208629; UID 10204; state: ENABLED
+11-09 01:06:19.413   445   445 I netd    : tetherGetStats() -> {[]} <0.30ms>
+11-09 01:06:19.438   226   237 W keystore2: system/security/keystore2/watchdog/src/lib.rs:114 - ### Keystore Watchdog report - BEGIN ###
+11-09 01:06:19.438   226   237 W keystore2: system/security/keystore2/watchdog/src/lib.rs:123 - When extracting from a bug report, please include this header
+11-09 01:06:19.438   226   237 W keystore2: system/security/keystore2/watchdog/src/lib.rs:124 - and all 1 records below.
+11-09 01:06:19.438   226   237 W keystore2: system/security/keystore2/watchdog/src/lib.rs:164 - ThreadId(6) Calling get_rkpd_attestation_key() Pending: 3.505164659s Overdue 3.005165934s
+11-09 01:06:19.438   226   237 W keystore2: system/security/keystore2/watchdog/src/lib.rs:175 - ### Keystore Watchdog report - END ###
+11-09 01:06:19.800   955   964 W System  : A resource failed to call close. 
+11-09 01:06:19.801  1078  1241 V NativeCrypto: SSL handshake aborted: ssl=0x775bfb46e918: I/O error during system call, Connection reset by peer
+11-09 01:06:19.802  1078  2301 D TrafficStats: tagSocket(198) with statsTag=0x34000609, statsUid=10136
+11-09 01:06:19.804  1078  2204 D TrafficStats: tagSocket(198) with statsTag=0x34000609, statsUid=10136
+11-09 01:06:19.806  1078  1241 D TrafficStats: tagSocket(198) with statsTag=0x34000609, statsUid=10136
+11-09 01:06:19.809  1078  2301 D TrafficStats: tagSocket(198) with statsTag=0x34000609, statsUid=10136
+11-09 01:06:19.811  1078  2204 D TrafficStats: tagSocket(198) with statsTag=0x34000609, statsUid=10136
+11-09 01:06:19.813  1078  1241 D TrafficStats: tagSocket(198) with statsTag=0x34000609, statsUid=10136
+11-09 01:06:19.815  1078  2301 D TrafficStats: tagSocket(198) with statsTag=0x34000609, statsUid=10136
+11-09 01:06:19.817  1078  2204 D TrafficStats: tagSocket(198) with statsTag=0x34000609, statsUid=10136
+11-09 01:06:19.819  1078  1241 D TrafficStats: tagSocket(201) with statsTag=0x34000609, statsUid=10136
+11-09 01:06:19.820   445  2928 I resolv  : GetAddrInfoHandler::run: {101 786533 101 983141 10143 0}
+11-09 01:06:19.820   445  2929 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+11-09 01:06:19.820   445  2929 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x75f2cee49090
+11-09 01:06:19.820   445  2929 I resolv  : doQuery: rcode=0, ancount=8, return value=499
+11-09 01:06:19.821   445  2930 I resolv  : res_nmkquery: (QUERY, IN, A)
+11-09 01:06:19.821   445  2930 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x75f45ee482f0
+11-09 01:06:19.821   445  2930 I resolv  : doQuery: rcode=0, ancount=8, return value=431
+11-09 01:06:19.827  1078  1241 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-09 01:06:19.827  1078  1241 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-09 01:06:19.827  1078  1241 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-09 01:06:19.858  1626  2088 I A       : (REDACTED) NGA Sync: MDD Task: %s done.
+11-09 01:06:19.859  1626  2080 D PhFileGroupPop: Added file groups assistant_appintegration_appactions_config
+11-09 01:06:19.859  1626  2080 D PhFileGroupPop: Added file groups fedass_policy_config_group
+11-09 01:06:19.860  1626  2080 D PhFileGroupPop: Added file groups smart_dictation_policy_config_group
+11-09 01:06:19.860  1626  2080 D PhFileGroupPop: Added file groups tapas_cortex
+11-09 01:06:19.860  1626  2088 I A       : (REDACTED) NGA Sync: isNgaSyncEnabled: %s; enableFileGroupPopulator: %s; requiresMddAssets: %s
+11-09 01:06:19.862  1626  1658 I MicroModelsUtil: (REDACTED) #getHotwordModelFromMobstore [mobstoreUri: %s]
+11-09 01:06:19.862  1626  1804 I MicroModelsUtil: (REDACTED) #getHotwordModelFromMobstore [mobstoreUri: %s]
+11-09 01:06:19.865  1626  2088 I A       : (REDACTED) NGA Sync: MDD Task: %s done.
+11-09 01:06:19.867  1626  1954 I LPRequestState: (REDACTED) [%s] #resolveUnusedLanguagePacks
+11-09 01:06:19.867  1626  1954 I LPRequestState: (REDACTED) [%s] #resolveDesiredLanguagePacks
+11-09 01:06:19.870  1626  2088 I A       : (REDACTED) NGA Sync: isNgaSyncEnabled: %s; enableFileGroupPopulator: %s; requiresMddAssets: %s
+11-09 01:06:19.870  1626  1805 I LanguagePackMaintenance: (REDACTED) Background downloading %d packs, for an ideal set of %d total packs
+11-09 01:06:19.870  1626  1805 I LanguagePackMaintenance: (REDACTED) Background downloading packs [%s]
+11-09 01:06:19.870  1626  1805 I LanguagePackMaintenance: (REDACTED) Ideal set: [%s]
+11-09 01:06:19.872  1626  1954 I LPRequestState: (REDACTED) [%s] #resolveUnusedLanguagePacks
+11-09 01:06:19.872  1626  1954 I LPRequestState: (REDACTED) [%s] #resolveDesiredLanguagePacks
+11-09 01:06:19.874  1626  1811 I MicroModelsUtil: (REDACTED) #getHotwordModelFromMobstore [mobstoreUri: %s]

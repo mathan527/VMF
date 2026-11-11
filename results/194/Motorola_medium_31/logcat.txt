@@ -1,0 +1,544 @@
+--------- beginning of main
+11-11 01:17:42.962  3442  3778 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:17:42.962  3442  3778 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:17:42.963  3442  3778 I A       : onDisabled. Registered: false
+11-11 01:17:42.969  3442  3782 I A       : stopListening(NGA_PAUSED_UNKNOWN_REASON, NGA_CREATE), idleOverride=NOT_LISTENING
+11-11 01:17:42.980  6356  6399 D CompatibilityChangeReporter: Compat change id reported: 160794467; UID 10123; state: ENABLED
+11-11 01:17:42.992  3442  3782 I NgaEntryPointEventSendr: setupConnection
+--------- beginning of system
+11-11 01:17:42.998   553  1315 D CompatibilityChangeReporter: Compat change id reported: 168419799; UID 10102; state: DISABLED
+11-11 01:17:43.001  3749  3749 I A       : Creating pss binder().
+--------- beginning of kernel
+11-11 01:17:42.992     0     0 I AidlLazyServiceRegistrar: Trying to shut down the service. No clients in use for any service in process.
+11-11 01:17:42.994     0     0 I AidlLazyServiceRegistrar: Unregistered all clients and exiting
+11-11 01:17:43.009  3442  3778 I A       : Disconnecting from SysUi, flag disabled.
+11-11 01:17:43.009  3442  3442 V ClearcutMetricXmitter: Transmission is done.
+11-11 01:17:43.009  3442  3782 I NgaEntryPointEventSendr: State changed: Disconnected => Connecting
+11-11 01:17:43.010   553  1743 D ConnectivityService: requestNetwork for uid/pid:10123/6356 activeRequest: null callbackRequest: 356 [NetworkRequest [ REQUEST id=357, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10123 RequestorUid: 10123 RequestorPkg: com.google.android.apps.photos] ]] callback flags: 0 priority: 2147483647
+11-11 01:17:43.010   553   664 D ConnectivityService: NetReassign [357 : null → 101]
+11-11 01:17:43.011   553   657 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=357, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10123 RequestorUid: 10123 RequestorPkg: com.google.android.apps.photos] ]
+11-11 01:17:43.013   553   657 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=357, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10123 RequestorUid: 10123 RequestorPkg: com.google.android.apps.photos] ]
+11-11 01:17:43.013   553   657 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=357, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10123 RequestorUid: 10123 RequestorPkg: com.google.android.apps.photos] ]
+11-11 01:17:43.013  3442  3778 I A       : Disconnecting from SysUi, VM not enabled.
+11-11 01:17:43.013   201   201 I BpBinder: onLastStrongRef automatically unlinking death recipients: <uncached descriptor>
+11-11 01:17:43.013  3442  3778 I A       : Disconnecting from SysUi, LSPR/AOL not enabled and screen is locked.
+11-11 01:17:43.013  3442  3778 I A       : Disconnected
+11-11 01:17:42.997     0     0 I init    : Service 'apexd' (pid 256) exited with status 0 oneshot service took 60.273998 seconds in background
+11-11 01:17:42.999     0     0 I init    : Sending signal 9 to service 'apexd' (pid 256) process group...
+11-11 01:17:43.002     0     0 I libprocessgroup: Successfully killed process cgroup uid 0 pid 256 in 0ms
+11-11 01:17:43.018  3442  3778 I NgaEntryPointEventSendr: onServiceConnected
+11-11 01:17:43.018  3749  3818 I A       : Calling beginBinderSession().
+11-11 01:17:43.023  3749  3818 I A       : beginBinderSession(): calling binder
+11-11 01:17:43.024  3442  3778 I NgaEntryPointEventSendr: State changed: Connecting => Ready
+11-11 01:17:43.025  3442  3782 I A       : Successfully initialized all components
+11-11 01:17:43.031   553  1743 W ActivityManager: Unable to start service Intent { cmp=com.google.android.apps.tachyon/.clientapi.ClientApiService } U=0: not found
+11-11 01:17:43.041  3749  3860 W LocationOracle: No location history returned by ContextManager
+11-11 01:17:43.044  3749  3949 W LocationOracle: No location returned by GMS core getLastLocation()
+11-11 01:17:43.063  3442  3782 I NgaEntryPointEventSendr: State changed: Ready => Disconnected (onOpaDisconnected)
+11-11 01:17:43.064   371   406 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+11-11 01:17:43.064  3749  3970 W A       : UiCallbackStub-onGenericEvent[ServiceEvent = 60] task was not run. Callback from Service received after client was disposed.
+11-11 01:17:43.065  3749  4891 I PBSessionCacheImpl: Deleted sessionId[16490070710174877] from persistence.
+11-11 01:17:43.070  3749  3970 W SearchServiceCore: Abort, client detached.
+11-11 01:17:43.070  3749  3970 W SearchServiceCore: Abort, client detached.
+11-11 01:17:43.071  3749  3970 W SearchServiceCore: Abort, client detached.
+11-11 01:17:43.077  6356  6356 D CompatibilityChangeReporter: Compat change id reported: 119147584; UID 10123; state: ENABLED
+11-11 01:17:43.079   371   406 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+11-11 01:17:43.080  6376  6376 D CompatibilityChangeReporter: Compat change id reported: 160794467; UID 10134; state: ENABLED
+11-11 01:17:43.135  3312  3312 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3420 
+11-11 01:17:43.135  3312  3312 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():2002 
+11-11 01:17:43.136  3312  3312 I DeviceUnlockedTag: DeviceUnlockedTag.notifyDeviceLockStatusChanged():31 Notify device unlocked.
+11-11 01:17:43.139   553  1743 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10126; state: DISABLED
+11-11 01:17:43.139   553  1743 D CompatibilityChangeReporter: Compat change id reported: 177438394; UID 10126; state: DISABLED
+11-11 01:17:43.140   553  1743 D CompatibilityChangeReporter: Compat change id reported: 135772972; UID 10126; state: DISABLED
+11-11 01:17:43.140   553  1743 D CompatibilityChangeReporter: Compat change id reported: 135754954; UID 10126; state: ENABLED
+11-11 01:17:43.140   553   583 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10126; state: ENABLED
+11-11 01:17:43.146   342   342 D Zygote  : Forked child process 6430
+11-11 01:17:43.151  1014  3554 D EGL_emulation: app_time_stats: avg=312.59ms min=16.02ms max=932.34ms count=4
+11-11 01:17:43.152   553   583 I ActivityManager: Start proc 6430:com.google.android.apps.wallpaper/u0a126 for broadcast {com.google.android.apps.wallpaper/com.android.wallpaper.module.RotationWallpaperUpdateReceiver}
+11-11 01:17:43.154  6430  6430 W .apps.wallpape: Unexpected CPU variant for X86 using defaults: x86_64
+11-11 01:17:43.161   440   463 I adbd    : jdwp connection from 6430
+11-11 01:17:43.169   553  1603 D CompatibilityChangeReporter: Compat change id reported: 168419799; UID 10126; state: DISABLED
+11-11 01:17:43.173  6430  6430 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10126; state: DISABLED
+11-11 01:17:43.187  6376  6401 W Looper  : Slow dispatch took 68ms wmshell.main h=android.os.Handler c=com.android.wm.shell.common.ShellExecutor$$ExternalSyntheticLambda0@5aec078 m=0
+11-11 01:17:43.187  6376  6376 W OneHandedController: Device doesn't support OneHanded feature
+11-11 01:17:43.188  6376  6401 W Looper  : Slow delivery took 55ms wmshell.main h=android.os.Handler c=null m=10
+11-11 01:17:43.189  6430  6430 V GraphicsEnvironment: ANGLE Developer option for 'com.google.android.apps.wallpaper' set to: 'default'
+11-11 01:17:43.189  6430  6430 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+11-11 01:17:43.190  6430  6430 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-11 01:17:43.190  6430  6430 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-11 01:17:43.205  6376  6401 W Looper  : Drained
+11-11 01:17:43.211  6430  6430 D CompatibilityChangeReporter: Compat change id reported: 160794467; UID 10126; state: DISABLED
+11-11 01:17:43.218   553  1743 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10109; state: DISABLED
+11-11 01:17:43.218   553   583 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10109; state: ENABLED
+11-11 01:17:43.224   342   342 D Zygote  : Forked child process 6451
+11-11 01:17:43.225   553   583 I ActivityManager: Start proc 6451:com.google.android.apps.youtube.music/u0a109 for broadcast {com.google.android.apps.youtube.music/com.google.android.libraries.youtube.mdx.background.MdxBackgroundScanBootReceiver}
+11-11 01:17:43.229  6451  6451 W s.youtube.musi: Unexpected CPU variant for X86 using defaults: x86_64
+11-11 01:17:43.234   440   463 I adbd    : jdwp connection from 6451
+11-11 01:17:43.248  6451  6451 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10109; state: DISABLED
+11-11 01:17:43.254  6451  6451 D nativeloader: classloader namespace configured for unbundled product apk. library_path=/product/app/YouTubeMusicPrebuilt/lib/x86_64:/product/app/YouTubeMusicPrebuilt/YouTubeMusicPrebuilt.apk!/lib/x86_64:/product/lib64:/system/product/lib64
+11-11 01:17:43.257  6451  6451 V GraphicsEnvironment: ANGLE Developer option for 'com.google.android.apps.youtube.music' set to: 'default'
+11-11 01:17:43.257  6451  6451 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+11-11 01:17:43.259  6451  6451 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: false
+11-11 01:17:43.259  6451  6451 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: false
+11-11 01:17:43.280  6376  6376 W SystemServiceRegistry: No service published for: face
+11-11 01:17:43.291   553   553 D TrustManagerService: Removing dead TrustListener.
+11-11 01:17:43.271     0     0 I binder  : 553:553 transaction failed 29189/-22, size 92-0 line 3133
+11-11 01:17:43.314  6451  6451 W s.youtube.musi: Accessing hidden field Ljava/util/Collections$SynchronizedCollection;->mutex:Ljava/lang/Object; (max-target-o, reflection, denied)
+11-11 01:17:43.315  6451  6451 W s.youtube.musi: Accessing hidden method Ljava/util/Collections$SynchronizedSet;-><init>(Ljava/util/Set;Ljava/lang/Object;)V (max-target-o, reflection, denied)
+11-11 01:17:43.315  6451  6451 W s.youtube.musi: Accessing hidden method Ljava/util/Collections$SynchronizedCollection;-><init>(Ljava/util/Collection;Ljava/lang/Object;)V (max-target-o, reflection, denied)
+11-11 01:17:43.317  6376  6376 D ProtoStore: no cached data
+11-11 01:17:43.317  6376  6376 D ProtoStore: no cached data
+11-11 01:17:43.328  6376  6376 D MediaResumeListener: loaded resume components []
+11-11 01:17:43.331  6376  6376 D LocalBluetoothProfileManager: LocalBluetoothProfileManager construction complete
+11-11 01:17:43.332  6376  6376 D LocalBluetoothProfileManager: Adding local A2DP profile
+11-11 01:17:43.333  6376  6376 D BluetoothA2dp: Binding service...
+11-11 01:17:43.335  6376  6376 D LocalBluetoothProfileManager: Adding local HEADSET profile
+11-11 01:17:43.337  6376  6376 D LocalBluetoothProfileManager: Adding local MAP profile
+11-11 01:17:43.337  6376  6376 D BluetoothMap: Create BluetoothMap proxy object
+11-11 01:17:43.337  6376  6376 D BluetoothMap: Binding service...
+11-11 01:17:43.339  6376  6376 D LocalBluetoothProfileManager: Adding local OPP profile
+11-11 01:17:43.339  6376  6376 D LocalBluetoothProfileManager: Adding local HID_HOST profile
+11-11 01:17:43.340  6376  6376 D BluetoothHidHost: Binding service...
+11-11 01:17:43.340  6451  6480 W DynamiteModule: Local module descriptor class for com.google.android.gms.providerinstaller.dynamite not found.
+11-11 01:17:43.342  6376  6376 D LocalBluetoothProfileManager: Adding local HID_DEVICE profile
+11-11 01:17:43.342  1110  1133 W ProviderHelper: Unknown dynamite feature providerinstaller.dynamite
+11-11 01:17:43.343  6376  6376 D BluetoothHidDevice: Binding service...
+11-11 01:17:43.344  6451  6480 W ProviderInstaller: Failed to load providerinstaller module: No acceptable module found. Local version is 0 and remote version is 0.
+11-11 01:17:43.344  6376  6376 D LocalBluetoothProfileManager: Adding local PAN profile
+11-11 01:17:43.345  6376  6376 D BluetoothPan: Binding service...
+11-11 01:17:43.346  6376  6376 D LocalBluetoothProfileManager: Adding local PBAP profile
+11-11 01:17:43.356   553  1743 W ActivityManager: Unable to start service Intent { act=android.service.smartspace.SmartspaceService cmp=com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSmartspaceService } U=0: not found
+11-11 01:17:43.356   553  1743 W RemoteSmartspaceService: could not bind to Intent { act=android.service.smartspace.SmartspaceService cmp=com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSmartspaceService } using flags 67112961
+11-11 01:17:43.356   553   553 W ActivityManager: Unbind failed: could not find connection for android.app.LoadedApk$ServiceDispatcher$InnerConnection@bf84cbd
+11-11 01:17:43.357   553  1743 W ActivityManager: Unable to start service Intent { act=android.service.smartspace.SmartspaceService cmp=com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSmartspaceService } U=0: not found
+11-11 01:17:43.357   553  1743 W RemoteSmartspaceService: could not bind to Intent { act=android.service.smartspace.SmartspaceService cmp=com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSmartspaceService } using flags 67112961
+11-11 01:17:43.358   553   553 W ActivityManager: Unbind failed: could not find connection for android.app.LoadedApk$ServiceDispatcher$InnerConnection@e363580
+11-11 01:17:43.358   553  1315 W ActivityManager: Unable to start service Intent { act=android.service.smartspace.SmartspaceService cmp=com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSmartspaceService } U=0: not found
+11-11 01:17:43.358   553  1315 W RemoteSmartspaceService: could not bind to Intent { act=android.service.smartspace.SmartspaceService cmp=com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSmartspaceService } using flags 67112961
+11-11 01:17:43.359   553   553 W ActivityManager: Unbind failed: could not find connection for android.app.LoadedApk$ServiceDispatcher$InnerConnection@f4707fe
+11-11 01:17:43.359   553  1743 W ActivityManager: Unable to start service Intent { act=android.service.smartspace.SmartspaceService cmp=com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSmartspaceService } U=0: not found
+11-11 01:17:43.359   553  1743 W RemoteSmartspaceService: could not bind to Intent { act=android.service.smartspace.SmartspaceService cmp=com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSmartspaceService } using flags 67112961
+11-11 01:17:43.360   553   553 W ActivityManager: Unbind failed: could not find connection for android.app.LoadedApk$ServiceDispatcher$InnerConnection@d8929ac
+11-11 01:17:43.372  6451  6469 W s.youtube.musi: ClassLoaderContext type mismatch. expected=PCL, found=DLC (PCL[] | DLC[];PCL[/product/app/YouTubeMusicPrebuilt/YouTubeMusicPrebuilt.apk*482612108:/product/app/YouTubeMusicPrebuilt/YouTubeMusicPrebuilt.apk!classes2.dex*3971764547:/product/app/YouTubeMusicPrebuilt/YouTubeMusicPrebuilt.apk!classes3.dex*426843809:/product/app/YouTubeMusicPrebuilt/YouTubeMusicPrebuilt.apk!classes4.dex*3127326728]{PCL[/system/framework/org.apache.http.legacy.jar*2058259660]})
+11-11 01:17:43.382  6376  6376 W BatteryControllerGoogle: Couldn't register to observe provider
+11-11 01:17:43.382  6376  6376 W BatteryControllerGoogle: java.lang.SecurityException: Failed to find provider com.google.android.flipendo.api for user 0; expected to find a valid ContentProvider for this authority
+11-11 01:17:43.382  6376  6376 W BatteryControllerGoogle: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:2426)
+11-11 01:17:43.382  6376  6376 W BatteryControllerGoogle: 	at android.os.Parcel.createException(Parcel.java:2410)
+11-11 01:17:43.382  6376  6376 W BatteryControllerGoogle: 	at android.os.Parcel.readException(Parcel.java:2393)
+11-11 01:17:43.382  6376  6376 W BatteryControllerGoogle: 	at android.os.Parcel.readException(Parcel.java:2335)
+11-11 01:17:43.382  6376  6376 W BatteryControllerGoogle: 	at android.content.IContentService$Stub$Proxy.registerContentObserver(IContentService.java:1235)
+11-11 01:17:43.382  6376  6376 W BatteryControllerGoogle: 	at android.content.ContentResolver.registerContentObserver(ContentResolver.java:2672)
+11-11 01:17:43.382  6376  6376 W BatteryControllerGoogle: 	at com.google.android.systemui.statusbar.policy.BatteryControllerImplGoogle.init(BatteryControllerImplGoogle.java:86)
+11-11 01:17:43.382  6376  6376 W BatteryControllerGoogle: 	at com.google.android.systemui.dagger.SystemUIGoogleModule.provideBatteryController(SystemUIGoogleModule.java:155)
+11-11 01:17:43.382  6376  6376 W BatteryControllerGoogle: 	at com.google.android.systemui.dagger.SystemUIGoogleModule_ProvideBatteryControllerFactory.provideBatteryController(SystemUIGoogleModule_ProvideBatteryControllerFactory.java:84)
+11-11 01:17:43.382  6376  6376 W BatteryControllerGoogle: 	at com.google.android.systemui.dagger.SystemUIGoogleModule_ProvideBatteryControllerFactory.get(SystemUIGoogleModule_ProvideBatteryControllerFactory.java:65)
+11-11 01:17:43.382  6376  6376 W BatteryControllerGoogle: 	at com.google.android.systemui.dagger.SystemUIGoogleModule_ProvideBatteryControllerFactory.get(SystemUIGoogleModule_ProvideBatteryControllerFactory.java:17)
+11-11 01:17:43.382  6376  6376 W BatteryControllerGoogle: 	at dagger.internal.DoubleCheck.get(DoubleCheck.java:47)
+11-11 01:17:43.382  6376  6376 W BatteryControllerGoogle: 	at com.android.systemui.statusbar.phone.DozeParameters_Factory.get(DozeParameters_Factory.java:63)
+11-11 01:17:43.382  6376  6376 W BatteryControllerGoogle: 	at com.android.systemui.statusbar.phone.DozeParameters_Factory.get(DozeParameters_Factory.java:15)
+11-11 01:17:43.382  6376  6376 W BatteryControllerGoogle: 	at dagger.internal.DoubleCheck.get(DoubleCheck.java:47)
+11-11 01:17:43.382  6376  6376 W BatteryControllerGoogle: 	at dagger.internal.DelegateFactory.get(DelegateFactory.java:36)
+11-11 01:17:43.382  6376  6376 W BatteryControllerGoogle: 	at com.google.android.systemui.dagger.DaggerSysUIGoogleGlobalRootComponent$SysUIGoogleSysUIComponentImpl.injectKeyguardSliceProviderGoogle(DaggerSysUIGoogleGlobalRootComponent.java:4643)
+11-11 01:17:43.382  6376  6376 W BatteryControllerGoogle: 	at com.google.android.systemui.dagger.DaggerSysUIGoogleGlobalRootComponent$SysUIGoogleSysUIComponentImpl.inject(DaggerSysUIGoogleGlobalRootComponent.java:4605)
+11-11 01:17:43.382  6376  6376 W BatteryControllerGoogle: 	at java.lang.reflect.Method.invoke(Native Method)
+11-11 01:17:43.382  6376  6376 W BatteryControllerGoogle: 	at com.android.systemui.SystemUIAppComponentFactory.lambda$instantiateProviderCompat$1(SystemUIAppComponentFactory.java:94)
+11-11 01:17:43.382  6376  6376 W BatteryControllerGoogle: 	at com.android.systemui.SystemUIAppComponentFactory.$r8$lambda$qcrPqG7eXiVK_IrWSM3yDqdi2js(Unknown Source:0)
+11-11 01:17:43.382  6376  6376 W BatteryControllerGoogle: 	at com.android.systemui.SystemUIAppComponentFactory$$ExternalSyntheticLambda0.onContextAvailable(Unknown Source:2)
+11-11 01:17:43.382  6376  6376 W BatteryControllerGoogle: 	at com.android.systemui.keyguard.KeyguardSliceProvider.onCreateSliceProvider(KeyguardSliceProvider.java:304)
+11-11 01:17:43.382  6376  6376 W BatteryControllerGoogle: 	at com.google.android.systemui.keyguard.KeyguardSliceProviderGoogle.onCreateSliceProvider(KeyguardSliceProviderGoogle.java:79)
+11-11 01:17:43.382  6376  6376 W BatteryControllerGoogle: 	at androidx.slice.SliceProvider.onCreate(SliceProvider.java:211)
+11-11 01:17:43.382  6376  6376 W BatteryControllerGoogle: 	at android.content.ContentProvider.attachInfo(ContentProvider.java:2404)
+11-11 01:17:43.382  6376  6376 W BatteryControllerGoogle: 	at android.content.ContentProvider.attachInfo(ContentProvider.java:2374)
+11-11 01:17:43.382  6376  6376 W BatteryControllerGoogle: 	at androidx.slice.SliceProvider.attachInfo(SliceProvider.java:250)
+11-11 01:17:43.382  6376  6376 W BatteryControllerGoogle: 	at androidx.slice.compat.SliceProviderWrapperContainer$SliceProviderWrapper.attachInfo(SliceProviderWrapperContainer.java:74)
+11-11 01:17:43.382  6376  6376 W BatteryControllerGoogle: 	at android.app.ActivityThread.installProvider(ActivityThread.java:7422)
+11-11 01:17:43.382  6376  6376 W BatteryControllerGoogle: 	at android.app.ActivityThread.installContentProviders(ActivityThread.java:6939)
+11-11 01:17:43.382  6376  6376 W BatteryControllerGoogle: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:6710)
+11-11 01:17:43.382  6376  6376 W BatteryControllerGoogle: 	at android.app.ActivityThread.access$1500(ActivityThread.java:247)
+11-11 01:17:43.382  6376  6376 W BatteryControllerGoogle: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2053)
+11-11 01:17:43.382  6376  6376 W BatteryControllerGoogle: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-11 01:17:43.382  6376  6376 W BatteryControllerGoogle: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-11 01:17:43.382  6376  6376 W BatteryControllerGoogle: 	at android.os.Looper.loop(Looper.java:288)
+11-11 01:17:43.382  6376  6376 W BatteryControllerGoogle: 	at android.app.ActivityThread.main(ActivityThread.java:7839)
+11-11 01:17:43.382  6376  6376 W BatteryControllerGoogle: 	at java.lang.reflect.Method.invoke(Native Method)
+11-11 01:17:43.382  6376  6376 W BatteryControllerGoogle: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+11-11 01:17:43.382  6376  6376 W BatteryControllerGoogle: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1003)
+11-11 01:17:43.382  6376  6376 W BatteryControllerGoogle: Caused by: android.os.RemoteException: Remote stack trace:
+11-11 01:17:43.382  6376  6376 W BatteryControllerGoogle: 	at com.android.server.content.ContentService.registerContentObserver(ContentService.java:357)
+11-11 01:17:43.382  6376  6376 W BatteryControllerGoogle: 	at android.content.IContentService$Stub.onTransact(IContentService.java:484)
+11-11 01:17:43.382  6376  6376 W BatteryControllerGoogle: 	at android.os.Binder.execTransactInternal(Binder.java:1179)
+11-11 01:17:43.382  6376  6376 W BatteryControllerGoogle: 	at android.os.Binder.execTransact(Binder.java:1143)
+11-11 01:17:43.382  6376  6376 W BatteryControllerGoogle: 
+11-11 01:17:43.392  6376  6376 W AlarmManager: Unrecognized alarm listener com.android.systemui.keyguard.KeyguardSliceProvider$$ExternalSyntheticLambda0@b37c531
+11-11 01:17:43.396  6451  6480 D nativeloader: classloader namespace configured for unbundled product apk. library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64:/product/lib64:/system/product/lib64
+11-11 01:17:43.399  6376  6376 V SystemUIService: SystemUIApplication created.
+11-11 01:17:43.400  6376  6376 D SystemUIBootTiming: DependencyInjection took to complete: 0ms
+11-11 01:17:43.401   428   439 E EGL_emulation: eglQueryContext 3100  EGL_BAD_ATTRIBUTE
+11-11 01:17:43.401   428   439 E EGL_emulation: tid 439: eglQueryContext(2160): error 0x3004 (EGL_BAD_ATTRIBUTE)
+11-11 01:17:43.401  6376  6376 I SystemUIService: Found SurfaceFlinger's GPU Priority: 0
+11-11 01:17:43.412   553  1603 D ConnectivityService: requestNetwork for uid/pid:10109/6451 activeRequest: null callbackRequest: 358 [NetworkRequest [ REQUEST id=359, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10109 RequestorUid: 10109 RequestorPkg: com.google.android.apps.youtube.music] ]] callback flags: 0 priority: 2147483647
+11-11 01:17:43.413   553   664 D ConnectivityService: NetReassign [359 : null → 101]
+11-11 01:17:43.414   553   657 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=359, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10109 RequestorUid: 10109 RequestorPkg: com.google.android.apps.youtube.music] ]
+11-11 01:17:43.414   553   657 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=359, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10109 RequestorUid: 10109 RequestorPkg: com.google.android.apps.youtube.music] ]
+11-11 01:17:43.414   553   657 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=359, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10109 RequestorUid: 10109 RequestorPkg: com.google.android.apps.youtube.music] ]
+11-11 01:17:43.417  6376  6376 D InterruptionStateProvider: heads up is enabled
+11-11 01:17:43.418  6376  6376 I DLObserver: wireless charger is null, check dock component.
+11-11 01:17:43.421  6376  6376 D DLObserver: command=2
+11-11 01:17:43.421  6376  6508 I DLObserver: hint is UNKNOWN for null wireless charger HAL
+11-11 01:17:43.422  6376  6376 I FalsingManager: xdpi, ydpi: 391.0, 391.0
+11-11 01:17:43.422  6376  6376 I FalsingManager: width, height: 1080, 2264
+11-11 01:17:43.431   553  1743 W ServiceManager: Permission failure: android.permission.HIGH_SAMPLING_RATE_SENSORS from uid=10134 pid=6376
+11-11 01:17:43.432  6451  6514 E GEL_DELAYED_EVENT_DEBUG: Failed delayed event dispatch, no dispatchers.
+11-11 01:17:43.437  6376  6396 D BluetoothHeadset: Proxy object connected
+11-11 01:17:43.438  6451  6480 V NativeCrypto: Registering com/google/android/gms/org/conscrypt/NativeCrypto's 295 native methods...
+11-11 01:17:43.442  6451  6515 I DynamiteModule: Considering local module com.google.android.gms.ads.dynamite:0 and remote module com.google.android.gms.ads.dynamite:224400003
+11-11 01:17:43.442  6451  6515 I DynamiteModule: Selected remote version of com.google.android.gms.ads.dynamite, version >= 224400003
+11-11 01:17:43.449   553   569 D ConnectivityService: requestNetwork for uid/pid:10109/6451 activeRequest: null callbackRequest: 360 [NetworkRequest [ REQUEST id=361, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10109 RequestorUid: 10109 RequestorPkg: com.google.android.apps.youtube.music] ]] callback flags: 0 priority: 2147483647
+11-11 01:17:43.450   553   664 D ConnectivityService: NetReassign [361 : null → 101]
+11-11 01:17:43.452   553   657 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=361, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10109 RequestorUid: 10109 RequestorPkg: com.google.android.apps.youtube.music] ]
+11-11 01:17:43.452   553   657 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=361, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10109 RequestorUid: 10109 RequestorPkg: com.google.android.apps.youtube.music] ]
+11-11 01:17:43.452   553   657 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=361, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10109 RequestorUid: 10109 RequestorPkg: com.google.android.apps.youtube.music] ]
+11-11 01:17:43.455  6451  6515 W s.youtube.musi: ClassLoaderContext type mismatch. expected=PCL, found=DLC (PCL[] | DLC[];PCL[/product/app/YouTubeMusicPrebuilt/YouTubeMusicPrebuilt.apk*482612108:/product/app/YouTubeMusicPrebuilt/YouTubeMusicPrebuilt.apk!classes2.dex*3971764547:/product/app/YouTubeMusicPrebuilt/YouTubeMusicPrebuilt.apk!classes3.dex*426843809:/product/app/YouTubeMusicPrebuilt/YouTubeMusicPrebuilt.apk!classes4.dex*3127326728]{PCL[/system/framework/org.apache.http.legacy.jar*2058259660]})
+11-11 01:17:43.461  6376  6376 D NavigationModeController: getCurrentUserContext: contextUser=0 currentUser=0
+11-11 01:17:43.462  6376  6376 D NavigationModeController: getCurrentInteractionMode: mode=0 contextUser=0
+11-11 01:17:43.462  6376  6376 D NavigationModeController: updateCurrentInteractionMode: mode=0
+11-11 01:17:43.462  6376  6376 D NavigationModeController:   contextUser=0
+11-11 01:17:43.462  6376  6376 D NavigationModeController:   assetPaths=
+11-11 01:17:43.462  6376  6376 D NavigationModeController:     <empty> and /system/framework/framework-res.apk
+11-11 01:17:43.462  6376  6376 D NavigationModeController:     /product/overlay/GoogleConfigOverlay.apk
+11-11 01:17:43.462  6376  6376 D NavigationModeController:     /product/overlay/GoogleWebViewOverlay.apk
+11-11 01:17:43.462   553   664 D ConnectivityService: NetReassign [no changes]
+11-11 01:17:43.462  6376  6376 D NavigationModeController:     /vendor/overlay/framework-res__auto_generated_rro_vendor.apk
+11-11 01:17:43.462  6376  6376 D NavigationModeController:     /product/overlay/PixelConfigOverlayCommon.apk
+11-11 01:17:43.462  6376  6376 D NavigationModeController:     /product/overlay/framework-res__auto_generated_rro_product.apk
+11-11 01:17:43.463  6376  6376 D NavigationModeController:     /product/overlay/EmulatorConfigOverlay.apk
+11-11 01:17:43.463  6376  6376 D NavigationModeController:     <empty> and /system_ext/priv-app/SystemUIGoogle/SystemUIGoogle.apk
+11-11 01:17:43.463  6376  6376 D NavigationModeController:     /product/overlay/NavigationBarMode3Button/NavigationBarMode3ButtonOverlay.apk
+11-11 01:17:43.463  6376  6376 D NavigationModeController:     /product/overlay/DisplayCutoutEmulationHole/DisplayCutoutEmulationHoleOverlay.apk
+11-11 01:17:43.463  6376  6376 D NavigationModeController:     /product/overlay/SystemUIGoogle__auto_generated_rro_product.apk
+11-11 01:17:43.464  6376  6376 D NavigationModeController: getCurrentInteractionMode: mode=0 contextUser=0
+11-11 01:17:43.465  6451  6515 D DynamitePackage: Instantiated singleton DynamitePackage.
+11-11 01:17:43.465  6451  6515 D DynamitePackage: Instantiating com.google.android.gms.ads.adshield.ChimeraAdShieldCreatorImpl
+11-11 01:17:43.465  6376  6520 V MediaRouter: Selecting route: RouteInfo{ name=Phone, description=null, status=null, category=RouteCategory{ name=System types=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO  groupable=false }, supportedTypes=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO , presentationDisplay=null }
+11-11 01:17:43.465  6376  6520 I MediaRouter: Skip setBluetoothA2dpOn(): types=8388615, isPlaybackActive()=false, BT route=null
+11-11 01:17:43.468  6376  6376 V SystemUIService: Starting SystemUI services for user 0.
+11-11 01:17:43.470  6451  6489 E AwarenessClientProvider: Account associated with identity was null
+11-11 01:17:43.473  6376  6376 D SystemUIBootTiming: StartServicescom.android.systemui.util.NotificationChannels took to complete: 5ms
+11-11 01:17:43.479  6451  6480 I ProviderInstaller: Installed default security provider GmsCore_OpenSSL
+11-11 01:17:43.489  6451  6489 E AwarenessRouterSyncMgr: Exception while syncing fences
+11-11 01:17:43.489  6451  6489 E AwarenessRouterSyncMgr: java.util.concurrent.ExecutionException: java.lang.IllegalStateException: Account associated with identity was null
+11-11 01:17:43.489  6451  6489 E AwarenessRouterSyncMgr: 	at acyh.s(PG:6)
+11-11 01:17:43.489  6451  6489 E AwarenessRouterSyncMgr: 	at acyh.get(PG:4)
+11-11 01:17:43.489  6451  6489 E AwarenessRouterSyncMgr: 	at adbz.a(PG:1)
+11-11 01:17:43.489  6451  6489 E AwarenessRouterSyncMgr: 	at adaq.p(PG:2)
+11-11 01:17:43.489  6451  6489 E AwarenessRouterSyncMgr: 	at gzf.run(PG:1)
+11-11 01:17:43.489  6451  6489 E AwarenessRouterSyncMgr: 	at nwe.run(PG:1)
+11-11 01:17:43.489  6451  6489 E AwarenessRouterSyncMgr: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+11-11 01:17:43.489  6451  6489 E AwarenessRouterSyncMgr: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+11-11 01:17:43.489  6451  6489 E AwarenessRouterSyncMgr: 	at nvp.run(PG:2)
+11-11 01:17:43.489  6451  6489 E AwarenessRouterSyncMgr: 	at nvf.run(PG:2)
+11-11 01:17:43.489  6451  6489 E AwarenessRouterSyncMgr: 	at java.lang.Thread.run(Thread.java:920)
+11-11 01:17:43.489  6451  6489 E AwarenessRouterSyncMgr: Caused by: java.lang.IllegalStateException: Account associated with identity was null
+11-11 01:17:43.489  6451  6489 E AwarenessRouterSyncMgr: 	at gyl.a(PG:3)
+11-11 01:17:43.489  6451  6489 E AwarenessRouterSyncMgr: 	at acyj.f(PG:2)
+11-11 01:17:43.489  6451  6489 E AwarenessRouterSyncMgr: 	at acyl.run(PG:9)
+11-11 01:17:43.489  6451  6489 E AwarenessRouterSyncMgr: 	... 6 more
+11-11 01:17:43.491  6376  6376 D SystemUIBootTiming: StartServicescom.android.systemui.keyguard.KeyguardViewMediator took to complete: 17ms
+11-11 01:17:43.495  6376  6376 D NavigationModeController: getCurrentInteractionMode: mode=0 contextUser=0
+11-11 01:17:43.502  6376  6376 D SystemUIBootTiming: StartServicescom.android.systemui.recents.Recents took to complete: 8ms
+11-11 01:17:43.503  6376  6376 I vol.Events: writeEvent collection_started
+11-11 01:17:43.509  1014  1014 D TouchInteractionService: Touch service connected: user=0
+11-11 01:17:43.511  3398  3398 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.feedback.internal.IFeedbackService pkg=com.google.android.gms }
+11-11 01:17:43.514  6376  6537 D MediaCodecList: codecHandlesFormat: no format, so no extra checks
+11-11 01:17:43.516  6376  6538 D MediaCodecList: codecHandlesFormat: no format, so no extra checks
+11-11 01:17:43.518  6376  6551 D CCodec  : allocate(c2.android.vorbis.decoder)
+11-11 01:17:43.521  6376  6551 I Codec2Client: Available Codec2 services: "default" "software"
+11-11 01:17:43.523  6376  6551 I CCodec  : setting up 'default' as default (vendor) store
+11-11 01:17:43.529  6376  6552 D CCodec  : allocate(c2.android.vorbis.decoder)
+11-11 01:17:43.532  6376  6552 I CCodec  : setting up 'default' as default (vendor) store
+11-11 01:17:43.553   491   491 V C2Store : in init
+11-11 01:17:43.553   491   491 V C2Store : loading dll
+11-11 01:17:43.556  6376  6551 I CCodec  : Created component [c2.android.vorbis.decoder]
+11-11 01:17:43.556   553  1603 D ConnectivityService: requestNetwork for uid/pid:10109/6451 activeRequest: null callbackRequest: 363 [NetworkRequest [ REQUEST id=364, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10109 RequestorUid: 10109 RequestorPkg: com.google.android.apps.youtube.music] ]] callback flags: 0 priority: 2147483647
+11-11 01:17:43.556  6376  6551 D CCodecConfig: read media type: audio/vorbis
+11-11 01:17:43.560   553   664 D ConnectivityService: NetReassign [364 : null → 101]
+11-11 01:17:43.561  6376  6551 D ReflectedParamUpdater: extent() != 1 for single value type: algo.buffers.max-count.values
+11-11 01:17:43.561  6376  6551 D ReflectedParamUpdater: extent() != 1 for single value type: output.subscribed-indices.values
+11-11 01:17:43.561  6376  6551 D ReflectedParamUpdater: extent() != 1 for single value type: input.buffers.allocator-ids.values
+11-11 01:17:43.562  6376  6551 D ReflectedParamUpdater: extent() != 1 for single value type: output.buffers.allocator-ids.values
+11-11 01:17:43.562  6376  6551 D ReflectedParamUpdater: extent() != 1 for single value type: algo.buffers.allocator-ids.values
+11-11 01:17:43.562   553   657 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=364, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10109 RequestorUid: 10109 RequestorPkg: com.google.android.apps.youtube.music] ]
+11-11 01:17:43.562  6376  6551 D ReflectedParamUpdater: extent() != 1 for single value type: output.buffers.pool-ids.values
+11-11 01:17:43.562  6376  6551 D ReflectedParamUpdater: extent() != 1 for single value type: algo.buffers.pool-ids.values
+11-11 01:17:43.564  6451  6479 W GoogleTagManager: Failed to extract the container from the resource file. Resource is a UTF-8 encoded string but doesn't contain a JSON container
+11-11 01:17:43.566  6376  6552 I CCodec  : Created component [c2.android.vorbis.decoder]
+11-11 01:17:43.566   553   657 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=364, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10109 RequestorUid: 10109 RequestorPkg: com.google.android.apps.youtube.music] ]
+11-11 01:17:43.566   553   657 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=364, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10109 RequestorUid: 10109 RequestorPkg: com.google.android.apps.youtube.music] ]
+11-11 01:17:43.567  6376  6551 I CCodecConfig: query failed after returning 7 values (BAD_INDEX)
+11-11 01:17:43.568  6376  6551 D CCodecConfig: c2 config diff is Dict {
+11-11 01:17:43.568  6376  6551 D CCodecConfig:   c2::u32 coded.bitrate.value = 64000
+11-11 01:17:43.568  6376  6551 D CCodecConfig:   c2::u32 input.buffers.max-size.value = 32768
+11-11 01:17:43.568  6376  6551 D CCodecConfig:   c2::u32 input.delay.value = 0
+11-11 01:17:43.568  6376  6551 D CCodecConfig:   string input.media-type.value = "audio/vorbis"
+11-11 01:17:43.568  6376  6551 D CCodecConfig:   string output.media-type.value = "audio/raw"
+11-11 01:17:43.568  6376  6551 D CCodecConfig:   c2::u32 raw.channel-count.value = 1
+11-11 01:17:43.568  6376  6551 D CCodecConfig:   c2::u32 raw.sample-rate.value = 48000
+11-11 01:17:43.568  6376  6551 D CCodecConfig: }
+11-11 01:17:43.568  6376  6551 D CCodec  : [c2.android.vorbis.decoder] buffers are bound to CCodec for this session
+11-11 01:17:43.568  6376  6551 D CCodecConfig: no c2 equivalents for durationUs
+11-11 01:17:43.568  6376  6551 D CCodecConfig: no c2 equivalents for track-id
+11-11 01:17:43.568  6376  6551 D CCodecConfig: no c2 equivalents for csd-1
+11-11 01:17:43.569  6376  6551 D CCodecConfig: no c2 equivalents for channel-mask
+11-11 01:17:43.569  6376  6551 D CCodecConfig: no c2 equivalents for flags
+11-11 01:17:43.571  6376  6552 D CCodecConfig: read media type: audio/vorbis
+11-11 01:17:43.572  6376  6551 D CCodecConfig: c2 config diff is   c2::u32 coded.bitrate.value = 160000
+11-11 01:17:43.572  6376  6551 D CCodecConfig:   c2::u32 raw.channel-count.value = 2
+11-11 01:17:43.572  6376  6551 D CCodecConfig:   c2::u32 raw.sample-rate.value = 44100
+11-11 01:17:43.573  6376  6551 W Codec2Client: query -- param skipped: index = 1107298332.
+11-11 01:17:43.573  6376  6551 D CCodec  : setup formats input: AMessage(what = 0x00000000) = {
+11-11 01:17:43.573  6376  6551 D CCodec  :   int32_t bitrate = 160000
+11-11 01:17:43.573  6376  6551 D CCodec  :   int32_t channel-count = 2
+11-11 01:17:43.573  6376  6551 D CCodec  :   int32_t max-input-size = 32768
+11-11 01:17:43.573  6376  6551 D CCodec  :   string mime = "audio/vorbis"
+11-11 01:17:43.573  6376  6551 D CCodec  :   int32_t sample-rate = 44100
+11-11 01:17:43.573  6376  6551 D CCodec  : }
+11-11 01:17:43.573  6376  6551 D CCodec  : setup formats output: AMessage(what = 0x00000000) = {
+11-11 01:17:43.573  6376  6551 D CCodec  :   int32_t channel-count = 2
+11-11 01:17:43.573  6376  6551 D CCodec  :   string mime = "audio/raw"
+11-11 01:17:43.573  6376  6551 D CCodec  :   int32_t sample-rate = 44100
+11-11 01:17:43.573  6376  6551 D CCodec  :   int32_t channel-mask = 3
+11-11 01:17:43.573  6376  6551 D CCodec  : }
+11-11 01:17:43.574  6376  6551 I CCodecConfig: query failed after returning 7 values (BAD_INDEX)
+11-11 01:17:43.575  6376  6551 W Codec2Client: query -- param skipped: index = 1342179345.
+11-11 01:17:43.575  6376  6551 W Codec2Client: query -- param skipped: index = 2415921170.
+11-11 01:17:43.576  6376  6546 E vol.VolumeDialogControl: isCaptionsServiceEnabled failed to check for captions component
+11-11 01:17:43.576  6376  6546 E vol.VolumeDialogControl: java.lang.IllegalArgumentException: Unknown component: ComponentInfo{com.google.android.as/com.google.android.apps.miphone.aiai.captions.CaptionsService}
+11-11 01:17:43.576  6376  6546 E vol.VolumeDialogControl: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:2430)
+11-11 01:17:43.576  6376  6546 E vol.VolumeDialogControl: 	at android.os.Parcel.createException(Parcel.java:2410)
+11-11 01:17:43.576  6376  6546 E vol.VolumeDialogControl: 	at android.os.Parcel.readException(Parcel.java:2393)
+11-11 01:17:43.576  6376  6546 E vol.VolumeDialogControl: 	at android.os.Parcel.readException(Parcel.java:2335)
+11-11 01:17:43.576  6376  6546 E vol.VolumeDialogControl: 	at android.content.pm.IPackageManager$Stub$Proxy.getComponentEnabledSetting(IPackageManager.java:7204)
+11-11 01:17:43.576  6376  6546 E vol.VolumeDialogControl: 	at android.app.ApplicationPackageManager.getComponentEnabledSetting(ApplicationPackageManager.java:2802)
+11-11 01:17:43.576  6376  6546 E vol.VolumeDialogControl: 	at com.android.systemui.volume.VolumeDialogControllerImpl.onGetCaptionsComponentStateW(VolumeDialogControllerImpl.java:449)
+11-11 01:17:43.576  6376  6546 E vol.VolumeDialogControl: 	at com.android.systemui.volume.VolumeDialogControllerImpl.access$2100(VolumeDialogControllerImpl.java:94)
+11-11 01:17:43.576  6376  6546 E vol.VolumeDialogControl: 	at com.android.systemui.volume.VolumeDialogControllerImpl$W.handleMessage(VolumeDialogControllerImpl.java:826)
+11-11 01:17:43.576  6376  6546 E vol.VolumeDialogControl: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-11 01:17:43.576  6376  6546 E vol.VolumeDialogControl: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-11 01:17:43.576  6376  6546 E vol.VolumeDialogControl: 	at android.os.Looper.loop(Looper.java:288)
+11-11 01:17:43.576  6376  6546 E vol.VolumeDialogControl: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-11 01:17:43.577  6376  6546 I vol.Events: writeEvent level_changed STREAM_VOICE_CALL 3
+11-11 01:17:43.577  6376  6551 D C2Store : Using DMABUF Heaps
+11-11 01:17:43.577  6451  6540 D CompatibilityChangeReporter: Compat change id reported: 160794467; UID 10109; state: DISABLED
+11-11 01:17:43.578  6376  6546 I vol.Events: writeEvent level_changed STREAM_SYSTEM 5
+11-11 01:17:43.578  6376  6551 D CCodecBufferChannel: [c2.android.vorbis.decoder#618] Created input block pool with allocatorID 16 => poolID 17 - OK (0)
+11-11 01:17:43.578  6376  6546 I vol.Events: writeEvent level_changed STREAM_RING 5
+11-11 01:17:43.581  6376  6551 I CCodecBufferChannel: [c2.android.vorbis.decoder#618] Created output block pool with allocatorID 16 => poolID 152 - OK
+11-11 01:17:43.582  6376  6551 D CCodecBufferChannel: [c2.android.vorbis.decoder#618] Configured output block pool ids 152 => OK
+11-11 01:17:43.584  6376  6551 I DMABUFHEAPS: Using DMA-BUF heap named: system
+11-11 01:17:43.584  6376  6546 I vol.Events: writeEvent level_changed STREAM_MUSIC 5
+11-11 01:17:43.584  6376  6546 I vol.Events: writeEvent level_changed STREAM_ALARM 6
+11-11 01:17:43.585  6376  6546 I vol.Events: writeEvent level_changed STREAM_BLUETOOTH_SCO 7
+11-11 01:17:43.586   553   601 E VerityUtils: Failed to measure fs-verity, errno 1: /product/app/YouTubeMusicPrebuilt/YouTubeMusicPrebuilt.apk
+11-11 01:17:43.586  6376  6552 D ReflectedParamUpdater: extent() != 1 for single value type: algo.buffers.max-count.values
+11-11 01:17:43.586   491  6564 D SimpleC2Component: Using output block pool with poolID 152 => got 152 - 0
+11-11 01:17:43.584   553   553 W PackageManagerB: type=1400 audit(0.0:9): avc: denied { ioctl } for path="/product/app/YouTubeMusicPrebuilt/YouTubeMusicPrebuilt.apk" dev="dm-2" ino=138 ioctlcmd=0x6686 scontext=u:r:system_server:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=0
+11-11 01:17:43.591  6376  6546 I vol.Events: writeEvent external_ringer_mode_changed unknown
+11-11 01:17:43.592  6376  6546 I vol.Events: writeEvent zen_mode_config_changed [disallowAlarms=false disallowMedia=false disallowSystem=true disallowRinger=false]
+11-11 01:17:43.594  6376  6552 D ReflectedParamUpdater: extent() != 1 for single value type: output.subscribed-indices.values
+11-11 01:17:43.596  6376  6552 D ReflectedParamUpdater: extent() != 1 for single value type: input.buffers.allocator-ids.values
+11-11 01:17:43.597  6376  6552 D ReflectedParamUpdater: extent() != 1 for single value type: output.buffers.allocator-ids.values
+11-11 01:17:43.598  6376  6552 D ReflectedParamUpdater: extent() != 1 for single value type: algo.buffers.allocator-ids.values
+11-11 01:17:43.598  6376  6552 D ReflectedParamUpdater: extent() != 1 for single value type: output.buffers.pool-ids.values
+11-11 01:17:43.598  6376  6552 D ReflectedParamUpdater: extent() != 1 for single value type: algo.buffers.pool-ids.values
+11-11 01:17:43.600  6376  6552 I CCodecConfig: query failed after returning 7 values (BAD_INDEX)
+11-11 01:17:43.600  6376  6552 D CCodecConfig: c2 config diff is Dict {
+11-11 01:17:43.600  6376  6552 D CCodecConfig:   c2::u32 coded.bitrate.value = 64000
+11-11 01:17:43.600  6376  6552 D CCodecConfig:   c2::u32 input.buffers.max-size.value = 32768
+11-11 01:17:43.600  6376  6552 D CCodecConfig:   c2::u32 input.delay.value = 0
+11-11 01:17:43.600  6376  6552 D CCodecConfig:   string input.media-type.value = "audio/vorbis"
+11-11 01:17:43.600  6376  6552 D CCodecConfig:   string output.media-type.value = "audio/raw"
+11-11 01:17:43.600  6376  6552 D CCodecConfig:   c2::u32 raw.channel-count.value = 1
+11-11 01:17:43.600  6376  6552 D CCodecConfig:   c2::u32 raw.sample-rate.value = 48000
+11-11 01:17:43.600  6376  6552 D CCodecConfig: }
+11-11 01:17:43.600  6376  6552 D CCodec  : [c2.android.vorbis.decoder] buffers are bound to CCodec for this session
+11-11 01:17:43.600  6376  6552 D CCodecConfig: no c2 equivalents for durationUs
+11-11 01:17:43.600  6376  6552 D CCodecConfig: no c2 equivalents for track-id
+11-11 01:17:43.601  6376  6552 D CCodecConfig: no c2 equivalents for csd-1
+11-11 01:17:43.601  6376  6552 D CCodecConfig: no c2 equivalents for channel-mask
+11-11 01:17:43.601  6376  6552 D CCodecConfig: no c2 equivalents for flags
+11-11 01:17:43.605  6376  6552 D CCodecConfig: c2 config diff is   c2::u32 coded.bitrate.value = 160000
+11-11 01:17:43.605  6376  6552 D CCodecConfig:   c2::u32 raw.channel-count.value = 2
+11-11 01:17:43.605  6376  6552 D CCodecConfig:   c2::u32 raw.sample-rate.value = 44100
+11-11 01:17:43.606  6376  6552 W Codec2Client: query -- param skipped: index = 1107298332.
+11-11 01:17:43.606  6376  6552 D CCodec  : setup formats input: AMessage(what = 0x00000000) = {
+11-11 01:17:43.606  6376  6552 D CCodec  :   int32_t bitrate = 160000
+11-11 01:17:43.606  6376  6552 D CCodec  :   int32_t channel-count = 2
+11-11 01:17:43.606  6376  6552 D CCodec  :   int32_t max-input-size = 32768
+11-11 01:17:43.606  6376  6552 D CCodec  :   string mime = "audio/vorbis"
+11-11 01:17:43.606  6376  6552 D CCodec  :   int32_t sample-rate = 44100
+11-11 01:17:43.606  6376  6552 D CCodec  : }
+11-11 01:17:43.606  6376  6552 D CCodec  : setup formats output: AMessage(what = 0x00000000) = {
+11-11 01:17:43.606  6376  6552 D CCodec  :   int32_t channel-count = 2
+11-11 01:17:43.606  6376  6552 D CCodec  :   string mime = "audio/raw"
+11-11 01:17:43.606  6376  6552 D CCodec  :   int32_t sample-rate = 44100
+11-11 01:17:43.606  6376  6552 D CCodec  :   int32_t channel-mask = 3
+11-11 01:17:43.606  6376  6552 D CCodec  : }
+11-11 01:17:43.606  6376  6552 I CCodecConfig: query failed after returning 7 values (BAD_INDEX)
+11-11 01:17:43.608  6376  6552 W Codec2Client: query -- param skipped: index = 1342179345.
+11-11 01:17:43.608  6376  6552 W Codec2Client: query -- param skipped: index = 2415921170.
+11-11 01:17:43.608  6376  6376 D SystemUIBootTiming: StartServicescom.android.systemui.volume.VolumeUI took to complete: 107ms
+11-11 01:17:43.612  6376  6552 D CCodecBufferChannel: [c2.android.vorbis.decoder#874] Created input block pool with allocatorID 16 => poolID 18 - OK (0)
+11-11 01:17:43.614  6376  6552 I CCodecBufferChannel: [c2.android.vorbis.decoder#874] Created output block pool with allocatorID 16 => poolID 153 - OK
+11-11 01:17:43.614  6376  6552 D CCodecBufferChannel: [c2.android.vorbis.decoder#874] Configured output block pool ids 153 => OK
+11-11 01:17:43.618   491  6565 D SimpleC2Component: Using output block pool with poolID 153 => got 153 - 0
+11-11 01:17:43.641  6451  6451 W YT.MDX.tyl: CastAppId for type 0 not found. Defaulting to mainCastAppId.
+11-11 01:17:43.644  6451  6451 W YT.MDX.tyl: CastAppId for type 0 not found. Defaulting to mainCastAppId.
+11-11 01:17:43.644  6376  6376 D NavigationModeController: getCurrentInteractionMode: mode=0 contextUser=0
+11-11 01:17:43.651  6376  6551 D CCodecBufferChannel: [c2.android.vorbis.decoder#618] MediaCodec discarded an unknown buffer
+11-11 01:17:43.651  6376  6551 D CCodecBufferChannel: [c2.android.vorbis.decoder#618] MediaCodec discarded an unknown buffer
+11-11 01:17:43.663  6376  6551 I hw-BpHwBinder: onLastStrongRef automatically unlinking death recipients
+11-11 01:17:43.667   553  1673 D ConnectivityService: requestNetwork for uid/pid:10109/6451 activeRequest: null callbackRequest: 365 [NetworkRequest [ REQUEST id=366, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10109 RequestorUid: 10109 RequestorPkg: com.google.android.apps.youtube.music] ]] callback flags: 0 priority: 2147483647
+11-11 01:17:43.668   553   664 D ConnectivityService: NetReassign [366 : null → 101]
+11-11 01:17:43.669   553   657 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=366, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10109 RequestorUid: 10109 RequestorPkg: com.google.android.apps.youtube.music] ]
+11-11 01:17:43.669   553   657 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=366, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10109 RequestorUid: 10109 RequestorPkg: com.google.android.apps.youtube.music] ]
+11-11 01:17:43.669   553   657 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=366, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10109 RequestorUid: 10109 RequestorPkg: com.google.android.apps.youtube.music] ]
+11-11 01:17:43.670  6376  6552 D CCodecBufferChannel: [c2.android.vorbis.decoder#874] MediaCodec discarded an unknown buffer
+11-11 01:17:43.670  6376  6552 D CCodecBufferChannel: [c2.android.vorbis.decoder#874] MediaCodec discarded an unknown buffer
+11-11 01:17:43.674  6376  6552 I hw-BpHwBinder: onLastStrongRef automatically unlinking death recipients
+11-11 01:17:43.674   491   491 I hw-BpHwBinder: onLastStrongRef automatically unlinking death recipients
+11-11 01:17:43.675   491   491 V C2Store : in ~ComponentModule
+11-11 01:17:43.675   491   491 V C2Store : unloading dll
+11-11 01:17:43.680  6376  6537 D MediaCodecList: codecHandlesFormat: no format, so no extra checks
+11-11 01:17:43.680  6451  6503 I FA      : App measurement disabled by setAnalyticsCollectionEnabled(false)
+11-11 01:17:43.683   553   664 D ConnectivityService: NetReassign [no changes]
+11-11 01:17:43.683  6451  6503 I FA      : App measurement initialized, version: 75066
+11-11 01:17:43.683  6451  6503 I FA      : To enable debug logging run: adb shell setprop log.tag.FA VERBOSE
+11-11 01:17:43.684  6451  6503 I FA      : To enable faster debug mode event logging run:
+11-11 01:17:43.684  6451  6503 I FA      :   adb shell setprop debug.firebase.analytics.app com.google.android.apps.youtube.music
+11-11 01:17:43.684  6376  6586 D CCodec  : allocate(c2.android.vorbis.decoder)
+11-11 01:17:43.686   553  1315 D ConnectivityService: requestNetwork for uid/pid:10134/6376 activeRequest: null callbackRequest: 368 [NetworkRequest [ REQUEST id=369, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10134 RequestorUid: 10134 RequestorPkg: com.android.systemui] ]] callback flags: 1 priority: 2147483647
+11-11 01:17:43.687  6376  6586 I CCodec  : setting up 'default' as default (vendor) store
+11-11 01:17:43.687   553   664 D ConnectivityService: NetReassign [369 : null → 101]
+11-11 01:17:43.688   491   491 V C2Store : in init
+11-11 01:17:43.688   491   491 V C2Store : loading dll
+11-11 01:17:43.688   553   657 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=369, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10134 RequestorUid: 10134 RequestorPkg: com.android.systemui] ]
+11-11 01:17:43.688   553   657 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=369, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10134 RequestorUid: 10134 RequestorPkg: com.android.systemui] ]
+11-11 01:17:43.689  6376  6376 V WifiManager: registerTrafficStateCallback: callback=com.android.systemui.statusbar.policy.WifiSignalController$WifiTrafficStateCallback@97162a9, executor=android.os.HandlerExecutor@ea3b5fc
+11-11 01:17:43.689   553   657 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=369, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10134 RequestorUid: 10134 RequestorPkg: com.android.systemui] ]
+11-11 01:17:43.689  6376  6586 I CCodec  : Created component [c2.android.vorbis.decoder]
+11-11 01:17:43.690  6376  6586 D CCodecConfig: read media type: audio/vorbis
+11-11 01:17:43.696  6376  6376 V WifiManager: registerScanResultsCallback: callback=com.android.systemui.statusbar.policy.NetworkControllerImpl$5@90cb02e, executor=androidx.mediarouter.media.MediaRoute2Provider$$ExternalSyntheticLambda0@9a937cf
+11-11 01:17:43.696  6376  6586 D ReflectedParamUpdater: extent() != 1 for single value type: algo.buffers.max-count.values
+11-11 01:17:43.697  6376  6586 D ReflectedParamUpdater: extent() != 1 for single value type: output.subscribed-indices.values
+11-11 01:17:43.697   553  1603 D ConnectivityService: requestNetwork for uid/pid:10134/6376 activeRequest: null callbackRequest: 370 [NetworkRequest [ REQUEST id=371, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10134 RequestorUid: 10134 RequestorPkg: com.android.systemui] ]] callback flags: 1 priority: 2147483647
+11-11 01:17:43.697  6376  6586 D ReflectedParamUpdater: extent() != 1 for single value type: input.buffers.allocator-ids.values
+11-11 01:17:43.697  6376  6586 D ReflectedParamUpdater: extent() != 1 for single value type: output.buffers.allocator-ids.values
+11-11 01:17:43.698   553   664 D ConnectivityService: NetReassign [371 : null → 101]
+11-11 01:17:43.699  6376  6586 D ReflectedParamUpdater: extent() != 1 for single value type: algo.buffers.allocator-ids.values
+11-11 01:17:43.699  6376  6586 D ReflectedParamUpdater: extent() != 1 for single value type: output.buffers.pool-ids.values
+11-11 01:17:43.700   553   657 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=371, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10134 RequestorUid: 10134 RequestorPkg: com.android.systemui] ]
+11-11 01:17:43.700   553   657 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=371, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10134 RequestorUid: 10134 RequestorPkg: com.android.systemui] ]
+11-11 01:17:43.700  6376  6586 D ReflectedParamUpdater: extent() != 1 for single value type: algo.buffers.pool-ids.values
+11-11 01:17:43.700   553   657 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=371, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10134 RequestorUid: 10134 RequestorPkg: com.android.systemui] ]
+11-11 01:17:43.701  6376  6586 I CCodecConfig: query failed after returning 7 values (BAD_INDEX)
+11-11 01:17:43.702  6376  6586 D CCodecConfig: c2 config diff is Dict {
+11-11 01:17:43.702  6376  6586 D CCodecConfig:   c2::u32 coded.bitrate.value = 64000
+11-11 01:17:43.702  6376  6586 D CCodecConfig:   c2::u32 input.buffers.max-size.value = 32768
+11-11 01:17:43.702  6376  6586 D CCodecConfig:   c2::u32 input.delay.value = 0
+11-11 01:17:43.702  6376  6586 D CCodecConfig:   string input.media-type.value = "audio/vorbis"
+11-11 01:17:43.702  6376  6586 D CCodecConfig:   string output.media-type.value = "audio/raw"
+11-11 01:17:43.702  6376  6586 D CCodecConfig:   c2::u32 raw.channel-count.value = 1
+11-11 01:17:43.702  6376  6586 D CCodecConfig:   c2::u32 raw.sample-rate.value = 48000
+11-11 01:17:43.702  6376  6586 D CCodecConfig: }
+11-11 01:17:43.702  6376  6586 D CCodec  : [c2.android.vorbis.decoder] buffers are bound to CCodec for this session
+11-11 01:17:43.702  6376  6586 D CCodecConfig: no c2 equivalents for durationUs
+11-11 01:17:43.702  6376  6586 D CCodecConfig: no c2 equivalents for track-id
+11-11 01:17:43.702  6376  6586 D CCodecConfig: no c2 equivalents for csd-1
+11-11 01:17:43.702  6376  6586 D CCodecConfig: no c2 equivalents for channel-mask
+11-11 01:17:43.702  6376  6586 D CCodecConfig: no c2 equivalents for flags
+11-11 01:17:43.703  6376  6586 D CCodecConfig: c2 config diff is   c2::u32 coded.bitrate.value = 160000
+11-11 01:17:43.703  6376  6586 D CCodecConfig:   c2::u32 raw.channel-count.value = 2
+11-11 01:17:43.704  6376  6586 W Codec2Client: query -- param skipped: index = 1107298332.
+11-11 01:17:43.704  6376  6586 D CCodec  : setup formats input: AMessage(what = 0x00000000) = {
+11-11 01:17:43.704  6376  6586 D CCodec  :   int32_t bitrate = 160000
+11-11 01:17:43.704  6376  6586 D CCodec  :   int32_t channel-count = 2
+11-11 01:17:43.704  6376  6586 D CCodec  :   int32_t max-input-size = 32768
+11-11 01:17:43.704  6376  6586 D CCodec  :   string mime = "audio/vorbis"
+11-11 01:17:43.704  6376  6586 D CCodec  :   int32_t sample-rate = 48000
+11-11 01:17:43.704  6376  6586 D CCodec  : }
+11-11 01:17:43.705  6376  6586 D CCodec  : setup formats output: AMessage(what = 0x00000000) = {
+11-11 01:17:43.705  6376  6586 D CCodec  :   int32_t channel-count = 2
+11-11 01:17:43.705  6376  6586 D CCodec  :   string mime = "audio/raw"
+11-11 01:17:43.705  6376  6586 D CCodec  :   int32_t sample-rate = 48000
+11-11 01:17:43.705  6376  6586 D CCodec  :   int32_t channel-mask = 3
+11-11 01:17:43.705  6376  6586 D CCodec  : }
+11-11 01:17:43.705  6376  6586 I CCodecConfig: query failed after returning 7 values (BAD_INDEX)
+11-11 01:17:43.709  6376  6586 W Codec2Client: query -- param skipped: index = 1342179345.
+11-11 01:17:43.709  6376  6586 W Codec2Client: query -- param skipped: index = 2415921170.
+11-11 01:17:43.710  6376  6586 D CCodecBufferChannel: [c2.android.vorbis.decoder#165] Created input block pool with allocatorID 16 => poolID 19 - OK (0)
+11-11 01:17:43.711   553  1743 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10118; state: DISABLED
+11-11 01:17:43.711   553  1743 D CompatibilityChangeReporter: Compat change id reported: 177438394; UID 10118; state: DISABLED
+11-11 01:17:43.711  6376  6586 I CCodecBufferChannel: [c2.android.vorbis.decoder#165] Created output block pool with allocatorID 16 => poolID 154 - OK
+11-11 01:17:43.711   553  1743 D CompatibilityChangeReporter: Compat change id reported: 135772972; UID 10118; state: DISABLED
+11-11 01:17:43.711   553  1743 D CompatibilityChangeReporter: Compat change id reported: 135754954; UID 10118; state: ENABLED
+11-11 01:17:43.711  6376  6586 D CCodecBufferChannel: [c2.android.vorbis.decoder#165] Configured output block pool ids 154 => OK
+11-11 01:17:43.712   553   583 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10118; state: ENABLED
+11-11 01:17:43.713   491  6588 D SimpleC2Component: Using output block pool with poolID 154 => got 154 - 0
+11-11 01:17:43.718  1110  1110 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.herrevad.services.LightweightNetworkQualityAndroidService.START pkg=com.google.android.gms }
+11-11 01:17:43.718  1110  1110 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.herrevad.services.LightweightNetworkQualityAndroidService.START pkg=com.google.android.gms }
+11-11 01:17:43.718  1110  1110 I BndSvcConfigHelper: No bound-service is registered for action: com.google.android.gms.herrevad.services.LightweightNetworkQualityAndroidService.START
+11-11 01:17:43.719  1110  1110 I BoundBrokerSvc: Bound service not available for: Intent { act=com.google.android.gms.herrevad.services.LightweightNetworkQualityAndroidService.START pkg=com.google.android.gms }
+11-11 01:17:43.719   342   342 D Zygote  : Forked child process 6593
+11-11 01:17:43.720  1110  1220 I GmsApiChimeraSvc: Using MissingApiServiceBroker for com.google.android.gms.herrevad.services.LightweightNetworkQualityAndroidService.START due to missing BoundService implementation
+11-11 01:17:43.721   553   583 I ActivityManager: Start proc 6593:com.google.android.calendar/u0a118 for broadcast {com.google.android.calendar/com.google.android.apps.calendar.sync.SyncOnUnlockReceiver}
+11-11 01:17:43.722  3398  3424 W SQLiteLog: (28) double-quoted string literal: "1794167263722"
+11-11 01:17:43.722  3398  3424 W SQLiteLog: (28) double-quoted string literal: "1"
+11-11 01:17:43.724  6451  6451 E YouTubeMusic: Trying to detachMediaView when it wasn't the most recent MediaView Setter
+11-11 01:17:43.725  6593  6593 W ndroid.calenda: Unexpected CPU variant for X86 using defaults: x86_64
+11-11 01:17:43.729   440   463 I adbd    : jdwp connection from 6593
+11-11 01:17:43.730   491   762 D BufferPoolAccessor2.0: evictor expired: 4, evicted: 0
+11-11 01:17:43.731  6451  6482 W YouTubeMusic: Unknown task tag mdx_background_scanner; aborting...
+11-11 01:17:43.739  6593  6593 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10118; state: DISABLED
+11-11 01:17:43.746   553  1603 I ActivityManager: Killing 4206:com.google.android.settings.intelligence/u0a93 (adj 925): empty #17
+11-11 01:17:43.747   553   664 D ConnectivityService: NetReassign [no changes]
+11-11 01:17:43.747  6593  6593 D nativeloader: classloader namespace configured for unbundled product apk. library_path=/product/app/CalendarGooglePrebuilt/lib/x86_64:/product/lib64:/system/product/lib64
+11-11 01:17:43.754  6593  6593 V GraphicsEnvironment: ANGLE Developer option for 'com.google.android.calendar' set to: 'default'
+11-11 01:17:43.754  6593  6593 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+11-11 01:17:43.755  6593  6593 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-11 01:17:43.755  6593  6593 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-11 01:17:43.767  6376  6586 D CCodecBufferChannel: [c2.android.vorbis.decoder#165] MediaCodec discarded an unknown buffer
+11-11 01:17:43.767  6376  6586 D CCodecBufferChannel: [c2.android.vorbis.decoder#165] MediaCodec discarded an unknown buffer
+11-11 01:17:43.769  6376  6586 I hw-BpHwBinder: onLastStrongRef automatically unlinking death recipients
+11-11 01:17:43.769   491   491 I hw-BpHwBinder: onLastStrongRef automatically unlinking death recipients
+11-11 01:17:43.769   491   491 V C2Store : in ~ComponentModule
+11-11 01:17:43.770  6376  6376 D CompatibilityChangeReporter: Compat change id reported: 171228096; UID 10134; state: ENABLED
+11-11 01:17:43.770   491   491 V C2Store : unloading dll
+11-11 01:17:43.786   342   342 I Zygote  : Process 4206 exited due to signal 9 (Killed)
+11-11 01:17:43.788  1110  1110 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.usagereporting.service.START pkg=com.google.android.gms }
+11-11 01:17:43.791  6451  6479 E GoogleTagManager: Invalid macro: _gtm.loadEventEnabled
+11-11 01:17:43.808  6376  6376 D NavigationModeController: getCurrentInteractionMode: mode=0 contextUser=0
+11-11 01:17:43.814  6182  6192 W droid.apps.map: Suspending all threads took: 6.513ms
+11-11 01:17:43.818  1110  4211 I ChimeraSrvcProxy: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl
+11-11 01:17:43.819  6376  6376 D NavigationModeController: getCurrentInteractionMode: mode=0 contextUser=0
+11-11 01:17:43.822  6376  6376 D NavigationModeController: getCurrentInteractionMode: mode=0 contextUser=0
+11-11 01:17:43.822  6376  6376 D NavigationModeController: getCurrentInteractionMode: mode=0 contextUser=0
+11-11 01:17:43.828   553   584 I libprocessgroup: Successfully killed process cgroup uid 10093 pid 4206 in 53ms
+11-11 01:17:43.829  6376  6376 D NavigationModeController: getCurrentInteractionMode: mode=0 contextUser=0
+11-11 01:17:43.843  6376  6376 I TetheringManager: registerTetheringEventCallback:com.android.systemui
+11-11 01:17:43.843  6376  6376 I TetheringManager: registerTetheringEventCallback caller:com.android.systemui
+11-11 01:17:43.845   553   834 W ActivityManager: Receiver with filter android.content.IntentFilter@5c5e62d already registered for pid 6376, callerPackage is com.android.systemui
+11-11 01:17:43.849  6376  6376 W AudioManager: attempt to call registerAudioRecordingCallback() on a previouslyregistered callback
+11-11 01:17:43.867  6451  6614 E GoogleTagManager: Invalid macro: _gtm.loadEventEnabled
+11-11 01:17:43.869  6376  6376 D StatusBar: disable<e i a s b h r c s > disable2<q i n >
+11-11 01:17:43.869   553  1530 I StatusBarManagerService: registerStatusBar bar=com.android.internal.statusbar.IStatusBar$Stub$Proxy@6fd26e0
+11-11 01:17:43.883  6376  6376 I CameraManagerGlobal: Connecting to camera service
+11-11 01:17:43.895  3398  3398 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.gservices.START pkg=com.google.android.gms }
+11-11 01:17:43.897  6376  6376 E ThemeUtils: View class com.airbnb.lottie.LottieAnimationView is an AppCompat widget that can only be used with a Theme.AppCompat theme (or descendant).
+11-11 01:17:43.903  6593  6634 W ndroid.calenda: Accessing hidden field Ljava/util/Collections$SynchronizedCollection;->mutex:Ljava/lang/Object; (max-target-o, reflection, denied)
+11-11 01:17:43.903  6593  6634 W ndroid.calenda: Accessing hidden method Ljava/util/Collections$SynchronizedSet;-><init>(Ljava/util/Set;Ljava/lang/Object;)V (max-target-o, reflection, denied)
+11-11 01:17:43.903  6593  6634 W ndroid.calenda: Accessing hidden method Ljava/util/Collections$SynchronizedCollection;-><init>(Ljava/util/Collection;Ljava/lang/Object;)V (max-target-o, reflection, denied)
+11-11 01:17:43.907  6451  6517 E GoogleTagManager: Unsupported Value Escaping: 3
+11-11 01:17:43.910  6451  6517 E GoogleTagManager: Unsupported Value Escaping: 3
+11-11 01:17:43.911  6451  6517 E GoogleTagManager: Unsupported Value Escaping: 3
+11-11 01:17:43.895     0     0 W healthd : battery l=100 v=5000 t=25.0 h=2 st=2 c=900000 fc=300000 cc=10 chg=a
+11-11 01:17:43.922  6376  6376 D CompatibilityChangeReporter: Compat change id reported: 170233598; UID 10134; state: DISABLED

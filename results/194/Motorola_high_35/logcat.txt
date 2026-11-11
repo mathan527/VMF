@@ -1,0 +1,516 @@
+--------- beginning of main
+11-11 01:18:35.397   425  3468 I resolv  : doQuery: rcode=0, ancount=8, return value=496
+11-11 01:18:35.397   425  3469 I resolv  : res_nmkquery: (QUERY, IN, A)
+11-11 01:18:35.398   425  3469 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x78cd83ed6320
+11-11 01:18:35.398   425  3469 I resolv  : doQuery: rcode=0, ancount=8, return value=428
+11-11 01:18:35.413  1576  2471 I A       : The GellerConfig is not present, returning null.
+11-11 01:18:35.413  1576  2471 I A       : (REDACTED) The GellerConfig is not present, defaulting isUploadEnabled for corpus %s to true.
+11-11 01:18:35.414  1102  2275 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.google.android.onetimeinitializer
+11-11 01:18:35.415  1576  2315 I A       : (REDACTED) The syncToken for corpus %s is %s.
+11-11 01:18:35.416  1576  2471 I A       : The GellerConfig is not present, returning null.
+11-11 01:18:35.416  1576  2471 I A       : (REDACTED) The GellerConfig is not present, defaulting isUploadEnabled for corpus %s to true.
+11-11 01:18:35.418  1576  2315 I A       : (REDACTED) The syncToken for corpus %s is %s.
+11-11 01:18:35.419  1576  2471 I A       : The GellerConfig is not present, returning null.
+11-11 01:18:35.419  1576  2471 I A       : (REDACTED) The GellerConfig is not present, defaulting isUploadEnabled for corpus %s to true.
+11-11 01:18:35.422  1576  2471 I A       : (REDACTED) The syncToken for corpus %s is %s.
+11-11 01:18:35.429  1633  2407 I ChimeraConfigurator: Starting update, reason: 4 urgentFeatures: mlkit.barcode.ui:0
+11-11 01:18:35.429  1576  2471 D TrafficStats: tagSocket(294) with statsTag=0x0, statsUid=-1
+11-11 01:18:35.430  1576  2464 D TrafficStats: tagSocket(295) with statsTag=0x0, statsUid=-1
+11-11 01:18:35.431  1576  2315 D TrafficStats: tagSocket(298) with statsTag=0x0, statsUid=-1
+11-11 01:18:35.432  1576  1881 D TrafficStats: tagSocket(296) with statsTag=0x0, statsUid=-1
+11-11 01:18:35.438  1576  1880 D TrafficStats: tagSocket(297) with statsTag=0x0, statsUid=-1
+11-11 01:18:35.440  1633  1946 I GmsSyncPolicyEngine: Periodic sync 1 disabled by policy, cancelled.
+11-11 01:18:35.441  1633  1946 I GmsSyncPolicyEngine: Periodic sync 2 disabled by policy, cancelled.
+11-11 01:18:35.442  1633  1946 I GmsSyncPolicyEngine: Periodic sync 3 disabled by policy, cancelled.
+11-11 01:18:35.460  1642  2547 I BugleRcsProvisioning: BugleSystemBindingManager: onBuglePhenotypeFlagChanged
+11-11 01:18:35.463  1642  2577 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=82 ]
+11-11 01:18:35.470  1642  1742 I BugleRcsEngine: SystemBinding enabled: true [CONTEXT log_prefix="SystemBindingManager" thread_id=43 ]
+11-11 01:18:35.470  1642  1763 I BugleRcsEngine: System Binding updated [CONTEXT thread_id=48 ]
+11-11 01:18:35.471  1633  2407 I ChimeraConfigurator: Detected pending changes for urgent request: [mlkit.barcode.ui]. Pending module sets: container:2423359190800+mlkit.barcode.ui+vision.barcode,tflite_dynamite:2640104055100800+tflite_dynamite
+11-11 01:18:35.477  1633  2408 I AlarmManager: setExactAndAllowWhileIdle [name: RemindersNSREFRESH_TIME_REMINDERS_ALARM type: 0 triggerAtMillis: 1794421800000]
+11-11 01:18:35.479  1633  3190 I SemanticLocation: [Scheduler] Housekeeping Task com.google.android.gms.semanticlocation.mdd.MddDownloadScheduleService.schedule_mdd_task is scheduled to run at cadence bpjz@77dfbb2 [CONTEXT service_id=173 ]
+11-11 01:18:35.480  1633  3190 I SemanticLocation: [Scheduler] Housekeeping Task com.google.android.gms.semanticlocation.service.SemanticLocationCleanupJob.SemanticLocationRemovedAccountsCleanup is scheduled to run at cadence bpjz@1009703 [CONTEXT service_id=173 ]
+11-11 01:18:35.481  2299  2676 W chromium: [WARNING:ev_root_ca_metadata.cc(119)] Not implemented
+11-11 01:18:35.481  1642  2577 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=82 ]
+11-11 01:18:35.493  1633  3481 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.geller.GellerCleanupService.GellerCleanup is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+11-11 01:18:35.494  1633  3481 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.settings.LocationHistoryActiveProcessingService.LocationHistoryActiveProcessing is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+11-11 01:18:35.494  1633  3481 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.settings.SettingsSyncService.OdlhSettingsSyncTask is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+11-11 01:18:35.494  1633  3481 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.settings.OdlhTombstonesCleanupJob.OdlhTombstonesCleanupJob is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+11-11 01:18:35.495  1633  2407 I GmsDebugLogger: [73] 1801
+11-11 01:18:35.496  1633  3481 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.db.OdlhDatabaseCleanupJob.OdlhDatabaseCleanup is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+11-11 01:18:35.497  1633  3481 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.edit.EditMergeJob.EditMergeJob is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+11-11 01:18:35.497  1633  3481 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.db.OdlhRemovedAccountsCleanupJob.OdlhRemovedAccountsCleanup is scheduled to run EVERY_14_DAYS [CONTEXT service_id=173 ]
+11-11 01:18:35.498  1633  3481 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.db.OdlhUserEditSyncJob.OdlhUserEditSync is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+11-11 01:18:35.498  1633  3481 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.monitoring.MonitoringService.MonitoringService is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+11-11 01:18:35.499  1633  2407 W ZappDownloader: No successful Zapp module downloads for requested modules [VisionBarcode.optional:242335100800:permitMetered, TfliteDynamiteDynamite.integ:264010405100800:permitMetered, MlkitBarcodeUi.optional:242335100800:permitMetered].
+11-11 01:18:35.499  1633  2407 I GmsDebugLogger: [30] [VisionBarcode.optional:242335100800],[TfliteDynamiteDynamite.integ:264010405100800],[MlkitBarcodeUi.optional:242335100800]
+11-11 01:18:35.499  1633  3481 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.deidentifieddata.storevisits.StoreVisitsProcessingService.StoreVisitsProcessing is scheduled to run EVERY_6_HOURS [CONTEXT service_id=173 ]
+11-11 01:18:35.499  1633  3481 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.deidentifieddata.wifi.WifiPlaceVisitProcessingService.WifiPlaceVisit is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+11-11 01:18:35.499  1633  3481 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.deidentifieddata.uploads.BatchDeidentifiedDataUploadService.BatchDeidentifiedDataUpload is scheduled to run EVERY_6_HOURS [CONTEXT service_id=173 ]
+11-11 01:18:35.499  1633  3481 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.deidentifieddata.historicalbusyness.HistoricalBusynessProcessingService.HistoricalBusyness is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+11-11 01:18:35.500  1633  3481 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.pulp.PulpInferenceService.PulpInference is scheduled to run EVERY_7_DAYS [CONTEXT service_id=173 ]
+11-11 01:18:35.500  1633  3481 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.pulp.PulpMddDownloadScheduleService.PulpMddRefreshDownloadTask is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+11-11 01:18:35.502  1633  3481 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.pulp.PulpMddMaintenanceService.PulpMddMaintenanceTask is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+11-11 01:18:35.504  1633  3481 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.deidentifieddata.pulptraining.PulpTrainingService.PulpTraining is scheduled to run EVERY_7_DAYS [CONTEXT service_id=173 ]
+11-11 01:18:35.504  1633  2407 W ChimeraConfigService: Retry attempt was throttled. [CONTEXT service_id=264 ]
+11-11 01:18:35.504  1633  2407 I GmsDebugLogger: [83] 1 [mlkit.barcode.ui]
+11-11 01:18:35.504  1633  3481 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.topplace.TopPlaceProcessingService.TopPlaceProcessing is scheduled to run EVERY_3_DAYS [CONTEXT service_id=173 ]
+11-11 01:18:35.507  1633  3481 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.federated.FederatedScheduleService.FederatedLocation is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+11-11 01:18:35.512  1633  3481 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.federated.FederatedTaskIdentityDataService.FederatedTaskIdentityDataService is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+11-11 01:18:35.513  1633  3481 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.federated.FederatedJobHistoryService.FederatedJobHistoryService is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+11-11 01:18:35.516  1633  3481 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.federated.BrellaInvocationService.BrellaInvocationServiceFirstPopulation is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+11-11 01:18:35.517  1633  3481 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.federated.BrellaInvocationService.BrellaInvocationServiceSecondPopulation is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+11-11 01:18:35.519  1633  3481 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.federated.BrellaInvocationService.BrellaInvocationServiceThirdPopulation is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+11-11 01:18:35.519  1633  3481 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.federated.BrellaInvocationService.BrellaInvocationServiceFourthPopulation is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+11-11 01:18:35.520  1633  3481 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.federated.BrellaInvocationService.BrellaInvocationServiceFifthPopulation is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+11-11 01:18:35.521  1633  3481 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.federated.regionfetcher.RegionMddMaintenanceService.RegionMddMaintenanceTask is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+11-11 01:18:35.521  1633  3481 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.federated.regionfetcher.RegionMddDownloadScheduleService.RegionMddRefreshDownloadTask is scheduled to run EVERY_6_HOURS [CONTEXT service_id=173 ]
+11-11 01:18:35.522  1633  3481 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.db.backup.OdlhBackupService.OdlhBackup is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+11-11 01:18:35.522  1633  3481 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.edit.EditUploadJob.EditUploadJob is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+11-11 01:18:35.524  1633  3481 I LocationHistory: [ModuleInit] Triggering settings sync one off task [CONTEXT service_id=314 ]
+11-11 01:18:35.526  1633  3481 V SmartDevice: [ModuleInitializer] ModuleInitializer got intent Intent { act=android.intent.action.BOOT_COMPLETED flg=0x89000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) } with flag 2
+11-11 01:18:35.526  1633  3481 W ChimeraUtils: Module com.google.android.gms.smartdevice missing resource null(0)
+11-11 01:18:35.527  1576  1580 I earchbox:search: Background concurrent mark compact GC freed 27MB AllocSpace bytes, 7(7700KB) LOS objects, 45% free, 28MB/52MB, paused 18.071ms,5.442ms total 299.660ms
+11-11 01:18:35.528  1642  2580 W BugleRcs: getAvailableProvisioningIds: accessing uninitialized provisioning identities.
+11-11 01:18:35.528  1642  2580 W BugleRcs: dncp: FULL
+11-11 01:18:35.528  1642  2580 W BugleRcs: 	at cjmd.i(PG:53)
+11-11 01:18:35.528  1642  2580 W BugleRcs: 	at cjvb.q(PG:169)
+11-11 01:18:35.528  1642  2580 W BugleRcs: 	at brts.a(PG:27)
+11-11 01:18:35.528  1642  2580 W BugleRcs: 	at brsg.b(PG:24)
+11-11 01:18:35.528  1642  2580 W BugleRcs: 	at brsg.a(PG:13)
+11-11 01:18:35.528  1642  2580 W BugleRcs: 	at efhn.a(PG:14)
+11-11 01:18:35.528  1642  2580 W BugleRcs: 	at eerl.a(PG:10)
+11-11 01:18:35.528  1642  2580 W BugleRcs: 	at dlmg.b(PG:84)
+11-11 01:18:35.528  1642  2580 W BugleRcs: 	at eegr.w(PG:11)
+11-11 01:18:35.528  1642  2580 W BugleRcs: 	at eerz.run(PG:109)
+11-11 01:18:35.528  1642  2580 W BugleRcs: 	at djfc.run(PG:3)
+11-11 01:18:35.528  1642  2580 W BugleRcs: 	at dkqk.run(PG:21)
+11-11 01:18:35.528  1642  2580 W BugleRcs: 	at crzm.run(PG:3)
+11-11 01:18:35.528  1642  2580 W BugleRcs: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-11 01:18:35.528  1642  2580 W BugleRcs: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-11 01:18:35.528  1642  2580 W BugleRcs: 	at cryq.run(PG:6)
+11-11 01:18:35.528  1642  2580 W BugleRcs: 	at java.lang.Thread.run(Thread.java:1012)
+11-11 01:18:35.528  1642  2580 W BugleRcs: 	at csaw.run(PG:64)
+11-11 01:18:35.528  1642  2580 I BugleTransport: Retrieved RCS available simIds: []
+11-11 01:18:35.531  1642  2615 I BugleTransport: Deregister all SIMs except for SIMs with subIds: [] from chat transport: SINGLE_REGISTRATION.
+11-11 01:18:35.533  1642  2614 I BugleTransport: Deregister all SIMs except for SIMs with subIds: [] from chat transport: DUAL_REGISTRATION.
+11-11 01:18:35.535  1642  2032 I BugleTransport: Deregister all SIMs except for SIMs with subIds: [] from chat transport: TACHYGRAM.
+11-11 01:18:35.540  1642  2580 I RcsClientLib: Connecting RcsEngineLifecycleServiceV2
+11-11 01:18:35.541  1642  2037 I RcsClientLib: Connecting RcsEngineLifecycleServiceV2
+11-11 01:18:35.543  1642  2037 W RcsClientLib: No CS.apk RCS service found. Is RCS running in Bugle?
+11-11 01:18:35.544  1642  2580 W RcsClientLib: No CS.apk RCS service found. Is RCS running in Bugle?
+11-11 01:18:35.545  1642  2037 I RcsClientLib: shouldUseCarrierServicesJibeService: false, CarrierServices rcs service found: false
+11-11 01:18:35.546  1642  2580 I RcsClientLib: shouldUseCarrierServicesJibeService: false, CarrierServices rcs service found: false
+11-11 01:18:35.548  1102  1109 W .gms.persistent: Suspending all threads took: 29.465ms
+11-11 01:18:35.550  1642  2580 I RcsClientLib: com.google.android.rcs.client.lifecycle.RcsEngineLifecycleServiceV2 connected
+11-11 01:18:35.552  1642  2580 I RcsClientLib: com.google.android.rcs.client.lifecycle.RcsEngineLifecycleServiceV2 connected
+11-11 01:18:35.555  1479  1565 I BugleRcsEngine: stopAllRcsTransportsExcept: ignoring stopping the RcsEngine. RcsEngine is still running [CONTEXT log_prefix="RcsEngineProxyImpl:[aa0ec864-7fe5]" thread_id=40 ]
+11-11 01:18:35.556  1642  2041 I RcsClientLib: Disconnecting RcsEngineLifecycleServiceV2
+11-11 01:18:35.559  1479  2564 I BugleRcsEngine: stopAllRcsTransportsExcept: ignoring stopping the RcsEngine. RcsEngine is still running [CONTEXT log_prefix="RcsEngineProxyImpl:[aa0ec864-7fe5]" thread_id=70 ]
+11-11 01:18:35.560  1642  1770 I RcsClientLib: Disconnecting RcsEngineLifecycleServiceV2
+11-11 01:18:35.579  1642  2580 D MddListenableWorkerFactory: createWorker for class: com.google.android.apps.messaging.shared.datamodel.workqueue.WorkQueueWorkerShim
+11-11 01:18:35.597  1642  2580 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=2c3b7286-4d3f-481d-a9c5-1ecfa763815b, tags={ com.google.android.apps.messaging.shared.datamodel.workqueue.WorkQueueWorkerShim,data_upgrade- } ]
+11-11 01:18:35.602  1576  2315 I A       : (REDACTED) Writing metadata key: %s, corpus: %s
+11-11 01:18:35.602  1576  2315 I A       : (REDACTED) Writing metadata key: %s, corpus: %s
+11-11 01:18:35.617  1576  2315 I A       : (REDACTED) Writing metadata key: %s, corpus: %s
+11-11 01:18:35.617  1576  2315 I A       : (REDACTED) Writing metadata key: %s, corpus: %s
+11-11 01:18:35.618  1576  2315 I A       : (REDACTED) Writing metadata key: %s, corpus: %s
+11-11 01:18:35.618  1576  2315 I A       : (REDACTED) Writing metadata key: %s, corpus: %s
+11-11 01:18:35.618  1576  2315 I A       : (REDACTED) Writing metadata key: %s, corpus: %s
+11-11 01:18:35.618  1576  2315 I A       : (REDACTED) Writing metadata key: %s, corpus: %s
+11-11 01:18:35.635  1633  3481 D SmartDevice: [ModuleInitializer] Module init - scheduling buffered logs cleanup task
+11-11 01:18:35.635  1633  3481 I SmartDevice: [CleanBufferedLogsService] Periodic task upload_buffered_logs_periodic scheduled!
+11-11 01:18:35.642  1633  3481 I AppLinksModuleInit: onInitRuntimeState [CONTEXT service_id=244 ]
+11-11 01:18:35.646  1633  3481 I AppLinksModuleInit: verifying requested domain links post-boot [CONTEXT service_id=244 ]
+11-11 01:18:35.671  1102  1219 W BpBinder: Large outgoing transaction of 408520 bytes, interface descriptor , code 4
+11-11 01:18:35.676   633   800 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+11-11 01:18:35.679  1633  2415 I TelephonySpamInit: On boot completed TelephonySpam module initialized [CONTEXT service_id=150 ]
+11-11 01:18:35.679  1633  2415 I TelephonySpamInit: onModuleUpdated TelephonySpam module initialized [CONTEXT service_id=150 ]
+11-11 01:18:35.679  1633  3481 I AppLinksRequestHandler: Processing 1 input requests [CONTEXT service_id=244 ]
+11-11 01:18:35.680  1633  2415 I SpamListSync: scheduleSyncTasks [CONTEXT service_id=150 ]
+11-11 01:18:35.680  1633  2415 I SpamListSync: schedulePeriodicTask [CONTEXT service_id=150 ]
+11-11 01:18:35.681  1633  2415 I SpamListSync: scheduleOneTimeTask [CONTEXT service_id=150 ]
+11-11 01:18:35.682   633   800 D InetDiagMessage: Destroyed 2 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+11-11 01:18:35.682   633   800 D InetDiagMessage: Destroyed live tcp sockets for uids={10151} in 6ms
+11-11 01:18:35.682   633   800 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+11-11 01:18:35.683   633   800 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+11-11 01:18:35.683   633   800 D InetDiagMessage: Destroyed live tcp sockets for uids={20151} in 1ms
+11-11 01:18:35.685  1633  2415 I ThreadNetworkModuleInit: Initializing runtime states: 2 [CONTEXT service_id=305 ]
+11-11 01:18:35.685  1633  2415 I ThreadNetworkModuleInit: Enable component com.google.android.gms.threadnetwork.ui.ShareCredentialsActivity [CONTEXT service_id=305 ]
+11-11 01:18:35.689  1633  3481 I AppLinksUtilsV1: Legacy cross-profile verification enabled [CONTEXT service_id=244 ]
+11-11 01:18:35.691  2352  2591 E MDD     : FileValidator: Downloaded file at uri = android://com.google.android.tts/files/datadownload/shared/public/datadownloadfile_1793773721103_feeffe09a4f88ca77c6f3515f7e2b99cbfeb6873, checksum = feeffe09a4f88ca77c6f3515f7e2b99cbfeb6873, size = 63360223 verification failed
+11-11 01:18:35.695  1102  2427 W NetworkScheduler: Immediate task was not started com.google.android.gms/.pay.gcmtask.PayGcmTaskService{u=0 tag="hceserviceinitoneoff.sync" trigger=window{start=0s,end=1s,earliest=0s,latest=0s} requirements=[NET_ANY,PREFERRED_CHARGING] attributes=[PERSISTED] scheduled=0s last_run=N/A exec_window_multiplier=1.0000 jid=N/A status=PENDING retries=0 client_lib=GMS_TASK_SCHEDULER-242335000}. Rescheduling immediate tasks can cause excessive battery drain.
+11-11 01:18:35.704  1633  2415 I ThreadBrSynchronizer: Scheduled periodic Border Router sync task: PeriodicBrSync [CONTEXT service_id=305 ]
+11-11 01:18:35.717  1642  1659 I .apps.messaging: Background concurrent mark compact GC freed 7574KB AllocSpace bytes, 168(8404KB) LOS objects, 50% free, 14MB/29MB, paused 484us,2.927ms total 151.522ms
+11-11 01:18:35.718  2352  2591 E MDD     : FileGroupManager downloadFileGroup langpack-domain_en-US_3056_zipfile com.google.android.tts can't finish!
+11-11 01:18:35.719  2352  2594 W ZipfileLPSourceImpl: Pending LP download pings failed.
+11-11 01:18:35.719  2352  2594 W ZipfileLPSourceImpl: cuf: Failed to download file group langpack-domain_en-US_3056_zipfile
+11-11 01:18:35.719  2352  2594 W ZipfileLPSourceImpl: 	at dej.M(PG:22)
+11-11 01:18:35.719  2352  2594 W ZipfileLPSourceImpl: 	at cxo.a(PG:1016)
+11-11 01:18:35.719  2352  2594 W ZipfileLPSourceImpl: 	at hhd.a(PG:57)
+11-11 01:18:35.719  2352  2594 W ZipfileLPSourceImpl: 	at hgo.d(PG:3)
+11-11 01:18:35.719  2352  2594 W ZipfileLPSourceImpl: 	at hgq.run(PG:42)
+11-11 01:18:35.719  2352  2594 W ZipfileLPSourceImpl: 	at hjb.run(PG:219)
+11-11 01:18:35.719  2352  2594 W ZipfileLPSourceImpl: 	at cqr.run(PG:7)
+11-11 01:18:35.719  2352  2594 W ZipfileLPSourceImpl: 	at hdx.run(PG:50)
+11-11 01:18:35.719  2352  2594 W ZipfileLPSourceImpl: 	at bxx.run(PG:327)
+11-11 01:18:35.719  2352  2594 W ZipfileLPSourceImpl: 	at java.lang.Thread.run(Thread.java:1012)
+11-11 01:18:35.719  2352  2594 W ZipfileLPSourceImpl: 	at csb.run(PG:64)
+11-11 01:18:35.719  2352  2594 W ZipfileLPSourceImpl: Caused by: cup: Download result code: DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-11 01:18:35.719  2352  2594 W ZipfileLPSourceImpl: 	at bor.c(PG:32)
+11-11 01:18:35.719  2352  2594 W ZipfileLPSourceImpl: 	at dad.c(PG:57)
+11-11 01:18:35.719  2352  2594 W ZipfileLPSourceImpl: 	at dac.a(PG:29)
+11-11 01:18:35.719  2352  2594 W ZipfileLPSourceImpl: 	at czg.a(PG:1063)
+11-11 01:18:35.719  2352  2594 W ZipfileLPSourceImpl: 	... 9 more
+11-11 01:18:35.721  1576  1881 I A       : (REDACTED) Writing metadata key: %s, corpus: %s
+11-11 01:18:35.721  1576  1881 I A       : (REDACTED) Writing metadata key: %s, corpus: %s
+11-11 01:18:35.723  2352  2594 E LanguagePackMaintenance: Error when background downloading LanguagePacks
+11-11 01:18:35.723  2352  2594 E LanguagePackMaintenance: cuf: Failed to download file group langpack-domain_en-US_3056_zipfile
+11-11 01:18:35.723  2352  2594 E LanguagePackMaintenance: 	at dej.M(PG:22)
+11-11 01:18:35.723  2352  2594 E LanguagePackMaintenance: 	at cxo.a(PG:1016)
+11-11 01:18:35.723  2352  2594 E LanguagePackMaintenance: 	at hhd.a(PG:57)
+11-11 01:18:35.723  2352  2594 E LanguagePackMaintenance: 	at hgo.d(PG:3)
+11-11 01:18:35.723  2352  2594 E LanguagePackMaintenance: 	at hgq.run(PG:42)
+11-11 01:18:35.723  2352  2594 E LanguagePackMaintenance: 	at hjb.run(PG:219)
+11-11 01:18:35.723  2352  2594 E LanguagePackMaintenance: 	at cqr.run(PG:7)
+11-11 01:18:35.723  2352  2594 E LanguagePackMaintenance: 	at hdx.run(PG:50)
+11-11 01:18:35.723  2352  2594 E LanguagePackMaintenance: 	at bxx.run(PG:327)
+11-11 01:18:35.723  2352  2594 E LanguagePackMaintenance: 	at java.lang.Thread.run(Thread.java:1012)
+11-11 01:18:35.723  2352  2594 E LanguagePackMaintenance: 	at csb.run(PG:64)
+11-11 01:18:35.723  2352  2594 E LanguagePackMaintenance: Caused by: cup: Download result code: DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-11 01:18:35.723  2352  2594 E LanguagePackMaintenance: 	at bor.c(PG:32)
+11-11 01:18:35.723  2352  2594 E LanguagePackMaintenance: 	at dad.c(PG:57)
+11-11 01:18:35.723  2352  2594 E LanguagePackMaintenance: 	at dac.a(PG:29)
+11-11 01:18:35.723  2352  2594 E LanguagePackMaintenance: 	at czg.a(PG:1063)
+11-11 01:18:35.723  2352  2594 E LanguagePackMaintenance: 	... 9 more
+11-11 01:18:35.731  1576  1881 I A       : (REDACTED) NGA Sync: MDD Task: %s done.
+11-11 01:18:35.736  1633  2415 I ActiveUnlock: Clearing old unlock triggers [CONTEXT service_id=327 ]
+11-11 01:18:35.738  1453  1463 I AiAiEcho: Settings changed for uri: content://settings/secure/active_unlock_on_unlock_intent
+11-11 01:18:35.738  1453  1635 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-11 01:18:35.739  1453  1635 I AiAiEcho: EchoTargets: 
+11-11 01:18:35.739  1453  1635 I AiAiEcho: Filtered by AiAi flag check: 
+11-11 01:18:35.739  1453  1635 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.739  1453  1635 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.739  1453  1635 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-11 01:18:35.740  1453  1635 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-11 01:18:35.740  1453  1635 I AiAiEcho: EchoTargets: 
+11-11 01:18:35.740  1453  1635 I AiAiEcho: Filtered by AiAi flag check: 
+11-11 01:18:35.740  1453  1635 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.740  1453  1635 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.742  1633  2415 I ActiveUnlock: Setting system trigger values from: active_unlock_on_unlock_intent [CONTEXT service_id=327 ]
+11-11 01:18:35.742  1453  1463 I AiAiEcho: Settings changed for uri: content://settings/secure/active_unlock_on_biometric_fail
+11-11 01:18:35.743  1453  1635 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-11 01:18:35.744  1633  2415 I ActiveUnlock: Setting system trigger values from: active_unlock_on_face_errors=[-1] [CONTEXT service_id=327 ]
+11-11 01:18:35.744  1453  1463 I AiAiEcho: Settings changed for uri: content://settings/secure/active_unlock_on_face_errors
+11-11 01:18:35.744  1453  1463 I AiAiEcho: Settings changed for uri: content://settings/secure/active_unlock_on_face_acquire_info
+11-11 01:18:35.744  1453  1463 I AiAiEcho: Settings changed for uri: content://settings/secure/active_unlock_wakeups_considered_unlock_intents
+11-11 01:18:35.744  1453  1463 I AiAiEcho: Settings changed for uri: content://settings/secure/active_unlock_on_unlock_intent
+11-11 01:18:35.744  1453  1635 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-11 01:18:35.746  1453  1635 I AiAiEcho: EchoTargets: 
+11-11 01:18:35.746  1453  1635 I AiAiEcho: Filtered by AiAi flag check: 
+11-11 01:18:35.746  1453  1635 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.748  1633  2415 I ActiveUnlock: Setting system trigger values from: active_unlock_wakeups_considered_unlock_intents=[12] [CONTEXT service_id=327 ]
+11-11 01:18:35.748  1576  1881 I A       : (REDACTED) NGA Sync: isNgaSyncEnabled: %s; enableFileGroupPopulator: %s; requiresMddAssets: %s
+11-11 01:18:35.749  1633  2415 I ActiveUnlock: Setting system trigger values from: active_unlock_on_face_acquire_info=[25, 26] [CONTEXT service_id=327 ]
+11-11 01:18:35.750  1453  1635 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.751  1633  2415 W ChimeraUtils: Module com.google.android.gms.activeunlock_primary missing resource null(0)
+11-11 01:18:35.751  1453  1635 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-11 01:18:35.752  1453  1909 I AiAiEcho: Settings changed for uri: content://settings/secure/active_unlock_on_biometric_fail
+11-11 01:18:35.752  1453  1909 I AiAiEcho: Settings changed for uri: content://settings/secure/active_unlock_on_face_errors
+11-11 01:18:35.752  1453  1909 I AiAiEcho: Settings changed for uri: content://settings/secure/active_unlock_wakeups_considered_unlock_intents
+11-11 01:18:35.753  1453  1909 I AiAiEcho: Settings changed for uri: content://settings/secure/active_unlock_on_face_acquire_info
+11-11 01:18:35.753  1453  1635 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+11-11 01:18:35.754  1453  1635 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-11 01:18:35.754  1576  1920 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=e406770c-df15-4885-9c22-f5c4fcb993b5, tags={ com.google.apps.tiktok.contrib.work.TikTokListenableWorker,TikTokWorker#com.google.android.libraries.mdi.download.workmanager.tiktok.TikTokPeriodicWorker } ]
+11-11 01:18:35.755  1331  1331 D SsBaseTemplateCard: No text view can be set up
+11-11 01:18:35.755  1331  1331 D SsBaseTemplateCard: Passed-in item info is null
+11-11 01:18:35.755  1331  1331 D SsBaseTemplateCard: Passed-in item info is null
+11-11 01:18:35.755  1331  1331 D SsBaseTemplateCard: Passed-in item info is null
+11-11 01:18:35.755  1453  1635 I AiAiEcho: EchoTargets: 
+11-11 01:18:35.755  1453  1635 I AiAiEcho: Filtered by AiAi flag check: 
+11-11 01:18:35.755  1453  1635 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.755  1331  1331 I SsBaseTemplateCard: Secondary card pane is null
+11-11 01:18:35.757  1453  1635 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.757  1453  1635 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-11 01:18:35.758  1453  1635 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-11 01:18:35.758  1453  1635 I AiAiEcho: EchoTargets: 
+11-11 01:18:35.758  1453  1635 I AiAiEcho: Filtered by AiAi flag check: 
+11-11 01:18:35.758  1453  1635 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.758  1453  1635 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.759  1633  2415 I Trustlet_Onbody: onbodyAlreadySet: false [CONTEXT service_id=294 ]
+11-11 01:18:35.760  1633  2415 I Trustlet_Onbody: isOnbodySuggestionEnabledByPhenotype: false [CONTEXT service_id=294 ]
+11-11 01:18:35.762  1633  2415 I Trustlet_Onbody: isTrustAgentEnabled: etys@bab1dce[status=SUCCESS, result=[true]] [CONTEXT service_id=294 ]
+11-11 01:18:35.762  1633  2415 I Trustlet_Onbody: Trustlet onbody is supported. [CONTEXT service_id=294 ]
+11-11 01:18:35.762  1633  2415 I Trustlet_Onbody: isSupported: true [CONTEXT service_id=294 ]
+11-11 01:18:35.762  1633  2415 I Trustlet_Onbody: isChromeOsDevice: false [CONTEXT service_id=294 ]
+11-11 01:18:35.762  1576  1880 I A       : (REDACTED) NGA Sync: MDD Task: %s done.
+11-11 01:18:35.768  1453  1635 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-11 01:18:35.769  1453  1635 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-11 01:18:35.769  1453  1635 I AiAiEcho: EchoTargets: 
+11-11 01:18:35.769  1453  1635 I AiAiEcho: Filtered by AiAi flag check: 
+11-11 01:18:35.769  1453  1635 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.769  1453  1635 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.769  1453  1635 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-11 01:18:35.770  1453  1635 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-11 01:18:35.772  1453  1635 I AiAiEcho: EchoTargets: 
+11-11 01:18:35.772  1453  1635 I AiAiEcho: Filtered by AiAi flag check: 
+11-11 01:18:35.772  1453  1635 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.772  1453  1635 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.772  1453  1635 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-11 01:18:35.772  1453  1635 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-11 01:18:35.772  1453  1635 I AiAiEcho: EchoTargets: 
+11-11 01:18:35.772  1453  1635 I AiAiEcho: Filtered by AiAi flag check: 
+11-11 01:18:35.772  1453  1635 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.772  1453  1635 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.772  1453  1635 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-11 01:18:35.772  1453  1635 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-11 01:18:35.772  1453  1635 I AiAiEcho: EchoTargets: 
+11-11 01:18:35.772  1453  1635 I AiAiEcho: Filtered by AiAi flag check: 
+11-11 01:18:35.772  1453  1635 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.773  1453  1635 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.773  1453  1635 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-11 01:18:35.773  1453  1635 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-11 01:18:35.774  1453  1635 I AiAiEcho: EchoTargets: 
+11-11 01:18:35.774  1453  1635 I AiAiEcho: Filtered by AiAi flag check: 
+11-11 01:18:35.774  1453  1635 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.779  1453  1635 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.780  1453  1635 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-11 01:18:35.780  1453  1635 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-11 01:18:35.782  1453  1635 I AiAiEcho: EchoTargets: 
+11-11 01:18:35.782  1453  1635 I AiAiEcho: Filtered by AiAi flag check: 
+11-11 01:18:35.782  1453  1635 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.782  1453  1635 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.782   425  3501 I resolv  : GetAddrInfoHandler::run: {101 786533 101 983141 10143 0}
+11-11 01:18:35.783  1453  1635 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-11 01:18:35.784  1453  1635 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-11 01:18:35.785   425  3502 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+11-11 01:18:35.785  1453  1635 I AiAiEcho: EchoTargets: 
+11-11 01:18:35.785  1453  1635 I AiAiEcho: Filtered by AiAi flag check: 
+11-11 01:18:35.785  1453  1635 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.785   425  3503 I resolv  : res_nmkquery: (QUERY, IN, A)
+11-11 01:18:35.789  1453  1635 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.789  1453  1635 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-11 01:18:35.789  1453  1635 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-11 01:18:35.792  1453  1635 I AiAiEcho: EchoTargets: 
+11-11 01:18:35.792  1453  1635 I AiAiEcho: Filtered by AiAi flag check: 
+11-11 01:18:35.792  1453  1635 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.792  1576  1880 I A       : (REDACTED) NGA Sync: isNgaSyncEnabled: %s; enableFileGroupPopulator: %s; requiresMddAssets: %s
+11-11 01:18:35.792  1453  1635 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.792  1453  1635 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-11 01:18:35.793  1633  2951 W DataCollectionRegistryC: missing CollectionDefinition for digitalassetlinks.googleapis.com/google.digitalassetlinks.v1.AssetLinks/Check
+11-11 01:18:35.793  1576  1920 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=0d790f45-257d-44a3-b97c-28368831e0e2, tags={ com.google.apps.tiktok.contrib.work.TikTokListenableWorker,TikTokWorker#com.google.android.libraries.mdi.download.workmanager.tiktok.TikTokPeriodicWorker } ]
+11-11 01:18:35.795  1453  1635 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-11 01:18:35.802  1453  1635 I AiAiEcho: EchoTargets: 
+11-11 01:18:35.802  1453  1635 I AiAiEcho: Filtered by AiAi flag check: 
+11-11 01:18:35.802  1453  1635 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.803  1453  1635 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.804  1453  1635 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-11 01:18:35.804  1453  1635 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-11 01:18:35.804  1453  1635 I AiAiEcho: EchoTargets: 
+11-11 01:18:35.804  1453  1635 I AiAiEcho: Filtered by AiAi flag check: 
+11-11 01:18:35.804  1453  1635 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.804  1453  1635 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.804  1453  1635 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-11 01:18:35.808  1453  1635 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-11 01:18:35.808  1453  1635 I AiAiEcho: EchoTargets: 
+11-11 01:18:35.808  1453  1635 I AiAiEcho: Filtered by AiAi flag check: 
+11-11 01:18:35.808  1453  1635 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.808  1453  1635 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.808  1453  1635 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-11 01:18:35.808  1453  1635 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-11 01:18:35.808  1453  1635 I AiAiEcho: EchoTargets: 
+11-11 01:18:35.808  1453  1635 I AiAiEcho: Filtered by AiAi flag check: 
+11-11 01:18:35.808  1453  1635 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.808  1453  1635 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.808  1453  1635 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-11 01:18:35.809  1453  1635 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-11 01:18:35.809  1453  1635 I AiAiEcho: EchoTargets: 
+11-11 01:18:35.809  1453  1635 I AiAiEcho: Filtered by AiAi flag check: 
+11-11 01:18:35.809  1453  1635 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.809  1453  1635 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.809  1453  1635 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-11 01:18:35.809  1453  1635 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface media_data_manager with targets# 0 (types=[])
+11-11 01:18:35.809   887   887 D SsMediaDataProvider: Forwarding Smartspace updates []
+11-11 01:18:35.809  1453  1635 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+11-11 01:18:35.809  1453  1635 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-11 01:18:35.809  1453  1635 I AiAiEcho: EchoTargets: 
+11-11 01:18:35.809  1453  1635 I AiAiEcho: Filtered by AiAi flag check: 
+11-11 01:18:35.809  1453  1635 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.810  1453  1635 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.810  1453  1635 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-11 01:18:35.810   887   887 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+11-11 01:18:35.810  1453  1635 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-11 01:18:35.811  1453  1635 I AiAiEcho: EchoTargets: 
+11-11 01:18:35.811  1453  1635 I AiAiEcho: Filtered by AiAi flag check: 
+11-11 01:18:35.811  1453  1635 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.811  1453  1635 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.811  1453  1635 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-11 01:18:35.812  1453  1635 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-11 01:18:35.812  1453  1635 I AiAiEcho: EchoTargets: 
+11-11 01:18:35.812  1453  1635 I AiAiEcho: Filtered by AiAi flag check: 
+11-11 01:18:35.812  1453  1635 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.812  1453  1635 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.812  1453  1635 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-11 01:18:35.812  1453  1635 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-11 01:18:35.813  1453  1635 I AiAiEcho: EchoTargets: 
+11-11 01:18:35.813  1453  1635 I AiAiEcho: Filtered by AiAi flag check: 
+11-11 01:18:35.813  1453  1635 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.814   425  3503 I resolv  : res_nsend: used send_dg 436 terrno: 0
+11-11 01:18:35.814   425  3503 I resolv  : doQuery: rcode=0, ancount=8, return value=436
+11-11 01:18:35.815   425  3502 I resolv  : res_nsend: used send_dg 504 terrno: 0
+11-11 01:18:35.815   425  3502 I resolv  : doQuery: rcode=0, ancount=8, return value=504
+11-11 01:18:35.815  1453  1635 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.815  1453  1635 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-11 01:18:35.815  1453  1635 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-11 01:18:35.815  1453  1635 I AiAiEcho: EchoTargets: 
+11-11 01:18:35.815  1453  1635 I AiAiEcho: Filtered by AiAi flag check: 
+11-11 01:18:35.815  1453  1635 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.815  1453  1635 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.815  1453  1635 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-11 01:18:35.815  1453  1635 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-11 01:18:35.815  1453  1635 I AiAiEcho: EchoTargets: 
+11-11 01:18:35.815  1453  1635 I AiAiEcho: Filtered by AiAi flag check: 
+11-11 01:18:35.815  1453  1635 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.815  1453  1635 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.815  1453  1635 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-11 01:18:35.815  1453  1635 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-11 01:18:35.816  1453  1635 I AiAiEcho: EchoTargets: 
+11-11 01:18:35.816  1453  1635 I AiAiEcho: Filtered by AiAi flag check: 
+11-11 01:18:35.816  1453  1635 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.816  1453  1635 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.816  1453  1635 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-11 01:18:35.816  1453  1635 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-11 01:18:35.816  1453  1635 I AiAiEcho: EchoTargets: 
+11-11 01:18:35.816  1453  1635 I AiAiEcho: Filtered by AiAi flag check: 
+11-11 01:18:35.816  1453  1635 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.816  1453  1635 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.816  1453  1635 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-11 01:18:35.816  1453  1635 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-11 01:18:35.816  1453  1635 I AiAiEcho: EchoTargets: 
+11-11 01:18:35.816  1453  1635 I AiAiEcho: Filtered by AiAi flag check: 
+11-11 01:18:35.816  1453  1635 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.816  1453  1635 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.816  1453  1635 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-11 01:18:35.816  1453  1635 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-11 01:18:35.816  1633  2415 I Wear_Controller: Wearable module requires a companion app to be installed.
+11-11 01:18:35.816  1453  1635 I AiAiEcho: EchoTargets: 
+11-11 01:18:35.816  1453  1635 I AiAiEcho: Filtered by AiAi flag check: 
+11-11 01:18:35.816  1453  1635 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.816  1633  2415 I Wear_Controller: onStartup - Wear is not available on this device.
+11-11 01:18:35.816  1453  1635 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.816  1453  1635 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-11 01:18:35.816  1453  1635 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-11 01:18:35.817  1453  1635 I AiAiEcho: EchoTargets: 
+11-11 01:18:35.817  1453  1635 I AiAiEcho: Filtered by AiAi flag check: 
+11-11 01:18:35.817  1453  1635 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.818  1453  1635 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.818  1453  1635 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-11 01:18:35.818  1453  1635 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-11 01:18:35.819  1453  1635 I AiAiEcho: EchoTargets: 
+11-11 01:18:35.819  1453  1635 I AiAiEcho: Filtered by AiAi flag check: 
+11-11 01:18:35.819  1453  1635 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.823  1633  1713 D TrafficStats: tagSocket(176) with statsTag=0x30002500, statsUid=-1
+11-11 01:18:35.823  1453  1635 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:18:35.823  1453  1635 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-11 01:18:35.824  1453  1635 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+11-11 01:18:35.824  1331  1331 D SsBaseTemplateCard: No text view can be set up
+11-11 01:18:35.824  1331  1331 D SsBaseTemplateCard: Passed-in item info is null
+11-11 01:18:35.824  1453  1635 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface media_data_manager with targets# 0 (types=[])
+11-11 01:18:35.824  1331  1331 D SsBaseTemplateCard: Passed-in item info is null
+11-11 01:18:35.825  1331  1331 D SsBaseTemplateCard: Passed-in item info is null
+11-11 01:18:35.825  1331  1331 I SsBaseTemplateCard: Secondary card pane is null
+11-11 01:18:35.826   887   887 D SsMediaDataProvider: Forwarding Smartspace updates []
+11-11 01:18:35.826  1453  1635 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+11-11 01:18:35.827   887   887 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+11-11 01:18:35.827  1453  1635 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+11-11 01:18:35.827  1576  2468 I A       : (REDACTED) Mobalt: start uploading logs to Clearcut log_source = %s
+11-11 01:18:35.828  1453  1635 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface media_data_manager with targets# 0 (types=[])
+11-11 01:18:35.830   887   887 D SsMediaDataProvider: Forwarding Smartspace updates []
+11-11 01:18:35.832  1453  1635 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+11-11 01:18:35.832   887   887 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+11-11 01:18:35.832  1453  1635 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+11-11 01:18:35.832  1453  1635 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface media_data_manager with targets# 0 (types=[])
+11-11 01:18:35.834   887   887 D SsMediaDataProvider: Forwarding Smartspace updates []
+11-11 01:18:35.835  1331  1331 D SsBaseTemplateCard: No text view can be set up
+11-11 01:18:35.836  1331  1331 D SsBaseTemplateCard: Passed-in item info is null
+11-11 01:18:35.836  1331  1331 D SsBaseTemplateCard: Passed-in item info is null
+11-11 01:18:35.836  1331  1331 D SsBaseTemplateCard: Passed-in item info is null
+11-11 01:18:35.836  1331  1331 I SsBaseTemplateCard: Secondary card pane is null
+11-11 01:18:35.836  1331  1331 D SsBaseTemplateCard: No text view can be set up
+11-11 01:18:35.836  1331  1331 D SsBaseTemplateCard: Passed-in item info is null
+11-11 01:18:35.836  1331  1331 D SsBaseTemplateCard: Passed-in item info is null
+11-11 01:18:35.836  1331  1331 D SsBaseTemplateCard: Passed-in item info is null
+11-11 01:18:35.836  1331  1331 I SsBaseTemplateCard: Secondary card pane is null
+11-11 01:18:35.839  1453  1635 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+11-11 01:18:35.839  1331  1562 D EGL_emulation: app_time_stats: avg=515.32ms min=67.43ms max=963.22ms count=2
+11-11 01:18:35.839   887   887 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+11-11 01:18:35.840  1453  1635 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+11-11 01:18:35.841  1453  1635 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface media_data_manager with targets# 0 (types=[])
+11-11 01:18:35.841  1633  1713 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-11 01:18:35.841  1633  1713 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-11 01:18:35.841  1633  1713 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-11 01:18:35.842   887   887 D SsMediaDataProvider: Forwarding Smartspace updates []
+11-11 01:18:35.844  1453  1635 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+11-11 01:18:35.844   887   887 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+11-11 01:18:35.844  1453  1635 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+11-11 01:18:35.846  1102  1102 I Thunderbird: starting outgoing sms listener [CONTEXT service_id=226 ]
+11-11 01:18:35.849  1102  1102 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.time.trustedtime.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+11-11 01:18:35.849  1102  1102 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.time.trustedtime.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+11-11 01:18:35.850  1453  1635 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface media_data_manager with targets# 0 (types=[])
+11-11 01:18:35.851   887   887 D SsMediaDataProvider: Forwarding Smartspace updates []
+11-11 01:18:35.852  1576  1881 I A       : (REDACTED) Mobalt: uploading logs to the Cobalt Server, got %s observations
+11-11 01:18:35.852  1453  1635 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+11-11 01:18:35.852   887   887 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+11-11 01:18:35.853  1453  1635 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+11-11 01:18:35.855  1331  1331 D SsBaseTemplateCard: No text view can be set up
+11-11 01:18:35.855  1453  1635 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface media_data_manager with targets# 0 (types=[])
+11-11 01:18:35.855  1331  1331 D SsBaseTemplateCard: Passed-in item info is null
+11-11 01:18:35.856  1331  1331 D SsBaseTemplateCard: Passed-in item info is null
+11-11 01:18:35.856  1331  1331 D SsBaseTemplateCard: Passed-in item info is null
+11-11 01:18:35.856  1331  1331 I SsBaseTemplateCard: Secondary card pane is null
+11-11 01:18:35.856  1331  1331 D SsBaseTemplateCard: No text view can be set up
+11-11 01:18:35.856  1331  1331 D SsBaseTemplateCard: Passed-in item info is null
+11-11 01:18:35.856  1331  1331 D SsBaseTemplateCard: Passed-in item info is null
+11-11 01:18:35.856  1331  1331 D SsBaseTemplateCard: Passed-in item info is null
+11-11 01:18:35.856  1331  1331 I SsBaseTemplateCard: Secondary card pane is null
+11-11 01:18:35.856  1331  1331 D SsBaseTemplateCard: No text view can be set up
+11-11 01:18:35.856  1331  1331 D SsBaseTemplateCard: Passed-in item info is null
+11-11 01:18:35.856  1331  1331 D SsBaseTemplateCard: Passed-in item info is null
+11-11 01:18:35.856  1331  1331 D SsBaseTemplateCard: Passed-in item info is null
+11-11 01:18:35.856  1331  1331 I SsBaseTemplateCard: Secondary card pane is null
+11-11 01:18:35.857  1453  1635 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+11-11 01:18:35.858  1453  1635 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+11-11 01:18:35.859  1453  1635 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface media_data_manager with targets# 0 (types=[])
+11-11 01:18:35.860  1453  1635 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+11-11 01:18:35.860   887   887 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+11-11 01:18:35.860  1453  1635 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+11-11 01:18:35.861   887   887 D SsMediaDataProvider: Forwarding Smartspace updates []
+11-11 01:18:35.861   887   887 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+11-11 01:18:35.861   887   887 D SsMediaDataProvider: Forwarding Smartspace updates []
+11-11 01:18:35.861  1453  1635 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface media_data_manager with targets# 0 (types=[])
+11-11 01:18:35.862  1453  1635 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+11-11 01:18:35.862  1453  1635 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+11-11 01:18:35.862  1453  1635 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface media_data_manager with targets# 0 (types=[])
+11-11 01:18:35.863   887   887 D SsMediaDataProvider: Forwarding Smartspace updates []
+11-11 01:18:35.863   887   887 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+11-11 01:18:35.863  1453  1635 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+11-11 01:18:35.863   887   887 D SsMediaDataProvider: Forwarding Smartspace updates []
+11-11 01:18:35.864   887   887 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+11-11 01:18:35.869  1331  1331 D SsBaseTemplateCard: No text view can be set up
+11-11 01:18:35.869  1331  1331 D SsBaseTemplateCard: Passed-in item info is null
+11-11 01:18:35.869  1331  1331 D SsBaseTemplateCard: Passed-in item info is null
+11-11 01:18:35.869  1331  1331 D SsBaseTemplateCard: Passed-in item info is null
+11-11 01:18:35.869  1331  1331 I SsBaseTemplateCard: Secondary card pane is null
+11-11 01:18:35.869  1331  1331 D SsBaseTemplateCard: No text view can be set up
+11-11 01:18:35.869  1331  1331 D SsBaseTemplateCard: Passed-in item info is null
+11-11 01:18:35.869  1331  1331 D SsBaseTemplateCard: Passed-in item info is null
+11-11 01:18:35.869  1331  1331 D SsBaseTemplateCard: Passed-in item info is null
+11-11 01:18:35.869  1331  1331 I SsBaseTemplateCard: Secondary card pane is null
+11-11 01:18:35.869  1331  1331 D SsBaseTemplateCard: No text view can be set up
+11-11 01:18:35.869  1331  1331 D SsBaseTemplateCard: Passed-in item info is null
+11-11 01:18:35.869  1331  1331 D SsBaseTemplateCard: Passed-in item info is null
+11-11 01:18:35.870  1331  1331 D SsBaseTemplateCard: Passed-in item info is null
+11-11 01:18:35.870  1331  1331 I SsBaseTemplateCard: Secondary card pane is null
+11-11 01:18:35.870  1102  1243 I UsageReportingOptionsSt: User 0 is opted-in? false [CONTEXT service_id=41 ]
+11-11 01:18:35.870  1102  1243 I UsageReportingOptionsSt: Updating global setting to unknown [CONTEXT service_id=41 ]
+11-11 01:18:35.872  1576  1881 I A       : Mobalt: finish sending logs to the Cobalt Server successfully

@@ -1,0 +1,636 @@
+--------- beginning of main
+11-11 01:05:10.652  1393  1393 I ContactsPerf: VoicemailContentProvider.onCreate finish
+11-11 01:05:10.653  8788  8788 I Dialer  : VvmTaskReceiver - task received
+11-11 01:05:10.654  8788  8788 I Dialer  : VvmTaskReceiver - TaskExecutor already running
+11-11 01:05:10.654  8788  8788 I Dialer  : Task.createTask - create task:com.android.voicemail.impl.ActivationTask
+11-11 01:05:10.654  8788  8788 I Dialer  : TaskQueue.add - duplicated task added
+11-11 01:05:10.655  8788  8788 I Dialer  : VvmTaskExecutor - com.android.voicemail.impl.ActivationTask@498a352 added
+11-11 01:05:10.656  4485  4485 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3420 
+11-11 01:05:10.656  4485  4485 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():2002 
+11-11 01:05:10.657  4485  4485 I DeviceUnlockedTag: DeviceUnlockedTag.notifyDeviceLockStatusChanged():31 Notify device unlocked.
+--------- beginning of system
+11-11 01:05:10.662   548  1184 D CompatibilityChangeReporter: Compat change id reported: 168419799; UID 1000; state: DISABLED
+11-11 01:05:10.664  1393  1408 I VoicemailNotifier: receivers for android.intent.action.PROVIDER_CHANGED :[]
+11-11 01:05:10.665  4612  4612 V MultiDispActionReceiver: startService
+11-11 01:05:10.665  4612  4612 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1817 android.content.ContextWrapper.startService:776 android.content.ContextWrapper.startService:776 com.android.emulator.multidisplay.MultiDisplayServiceReceiver.onReceive:33 android.app.ActivityThread.handleReceiver:4308 
+11-11 01:05:10.667  8788  8829 I Dialer  : VvmActivationTask - VVM content provider configured - vvm_type_cvvm
+11-11 01:05:10.668  8788  8829 I Dialer  : OmtpVvmCarrierCfgHlpr - OmtpEvent:CONFIG_ACTIVATING
+11-11 01:05:10.673  4575  5008 I BugleRcsEngine: [52] ProvisioningEventReceiver.d: Received Provisioning Event: [Bugle information (100)]
+11-11 01:05:10.673  4575  5008 I BugleRcsEngine: [52] ProvisioningEventReceiver.d: JibeService is running, passing event to provisioning engine.
+11-11 01:05:10.677  4559  4559 I GsaVoiceInteractionSrv: Handling ACTION_START_HOTWORD
+11-11 01:05:10.677  4559  4559 I GsaVoiceInteractionSrv: disregardVoiceMatch: false
+11-11 01:05:10.677  4559  4559 I GsaVoiceInteractionSrv: Cannot start hotword, hotword has been explicitly disabled.
+11-11 01:05:10.678  4612  8834 I android_emulator_multidisplay_JNI: multidisplay pipe connected!!!
+11-11 01:05:10.678  4612  8834 D MultiDisplayService: received 1
+11-11 01:05:10.678  4612  8834 D MultiDisplayService: received 0
+11-11 01:05:10.678  4612  8834 D MultiDisplayService: received 720
+11-11 01:05:10.678  4612  8834 D MultiDisplayService: received 1600
+11-11 01:05:10.678  4612  8834 D MultiDisplayService: received 0
+11-11 01:05:10.678  4612  8834 D MultiDisplayService: received 0
+11-11 01:05:10.678  4612  8834 E MultiDisplayService: invalid parameters for add/modify display
+11-11 01:05:10.681   494   773 D BufferPoolAccessor2.0: evictor expired: 3, evicted: 0
+11-11 01:05:10.681   548  1181 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10112; state: DISABLED
+11-11 01:05:10.681   548   580 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10112; state: ENABLED
+11-11 01:05:10.688  1393  1408 I VoicemailNotifier: receivers for android.intent.action.PROVIDER_CHANGED :[]
+11-11 01:05:10.690  8782  8817 W Looper  : Slow dispatch took 55ms wmshell.main h=android.os.Handler c=com.android.wm.shell.common.ShellExecutor$$ExternalSyntheticLambda0@3c76e13 m=0
+11-11 01:05:10.690   344   344 D Zygote  : Forked child process 8836
+11-11 01:05:10.690  8782  8817 W Looper  : Slow delivery took 51ms wmshell.main h=android.os.Handler c=null m=10
+11-11 01:05:10.690   548   580 I ActivityManager: Start proc 8836:com.google.android.apps.maps/u0a112 for broadcast {com.google.android.apps.maps/com.google.android.apps.gmm.transit.TransitStationService}
+11-11 01:05:10.690  8782  8782 W OneHandedController: Device doesn't support OneHanded feature
+11-11 01:05:10.703  8836  8836 W droid.apps.map: Unexpected CPU variant for X86 using defaults: x86_64
+11-11 01:05:10.704  8782  8817 W Looper  : Drained
+11-11 01:05:10.705  8788  8829 D CompatibilityChangeReporter: Compat change id reported: 160794467; UID 10097; state: DISABLED
+11-11 01:05:10.711   441   453 I adbd    : jdwp connection from 8836
+11-11 01:05:10.713  4749  4974 I A       : SmartDictation: MDD Task: MDD.MAINTENANCE.PERIODIC.GCM.TASK done. Logging Dictation Formatting status.
+11-11 01:05:10.714  4749  4974 I A       : SmartDictation: isNgaSyncEnabled: false; enableFileGroupPopulator: false; requiresMddAssets: false
+11-11 01:05:10.714  4749  4920 I A       : Refresh account policy.
+11-11 01:05:10.715  4749  4974 I A       : SmartDictation: 0 apa_dictation_formatting groups found. OnDeviceEligible: false
+11-11 01:05:10.716   881  1169 D SmsNumberUtils: enter filterDestAddr. destAddr="[BajqU4K5_YhSYbs-7QUn0dOwcmI]"
+11-11 01:05:10.717   548   564 D CompatibilityChangeReporter: Compat change id reported: 168419799; UID 10112; state: DISABLED
+11-11 01:05:10.719   881  1169 D SmsNumberUtils: destAddr is not formatted.
+11-11 01:05:10.719   881  1169 D SmsNumberUtils: leave filterDestAddr, new destAddr="[BajqU4K5_YhSYbs-7QUn0dOwcmI]"
+11-11 01:05:10.721  8836  8836 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10112; state: ENABLED
+11-11 01:05:10.726   548   579 W BroadcastQueue: Permission Denial: broadcasting Intent { act=com.android.voicemailomtp.sms.REQUEST_SENT flg=0x10 pkg=com.android.dialer } from com.android.dialer (pid=-1, uid=10097) requires com.android.dialer.permission.DIALER_ORIGIN due to registered receiver BroadcastFilter{a0ab639 10097/u0 ReceiverList{528de00 8788 com.android.dialer/10097/u0 remote:7613c83}}
+11-11 01:05:10.732  8836  8836 D nativeloader: classloader namespace configured for unbundled product apk. library_path=/product/app/Maps/lib/x86_64:/product/app/Maps/Maps.apk!/lib/x86_64:/product/lib64:/system/product/lib64
+11-11 01:05:10.733  4749  4749 I BgTaskExecutorImpl: Starting PERIODIC background task MDH_WIPEOUT.
+11-11 01:05:10.733  1131  1238 E GmsTaskScheduler: sendWakeUpEvent called on SchedulerClientBroadcastStrategy
+11-11 01:05:10.736  1131  6209 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.auth.account.be.legacy.AuthCronService started execution. cause:5 exec_start_elapsed_seconds: 69 [CONTEXT service_id=218 ]
+11-11 01:05:10.739  8836  8836 V GraphicsEnvironment: ANGLE Developer option for 'com.google.android.apps.maps' set to: 'default'
+11-11 01:05:10.740  8836  8836 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+11-11 01:05:10.741  8836  8836 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-11 01:05:10.741  8836  8836 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-11 01:05:10.742  4749  4749 I BgTaskExecutorImpl: Starting PERIODIC background task MDD_WIFI_CHARGING_TASK.
+11-11 01:05:10.745  4749  5164 E SingleDataFileGroupPop: Failed to add file group 
+11-11 01:05:10.745  4749  5164 E PhFileGroupPop: Failed to add file group 
+11-11 01:05:10.745  4749  5164 E PhFileGroupPop: Failed to add file group 
+11-11 01:05:10.745  4749  5164 E PhFileGroupPop: Failed to add file group 
+11-11 01:05:10.745  4749  5164 E PhFileGroupPop: Failed to add file group 
+11-11 01:05:10.745  4749  5164 E PhFileGroupPop: Failed to add file group 
+11-11 01:05:10.745  4749  5164 E PhFileGroupPop: Failed to add file group 
+11-11 01:05:10.746  4749  5164 E com.google.common.w.a.d: RuntimeException while executing runnable bv{com.google.android.libraries.mdi.download.i.bs@13dee8b} with executor MoreExecutors.directExecutor()
+11-11 01:05:10.746  4749  5164 E com.google.common.w.a.d: java.lang.NullPointerException: Attempt to read from field 'java.lang.String com.google.android.libraries.mdi.download.ab.b' on a null object reference
+11-11 01:05:10.746  4749  5164 E com.google.common.w.a.d: 	at com.google.android.libraries.mdi.download.i.bs.ga(SourceFile:2)
+11-11 01:05:10.746  4749  5164 E com.google.common.w.a.d: 	at com.google.common.w.a.bv.run(SourceFile:7)
+11-11 01:05:10.746  4749  5164 E com.google.common.w.a.d: 	at com.google.common.w.a.az.execute(SourceFile:1)
+11-11 01:05:10.746  4749  5164 E com.google.common.w.a.d: 	at com.google.common.w.a.d.i(SourceFile:1)
+11-11 01:05:10.746  4749  5164 E com.google.common.w.a.d: 	at com.google.common.w.a.d.hG(SourceFile:6)
+11-11 01:05:10.746  4749  5164 E com.google.common.w.a.d: 	at com.google.common.w.a.cb.s(SourceFile:1)
+11-11 01:05:10.746  4749  5164 E com.google.common.w.a.d: 	at com.google.android.libraries.mdi.download.i.bw.b(SourceFile:26)
+11-11 01:05:10.746  4749  5164 E com.google.common.w.a.d: 	at com.google.android.libraries.mdi.download.fx.n(SourceFile:3)
+11-11 01:05:10.746  4749  5164 E com.google.common.w.a.d: 	at com.google.android.libraries.mdi.download.fx.q(SourceFile:1)
+11-11 01:05:10.746  4749  5164 E com.google.common.w.a.d: 	at com.google.android.libraries.mdi.download.fx.g(SourceFile:2)
+11-11 01:05:10.746  4749  5164 E com.google.common.w.a.d: 	at com.google.android.apps.gsa.staticplugins.ca.d.a(SourceFile:1)
+11-11 01:05:10.746  4749  5164 E com.google.common.w.a.d: 	at com.google.android.libraries.gsa.k.a.i.apply(SourceFile:2)
+11-11 01:05:10.746  4749  5164 E com.google.common.w.a.d: 	at com.google.common.w.a.f.d(SourceFile:2)
+11-11 01:05:10.746  4749  5164 E com.google.common.w.a.d: 	at com.google.common.w.a.h.run(SourceFile:9)
+11-11 01:05:10.746  4749  5164 E com.google.common.w.a.d: 	at com.google.android.libraries.g.ab.run(SourceFile:1)
+11-11 01:05:10.746  4749  5164 E com.google.common.w.a.d: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+11-11 01:05:10.746  4749  5164 E com.google.common.w.a.d: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+11-11 01:05:10.746  4749  5164 E com.google.common.w.a.d: 	at com.google.android.libraries.g.n.run(SourceFile:2)
+11-11 01:05:10.746  4749  5164 E com.google.common.w.a.d: 	at com.google.android.libraries.g.f.run(SourceFile:2)
+11-11 01:05:10.746  4749  5164 E com.google.common.w.a.d: 	at java.lang.Thread.run(Thread.java:920)
+11-11 01:05:10.746  4749  5164 E PhFileGroupPop: Failed to add file group 
+11-11 01:05:10.747  4749  5164 E PhFileGroupPop: Failed to add file group 
+11-11 01:05:10.748  4749  5164 E PhFileGroupPop: Failed to add file group 
+11-11 01:05:10.748  4749  5164 I A       : Download file group for language pack: en-US
+11-11 01:05:10.749  4749  5164 W A       : Locale en-US is not compatible, please check manifest exists
+11-11 01:05:10.751  4749  5290 D PhFileGroupPop: Added file groups assistant_appintegration_appactions_config
+11-11 01:05:10.755  4749  5290 D PhFileGroupPop: Added file groups tapas_cortex
+11-11 01:05:10.757  8782  8782 W SystemServiceRegistry: No service published for: face
+11-11 01:05:10.759  4749  4962 I HotwordModelPopulator: Updated file group for locale 'hotword_model_en-US_okhey' from location: https://www.gstatic.com/android-search/hotword/x_google/0b06a49fe5a853c080ada268feeb6882/hotword.data. Download already finished.
+11-11 01:05:10.760  4749  4962 I HotwordModelPopulator: Updated file group for locale 'hotword_model_en-US_okhey' from location: https://www.gstatic.com/android-search/hotword/x_google/0b06a49fe5a853c080ada268feeb6882/hotword.data. Download already finished.
+11-11 01:05:10.765  4749  4962 I HotwordModelPopulator: Updated file group for locale 'hotword_model_en-US_okhey' from location: https://www.gstatic.com/android-search/hotword/x_google/0b06a49fe5a853c080ada268feeb6882/hotword.data. Download already finished.
+11-11 01:05:10.769   548   548 D TrustManagerService: Removing dead TrustListener.
+--------- beginning of kernel
+11-11 01:05:10.746     0     0 I binder  : 548:548 transaction failed 29189/-22, size 92-0 line 3133
+11-11 01:05:10.803  8621  8639 W libc    : Access denied finding property "persist.adb.tls_server.enable"
+11-11 01:05:10.804  8621  8639 W libc    : Access denied finding property "service.adb.tls.port"
+11-11 01:05:10.812  8782  8782 D ProtoStore: no cached data
+11-11 01:05:10.812  8782  8782 D ProtoStore: no cached data
+11-11 01:05:10.813  1131  1131 I Nearby  : Successfully shutdown executor MBleClient.backgroundExecutor. [CONTEXT service_id=49 ]
+11-11 01:05:10.814  1131  1131 I Nearby  : Successfully shutdown executor MBleClient.alarmExecutor. [CONTEXT service_id=49 ]
+11-11 01:05:10.815  4765  4765 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.feedback.internal.IFeedbackService dat=chimera-action: cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+11-11 01:05:10.826  8782  8782 D MediaResumeListener: loaded resume components []
+11-11 01:05:10.792  8621  8621 W Binder:8621_4: type=1400 audit(0.0:14): avc: denied { read } for name="u:object_r:system_adbd_prop:s0" dev="tmpfs" ino=246 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:system_adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+11-11 01:05:10.828  8782  8782 D LocalBluetoothProfileManager: LocalBluetoothProfileManager construction complete
+11-11 01:05:10.830  8836  8860 D libEGL  : loaded /vendor/lib64/egl/libEGL_emulation.so
+11-11 01:05:10.833  8782  8782 D LocalBluetoothProfileManager: Adding local A2DP profile
+11-11 01:05:10.800  8621  8621 W Binder:8621_4: type=1400 audit(0.0:15): avc: denied { read } for name="u:object_r:adbd_prop:s0" dev="tmpfs" ino=56 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+11-11 01:05:10.836  8836  8860 D libEGL  : loaded /vendor/lib64/egl/libGLESv1_CM_emulation.so
+11-11 01:05:10.838  8782  8782 D BluetoothA2dp: Binding service...
+11-11 01:05:10.846  8836  8860 D libEGL  : loaded /vendor/lib64/egl/libGLESv2_emulation.so
+11-11 01:05:10.846  8782  8782 D LocalBluetoothProfileManager: Adding local HEADSET profile
+11-11 01:05:10.847   343  8874 D resolv  : GetAddrInfoHandler::run: {101 786533 101 983141 10101 0}
+11-11 01:05:10.847   343  8874 D resolv  : resolv_getaddrinfo: explore_fqdn(): ai_family=0 ai_socktype=1 ai_protocol=6
+11-11 01:05:10.848   343  8876 D resolv  : doQuery: (1, 1)
+11-11 01:05:10.848   343  8876 D resolv  : res_nmkquery: (QUERY, IN, A)
+11-11 01:05:10.848   343  8876 D resolv  : res_nsend
+11-11 01:05:10.848   343  8876 I resolv  : resolv_cache_lookup: lookup
+11-11 01:05:10.848   343  8876 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x764a98009730
+11-11 01:05:10.848   343  8876 D resolv  : doQuery: rcode=0, ancount=8
+11-11 01:05:10.849   343  8875 D resolv  : doQuery: (1, 28)
+11-11 01:05:10.849   343  8875 D resolv  : res_nmkquery: (QUERY, IN, AAAA)
+11-11 01:05:10.849   343  8875 D resolv  : res_nsend
+11-11 01:05:10.849   343  8875 I resolv  : resolv_cache_lookup: lookup
+11-11 01:05:10.849   343  8875 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x764aa80169f0
+11-11 01:05:10.849   343  8875 D resolv  : doQuery: rcode=0, ancount=8
+11-11 01:05:10.850  8782  8782 D LocalBluetoothProfileManager: Adding local MAP profile
+11-11 01:05:10.850  8782  8782 D BluetoothMap: Create BluetoothMap proxy object
+11-11 01:05:10.850  8782  8782 D BluetoothMap: Binding service...
+11-11 01:05:10.850  8782  8782 D LocalBluetoothProfileManager: Adding local OPP profile
+11-11 01:05:10.851  8782  8782 D LocalBluetoothProfileManager: Adding local HID_HOST profile
+11-11 01:05:10.851  8782  8782 D BluetoothHidHost: Binding service...
+11-11 01:05:10.851  8782  8782 D LocalBluetoothProfileManager: Adding local HID_DEVICE profile
+11-11 01:05:10.852  8782  8782 D BluetoothHidDevice: Binding service...
+11-11 01:05:10.852  8782  8782 D LocalBluetoothProfileManager: Adding local PAN profile
+11-11 01:05:10.853  8782  8782 D BluetoothPan: Binding service...
+11-11 01:05:10.854  8782  8782 D LocalBluetoothProfileManager: Adding local PBAP profile
+11-11 01:05:10.860  4749  5167 E SingleDataFileGroupPop: Failed to add file group 
+11-11 01:05:10.861  4749  5167 E PhFileGroupPop: Failed to add file group 
+11-11 01:05:10.861  4749  5167 E PhFileGroupPop: Failed to add file group 
+11-11 01:05:10.861  4749  5167 E PhFileGroupPop: Failed to add file group 
+11-11 01:05:10.861  4749  5167 E PhFileGroupPop: Failed to add file group 
+11-11 01:05:10.861  4749  5167 E PhFileGroupPop: Failed to add file group 
+11-11 01:05:10.861  4749  5167 E PhFileGroupPop: Failed to add file group 
+11-11 01:05:10.861  4749  5167 E com.google.common.w.a.d: RuntimeException while executing runnable bv{com.google.android.libraries.mdi.download.i.bs@918ff9d} with executor MoreExecutors.directExecutor()
+11-11 01:05:10.861  4749  5167 E com.google.common.w.a.d: java.lang.NullPointerException: Attempt to read from field 'java.lang.String com.google.android.libraries.mdi.download.ab.b' on a null object reference
+11-11 01:05:10.861  4749  5167 E com.google.common.w.a.d: 	at com.google.android.libraries.mdi.download.i.bs.ga(SourceFile:2)
+11-11 01:05:10.861  4749  5167 E com.google.common.w.a.d: 	at com.google.common.w.a.bv.run(SourceFile:7)
+11-11 01:05:10.861  4749  5167 E com.google.common.w.a.d: 	at com.google.common.w.a.az.execute(SourceFile:1)
+11-11 01:05:10.861  4749  5167 E com.google.common.w.a.d: 	at com.google.common.w.a.d.i(SourceFile:1)
+11-11 01:05:10.861  4749  5167 E com.google.common.w.a.d: 	at com.google.common.w.a.d.hG(SourceFile:6)
+11-11 01:05:10.861  4749  5167 E com.google.common.w.a.d: 	at com.google.common.w.a.cb.s(SourceFile:1)
+11-11 01:05:10.861  4749  5167 E com.google.common.w.a.d: 	at com.google.android.libraries.mdi.download.i.bw.b(SourceFile:26)
+11-11 01:05:10.861  4749  5167 E com.google.common.w.a.d: 	at com.google.android.libraries.mdi.download.fx.n(SourceFile:3)
+11-11 01:05:10.861  4749  5167 E com.google.common.w.a.d: 	at com.google.android.libraries.mdi.download.eu.apply(SourceFile:1)
+11-11 01:05:10.861  4749  5167 E com.google.common.w.a.d: 	at com.google.common.w.a.f.d(SourceFile:2)
+11-11 01:05:10.861  4749  5167 E com.google.common.w.a.d: 	at com.google.common.w.a.h.run(SourceFile:9)
+11-11 01:05:10.861  4749  5167 E com.google.common.w.a.d: 	at com.google.common.w.a.dh.run(SourceFile:4)
+11-11 01:05:10.861  4749  5167 E com.google.common.w.a.d: 	at com.google.android.libraries.g.ab.run(SourceFile:1)
+11-11 01:05:10.861  4749  5167 E com.google.common.w.a.d: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+11-11 01:05:10.861  4749  5167 E com.google.common.w.a.d: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+11-11 01:05:10.861  4749  5167 E com.google.common.w.a.d: 	at com.google.android.libraries.g.n.run(SourceFile:2)
+11-11 01:05:10.861  4749  5167 E com.google.common.w.a.d: 	at com.google.android.libraries.g.f.run(SourceFile:2)
+11-11 01:05:10.861  4749  5167 E com.google.common.w.a.d: 	at java.lang.Thread.run(Thread.java:920)
+11-11 01:05:10.863  4765  4765 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.languageprofile.service.START pkg=com.google.android.gms }
+11-11 01:05:10.863  4765  4765 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.languageprofile.service.START pkg=com.google.android.gms }
+11-11 01:05:10.864  4749  5167 E PhFileGroupPop: Failed to add file group 
+11-11 01:05:10.865  4749  5167 E PhFileGroupPop: Failed to add file group 
+11-11 01:05:10.865  4749  5167 E PhFileGroupPop: Failed to add file group 
+11-11 01:05:10.865  4749  5167 I A       : Download file group for language pack: en-US
+11-11 01:05:10.866  4749  5167 W A       : Locale en-US is not compatible, please check manifest exists
+11-11 01:05:10.867  1131  5113 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-11 01:05:10.868  1131  5113 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@225014047@22.50.14 (190800-499278674):2)
+11-11 01:05:10.868  1131  5113 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@225014047@22.50.14 (190800-499278674):0)
+11-11 01:05:10.872  4749  5167 D PhFileGroupPop: Added file groups assistant_appintegration_appactions_config
+11-11 01:05:10.873  4749  5167 D PhFileGroupPop: Added file groups tapas_cortex
+11-11 01:05:10.875   548  1175 W ActivityManager: Unable to start service Intent { act=android.service.smartspace.SmartspaceService cmp=com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSmartspaceService } U=0: not found
+11-11 01:05:10.878   548  1175 W RemoteSmartspaceService: could not bind to Intent { act=android.service.smartspace.SmartspaceService cmp=com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSmartspaceService } using flags 67112961
+11-11 01:05:10.878   548   548 W ActivityManager: Unbind failed: could not find connection for android.app.LoadedApk$ServiceDispatcher$InnerConnection@7647828
+11-11 01:05:10.857     0     0 W healthd : battery l=100 v=5000 t=25.0 h=2 st=2 c=900000 fc=300000 cc=10 chg=a
+11-11 01:05:10.880   548  1178 W ActivityManager: Unable to start service Intent { act=android.service.smartspace.SmartspaceService cmp=com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSmartspaceService } U=0: not found
+11-11 01:05:10.880   548  1178 W RemoteSmartspaceService: could not bind to Intent { act=android.service.smartspace.SmartspaceService cmp=com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSmartspaceService } using flags 67112961
+11-11 01:05:10.881   548   548 W ActivityManager: Unbind failed: could not find connection for android.app.LoadedApk$ServiceDispatcher$InnerConnection@4d27c27
+11-11 01:05:10.881   548  1178 W ActivityManager: Unable to start service Intent { act=android.service.smartspace.SmartspaceService cmp=com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSmartspaceService } U=0: not found
+11-11 01:05:10.882  4749  4968 I HotwordModelPopulator: Updated file group for locale 'hotword_model_en-US_okhey' from location: https://www.gstatic.com/android-search/hotword/x_google/0b06a49fe5a853c080ada268feeb6882/hotword.data. Download already finished.
+11-11 01:05:10.883   548  1178 W RemoteSmartspaceService: could not bind to Intent { act=android.service.smartspace.SmartspaceService cmp=com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSmartspaceService } using flags 67112961
+11-11 01:05:10.883   548  1178 W ActivityManager: Unable to start service Intent { act=android.service.smartspace.SmartspaceService cmp=com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSmartspaceService } U=0: not found
+11-11 01:05:10.883   548   548 W ActivityManager: Unbind failed: could not find connection for android.app.LoadedApk$ServiceDispatcher$InnerConnection@d10c91f
+11-11 01:05:10.884  4749  4946 I HotwordModelPopulator: Updated file group for locale 'hotword_model_en-US_okhey' from location: https://www.gstatic.com/android-search/hotword/x_google/0b06a49fe5a853c080ada268feeb6882/hotword.data. Download already finished.
+11-11 01:05:10.885   548  1178 W RemoteSmartspaceService: could not bind to Intent { act=android.service.smartspace.SmartspaceService cmp=com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSmartspaceService } using flags 67112961
+11-11 01:05:10.885   548   548 W ActivityManager: Unbind failed: could not find connection for android.app.LoadedApk$ServiceDispatcher$InnerConnection@102d83b
+11-11 01:05:10.886  4749  4968 I HotwordModelPopulator: Updated file group for locale 'hotword_model_en-US_okhey' from location: https://www.gstatic.com/android-search/hotword/x_google/0b06a49fe5a853c080ada268feeb6882/hotword.data. Download already finished.
+11-11 01:05:10.898  8836  8879 D CompatibilityChangeReporter: Compat change id reported: 160794467; UID 10112; state: ENABLED
+11-11 01:05:10.898  1131  1131 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.herrevad.services.LightweightNetworkQualityAndroidService.START pkg=com.google.android.gms }
+11-11 01:05:10.898  1131  1131 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.herrevad.services.LightweightNetworkQualityAndroidService.START pkg=com.google.android.gms }
+11-11 01:05:10.898  1131  1131 I BndSvcConfigHelper: No bound-service is registered for action: com.google.android.gms.herrevad.services.LightweightNetworkQualityAndroidService.START
+11-11 01:05:10.898  1131  1131 I BoundBrokerSvc: Bound service not available for: Intent { act=com.google.android.gms.herrevad.services.LightweightNetworkQualityAndroidService.START pkg=com.google.android.gms }
+11-11 01:05:10.899  1131  1238 I GmsApiChimeraSvc: Using MissingApiServiceBroker for com.google.android.gms.herrevad.services.LightweightNetworkQualityAndroidService.START due to missing BoundService implementation
+11-11 01:05:10.906  1131  5113 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-11 01:05:10.908  1131  5113 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@225014047@22.50.14 (190800-499278674):2)
+11-11 01:05:10.908  1131  5113 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@225014047@22.50.14 (190800-499278674):0)
+11-11 01:05:10.915  8836  8868 W droid.apps.map: ClassLoaderContext type mismatch. expected=PCL, found=DLC (PCL[] | DLC[];PCL[/product/app/Maps/Maps.apk*1365528656:/product/app/Maps/Maps.apk!classes2.dex*1524207507:/product/app/Maps/Maps.apk!classes3.dex*2482915907:/product/app/Maps/Maps.apk!classes4.dex*986520311:/product/app/Maps/Maps.apk!classes5.dex*4159580411:/product/app/Maps/Maps.apk!classes6.dex*354095451:/product/app/Maps/Maps.apk!classes7.dex*3206633159]{PCL[/system/framework/org.apache.http.legacy.jar*2058259660]})
+11-11 01:05:10.917  8782  8782 W BatteryControllerGoogle: Couldn't register to observe provider
+11-11 01:05:10.917  8782  8782 W BatteryControllerGoogle: java.lang.SecurityException: Failed to find provider com.google.android.flipendo.api for user 0; expected to find a valid ContentProvider for this authority
+11-11 01:05:10.917  8782  8782 W BatteryControllerGoogle: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:2426)
+11-11 01:05:10.917  8782  8782 W BatteryControllerGoogle: 	at android.os.Parcel.createException(Parcel.java:2410)
+11-11 01:05:10.917  8782  8782 W BatteryControllerGoogle: 	at android.os.Parcel.readException(Parcel.java:2393)
+11-11 01:05:10.917  8782  8782 W BatteryControllerGoogle: 	at android.os.Parcel.readException(Parcel.java:2335)
+11-11 01:05:10.917  8782  8782 W BatteryControllerGoogle: 	at android.content.IContentService$Stub$Proxy.registerContentObserver(IContentService.java:1235)
+11-11 01:05:10.917  8782  8782 W BatteryControllerGoogle: 	at android.content.ContentResolver.registerContentObserver(ContentResolver.java:2672)
+11-11 01:05:10.917  8782  8782 W BatteryControllerGoogle: 	at com.google.android.systemui.statusbar.policy.BatteryControllerImplGoogle.init(BatteryControllerImplGoogle.java:86)
+11-11 01:05:10.917  8782  8782 W BatteryControllerGoogle: 	at com.google.android.systemui.dagger.SystemUIGoogleModule.provideBatteryController(SystemUIGoogleModule.java:155)
+11-11 01:05:10.917  8782  8782 W BatteryControllerGoogle: 	at com.google.android.systemui.dagger.SystemUIGoogleModule_ProvideBatteryControllerFactory.provideBatteryController(SystemUIGoogleModule_ProvideBatteryControllerFactory.java:84)
+11-11 01:05:10.917  8782  8782 W BatteryControllerGoogle: 	at com.google.android.systemui.dagger.SystemUIGoogleModule_ProvideBatteryControllerFactory.get(SystemUIGoogleModule_ProvideBatteryControllerFactory.java:65)
+11-11 01:05:10.917  8782  8782 W BatteryControllerGoogle: 	at com.google.android.systemui.dagger.SystemUIGoogleModule_ProvideBatteryControllerFactory.get(SystemUIGoogleModule_ProvideBatteryControllerFactory.java:17)
+11-11 01:05:10.917  8782  8782 W BatteryControllerGoogle: 	at dagger.internal.DoubleCheck.get(DoubleCheck.java:47)
+11-11 01:05:10.917  8782  8782 W BatteryControllerGoogle: 	at com.android.systemui.statusbar.phone.DozeParameters_Factory.get(DozeParameters_Factory.java:63)
+11-11 01:05:10.917  8782  8782 W BatteryControllerGoogle: 	at com.android.systemui.statusbar.phone.DozeParameters_Factory.get(DozeParameters_Factory.java:15)
+11-11 01:05:10.917  8782  8782 W BatteryControllerGoogle: 	at dagger.internal.DoubleCheck.get(DoubleCheck.java:47)
+11-11 01:05:10.917  8782  8782 W BatteryControllerGoogle: 	at dagger.internal.DelegateFactory.get(DelegateFactory.java:36)
+11-11 01:05:10.917  8782  8782 W BatteryControllerGoogle: 	at com.google.android.systemui.dagger.DaggerSysUIGoogleGlobalRootComponent$SysUIGoogleSysUIComponentImpl.injectKeyguardSliceProviderGoogle(DaggerSysUIGoogleGlobalRootComponent.java:4643)
+11-11 01:05:10.917  8782  8782 W BatteryControllerGoogle: 	at com.google.android.systemui.dagger.DaggerSysUIGoogleGlobalRootComponent$SysUIGoogleSysUIComponentImpl.inject(DaggerSysUIGoogleGlobalRootComponent.java:4605)
+11-11 01:05:10.917  8782  8782 W BatteryControllerGoogle: 	at java.lang.reflect.Method.invoke(Native Method)
+11-11 01:05:10.917  8782  8782 W BatteryControllerGoogle: 	at com.android.systemui.SystemUIAppComponentFactory.lambda$instantiateProviderCompat$1(SystemUIAppComponentFactory.java:94)
+11-11 01:05:10.917  8782  8782 W BatteryControllerGoogle: 	at com.android.systemui.SystemUIAppComponentFactory.$r8$lambda$qcrPqG7eXiVK_IrWSM3yDqdi2js(Unknown Source:0)
+11-11 01:05:10.917  8782  8782 W BatteryControllerGoogle: 	at com.android.systemui.SystemUIAppComponentFactory$$ExternalSyntheticLambda0.onContextAvailable(Unknown Source:2)
+11-11 01:05:10.917  8782  8782 W BatteryControllerGoogle: 	at com.android.systemui.keyguard.KeyguardSliceProvider.onCreateSliceProvider(KeyguardSliceProvider.java:304)
+11-11 01:05:10.917  8782  8782 W BatteryControllerGoogle: 	at com.google.android.systemui.keyguard.KeyguardSliceProviderGoogle.onCreateSliceProvider(KeyguardSliceProviderGoogle.java:79)
+11-11 01:05:10.917  8782  8782 W BatteryControllerGoogle: 	at androidx.slice.SliceProvider.onCreate(SliceProvider.java:211)
+11-11 01:05:10.917  8782  8782 W BatteryControllerGoogle: 	at android.content.ContentProvider.attachInfo(ContentProvider.java:2404)
+11-11 01:05:10.917  8782  8782 W BatteryControllerGoogle: 	at android.content.ContentProvider.attachInfo(ContentProvider.java:2374)
+11-11 01:05:10.917  8782  8782 W BatteryControllerGoogle: 	at androidx.slice.SliceProvider.attachInfo(SliceProvider.java:250)
+11-11 01:05:10.917  8782  8782 W BatteryControllerGoogle: 	at androidx.slice.compat.SliceProviderWrapperContainer$SliceProviderWrapper.attachInfo(SliceProviderWrapperContainer.java:74)
+11-11 01:05:10.917  8782  8782 W BatteryControllerGoogle: 	at android.app.ActivityThread.installProvider(ActivityThread.java:7422)
+11-11 01:05:10.917  8782  8782 W BatteryControllerGoogle: 	at android.app.ActivityThread.installContentProviders(ActivityThread.java:6939)
+11-11 01:05:10.917  8782  8782 W BatteryControllerGoogle: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:6710)
+11-11 01:05:10.917  8782  8782 W BatteryControllerGoogle: 	at android.app.ActivityThread.access$1500(ActivityThread.java:247)
+11-11 01:05:10.917  8782  8782 W BatteryControllerGoogle: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2053)
+11-11 01:05:10.917  8782  8782 W BatteryControllerGoogle: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-11 01:05:10.917  8782  8782 W BatteryControllerGoogle: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-11 01:05:10.917  8782  8782 W BatteryControllerGoogle: 	at android.os.Looper.loop(Looper.java:288)
+11-11 01:05:10.917  8782  8782 W BatteryControllerGoogle: 	at android.app.ActivityThread.main(ActivityThread.java:7839)
+11-11 01:05:10.917  8782  8782 W BatteryControllerGoogle: 	at java.lang.reflect.Method.invoke(Native Method)
+11-11 01:05:10.917  8782  8782 W BatteryControllerGoogle: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+11-11 01:05:10.917  8782  8782 W BatteryControllerGoogle: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1003)
+11-11 01:05:10.917  8782  8782 W BatteryControllerGoogle: Caused by: android.os.RemoteException: Remote stack trace:
+11-11 01:05:10.917  8782  8782 W BatteryControllerGoogle: 	at com.android.server.content.ContentService.registerContentObserver(ContentService.java:357)
+11-11 01:05:10.917  8782  8782 W BatteryControllerGoogle: 	at android.content.IContentService$Stub.onTransact(IContentService.java:484)
+11-11 01:05:10.917  8782  8782 W BatteryControllerGoogle: 	at android.os.Binder.execTransactInternal(Binder.java:1179)
+11-11 01:05:10.917  8782  8782 W BatteryControllerGoogle: 	at android.os.Binder.execTransact(Binder.java:1143)
+11-11 01:05:10.917  8782  8782 W BatteryControllerGoogle: 
+11-11 01:05:10.921   548  1178 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+11-11 01:05:10.922   548  1178 I ActivityManager: Killing 6173:com.google.android.cellbroadcastreceiver/u0a143 (adj 975): empty #17
+11-11 01:05:10.922  8782  8782 W AlarmManager: Unrecognized alarm listener com.android.systemui.keyguard.KeyguardSliceProvider$$ExternalSyntheticLambda0@d73b1b0
+11-11 01:05:10.922   548   579 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+11-11 01:05:10.922   548   579 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+11-11 01:05:10.922   548   579 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+11-11 01:05:10.922   548   579 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+11-11 01:05:10.922   548   579 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+11-11 01:05:10.923   548   579 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+11-11 01:05:10.923   548   579 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+11-11 01:05:10.927  8836  8860 D HostConnection: createUnique: call
+11-11 01:05:10.927   548   581 I libprocessgroup: Successfully killed process cgroup uid 10143 pid 6173 in 0ms
+11-11 01:05:10.927  8836  8860 D HostConnection: HostConnection::get() New Host Connection established 0x763309c57490, tid 8860
+11-11 01:05:10.928   548   838 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+11-11 01:05:10.928   344   344 I Zygote  : Process 6173 exited due to signal 9 (Killed)
+11-11 01:05:10.931   548   579 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+11-11 01:05:10.931  8836  8860 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+11-11 01:05:10.931  1131  6210 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.gass.chimera.SchedulePeriodicTasksService finished executing. cause:5 result: 1 elapsed_millis: 831 uptime_millis: 831 exec_start_elapsed_seconds: 68 [CONTEXT service_id=218 ]
+11-11 01:05:10.933   202   202 I hwservicemanager: getTransport: Cannot find entry android.hardware.configstore@1.0::ISurfaceFlingerConfigs/default in either framework or device VINTF manifest.
+11-11 01:05:10.937  8836  8860 D EGL_emulation: eglCreateContext: 0x763309c56950: maj 3 min 0 rcv 3
+11-11 01:05:10.938  8836  8860 D EGL_emulation: eglMakeCurrent: 0x763309c56950: ver 3 0 (tinfo 0x763529b7d080) (first time)
+11-11 01:05:10.941  8782  8782 V SystemUIService: SystemUIApplication created.
+11-11 01:05:10.941  8782  8782 D SystemUIBootTiming: DependencyInjection took to complete: 0ms
+11-11 01:05:10.942   432   440 E EGL_emulation: eglQueryContext 3100  EGL_BAD_ATTRIBUTE
+11-11 01:05:10.942   432   440 E EGL_emulation: tid 440: eglQueryContext(2160): error 0x3004 (EGL_BAD_ATTRIBUTE)
+11-11 01:05:10.942  8782  8782 I SystemUIService: Found SurfaceFlinger's GPU Priority: 0
+11-11 01:05:10.944  1131  1131 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.icing.LIGHTWEIGHT_INDEX_SERVICE dat=chimera-action: cmp=com.google.android.gms/.chimera.PersistentApiService }
+11-11 01:05:10.945  8836  8868 I cr_CronetLibraryLoader: Cronet version: 108.0.5359.61, arch: x86_64
+11-11 01:05:10.949   548   838 D ConnectivityService: requestNetwork for uid/pid:10112/8836 activeRequest: null callbackRequest: 509 [NetworkRequest [ REQUEST id=510, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10112 RequestorUid: 10112 RequestorPkg: com.google.android.apps.maps] ]] callback flags: 0 priority: 2147483647
+11-11 01:05:10.950   548   668 D ConnectivityService: NetReassign [510 : null → 101]
+11-11 01:05:10.950  8782  8831 D BluetoothHeadset: Proxy object connected
+11-11 01:05:10.950   548   661 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=510, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10112 RequestorUid: 10112 RequestorPkg: com.google.android.apps.maps] ]
+11-11 01:05:10.950   548   661 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=510, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10112 RequestorUid: 10112 RequestorPkg: com.google.android.apps.maps] ]
+11-11 01:05:10.950   548   661 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=510, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10112 RequestorUid: 10112 RequestorPkg: com.google.android.apps.maps] ]
+11-11 01:05:10.951   343   343 I netd    : trafficSwapActiveStatsMap() <15.29ms>
+11-11 01:05:10.952   343   343 I netd    : tetherGetStats() -> {[]} <0.23ms>
+11-11 01:05:10.953   343   343 I netd    : bandwidthSetGlobalAlert(2097152) <0.12ms>
+11-11 01:05:10.955  8782  8782 D InterruptionStateProvider: heads up is enabled
+11-11 01:05:10.955   548   668 D ConnectivityService: NetReassign [no changes]
+11-11 01:05:10.956  4559  4559 I GsaVoiceInteractionSrv: Handling ACTION_STOP_HOTWORD
+11-11 01:05:10.956  8782  8782 I DLObserver: wireless charger is null, check dock component.
+11-11 01:05:10.956  4559  4559 E HwDetectorWithState: a: 3
+11-11 01:05:10.957  8782  8782 D DLObserver: command=2
+11-11 01:05:10.958  8782  8782 I FalsingManager: xdpi, ydpi: 260.0, 260.0
+11-11 01:05:10.958  8782  8782 I FalsingManager: width, height: 720, 1522
+11-11 01:05:10.958  8782  8894 I DLObserver: hint is UNKNOWN for null wireless charger HAL
+11-11 01:05:10.960   343   343 I netd    : bandwidthRemoveInterfaceQuota(eth0) <0.65ms>
+11-11 01:05:10.960   343   343 I netd    : bandwidthSetInterfaceQuota(eth0, 9223372036854775807) <0.42ms>
+11-11 01:05:10.961   548   838 W ServiceManager: Permission failure: android.permission.HIGH_SAMPLING_RATE_SENSORS from uid=10112 pid=8836
+11-11 01:05:10.972  1131  5113 E GmsTaskScheduler: sendWakeUpEvent called on SchedulerClientBroadcastStrategy
+11-11 01:05:10.978  1131  5113 W GLSUser : [AppCertManager] Exception while requesting key: 
+11-11 01:05:10.978  1131  5113 W GLSUser : java.io.IOException: Invalid device key response.
+11-11 01:05:10.978  1131  5113 W GLSUser : 	at nnx.b(:com.google.android.gms@225014047@22.50.14 (190800-499278674):41)
+11-11 01:05:10.978  1131  5113 W GLSUser : 	at nnv.b(:com.google.android.gms@225014047@22.50.14 (190800-499278674):2)
+11-11 01:05:10.978  1131  5113 W GLSUser : 	at nnq.a(:com.google.android.gms@225014047@22.50.14 (190800-499278674):0)
+11-11 01:05:10.978  1131  5113 W GLSUser : 	at nnt.a(:com.google.android.gms@225014047@22.50.14 (190800-499278674):5)
+11-11 01:05:10.978  1131  5113 W GLSUser : 	at ldq.call(:com.google.android.gms@225014047@22.50.14 (190800-499278674):13)
+11-11 01:05:10.978  1131  5113 W GLSUser : 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+11-11 01:05:10.978  1131  5113 W GLSUser : 	at aalr.c(:com.google.android.gms@225014047@22.50.14 (190800-499278674):6)
+11-11 01:05:10.978  1131  5113 W GLSUser : 	at aalr.run(:com.google.android.gms@225014047@22.50.14 (190800-499278674):7)
+11-11 01:05:10.978  1131  5113 W GLSUser : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+11-11 01:05:10.978  1131  5113 W GLSUser : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+11-11 01:05:10.978  1131  5113 W GLSUser : 	at aaqv.run(:com.google.android.gms@225014047@22.50.14 (190800-499278674):0)
+11-11 01:05:10.978  1131  5113 W GLSUser : 	at java.lang.Thread.run(Thread.java:920)
+11-11 01:05:10.982  4765  5735 E ProtoLiteUtils: Invalid message size: 1476919570 (buffer end is 541)
+11-11 01:05:10.986  1131  1131 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.herrevad.services.LightweightNetworkQualityAndroidService.START pkg=com.google.android.gms }
+11-11 01:05:10.986  1131  1131 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.herrevad.services.LightweightNetworkQualityAndroidService.START pkg=com.google.android.gms }
+11-11 01:05:10.986  1131  1131 I BndSvcConfigHelper: No bound-service is registered for action: com.google.android.gms.herrevad.services.LightweightNetworkQualityAndroidService.START
+11-11 01:05:10.986  1131  1131 I BoundBrokerSvc: Bound service not available for: Intent { act=com.google.android.gms.herrevad.services.LightweightNetworkQualityAndroidService.START pkg=com.google.android.gms }
+11-11 01:05:10.986  1131  1238 I GmsApiChimeraSvc: Using MissingApiServiceBroker for com.google.android.gms.herrevad.services.LightweightNetworkQualityAndroidService.START due to missing BoundService implementation
+11-11 01:05:10.987   548  1183 W ServiceManager: Permission failure: android.permission.HIGH_SAMPLING_RATE_SENSORS from uid=10134 pid=8782
+11-11 01:05:10.992   343   343 I netd    : trafficSwapActiveStatsMap() <24.34ms>
+11-11 01:05:10.993   343   343 I netd    : tetherGetStats() -> {[]} <0.48ms>
+11-11 01:05:10.997  1131  5113 W ChimeraUtils: Module com.google.android.gms.nearby_en has empty metadata display_name_string_id
+11-11 01:05:10.999  1131  5113 W ChimeraUtils: Module com.google.android.gms.nearby_en has empty metadata display_name_string_id
+11-11 01:05:11.003   343   343 I netd    : bandwidthRemoveInterfaceQuota(eth0) <0.58ms>
+11-11 01:05:11.004   343   343 I netd    : bandwidthSetInterfaceQuota(eth0, 9223372036854775807) <0.55ms>
+11-11 01:05:11.007  1131  5577 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package:android flg=0x5000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+11-11 01:05:11.008  1131  1221 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.auth.account.be.legacy.AuthCronService finished executing. cause:5 result: 3 elapsed_millis: 287 uptime_millis: 287 exec_start_elapsed_seconds: 69 [CONTEXT service_id=218 ]
+11-11 01:05:11.009  4765  6579 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms
+11-11 01:05:11.017  1131  1221 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.languageprofile.GcmTaskService started execution. cause:7 exec_start_elapsed_seconds: 69 [CONTEXT service_id=218 ]
+11-11 01:05:11.019  4559  4559 I GsaVoiceInteractionSrv: Handling ACTION_START_HOTWORD
+11-11 01:05:11.019  4559  4559 I GsaVoiceInteractionSrv: disregardVoiceMatch: false
+11-11 01:05:11.019  4559  4559 I GsaVoiceInteractionSrv: Cannot start hotword, hotword has been explicitly disabled.
+11-11 01:05:11.020   548   838 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+11-11 01:05:11.021   548   579 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+11-11 01:05:11.023  1131  5556 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+11-11 01:05:11.026  4765  6579 E ProtoLiteUtils: Invalid message size: 1476919570 (buffer end is 541)
+11-11 01:05:11.028  8782  8782 D NavigationModeController: getCurrentUserContext: contextUser=0 currentUser=0
+11-11 01:05:11.028  8782  8782 D NavigationModeController: getCurrentInteractionMode: mode=0 contextUser=0
+11-11 01:05:11.030  8782  8782 D NavigationModeController: updateCurrentInteractionMode: mode=0
+11-11 01:05:11.030  8782  8782 D NavigationModeController:   contextUser=0
+11-11 01:05:11.030  8782  8782 D NavigationModeController:   assetPaths=
+11-11 01:05:11.030  8782  8782 D NavigationModeController:     <empty> and /system/framework/framework-res.apk
+11-11 01:05:11.030  8782  8782 D NavigationModeController:     /product/overlay/GoogleConfigOverlay.apk
+11-11 01:05:11.030  8782  8782 D NavigationModeController:     /product/overlay/GoogleWebViewOverlay.apk
+11-11 01:05:11.030  8782  8782 D NavigationModeController:     /vendor/overlay/framework-res__auto_generated_rro_vendor.apk
+11-11 01:05:11.030  8782  8782 D NavigationModeController:     /product/overlay/PixelConfigOverlayCommon.apk
+11-11 01:05:11.030  8782  8782 D NavigationModeController:     /product/overlay/framework-res__auto_generated_rro_product.apk
+11-11 01:05:11.030  8782  8782 D NavigationModeController:     /product/overlay/EmulatorConfigOverlay.apk
+11-11 01:05:11.030  8782  8782 D NavigationModeController:     <empty> and /system_ext/priv-app/SystemUIGoogle/SystemUIGoogle.apk
+11-11 01:05:11.030  8782  8782 D NavigationModeController:     /product/overlay/NavigationBarMode3Button/NavigationBarMode3ButtonOverlay.apk
+11-11 01:05:11.030  8782  8782 D NavigationModeController:     /product/overlay/DisplayCutoutEmulationTall/DisplayCutoutEmulationTallOverlay.apk
+11-11 01:05:11.030  8782  8782 D NavigationModeController:     /product/overlay/SystemUIGoogle__auto_generated_rro_product.apk
+11-11 01:05:11.033  4765  6579 I Icing   : Indexing done com.google.android.gms-apps
+11-11 01:05:11.035  8782  8782 D NavigationModeController: getCurrentInteractionMode: mode=0 contextUser=0
+11-11 01:05:11.037  1131  5556 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package:android flg=0x5000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+11-11 01:05:11.037  4765  5370 E ProtoLiteUtils: Invalid message size: 1476919570 (buffer end is 541)
+11-11 01:05:11.039   548  1332 D CompatibilityChangeReporter: Compat change id reported: 171306433; UID 10134; state: ENABLED
+11-11 01:05:11.039  8782  8782 V SystemUIService: Starting SystemUI services for user 0.
+11-11 01:05:11.045  8782  8782 D SystemUIBootTiming: StartServicescom.android.systemui.util.NotificationChannels took to complete: 5ms
+11-11 01:05:11.050  4559  4559 I GsaVoiceInteractionSrv: Handling ACTION_STOP_HOTWORD
+11-11 01:05:11.050  4559  4559 E HwDetectorWithState: a: 3
+11-11 01:05:11.053  4765  8907 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms
+11-11 01:05:11.054  4559  4559 I GsaVoiceInteractionSrv: Handling ACTION_START_HOTWORD
+11-11 01:05:11.054  4559  4559 I GsaVoiceInteractionSrv: disregardVoiceMatch: false
+11-11 01:05:11.054  4559  4559 I GsaVoiceInteractionSrv: Cannot start hotword, hotword has been explicitly disabled.
+11-11 01:05:11.056  1131  5450 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+11-11 01:05:11.057   548   564 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+11-11 01:05:11.058  8782  8782 D SystemUIBootTiming: StartServicescom.android.systemui.keyguard.KeyguardViewMediator took to complete: 12ms
+11-11 01:05:11.058   548   579 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+11-11 01:05:11.060  8782  8782 D NavigationModeController: getCurrentInteractionMode: mode=0 contextUser=0
+11-11 01:05:11.060  8782  8908 V MediaRouter: Selecting route: RouteInfo{ name=Phone, description=null, status=null, category=RouteCategory{ name=System types=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO  groupable=false }, supportedTypes=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO , presentationDisplay=null }
+11-11 01:05:11.062  8782  8908 I MediaRouter: Skip setBluetoothA2dpOn(): types=8388615, isPlaybackActive()=false, BT route=null
+11-11 01:05:11.063  4765  8907 E ProtoLiteUtils: Invalid message size: 1476919570 (buffer end is 541)
+11-11 01:05:11.064  1131  5121 W ChimeraUtils: Module com.google.android.gms.nearby_en has empty metadata display_name_string_id
+11-11 01:05:11.067  8782  8782 D SystemUIBootTiming: StartServicescom.android.systemui.recents.Recents took to complete: 8ms
+11-11 01:05:11.068  8782  8782 I vol.Events: writeEvent collection_started
+11-11 01:05:11.070  4765  8907 I Icing   : Indexing done com.google.android.gms-apps
+11-11 01:05:11.070  1131  5121 W ChimeraUtils: Module com.google.android.gms.nearby_en has empty metadata display_name_string_id
+11-11 01:05:11.080  1035  1035 D TouchInteractionService: Touch service connected: user=0
+11-11 01:05:11.087  4749  4983 I A       : SmartDictation: MDD Task: MDD.WIFI.CHARGING.PERIODIC.TASK done. Logging Dictation Formatting status.
+11-11 01:05:11.087  4749  4983 I A       : SmartDictation: isNgaSyncEnabled: false; enableFileGroupPopulator: false; requiresMddAssets: false
+11-11 01:05:11.088  4749  4946 I A       : Refresh account policy.
+11-11 01:05:11.087  8782  8912 D MediaCodecList: codecHandlesFormat: no format, so no extra checks
+11-11 01:05:11.090  4749  4974 I A       : SmartDictation: 0 apa_dictation_formatting groups found. OnDeviceEligible: false
+11-11 01:05:11.092  1131  1221 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskService started execution. cause:7 exec_start_elapsed_seconds: 69 [CONTEXT service_id=218 ]
+11-11 01:05:11.094  1131  1220 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.languageprofile.GcmTaskService finished executing. cause:7 result: 1 elapsed_millis: 135 uptime_millis: 135 exec_start_elapsed_seconds: 69 [CONTEXT service_id=218 ]
+11-11 01:05:11.096  8782  8911 D MediaCodecList: codecHandlesFormat: no format, so no extra checks
+11-11 01:05:11.098  8782  8921 D CCodec  : allocate(c2.android.vorbis.decoder)
+11-11 01:05:11.099  1131  1221 W TapAndPay: NfcAdapter is null while obtaining CardEmulation instance. [CONTEXT service_id=79 ]
+11-11 01:05:11.099  1131  1221 W TapAndPay: java.lang.NullPointerException: NfcAdapter is null
+11-11 01:05:11.099  1131  1221 W TapAndPay: 	at android.nfc.cardemulation.CardEmulation.getInstance(CardEmulation.java:150)
+11-11 01:05:11.099  1131  1221 W TapAndPay: 	at bxlw.<init>(:com.google.android.gms@225014047@22.50.14 (190800-499278674):0)
+11-11 01:05:11.099  1131  1221 W TapAndPay: 	at com.google.android.gms.tapandpay.hce.task.TapAndPayAidRegistrationTaskOperation.a(:com.google.android.gms@225014047@22.50.14 (190800-499278674):5)
+11-11 01:05:11.099  1131  1221 W TapAndPay: 	at com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskChimeraService.a(:com.google.android.gms@225014047@22.50.14 (190800-499278674):4)
+11-11 01:05:11.099  1131  1221 W TapAndPay: 	at asuo.call(:com.google.android.gms@225014047@22.50.14 (190800-499278674):4)
+11-11 01:05:11.099  1131  1221 W TapAndPay: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+11-11 01:05:11.099  1131  1221 W TapAndPay: 	at aalr.c(:com.google.android.gms@225014047@22.50.14 (190800-499278674):6)
+11-11 01:05:11.099  1131  1221 W TapAndPay: 	at aalr.run(:com.google.android.gms@225014047@22.50.14 (190800-499278674):7)
+11-11 01:05:11.099  1131  1221 W TapAndPay: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+11-11 01:05:11.099  1131  1221 W TapAndPay: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+11-11 01:05:11.099  1131  1221 W TapAndPay: 	at aaqv.run(:com.google.android.gms@225014047@22.50.14 (190800-499278674):0)
+11-11 01:05:11.099  1131  1221 W TapAndPay: 	at java.lang.Thread.run(Thread.java:920)
+11-11 01:05:11.101  8782  8921 I Codec2Client: Available Codec2 services: "default" "software"
+11-11 01:05:11.105  4749  4749 I BgTaskExecutorImpl: Starting PERIODIC background task AWARE_TIP_WORKER_PROCESS_TIPS.
+11-11 01:05:11.106  8782  8923 D CCodec  : allocate(c2.android.vorbis.decoder)
+11-11 01:05:11.108  4749  4974 D StrictMode: StrictMode policy violation: android.os.strictmode.DiskReadViolation
+11-11 01:05:11.108  4749  4974 D StrictMode: 	at android.os.StrictMode$AndroidBlockGuardPolicy.onReadFromDisk(StrictMode.java:1659)
+11-11 01:05:11.108  4749  4974 D StrictMode: 	at libcore.io.BlockGuardOs.access(BlockGuardOs.java:74)
+11-11 01:05:11.108  4749  4974 D StrictMode: 	at libcore.io.ForwardingOs.access(ForwardingOs.java:131)
+11-11 01:05:11.108  4749  4974 D StrictMode: 	at android.app.ActivityThread$AndroidOs.access(ActivityThread.java:7716)
+11-11 01:05:11.108  4749  4974 D StrictMode: 	at java.io.UnixFileSystem.checkAccess(UnixFileSystem.java:281)
+11-11 01:05:11.108  4749  4974 D StrictMode: 	at java.io.File.exists(File.java:813)
+11-11 01:05:11.108  4749  4974 D StrictMode: 	at android.app.ContextImpl.getDataDir(ContextImpl.java:2888)
+11-11 01:05:11.108  4749  4974 D StrictMode: 	at android.app.ContextImpl.getDir(ContextImpl.java:2907)
+11-11 01:05:11.108  4749  4974 D StrictMode: 	at android.content.ContextWrapper.getDir(ContextWrapper.java:326)
+11-11 01:05:11.108  4749  4974 D StrictMode: 	at com.google.android.apps.gsa.binaries.velvet.app.aqr.x(SourceFile:37)
+11-11 01:05:11.108  4749  4974 D StrictMode: 	at com.google.android.apps.gsa.binaries.velvet.app.aqr.a(SourceFile:6)
+11-11 01:05:11.108  4749  4974 D StrictMode: 	at dagger.a.e.a(SourceFile:1)
+11-11 01:05:11.108  4749  4974 D StrictMode: 	at com.google.android.apps.gsa.binaries.velvet.app.aez.gQ(SourceFile:2)
+11-11 01:05:11.108  4749  4974 D StrictMode: 	at com.google.android.apps.gsa.binaries.velvet.app.zm.i(SourceFile:14)
+11-11 01:05:11.108  4749  4974 D StrictMode: 	at com.google.android.apps.gsa.binaries.velvet.app.zm.a(SourceFile:106)
+11-11 01:05:11.108  4749  4974 D StrictMode: 	at com.google.android.apps.gsa.search.core.service.g.a.c.a(SourceFile:2)
+11-11 01:05:11.108  4749  4974 D StrictMode: 	at com.google.android.libraries.gsa.k.a.g.a(SourceFile:2)
+11-11 01:05:11.108  4749  4974 D StrictMode: 	at com.google.common.w.a.dr.a(SourceFile:1)
+11-11 01:05:11.108  4749  4974 D StrictMode: 	at com.google.common.w.a.co.run(SourceFile:4)
+11-11 01:05:11.108  4749  4974 D StrictMode: 	at com.google.common.w.a.dt.run(SourceFile:1)
+11-11 01:05:11.108  4749  4974 D StrictMode: 	at com.google.android.libraries.g.ab.run(SourceFile:1)
+11-11 01:05:11.108  4749  4974 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+11-11 01:05:11.108  4749  4974 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+11-11 01:05:11.108  4749  4974 D StrictMode: 	at com.google.android.libraries.g.n.run(SourceFile:2)
+11-11 01:05:11.108  4749  4974 D StrictMode: 	at com.google.android.libraries.g.d.run(SourceFile:2)
+11-11 01:05:11.108  4749  4974 D StrictMode: 	at java.lang.Thread.run(Thread.java:920)
+11-11 01:05:11.109  4749  4974 D StrictMode: StrictMode policy violation: android.os.strictmode.DiskReadViolation
+11-11 01:05:11.109  4749  4974 D StrictMode: 	at android.os.StrictMode$AndroidBlockGuardPolicy.onReadFromDisk(StrictMode.java:1659)
+11-11 01:05:11.109  4749  4974 D StrictMode: 	at libcore.io.BlockGuardOs.access(BlockGuardOs.java:74)
+11-11 01:05:11.109  4749  4974 D StrictMode: 	at libcore.io.ForwardingOs.access(ForwardingOs.java:131)
+11-11 01:05:11.109  4749  4974 D StrictMode: 	at android.app.ActivityThread$AndroidOs.access(ActivityThread.java:7716)
+11-11 01:05:11.109  4749  4974 D StrictMode: 	at java.io.UnixFileSystem.checkAccess(UnixFileSystem.java:281)
+11-11 01:05:11.109  4749  4974 D StrictMode: 	at java.io.File.exists(File.java:813)
+11-11 01:05:11.109  4749  4974 D StrictMode: 	at android.app.ContextImpl.getDir(ContextImpl.java:2908)
+11-11 01:05:11.109  4749  4974 D StrictMode: 	at android.content.ContextWrapper.getDir(ContextWrapper.java:326)
+11-11 01:05:11.109  4749  4974 D StrictMode: 	at com.google.android.apps.gsa.binaries.velvet.app.aqr.x(SourceFile:37)
+11-11 01:05:11.109  4749  4974 D StrictMode: 	at com.google.android.apps.gsa.binaries.velvet.app.aqr.a(SourceFile:6)
+11-11 01:05:11.109  4749  4974 D StrictMode: 	at dagger.a.e.a(SourceFile:1)
+11-11 01:05:11.109  4749  4974 D StrictMode: 	at com.google.android.apps.gsa.binaries.velvet.app.aez.gQ(SourceFile:2)
+11-11 01:05:11.109  4749  4974 D StrictMode: 	at com.google.android.apps.gsa.binaries.velvet.app.zm.i(SourceFile:14)
+11-11 01:05:11.109  4749  4974 D StrictMode: 	at com.google.android.apps.gsa.binaries.velvet.app.zm.a(SourceFile:106)
+11-11 01:05:11.109  4749  4974 D StrictMode: 	at com.google.android.apps.gsa.search.core.service.g.a.c.a(SourceFile:2)
+11-11 01:05:11.109  4749  4974 D StrictMode: 	at com.google.android.libraries.gsa.k.a.g.a(SourceFile:2)
+11-11 01:05:11.109  4749  4974 D StrictMode: 	at com.google.common.w.a.dr.a(SourceFile:1)
+11-11 01:05:11.109  4749  4974 D StrictMode: 	at com.google.common.w.a.co.run(SourceFile:4)
+11-11 01:05:11.109  4749  4974 D StrictMode: 	at com.google.common.w.a.dt.run(SourceFile:1)
+11-11 01:05:11.109  4749  4974 D StrictMode: 	at com.google.android.libraries.g.ab.run(SourceFile:1)
+11-11 01:05:11.109  4749  4974 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+11-11 01:05:11.109  4749  4974 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+11-11 01:05:11.109  4749  4974 D StrictMode: 	at com.google.android.libraries.g.n.run(SourceFile:2)
+11-11 01:05:11.109  4749  4974 D StrictMode: 	at com.google.android.libraries.g.d.run(SourceFile:2)
+11-11 01:05:11.109  4749  4974 D StrictMode: 	at java.lang.Thread.run(Thread.java:920)
+11-11 01:05:11.109  8782  8923 I CCodec  : setting up 'default' as default (vendor) store
+11-11 01:05:11.110  1131  1220 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskService finished executing. cause:7 result: 3 elapsed_millis: 38 uptime_millis: 38 exec_start_elapsed_seconds: 69 [CONTEXT service_id=218 ]
+11-11 01:05:11.110  8782  8921 I CCodec  : setting up 'default' as default (vendor) store
+11-11 01:05:11.126   494   521 V C2Store : in init
+11-11 01:05:11.126   494   521 V C2Store : loading dll
+11-11 01:05:11.131  8782  8921 I CCodec  : Created component [c2.android.vorbis.decoder]
+11-11 01:05:11.133  8782  8923 I CCodec  : Created component [c2.android.vorbis.decoder]
+11-11 01:05:11.133  8782  8921 D CCodecConfig: read media type: audio/vorbis
+11-11 01:05:11.135  8782  8923 D CCodecConfig: read media type: audio/vorbis
+11-11 01:05:11.135  8782  8921 D ReflectedParamUpdater: extent() != 1 for single value type: algo.buffers.max-count.values
+11-11 01:05:11.136  8782  8921 D ReflectedParamUpdater: extent() != 1 for single value type: output.subscribed-indices.values
+11-11 01:05:11.136  8782  8921 D ReflectedParamUpdater: extent() != 1 for single value type: input.buffers.allocator-ids.values
+11-11 01:05:11.136  8782  8921 D ReflectedParamUpdater: extent() != 1 for single value type: output.buffers.allocator-ids.values
+11-11 01:05:11.136  8782  8921 D ReflectedParamUpdater: extent() != 1 for single value type: algo.buffers.allocator-ids.values
+11-11 01:05:11.137  8782  8921 D ReflectedParamUpdater: extent() != 1 for single value type: output.buffers.pool-ids.values
+11-11 01:05:11.137  8782  8921 D ReflectedParamUpdater: extent() != 1 for single value type: algo.buffers.pool-ids.values
+11-11 01:05:11.138  8782  8921 I CCodecConfig: query failed after returning 7 values (BAD_INDEX)
+11-11 01:05:11.138  8782  8921 D CCodecConfig: c2 config diff is Dict {
+11-11 01:05:11.138  8782  8921 D CCodecConfig:   c2::u32 coded.bitrate.value = 64000
+11-11 01:05:11.138  8782  8921 D CCodecConfig:   c2::u32 input.buffers.max-size.value = 32768
+11-11 01:05:11.138  8782  8921 D CCodecConfig:   c2::u32 input.delay.value = 0
+11-11 01:05:11.138  8782  8921 D CCodecConfig:   string input.media-type.value = "audio/vorbis"
+11-11 01:05:11.138  8782  8921 D CCodecConfig:   string output.media-type.value = "audio/raw"
+11-11 01:05:11.138  8782  8921 D CCodecConfig:   c2::u32 raw.channel-count.value = 1
+11-11 01:05:11.138  8782  8921 D CCodecConfig:   c2::u32 raw.sample-rate.value = 48000
+11-11 01:05:11.138  8782  8921 D CCodecConfig: }
+11-11 01:05:11.138  8782  8921 D CCodec  : [c2.android.vorbis.decoder] buffers are bound to CCodec for this session
+11-11 01:05:11.138  8782  8921 D CCodecConfig: no c2 equivalents for durationUs
+11-11 01:05:11.138  8782  8921 D CCodecConfig: no c2 equivalents for track-id
+11-11 01:05:11.138  8782  8921 D CCodecConfig: no c2 equivalents for csd-1
+11-11 01:05:11.138  8782  8921 D CCodecConfig: no c2 equivalents for channel-mask
+11-11 01:05:11.138  8782  8921 D CCodecConfig: no c2 equivalents for flags
+11-11 01:05:11.139  8782  8921 D CCodecConfig: c2 config diff is   c2::u32 coded.bitrate.value = 160000
+11-11 01:05:11.139  8782  8921 D CCodecConfig:   c2::u32 raw.channel-count.value = 2
+11-11 01:05:11.139  8782  8921 D CCodecConfig:   c2::u32 raw.sample-rate.value = 44100
+11-11 01:05:11.139  8782  8921 W Codec2Client: query -- param skipped: index = 1107298332.
+11-11 01:05:11.139  8782  8921 D CCodec  : setup formats input: AMessage(what = 0x00000000) = {
+11-11 01:05:11.139  8782  8921 D CCodec  :   int32_t bitrate = 160000
+11-11 01:05:11.139  8782  8921 D CCodec  :   int32_t channel-count = 2
+11-11 01:05:11.139  8782  8921 D CCodec  :   int32_t max-input-size = 32768
+11-11 01:05:11.139  8782  8921 D CCodec  :   string mime = "audio/vorbis"
+11-11 01:05:11.139  8782  8921 D CCodec  :   int32_t sample-rate = 44100
+11-11 01:05:11.139  8782  8921 D CCodec  : }
+11-11 01:05:11.139  8782  8921 D CCodec  : setup formats output: AMessage(what = 0x00000000) = {
+11-11 01:05:11.139  8782  8921 D CCodec  :   int32_t channel-count = 2
+11-11 01:05:11.139  8782  8921 D CCodec  :   string mime = "audio/raw"
+11-11 01:05:11.139  8782  8921 D CCodec  :   int32_t sample-rate = 44100
+11-11 01:05:11.139  8782  8921 D CCodec  :   int32_t channel-mask = 3
+11-11 01:05:11.139  8782  8921 D CCodec  : }
+11-11 01:05:11.140  8782  8923 D ReflectedParamUpdater: extent() != 1 for single value type: algo.buffers.max-count.values
+11-11 01:05:11.140  8782  8921 I CCodecConfig: query failed after returning 7 values (BAD_INDEX)
+11-11 01:05:11.140  8782  8923 D ReflectedParamUpdater: extent() != 1 for single value type: output.subscribed-indices.values
+11-11 01:05:11.140  8782  8923 D ReflectedParamUpdater: extent() != 1 for single value type: input.buffers.allocator-ids.values
+11-11 01:05:11.140  8782  8923 D ReflectedParamUpdater: extent() != 1 for single value type: output.buffers.allocator-ids.values
+11-11 01:05:11.140  8782  8923 D ReflectedParamUpdater: extent() != 1 for single value type: algo.buffers.allocator-ids.values
+11-11 01:05:11.141  8782  8921 W Codec2Client: query -- param skipped: index = 1342179345.
+11-11 01:05:11.141  8782  8921 W Codec2Client: query -- param skipped: index = 2415921170.
+11-11 01:05:11.141  8782  8921 D C2Store : Using DMABUF Heaps
+11-11 01:05:11.141  8782  8923 D ReflectedParamUpdater: extent() != 1 for single value type: output.buffers.pool-ids.values
+11-11 01:05:11.142  8782  8923 D ReflectedParamUpdater: extent() != 1 for single value type: algo.buffers.pool-ids.values
+11-11 01:05:11.142  8782  8921 D CCodecBufferChannel: [c2.android.vorbis.decoder#872] Created input block pool with allocatorID 16 => poolID 17 - OK (0)
+11-11 01:05:11.143  8782  8923 I CCodecConfig: query failed after returning 7 values (BAD_INDEX)
+11-11 01:05:11.143  8782  8923 D CCodecConfig: c2 config diff is Dict {
+11-11 01:05:11.143  8782  8923 D CCodecConfig:   c2::u32 coded.bitrate.value = 64000
+11-11 01:05:11.143  8782  8923 D CCodecConfig:   c2::u32 input.buffers.max-size.value = 32768
+11-11 01:05:11.143  8782  8923 D CCodecConfig:   c2::u32 input.delay.value = 0
+11-11 01:05:11.143  8782  8923 D CCodecConfig:   string input.media-type.value = "audio/vorbis"
+11-11 01:05:11.143  8782  8923 D CCodecConfig:   string output.media-type.value = "audio/raw"
+11-11 01:05:11.143  8782  8923 D CCodecConfig:   c2::u32 raw.channel-count.value = 1
+11-11 01:05:11.143  8782  8923 D CCodecConfig:   c2::u32 raw.sample-rate.value = 48000
+11-11 01:05:11.143  8782  8923 D CCodecConfig: }
+11-11 01:05:11.143  8782  8921 I CCodecBufferChannel: [c2.android.vorbis.decoder#872] Created output block pool with allocatorID 16 => poolID 215 - OK
+11-11 01:05:11.143  8782  8923 D CCodec  : [c2.android.vorbis.decoder] buffers are bound to CCodec for this session
+11-11 01:05:11.143  8782  8923 D CCodecConfig: no c2 equivalents for durationUs
+11-11 01:05:11.143  8782  8923 D CCodecConfig: no c2 equivalents for track-id
+11-11 01:05:11.143  8782  8923 D CCodecConfig: no c2 equivalents for csd-1
+11-11 01:05:11.143  8782  8923 D CCodecConfig: no c2 equivalents for channel-mask
+11-11 01:05:11.143  8782  8923 D CCodecConfig: no c2 equivalents for flags
+11-11 01:05:11.145  8782  8923 D CCodecConfig: c2 config diff is   c2::u32 coded.bitrate.value = 160000
+11-11 01:05:11.145  8782  8923 D CCodecConfig:   c2::u32 raw.channel-count.value = 2
+11-11 01:05:11.145  8782  8923 D CCodecConfig:   c2::u32 raw.sample-rate.value = 44100
+11-11 01:05:11.145  8782  8923 W Codec2Client: query -- param skipped: index = 1107298332.
+11-11 01:05:11.145  8782  8923 D CCodec  : setup formats input: AMessage(what = 0x00000000) = {
+11-11 01:05:11.145  8782  8923 D CCodec  :   int32_t bitrate = 160000
+11-11 01:05:11.145  8782  8923 D CCodec  :   int32_t channel-count = 2
+11-11 01:05:11.145  8782  8923 D CCodec  :   int32_t max-input-size = 32768
+11-11 01:05:11.145  8782  8923 D CCodec  :   string mime = "audio/vorbis"
+11-11 01:05:11.145  8782  8923 D CCodec  :   int32_t sample-rate = 44100
+11-11 01:05:11.145  8782  8923 D CCodec  : }
+11-11 01:05:11.145  8782  8923 D CCodec  : setup formats output: AMessage(what = 0x00000000) = {
+11-11 01:05:11.145  8782  8923 D CCodec  :   int32_t channel-count = 2
+11-11 01:05:11.145  8782  8923 D CCodec  :   string mime = "audio/raw"
+11-11 01:05:11.145  8782  8923 D CCodec  :   int32_t sample-rate = 44100
+11-11 01:05:11.145  8782  8923 D CCodec  :   int32_t channel-mask = 3
+11-11 01:05:11.145  8782  8923 D CCodec  : }
+11-11 01:05:11.146  8782  8923 I CCodecConfig: query failed after returning 7 values (BAD_INDEX)
+11-11 01:05:11.146  8782  8923 W Codec2Client: query -- param skipped: index = 1342179345.
+11-11 01:05:11.146  8782  8923 W Codec2Client: query -- param skipped: index = 2415921170.
+11-11 01:05:11.147  8782  8921 D CCodecBufferChannel: [c2.android.vorbis.decoder#872] Configured output block pool ids 215 => OK
+11-11 01:05:11.148  4749  4749 I BgTaskExecutorImpl: Starting EXCLUSIVE background task TNG_MINUS_ONE_SYNC.
+11-11 01:05:11.149  8782  8923 D CCodecBufferChannel: [c2.android.vorbis.decoder#374] Created input block pool with allocatorID 16 => poolID 18 - OK (0)
+11-11 01:05:11.150  4749  4979 I TngMinusOneSync: Syncing TNG:-1
+11-11 01:05:11.150  8782  8923 I CCodecBufferChannel: [c2.android.vorbis.decoder#374] Created output block pool with allocatorID 16 => poolID 216 - OK
+11-11 01:05:11.150  8782  8923 D CCodecBufferChannel: [c2.android.vorbis.decoder#374] Configured output block pool ids 216 => OK
+11-11 01:05:11.150  8782  8923 I DMABUFHEAPS: Using DMA-BUF heap named: system
+11-11 01:05:11.150   494  8934 D SimpleC2Component: Using output block pool with poolID 216 => got 216 - 0
+11-11 01:05:11.166  8782  8917 E vol.VolumeDialogControl: isCaptionsServiceEnabled failed to check for captions component
+11-11 01:05:11.166  8782  8917 E vol.VolumeDialogControl: java.lang.IllegalArgumentException: Unknown component: ComponentInfo{com.google.android.as/com.google.android.apps.miphone.aiai.captions.CaptionsService}
+11-11 01:05:11.166  8782  8917 E vol.VolumeDialogControl: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:2430)
+11-11 01:05:11.166  8782  8917 E vol.VolumeDialogControl: 	at android.os.Parcel.createException(Parcel.java:2410)
+11-11 01:05:11.166  8782  8917 E vol.VolumeDialogControl: 	at android.os.Parcel.readException(Parcel.java:2393)
+11-11 01:05:11.166  8782  8917 E vol.VolumeDialogControl: 	at android.os.Parcel.readException(Parcel.java:2335)
+11-11 01:05:11.166  8782  8917 E vol.VolumeDialogControl: 	at android.content.pm.IPackageManager$Stub$Proxy.getComponentEnabledSetting(IPackageManager.java:7204)
+11-11 01:05:11.166  8782  8917 E vol.VolumeDialogControl: 	at android.app.ApplicationPackageManager.getComponentEnabledSetting(ApplicationPackageManager.java:2802)
+11-11 01:05:11.166  8782  8917 E vol.VolumeDialogControl: 	at com.android.systemui.volume.VolumeDialogControllerImpl.onGetCaptionsComponentStateW(VolumeDialogControllerImpl.java:449)
+11-11 01:05:11.166  8782  8917 E vol.VolumeDialogControl: 	at com.android.systemui.volume.VolumeDialogControllerImpl.access$2100(VolumeDialogControllerImpl.java:94)
+11-11 01:05:11.166  8782  8917 E vol.VolumeDialogControl: 	at com.android.systemui.volume.VolumeDialogControllerImpl$W.handleMessage(VolumeDialogControllerImpl.java:826)
+11-11 01:05:11.166  8782  8917 E vol.VolumeDialogControl: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-11 01:05:11.166  8782  8917 E vol.VolumeDialogControl: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-11 01:05:11.166  8782  8917 E vol.VolumeDialogControl: 	at android.os.Looper.loop(Looper.java:288)
+11-11 01:05:11.166  8782  8917 E vol.VolumeDialogControl: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-11 01:05:11.166  8782  8917 I vol.Events: writeEvent level_changed STREAM_VOICE_CALL 3
+11-11 01:05:11.171  8782  8917 I vol.Events: writeEvent level_changed STREAM_SYSTEM 5
+11-11 01:05:11.172   494  8935 D SimpleC2Component: Using output block pool with poolID 215 => got 215 - 0
+11-11 01:05:11.173  8782  8917 I vol.Events: writeEvent level_changed STREAM_RING 5
+11-11 01:05:11.177  8782  8917 I vol.Events: writeEvent level_changed STREAM_MUSIC 5
+11-11 01:05:11.181  7456  7456 W GrowthKit: Failed to get phenotypeManager in PhenotypeBroadcastReceiver
+11-11 01:05:11.181  7456  7456 W GrowthKit: java.lang.NullPointerException: Unable to get GrowthKit Component from host app: com.google.android.calendar
+11-11 01:05:11.181  7456  7456 W GrowthKit: 	at cal.rll.a(PG:6)
+11-11 01:05:11.181  7456  7456 W GrowthKit: 	at com.google.android.libraries.internal.growth.growthkit.internal.experiments.impl.PhenotypeBroadcastReceiver.onReceive(PG:1)
+11-11 01:05:11.181  7456  7456 W GrowthKit: 	at android.app.ActivityThread.handleReceiver(ActivityThread.java:4308)
+11-11 01:05:11.181  7456  7456 W GrowthKit: 	at android.app.ActivityThread.access$1600(ActivityThread.java:247)
+11-11 01:05:11.181  7456  7456 W GrowthKit: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2064)
+11-11 01:05:11.181  7456  7456 W GrowthKit: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-11 01:05:11.181  7456  7456 W GrowthKit: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-11 01:05:11.181  7456  7456 W GrowthKit: 	at android.os.Looper.loop(Looper.java:288)
+11-11 01:05:11.181  7456  7456 W GrowthKit: 	at android.app.ActivityThread.main(ActivityThread.java:7839)
+11-11 01:05:11.181  7456  7456 W GrowthKit: 	at java.lang.reflect.Method.invoke(Native Method)
+11-11 01:05:11.181  7456  7456 W GrowthKit: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+11-11 01:05:11.181  7456  7456 W GrowthKit: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1003)
+11-11 01:05:11.186  4749  4946 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=e0a79362-67cf-47cb-b59a-8f93fa99dbf8, tags={ com.google.apps.tiktok.contrib.work.TikTokListenableWorker, TikTokWorker#com.google.apps.tiktok.sync.impl.workmanager.SyncWorker } ]
+11-11 01:05:11.189  8782  8917 I vol.Events: writeEvent level_changed STREAM_ALARM 6
+11-11 01:05:11.191  4749  4946 I WM-GreedyScheduler: Ignoring schedule request in non-main process
+11-11 01:05:11.191  8782  8782 D SystemUIBootTiming: StartServicescom.android.systemui.volume.VolumeUI took to complete: 124ms
+11-11 01:05:11.191  4749  4946 I WM-GreedyScheduler: Ignoring schedule request in a secondary process
+11-11 01:05:11.193  4749  4749 I BgTaskExecutorImpl: Starting EXCLUSIVE background task BLOBLOBBER_SYNC.
+11-11 01:05:11.195  8782  8917 I vol.Events: writeEvent level_changed STREAM_BLUETOOTH_SCO 7
+11-11 01:05:11.204  4559  4559 I GsaVoiceInteractionSrv: Handling ACTION_STOP_HOTWORD
+11-11 01:05:11.204  4559  4559 E HwDetectorWithState: a: 3
+11-11 01:05:11.206  8782  8917 I vol.Events: writeEvent external_ringer_mode_changed unknown
+11-11 01:05:11.206  4749  4749 I BgTaskExecutorImpl: Starting EXCLUSIVE background task UPDATE_HOTWORD_MODELS.
+11-11 01:05:11.206  8782  8917 I vol.Events: writeEvent zen_mode_config_changed [disallowAlarms=false disallowMedia=false disallowSystem=true disallowRinger=false]
+11-11 01:05:11.206  4749  4946 I WM-GreedyScheduler: Ignoring schedule request in a secondary process
+11-11 01:05:11.207  4559  4559 I GsaVoiceInteractionSrv: Handling ACTION_START_HOTWORD
+11-11 01:05:11.208  4749  5290 I ModelDownloadController: requestHotwordModelUpdate modelType-2 modelLocale-en-US
+11-11 01:05:11.208  4559  4559 I GsaVoiceInteractionSrv: disregardVoiceMatch: false
+11-11 01:05:11.208  4749  5290 I ModelDownloadController: #maybeDownloadHotwordModelWithMDD with locale: en-US, modelType: 2.
+11-11 01:05:11.208  4559  4559 I GsaVoiceInteractionSrv: Cannot start hotword, hotword has been explicitly disabled.
+11-11 01:05:11.208  4749  5290 I ModelDownloadController: Skipping MDD query because model was already downloaded for locale
+11-11 01:05:11.209   548  1184 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10112; state: DISABLED
+11-11 01:05:11.209   548   580 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10112; state: ENABLED
+11-11 01:05:11.212  8782  8782 D NavigationModeController: getCurrentInteractionMode: mode=0 contextUser=0
+11-11 01:05:11.215   344   344 D Zygote  : Forked child process 8945
+11-11 01:05:11.216   548   580 I ActivityManager: Start proc 8945:com.google.android.apps.maps:server_recovery_process/u0a112 for broadcast {com.google.android.apps.maps/com.google.android.apps.gmm.plugins.serverrecovery.PhenotypeServerRecoveryHandlerImpl}
+11-11 01:05:11.217  4749  4946 I WM-GreedyScheduler: Ignoring schedule request in non-main process

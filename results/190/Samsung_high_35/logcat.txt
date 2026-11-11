@@ -1,0 +1,428 @@
+--------- beginning of main
+11-07 01:03:27.028  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.033  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.038  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.040  1165  2452 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+--------- beginning of system
+11-07 01:03:27.042   643  1092 E AccountManagerService: Couldn't determine the packageUid for android.content.pm.PackageManager$NameNotFoundException: 
+11-07 01:03:27.042  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.044  1165  2219 I NetworkScheduler.Stats: HousekeepingTask com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:0 result: 1 elapsed_millis: 15 uptime_millis: 15 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-07 01:03:27.047  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.051  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.056  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.061  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.067  1165  2219 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.mdi.download.service.MddGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-07 01:03:27.067  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.072  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.081  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.082  1634  1788 E MDD     : FileGroupManager: Trying to add expired group enpromo-state-config.
+11-07 01:03:27.083  1634  1788 W MDD     : MDDManager class dwld
+11-07 01:03:27.086  1165  2452 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-07 01:03:27.087  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.088   643  1092 E AccountManagerService: Couldn't determine the packageUid for android.content.pm.PackageManager$NameNotFoundException: 
+11-07 01:03:27.091  1165  2452 I NetworkScheduler.Stats: HousekeepingTask com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:0 result: 1 elapsed_millis: 17 uptime_millis: 17 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-07 01:03:27.094  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.102  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.112  3149  3149 I AccessibilityNodeInfoDumper: Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@35f52; boundsInParent: Rect(0, 0 - 902, 0); boundsInScreen: Rect(89, 338 - 991, 338); boundsInWindow: Rect(89, 338 - 991, 338); packageName: com.google.android.apps.nexuslauncher; className: android.view.ViewGroup; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; containerTitle: null; viewIdResName: com.google.android.apps.nexuslauncher:id/smartspace_subtitle_group; uniqueId: null; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; granularScrollingSupported: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]; isTextSelectable: false
+11-07 01:03:27.115  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.124  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.127  3149  3149 W AccessibilityNodeInfoDumper: Fetch time: 22ms
+11-07 01:03:27.129  1165  2452 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.telephonyspam.sync.SpamListSyncTaskService started execution. cause:5 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-07 01:03:27.130  1634  2070 I TelephonySpamChimeraSer: Running Telephony Spam Chimera Service [CONTEXT service_id=150 ]
+11-07 01:03:27.131   643  1092 W MagnificationConnectionManager: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
+11-07 01:03:27.131   643  1092 D AccessibilityManagerService: restoreCurrentUserForTestAutomationIfNeededLocked(): ignoring because device doesn't support visible background users
+11-07 01:03:27.131  1634  2070 I TelephonySpamChimeraSer: Cleaning SIP Header local table of old entries [CONTEXT service_id=150 ]
+11-07 01:03:27.131  1634  2070 I SpamListSync: Call spam module disabled. Skipping cleaning cache sip header table. [CONTEXT service_id=150 ]
+11-07 01:03:27.131  1634  2070 I TelephonySpamChimeraSer: Syncing Call Spam List [CONTEXT service_id=150 ]
+11-07 01:03:27.131  1477  2981 I AiAiEcho: Settings changed for uri: content://settings/secure/accessibility_enabled
+11-07 01:03:27.131  1634  2070 I SpamListSync: SpamListSyncChimeraService.syncSpamList called with tag: telephonyspam.SpamListSyncTask, extras: Bundle[{SpamList Type=0, Action=1.0}] [CONTEXT service_id=150 ]
+11-07 01:03:27.132  1634  2070 I SpamListSync: Call spam module disabled. Skipping spam list syncing. [CONTEXT service_id=150 ]
+11-07 01:03:27.132  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.134  3149  3149 D AndroidRuntime: Shutting down VM
+11-07 01:03:27.135  1477  1879 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-07 01:03:27.135  1477  1879 I AiAiEcho: EchoTargets: 
+11-07 01:03:27.135  1477  1879 I AiAiEcho: Filtered by AiAi flag check: 
+11-07 01:03:27.135  1477  1879 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-07 01:03:27.135  1477  1879 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-07 01:03:27.135  1477  1879 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-07 01:03:27.136   643   643 D BatterySaverPolicy: accessibility changed to false, updating policy.
+11-07 01:03:27.138  1165  2219 I NetworkScheduler.Stats: HousekeepingTask com.google.android.gms/com.google.android.gms.telephonyspam.sync.SpamListSyncTaskService finished executing. cause:0 result: 1 elapsed_millis: 19 uptime_millis: 19 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-07 01:03:27.140  1477  1879 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-07 01:03:27.140  1477  1879 I AiAiEcho: EchoTargets: 
+11-07 01:03:27.140  1477  1879 I AiAiEcho: Filtered by AiAi flag check: 
+11-07 01:03:27.140  1477  1879 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-07 01:03:27.141  1477  1879 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-07 01:03:27.141  1477  1879 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-07 01:03:27.142  1477  1879 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-07 01:03:27.143  1477  1879 I AiAiEcho: EchoTargets: 
+11-07 01:03:27.143  1477  1879 I AiAiEcho: Filtered by AiAi flag check: 
+11-07 01:03:27.143  1477  1879 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-07 01:03:27.143  1581  1704 I A       : NGA enabled in interactor.
+11-07 01:03:27.143  1477  1879 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-07 01:03:27.143  1581  1704 I A       : (REDACTED) Nga state changed to %s
+11-07 01:03:27.143  1477  1879 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-07 01:03:27.143  1581  1704 I A       : (REDACTED) isTngActive=%s
+11-07 01:03:27.143  1477  1879 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+11-07 01:03:27.145  1477  1879 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface media_data_manager with targets# 0 (types=[])
+11-07 01:03:27.145  1340  1340 D SsBaseTemplateCard: No text view can be set up
+11-07 01:03:27.145  1477  1879 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+11-07 01:03:27.145  1340  1340 D SsBaseTemplateCard: Passed-in item info is null
+11-07 01:03:27.145  1340  1340 D SsBaseTemplateCard: Passed-in item info is null
+11-07 01:03:27.145  1340  1340 D SsBaseTemplateCard: Passed-in item info is null
+11-07 01:03:27.145  1340  1340 I SsBaseTemplateCard: Secondary card pane is null
+11-07 01:03:27.148   898   898 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+11-07 01:03:27.148  1482  1507 I A       : Initializing all components
+11-07 01:03:27.149  1482  1881 I A       : (REDACTED) onIsEnabledChanged, isEnabled: %s
+11-07 01:03:27.149  1482  1804 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+11-07 01:03:27.149  1482  1881 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:03:27.149  1482  1881 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:03:27.149  1482  1881 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:03:27.149   898   898 D SsMediaDataProvider: Forwarding Smartspace updates []
+11-07 01:03:27.149  1482  1881 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:03:27.149  1482  1881 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:03:27.149  1482  1881 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:03:27.149  1482  1881 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:03:27.149  1482  1804 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+11-07 01:03:27.149  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.149  1482  1805 I A       : (REDACTED) State changed: %s => %s by %s and %s with %s
+11-07 01:03:27.150  1482  1881 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:03:27.150  1482  1881 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:03:27.150  1482  1881 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:03:27.150  1482  1805 I A       : (REDACTED) Recognizer choice: (recognizer_type: %s, recognizer_mode: %s, choice_reason: %s)
+11-07 01:03:27.150  1482  1881 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:03:27.150  1482  1881 I A       : (REDACTED) Setting session to type: %s
+11-07 01:03:27.150  1482  1881 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:03:27.150  1482  1881 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:03:27.150  1482  1881 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:03:27.150  1482  1881 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:03:27.150  1482  1881 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:03:27.150  1482  1881 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:03:27.150  1482  1881 I A       : (REDACTED) setNavBarVisible: %s
+11-07 01:03:27.150  1482  1805 I A       : (REDACTED) onActiveStateChangeEvent: %s => %s
+11-07 01:03:27.150  1482  1805 I A       : (REDACTED) #onActiveStateChangeEvent, newState: %s, previousState: %s.
+11-07 01:03:27.150  1482  1881 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:03:27.151  1482  1881 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:03:27.151  1482  1881 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:03:27.151  1482  1881 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:03:27.151  1482  1881 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:03:27.151  1482  1881 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-07 01:03:27.152  1482  1881 I NgaEntryPointEventSendr: setupConnection
+11-07 01:03:27.153  1482  1880 I A       : (REDACTED) on opa visibility changed %s
+11-07 01:03:27.163  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.163  1482  1880 I A       : (REDACTED) stopListening(%s, %s)
+11-07 01:03:27.164  1482  1880 I A       : (REDACTED) on opa visibility changed %s
+11-07 01:03:27.165  1340  1603 D EGL_emulation: app_time_stats: avg=210.17ms min=17.47ms max=718.01ms count=5
+11-07 01:03:27.165  1482  1881 I NgaEntryPointEventSendr: (REDACTED) State changed: %s => %s
+11-07 01:03:27.166  1482  1804 I A       : Initialize
+11-07 01:03:27.168  1482  1880 I INV.SystemUI: showGestureNav
+11-07 01:03:27.168  1482  1880 I INV.SystemUI: (REDACTED) setUiHints(hints = %s)
+11-07 01:03:27.168  1482  1881 I NgaEntryPointEventSendr: onServiceConnected
+11-07 01:03:27.172  1581  2714 I A       : Calling beginBinderSession().
+11-07 01:03:27.173  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.176  1581  2714 I A       : beginBinderSession(): calling binder
+11-07 01:03:27.178  1482  1880 I A       : Ignoring as prefetch was recently called
+11-07 01:03:27.179  1482  1804 I INV.SystemUI: setUiHints: finished successfully
+11-07 01:03:27.180  1482  1881 I NgaEntryPointEventSendr: (REDACTED) State changed: %s => %s
+11-07 01:03:27.182  1482  1880 I A       : Successfully initialized all components
+11-07 01:03:27.182  1482  1804 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+11-07 01:03:27.187  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.192  2894  2900 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/Traceur/Traceur.apk' with 1 weak references
+11-07 01:03:27.192  2894  2900 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PrebuiltBugle/PrebuiltBugle.apk' with 1 weak references
+11-07 01:03:27.192   643  2148 W ActivityManager: Unable to start service Intent { cmp=com.google.android.apps.tachyon/.clientapi.ClientApiService } U=0: not found
+11-07 01:03:27.193  2894  2900 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/priv-app/NexusLauncherRelease/NexusLauncherRelease.apk' with 1 weak references
+11-07 01:03:27.193  2894  2900 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/SafetyHubPrebuilt/SafetyHubPrebuilt.apk' with 1 weak references
+11-07 01:03:27.193  2894  2900 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/WellbeingPrebuilt/WellbeingPrebuilt.apk' with 1 weak references
+11-07 01:03:27.193  2894  2900 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.cellbroadcast/priv-app/GoogleCellBroadcastApp@350820300/GoogleCellBroadcastApp.apk' with 1 weak references
+11-07 01:03:27.193  2894  2900 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/Velvet/Velvet.apk' with 1 weak references
+11-07 01:03:27.194  2894  2900 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.healthfitness/priv-app/HealthConnectControllerGoogle@350820300/HealthConnectControllerGoogle.apk' with 1 weak references
+11-07 01:03:27.195  2894  2900 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/LatinIMEGooglePrebuilt/LatinIMEGooglePrebuilt.apk' with 1 weak references
+11-07 01:03:27.195  2894  2900 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/talkback/talkback.apk' with 1 weak references
+11-07 01:03:27.195  2894  2900 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '/vendor/overlay/EmulatorTalkBackOverlay/EmulatorTalkBackOverlay.apk' with 1 weak references
+11-07 01:03:27.195  2894  2900 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.permission/priv-app/GooglePermissionController@350820360/GooglePermissionController.apk' with 1 weak references
+11-07 01:03:27.196  2894  2900 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '/product/overlay/GooglePermissionControllerOverlay.apk' with 1 weak references
+11-07 01:03:27.196  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.207  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.210  1482  1881 I NgaEntryPointEventSendr: (REDACTED) State changed: %s => %s (%s)
+11-07 01:03:27.210  1581  1846 W A       : (REDACTED) %s task was not run. Callback from Service received after client was disposed.
+11-07 01:03:27.210  1581  1929 I PBSessionCacheImpl: (REDACTED) Deleted sessionId[%d] from persistence.
+11-07 01:03:27.213  1581  1846 W SearchServiceCore: Abort, client detached.
+11-07 01:03:27.216  1165  2025 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.auth.account.be.accountstate.GcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-07 01:03:27.218  1634  2070 D nativeloader: Configuring clns-11 for other apk . target_sdk_version=34, uses_libraries=ALL, library_path=/data/user_de/0/com.google.android.gms/app_chimera/m/00000009/CronetDynamite.uncompressed.apk!/lib/x86_64:/data/user_de/0/com.google.android.gms/app_chimera/m/00000009/CronetDynamite.uncompressed.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand
+11-07 01:03:27.218  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.225  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.231  1482  1507 V ClearcutMetricXmitter: Transmission is done.
+11-07 01:03:27.233  1165  2135 I NetworkScheduler.Stats: HousekeepingTask com.google.android.gms/com.google.android.gms.auth.account.be.accountstate.GcmTaskService finished executing. cause:0 result: 1 elapsed_millis: 62 uptime_millis: 62 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-07 01:03:27.233  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.239   643  3070 D ConnectivityService: requestNetwork for uid/pid:10143/1634 activeRequest: null callbackRequest: 120 [NetworkRequest [ REQUEST id=121, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10143 RequestorUid: 10143 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false
+11-07 01:03:27.240  1634  2070 D nativeloader: Load /data/user_de/0/com.google.android.gms/app_chimera/m/00000009/CronetDynamite.uncompressed.apk!/lib/x86_64/libcronet.126.0.6452.4.so using isolated ns clns-11 (caller=/data/user_de/0/com.google.android.gms/app_chimera/m/00000009/CronetDynamite.uncompressed.apk): ok
+11-07 01:03:27.240   643   803 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=121, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10143 RequestorUid: 10143 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+11-07 01:03:27.241  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.241   643   803 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=121, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10143 RequestorUid: 10143 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+11-07 01:03:27.241   643   803 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=121, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10143 RequestorUid: 10143 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+11-07 01:03:27.241   643   803 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=121, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10143 RequestorUid: 10143 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+11-07 01:03:27.241   643   812 D ConnectivityService: NetReassign [121 : null → 101] [c 0] [a 1] [i 0]
+11-07 01:03:27.242  1634  2070 I cr_CronetLibraryLoader: Cronet version: 126.0.6452.4, arch: x86_64
+11-07 01:03:27.243   643  2152 D CompatChangeReporter: Compat change id reported: 319212206; UID 10143; state: ENABLED
+11-07 01:03:27.245   643   812 D ConnectivityService: NetReassign [no changes] [c 0] [a 1] [i 1]
+11-07 01:03:27.245  1165  1171 I .gms.persistent: Background concurrent mark compact GC freed 26MB AllocSpace bytes, 18(568KB) LOS objects, 50% free, 18MB/37MB, paused 2.580ms,1.312ms total 136.443ms
+11-07 01:03:27.249  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.255  1165  2135 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.auth.account.be.accountstate.GcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-07 01:03:27.259  1165  2135 I Auth    : [GcmTaskChimeraService] Sync reported at TASK_SERVICE has status of ACCOUNT_NOT_FOUND. [CONTEXT service_id=153 ]
+11-07 01:03:27.259  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.261  1165  2219 I NetworkScheduler.Stats: HousekeepingTask com.google.android.gms/com.google.android.gms.auth.account.be.accountstate.GcmTaskService finished executing. cause:0 result: 1 elapsed_millis: 15 uptime_millis: 15 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-07 01:03:27.267  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.272   433  3304 I resolv  : GetAddrInfoHandler::run: {101 786533 101 983141 10143 0}
+11-07 01:03:27.273   433  3306 I resolv  : res_nmkquery: (QUERY, IN, A)
+11-07 01:03:27.273   433  3306 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7231625f8110
+11-07 01:03:27.273   433  3306 I resolv  : doQuery: rcode=0, ancount=1, return value=307
+11-07 01:03:27.273   433  3305 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+11-07 01:03:27.273   433  3305 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7231625f8b90
+11-07 01:03:27.273   433  3305 I resolv  : doQuery: rcode=0, ancount=1, return value=319
+11-07 01:03:27.275  1634  3298 D TrafficStats: tagSocket(202) with statsTag=0x4900, statsUid=-1
+11-07 01:03:27.278  1634  1634 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.smartdevice.logging.CleanBufferedLogsService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-07 01:03:27.278  1634  1634 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.smartdevice.logging.CleanBufferedLogsService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-07 01:03:27.279  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.283  1165  2135 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.smartdevice.logging.CleanBufferedLogsService started execution. cause:5 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-07 01:03:27.285  1165  1173 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/LatinIMEGooglePrebuilt/LatinIMEGooglePrebuilt.apk' with 1 weak references
+11-07 01:03:27.286  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.287  1634  3272 I SmartDevice: [CleanBufferedLogsService] Running task upload_buffered_logs_periodic
+11-07 01:03:27.289  1634  3272 I ConsentLogging: [LoggingStore] No events available for subdirectory
+11-07 01:03:27.289  1634  3272 W SmartDevice: [SmartDeviceBufferedLogs] No buffered logs for source SMART_SETUP after SUW is complete
+11-07 01:03:27.290  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.291  1634  3272 I ConsentLogging: [LoggingStore] No events available for subdirectory
+11-07 01:03:27.291  1634  3272 W SmartDevice: [SmartDeviceBufferedLogs] No buffered logs for source ANDROID_AUTH after SUW is complete
+11-07 01:03:27.292  1165  2135 I NetworkScheduler.Stats: HousekeepingTask com.google.android.gms/com.google.android.gms.smartdevice.logging.CleanBufferedLogsService finished executing. cause:0 result: 1 elapsed_millis: 17 uptime_millis: 17 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-07 01:03:27.294  1634  1634 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.smartdevice.logging.CleanBufferedLogsService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-07 01:03:27.296  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.300  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.305  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.307  1165  2135 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.gcm.HeartbeatAlarm$ConnectionInfoPersistService started execution. cause:5 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-07 01:03:27.309  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.315  1165  2129 I NetworkScheduler.Stats: HousekeepingTask com.google.android.gms/com.google.android.gms.gcm.HeartbeatAlarm$ConnectionInfoPersistService finished executing. cause:0 result: 1 elapsed_millis: 15 uptime_millis: 15 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-07 01:03:27.321  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.323  1165  1170 W .gms.persistent: Missing inline cache for fowt anht.k(android.content.Context, boolean, int, java.lang.Integer, anic, eqdz)
+11-07 01:03:27.326  1165  1170 W .gms.persistent: Missing inline cache for fowt anht.k(android.content.Context, boolean, int, java.lang.Integer, anic, eqdz)
+11-07 01:03:27.326  1165  1170 W .gms.persistent: Missing inline cache for fowt anht.k(android.content.Context, boolean, int, java.lang.Integer, anic, eqdz)
+11-07 01:03:27.326  1165  1170 W .gms.persistent: Missing inline cache for fowt anht.k(android.content.Context, boolean, int, java.lang.Integer, anic, eqdz)
+11-07 01:03:27.326  1165  1170 W .gms.persistent: Missing inline cache for fowt anht.k(android.content.Context, boolean, int, java.lang.Integer, anic, eqdz)
+11-07 01:03:27.326  1165  1170 W .gms.persistent: Missing inline cache for fowt anht.k(android.content.Context, boolean, int, java.lang.Integer, anic, eqdz)
+11-07 01:03:27.326  1165  1170 W .gms.persistent: Missing inline cache for fowt anht.k(android.content.Context, boolean, int, java.lang.Integer, anic, eqdz)
+11-07 01:03:27.326  1165  1170 W .gms.persistent: Missing inline cache for fowt anht.k(android.content.Context, boolean, int, java.lang.Integer, anic, eqdz)
+11-07 01:03:27.326  1165  1170 W .gms.persistent: Missing inline cache for fowt anht.k(android.content.Context, boolean, int, java.lang.Integer, anic, eqdz)
+11-07 01:03:27.326  1165  1170 W .gms.persistent: Missing inline cache for fowt anht.k(android.content.Context, boolean, int, java.lang.Integer, anic, eqdz)
+11-07 01:03:27.326  1165  1170 W .gms.persistent: Missing inline cache for fowt anht.k(android.content.Context, boolean, int, java.lang.Integer, anic, eqdz)
+11-07 01:03:27.326  1165  1170 W .gms.persistent: Missing inline cache for fowt anht.k(android.content.Context, boolean, int, java.lang.Integer, anic, eqdz)
+11-07 01:03:27.326  1165  1170 W .gms.persistent: Missing inline cache for fowt anht.k(android.content.Context, boolean, int, java.lang.Integer, anic, eqdz)
+11-07 01:03:27.326  1165  1170 W .gms.persistent: Missing inline cache for fowt anht.k(android.content.Context, boolean, int, java.lang.Integer, anic, eqdz)
+11-07 01:03:27.326  1165  1170 W .gms.persistent: Missing inline cache for fowt anht.k(android.content.Context, boolean, int, java.lang.Integer, anic, eqdz)
+11-07 01:03:27.326  1165  1170 W .gms.persistent: Missing inline cache for fowt anht.k(android.content.Context, boolean, int, java.lang.Integer, anic, eqdz)
+11-07 01:03:27.326  1165  1170 W .gms.persistent: Missing inline cache for fowt anht.k(android.content.Context, boolean, int, java.lang.Integer, anic, eqdz)
+11-07 01:03:27.326  1165  1170 W .gms.persistent: Missing inline cache for fowt anht.k(android.content.Context, boolean, int, java.lang.Integer, anic, eqdz)
+11-07 01:03:27.326  1165  1170 W .gms.persistent: Missing inline cache for fowt anht.k(android.content.Context, boolean, int, java.lang.Integer, anic, eqdz)
+11-07 01:03:27.326  1165  1170 W .gms.persistent: Missing inline cache for fowt anht.k(android.content.Context, boolean, int, java.lang.Integer, anic, eqdz)
+11-07 01:03:27.326  1165  1170 W .gms.persistent: Missing inline cache for fowt anht.k(android.content.Context, boolean, int, java.lang.Integer, anic, eqdz)
+11-07 01:03:27.326  1165  1170 W .gms.persistent: Missing inline cache for fowt anht.k(android.content.Context, boolean, int, java.lang.Integer, anic, eqdz)
+11-07 01:03:27.326  1165  1170 W .gms.persistent: Missing inline cache for fowt anht.k(android.content.Context, boolean, int, java.lang.Integer, anic, eqdz)
+11-07 01:03:27.326  1165  1170 W .gms.persistent: Missing inline cache for fowt anht.k(android.content.Context, boolean, int, java.lang.Integer, anic, eqdz)
+11-07 01:03:27.326  1165  1170 W .gms.persistent: Missing inline cache for fowt anht.k(android.content.Context, boolean, int, java.lang.Integer, anic, eqdz)
+11-07 01:03:27.326  1165  1170 W .gms.persistent: Missing inline cache for fowt anht.k(android.content.Context, boolean, int, java.lang.Integer, anic, eqdz)
+11-07 01:03:27.326  1165  1170 W .gms.persistent: Missing inline cache for fowt anht.k(android.content.Context, boolean, int, java.lang.Integer, anic, eqdz)
+11-07 01:03:27.332  1165  1165 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.gmscompliance.sync.BackgroundSyncGmsTaskService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentInternalBoundBrokerService }
+11-07 01:03:27.332  1165  1165 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.gmscompliance.sync.BackgroundSyncGmsTaskService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentInternalBoundBrokerService }
+11-07 01:03:27.335  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.339  1165  2135 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.gmscompliance.sync.BackgroundSyncGmsTaskService started execution. cause:5 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-07 01:03:27.339  1165  2135 I NetworkScheduler.Stats: HousekeepingTask com.google.android.gms/com.google.android.gms.gmscompliance.sync.BackgroundSyncGmsTaskService finished executing. cause:0 result: 1 elapsed_millis: 12 uptime_millis: 12 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-07 01:03:27.340  1165  1165 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.gmscompliance.sync.BackgroundSyncGmsTaskService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentInternalBoundBrokerService }
+11-07 01:03:27.343  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.348  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.353  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.358  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.363  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.364  1165  2129 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.auth.folsom.service.FolsomPublicKeyUpdateService started execution. cause:5 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-07 01:03:27.368  1165  2135 I NetworkScheduler.Stats: HousekeepingTask com.google.android.gms/com.google.android.gms.auth.folsom.service.FolsomPublicKeyUpdateService finished executing. cause:0 result: 1 elapsed_millis: 15 uptime_millis: 15 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-07 01:03:27.370  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.376  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.383  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.390  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.396  1165  2135 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.security.safebrowsing.SafeBrowsingUpdateTaskService started execution. cause:5 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-07 01:03:27.399  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.403  1165  2129 I NetworkScheduler.Stats: HousekeepingTask com.google.android.gms/com.google.android.gms.security.safebrowsing.SafeBrowsingUpdateTaskService finished executing. cause:0 result: 1 elapsed_millis: 21 uptime_millis: 21 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-07 01:03:27.407  1634  1634 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.safetynet.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+11-07 01:03:27.407  1634  1634 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.safetynet.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+11-07 01:03:27.408  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.417  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.418  1634  3298 D TrafficStats: tagSocket(182) with statsTag=0x5800, statsUid=-1
+11-07 01:03:27.425   433  3308 I resolv  : GetAddrInfoHandler::run: {101 786533 101 983141 10143 0}
+11-07 01:03:27.425   433  3309 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+11-07 01:03:27.425   433  3310 I resolv  : res_nmkquery: (QUERY, IN, A)
+11-07 01:03:27.426  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.427  1634  1634 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.threadnetwork.service.firstparty.BorderRouterSyncBoundService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-07 01:03:27.427   433  3309 I resolv  : res_nsend: used send_dg 331 terrno: 0
+11-07 01:03:27.427  1634  1634 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.threadnetwork.service.firstparty.BorderRouterSyncBoundService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-07 01:03:27.427   433  3309 I resolv  : doQuery: rcode=0, ancount=1, return value=331
+11-07 01:03:27.428  1165  2001 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.threadnetwork.service.firstparty.BorderRouterSyncBoundService started execution. cause:5 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-07 01:03:27.431  1634  3272 I ThreadBrSyncService: Border Router sync service run task [CONTEXT service_id=305 ]
+11-07 01:03:27.431   433  3310 I resolv  : res_nsend: used send_dg 319 terrno: 0
+11-07 01:03:27.431   433  3310 I resolv  : doQuery: rcode=0, ancount=1, return value=319
+11-07 01:03:27.433  1165  1165 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.mdns.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+11-07 01:03:27.433  1165  1165 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.mdns.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+11-07 01:03:27.435  1634  3298 D TrafficStats: tagSocket(136) with statsTag=0x1804, statsUid=10143
+11-07 01:03:27.436  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.437   643   812 D ConnectivityService: NetReassign [no changes] [c 0] [a 0] [i 0]
+11-07 01:03:27.437  1634  3272 I ThreadBrSynchronizer: Start syncing 1P Border Routers [CONTEXT service_id=305 ]
+11-07 01:03:27.440  1634  3298 D TrafficStats: tagSocket(136) with statsTag=0x1804, statsUid=10143
+11-07 01:03:27.442  1634  3259 I BorderAgentScannerImpl: Started mDNS service browser [CONTEXT service_id=305 ]
+11-07 01:03:27.442  1165  2001 D TrafficStats: tagSocket(243) with statsTag=0x30000900, statsUid=-1
+11-07 01:03:27.444  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.444   643  2148 I WifiService: acquireMulticastLock uid=10143 tag=mdns-cast
+11-07 01:03:27.447   938  1122 D IpClient.wlan0: set max DTIM multiplier to 1
+11-07 01:03:27.449  1634  1634 I BorderAgentScannerImpl: Sent Border Agent mDNS service query (transactionId = 1) [CONTEXT service_id=305 ]
+11-07 01:03:27.450   643   803 E WifiStaIfaceAidlImpl: setDtimMultiplier failed with service-specific exception: android.os.ServiceSpecificException:  (code 4)
+11-07 01:03:27.451  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.457  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.466  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.476  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.482  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.489  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.494  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.505  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.511  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.522  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.529  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.545  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.557  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.566   643   747 D ActivityManager: freezing 1495 com.android.printspooler
+11-07 01:03:27.572   643   812 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+11-07 01:03:27.572  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.573   643   812 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+11-07 01:03:27.573   643   812 D InetDiagMessage: Destroyed live tcp sockets for uids={10127} in 3ms
+11-07 01:03:27.578  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.585  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.590  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.598   928  3248 D android.hardware.gnss-service.ranchu: GnssHwListener:consume:87 sz=64
+11-07 01:03:27.600  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.602   928  3248 D android.hardware.gnss-service.ranchu: GnssHwListener:consume:87 sz=64
+11-07 01:03:27.602   928  3248 D android.hardware.gnss-service.ranchu: Gnss:onGnssLocationCb:311
+11-07 01:03:27.602   928  3248 D android.hardware.gnss-service.ranchu: Gnss:onGnssLocationCb:321
+11-07 01:03:27.627  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.633  1634  3298 D TrafficStats: tagSocket(178) with statsTag=0x3200, statsUid=-1
+11-07 01:03:27.643  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.662  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.671  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.681  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.686  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.695  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.703  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.711  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.720  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.732  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.739  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.750  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.758  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.764  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.771  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.778  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.787  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.794  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.802  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.807  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.816  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.830  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.835  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.841  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.847  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.853  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.856  2919  2919 I AidlLazyServiceRegistrar: Process has 0 (of 1 available) client(s) in use after notification android.hardware.drm.IDrmFactory/clearkey has clients: 0
+--------- beginning of kernel
+11-07 01:03:27.844     0     0 I servicemanager: Notifying android.hardware.drm.IDrmFactory/clearkey they don't (previously: do) have clients when we now have no record of a client
+11-07 01:03:27.856  2919  2919 I AidlLazyServiceRegistrar: Trying to shut down the service. No clients in use for any service in process.
+11-07 01:03:27.850     0     0 I servicemanager: Caller(pid=2919,uid=1013,sid=u:r:hal_drm_clearkey_aidl:s0) Unregistering android.hardware.drm.IDrmFactory/clearkey
+11-07 01:03:27.859  1634  3298 D TrafficStats: tagSocket(188) with statsTag=0x2603, statsUid=-1
+11-07 01:03:27.862  2919  2919 I AidlLazyServiceRegistrar: Unregistered all clients and exiting
+11-07 01:03:27.863  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.854     0     0 I BpBinder: onLastStrongRef automatically unlinking death recipients:
+11-07 01:03:27.857     0     0 I init    : Service 'vendor.drm-clearkey-service' (pid 2919) exited with status 0 oneshot service took 4.748000 seconds in background
+11-07 01:03:27.860     0     0 I init    : Sending signal 9 to service 'vendor.drm-clearkey-service' (pid 2919) process group...
+11-07 01:03:27.868  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.862     0     0 I libprocessgroup: Removed cgroup /sys/fs/cgroup/uid_1013/pid_2919
+11-07 01:03:27.874  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.881  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.891  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.899  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.908  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.919  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.930  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.940  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.949  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.963  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.965  1634  1669 I gle.android.gms: Background concurrent mark compact GC freed 6405KB AllocSpace bytes, 162(8652KB) LOS objects, 43% free, 31MB/55MB, paused 1.506ms,2.132ms total 160.507ms
+11-07 01:03:27.980  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.990  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:27.997  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:28.002  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:28.010  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:28.026  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:28.039  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:28.049  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:28.057  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:28.065  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:28.069  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:28.075  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:28.082  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:28.092  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:28.100  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:28.105  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:28.108  1646  1646 W JobService: onNetworkChanged() not implemented in androidx.work.impl.background.systemjob.SystemJobService. Must override in a subclass.
+11-07 01:03:28.110  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:28.116  1165  1898 I ChimeraSrvcProxy: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl
+11-07 01:03:28.116  1165  1898 W .gms.persistent: Large reply transaction of 1056768 bytes, interface descriptor , code 1
+11-07 01:03:28.117  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:28.118  1506  2027 I BugleRcsEngine: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[d485c436-ee80]>Handler" thread_id=63 ]
+11-07 01:03:28.118  1506  1765 I BugleRcsEngine: Connected state: [1], networkType: [WIFI] [CONTEXT thread_id=57 ]
+11-07 01:03:28.123  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:28.130  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:28.138  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:28.139  1165  2129 I NetworkScheduler.Stats: HousekeepingTask com.google.android.gms/com.google.android.gms.mdi.download.service.MddGcmTaskService finished executing. cause:0 result: 1 elapsed_millis: 1090 uptime_millis: 1090 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-07 01:03:28.143  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:28.150  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:28.155  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:28.156  1634  1669 I gle.android.gms: Background concurrent mark compact GC freed 1416KB AllocSpace bytes, 1053(38MB) LOS objects, 32% free, 50MB/74MB, paused 843us,1.279ms total 160.047ms
+11-07 01:03:28.161  1634  1634 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.backup.transport.component.CustomBackupNewScheduleLoggingTask.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-07 01:03:28.161  1634  1634 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.backup.transport.component.CustomBackupNewScheduleLoggingTask.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-07 01:03:28.162  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:28.164  1165  2129 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.backup.transport.component.CustomBackupNewScheduleLoggingTask started execution. cause:5 exec_start_elapsed_seconds: 39 [CONTEXT service_id=218 ]
+11-07 01:03:28.165  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:28.167  1634  3259 V Backup  : [CustomBackupNewScheduleLog] Running
+11-07 01:03:28.167  1634  3259 V Backup  : [CustomBackupNewScheduleLog] Starting custom backups intent operation
+11-07 01:03:28.169  1634  3259 V Backup  : [CustomBackupNewScheduleLog] Logging backup state
+11-07 01:03:28.170  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:28.172  1165  1761 V Backup  : [RunCustomBackupsIO] Running
+11-07 01:03:28.172  1165  1761 V Backup  : [RunCustomBackupsIO] Creating CustomBackupsManager with requiredUnmetered=true
+11-07 01:03:28.178  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:28.183  1165  1761 D Backup  : [CustomBackupsManager] Creating intent for package: com.google.android.apps.photos
+11-07 01:03:28.184  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:28.186  1165  1761 W ChimeraUtils: Module com.google.android.gms.backup_settings missing resource null(0)
+11-07 01:03:28.188  1165  1761 W ChimeraUtils: Module com.google.android.gms.backup_settings missing resource null(0)
+11-07 01:03:28.189  1165  1761 V Backup  : [FlavorController] getDisabledBackupDataFlavors
+11-07 01:03:28.190  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-07 01:03:28.191  1634  3259 E gclu    : *~*~*~ Previous channel {0} was garbage collected without being shut down! ~*~*~*
+11-07 01:03:28.191  1634  3259 E gclu    :     Make sure to call shutdown()/shutdownNow()
+11-07 01:03:28.191  1634  3259 E gclu    : java.lang.RuntimeException: ManagedChannel allocation site
+11-07 01:03:28.191  1634  3259 E gclu    : 	at gclt.<init>(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+11-07 01:03:28.191  1634  3259 E gclu    : 	at gclu.<init>(:com.google.android.gms@242335041@24.23.35 (190800-646585959):10)
+11-07 01:03:28.191  1634  3259 E gclu    : 	at gcls.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):244)
+11-07 01:03:28.191  1634  3259 E gclu    : 	at gbvj.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):5)
+11-07 01:03:28.191  1634  3259 E gclu    : 	at anbr.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):59)
+11-07 01:03:28.191  1634  3259 E gclu    : 	at anbi.e(:com.google.android.gms@242335041@24.23.35 (190800-646585959):63)
+11-07 01:03:28.191  1634  3259 E gclu    : 	at anbi.f(:com.google.android.gms@242335041@24.23.35 (190800-646585959):5)
+11-07 01:03:28.191  1634  3259 E gclu    : 	at dhgf.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):39)
+11-07 01:03:28.191  1634  3259 E gclu    : 	at dhfl.c(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+11-07 01:03:28.191  1634  3259 E gclu    : 	at dhfl.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):3)
+11-07 01:03:28.191  1634  3259 E gclu    : 	at ajis.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):5)
+11-07 01:03:28.191  1634  3259 E gclu    : 	at angs.c(:com.google.android.gms@242335041@24.23.35 (190800-646585959):50)
+11-07 01:03:28.191  1634  3259 E gclu    : 	at angs.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):76)
+11-07 01:03:28.191  1634  3259 E gclu    : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-07 01:03:28.191  1634  3259 E gclu    : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-07 01:03:28.191  1634  3259 E gclu    : 	at anmg.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+11-07 01:03:28.191  1634  3259 E gclu    : 	at java.lang.Thread.run(Thread.java:1012)
+11-07 01:03:28.195  1646  1857 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR

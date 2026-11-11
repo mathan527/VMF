@@ -1,0 +1,473 @@
+--------- beginning of main
+11-11 01:02:06.934   546   691 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=496, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10124 RequestorUid: 10124 RequestorPkg: com.google.android.youtube] ]
+11-11 01:02:06.935   342  8625 D resolv  : doQuery: (1, 28)
+11-11 01:02:06.935   342  8625 D resolv  : res_nmkquery: (QUERY, IN, AAAA)
+11-11 01:02:06.935   342  8625 D resolv  : res_nsend
+11-11 01:02:06.936   342  8625 I resolv  : resolv_cache_lookup: lookup
+11-11 01:02:06.936   342  8625 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x76f899e0cb10
+11-11 01:02:06.936   342  8625 D resolv  : doQuery: rcode=0, ancount=8
+11-11 01:02:06.936   342  8626 D resolv  : doQuery: (1, 1)
+11-11 01:02:06.936   342  8626 D resolv  : res_nmkquery: (QUERY, IN, A)
+11-11 01:02:06.936   342  8626 D resolv  : res_nsend
+11-11 01:02:06.936   342  8626 I resolv  : resolv_cache_lookup: lookup
+11-11 01:02:06.936   342  8626 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x76f889e0f760
+11-11 01:02:06.936   342  8626 D resolv  : doQuery: rcode=0, ancount=8
+11-11 01:02:06.937   342  8623 D resolv  : doQuery: (1, 28)
+11-11 01:02:06.937   342  8623 D resolv  : res_nmkquery: (QUERY, IN, AAAA)
+11-11 01:02:06.937   342  8623 D resolv  : res_nsend
+11-11 01:02:06.937   342  8623 I resolv  : resolv_cache_lookup: lookup
+11-11 01:02:06.937   342  8623 I resolv  : resolv_cache_lookup: NOT IN CACHE
+11-11 01:02:06.937   342  8623 I resolv  : resolv_populate_res_for_net: netid=101
+11-11 01:02:06.937   342  8623 I resolv  : res_stats_usable_server: NS stats: S 19 + E 0 + T 0 + I 0 = 19, rtt = 8, min_samples = 8
+11-11 01:02:06.937   342  8623 I resolv  : res_stats_usable_server: success rate 100
+11-11 01:02:06.937   342  8623 D resolv  : res_nsend: Querying server (# 1) address = 10.0.2.3:53
+11-11 01:02:06.937   342  8623 D resolv  : send_dg: new DG socket
+11-11 01:02:06.938   342  8623 I resolv  : get_timeout: using timeout of 5000 msec
+11-11 01:02:06.938   342  8623 I resolv  : retrying_poll: 57 retrying_poll
+11-11 01:02:06.940   342  8623 I resolv  : retrying_poll: 57 retrying_poll returning 1
+11-11 01:02:06.940   342  8623 I resolv  : res_nsend: used send_dg 487 terrno: 0
+11-11 01:02:06.940   342  8623 I resolv  : res_stats_set_sample: rcode = 0, sec = 2
+11-11 01:02:06.940   342  8623 I resolv  : res_cache_add_stats_sample_locked: adding sample to stats, next = 19, count = 19
+11-11 01:02:06.940   342  8623 D resolv  : res_nsend: got answer:
+11-11 01:02:06.940   342  8623 I resolv  : answer_getTTL: TTL = 97
+11-11 01:02:06.940   342  8623 I resolv  : _cache_add_p: entry 20 added (count=20)
+11-11 01:02:06.940   342  8623 I resolv  : cache_dump_mru_locked: MRU LIST (20):  20 13 12 15 14 9 8 4 5 19 18 7 6 17 16 11 10 2 3 1
+11-11 01:02:06.940   342  8623 D resolv  : doQuery: rcode=0, ancount=8
+--------- beginning of system
+11-11 01:02:06.941   546  1693 D CompatibilityChangeReporter: Compat change id reported: 168419799; UID 10135; state: DISABLED
+11-11 01:02:06.941   342  8624 D resolv  : doQuery: (1, 1)
+11-11 01:02:06.941   342  8624 D resolv  : res_nmkquery: (QUERY, IN, A)
+11-11 01:02:06.941   342  8624 D resolv  : res_nsend
+11-11 01:02:06.942   342  8624 I resolv  : resolv_cache_lookup: lookup
+11-11 01:02:06.942   342  8624 I resolv  : resolv_cache_lookup: NOT IN CACHE
+11-11 01:02:06.942   342  8624 I resolv  : resolv_populate_res_for_net: netid=101
+11-11 01:02:06.942  1148  5345 I AlarmManager: set [name: SystemMemoryCache type: 2 triggerAtMillis: 315360071286 windowMillis: -1 intervalMillis: 0]
+11-11 01:02:06.944   342  8624 I resolv  : res_stats_usable_server: NS stats: S 20 + E 0 + T 0 + I 0 = 20, rtt = 8, min_samples = 8
+11-11 01:02:06.944   342  8624 I resolv  : res_stats_usable_server: success rate 100
+11-11 01:02:06.944   342  8624 D resolv  : res_nsend: Querying server (# 1) address = 10.0.2.3:53
+11-11 01:02:06.944   342  8624 D resolv  : send_dg: new DG socket
+11-11 01:02:06.944   342  8624 I resolv  : get_timeout: using timeout of 5000 msec
+11-11 01:02:06.944   342  8624 I resolv  : retrying_poll: 57 retrying_poll
+11-11 01:02:06.946   342  8624 I resolv  : retrying_poll: 57 retrying_poll returning 1
+11-11 01:02:06.946   342  8624 I resolv  : res_nsend: used send_dg 419 terrno: 0
+11-11 01:02:06.946   342  8624 I resolv  : res_stats_set_sample: rcode = 0, sec = 2
+11-11 01:02:06.946   342  8624 I resolv  : res_cache_add_stats_sample_locked: adding sample to stats, next = 20, count = 20
+11-11 01:02:06.946   342  8624 D resolv  : res_nsend: got answer:
+11-11 01:02:06.946   342  8624 I resolv  : answer_getTTL: TTL = 63
+11-11 01:02:06.946   342  8624 I resolv  : _cache_add_p: entry 21 added (count=21)
+11-11 01:02:06.946   342  8624 I resolv  : cache_dump_mru_locked: MRU LIST (21):  21 20 13 12 15 14 9 8 4 5 19 18 7 6 17 16 11 10 2 3 1
+11-11 01:02:06.947   342  8624 D resolv  : doQuery: rcode=0, ancount=8
+11-11 01:02:06.948  8216  8216 D SystemUIBootTiming: StartServicescom.android.systemui.ScreenDecorations took to complete: 61ms
+11-11 01:02:06.949  8216  8421 D AuthController: onFingerprintProvidersAvailable | sensors: [ID: 0, Strength: 2, Type: 1]
+11-11 01:02:06.949  8216  8216 D SystemUIBootTiming: StartServicescom.android.systemui.biometrics.AuthController took to complete: 2ms
+11-11 01:02:06.950  8216  8216 D SystemUIBootTiming: StartServicescom.android.systemui.SliceBroadcastRelayHandler took to complete: 0ms
+11-11 01:02:06.952  8216  8216 D SystemUIBootTiming: StartServicescom.android.systemui.statusbar.notification.InstantAppNotifier took to complete: 3ms
+11-11 01:02:06.953  1148  5345 I TapAndPay: getInstance: new instance created [CONTEXT service_id=79 ]
+11-11 01:02:06.954  1148  1765 W .gms.persisten: Accessing hidden method Landroid/net/ConnectivityManager;->isNetworkSupported(I)Z (max-target-p, reflection, denied)
+11-11 01:02:06.955  8216  8216 D ThemeOverlayController: Start
+11-11 01:02:06.956  8216  8216 D SystemUIBootTiming: StartServicescom.android.systemui.theme.ThemeOverlayController took to complete: 3ms
+11-11 01:02:06.956  8216  8216 D SystemUIBootTiming: StartServicescom.android.systemui.accessibility.WindowMagnification took to complete: 0ms
+11-11 01:02:06.957   546  1623 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(uid/pid:10112/7084, android.os.BinderProxy@1c23660)
+11-11 01:02:06.957   546   698 D ConnectivityService: releasing NetworkRequest [ REQUEST id=429, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10112 RequestorUid: 10112 RequestorPkg: com.google.android.apps.maps] ] (release request)
+11-11 01:02:06.957   343   343 I Zygote  : Process 7084 exited due to signal 9 (Killed)
+11-11 01:02:06.958  8583  8583 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10135; state: ENABLED
+11-11 01:02:06.960   546  1557 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(uid/pid:10112/7084, android.os.BinderProxy@a829719)
+11-11 01:02:06.965   546   627 E VerityUtils: Failed to measure fs-verity, errno 1: /product/app/YouTube/YouTube.apk
+11-11 01:02:06.967  1148  8627 I TapAndPay: Maintaining payment bundles [CONTEXT service_id=79 ]
+11-11 01:02:06.967  4366  5279 W SQLiteLog: (28) double-quoted string literal: "1794166326967"
+11-11 01:02:06.967  4366  5279 W SQLiteLog: (28) double-quoted string literal: "1"
+11-11 01:02:06.969  8216  8216 D SystemUIBootTiming: StartServicescom.android.systemui.accessibility.SystemActions took to complete: 13ms
+11-11 01:02:06.969  8216  8216 D SystemUIBootTiming: StartServicescom.android.systemui.toast.ToastUI took to complete: 1ms
+11-11 01:02:06.970  8216  8216 D SystemUIBootTiming: StartServicescom.android.systemui.wmshell.WMShell took to complete: 0ms
+11-11 01:02:06.970  4366  8543 I Vision  : Supported ABIS: [x86_64, arm64-v8a]
+11-11 01:02:06.955   546   546 W PackageManagerB: type=1400 audit(0.0:13): avc: denied { ioctl } for path="/product/app/YouTube/YouTube.apk" dev="dm-2" ino=132 ioctlcmd=0x6686 scontext=u:r:system_server:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=0
+11-11 01:02:06.981  1148  8627 I TapAndPay: Finished maintaining payment bundles [CONTEXT service_id=79 ]
+--------- beginning of crash
+11-11 01:02:06.991  8216  8584 E AndroidRuntime: FATAL EXCEPTION: ScreenDecorations
+11-11 01:02:06.991  8216  8584 E AndroidRuntime: Process: com.android.systemui, PID: 8216
+11-11 01:02:06.991  8216  8584 E AndroidRuntime: java.lang.NullPointerException: Parameter specified as non-null is null: method kotlin.jvm.internal.Intrinsics.checkNotNullParameter, parameter bottomLeft
+11-11 01:02:06.991  8216  8584 E AndroidRuntime: 	at com.android.systemui.statusbar.events.PrivacyDotViewController.initialize(Unknown Source:22)
+11-11 01:02:06.991  8216  8584 E AndroidRuntime: 	at com.android.systemui.ScreenDecorations.setupDecorations(ScreenDecorations.java:315)
+11-11 01:02:06.991  8216  8584 E AndroidRuntime: 	at com.android.systemui.ScreenDecorations.startOnScreenDecorationsThread(ScreenDecorations.java:252)
+11-11 01:02:06.991  8216  8584 E AndroidRuntime: 	at com.android.systemui.ScreenDecorations.$r8$lambda$bRx4s-frKyGv-SmpobluoualBbQ(Unknown Source:0)
+11-11 01:02:06.991  8216  8584 E AndroidRuntime: 	at com.android.systemui.ScreenDecorations$$ExternalSyntheticLambda2.run(Unknown Source:2)
+11-11 01:02:06.991  8216  8584 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:938)
+11-11 01:02:06.991  8216  8584 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-11 01:02:06.991  8216  8584 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-11 01:02:06.991  8216  8584 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:288)
+11-11 01:02:06.991  8216  8584 E AndroidRuntime: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-11 01:02:06.994   546  1693 W ActivityManager: Process com.android.systemui has crashed too many times, killing! Reason: crashed quickly
+11-11 01:02:06.994  8216  8584 I Process : Sending signal. PID: 8216 SIG: 9
+11-11 01:02:06.996  4366  4440 I gle.android.gm: Background young concurrent copying GC freed 141300(5418KB) AllocSpace objects, 22(1148KB) LOS objects, 18% free, 14MB/18MB, paused 994us,10us total 186.486ms
+11-11 01:02:06.997  4366  6625 I Wear_Controller: Wearable module requires a companion app to be installed.
+11-11 01:02:06.997  4366  6625 I Wear_Controller: onStartup - Wear is not available on this device.
+11-11 01:02:07.005  4366  8151 I ChimeraConfigurator: Starting update, reason: 4 urgentFeatures: vision.ocr:-1
+11-11 01:02:07.005  8583  8583 V GraphicsEnvironment: ANGLE Developer option for 'com.google.pixel.exo' set to: 'default'
+11-11 01:02:07.005  8583  8583 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+11-11 01:02:07.009  8583  8583 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-11 01:02:07.009  8583  8583 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-11 01:02:07.015  4366  5551 I Checkin : [AndroidCheckinProtoModule] Checkin reason type: 1 attempt count: 1.
+11-11 01:02:07.031   342  8648 D resolv  : GetAddrInfoHandler::run: {101 101 101 983141 10124 0}
+11-11 01:02:07.031   342  8648 D resolv  : resolv_getaddrinfo: explore_fqdn(): ai_family=0 ai_socktype=1 ai_protocol=6
+11-11 01:02:07.035   342  8649 D resolv  : doQuery: (1, 28)
+11-11 01:02:07.035   342  8649 D resolv  : res_nmkquery: (QUERY, IN, AAAA)
+11-11 01:02:07.035   342  8650 D resolv  : doQuery: (1, 1)
+11-11 01:02:07.035   342  8650 D resolv  : res_nmkquery: (QUERY, IN, A)
+11-11 01:02:07.035   342  8650 D resolv  : res_nsend
+11-11 01:02:07.035   342  8649 D resolv  : res_nsend
+11-11 01:02:07.035   342  8650 I resolv  : resolv_cache_lookup: lookup
+11-11 01:02:07.035   342  8649 I resolv  : resolv_cache_lookup: lookup
+11-11 01:02:07.035   342  8650 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x76f889e0f760
+11-11 01:02:07.035   342  8650 D resolv  : doQuery: rcode=0, ancount=8
+11-11 01:02:07.035   342  8649 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x76f899e0cb10
+11-11 01:02:07.035   342  8649 D resolv  : doQuery: rcode=0, ancount=8
+11-11 01:02:07.057   546  1693 W ActivityManager: Unable to start service Intent { act=com.google.pixel.exo.WIRECUTTER pkg=com.google.pixel.exo.bootstrapping } U=0: not found
+11-11 01:02:07.058  8583  8583 W Exo     : PersistentService: Unable to bind to wirecutter
+11-11 01:02:07.066   484   484 D BufferPoolAccessor2.0: Destruction - bufferpool2 0x7d07a81443d8 cached: 0/0M, 0/0% in use; allocs: 16, 75% recycled; transfers: 15, 73% unfetched
+11-11 01:02:07.066   484   865 D BufferPoolAccessor2.0: Destruction - bufferpool2 0x7d07a813f2e8 cached: 0/0M, 0/0% in use; allocs: 17, 76% recycled; transfers: 16, 75% unfetched
+11-11 01:02:07.067   484   484 D BufferPoolAccessor2.0: Destruction - bufferpool2 0x7d07a8140c58 cached: 0/0M, 0/0% in use; allocs: 7, 86% recycled; transfers: 6, 83% unfetched
+11-11 01:02:07.068  4366  8151 I GmsDebugLogger: [73] 1801
+11-11 01:02:07.069   343   343 I Zygote  : Process 8216 exited due to signal 9 (Killed)
+11-11 01:02:07.071   546  1196 E LockoutResetTracker: Callback binder died: android.os.BinderProxy@833797e
+11-11 01:02:07.071   546  1196 E LockoutResetTracker: Removing dead callback for: com.android.systemui
+--------- beginning of kernel
+11-11 01:02:07.056     0     0 I binder  : undelivered TRANSACTION_COMPLETE
+11-11 01:02:07.058     0     0 I binder  : undelivered transaction 387147, process died.
+11-11 01:02:07.079  4366  8151 W ZappDownloader: No successful module downloads for requested features [vision.ocr].
+11-11 01:02:07.079  4366  8151 I GmsDebugLogger: [30] [VisionOcrDynamite.integ:231602402100000],[MlkitOcrCommon.optional:225014100800],[TfliteDynamiteDynamite.integ:264010405100800]
+11-11 01:02:07.072   546  1196 W AudioService.RecordingActivityMonitor: client died
+11-11 01:02:07.080   546  1967 I StatusBarManagerService: binder died for pkg=com.android.systemui
+11-11 01:02:07.080   546  1969 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(uid/pid:10134/8216, android.os.BinderProxy@5cab72c)
+11-11 01:02:07.081   546   698 D ConnectivityService: releasing NetworkRequest [ REQUEST id=482, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10134 RequestorUid: 10134 RequestorPkg: com.android.systemui] ] (release request)
+11-11 01:02:07.081   546  1623 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(uid/pid:10134/8216, android.os.BinderProxy@32795f5)
+11-11 01:02:07.081   546   698 D ConnectivityService: releasing NetworkRequest [ REQUEST id=484, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10134 RequestorUid: 10134 RequestorPkg: com.android.systemui] ] (release request)
+11-11 01:02:07.081   546  1346 E BiometricService: Enabled callback binder died
+11-11 01:02:07.081   546   907 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(uid/pid:10134/8216, android.os.BinderProxy@cc21a18)
+11-11 01:02:07.082   546   897 W AS.AudioService: Current remote volume controller died, unregistering
+11-11 01:02:07.082   546  1694 D NotificationListeners: Removing active service ComponentInfo{com.android.systemui/com.android.systemui.statusbar.NotificationListener}
+11-11 01:02:07.082   546  2038 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(uid/pid:10134/8216, android.os.BinderProxy@809af8a)
+11-11 01:02:07.082   546  1195 I ActivityManager: Process com.android.systemui (pid 8216) has died: pers PER 
+11-11 01:02:07.082   546   897 W VolumeController: Error calling dismiss
+11-11 01:02:07.082   546   897 W VolumeController: android.os.DeadObjectException
+11-11 01:02:07.082   546   897 W VolumeController: 	at android.os.BinderProxy.transactNative(Native Method)
+11-11 01:02:07.082   546   897 W VolumeController: 	at android.os.BinderProxy.transact(BinderProxy.java:571)
+11-11 01:02:07.082   546   897 W VolumeController: 	at android.media.IVolumeController$Stub$Proxy.dismiss(IVolumeController.java:270)
+11-11 01:02:07.082   546   897 W VolumeController: 	at com.android.server.audio.AudioService$VolumeController.postDismiss(AudioService.java:9061)
+11-11 01:02:07.082   546   897 W VolumeController: 	at com.android.server.audio.AudioService.setVolumeController(AudioService.java:8886)
+11-11 01:02:07.082   546   897 W VolumeController: 	at com.android.server.audio.AudioService$5.binderDied(AudioService.java:8895)
+11-11 01:02:07.082   546   897 W VolumeController: 	at android.os.IBinder$DeathRecipient.binderDied(IBinder.java:314)
+11-11 01:02:07.082   546   897 W VolumeController: 	at android.os.BinderProxy.sendDeathNotice(BinderProxy.java:685)
+11-11 01:02:07.084   546   611 I libprocessgroup: Successfully killed process cgroup uid 10134 pid 8216 in 0ms
+11-11 01:02:07.084   546  1194 D DisplayAreaOrganizerController: Organizer died before sending onDisplayAreaVanished
+11-11 01:02:07.088   546   745 I WindowManager: WIN DEATH: Window{c28a9ec u0 NotificationShade}
+11-11 01:02:07.088   546   745 W InputManager-JNI: Input channel object 'c28a9ec NotificationShade (client)' was disposed without first being removed with the input manager!
+11-11 01:02:07.089   546   595 I WindowManager: WIN DEATH: Window{f1c4a84 u0 StatusBar}
+11-11 01:02:07.089   546   595 W InputManager-JNI: Input channel object 'f1c4a84 StatusBar (client)' was disposed without first being removed with the input manager!
+11-11 01:02:07.090   546  1693 I WindowManager: WIN DEATH: Window{24995b3 u0 ScreenDecorOverlay}
+11-11 01:02:07.090   546  1693 W InputManager-JNI: Input channel object '24995b3 ScreenDecorOverlay (client)' was disposed without first being removed with the input manager!
+11-11 01:02:07.093   546  1695 W WindowManager: Cannot find window which accessibility connection is added to
+11-11 01:02:07.093   546  1764 W WindowManager: Cannot find window which accessibility connection is added to
+11-11 01:02:07.094   546  1557 W WindowManager: Cannot find window which accessibility connection is added to
+11-11 01:02:07.094   363   414 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+11-11 01:02:07.095   546  1437 I WindowManager: WIN DEATH: Window{8e195bd u0 ShellDropTarget}
+11-11 01:02:07.096   546  1437 W InputManager-JNI: Input channel object '8e195bd ShellDropTarget (client)' was disposed without first being removed with the input manager!
+11-11 01:02:07.098   546  1195 W ActivityManager: Scheduling restart of crashed service com.android.systemui/.keyguard.KeyguardService in 0ms for persistent
+11-11 01:02:07.099   546  1195 W ActivityManager: Scheduling restart of crashed service com.android.systemui/.ImageWallpaper in 0ms for persistent
+11-11 01:02:07.099   546  1195 W ActivityManager: Scheduling restart of crashed service com.android.systemui/.SystemUIService in 0ms for persistent
+11-11 01:02:07.101   546  1195 W ActivityManager: Re-adding persistent process ProcessRecord{b06e561 8216:com.android.systemui/u0a134}
+11-11 01:02:07.102   546  1195 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10134; state: DISABLED
+11-11 01:02:07.102   546   610 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10134; state: ENABLED
+11-11 01:02:07.107   343   343 D Zygote  : Forked child process 8657
+11-11 01:02:07.111   363   414 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+11-11 01:02:07.115  8657  8657 W ndroid.systemu: Unexpected CPU variant for X86 using defaults: x86_64
+11-11 01:02:07.115  1070  1070 D TouchInteractionService: Touch service destroyed: user=0
+11-11 01:02:07.115  1070  4216 D EGL_emulation: app_time_stats: avg=816.01ms min=13.80ms max=1618.22ms count=2
+11-11 01:02:07.118   546  1437 W InputManager-JNI: Input channel object 'recents_animation_input_consumer (client)' was disposed without first being removed with the input manager!
+11-11 01:02:07.119   546  1197 W ActivityManager: Unable to start service Intent { act=android.service.smartspace.SmartspaceService cmp=com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSmartspaceService } U=0: not found
+11-11 01:02:07.119   546  1197 W RemoteSmartspaceService: could not bind to Intent { act=android.service.smartspace.SmartspaceService cmp=com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSmartspaceService } using flags 67112961
+11-11 01:02:07.119   437   467 I adbd    : jdwp connection from 8657
+11-11 01:02:07.125  8434  8571 I FA      : App measurement disabled by setAnalyticsCollectionEnabled(false)
+11-11 01:02:07.126  4366  8151 W ChimeraConfigService: Retry attempt was throttled. [CONTEXT service_id=264 ]
+11-11 01:02:07.126   546   610 I ActivityManager: Start proc 8657:com.android.systemui/u0a134 for restart com.android.systemui
+11-11 01:02:07.126   363   414 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+11-11 01:02:07.127  4366  8151 I GmsDebugLogger: [83] 1 [vision.ocr]
+11-11 01:02:07.127   546   546 W ActivityManager: Unbind failed: could not find connection for android.app.LoadedApk$ServiceDispatcher$InnerConnection@3893b8c
+11-11 01:02:07.127  8434  8571 I FA      : App measurement initialized, version: 75066
+11-11 01:02:07.127  8434  8571 I FA      : To enable debug logging run: adb shell setprop log.tag.FA VERBOSE
+11-11 01:02:07.127  8434  8571 I FA      : To enable faster debug mode event logging run:
+11-11 01:02:07.127  8434  8571 I FA      :   adb shell setprop debug.firebase.analytics.app com.google.android.youtube
+11-11 01:02:07.132   546   601 W ActivityManager: setHasOverlayUi called on unknown pid: 8216
+11-11 01:02:07.133  4366  4366 D CompatibilityChangeReporter: Compat change id reported: 119147584; UID 10100; state: ENABLED
+11-11 01:02:07.143  8657  8657 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10134; state: ENABLED
+11-11 01:02:07.143   363   414 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+11-11 01:02:07.145  4366  8543 W Vision  : Request for optional module download of ocr failed. Request again.
+11-11 01:02:07.146  4366  8543 I Vision  : Schedule retrying download ocr at 71490 with backoff 10 seconds
+11-11 01:02:07.179  1148  6621 W SystemServiceRegistry: No service published for: contexthub
+11-11 01:02:07.182  8657  8657 V GraphicsEnvironment: ANGLE Developer option for 'com.android.systemui' set to: 'default'
+11-11 01:02:07.182  8657  8657 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+11-11 01:02:07.188  1148  1765 I GCoreUlr: WorldUpdater received intent Intent { act=com.google.android.location.reporting.ACTION_UPDATE_WORLD cmp=com.google.android.gms/com.google.android.location.reporting.service.DispatchingService (has extras) } with receiverAction init
+11-11 01:02:07.189  8657  8657 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-11 01:02:07.190  4366  8413 E WorkSourceUtil: Could not find package: com.google.android.gms.westworld
+11-11 01:02:07.190  8657  8657 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-11 01:02:07.192  8657  8657 V SystemUIService: SystemUIApplication constructed.
+11-11 01:02:07.194  4366  8413 E WorkSourceUtil: Could not find package: com.google.android.gms.westworld
+11-11 01:02:07.209  1148  1765 I GCoreUlr: WorldUpdater:init: Ensuring that reporting is stopped because of reasons: (no Google accounts)
+11-11 01:02:07.216  4366  4440 I gle.android.gm: Background concurrent copying GC freed 76790(3962KB) AllocSpace objects, 33(1520KB) LOS objects, 50% free, 14MB/28MB, paused 30us,15us total 140.983ms
+11-11 01:02:07.218  1148  1765 I GCoreUlr: Unbound from all signal providers.
+11-11 01:02:07.231  1148  1765 I GCoreUlr: DispatchingService ignoring Intent { act=android.net.wifi.WIFI_STATE_CHANGED flg=0x4000010 (has extras) } because ULR inactive
+11-11 01:02:07.234  1148  1148 I GCoreUlr: Unbound from all signal providers.
+11-11 01:02:07.234  1148  1148 I GCoreUlr: Stopping handler for UlrDispSvcFast
+11-11 01:02:07.238  1148  8316 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 71 [CONTEXT service_id=218 ]
+11-11 01:02:07.239  1148  8316 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 71 [CONTEXT service_id=218 ]
+11-11 01:02:07.243  1148  8316 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 218 uptime_millis: 218 exec_start_elapsed_seconds: 71 [CONTEXT service_id=218 ]
+11-11 01:02:07.249   910   924 W System  : A resource failed to call close. 
+11-11 01:02:07.250   910   924 W System  : A resource failed to call close. 
+11-11 01:02:07.250   910   924 W System  : A resource failed to call close. 
+11-11 01:02:07.250   910   924 W System  : A resource failed to call close. 
+11-11 01:02:07.250   910   924 W System  : A resource failed to call close. 
+11-11 01:02:07.250   910   924 W System  : A resource failed to call end. 
+11-11 01:02:07.250   910   924 W System  : A resource failed to call end. 
+11-11 01:02:07.251  1148  8316 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 42 uptime_millis: 42 exec_start_elapsed_seconds: 71 [CONTEXT service_id=218 ]
+11-11 01:02:07.261   363   414 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+11-11 01:02:07.263  8657  8657 D CompatibilityChangeReporter: Compat change id reported: 160794467; UID 10134; state: ENABLED
+11-11 01:02:07.266  1148  1148 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.pseudonymous.service.START dat=chimera-action: cmp=com.google.android.gms/.chimera.PersistentApiService }
+11-11 01:02:07.266  1148  1148 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.pseudonymous.service.START dat=chimera-action: cmp=com.google.android.gms/.chimera.PersistentApiService }
+11-11 01:02:07.281  4366  5469 I cr_CronetLibraryLoader: Cronet version: 108.0.5359.61, arch: x86_64
+11-11 01:02:07.288   546  1196 D ConnectivityService: requestNetwork for uid/pid:10100/4366 activeRequest: null callbackRequest: 497 [NetworkRequest [ REQUEST id=498, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10100 RequestorUid: 10100 RequestorPkg: com.google.android.gms] ]] callback flags: 0 priority: 2147483647
+11-11 01:02:07.289   546   698 D ConnectivityService: NetReassign [498 : null → 101]
+11-11 01:02:07.290   546   691 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=498, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10100 RequestorUid: 10100 RequestorPkg: com.google.android.gms] ]
+11-11 01:02:07.290   546   691 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=498, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10100 RequestorUid: 10100 RequestorPkg: com.google.android.gms] ]
+11-11 01:02:07.290   546   691 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=498, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10100 RequestorUid: 10100 RequestorPkg: com.google.android.gms] ]
+11-11 01:02:07.292   546   698 D ConnectivityService: NetReassign [no changes]
+11-11 01:02:07.296   342  8690 D resolv  : GetAddrInfoHandler::run: {101 786533 101 983141 10100 0}
+11-11 01:02:07.296   342  8690 D resolv  : resolv_getaddrinfo: explore_fqdn(): ai_family=0 ai_socktype=1 ai_protocol=6
+11-11 01:02:07.297   342  8691 D resolv  : doQuery: (1, 28)
+11-11 01:02:07.297   342  8691 D resolv  : res_nmkquery: (QUERY, IN, AAAA)
+11-11 01:02:07.297   342  8691 D resolv  : res_nsend
+11-11 01:02:07.297   342  8691 I resolv  : resolv_cache_lookup: lookup
+11-11 01:02:07.297   342  8691 I resolv  : resolv_cache_lookup: NOT IN CACHE
+11-11 01:02:07.297   342  8691 I resolv  : resolv_populate_res_for_net: netid=101
+11-11 01:02:07.297   342  8691 I resolv  : res_stats_usable_server: NS stats: S 21 + E 0 + T 0 + I 0 = 21, rtt = 8, min_samples = 8
+11-11 01:02:07.297   342  8691 I resolv  : res_stats_usable_server: success rate 100
+11-11 01:02:07.297   342  8691 D resolv  : res_nsend: Querying server (# 1) address = 10.0.2.3:53
+11-11 01:02:07.297   342  8691 D resolv  : send_dg: new DG socket
+11-11 01:02:07.300   342  8691 I resolv  : get_timeout: using timeout of 5000 msec
+11-11 01:02:07.300   342  8691 I resolv  : retrying_poll: 58 retrying_poll
+11-11 01:02:07.300   342  8691 I resolv  : retrying_poll: 58 retrying_poll returning 1
+11-11 01:02:07.300  4075  4075 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3420 
+11-11 01:02:07.300   342  8691 I resolv  : res_nsend: used send_dg 494 terrno: 0
+11-11 01:02:07.300   342  8691 I resolv  : res_stats_set_sample: rcode = 0, sec = 0
+11-11 01:02:07.300   342  8691 I resolv  : res_cache_add_stats_sample_locked: adding sample to stats, next = 21, count = 21
+11-11 01:02:07.300   342  8691 D resolv  : res_nsend: got answer:
+11-11 01:02:07.300   342  8691 I resolv  : answer_getTTL: TTL = 207
+11-11 01:02:07.300   342  8691 I resolv  : _cache_add_p: entry 22 added (count=22)
+11-11 01:02:07.300   342  8691 I resolv  : cache_dump_mru_locked: MRU LIST (22):  22 12 13 21 20 15 14 9 8 4 5 19 18 7 6 17 16 11 10 2 3 1
+11-11 01:02:07.300   342  8691 D resolv  : doQuery: rcode=0, ancount=8
+11-11 01:02:07.300  4075  4075 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():2002 
+11-11 01:02:07.301  4075  4075 I DeviceUnlockedTag: DeviceUnlockedTag.notifyDeviceLockStatusChanged():31 Notify device unlocked.
+11-11 01:02:07.301   342  8692 D resolv  : doQuery: (1, 1)
+11-11 01:02:07.302   342  8692 D resolv  : res_nmkquery: (QUERY, IN, A)
+11-11 01:02:07.302   342  8692 D resolv  : res_nsend
+11-11 01:02:07.302   342  8692 I resolv  : resolv_cache_lookup: lookup
+11-11 01:02:07.302   342  8692 I resolv  : resolv_cache_lookup: NOT IN CACHE
+11-11 01:02:07.302   342  8692 I resolv  : resolv_populate_res_for_net: netid=101
+11-11 01:02:07.306   342  8692 I resolv  : res_stats_usable_server: NS stats: S 22 + E 0 + T 0 + I 0 = 22, rtt = 7, min_samples = 8
+11-11 01:02:07.306   342  8692 I resolv  : res_stats_usable_server: success rate 100
+11-11 01:02:07.306   342  8692 D resolv  : res_nsend: Querying server (# 1) address = 10.0.2.3:53
+11-11 01:02:07.306   342  8692 D resolv  : send_dg: new DG socket
+11-11 01:02:07.306   342  8692 I resolv  : get_timeout: using timeout of 5000 msec
+11-11 01:02:07.306   342  8692 I resolv  : retrying_poll: 58 retrying_poll
+11-11 01:02:07.309   342  8692 I resolv  : retrying_poll: 58 retrying_poll returning 1
+11-11 01:02:07.309   342  8692 I resolv  : res_nsend: used send_dg 426 terrno: 0
+11-11 01:02:07.309   342  8692 I resolv  : res_stats_set_sample: rcode = 0, sec = 3
+11-11 01:02:07.309   342  8692 I resolv  : res_cache_add_stats_sample_locked: adding sample to stats, next = 22, count = 22
+11-11 01:02:07.309   342  8692 D resolv  : res_nsend: got answer:
+11-11 01:02:07.309   342  8692 I resolv  : answer_getTTL: TTL = 133
+11-11 01:02:07.309   342  8692 I resolv  : _cache_add_p: entry 23 added (count=23)
+11-11 01:02:07.309   342  8692 I resolv  : cache_dump_mru_locked: MRU LIST (23):  23 22 12 13 21 20 15 14 9 8 4 5 19 18 7 6 17 16 11 10 2 3 1
+11-11 01:02:07.309   342  8692 D resolv  : doQuery: rcode=0, ancount=8
+11-11 01:02:07.319  4366  5551 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-11 01:02:07.320  4366  5551 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@225014047@22.50.14 (190800-499278674):2)
+11-11 01:02:07.322  1148  8316 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 71 [CONTEXT service_id=218 ]
+11-11 01:02:07.322  4366  5551 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@225014047@22.50.14 (190800-499278674):0)
+11-11 01:02:07.322  1148  8316 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 57 uptime_millis: 57 exec_start_elapsed_seconds: 71 [CONTEXT service_id=218 ]
+11-11 01:02:07.324   342  8697 D resolv  : GetAddrInfoHandler::run: {101 786533 101 983141 10100 0}
+11-11 01:02:07.324   342  8697 D resolv  : resolv_getaddrinfo: explore_fqdn(): ai_family=0 ai_socktype=1 ai_protocol=6
+11-11 01:02:07.325   342  8698 D resolv  : doQuery: (1, 28)
+11-11 01:02:07.325   342  8698 D resolv  : res_nmkquery: (QUERY, IN, AAAA)
+11-11 01:02:07.325   342  8698 D resolv  : res_nsend
+11-11 01:02:07.325   342  8698 I resolv  : resolv_cache_lookup: lookup
+11-11 01:02:07.325   342  8698 I resolv  : resolv_cache_lookup: NOT IN CACHE
+11-11 01:02:07.325   342  8698 I resolv  : resolv_populate_res_for_net: netid=101
+11-11 01:02:07.325   342  8698 I resolv  : res_stats_usable_server: NS stats: S 23 + E 0 + T 0 + I 0 = 23, rtt = 7, min_samples = 8
+11-11 01:02:07.325   342  8698 I resolv  : res_stats_usable_server: success rate 100
+11-11 01:02:07.325   342  8698 D resolv  : res_nsend: Querying server (# 1) address = 10.0.2.3:53
+11-11 01:02:07.325   342  8698 D resolv  : send_dg: new DG socket
+11-11 01:02:07.325   342  8698 I resolv  : get_timeout: using timeout of 5000 msec
+11-11 01:02:07.326   342  8698 I resolv  : retrying_poll: 58 retrying_poll
+11-11 01:02:07.331   342  8698 I resolv  : retrying_poll: 58 retrying_poll returning 1
+11-11 01:02:07.331   342  8698 I resolv  : res_nsend: used send_dg 331 terrno: 0
+11-11 01:02:07.331   342  8698 I resolv  : res_stats_set_sample: rcode = 0, sec = 5
+11-11 01:02:07.331   342  8698 I resolv  : res_cache_add_stats_sample_locked: adding sample to stats, next = 23, count = 23
+11-11 01:02:07.331   342  8698 D resolv  : res_nsend: got answer:
+11-11 01:02:07.331   342  8698 I resolv  : answer_getTTL: TTL = 126
+11-11 01:02:07.331   342  8698 I resolv  : _cache_add_p: entry 24 added (count=24)
+11-11 01:02:07.331   342  8698 I resolv  : cache_dump_mru_locked: MRU LIST (24):  24 23 22 12 13 21 20 15 14 9 8 4 5 19 18 7 6 17 16 11 10 2 3 1
+11-11 01:02:07.331   342  8698 D resolv  : doQuery: rcode=0, ancount=1
+11-11 01:02:07.333   342  8699 D resolv  : doQuery: (1, 1)
+11-11 01:02:07.333   342  8699 D resolv  : res_nmkquery: (QUERY, IN, A)
+11-11 01:02:07.333   342  8699 D resolv  : res_nsend
+11-11 01:02:07.333   342  8699 I resolv  : resolv_cache_lookup: lookup
+11-11 01:02:07.333   342  8699 I resolv  : resolv_cache_lookup: NOT IN CACHE
+11-11 01:02:07.333   342  8699 I resolv  : resolv_populate_res_for_net: netid=101
+11-11 01:02:07.336   342  8699 I resolv  : res_stats_usable_server: NS stats: S 24 + E 0 + T 0 + I 0 = 24, rtt = 7, min_samples = 8
+11-11 01:02:07.336   342  8699 I resolv  : res_stats_usable_server: success rate 100
+11-11 01:02:07.336   342  8699 D resolv  : res_nsend: Querying server (# 1) address = 10.0.2.3:53
+11-11 01:02:07.336   342  8699 D resolv  : send_dg: new DG socket
+11-11 01:02:07.336   342  8699 I resolv  : get_timeout: using timeout of 5000 msec
+11-11 01:02:07.336   342  8699 I resolv  : retrying_poll: 58 retrying_poll
+11-11 01:02:07.338   342  8699 I resolv  : retrying_poll: 58 retrying_poll returning 1
+11-11 01:02:07.338   342  8699 I resolv  : res_nsend: used send_dg 319 terrno: 0
+11-11 01:02:07.338   342  8699 I resolv  : res_stats_set_sample: rcode = 0, sec = 2
+11-11 01:02:07.338   342  8699 I resolv  : res_cache_add_stats_sample_locked: adding sample to stats, next = 24, count = 24
+11-11 01:02:07.338   342  8699 D resolv  : res_nsend: got answer:
+11-11 01:02:07.338   342  8699 I resolv  : answer_getTTL: TTL = 69
+11-11 01:02:07.338   342  8699 I resolv  : _cache_add_p: entry 25 added (count=25)
+11-11 01:02:07.338   342  8699 I resolv  : cache_dump_mru_locked: MRU LIST (25):  25 24 23 22 12 13 21 20 15 14 9 8 4 5 19 18 7 6 17 16 11 10 2 3 1
+11-11 01:02:07.338   342  8699 D resolv  : doQuery: rcode=0, ancount=1
+11-11 01:02:07.340  1148  8316 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.stats.PlatformStatsCollectorService started execution. cause:5 exec_start_elapsed_seconds: 71 [CONTEXT service_id=218 ]
+11-11 01:02:07.346  8657  8678 W Looper  : Slow dispatch took 72ms wmshell.main h=android.os.Handler c=com.android.wm.shell.common.ShellExecutor$$ExternalSyntheticLambda0@7c3d46 m=0
+11-11 01:02:07.346  8657  8678 W Looper  : Slow delivery took 56ms wmshell.main h=android.os.Handler c=null m=10
+11-11 01:02:07.348  8657  8657 W OneHandedController: Device doesn't support OneHanded feature
+11-11 01:02:07.362  4366  5551 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-11 01:02:07.362  4366  5551 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@225014047@22.50.14 (190800-499278674):2)
+11-11 01:02:07.362  4366  5551 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@225014047@22.50.14 (190800-499278674):0)
+11-11 01:02:07.366  1148  8515 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.stats.PlatformStatsCollectorService started execution. cause:5 exec_start_elapsed_seconds: 71 [CONTEXT service_id=218 ]
+11-11 01:02:07.369  8657  8678 W Looper  : Drained
+11-11 01:02:07.374  1148  1765 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.stats.PlatformStatsCollectorService finished executing. cause:5 result: 1 elapsed_millis: 68 uptime_millis: 68 exec_start_elapsed_seconds: 71 [CONTEXT service_id=218 ]
+11-11 01:02:07.388  1148  1765 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.stats.PlatformStatsCollectorService finished executing. cause:5 result: 1 elapsed_millis: 14 uptime_millis: 14 exec_start_elapsed_seconds: 71 [CONTEXT service_id=218 ]
+11-11 01:02:07.412  1148  8316 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.stats.PlatformStatsCollectorService started execution. cause:5 exec_start_elapsed_seconds: 71 [CONTEXT service_id=218 ]
+11-11 01:02:07.415  8657  8657 W SystemServiceRegistry: No service published for: face
+11-11 01:02:07.417  1148  8515 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.stats.PlatformStatsCollectorService started execution. cause:5 exec_start_elapsed_seconds: 71 [CONTEXT service_id=218 ]
+11-11 01:02:07.421   342  5475 D resolv  :  Calling SSL_connect with mark 0xf0065
+11-11 01:02:07.422   342  5475 D resolv  :  SSL_connect returned -1 with mark 0xf0065
+11-11 01:02:07.422   342  5475 W resolv  : SSL_connect ssl error =5, mark 0xf0065: Connection refused
+11-11 01:02:07.422   342  5475 W resolv  : TLS Handshake failed
+11-11 01:02:07.422   342  5475 D resolv  : Initialization failed.
+11-11 01:02:07.422   342  5475 D resolv  : Destructor
+11-11 01:02:07.422   342  5475 D resolv  : Destructor completed
+11-11 01:02:07.422   342  5475 D resolv  : Failing all pending queries.
+11-11 01:02:07.422   342  5475 W resolv  : query failed
+11-11 01:02:07.422   342  5475 D resolv  : Destructor
+11-11 01:02:07.422   342  5475 D resolv  : Locked destruction procedure
+11-11 01:02:07.422   342  5475 D resolv  : Destructor completed
+11-11 01:02:07.422   342  5475 W resolv  : validateDnsTlsServer returned 0 for 10.0.2.3
+11-11 01:02:07.422   342  5475 D resolv  : Sending validation failure event on netId 101 for 10.0.2.3 with hostname {}
+11-11 01:02:07.422   342  5475 W resolv  : Validation failed
+11-11 01:02:07.428   546   546 D TrustManagerService: Removing dead TrustListener.
+11-11 01:02:07.415     0     0 I binder  : 546:546 transaction failed 29189/-22, size 92-0 line 3133
+11-11 01:02:07.434  1148  8515 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.stats.PlatformStatsCollectorService finished executing. cause:5 result: 1 elapsed_millis: 27 uptime_millis: 27 exec_start_elapsed_seconds: 71 [CONTEXT service_id=218 ]
+11-11 01:02:07.444  1148  8515 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.stats.PlatformStatsCollectorService finished executing. cause:5 result: 1 elapsed_millis: 21 uptime_millis: 21 exec_start_elapsed_seconds: 71 [CONTEXT service_id=218 ]
+11-11 01:02:07.453  8657  8657 D ProtoStore: no cached data
+11-11 01:02:07.453  8657  8657 D ProtoStore: no cached data
+11-11 01:02:07.470  8657  8657 D MediaResumeListener: loaded resume components []
+11-11 01:02:07.473  1148  8515 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.stats.PlatformStatsCollectorService started execution. cause:5 exec_start_elapsed_seconds: 71 [CONTEXT service_id=218 ]
+11-11 01:02:07.473  8657  8657 D LocalBluetoothProfileManager: LocalBluetoothProfileManager construction complete
+11-11 01:02:07.474  8657  8657 D LocalBluetoothProfileManager: Adding local A2DP profile
+11-11 01:02:07.474  1148  8515 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.stats.PlatformStatsCollectorService finished executing. cause:5 result: 1 elapsed_millis: 19 uptime_millis: 19 exec_start_elapsed_seconds: 71 [CONTEXT service_id=218 ]
+11-11 01:02:07.475  8657  8657 D BluetoothA2dp: Binding service...
+11-11 01:02:07.480  8657  8657 D LocalBluetoothProfileManager: Adding local HEADSET profile
+11-11 01:02:07.482  8657  8657 D LocalBluetoothProfileManager: Adding local MAP profile
+11-11 01:02:07.483  8657  8657 D BluetoothMap: Create BluetoothMap proxy object
+11-11 01:02:07.483  8657  8657 D BluetoothMap: Binding service...
+11-11 01:02:07.485  8657  8657 D LocalBluetoothProfileManager: Adding local OPP profile
+11-11 01:02:07.485  8657  8657 D LocalBluetoothProfileManager: Adding local HID_HOST profile
+11-11 01:02:07.487  8657  8657 D BluetoothHidHost: Binding service...
+11-11 01:02:07.492  8657  8657 D LocalBluetoothProfileManager: Adding local HID_DEVICE profile
+11-11 01:02:07.493  8657  8657 D BluetoothHidDevice: Binding service...
+11-11 01:02:07.494  4366  5551 I Checkin : [CheckinRequestProcessor] updateCheckinIdTokenFileFromResponse, Reading existing AID
+11-11 01:02:07.496  1148  8515 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.stats.PlatformStatsCollectorService started execution. cause:5 exec_start_elapsed_seconds: 71 [CONTEXT service_id=218 ]
+11-11 01:02:07.496  8657  8657 D LocalBluetoothProfileManager: Adding local PAN profile
+11-11 01:02:07.496  1148  8515 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.stats.PlatformStatsCollectorService finished executing. cause:5 result: 1 elapsed_millis: 14 uptime_millis: 14 exec_start_elapsed_seconds: 71 [CONTEXT service_id=218 ]
+11-11 01:02:07.497  8657  8657 D BluetoothPan: Binding service...
+11-11 01:02:07.499  8657  8657 D LocalBluetoothProfileManager: Adding local PBAP profile
+11-11 01:02:07.506  4366  5551 I Checkin : [CheckinRequestProcessor] Default Task : Checkin Succeeded: https://android.googleapis.com/checkin (fragment #1).
+11-11 01:02:07.507   546   650 W ActivityManager: Unable to start service Intent { act=android.service.smartspace.SmartspaceService cmp=com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSmartspaceService } U=0: not found
+11-11 01:02:07.507   546   650 W RemoteSmartspaceService: could not bind to Intent { act=android.service.smartspace.SmartspaceService cmp=com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSmartspaceService } using flags 67112961
+11-11 01:02:07.510   546  1967 W ActivityManager: Unable to start service Intent { act=android.service.smartspace.SmartspaceService cmp=com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSmartspaceService } U=0: not found
+11-11 01:02:07.510   546  1967 W RemoteSmartspaceService: could not bind to Intent { act=android.service.smartspace.SmartspaceService cmp=com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSmartspaceService } using flags 67112961
+11-11 01:02:07.510   546  1967 W ActivityManager: Unable to start service Intent { act=android.service.smartspace.SmartspaceService cmp=com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSmartspaceService } U=0: not found
+11-11 01:02:07.511   546  1967 W RemoteSmartspaceService: could not bind to Intent { act=android.service.smartspace.SmartspaceService cmp=com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSmartspaceService } using flags 67112961
+11-11 01:02:07.511   546   546 W ActivityManager: Unbind failed: could not find connection for android.app.LoadedApk$ServiceDispatcher$InnerConnection@80cf9de
+11-11 01:02:07.511   546   546 W ActivityManager: Unbind failed: could not find connection for android.app.LoadedApk$ServiceDispatcher$InnerConnection@15c37bf
+11-11 01:02:07.511   546   546 W ActivityManager: Unbind failed: could not find connection for android.app.LoadedApk$ServiceDispatcher$InnerConnection@9fa1e8c
+11-11 01:02:07.513   546  2105 W ActivityManager: Unable to start service Intent { act=android.service.smartspace.SmartspaceService cmp=com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSmartspaceService } U=0: not found
+11-11 01:02:07.513   546  2105 W RemoteSmartspaceService: could not bind to Intent { act=android.service.smartspace.SmartspaceService cmp=com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSmartspaceService } using flags 67112961
+11-11 01:02:07.513   546   546 W ActivityManager: Unbind failed: could not find connection for android.app.LoadedApk$ServiceDispatcher$InnerConnection@e6ad5ea
+11-11 01:02:07.526  1148  8515 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.stats.PlatformStatsCollectorService started execution. cause:5 exec_start_elapsed_seconds: 71 [CONTEXT service_id=218 ]
+11-11 01:02:07.527  1148  8515 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.stats.PlatformStatsCollectorService finished executing. cause:5 result: 1 elapsed_millis: 20 uptime_millis: 20 exec_start_elapsed_seconds: 71 [CONTEXT service_id=218 ]
+11-11 01:02:07.533  4366  5551 I Checkin : [CheckinOperation] Checkin Operation finished with result: SUCCESS finish time: 71877.
+11-11 01:02:07.539  8657  8657 W BatteryControllerGoogle: Couldn't register to observe provider
+11-11 01:02:07.539  8657  8657 W BatteryControllerGoogle: java.lang.SecurityException: Failed to find provider com.google.android.flipendo.api for user 0; expected to find a valid ContentProvider for this authority
+11-11 01:02:07.539  8657  8657 W BatteryControllerGoogle: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:2426)
+11-11 01:02:07.539  8657  8657 W BatteryControllerGoogle: 	at android.os.Parcel.createException(Parcel.java:2410)
+11-11 01:02:07.539  8657  8657 W BatteryControllerGoogle: 	at android.os.Parcel.readException(Parcel.java:2393)
+11-11 01:02:07.539  8657  8657 W BatteryControllerGoogle: 	at android.os.Parcel.readException(Parcel.java:2335)
+11-11 01:02:07.539  8657  8657 W BatteryControllerGoogle: 	at android.content.IContentService$Stub$Proxy.registerContentObserver(IContentService.java:1235)
+11-11 01:02:07.539  8657  8657 W BatteryControllerGoogle: 	at android.content.ContentResolver.registerContentObserver(ContentResolver.java:2672)
+11-11 01:02:07.539  8657  8657 W BatteryControllerGoogle: 	at com.google.android.systemui.statusbar.policy.BatteryControllerImplGoogle.init(BatteryControllerImplGoogle.java:86)
+11-11 01:02:07.539  8657  8657 W BatteryControllerGoogle: 	at com.google.android.systemui.dagger.SystemUIGoogleModule.provideBatteryController(SystemUIGoogleModule.java:155)
+11-11 01:02:07.539  8657  8657 W BatteryControllerGoogle: 	at com.google.android.systemui.dagger.SystemUIGoogleModule_ProvideBatteryControllerFactory.provideBatteryController(SystemUIGoogleModule_ProvideBatteryControllerFactory.java:84)
+11-11 01:02:07.539  8657  8657 W BatteryControllerGoogle: 	at com.google.android.systemui.dagger.SystemUIGoogleModule_ProvideBatteryControllerFactory.get(SystemUIGoogleModule_ProvideBatteryControllerFactory.java:65)
+11-11 01:02:07.539  8657  8657 W BatteryControllerGoogle: 	at com.google.android.systemui.dagger.SystemUIGoogleModule_ProvideBatteryControllerFactory.get(SystemUIGoogleModule_ProvideBatteryControllerFactory.java:17)
+11-11 01:02:07.539  8657  8657 W BatteryControllerGoogle: 	at dagger.internal.DoubleCheck.get(DoubleCheck.java:47)
+11-11 01:02:07.539  8657  8657 W BatteryControllerGoogle: 	at com.android.systemui.statusbar.phone.DozeParameters_Factory.get(DozeParameters_Factory.java:63)
+11-11 01:02:07.539  8657  8657 W BatteryControllerGoogle: 	at com.android.systemui.statusbar.phone.DozeParameters_Factory.get(DozeParameters_Factory.java:15)
+11-11 01:02:07.539  8657  8657 W BatteryControllerGoogle: 	at dagger.internal.DoubleCheck.get(DoubleCheck.java:47)
+11-11 01:02:07.539  8657  8657 W BatteryControllerGoogle: 	at dagger.internal.DelegateFactory.get(DelegateFactory.java:36)
+11-11 01:02:07.539  8657  8657 W BatteryControllerGoogle: 	at com.google.android.systemui.dagger.DaggerSysUIGoogleGlobalRootComponent$SysUIGoogleSysUIComponentImpl.injectKeyguardSliceProviderGoogle(DaggerSysUIGoogleGlobalRootComponent.java:4643)
+11-11 01:02:07.539  8657  8657 W BatteryControllerGoogle: 	at com.google.android.systemui.dagger.DaggerSysUIGoogleGlobalRootComponent$SysUIGoogleSysUIComponentImpl.inject(DaggerSysUIGoogleGlobalRootComponent.java:4605)
+11-11 01:02:07.539  8657  8657 W BatteryControllerGoogle: 	at java.lang.reflect.Method.invoke(Native Method)
+11-11 01:02:07.539  8657  8657 W BatteryControllerGoogle: 	at com.android.systemui.SystemUIAppComponentFactory.lambda$instantiateProviderCompat$1(SystemUIAppComponentFactory.java:94)
+11-11 01:02:07.539  8657  8657 W BatteryControllerGoogle: 	at com.android.systemui.SystemUIAppComponentFactory.$r8$lambda$qcrPqG7eXiVK_IrWSM3yDqdi2js(Unknown Source:0)
+11-11 01:02:07.539  8657  8657 W BatteryControllerGoogle: 	at com.android.systemui.SystemUIAppComponentFactory$$ExternalSyntheticLambda0.onContextAvailable(Unknown Source:2)
+11-11 01:02:07.539  8657  8657 W BatteryControllerGoogle: 	at com.android.systemui.keyguard.KeyguardSliceProvider.onCreateSliceProvider(KeyguardSliceProvider.java:304)
+11-11 01:02:07.539  8657  8657 W BatteryControllerGoogle: 	at com.google.android.systemui.keyguard.KeyguardSliceProviderGoogle.onCreateSliceProvider(KeyguardSliceProviderGoogle.java:79)
+11-11 01:02:07.539  8657  8657 W BatteryControllerGoogle: 	at androidx.slice.SliceProvider.onCreate(SliceProvider.java:211)
+11-11 01:02:07.539  8657  8657 W BatteryControllerGoogle: 	at android.content.ContentProvider.attachInfo(ContentProvider.java:2404)
+11-11 01:02:07.539  8657  8657 W BatteryControllerGoogle: 	at android.content.ContentProvider.attachInfo(ContentProvider.java:2374)
+11-11 01:02:07.539  8657  8657 W BatteryControllerGoogle: 	at androidx.slice.SliceProvider.attachInfo(SliceProvider.java:250)
+11-11 01:02:07.539  8657  8657 W BatteryControllerGoogle: 	at androidx.slice.compat.SliceProviderWrapperContainer$SliceProviderWrapper.attachInfo(SliceProviderWrapperContainer.java:74)
+11-11 01:02:07.539  8657  8657 W BatteryControllerGoogle: 	at android.app.ActivityThread.installProvider(ActivityThread.java:7422)
+11-11 01:02:07.539  8657  8657 W BatteryControllerGoogle: 	at android.app.ActivityThread.installContentProviders(ActivityThread.java:6939)
+11-11 01:02:07.539  8657  8657 W BatteryControllerGoogle: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:6710)
+11-11 01:02:07.539  8657  8657 W BatteryControllerGoogle: 	at android.app.ActivityThread.access$1500(ActivityThread.java:247)
+11-11 01:02:07.539  8657  8657 W BatteryControllerGoogle: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2053)
+11-11 01:02:07.539  8657  8657 W BatteryControllerGoogle: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-11 01:02:07.539  8657  8657 W BatteryControllerGoogle: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-11 01:02:07.539  8657  8657 W BatteryControllerGoogle: 	at android.os.Looper.loop(Looper.java:288)
+11-11 01:02:07.539  8657  8657 W BatteryControllerGoogle: 	at android.app.ActivityThread.main(ActivityThread.java:7839)
+11-11 01:02:07.539  8657  8657 W BatteryControllerGoogle: 	at java.lang.reflect.Method.invoke(Native Method)
+11-11 01:02:07.539  8657  8657 W BatteryControllerGoogle: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+11-11 01:02:07.539  8657  8657 W BatteryControllerGoogle: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1003)
+11-11 01:02:07.539  8657  8657 W BatteryControllerGoogle: Caused by: android.os.RemoteException: Remote stack trace:
+11-11 01:02:07.539  8657  8657 W BatteryControllerGoogle: 	at com.android.server.content.ContentService.registerContentObserver(ContentService.java:357)
+11-11 01:02:07.539  8657  8657 W BatteryControllerGoogle: 	at android.content.IContentService$Stub.onTransact(IContentService.java:484)
+11-11 01:02:07.539  8657  8657 W BatteryControllerGoogle: 	at android.os.Binder.execTransactInternal(Binder.java:1179)
+11-11 01:02:07.539  8657  8657 W BatteryControllerGoogle: 	at android.os.Binder.execTransact(Binder.java:1143)
+11-11 01:02:07.539  8657  8657 W BatteryControllerGoogle: 
+11-11 01:02:07.549  8657  8657 W AlarmManager: Unrecognized alarm listener com.android.systemui.keyguard.KeyguardSliceProvider$$ExternalSyntheticLambda0@52957e7
+11-11 01:02:07.553  1148  8515 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.stats.PlatformStatsCollectorService started execution. cause:5 exec_start_elapsed_seconds: 71 [CONTEXT service_id=218 ]
+11-11 01:02:07.561  8657  8657 V SystemUIService: SystemUIApplication created.
+11-11 01:02:07.561  8657  8657 D SystemUIBootTiming: DependencyInjection took to complete: 0ms
+11-11 01:02:07.562   428   436 E EGL_emulation: eglQueryContext 3100  EGL_BAD_ATTRIBUTE
+11-11 01:02:07.562   428   436 E EGL_emulation: tid 436: eglQueryContext(2160): error 0x3004 (EGL_BAD_ATTRIBUTE)
+11-11 01:02:07.563  8657  8657 I SystemUIService: Found SurfaceFlinger's GPU Priority: 0
+11-11 01:02:07.575  1148  1253 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.stats.PlatformStatsCollectorService started execution. cause:5 exec_start_elapsed_seconds: 71 [CONTEXT service_id=218 ]
+11-11 01:02:07.584  8657  8670 D BluetoothHeadset: Proxy object connected
+11-11 01:02:07.585  1148  1765 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.stats.PlatformStatsCollectorService finished executing. cause:5 result: 1 elapsed_millis: 43 uptime_millis: 43 exec_start_elapsed_seconds: 71 [CONTEXT service_id=218 ]
+11-11 01:02:07.586  8657  8657 D InterruptionStateProvider: heads up is enabled
+11-11 01:02:07.586  8657  8657 I DLObserver: wireless charger is null, check dock component.
+11-11 01:02:07.587  8657  8657 D DLObserver: command=2
+11-11 01:02:07.588  8657  8657 I FalsingManager: xdpi, ydpi: 387.0, 387.0
+11-11 01:02:07.588  8657  8736 I DLObserver: hint is UNKNOWN for null wireless charger HAL

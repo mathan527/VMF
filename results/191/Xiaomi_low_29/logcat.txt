@@ -1,0 +1,557 @@
+--------- beginning of main
+11-08 01:10:28.271  3657  3677 I gle.android.im: Starting a blocking GC Alloc
+11-08 01:10:28.284  3525  3749 I BugleRcsEngine: [77] omj.shouldUseCarrierServicesApkForV1Apis: Checking if using CarrierServices.apk is possible. Enabled: true, isAtLeastM: true, runningInsideBugle: true
+11-08 01:10:28.340  3657  3761 W native  : commandlineflags.cc:972 Ignoring RegisterValidateFunction() for flag pointer 0xc57ad5a4: no flag found at that address
+11-08 01:10:28.361  3657  3761 I org.webrtc.Logging: PeerConnectionFactory: PeerConnectionFactory was initialized without an injected Loggable. Any existing Loggable will be deleted.
+11-08 01:10:28.362  3657  3761 I CarrierServices: [76] dcs.a: openSL ES disabled? true
+11-08 01:10:28.362  3657  3761 I CarrierServices: [76] dcs.a: encryption disabled? false
+11-08 01:10:28.362  3657  3761 I CarrierServices: [76] dcs.a: network ignore mask: 56
+11-08 01:10:28.379  3657  3710 I CarrierServices: [58] cpr.c: Updated SIM info: currentSimId: [4vfUjdK1ylI-cxPPS6D26oMLYoE]; imsi: [zSrOMA1mh9Q6-7rLJrQ5Pkv1PBs]; rawMsisdn: [S91Pkp86EGIlPk5Ja6-6C9-123U]; formattedMsisdn: ; mccmnc: [GMS5WK9CKM8_bx5id3TvJ4VbDjI] isFiDevice: false;
+11-08 01:10:28.386  3657  3710 I CarrierServices: [58] cpr.a: Broadcasting Intent { act=com.google.android.ims.SIM_LOADED (has extras) }
+11-08 01:10:28.387  2837  3791 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.gms componentName=null serviceId=30
+11-08 01:10:28.393  3525  3612 I BugleRcsEngine: [44] oil.updateSimInfo: Updated SIM info: currentSimId: [4vfUjdK1ylI-cxPPS6D26oMLYoE]; imsi: [zSrOMA1mh9Q6-7rLJrQ5Pkv1PBs]; rawMsisdn: [S91Pkp86EGIlPk5Ja6-6C9-123U]; formattedMsisdn: ; mccmnc: [GMS5WK9CKM8_bx5id3TvJ4VbDjI] isFiDevice: false;
+11-08 01:10:28.396  3525  3612 I BugleRcsEngine: [44] oil.sendBroadcastSimState: Broadcasting Intent { act=com.google.android.ims.SIM_LOADED (has extras) }
+11-08 01:10:28.403  3525  3525 I Bugle   : SimChangeReceiver: action: com.google.android.ims.SIM_LOADED
+11-08 01:10:28.404  3525  3740 W .apps.messagin: Long monitor contention with owner AsyncTask #1 (3612) at boolean android.os.BinderProxy.transactNative(int, android.os.Parcel, android.os.Parcel, int)(BinderProxy.java:-2) waiters=0 in boolean oil.f() for 470ms
+11-08 01:10:28.404  3525  3752 W .apps.messagin: Long monitor contention with owner AsyncTask #1 (3612) at boolean android.os.BinderProxy.transactNative(int, android.os.Parcel, android.os.Parcel, int)(BinderProxy.java:-2) waiters=1 in boolean oil.f() for 358ms
+11-08 01:10:28.404  3525  3752 I BugleRcs: Prod Fi device disabled - Not a Fi device
+11-08 01:10:28.405  3525  3648 I BugleRcs: RcsAvailability: config server url unavailable - Carrier is not RCS enabled
+11-08 01:10:28.405  3525  3648 I BugleRcs: RcsAvailability: updated: RCS is disabled for this carrier by Google
+11-08 01:10:28.416  3525  3525 I BugleRcs: RcsAvailability: already updating
+11-08 01:10:28.428  3525  3525 I BugleRcs: RcsAvailability: Broadcast disable RCS for RCS is disabled for this carrier by Google
+11-08 01:10:28.461  3525  3749 W RcsProvisioning: Failed to read configuration: /data/user/0/com.google.android.apps.messaging/files/rcsconfig: open failed: ENOENT (No such file or directory)
+11-08 01:10:28.461  3525  3749 W RcsProvisioning: java.io.FileNotFoundException: /data/user/0/com.google.android.apps.messaging/files/rcsconfig: open failed: ENOENT (No such file or directory)
+11-08 01:10:28.461  3525  3749 W RcsProvisioning: 	at libcore.io.IoBridge.open(IoBridge.java:496)
+11-08 01:10:28.461  3525  3749 W RcsProvisioning: 	at java.io.FileInputStream.<init>(FileInputStream.java:159)
+11-08 01:10:28.461  3525  3749 W RcsProvisioning: 	at android.app.ContextImpl.openFileInput(ContextImpl.java:600)
+11-08 01:10:28.461  3525  3749 W RcsProvisioning: 	at android.content.ContextWrapper.openFileInput(ContextWrapper.java:206)
+11-08 01:10:28.461  3525  3749 W RcsProvisioning: 	at opj.a(SourceFile:1)
+11-08 01:10:28.461  3525  3749 W RcsProvisioning: 	at oal.a(SourceFile:4)
+11-08 01:10:28.461  3525  3749 W RcsProvisioning: 	at com.google.android.ims.provisioning.RcsConfigurationManager.a(SourceFile:6)
+11-08 01:10:28.461  3525  3749 W RcsProvisioning: 	at odm.buildToken(SourceFile:10)
+11-08 01:10:28.461  3525  3749 W RcsProvisioning: 	at com.google.android.apps.messaging.rcsmigration.RcsStateProvider.buildRcsState(SourceFile:57)
+11-08 01:10:28.461  3525  3749 W RcsProvisioning: 	at com.google.android.apps.messaging.rcsmigration.RcsStateProvider.getRcsState(SourceFile:6)
+11-08 01:10:28.461  3525  3749 W RcsProvisioning: 	at com.google.android.ims.rcsmigration.IRcsStateProvider$Stub.dispatchTransaction(SourceFile:6)
+11-08 01:10:28.461  3525  3749 W RcsProvisioning: 	at com.google.android.aidl.BaseStub.onTransact(SourceFile:11)
+11-08 01:10:28.461  3525  3749 W RcsProvisioning: 	at android.os.Binder.execTransactInternal(Binder.java:1021)
+11-08 01:10:28.461  3525  3749 W RcsProvisioning: 	at android.os.Binder.execTransact(Binder.java:994)
+11-08 01:10:28.461  3525  3749 W RcsProvisioning: Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+11-08 01:10:28.461  3525  3749 W RcsProvisioning: 	at libcore.io.Linux.open(Native Method)
+11-08 01:10:28.461  3525  3749 W RcsProvisioning: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:167)
+11-08 01:10:28.461  3525  3749 W RcsProvisioning: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:252)
+11-08 01:10:28.461  3525  3749 W RcsProvisioning: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:167)
+11-08 01:10:28.461  3525  3749 W RcsProvisioning: 	at android.app.ActivityThread$AndroidOs.open(ActivityThread.java:7255)
+11-08 01:10:28.461  3525  3749 W RcsProvisioning: 	at libcore.io.IoBridge.open(IoBridge.java:482)
+11-08 01:10:28.461  3525  3749 W RcsProvisioning: 	... 13 more
+11-08 01:10:28.480  1666  1666 D Zygote  : Forked child process 3793
+--------- beginning of system
+11-08 01:10:28.481  1908  1937 I ActivityManager: Start proc 3793:com.google.android.angle/u0a105 for broadcast {com.google.android.angle/com.android.angle.common.Receiver}
+11-08 01:10:28.490  3793  3793 W e.android.angl: Unexpected CPU variant for X86 using defaults: x86_64
+11-08 01:10:28.562  3657  3761 I default_audio_processing_jni.cc: [000:000] [3761] (line 46): APM: Capture post-processing: None.
+11-08 01:10:28.562  3657  3761 I default_audio_processing_jni.cc: [000:002] [3761] (line 55): APM: Render pre-processing: None.
+11-08 01:10:28.562  3657  3761 I default_audio_processing_jni.cc: [000:002] [3761] (line 72): APM: Echo controller: None.
+11-08 01:10:28.563  3657  3761 I default_audio_processing_jni.cc: [000:003] [3761] (line 83): APM: Echo detector v2: None.
+11-08 01:10:28.567  3525  3740 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-08 01:10:28.575  3525  3740 W Bugle   : ChatContentDecoratorGrpc: Instance created but no relevant features are enabled
+11-08 01:10:28.648  3793  3793 I e.android.angl: The ClassLoaderContext is a special shared library.
+11-08 01:10:28.651  3657  3761 I audio_processing_impl.cc: [000:091] [3761] (line 424): Capture analyzer activated: 0
+11-08 01:10:28.651  3657  3761 I audio_processing_impl.cc: Capture post processor activated: 0
+11-08 01:10:28.651  3657  3761 I audio_processing_impl.cc: Render pre processor activated: 0
+11-08 01:10:28.652  3657  3761 I default_audio_processing_jni.cc: [000:092] [3761] (line 104): APM: Adaptive Gain Controller 2: None.
+11-08 01:10:28.653  3657  3761 I webrtc_video_engine.cc: [000:093] [3761] (line 445): WebRtcVideoEngine::WebRtcVideoEngine()
+11-08 01:10:28.653  3657  3761 I webrtc_voice_engine.cc: [000:093] [3761] (line 197): WebRtcVoiceEngine::WebRtcVoiceEngine
+11-08 01:10:28.659  3657  3813 I webrtc_voice_engine.cc: [000:099] [3813] (line 220): WebRtcVoiceEngine::Init
+11-08 01:10:28.669  3793  3793 V GraphicsEnvironment: ANGLE whitelist includes com.google.android.angle
+11-08 01:10:28.670  3793  3793 I GraphicsEnvironment: ANGLE package enabled: com.google.android.angle
+11-08 01:10:28.671  3793  3793 V GraphicsEnvironment: System property 'debug.angle.rules' is not set or is empty
+11-08 01:10:28.678  3525  3749 W RcsProvisioning: Failed to read configuration: /data/user/0/com.google.android.apps.messaging/files/rcsconfig: open failed: ENOENT (No such file or directory)
+11-08 01:10:28.678  3525  3749 W RcsProvisioning: java.io.FileNotFoundException: /data/user/0/com.google.android.apps.messaging/files/rcsconfig: open failed: ENOENT (No such file or directory)
+11-08 01:10:28.678  3525  3749 W RcsProvisioning: 	at libcore.io.IoBridge.open(IoBridge.java:496)
+11-08 01:10:28.678  3525  3749 W RcsProvisioning: 	at java.io.FileInputStream.<init>(FileInputStream.java:159)
+11-08 01:10:28.678  3525  3749 W RcsProvisioning: 	at android.app.ContextImpl.openFileInput(ContextImpl.java:600)
+11-08 01:10:28.678  3525  3749 W RcsProvisioning: 	at android.content.ContextWrapper.openFileInput(ContextWrapper.java:206)
+11-08 01:10:28.678  3525  3749 W RcsProvisioning: 	at opj.a(SourceFile:1)
+11-08 01:10:28.678  3525  3749 W RcsProvisioning: 	at oal.a(SourceFile:4)
+11-08 01:10:28.678  3525  3749 W RcsProvisioning: 	at com.google.android.ims.provisioning.RcsConfigurationManager.a(SourceFile:6)
+11-08 01:10:28.678  3525  3749 W RcsProvisioning: 	at odm.buildConferencesFileName(SourceFile:57)
+11-08 01:10:28.678  3525  3749 W RcsProvisioning: 	at odm.getConferences(SourceFile:49)
+11-08 01:10:28.678  3525  3749 W RcsProvisioning: 	at odm.buildFiles(SourceFile:6)
+11-08 01:10:28.678  3525  3749 W RcsProvisioning: 	at com.google.android.apps.messaging.rcsmigration.RcsStateProvider.buildRcsState(SourceFile:63)
+11-08 01:10:28.678  3525  3749 W RcsProvisioning: 	at com.google.android.apps.messaging.rcsmigration.RcsStateProvider.getRcsState(SourceFile:6)
+11-08 01:10:28.678  3525  3749 W RcsProvisioning: 	at com.google.android.ims.rcsmigration.IRcsStateProvider$Stub.dispatchTransaction(SourceFile:6)
+11-08 01:10:28.678  3525  3749 W RcsProvisioning: 	at com.google.android.aidl.BaseStub.onTransact(SourceFile:11)
+11-08 01:10:28.678  3525  3749 W RcsProvisioning: 	at android.os.Binder.execTransactInternal(Binder.java:1021)
+11-08 01:10:28.678  3525  3749 W RcsProvisioning: 	at android.os.Binder.execTransact(Binder.java:994)
+11-08 01:10:28.678  3525  3749 W RcsProvisioning: Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+11-08 01:10:28.678  3525  3749 W RcsProvisioning: 	at libcore.io.Linux.open(Native Method)
+11-08 01:10:28.678  3525  3749 W RcsProvisioning: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:167)
+11-08 01:10:28.678  3525  3749 W RcsProvisioning: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:252)
+11-08 01:10:28.678  3525  3749 W RcsProvisioning: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:167)
+11-08 01:10:28.678  3525  3749 W RcsProvisioning: 	at android.app.ActivityThread$AndroidOs.open(ActivityThread.java:7255)
+11-08 01:10:28.678  3525  3749 W RcsProvisioning: 	at libcore.io.IoBridge.open(IoBridge.java:482)
+11-08 01:10:28.678  3525  3749 W RcsProvisioning: 	... 15 more
+11-08 01:10:28.679  3793  3793 D GraphicsEnv: dlopen_ext from APK (libfeature_support_angle.so) success at 0x2ccbb99858ee4d07
+11-08 01:10:28.684  2837  3139 I Icing   : updateResources: need to parse acek{com.google.android.gms}
+11-08 01:10:28.684  3793  3793 V AngleReceiver: Received intent: 'android.intent.action.BOOT_COMPLETED'
+11-08 01:10:28.688  3793  3793 V AngleReceiver: Skipping Rules entry with no Applications
+11-08 01:10:28.688  3793  3793 V AngleReceiver: Parsed the following package names from a4a_rules.json: com.android.angle,com.google.android.angle
+11-08 01:10:28.697  3793  3793 V AngleReceiver: Developer Options enabled value changed: developerOptionsEnabled = false
+11-08 01:10:28.701  3657  3813 I webrtc_voice_engine.cc: [000:142] [3813] (line 227): Supported send codecs in order of preference:
+11-08 01:10:28.702  3657  3813 I webrtc_voice_engine.cc: [000:142] [3813] (line 230): opus/48000/2 { minptime=10 useinbandfec=1 } (111)
+11-08 01:10:28.702  3657  3813 I webrtc_voice_engine.cc: [000:142] [3813] (line 230): ISAC/16000/1 (103)
+11-08 01:10:28.702  3657  3813 I webrtc_voice_engine.cc: [000:142] [3813] (line 230): ISAC/32000/1 (104)
+11-08 01:10:28.702  3657  3813 I webrtc_voice_engine.cc: [000:142] [3813] (line 230): G722/8000/1 (9)
+11-08 01:10:28.702  3657  3813 I webrtc_voice_engine.cc: [000:142] [3813] (line 230): PCMU/8000/1 (0)
+11-08 01:10:28.702  3657  3813 I webrtc_voice_engine.cc: [000:142] [3813] (line 230): PCMA/8000/1 (8)
+11-08 01:10:28.702  3657  3813 I webrtc_voice_engine.cc: [000:142] [3813] (line 230): CN/32000/1 (106)
+11-08 01:10:28.702  3657  3813 I webrtc_voice_engine.cc: [000:142] [3813] (line 230): CN/16000/1 (105)
+11-08 01:10:28.702  3657  3813 I webrtc_voice_engine.cc: [000:142] [3813] (line 230): CN/8000/1 (13)
+11-08 01:10:28.702  3657  3813 I webrtc_voice_engine.cc: [000:142] [3813] (line 230): telephone-event/48000/1 (110)
+11-08 01:10:28.702  3657  3813 I webrtc_voice_engine.cc: [000:142] [3813] (line 230): telephone-event/32000/1 (112)
+11-08 01:10:28.702  3657  3813 I webrtc_voice_engine.cc: [000:142] [3813] (line 230): telephone-event/16000/1 (113)
+11-08 01:10:28.702  3657  3813 I webrtc_voice_engine.cc: [000:142] [3813] (line 230): telephone-event/8000/1 (126)
+11-08 01:10:28.702  3657  3813 I webrtc_voice_engine.cc: [000:142] [3813] (line 233): Supported recv codecs in order of preference:
+11-08 01:10:28.702  3657  3813 I webrtc_voice_engine.cc: [000:142] [3813] (line 236): opus/48000/2 { minptime=10 useinbandfec=1 } (111)
+11-08 01:10:28.702  3657  3813 I webrtc_voice_engine.cc: [000:142] [3813] (line 236): ISAC/16000/1 (103)
+11-08 01:10:28.702  3657  3813 I webrtc_voice_engine.cc: [000:142] [3813] (line 236): ISAC/32000/1 (104)
+11-08 01:10:28.702  3657  3813 I webrtc_voice_engine.cc: [000:142] [3813] (line 236): G722/8000/1 (9)
+11-08 01:10:28.702  3657  3813 I webrtc_voice_engine.cc: [000:142] [3813] (line 236): PCMU/8000/1 (0)
+11-08 01:10:28.702  3657  3813 I webrtc_voice_engine.cc: [000:142] [3813] (line 236): PCMA/8000/1 (8)
+11-08 01:10:28.702  3657  3813 I webrtc_voice_engine.cc: [000:142] [3813] (line 236): CN/32000/1 (106)
+11-08 01:10:28.702  3657  3813 I webrtc_voice_engine.cc: [000:142] [3813] (line 236): CN/16000/1 (105)
+11-08 01:10:28.702  3657  3813 I webrtc_voice_engine.cc: [000:142] [3813] (line 236): CN/8000/1 (13)
+11-08 01:10:28.702  3657  3813 I webrtc_voice_engine.cc: [000:142] [3813] (line 236): telephone-event/48000/1 (110)
+11-08 01:10:28.702  3657  3813 I webrtc_voice_engine.cc: [000:142] [3813] (line 236): telephone-event/32000/1 (112)
+11-08 01:10:28.702  3657  3813 I webrtc_voice_engine.cc: [000:142] [3813] (line 236): telephone-event/16000/1 (113)
+11-08 01:10:28.702  3657  3813 I webrtc_voice_engine.cc: [000:142] [3813] (line 236): telephone-event/8000/1 (126)
+11-08 01:10:28.702  3657  3813 I audio_device_impl.cc: [000:142] [3813] (line 75): Create
+11-08 01:10:28.702  3657  3813 I audio_device_impl.cc: [000:142] [3813] (line 82): CreateForTest
+11-08 01:10:28.702  3657  3813 I audio_device_buffer.cc: [000:142] [3813] (line 61): AudioDeviceBuffer::ctor
+11-08 01:10:28.702  3657  3813 I audio_device_impl.cc: [000:142] [3813] (line 117): AudioDeviceModuleImpl
+11-08 01:10:28.702  3657  3813 I audio_device_impl.cc: [000:142] [3813] (line 121): CheckPlatform
+11-08 01:10:28.702  3657  3813 I audio_device_impl.cc: [000:142] [3813] (line 129): current platform is Android
+11-08 01:10:28.702  3657  3813 I audio_device_impl.cc: [000:142] [3813] (line 151): CreatePlatformSpecificObjects
+11-08 01:10:28.702  3657  3813 I audio_device_impl.cc: [000:142] [3813] (line 933): PlatformAudioLayer
+11-08 01:10:28.702  3657  3813 I jvm_android.cc: [000:142] [3813] (line 72): JvmThreadConnector::ctor
+11-08 01:10:28.702  3657  3813 I jvm_android.cc: [000:142] [3813] (line 77): Attaching thread to JVM
+11-08 01:10:28.702  3657  3813 I jvm_android.cc: [000:142] [3813] (line 262): JVM::environment
+11-08 01:10:28.702  3657  3813 I jvm_android.cc: [000:142] [3813] (line 184): JNIEnvironment::ctor
+11-08 01:10:28.702  3657  3813 I audio_manager.cc: [000:142] [3813] (line 71): ctor
+11-08 01:10:28.702  3657  3813 I jvm_android.cc: [000:142] [3813] (line 196): JNIEnvironment::RegisterNatives: org/webrtc/voiceengine/WebRtcAudioManager
+11-08 01:10:28.702  3657  3813 I jvm_android.cc: [000:142] [3813] (line 134): NativeRegistration::ctor
+11-08 01:10:28.702  3657  3813 I jvm_android.cc: [000:142] [3813] (line 146): NativeRegistration::NewObject
+11-08 01:10:28.702  3657  3813 I WebRtcAudioManager: [000:142] [3813] ctor@[name=Thread-5, id=80]
+11-08 01:10:28.704  3657  3813 I WebRtcAudioManager: [000:144] [3813] Sample rate is set to 44100 Hz
+11-08 01:10:28.770  3657  3813 I WebRtcAudioEffects: [000:210] [3813] canUseAcousticEchoCanceler: false
+11-08 01:10:28.770  3657  3813 I WebRtcAudioEffects: [000:210] [3813] canUseNoiseSuppressor: false
+11-08 01:10:28.771  3657  3813 W WebRtcAudioManager: [000:211] [3813] AAudio support is currently disabled on all devices!
+11-08 01:10:28.774  3657  3813 I audio_manager.cc: [000:214] [3813] (line 276): OnCacheAudioParameters: hardware_aec: 0, hardware_agc: 0, hardware_ns: 0, low_latency_output: 0, low_latency_input: 0, pro_audio: 0, a_audio: 0, sample_rate: 44100, output_channels: 1, input_channels: 1, output_buffer_size: 2116, input_buffer_size: 1344
+11-08 01:10:28.774  3657  3813 I WebRtcAudioManager: [000:214] [3813] Android SDK: 29, Release: 10, Brand: google, Device: generic_x86_64, Id: QSR1.211112.011, Hardware: ranchu, Manufacturer: Google, Model: Android SDK built for x86_64, Product: sdk_gphone_x86_64
+11-08 01:10:28.775  1685  1727 W DeviceHAL: Error from HAL Device in function get_mic_mute: Function not implemented
+11-08 01:10:28.780  3525  3749 E BugleRcsEngine: [77] odm.getFile: File not found.: /data/user/0/com.google.android.apps.messaging/files/httpft_pending: open failed: ENOENT (No such file or directory)
+11-08 01:10:28.780  3525  3749 E BugleRcsEngine: 	libcore.io.IoBridge.open(IoBridge.java:496)
+11-08 01:10:28.780  3525  3749 E BugleRcsEngine: 	java.io.FileInputStream.<init>(FileInputStream.java:159)
+11-08 01:10:28.780  3525  3749 E BugleRcsEngine: 	android.app.ContextImpl.openFileInput(ContextImpl.java:600)
+11-08 01:10:28.780  3525  3749 E BugleRcsEngine: 	android.content.ContextWrapper.openFileInput(ContextWrapper.java:206)
+11-08 01:10:28.780  3525  3749 E BugleRcsEngine: 	odm.getFile(SourceFile:51)
+11-08 01:10:28.780  3525  3749 E BugleRcsEngine: 	odm.buildFiles(SourceFile:7)
+11-08 01:10:28.780  3525  3749 E BugleRcsEngine: 	com.google.android.apps.messaging.rcsmigration.RcsStateProvider.buildRcsState(SourceFile:63)
+11-08 01:10:28.780  3525  3749 E BugleRcsEngine: 	com.google.android.apps.messaging.rcsmigration.RcsStateProvider.getRcsState(SourceFile:6)
+11-08 01:10:28.780  3525  3749 E BugleRcsEngine: 	com.google.android.ims.rcsmigration.IRcsStateProvider$Stub.dispatchTransaction(SourceFile:6)
+11-08 01:10:28.780  3525  3749 E BugleRcsEngine: 	com.google.android.aidl.BaseStub.onTransact(SourceFile:11)
+11-08 01:10:28.780  3525  3749 E BugleRcsEngine: 	android.os.Binder.execTransactInternal(Binder.java:1021)
+11-08 01:10:28.780  3525  3749 E BugleRcsEngine: 	android.os.Binder.execTransact(Binder.java:994)
+11-08 01:10:28.866  1908  2442 W BroadcastQueue: Permission Denial: receiving Intent { act=android.intent.action.BOOT_COMPLETED flg=0x89000010 (has extras) } to com.google.android.apps.docs/com.google.android.libraries.internal.growth.growthkit.inject.GrowthKitBootCompletedBroadcastReceiver requires android.permission.RECEIVE_BOOT_COMPLETED due to sender null (uid 1000)
+11-08 01:10:28.888  1666  1666 D Zygote  : Forked child process 3823
+11-08 01:10:28.890  1908  1937 I ActivityManager: Start proc 3823:com.google.android.apps.maps/u0a137 for broadcast {com.google.android.apps.maps/com.google.android.apps.gmm.navigation.service.detection.StartDetectionReceiver}
+11-08 01:10:28.894  3657  3695 I CarrierServices: [55] bqb.doInBackground: Saving RCS State
+11-08 01:10:28.894  3657  3695 I CarrierServices: [55] bqb.doInBackground: Old operation mode: 2
+11-08 01:10:28.894  3657  3695 I CarrierServices: [55] bqb.doInBackground: New operation mode: 2
+11-08 01:10:28.895  3657  3813 I WebRtcAudioManager: [000:335] [3813] Audio State: audio mode: MODE_NORMAL, has mic: true, mic muted: false, music active: false, speakerphone: false, BT SCO: false
+11-08 01:10:28.895  3657  3813 I WebRtcAudioManager: [000:336] [3813] Audio State: 
+11-08 01:10:28.895  3657  3813 I WebRtcAudioManager: [000:336] [3813]   fixed volume=false
+11-08 01:10:28.898  3657  3657 I CarrierServices: [2] bqb.onPostExecute: Finalizing migration for RCS state: Operation mode FULL STACK
+11-08 01:10:28.899  3657  3813 I WebRtcAudioManager: [000:339] [3813]   STREAM_VOICE_CALL: volume=1, max=5, muted=false
+11-08 01:10:28.900  3657  3813 I WebRtcAudioManager: [000:340] [3813]   STREAM_MUSIC: volume=5, max=15, muted=false
+11-08 01:10:28.900  3657  3813 I WebRtcAudioManager: [000:341] [3813]   STREAM_RING: volume=5, max=7, muted=false
+11-08 01:10:28.900  3525  3749 I BugleRcsEngine: [77] RcsStateProvider.onMigrationComplete: Migration complete.
+11-08 01:10:28.902  1908  2442 I ActivityManager: Killing 2893:com.android.keychain/1000 (adj 985): empty #17
+11-08 01:10:28.902  1908  2442 I ActivityManager: Killing 2577:com.google.android.deskclock/u0a143 (adj 985): empty #18
+11-08 01:10:28.910  2837  3139 I Icing   : Internal init done: storage state 0
+11-08 01:10:28.911  3657  3813 I WebRtcAudioManager: [000:351] [3813]   STREAM_ALARM: volume=6, max=7, muted=false
+11-08 01:10:28.912  3657  3813 I WebRtcAudioManager: [000:352] [3813]   STREAM_NOTIFICATION: volume=5, max=7, muted=false
+11-08 01:10:28.912  3657  3813 I WebRtcAudioManager: [000:352] [3813]   STREAM_SYSTEM: volume=5, max=7, muted=false
+11-08 01:10:28.914  3657  3813 I WebRtcAudioManager: [000:354] [3813] Audio Devices: 
+11-08 01:10:28.914  3657  3813 I WebRtcAudioManager: [000:354] [3813]   TYPE_BUILTIN_SPEAKER(out): id=2
+11-08 01:10:28.914  3657  3813 I WebRtcAudioManager: [000:354] [3813]   TYPE_BUILTIN_MIC(in): channels=[1], encodings=[2], sample rates=[8000, 16000], id=5
+11-08 01:10:28.914  3657  3813 I jvm_android.cc: [000:354] [3813] (line 97): GlobalRef::ctor
+11-08 01:10:28.914  3657  3813 I audio_manager.cc: [000:354] [3813] (line 36): JavaAudioManager::ctor
+11-08 01:10:28.914  3657  3813 I WebRtcAudioManager: [000:354] [3813] Android SDK built for x86_64 is blacklisted for OpenSL ES usage!
+11-08 01:10:28.914  3657  3813 I WebRtcAudioManager: [000:354] [3813] Android SDK built for x86_64 is blacklisted for OpenSL ES usage!
+11-08 01:10:28.914  3657  3813 I jvm_android.cc: [000:354] [3813] (line 72): JvmThreadConnector::ctor
+11-08 01:10:28.914  3657  3813 I jvm_android.cc: [000:354] [3813] (line 262): JVM::environment
+11-08 01:10:28.914  3657  3813 I jvm_android.cc: [000:355] [3813] (line 184): JNIEnvironment::ctor
+11-08 01:10:28.914  3657  3813 I audio_track_jni.cc: [000:355] [3813] (line 73): ctor
+11-08 01:10:28.914  3657  3813 I jvm_android.cc: [000:355] [3813] (line 196): JNIEnvironment::RegisterNatives: org/webrtc/voiceengine/WebRtcAudioTrack
+11-08 01:10:28.914  3657  3813 I jvm_android.cc: [000:355] [3813] (line 134): NativeRegistration::ctor
+11-08 01:10:28.914  3657  3813 I jvm_android.cc: [000:355] [3813] (line 146): NativeRegistration::NewObject
+11-08 01:10:28.915  3657  3813 I WebRtcAudioTrack: [000:355] [3813] ctor@[name=Thread-5, id=80]
+11-08 01:10:28.915  3657  3813 I jvm_android.cc: [000:355] [3813] (line 97): GlobalRef::ctor
+11-08 01:10:28.915  3657  3813 I jvm_android.cc: [000:355] [3813] (line 72): JvmThreadConnector::ctor
+11-08 01:10:28.915  3657  3813 I jvm_android.cc: [000:355] [3813] (line 262): JVM::environment
+11-08 01:10:28.915  3657  3813 I jvm_android.cc: [000:355] [3813] (line 184): JNIEnvironment::ctor
+11-08 01:10:28.915  3657  3813 I audio_record_jni.cc: [000:355] [3813] (line 96): ctor
+11-08 01:10:28.915  3657  3813 I jvm_android.cc: [000:355] [3813] (line 196): JNIEnvironment::RegisterNatives: org/webrtc/voiceengine/WebRtcAudioRecord
+11-08 01:10:28.915  3657  3813 I jvm_android.cc: [000:355] [3813] (line 134): NativeRegistration::ctor
+11-08 01:10:28.915  3657  3813 I jvm_android.cc: [000:355] [3813] (line 146): NativeRegistration::NewObject
+11-08 01:10:28.915  3657  3813 I WebRtcAudioRecord: [000:355] [3813] ctor@[name=Thread-5, id=80]
+11-08 01:10:28.915  3657  3813 I WebRtcAudioEffects: [000:355] [3813] ctor@[name=Thread-5, id=80]
+11-08 01:10:28.915  3657  3813 I jvm_android.cc: [000:355] [3813] (line 97): GlobalRef::ctor
+11-08 01:10:28.915  3657  3813 I audio_device_template.h: [000:355] [3813] (line 42): AudioDeviceTemplate
+11-08 01:10:28.915  3657  3813 I audio_manager.cc: [000:355] [3813] (line 93): SetActiveAudioLayer: 5
+11-08 01:10:28.915  3657  3813 I audio_manager.cc: [000:355] [3813] (line 106): delay_estimate_in_milliseconds: 150
+11-08 01:10:28.915  3657  3813 I audio_device_impl.cc: [000:355] [3813] (line 306): AttachAudioBuffer
+11-08 01:10:28.915  3657  3813 I audio_device_template.h: [000:355] [3813] (line 371): AttachAudioBuffer
+11-08 01:10:28.915  3657  3813 I audio_track_jni.cc: [000:355] [3813] (line 196): AttachAudioBuffer
+11-08 01:10:28.915  3657  3813 I audio_track_jni.cc: [000:355] [3813] (line 200): SetPlayoutSampleRate(44100)
+11-08 01:10:28.915  3657  3813 I audio_device_buffer.cc: [000:355] [3813] (line 184): SetPlayoutSampleRate(44100)
+11-08 01:10:28.915  3657  3813 I audio_track_jni.cc: [000:355] [3813] (line 203): SetPlayoutChannels(1)
+11-08 01:10:28.915  3657  3813 I audio_device_buffer.cc: [000:355] [3813] (line 204): SetPlayoutChannels(1)
+11-08 01:10:28.915  3657  3813 I audio_record_jni.cc: [000:355] [3813] (line 198): AttachAudioBuffer
+11-08 01:10:28.915  3657  3813 I audio_record_jni.cc: [000:355] [3813] (line 202): SetRecordingSampleRate(44100)
+11-08 01:10:28.915  3657  3813 I audio_device_buffer.cc: [000:355] [3813] (line 178): SetRecordingSampleRate(44100)
+11-08 01:10:28.915  3657  3813 I audio_record_jni.cc: [000:355] [3813] (line 205): SetRecordingChannels(1)
+11-08 01:10:28.915  3657  3813 I audio_device_buffer.cc: [000:355] [3813] (line 198): SetRecordingChannels(1)
+11-08 01:10:28.915  3657  3813 I audio_record_jni.cc: [000:355] [3813] (line 210): total_delay_in_milliseconds: 150
+11-08 01:10:28.915  3657  3813 I audio_device_impl.cc: [000:355] [3813] (line 326): Init
+11-08 01:10:28.915  3657  3813 I audio_device_template.h: [000:355] [3813] (line 57): Init
+11-08 01:10:28.915  3657  3813 I audio_manager.cc: [000:355] [3813] (line 152): Init
+11-08 01:10:28.915  3657  3813 I WebRtcAudioManager: [000:355] [3813] init@[name=Thread-5, id=80]
+11-08 01:10:28.915  3657  3813 I WebRtcAudioManager: [000:356] [3813] audio mode is: MODE_NORMAL
+11-08 01:10:28.916  3657  3813 I audio_track_jni.cc: [000:356] [3813] (line 101): Init
+11-08 01:10:28.916  3657  3813 I audio_record_jni.cc: [000:356] [3813] (line 124): Init
+11-08 01:10:28.916  3657  3813 I audio_device_impl.cc: [000:356] [3813] (line 670): SetPlayoutDevice(0)
+11-08 01:10:28.916  3657  3813 I audio_device_template.h: [000:356] [3813] (line 120): SetPlayoutDevice
+11-08 01:10:28.916  3657  3813 I audio_device_impl.cc: [000:356] [3813] (line 359): InitSpeaker
+11-08 01:10:28.916  3657  3813 I audio_device_template.h: [000:356] [3813] (line 219): InitSpeaker
+11-08 01:10:28.916  3657  3813 I audio_device_impl.cc: [000:356] [3813] (line 574): StereoPlayoutIsAvailable
+11-08 01:10:28.916  3657  3813 I audio_device_template.h: [000:356] [3813] (line 321): StereoPlayoutIsAvailable
+11-08 01:10:28.916  3657  3813 I audio_device_impl.cc: [000:356] [3813] (line 581): output: 0
+11-08 01:10:28.916  3657  3813 I audio_device_impl.cc: [000:356] [3813] (line 586): SetStereoPlayout(0)
+11-08 01:10:28.916  3657  3813 I audio_device_template.h: [000:356] [3813] (line 155): PlayoutIsInitialized
+11-08 01:10:28.916  3657  3813 I audio_device_template.h: [000:356] [3813] (line 327): SetStereoPlayout
+11-08 01:10:28.916  3657  3813 I audio_device_buffer.cc: [000:356] [3813] (line 204): SetPlayoutChannels(1)
+11-08 01:10:28.916  3657  3813 I audio_device_impl.cc: [000:356] [3813] (line 732): SetRecordingDevice(0)
+11-08 01:10:28.916  3657  3813 I audio_device_template.h: [000:356] [3813] (line 133): SetRecordingDevice
+11-08 01:10:28.916  3657  3813 I audio_device_impl.cc: [000:356] [3813] (line 365): InitMicrophone
+11-08 01:10:28.916  3657  3813 I audio_device_template.h: [000:356] [3813] (line 229): InitMicrophone
+11-08 01:10:28.916  3657  3813 I audio_device_impl.cc: [000:356] [3813] (line 528): StereoRecordingIsAvailable
+11-08 01:10:28.916  3657  3813 I audio_device_template.h: [000:356] [3813] (line 342): StereoRecordingIsAvailable
+11-08 01:10:28.916  3657  3813 I audio_device_impl.cc: [000:356] [3813] (line 535): output: 0
+11-08 01:10:28.916  3657  3813 I audio_device_impl.cc: [000:356] [3813] (line 540): SetStereoRecording(0)
+11-08 01:10:28.916  3657  3813 I audio_device_template.h: [000:356] [3813] (line 171): RecordingIsInitialized
+11-08 01:10:28.916  3657  3813 I audio_device_template.h: [000:356] [3813] (line 348): SetStereoRecording
+11-08 01:10:28.916  3657  3813 I audio_device_buffer.cc: [000:356] [3813] (line 198): SetRecordingChannels(1)
+11-08 01:10:28.917  3657  3813 I audio_device_impl.cc: [000:358] [3813] (line 845): RegisterAudioCallback
+11-08 01:10:28.918  3657  3813 I audio_device_buffer.cc: [000:358] [3813] (line 79): RegisterAudioCallback
+11-08 01:10:28.918  3657  3813 I webrtc_voice_engine.cc: [000:358] [3813] (line 313): WebRtcVoiceEngine::ApplyOptions: AudioOptions {aec: 1, agc: 1, ns: 1, hf: 1, swap: 0, audio_jitter_buffer_max_packets: 50, audio_jitter_buffer_fast_accelerate: 0, audio_jitter_buffer_min_delay_ms: 0, audio_jitter_buffer_enable_rtx_handling: 0, typing: 1, experimental_agc: 0, extended_filter_aec: 0, delay_agnostic_aec: 0, experimental_ns: 0, residual_echo_detector: 1, }
+11-08 01:10:28.918  3657  3813 I webrtc_voice_engine.cc: [000:358] [3813] (line 386): Disable AGC according to field trial.
+11-08 01:10:28.918  3657  3813 I audio_device_impl.cc: [000:358] [3813] (line 861): BuiltInAECIsAvailable
+11-08 01:10:28.918  3657  3813 I audio_device_template.h: [000:358] [3813] (line 389): BuiltInAECIsAvailable
+11-08 01:10:28.918  3657  3813 I audio_device_impl.cc: [000:358] [3813] (line 864): output: 0
+11-08 01:10:28.918  3657  3813 I audio_processing_impl.cc: [000:358] [3813] (line 697): Highpass filter activated: 0
+11-08 01:10:28.918  3657  3813 I audio_processing_impl.cc: [000:358] [3813] (line 711): Gain Controller 2 activated: 0
+11-08 01:10:28.918  3657  3813 I audio_processing_impl.cc: [000:358] [3813] (line 713): Pre-amplifier activated: 0
+11-08 01:10:28.918  3657  3813 I apm_helpers.cc: [000:358] [3813] (line 90): Echo control set to 1 with mode 1
+11-08 01:10:28.918  3657  3813 I audio_device_impl.cc: [000:358] [3813] (line 877): BuiltInAGCIsAvailable
+11-08 01:10:28.918  3657  3813 I audio_device_template.h: [000:358] [3813] (line 405): BuiltInAGCIsAvailable
+11-08 01:10:28.918  3657  3813 I audio_device_impl.cc: [000:358] [3813] (line 880): output: 0
+11-08 01:10:28.918  3657  3813 I apm_helpers.cc: [000:358] [3813] (line 79): AGC set to 0 with mode 2
+11-08 01:10:28.918  3657  3813 I audio_device_impl.cc: [000:358] [3813] (line 893): BuiltInNSIsAvailable
+11-08 01:10:28.918  3657  3813 I audio_device_template.h: [000:358] [3813] (line 421): BuiltInNSIsAvailable
+11-08 01:10:28.918  3657  3813 I audio_device_impl.cc: [000:358] [3813] (line 896): output: 0
+11-08 01:10:28.918  3657  3813 I audio_processing_impl.cc: [000:358] [3813] (line 697): Highpass filter activated: 0
+11-08 01:10:28.918  3657  3813 I audio_processing_impl.cc: [000:358] [3813] (line 711): Gain Controller 2 activated: 0
+11-08 01:10:28.918  3657  3813 I audio_processing_impl.cc: [000:358] [3813] (line 713): Pre-amplifier activated: 0
+11-08 01:10:28.918  3657  3813 I audio_processing_impl.cc: [000:358] [3813] (line 697): Highpass filter activated: 0
+11-08 01:10:28.918  3657  3813 I audio_processing_impl.cc: [000:358] [3813] (line 711): Gain Controller 2 activated: 0
+11-08 01:10:28.918  3657  3813 I audio_processing_impl.cc: [000:358] [3813] (line 713): Pre-amplifier activated: 0
+11-08 01:10:28.918  3657  3813 I apm_helpers.cc: [000:358] [3813] (line 104): NS set to 1
+11-08 01:10:28.918  3657  3813 I webrtc_voice_engine.cc: [000:358] [3813] (line 469): Stereo swapping enabled? 0
+11-08 01:10:28.918  3657  3813 I webrtc_voice_engine.cc: [000:358] [3813] (line 474): NetEq capacity is 50
+11-08 01:10:28.918  3657  3813 I webrtc_voice_engine.cc: [000:358] [3813] (line 480): NetEq fast mode? 0
+11-08 01:10:28.918  3657  3813 I webrtc_voice_engine.cc: [000:358] [3813] (line 486): NetEq minimum delay is 0
+11-08 01:10:28.918  3657  3813 I webrtc_voice_engine.cc: [000:358] [3813] (line 492): NetEq handle reordered packets? 0
+11-08 01:10:28.918  3657  3813 I webrtc_voice_engine.cc: [000:358] [3813] (line 503): Delay agnostic aec is enabled? 0
+11-08 01:10:28.918  3657  3813 I webrtc_voice_engine.cc: [000:358] [3813] (line 513): Extended filter aec is enabled? 0
+11-08 01:10:28.918  3657  3813 I webrtc_voice_engine.cc: [000:358] [3813] (line 523): Experimental ns is enabled? 0
+11-08 01:10:28.918  3657  3813 I webrtc_voice_engine.cc: [000:358] [3813] (line 539): Typing detection is enabled? 0
+11-08 01:10:28.918  3657  3813 I audio_processing_impl.cc: [000:358] [3813] (line 697): Highpass filter activated: 1
+11-08 01:10:28.918  3657  3813 I audio_processing_impl.cc: [000:358] [3813] (line 711): Gain Controller 2 activated: 0
+11-08 01:10:28.918  3657  3813 I audio_processing_impl.cc: [000:358] [3813] (line 713): Pre-amplifier activated: 0
+11-08 01:10:28.918  3657  3813 I message_queue.cc: [000:358] [3813] (line 518): Message took 259ms to dispatch. Posted from: Init@third_party/webrtc/files/stable/webrtc/pc/channel_manager.cc:135
+11-08 01:10:28.919  3657  3814 I message_queue.cc: [000:359] [3814] (line 518): Message took 264ms to dispatch. Posted from: CreateModularPeerConnectionFactory@third_party/webrtc/files/stable/webrtc/pc/peer_connection_factory.cc:102
+11-08 01:10:28.919  3657  3813 I PeerConnectionFactory: [000:359] [3813] onWorkerThreadReady
+11-08 01:10:28.919  3657  3761 I WebRtcAudioTrack: [000:359] [3761] Set extended error callback
+11-08 01:10:28.919  3657  3761 I WebRtcAudioRecord: [000:359] [3761] Set error callback
+11-08 01:10:28.919  3657  3812 I PeerConnectionFactory: [000:359] [3812] onNetworkThreadReady
+11-08 01:10:28.919  3657  3814 I PeerConnectionFactory: [000:360] [3814] onSignalingThreadReady
+11-08 01:10:28.920  3525  3749 I BugleRcsEngine: [77] omj.shouldUseCarrierServicesApkForV1Apis: Checking if using CarrierServices.apk is possible. Enabled: true, isAtLeastM: true, runningInsideBugle: true
+11-08 01:10:28.920  3657  3761 I CarrierServices: [76] dbh.run: webrtc logs saving is disabled, no need to schedule log cleanup job service
+11-08 01:10:28.921  3525  3749 I BugleRcsEngine: [77] RcsStateProvider.onMigrationComplete: Rcs Engine should be running in cs.apk. Stopping JibeService.
+11-08 01:10:28.921  3525  3749 I BugleRcsEngine: [77] RcsStateProvider.onMigrationComplete: JibeService stopped: false
+11-08 01:10:28.922  3525  3749 I BugleRcsEngine: [77] snl.connect: Connecting ChatSessionService
+11-08 01:10:28.925  3525  3749 I BugleRcsEngine: [77] snl.connect: shouldUseCarrierServicesJibeService: true, CarrierServices rcs service found: true
+11-08 01:10:28.925  3525  3749 I BugleRcsEngine: [77] snl.connect: Binding to JibeService in CarrierServices.
+11-08 01:10:28.928  3525  3749 I BugleRcsEngine: [77] snl.connect: Connecting EventService
+11-08 01:10:28.933  3525  3749 I BugleRcsEngine: [77] snl.connect: shouldUseCarrierServicesJibeService: true, CarrierServices rcs service found: true
+11-08 01:10:28.933  3525  3749 I BugleRcsEngine: [77] snl.connect: Binding to JibeService in CarrierServices.
+11-08 01:10:28.935  3525  3749 I BugleRcsEngine: [77] snl.connect: Connecting ContactsService
+11-08 01:10:28.936  3525  3749 I BugleRcsEngine: [77] snl.connect: shouldUseCarrierServicesJibeService: true, CarrierServices rcs service found: true
+11-08 01:10:28.936  3525  3749 I BugleRcsEngine: [77] snl.connect: Binding to JibeService in CarrierServices.
+11-08 01:10:28.937  2837  3277 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.gms componentName=AppsCorpus serviceId=36
+11-08 01:10:28.938  3525  3749 I BugleRcsEngine: [77] snl.connect: Connecting FileTransferService
+11-08 01:10:28.939  3525  3749 I BugleRcsEngine: [77] snl.connect: shouldUseCarrierServicesJibeService: true, CarrierServices rcs service found: true
+11-08 01:10:28.939  1666  1666 I Zygote  : Process 2893 exited due to signal 9 (Killed)
+11-08 01:10:28.939  3525  3749 I BugleRcsEngine: [77] snl.connect: Binding to JibeService in CarrierServices.
+11-08 01:10:28.939  2837  3277 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.gms componentName=AppsCorpus serviceId=32
+11-08 01:10:28.939  3525  3749 I BugleRcsEngine: [77] snl.connect: Connecting LocationSharingService
+11-08 01:10:28.944  3525  3749 I BugleRcsEngine: [77] snl.connect: shouldUseCarrierServicesJibeService: true, CarrierServices rcs service found: true
+11-08 01:10:28.944  3525  3749 I BugleRcsEngine: [77] snl.connect: Binding to JibeService in CarrierServices.
+11-08 01:10:28.944  3525  3749 I BugleRcsEngine: [77] snl.connect: Connecting ImsConnectionTrackerService
+11-08 01:10:28.945  3525  3749 I BugleRcsEngine: [77] snl.connect: shouldUseCarrierServicesJibeService: true, CarrierServices rcs service found: true
+11-08 01:10:28.945  3525  3749 I BugleRcsEngine: [77] snl.connect: Binding to JibeService in CarrierServices.
+11-08 01:10:28.945  3525  3749 I BugleRcsEngine: [77] snl.connect: Connecting RcsProfileService
+11-08 01:10:28.946  3525  3749 I BugleRcsEngine: [77] snl.connect: shouldUseCarrierServicesJibeService: true, CarrierServices rcs service found: true
+11-08 01:10:28.946  3525  3749 I BugleRcsEngine: [77] snl.connect: Binding to JibeService in CarrierServices.
+11-08 01:10:28.946  3525  3749 I BugleRcsEngine: [77] snl.connect: Connecting BusinessInfoService
+11-08 01:10:28.947  3525  3749 I BugleRcsEngine: [77] snl.connect: shouldUseCarrierServicesJibeService: true, CarrierServices rcs service found: true
+11-08 01:10:28.948  1908  1938 I libprocessgroup: Successfully killed process cgroup uid 1000 pid 2893 in 44ms
+11-08 01:10:28.950  1666  1666 I Zygote  : Process 2577 exited due to signal 9 (Killed)
+11-08 01:10:28.950  3525  3749 I BugleRcsEngine: [77] snl.connect: Binding to JibeService in CarrierServices.
+11-08 01:10:28.958  3525  3749 W RcsProvisioning: Failed to read configuration: /data/user/0/com.google.android.apps.messaging/files/rcsconfig: open failed: ENOENT (No such file or directory)
+11-08 01:10:28.958  3525  3749 W RcsProvisioning: java.io.FileNotFoundException: /data/user/0/com.google.android.apps.messaging/files/rcsconfig: open failed: ENOENT (No such file or directory)
+11-08 01:10:28.958  3525  3749 W RcsProvisioning: 	at libcore.io.IoBridge.open(IoBridge.java:496)
+11-08 01:10:28.958  3525  3749 W RcsProvisioning: 	at java.io.FileInputStream.<init>(FileInputStream.java:159)
+11-08 01:10:28.958  3525  3749 W RcsProvisioning: 	at android.app.ContextImpl.openFileInput(ContextImpl.java:600)
+11-08 01:10:28.958  3525  3749 W RcsProvisioning: 	at android.content.ContextWrapper.openFileInput(ContextWrapper.java:206)
+11-08 01:10:28.958  3525  3749 W RcsProvisioning: 	at opj.a(SourceFile:1)
+11-08 01:10:28.958  3525  3749 W RcsProvisioning: 	at oal.a(SourceFile:4)
+11-08 01:10:28.958  3525  3749 W RcsProvisioning: 	at com.google.android.ims.provisioning.RcsConfigurationManager.a(SourceFile:6)
+11-08 01:10:28.958  3525  3749 W RcsProvisioning: 	at com.google.android.apps.messaging.rcsmigration.RcsStateProvider.onMigrationComplete(SourceFile:22)
+11-08 01:10:28.958  3525  3749 W RcsProvisioning: 	at com.google.android.ims.rcsmigration.IRcsStateProvider$Stub.dispatchTransaction(SourceFile:9)
+11-08 01:10:28.958  3525  3749 W RcsProvisioning: 	at com.google.android.aidl.BaseStub.onTransact(SourceFile:11)
+11-08 01:10:28.958  3525  3749 W RcsProvisioning: 	at android.os.Binder.execTransactInternal(Binder.java:1021)
+11-08 01:10:28.958  3525  3749 W RcsProvisioning: 	at android.os.Binder.execTransact(Binder.java:994)
+11-08 01:10:28.958  3525  3749 W RcsProvisioning: Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+11-08 01:10:28.958  3525  3749 W RcsProvisioning: 	at libcore.io.Linux.open(Native Method)
+11-08 01:10:28.958  3525  3749 W RcsProvisioning: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:167)
+11-08 01:10:28.958  3525  3749 W RcsProvisioning: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:252)
+11-08 01:10:28.958  3525  3749 W RcsProvisioning: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:167)
+11-08 01:10:28.958  3525  3749 W RcsProvisioning: 	at android.app.ActivityThread$AndroidOs.open(ActivityThread.java:7255)
+11-08 01:10:28.958  3525  3749 W RcsProvisioning: 	at libcore.io.IoBridge.open(IoBridge.java:482)
+11-08 01:10:28.958  3525  3749 W RcsProvisioning: 	... 11 more
+11-08 01:10:28.961  3823  3823 W droid.apps.map: Unexpected CPU variant for X86 using defaults: x86_64
+11-08 01:10:28.970  3823  3823 I droid.apps.map: The ClassLoaderContext is a special shared library.
+11-08 01:10:28.988  1908  1938 I libprocessgroup: Successfully killed process cgroup uid 10143 pid 2577 in 39ms
+11-08 01:10:28.989  1908  2003 W ActivityManager: Background start not allowed: service Intent { cmp=com.google.android.apps.messaging/.shared.datamodel.action.execution.ActionExecutorImpl$EmptyService } to com.google.android.apps.messaging/.shared.datamodel.action.execution.ActionExecutorImpl$EmptyService from pid=3525 uid=10131 pkg=com.google.android.apps.messaging startFg?=false
+11-08 01:10:28.990  3525  3525 W BugleDataModel: ActionExecutorImpl: Action started execution, but we can't guarantee it will complete, the app may be killed. Action: class com.google.android.apps.messaging.shared.datamodel.action.CommitPhenotypeAction-CommitPhenotypeAction:29156010
+11-08 01:10:28.990  3525  3525 W BugleDataModel: java.lang.IllegalStateException: Not allowed to start service Intent { cmp=com.google.android.apps.messaging/.shared.datamodel.action.execution.ActionExecutorImpl$EmptyService }: app is in background uid UidRecord{35e8dd1 u0a131 SVC  idle change:uncached procs:1 seq(0,0,0)}
+11-08 01:10:28.990  3525  3525 W BugleDataModel: 	at android.app.ContextImpl.startServiceCommon(ContextImpl.java:1616)
+11-08 01:10:28.990  3525  3525 W BugleDataModel: 	at android.app.ContextImpl.startService(ContextImpl.java:1571)
+11-08 01:10:28.990  3525  3525 W BugleDataModel: 	at android.content.ContextWrapper.startService(ContextWrapper.java:669)
+11-08 01:10:28.990  3525  3525 W BugleDataModel: 	at com.google.android.apps.messaging.shared.datamodel.action.execution.ActionExecutorImpl.e(SourceFile:107)
+11-08 01:10:28.990  3525  3525 W BugleDataModel: 	at com.google.android.apps.messaging.shared.datamodel.action.execution.ActionExecutorImpl.a(SourceFile:19)
+11-08 01:10:28.990  3525  3525 W BugleDataModel: 	at com.google.android.apps.messaging.shared.datamodel.action.execution.ActionExecutorImpl.b(SourceFile:17)
+11-08 01:10:28.990  3525  3525 W BugleDataModel: 	at dya.c(SourceFile:135)
+11-08 01:10:28.990  3525  3525 W BugleDataModel: 	at dya.a(SourceFile:85)
+11-08 01:10:28.990  3525  3525 W BugleDataModel: 	at com.google.android.apps.messaging.shared.datamodel.action.common.Action.schedule(SourceFile:60)
+11-08 01:10:28.990  3525  3525 W BugleDataModel: 	at fdf.a(SourceFile:31)
+11-08 01:10:28.990  3525  3525 W BugleDataModel: 	at fdg.a(Unknown Source:4)
+11-08 01:10:28.990  3525  3525 W BugleDataModel: 	at com.google.android.gms.common.api.internal.BasePendingResult$a.handleMessage(SourceFile:7)
+11-08 01:10:28.990  3525  3525 W BugleDataModel: 	at android.os.Handler.dispatchMessage(Handler.java:107)
+11-08 01:10:28.990  3525  3525 W BugleDataModel: 	at lpw.a(SourceFile:10)
+11-08 01:10:28.990  3525  3525 W BugleDataModel: 	at lpw.dispatchMessage(SourceFile:8)
+11-08 01:10:28.990  3525  3525 W BugleDataModel: 	at android.os.Looper.loop(Looper.java:214)
+11-08 01:10:28.990  3525  3525 W BugleDataModel: 	at android.app.ActivityThread.main(ActivityThread.java:7356)
+11-08 01:10:28.990  3525  3525 W BugleDataModel: 	at java.lang.reflect.Method.invoke(Native Method)
+11-08 01:10:28.990  3525  3525 W BugleDataModel: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:492)
+11-08 01:10:28.990  3525  3525 W BugleDataModel: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:930)
+11-08 01:10:28.990  3525  3525 I BugleAction: ActionSchedulerImpl: class com.google.android.apps.messaging.shared.datamodel.action.CommitPhenotypeAction-CommitPhenotypeAction:29156010 deferred since it was started from unsafe context
+11-08 01:10:28.992  2837  3139 I Icing   : Post-init done
+11-08 01:10:29.005  2837  3139 W Icing   : No valid account for uploading user actions
+11-08 01:10:29.033  2837  3139 I Icing   : Using regular flags by method 2
+11-08 01:10:29.066  2837  3139 I Icing   : Usage reports ok 1, Failed Usage reports 0, indexed 0, rejected 0
+11-08 01:10:29.099  2837  3139 W Icing   : No valid account for uploading user actions
+11-08 01:10:29.111  2837  3139 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+11-08 01:10:29.114  3823  3823 I droid.apps.map: The ClassLoaderContext is a special shared library.
+11-08 01:10:29.114  2837  3139 W Icing   : No valid account for uploading user actions
+11-08 01:10:29.123  2837  3139 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+11-08 01:10:29.124  3525  3749 I BugleRcsEngine: [77] RcsStateProvider.onMigrationComplete: Deleted transfers file: false
+11-08 01:10:29.127  3525  3749 W RcsProvisioning: Failed to read configuration: /data/user/0/com.google.android.apps.messaging/files/rcsconfig: open failed: ENOENT (No such file or directory)
+11-08 01:10:29.127  3525  3749 W RcsProvisioning: java.io.FileNotFoundException: /data/user/0/com.google.android.apps.messaging/files/rcsconfig: open failed: ENOENT (No such file or directory)
+11-08 01:10:29.127  3525  3749 W RcsProvisioning: 	at libcore.io.IoBridge.open(IoBridge.java:496)
+11-08 01:10:29.127  3525  3749 W RcsProvisioning: 	at java.io.FileInputStream.<init>(FileInputStream.java:159)
+11-08 01:10:29.127  3525  3749 W RcsProvisioning: 	at android.app.ContextImpl.openFileInput(ContextImpl.java:600)
+11-08 01:10:29.127  3525  3749 W RcsProvisioning: 	at android.content.ContextWrapper.openFileInput(ContextWrapper.java:206)
+11-08 01:10:29.127  3525  3749 W RcsProvisioning: 	at opj.a(SourceFile:1)
+11-08 01:10:29.127  3525  3749 W RcsProvisioning: 	at oal.a(SourceFile:4)
+11-08 01:10:29.127  3525  3749 W RcsProvisioning: 	at com.google.android.ims.provisioning.RcsConfigurationManager.a(SourceFile:6)
+11-08 01:10:29.127  3525  3749 W RcsProvisioning: 	at odm.buildConferencesFileName(SourceFile:57)
+11-08 01:10:29.127  3525  3749 W RcsProvisioning: 	at com.google.android.apps.messaging.rcsmigration.RcsStateProvider.onMigrationComplete(SourceFile:37)
+11-08 01:10:29.127  3525  3749 W RcsProvisioning: 	at com.google.android.ims.rcsmigration.IRcsStateProvider$Stub.dispatchTransaction(SourceFile:9)
+11-08 01:10:29.127  3525  3749 W RcsProvisioning: 	at com.google.android.aidl.BaseStub.onTransact(SourceFile:11)
+11-08 01:10:29.127  3525  3749 W RcsProvisioning: 	at android.os.Binder.execTransactInternal(Binder.java:1021)
+11-08 01:10:29.127  3525  3749 W RcsProvisioning: 	at android.os.Binder.execTransact(Binder.java:994)
+11-08 01:10:29.127  3525  3749 W RcsProvisioning: Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+11-08 01:10:29.127  3525  3749 W RcsProvisioning: 	at libcore.io.Linux.open(Native Method)
+11-08 01:10:29.127  3525  3749 W RcsProvisioning: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:167)
+11-08 01:10:29.127  3525  3749 W RcsProvisioning: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:252)
+11-08 01:10:29.127  3525  3749 W RcsProvisioning: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:167)
+11-08 01:10:29.127  3525  3749 W RcsProvisioning: 	at android.app.ActivityThread$AndroidOs.open(ActivityThread.java:7255)
+11-08 01:10:29.127  3525  3749 W RcsProvisioning: 	at libcore.io.IoBridge.open(IoBridge.java:482)
+11-08 01:10:29.127  3525  3749 W RcsProvisioning: 	... 12 more
+11-08 01:10:29.132  2837  3139 W Icing   : No valid account for uploading user actions
+11-08 01:10:29.138  2837  3139 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+11-08 01:10:29.140  2837  3139 W Icing   : No valid account for uploading user actions
+11-08 01:10:29.144  2837  3139 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+11-08 01:10:29.167  1711  1733 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 4612096
+11-08 01:10:29.214  1571  1571 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.
+11-08 01:10:29.215  3854  3854 W Gralloc3: mapper 3.x is not supported
+11-08 01:10:29.223  3854  3854 D HostConnection: createUnique: call
+11-08 01:10:29.224  3854  3854 D HostConnection: HostConnection::get() New Host Connection established 0x7137451b55a0, tid 3854
+11-08 01:10:29.266  3854  3854 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_hwc_color_transform GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_2 
+11-08 01:10:29.266  3854  3854 D eglCodecCommon: allocate: Ask for block of size 0x1000
+11-08 01:10:29.266  3854  3854 D eglCodecCommon: allocate: ioctl allocate returned offset 0x3ffb89000 size 0x2000
+11-08 01:10:29.273  3657  3657 I CarrierServices: [2] bqe.a: Unbinding RcsMigrationService
+11-08 01:10:29.277  3657  3657 I CarrierServices: [2] RcsService.a: Initializing RcsService.
+11-08 01:10:29.296  3657  3657 I CarrierServices: [2] cqm.b: Initialize Provisioning Engine V1
+11-08 01:10:29.312  3854  3854 D eglCodecCommon: allocate: Ask for block of size 0x466000
+11-08 01:10:29.312  3854  3854 D eglCodecCommon: allocate: ioctl allocate returned offset 0x3ff724000 size 0x467000
+11-08 01:10:29.356  3657  3657 W RcsProvisioning: Failed to read configuration: /data/user/0/com.google.android.ims/files/rcsconfig: open failed: ENOENT (No such file or directory)
+11-08 01:10:29.356  3657  3657 W RcsProvisioning: java.io.FileNotFoundException: /data/user/0/com.google.android.ims/files/rcsconfig: open failed: ENOENT (No such file or directory)
+11-08 01:10:29.356  3657  3657 W RcsProvisioning: 	at libcore.io.IoBridge.open(IoBridge.java:496)
+11-08 01:10:29.356  3657  3657 W RcsProvisioning: 	at java.io.FileInputStream.<init>(FileInputStream.java:159)
+11-08 01:10:29.356  3657  3657 W RcsProvisioning: 	at android.app.ContextImpl.openFileInput(ContextImpl.java:600)
+11-08 01:10:29.356  3657  3657 W RcsProvisioning: 	at android.content.ContextWrapper.openFileInput(ContextWrapper.java:206)
+11-08 01:10:29.356  3657  3657 W RcsProvisioning: 	at cyr.a(SourceFile:2)
+11-08 01:10:29.356  3657  3657 W RcsProvisioning: 	at chf.a(SourceFile:7)
+11-08 01:10:29.356  3657  3657 W RcsProvisioning: 	at chg.a(SourceFile:8)
+11-08 01:10:29.356  3657  3657 W RcsProvisioning: 	at chm.<init>(SourceFile:967)
+11-08 01:10:29.356  3657  3657 W RcsProvisioning: 	at chm.<init>(SourceFile:951)
+11-08 01:10:29.356  3657  3657 W RcsProvisioning: 	at cqm.b(SourceFile:64)
+11-08 01:10:29.356  3657  3657 W RcsProvisioning: 	at cqm.<init>(SourceFile:11)
+11-08 01:10:29.356  3657  3657 W RcsProvisioning: 	at baj.c(SourceFile:48)
+11-08 01:10:29.356  3657  3657 W RcsProvisioning: 	at bai.b(SourceFile:24)
+11-08 01:10:29.356  3657  3657 W RcsProvisioning: 	at com.google.android.ims.services.RcsService.a(SourceFile:31)
+11-08 01:10:29.356  3657  3657 W RcsProvisioning: 	at crs.onCreate(SourceFile:559)
+11-08 01:10:29.356  3657  3657 W RcsProvisioning: 	at com.google.android.ims.services.RcsService.onCreate(SourceFile:25)
+11-08 01:10:29.356  3657  3657 W RcsProvisioning: 	at android.app.ActivityThread.handleCreateService(ActivityThread.java:3953)
+11-08 01:10:29.356  3657  3657 W RcsProvisioning: 	at android.app.ActivityThread.access$1500(ActivityThread.java:219)
+11-08 01:10:29.356  3657  3657 W RcsProvisioning: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1875)
+11-08 01:10:29.356  3657  3657 W RcsProvisioning: 	at android.os.Handler.dispatchMessage(Handler.java:107)
+11-08 01:10:29.356  3657  3657 W RcsProvisioning: 	at android.os.Looper.loop(Looper.java:214)
+11-08 01:10:29.356  3657  3657 W RcsProvisioning: 	at android.app.ActivityThread.main(ActivityThread.java:7356)
+11-08 01:10:29.356  3657  3657 W RcsProvisioning: 	at java.lang.reflect.Method.invoke(Native Method)
+11-08 01:10:29.356  3657  3657 W RcsProvisioning: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:492)
+11-08 01:10:29.356  3657  3657 W RcsProvisioning: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:930)
+11-08 01:10:29.356  3657  3657 W RcsProvisioning: Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+11-08 01:10:29.356  3657  3657 W RcsProvisioning: 	at libcore.io.Linux.open(Native Method)
+11-08 01:10:29.356  3657  3657 W RcsProvisioning: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:167)
+11-08 01:10:29.356  3657  3657 W RcsProvisioning: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:252)
+11-08 01:10:29.356  3657  3657 W RcsProvisioning: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:167)
+11-08 01:10:29.356  3657  3657 W RcsProvisioning: 	at android.app.ActivityThread$AndroidOs.open(ActivityThread.java:7255)
+11-08 01:10:29.356  3657  3657 W RcsProvisioning: 	at libcore.io.IoBridge.open(IoBridge.java:482)
+11-08 01:10:29.356  3657  3657 W RcsProvisioning: 	... 24 more
+11-08 01:10:29.490  3657  3657 I CarrierServices: [2] bas.<init>: RcsEngine: Constructor running in com.google.android.ims
+11-08 01:10:29.493  3657  3657 I CarrierServices: [2] cut.a: KEY_CONFIG_IMS_PACKAGE_OVERRIDE_STRING: com.google.android.ims
+11-08 01:10:29.494  3657  3657 W CarrierServices: [2] cgy.a: No config URL. RCS will be disabled!
+11-08 01:10:29.551  3525  3525 I RcsClientLib: Service com.google.android.rcs.client.chatsession.ChatSessionService connected. Will notify listeners: true
+11-08 01:10:29.552  3525  3525 I RcsClientLib: Service com.google.android.rcs.client.events.EventService connected. Will notify listeners: true
+11-08 01:10:29.553  3525  3525 I RcsClientLib: Service com.google.android.rcs.client.contacts.ContactsService connected. Will notify listeners: true
+11-08 01:10:29.556  3525  3525 I RcsClientLib: Service com.google.android.rcs.client.filetransfer.FileTransferService connected. Will notify listeners: true
+11-08 01:10:29.558  3525  3525 I RcsClientLib: Service com.google.android.rcs.client.locationsharing.LocationSharingService connected. Will notify listeners: true
+11-08 01:10:29.560  3525  3525 I RcsClientLib: Service com.google.android.rcs.client.ims.ImsConnectionTrackerService connected. Will notify listeners: true
+11-08 01:10:29.566  2736  2988 E BluetoothAdapter: Bluetooth binder is null
+11-08 01:10:29.572  3657  3657 I CarrierServices: [2] crs.a: onSimLoaded: JibePreferences hasSim: [true], rcsEnabled: [false]
+11-08 01:10:29.573  3657  3873 I CarrierServices: [92] bbd.handleMessage: RCS is disabled, skipping config update request
+11-08 01:10:29.574  3657  3833 E CarrierServices: [85] cqf.a: Invalid signature found for com.android.contacts: E39B7BFBE0A67D78292F6CC62E06CA27A2EBF255
+11-08 01:10:29.578  3657  3833 E CarrierServices: [85] cqf.a: Invalid signature found for com.android.contacts: E39B7BFBE0A67D78292F6CC62E06CA27A2EBF255
+11-08 01:10:29.582  3525  3525 I RcsClientLib: Service com.google.android.rcs.client.profile.RcsProfileService connected. Will notify listeners: true
+11-08 01:10:29.584  3657  3872 W CarrierServices: [91] cgy.a: No config URL. RCS will be disabled!
+11-08 01:10:29.585  3525  3525 I BugleRcs: RcsAvailability ACS url: null
+11-08 01:10:29.585  3525  3525 I RcsClientLib: Service com.google.android.rcs.client.businessinfo.BusinessInfoService connected. Will notify listeners: true
+11-08 01:10:29.589  3657  3872 W CarrierServices: [91] cgy.a: No config URL. RCS will be disabled!
+11-08 01:10:29.590  3525  3525 I BugleRcs: RcsAvailability ACS url: null
+11-08 01:10:29.858  3907  3907 W app_process: type=1400 audit(0.0:14): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=6716 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+11-08 01:10:29.858  3907  3907 I chatty  : uid=2000(shell) app_process identical 1 line
+11-08 01:10:29.858  3907  3907 W app_process: type=1400 audit(0.0:16): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=6716 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+11-08 01:10:29.859  3907  3907 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-08 01:10:29.860  3907  3907 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_apex_image"
+11-08 01:10:29.860  3907  3907 I AndroidRuntime: Using default boot image
+11-08 01:10:29.860  3907  3907 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.disable_lock_profiling"
+11-08 01:10:29.860  3907  3907 I AndroidRuntime: Leaving lock profiling enabled
+11-08 01:10:29.860  3907  3907 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_generational_cc"
+11-08 01:10:29.861  3907  3907 I app_process: Core platform API reporting enabled, enforcing=false
+11-08 01:10:29.941  1908  1935 E memtrack: Couldn't load memtrack module
+11-08 01:10:29.941  1908  1935 W android.os.Debug: failed to get memory consumption info: -1
+11-08 01:10:29.957  3907  3907 D ICU     : Time zone APEX file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+11-08 01:10:29.960  3907  3907 W app_process: Unexpected CPU variant for X86 using defaults: x86_64
+11-08 01:10:29.970  3907  3907 I app_process: The ClassLoaderContext is a special shared library.
+11-08 01:10:29.970  3907  3907 I app_process: The ClassLoaderContext is a special shared library.
+11-08 01:10:29.976  3907  3907 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+11-08 01:10:29.978  3907  3907 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-08 01:10:29.983  1908  1908 V SettingsProvider: Notifying for 0: content://settings/secure/accessibility_enabled
+11-08 01:10:29.983  1908  2599 I system_server: Starting a blocking GC Alloc
+11-08 01:10:29.983  1908  2599 I system_server: Starting a blocking GC Alloc
+11-08 01:10:29.989  1908  3338 I system_server: Waiting for a blocking GC Alloc
+11-08 01:10:29.989  1908  2701 I system_server: Waiting for a blocking GC Alloc
+11-08 01:10:29.989  1908  2179 I system_server: Waiting for a blocking GC Alloc
+11-08 01:10:29.989  1908  2677 I system_server: Waiting for a blocking GC Alloc
+11-08 01:10:29.989  1908  1925 I system_server: Waiting for a blocking GC Alloc
+11-08 01:10:29.989  1908  2003 I system_server: Waiting for a blocking GC Alloc
+11-08 01:10:29.990  1908  2599 I system_server: Alloc young concurrent copying GC freed 37219(1969KB) AllocSpace objects, 18(440KB) LOS objects, 36% free, 10MB/16MB, paused 13us total 6.930ms
+11-08 01:10:29.990  1908  3338 I system_server: Starting a blocking GC Alloc
+11-08 01:10:29.991  1908  2701 I system_server: Starting a blocking GC Alloc
+11-08 01:10:29.991  1908  2179 I system_server: Starting a blocking GC Alloc
+11-08 01:10:29.991  1908  2677 I system_server: Starting a blocking GC Alloc
+11-08 01:10:29.991  1908  1925 I system_server: Starting a blocking GC Alloc
+11-08 01:10:29.993  1908  2003 I system_server: Starting a blocking GC Alloc
+11-08 01:10:30.003  2299  2299 E libprocessgroup: set_timerslack_ns write failed: Operation not permitted
+11-08 01:10:30.206  3823  3932 D libEGL  : Emulator has host GPU support, qemu.gles is set to 1.
+11-08 01:10:30.206  3823  3932 W libc    : Unable to set property "qemu.gles" to "1": connection failed; errno=13 (Permission denied)
+11-08 01:10:30.188  3823  3823 W DefaultPool4: type=1400 audit(0.0:17): avc: denied { write } for name="property_service" dev="tmpfs" ino=6810 scontext=u:r:untrusted_app:s0:c137,c256,c512,c768 tcontext=u:object_r:property_socket:s0 tclass=sock_file permissive=0 app=com.google.android.apps.maps
+11-08 01:10:30.359  2184  3718 D NetworkMonitor/101: PROBE_FALLBACK http://play.googleapis.com/generate_204 time=11ms ret=303 request={Connection=[close], User-Agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.32 Safari/537.36]} headers={null=[HTTP/1.1 303 See Other], Connection=[close], Location=[https://iac.srmist.edu.in/Connect/Access?AgentCode=000&url=aHR0cDovL3BsYXkuZ29vZ2xlYXBpcy5jb20vZ2VuZXJhdGVfMjA0&params=AkuD6YmBcYlxiYHBcaG52aNLayvpibnJoYHBgaGZgQ==], X-Android-Received-Millis=[1794080430359], X-Android-Response-Source=[NETWORK 303], X-Android-Selected-Protocol=[http/1.1], X-Android-Sent-Millis=[1794080430352]}
+11-08 01:10:30.361  2184  3718 D NetworkMonitor/101: isCaptivePortal: isSuccessful()=false isPortal()=true RedirectUrl=https://iac.srmist.edu.in/Connect/Access?AgentCode=000&url=aHR0cDovL3BsYXkuZ29vZ2xlYXBpcy5jb20vZ2VuZXJhdGVfMjA0&params=AkuD6YmBcYlxiYHBcaG52aNLayvpibnJoYHBgaGZgQ== isPartialConnectivity()=false Time=3013ms
+11-08 01:10:30.362  1908  2013 D ConnectivityService: NetworkAgentInfo [WIFI () - 101] validation failed with redirect to https://iac.srmist.edu.in/Connect/Access?AgentCode=000&url=aHR0cDovL3BsYXkuZ29vZ2xlYXBpcy5jb20vZ2VuZXJhdGVfMjA0&params=AkuD6YmBcYlxiYHBcaG52aNLayvpibnJoYHBgaGZgQ==
+11-08 01:10:30.498  3823  3932 D libEGL  : loaded /vendor/lib64/egl/libEGL_emulation.so
+11-08 01:10:30.499  3823  3932 D libEGL  : loaded /vendor/lib64/egl/libGLESv1_CM_emulation.so
+11-08 01:10:30.500  3823  3932 D libEGL  : loaded /vendor/lib64/egl/libGLESv2_emulation.so
+11-08 01:10:30.505  3823  3932 D HostConnection: HostConnection::get() New Host Connection established 0x7b96b0455900, tid 3932
+11-08 01:10:30.539  3823  3932 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_hwc_color_transform GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_2 
+11-08 01:10:30.543  3823  3932 D EGL_emulation: eglCreateContext: 0x7b96b0455ae0: maj 2 min 0 rcv 2
+11-08 01:10:30.544  3823  3932 D EGL_emulation: eglMakeCurrent: 0x7b96b0455ae0: ver 2 0 (tinfo 0x7b96b0418dc0)
+11-08 01:10:30.607  3823  3931 W droid.apps.map: Long monitor contention with owner DefaultPool2 (3930) at void vnv.<init>(ula)(PG:15) waiters=1 in vvp eeu.b() for 176ms
+11-08 01:10:30.943  3823  3941 E BluetoothAdapter: Bluetooth binder is null
+11-08 01:10:30.986  1665  3944 E ResolverController: No valid NAT64 prefix (101, <unspecified>/0)
+11-08 01:10:30.993  2445  2969 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-08 01:10:30.993  2445  2969 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@202414023@20.24.14 (040800-319035315):2)
+11-08 01:10:30.993  2445  2969 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@202414023@20.24.14 (040800-319035315):0)
+11-08 01:10:31.015  2445  2969 V NativeCrypto: SSL handshake aborted: ssl=0x7b965ead64c8: I/O error during system call, Connection reset by peer
+11-08 01:10:31.021  2445  2969 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-08 01:10:31.021  2445  2969 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@202414023@20.24.14 (040800-319035315):2)
+11-08 01:10:31.021  2445  2969 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@202414023@20.24.14 (040800-319035315):0)
+11-08 01:10:31.043  2445  2969 V NativeCrypto: SSL handshake aborted: ssl=0x7b965ead64c8: I/O error during system call, Connection reset by peer
+11-08 01:10:31.049  2445  2969 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-08 01:10:31.049  2445  2969 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@202414023@20.24.14 (040800-319035315):2)
+11-08 01:10:31.049  2445  2969 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@202414023@20.24.14 (040800-319035315):0)
+11-08 01:10:31.072  2445  2969 V NativeCrypto: SSL handshake aborted: ssl=0x7b965ead64c8: I/O error during system call, Connection reset by peer
+11-08 01:10:31.086  2445  2969 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-08 01:10:31.086  2445  2969 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@202414023@20.24.14 (040800-319035315):2)
+11-08 01:10:31.086  2445  2969 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@202414023@20.24.14 (040800-319035315):0)
+11-08 01:10:31.107  3907  3907 I AccessibilityNodeInfoDumper: Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@2f9f3; boundsInParent: Rect(0, 0 - 0, 24); boundsInScreen: Rect(360, 1476 - 360, 1500); packageName: com.google.android.apps.nexuslauncher; className: android.widget.TextView; text: null; error: null; maxTextLength: -1; contentDescription: ; tooltipText: null; viewIdResName: com.google.android.apps.nexuslauncher:id/qsb_hint; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
+11-08 01:10:31.108  3907  3907 I AccessibilityNodeInfoDumper: Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@2fdb4; boundsInParent: Rect(0, 0 - 119, 98); boundsInScreen: Rect(571, 1485 - 690, 1583); packageName: com.google.android.apps.nexuslauncher; className: android.widget.TextView; text: null; error: null; maxTextLength: -1; contentDescription: null; tooltipText: null; viewIdResName: com.google.android.apps.nexuslauncher:id/fast_scroller_popup; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
+11-08 01:10:31.111  3907  3907 W AccessibilityNodeInfoDumper: Fetch time: 7ms
+11-08 01:10:31.111  1908  1925 W WindowManager: removeWindowToken: Attempted to remove non-existing token: android.os.Binder@f1ed6a0
+11-08 01:10:31.113  1908  1908 V SettingsProvider: Notifying for 0: content://settings/secure/accessibility_enabled
+11-08 01:10:31.120  3907  3907 D AndroidRuntime: Shutting down VM

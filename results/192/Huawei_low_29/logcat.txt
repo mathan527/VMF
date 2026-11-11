@@ -1,0 +1,432 @@
+--------- beginning of system
+11-09 01:25:14.311  2842  2870 D ActivityThread: Loading provider com.android.email.provider;com.android.email.notifier: com.android.email.provider.EmailProvider
+11-09 01:25:14.314  1912  2074 W ActivityManager: Unable to start service Intent { act=com.android.email.EXCHANGE_INTENT pkg=com.android.exchange } U=0: not found
+--------- beginning of main
+11-09 01:25:14.231  2842  2842 I m.android.emai: The ClassLoaderContext is a special shared library.
+11-09 01:25:14.350  2327  2327 I LatinIME: Timeout waiting for dictionary load
+11-09 01:25:14.350  2327  2327 I SystemBroadcastReceiver: Boot has been completed
+11-09 01:25:14.350  2327  2327 I SystemBroadcastReceiver: toggleAppIcon() : FLAG_SYSTEM = true
+11-09 01:25:14.374  2177  2474 D NetworkMonitor/100: PROBE_FALLBACK http://www.google.com/gen_204 time=61ms ret=303 request={Connection=[close], User-Agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.32 Safari/537.36]} headers={null=[HTTP/1.1 303 See Other], Connection=[close], Location=[https://iac.srmist.edu.in/Connect/Access?AgentCode=000&url=aHR0cDovL3d3dy5nb29nbGUuY29tL2dlbl8yMDQ=&params=AkuD6YmBcYlxiYHBcaG52aNLayvpibnJoYmxubmJoQ==], X-Android-Received-Millis=[1794167714374], X-Android-Response-Source=[NETWORK 303], X-Android-Selected-Protocol=[http/1.1], X-Android-Sent-Millis=[1794167714328]}
+11-09 01:25:14.380  2177  2474 D NetworkMonitor/100: isCaptivePortal: isSuccessful()=false isPortal()=true RedirectUrl=https://iac.srmist.edu.in/Connect/Access?AgentCode=000&url=aHR0cDovL3d3dy5nb29nbGUuY29tL2dlbl8yMDQ=&params=AkuD6YmBcYlxiYHBcaG52aNLayvpibnJoYmxubmJoQ== isPartialConnectivity()=false Time=3064ms
+11-09 01:25:14.380  1912  2017 D ConnectivityService: NetworkAgentInfo [MOBILE (LTE) - 100] validation failed with redirect to https://iac.srmist.edu.in/Connect/Access?AgentCode=000&url=aHR0cDovL3d3dy5nb29nbGUuY29tL2dlbl8yMDQ=&params=AkuD6YmBcYlxiYHBcaG52aNLayvpibnJoYmxubmJoQ==
+11-09 01:25:14.382  1912  2017 D NetworkNotificationManager: showNotification tag=ConnectivityNotification:100 event=SIGN_IN transport=mobile data name=epc.tmobile.com highPriority=false
+11-09 01:25:14.393  2882  2882 W gedprovisionin: Unexpected CPU variant for X86 using defaults: x86_64
+11-09 01:25:14.395  1663  1663 D Zygote  : Forked child process 2882
+11-09 01:25:14.396  1912  1939 I ActivityManager: Start proc 2882:com.android.managedprovisioning/u0a59 for broadcast {com.android.managedprovisioning/com.android.managedprovisioning.preprovisioning.BootReminder}
+11-09 01:25:14.430  2882  2882 I gedprovisionin: The ClassLoaderContext is a special shared library.
+11-09 01:25:14.471  1912  2074 W ActivityManager: Unable to start service Intent { act=com.android.email.EXCHANGE_INTENT pkg=com.android.exchange } U=0: not found
+11-09 01:25:14.476  2842  2875 W m.android.emai: Long monitor contention with owner AsyncTask #3 (2865) at void java.lang.Thread.nativeCreate(java.lang.Thread, long, boolean)(Thread.java:-2) waiters=2 in void com.android.email.provider.AccountReconciler.reconcileAccounts(android.content.Context) for 155ms
+11-09 01:25:14.489  2657  2657 D NLService: Successfully stored the newly arrived notification identified by 740
+11-09 01:25:14.473  1912  2074 I chatty  : uid=1000(system) Binder:1912_4 identical 1 line
+11-09 01:25:14.475  1912  2074 W ActivityManager: Unable to start service Intent { act=com.android.email.EXCHANGE_INTENT pkg=com.android.exchange } U=0: not found
+11-09 01:25:14.505  1912  2074 W ActivityManager: Unable to start service Intent { cmp=com.android.email/.service.AttachmentService } U=0: not found
+11-09 01:25:14.512  1912  2219 W ActivityManager: Unable to start service Intent { cmp=com.android.email/.service.AttachmentService } U=0: not found
+11-09 01:25:14.512  1912  2583 W ActivityManager: Unable to start service Intent { cmp=com.android.email/.service.AttachmentService } U=0: not found
+11-09 01:25:14.512  1912  2583 W ActivityManager: Unable to start service Intent { cmp=com.android.email/.service.AttachmentService } U=0: not found
+11-09 01:25:14.513  1912  2074 W ActivityManager: Unable to start service Intent { cmp=com.android.email/.service.AttachmentService } U=0: not found
+11-09 01:25:14.523  2900  2900 W droid.messagin: Unexpected CPU variant for X86 using defaults: x86_64
+11-09 01:25:14.523  1663  1663 D Zygote  : Forked child process 2900
+11-09 01:25:14.527  1912  1939 I ActivityManager: Start proc 2900:com.android.messaging/u0a76 for broadcast {com.android.messaging/com.android.messaging.receiver.BootAndPackageReplacedReceiver}
+11-09 01:25:14.547  1710  1739 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 36864
+11-09 01:25:14.547  2900  2900 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.hidl.base-V1.0-java.jar
+11-09 01:25:14.548  2900  2900 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.hidl.manager-V1.0-java.jar
+11-09 01:25:14.548  2900  2900 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.hidl.base-V1.0-java.jar
+11-09 01:25:14.551  1710  1739 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 36864
+11-09 01:25:14.553  2900  2900 I droid.messagin: The ClassLoaderContext is a special shared library.
+11-09 01:25:14.554  1710  1739 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 36864
+11-09 01:25:14.556  1912  2074 W ActivityManager: Unable to start service Intent { cmp=com.android.email/.service.AttachmentService } U=0: not found
+11-09 01:25:14.567  1710  1739 I chatty  : uid=1000(system) HwBinder:1710_2 identical 5 lines
+11-09 01:25:14.570  1710  1739 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 36864
+11-09 01:25:14.572  2842  2919 I Email   : Observing account changes for notifications
+11-09 01:25:14.572  2283  2283 E libprocessgroup: set_timerslack_ns write failed: Operation not permitted
+11-09 01:25:14.556  1912  2074 W ActivityManager: Unable to start service Intent { cmp=com.android.email/.service.AttachmentService } U=0: not found
+11-09 01:25:14.574  1912  2583 W ActivityManager: Unable to start service Intent { act=com.android.email.EXCHANGE_INTENT pkg=com.android.exchange } U=0: not found
+11-09 01:25:14.584  2842  2871 W m.android.emai: Long monitor contention with owner AsyncTask #3 (2865) at void java.lang.Thread.nativeCreate(java.lang.Thread, long, boolean)(Thread.java:-2) waiters=4 in void com.android.email.provider.AccountReconciler.reconcileAccounts(android.content.Context) for 237ms
+11-09 01:25:14.588  2842  2881 W m.android.emai: Long monitor contention with owner AsyncTask #3 (2865) at void java.lang.Thread.nativeCreate(java.lang.Thread, long, boolean)(Thread.java:-2) waiters=5 in void com.android.email.provider.AccountReconciler.reconcileAccounts(android.content.Context) for 238ms
+11-09 01:25:14.583  1912  2583 I chatty  : uid=1000(system) Binder:1912_9 identical 1 line
+11-09 01:25:14.586  1912  2583 W ActivityManager: Unable to start service Intent { act=com.android.email.EXCHANGE_INTENT pkg=com.android.exchange } U=0: not found
+11-09 01:25:14.592  1912  2074 W ActivityManager: Unable to start service Intent { act=com.android.email.EXCHANGE_INTENT pkg=com.android.exchange } U=0: not found
+11-09 01:25:14.592  2842  2879 W m.android.emai: Long monitor contention with owner AsyncTask #3 (2865) at void java.lang.Thread.nativeCreate(java.lang.Thread, long, boolean)(Thread.java:-2) waiters=6 in void com.android.email.provider.AccountReconciler.reconcileAccounts(android.content.Context) for 239ms
+11-09 01:25:14.595  1912  2074 I chatty  : uid=1000(system) Binder:1912_4 identical 1 line
+11-09 01:25:14.595  1912  2074 W ActivityManager: Unable to start service Intent { act=com.android.email.EXCHANGE_INTENT pkg=com.android.exchange } U=0: not found
+11-09 01:25:14.600  2842  2842 E ActivityThread: Service com.android.email.service.EmailBroadcastProcessorService has leaked ServiceConnection com.android.emailcommon.service.ServiceProxy$ProxyConnection@448a8d5 that was originally bound here
+11-09 01:25:14.600  2842  2842 E ActivityThread: android.app.ServiceConnectionLeaked: Service com.android.email.service.EmailBroadcastProcessorService has leaked ServiceConnection com.android.emailcommon.service.ServiceProxy$ProxyConnection@448a8d5 that was originally bound here
+11-09 01:25:14.600  2842  2842 E ActivityThread: 	at android.app.LoadedApk$ServiceDispatcher.<init>(LoadedApk.java:1805)
+11-09 01:25:14.600  2842  2842 E ActivityThread: 	at android.app.LoadedApk.getServiceDispatcherCommon(LoadedApk.java:1677)
+11-09 01:25:14.600  2842  2842 E ActivityThread: 	at android.app.LoadedApk.getServiceDispatcher(LoadedApk.java:1656)
+11-09 01:25:14.600  2842  2842 E ActivityThread: 	at android.app.ContextImpl.bindServiceCommon(ContextImpl.java:1721)
+11-09 01:25:14.600  2842  2842 E ActivityThread: 	at android.app.ContextImpl.bindService(ContextImpl.java:1650)
+11-09 01:25:14.600  2842  2842 E ActivityThread: 	at android.content.ContextWrapper.bindService(ContextWrapper.java:705)
+11-09 01:25:14.600  2842  2842 E ActivityThread: 	at com.android.emailcommon.service.ServiceProxy.setTask(ServiceProxy.java:181)
+11-09 01:25:14.600  2842  2842 E ActivityThread: 	at com.android.emailcommon.service.ServiceProxy.test(ServiceProxy.java:224)
+11-09 01:25:14.600  2842  2842 E ActivityThread: 	at com.android.email.service.EmailServiceUtils.isServiceAvailable(EmailServiceUtils.java:160)
+11-09 01:25:14.600  2842  2842 E ActivityThread: 	at com.android.email.provider.AccountReconciler.reconcileAccountsInternal(AccountReconciler.java:171)
+11-09 01:25:14.600  2842  2842 E ActivityThread: 	at com.android.email.provider.AccountReconciler.reconcileAccounts(AccountReconciler.java:115)
+11-09 01:25:14.600  2842  2842 E ActivityThread: 	at com.android.email.service.EmailBroadcastProcessorService.reconcileAndStartServices(EmailBroadcastProcessorService.java:305)
+11-09 01:25:14.600  2842  2842 E ActivityThread: 	at com.android.email.service.EmailBroadcastProcessorService.onBootCompleted(EmailBroadcastProcessorService.java:295)
+11-09 01:25:14.600  2842  2842 E ActivityThread: 	at com.android.email.service.EmailBroadcastProcessorService.onHandleIntent(EmailBroadcastProcessorService.java:130)
+11-09 01:25:14.600  2842  2842 E ActivityThread: 	at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:78)
+11-09 01:25:14.600  2842  2842 E ActivityThread: 	at android.os.Handler.dispatchMessage(Handler.java:107)
+11-09 01:25:14.600  2842  2842 E ActivityThread: 	at android.os.Looper.loop(Looper.java:214)
+11-09 01:25:14.600  2842  2842 E ActivityThread: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-09 01:25:14.602  1912  2583 W ActivityManager: Unbind failed: could not find connection for android.os.BinderProxy@8cd2710
+11-09 01:25:14.629  2900  2900 I MessagingApp: Carrier config changed. Reloading MMS config.
+11-09 01:25:14.638  2923  2923 W timeinitialize: Unexpected CPU variant for X86 using defaults: x86_64
+11-09 01:25:14.653  2900  2922 W MessagingApp: canonicalizeMccMnc: invalid mccmnc:null ,null
+11-09 01:25:14.654  1663  1663 D Zygote  : Forked child process 2923
+11-09 01:25:14.658  1912  2219 D MmsServiceBroker: getCarrierConfigValues() by com.android.messaging
+11-09 01:25:14.658  1912  2219 W MmsServiceBroker: MmsService not connected. Try connecting...
+11-09 01:25:14.658  1912  1912 I MmsServiceBroker: Connecting to MmsService
+11-09 01:25:14.658  1912  1912 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.bindService:1649 com.android.server.MmsServiceBroker.tryConnecting:241 com.android.server.MmsServiceBroker.access$000:53 com.android.server.MmsServiceBroker$1.handleMessage:83 android.os.Handler.dispatchMessage:107 
+11-09 01:25:14.664  2190  2190 I m.android.phon: The ClassLoaderContext is a special shared library.
+11-09 01:25:14.667  2190  2190 D MmsService: onCreate
+11-09 01:25:14.672  1912  1912 I MmsServiceBroker: MmsService connected
+11-09 01:25:14.672  2190  2190 I MmsService: MmsConfigManager receiver action: android.intent.action.SIM_STATE_CHANGED
+11-09 01:25:14.672  2190  2217 D MmsService: getCarrierConfigValues
+11-09 01:25:14.672  2190  2217 I MmsService: mms config for sub 1: null
+11-09 01:25:14.672  2190  2190 I MmsService: MmsConfigManager receiver action: android.telephony.action.CARRIER_CONFIG_CHANGED
+11-09 01:25:14.673  2900  2922 I MessagingApp: Carrier configs loaded: Bundle[{maxImageHeight=1944, maxMessageSize=1048576, maxImageWidth=2592}] from resources+system for subId=1
+11-09 01:25:14.674  2190  2944 I MmsService: MmsConfigManager loads in background mcc/mnc: 310/260
+11-09 01:25:14.675  2190  2942 I MmsService: MmsConfigManager loads in background mcc/mnc: 310/260
+11-09 01:25:14.684  1912  1939 W ActivityManager: Slow operation: 75ms so far, now at startProcess: returned from zygote!
+11-09 01:25:14.684  2190  2943 I MmsService: MmsConfigManager loads in background mcc/mnc: 310/260
+11-09 01:25:14.684  1912  1939 W ActivityManager: Slow operation: 75ms so far, now at startProcess: done updating battery stats
+11-09 01:25:14.684  1912  1939 W ActivityManager: Slow operation: 75ms so far, now at startProcess: building log message
+11-09 01:25:14.684  1912  1939 I ActivityManager: Start proc 2923:com.android.onetimeinitializer/u0a92 for broadcast {com.android.onetimeinitializer/com.android.onetimeinitializer.OneTimeInitializerReceiver}
+11-09 01:25:14.684  1912  1939 W ActivityManager: Slow operation: 75ms so far, now at startProcess: starting to update pids map
+11-09 01:25:14.685  1912  1939 W ActivityManager: Slow operation: 75ms so far, now at startProcess: done updating pids map
+11-09 01:25:14.696  2900  2924 W MessagingApp: canonicalizeMccMnc: invalid mccmnc:null ,null
+11-09 01:25:14.696  1912  2074 D MmsServiceBroker: getCarrierConfigValues() by com.android.messaging
+11-09 01:25:14.696  2190  2217 D MmsService: getCarrierConfigValues
+11-09 01:25:14.696  2190  2217 I MmsService: mms config for sub 1: Bundle[{httpSocketTimeout=60000, aliasMinChars=2, smsToMmsTextThreshold=-1, enableSMSDeliveryReports=true, maxMessageTextSize=-1, supportMmsContentDisposition=true, enabledTransID=false, aliasEnabled=false, supportHttpCharsetHeader=false, allowAttachAudio=true, smsToMmsTextLengthThreshold=-1, recipientLimit=2147483647, uaProfTagName=x-wap-profile, aliasMaxChars=48, maxImageHeight=1944, enableMMSDeliveryReports=false, userAgent=, mmsCloseConnection=true, config_cellBroadcastAppLinks=true, maxSubjectLength=40, httpParams=, enableGroupMms=true, emailGatewayNumber=, maxMessageSize=1048576, naiSuffix=, enableMMSReadReports=false, maxImageWidth=2592, uaProfUrl=, enabledMMS=false, enabledNotifyWapMMSC=false, sendMultipartSmsAsSeparateMessages=false, enableMultipartSMS=true}]
+11-09 01:25:14.697  2900  2924 I MessagingApp: Carrier configs loaded: Bundle[{httpSocketTimeout=60000, aliasMinChars=2, smsToMmsTextThreshold=-1, enableSMSDeliveryReports=true, maxMessageTextSize=-1, supportMmsContentDisposition=true, enabledTransID=false, aliasEnabled=false, supportHttpCharsetHeader=false, allowAttachAudio=true, smsToMmsTextLengthThreshold=-1, recipientLimit=2147483647, uaProfTagName=x-wap-profile, aliasMaxChars=48, maxImageHeight=1944, enableMMSDeliveryReports=false, userAgent=, mmsCloseConnection=true, config_cellBroadcastAppLinks=true, maxSubjectLength=40, httpParams=, enableGroupMms=true, emailGatewayNumber=, maxMessageSize=1048576, naiSuffix=, enableMMSReadReports=false, maxImageWidth=2592, uaProfUrl=, enabledMMS=false, enabledNotifyWapMMSC=false, sendMultipartSmsAsSeparateMessages=false, enableMultipartSMS=true}] from resources+system for subId=1
+11-09 01:25:14.698  2900  2926 W MessagingApp: canonicalizeMccMnc: invalid mccmnc:null ,null
+11-09 01:25:14.698  2190  2217 D MmsService: getCarrierConfigValues
+11-09 01:25:14.699  2190  2217 I MmsService: mms config for sub 1: Bundle[{httpSocketTimeout=60000, aliasMinChars=2, smsToMmsTextThreshold=-1, enableSMSDeliveryReports=true, maxMessageTextSize=-1, supportMmsContentDisposition=true, enabledTransID=false, aliasEnabled=false, supportHttpCharsetHeader=false, allowAttachAudio=true, smsToMmsTextLengthThreshold=-1, recipientLimit=2147483647, uaProfTagName=x-wap-profile, aliasMaxChars=48, maxImageHeight=1944, enableMMSDeliveryReports=false, userAgent=, mmsCloseConnection=true, config_cellBroadcastAppLinks=true, maxSubjectLength=40, httpParams=, enableGroupMms=true, emailGatewayNumber=, maxMessageSize=1048576, naiSuffix=, enableMMSReadReports=false, maxImageWidth=2592, uaProfUrl=, enabledMMS=false, enabledNotifyWapMMSC=false, sendMultipartSmsAsSeparateMessages=false, enableMultipartSMS=true}]
+11-09 01:25:14.699  2900  2926 I MessagingApp: Carrier configs loaded: Bundle[{httpSocketTimeout=60000, aliasMinChars=2, smsToMmsTextThreshold=-1, enableSMSDeliveryReports=true, maxMessageTextSize=-1, supportMmsContentDisposition=true, enabledTransID=false, aliasEnabled=false, supportHttpCharsetHeader=false, allowAttachAudio=true, smsToMmsTextLengthThreshold=-1, recipientLimit=2147483647, uaProfTagName=x-wap-profile, aliasMaxChars=48, maxImageHeight=1944, enableMMSDeliveryReports=false, userAgent=, mmsCloseConnection=true, config_cellBroadcastAppLinks=true, maxSubjectLength=40, httpParams=, enableGroupMms=true, emailGatewayNumber=, maxMessageSize=1048576, naiSuffix=, enableMMSReadReports=false, maxImageWidth=2592, uaProfUrl=, enabledMMS=false, enabledNotifyWapMMSC=false, sendMultipartSmsAsSeparateMessages=false, enableMultipartSMS=true}] from resources+system for subId=1
+11-09 01:25:14.705  2900  2927 I MessagingAppDataModel: Fixup: Send failed - 0 Download failed - 0
+11-09 01:25:14.710  2923  2923 I timeinitialize: The ClassLoaderContext is a special shared library.
+11-09 01:25:14.723  2923  2923 V OneTimeInitializerReceiver: OneTimeInitializerReceiver.onReceive
+11-09 01:25:14.743  2190  2190 I m.android.phon: The ClassLoaderContext is a special shared library.
+11-09 01:25:14.788  1663  1663 D Zygote  : Forked child process 2954
+11-09 01:25:14.801  2954  2954 W ackageinstalle: Unexpected CPU variant for X86 using defaults: x86_64
+11-09 01:25:14.698  1912  2074 D MmsServiceBroker: getCarrierConfigValues() by com.android.messaging
+11-09 01:25:14.802  1912  1939 W ActivityManager: Slow operation: 52ms so far, now at startProcess: returned from zygote!
+11-09 01:25:14.802  1912  1939 W ActivityManager: Slow operation: 52ms so far, now at startProcess: done updating battery stats
+11-09 01:25:14.802  1912  1939 W ActivityManager: Slow operation: 52ms so far, now at startProcess: building log message
+11-09 01:25:14.802  1912  1939 I ActivityManager: Start proc 2954:com.android.packageinstaller/u0a60 for broadcast {com.android.packageinstaller/com.android.packageinstaller.TemporaryFileManager}
+11-09 01:25:14.802  1912  1939 W ActivityManager: Slow operation: 52ms so far, now at startProcess: starting to update pids map
+11-09 01:25:14.803  1912  1939 W ActivityManager: Slow operation: 52ms so far, now at startProcess: done updating pids map
+11-09 01:25:14.807  2900  2925 I droid.messagin: Starting a blocking GC Alloc
+11-09 01:25:14.807  2900  2925 I droid.messagin: Starting a blocking GC Alloc
+11-09 01:25:14.833  2954  2954 I ackageinstalle: The ClassLoaderContext is a special shared library.
+11-09 01:25:14.884  2900  2926 I MessagingAppDataModel: SyncMessagesAction: Starting batch for messages from 1794081169133 to 1794167714594 (message update limit = 80, message scan limit = 4000)
+11-09 01:25:14.895  1663  1663 D Zygote  : Forked child process 2974
+11-09 01:25:14.906  1912  1939 W ActivityManager: Slow operation: 55ms so far, now at startProcess: returned from zygote!
+11-09 01:25:14.906  1912  1939 W ActivityManager: Slow operation: 56ms so far, now at startProcess: done updating battery stats
+11-09 01:25:14.906  1912  1939 W ActivityManager: Slow operation: 56ms so far, now at startProcess: building log message
+11-09 01:25:14.906  1912  1939 I ActivityManager: Start proc 2974:com.android.permissioncontroller/u0a68 for broadcast {com.android.permissioncontroller/com.android.packageinstaller.permission.service.LocationAccessCheck$SetupPeriodicBackgroundLocationAccessCheck}
+11-09 01:25:14.906  1912  1939 W ActivityManager: Slow operation: 56ms so far, now at startProcess: starting to update pids map
+11-09 01:25:14.906  1912  1939 W ActivityManager: Slow operation: 56ms so far, now at startProcess: done updating pids map
+11-09 01:25:14.916  2974  2974 W ssioncontrolle: Unexpected CPU variant for X86 using defaults: x86_64
+11-09 01:25:14.947  2974  2974 I ssioncontrolle: The ClassLoaderContext is a special shared library.
+11-09 01:25:15.007  2190  2190 I VvmSimStateTracker: android.intent.action.BOOT_COMPLETED
+11-09 01:25:15.022  2900  2927 I MessagingAppDataModel: SyncMessagesAction: All messages now in sync
+11-09 01:25:15.040  1663  1663 D Zygote  : Forked child process 2993
+11-09 01:25:15.053  1912  1939 I ActivityManager: Start proc 2993:com.android.providers.calendar/u0a55 for broadcast {com.android.providers.calendar/com.android.providers.calendar.CalendarReceiver}
+11-09 01:25:15.054  2993  2993 W viders.calenda: Unexpected CPU variant for X86 using defaults: x86_64
+11-09 01:25:15.083  2993  2993 I viders.calenda: The ClassLoaderContext is a special shared library.
+11-09 01:25:15.107  2993  2993 I CalendarProvider2: Created com.android.providers.calendar.CalendarAlarmManager@f0c1ece(com.android.providers.calendar.CalendarProvider2@ae011ef)
+11-09 01:25:15.158  2190  2190 I m.android.phon: The ClassLoaderContext is a special shared library.
+11-09 01:25:15.197  3017  3017 W android.traceu: Unexpected CPU variant for X86 using defaults: x86_64
+11-09 01:25:15.202  1663  1663 D Zygote  : Forked child process 3017
+11-09 01:25:15.206  1912  1939 I ActivityManager: Start proc 3017:com.android.traceur/u0a77 for broadcast {com.android.traceur/com.android.traceur.Receiver}
+11-09 01:25:15.239  3017  3017 I android.traceu: The ClassLoaderContext is a special shared library.
+11-09 01:25:15.295  3017  3035 I android.traceu: Starting a blocking GC Alloc
+11-09 01:25:15.296  3017  3035 I android.traceu: Starting a blocking GC Alloc
+11-09 01:25:15.298  3017  3017 I android.traceu: Waiting for a blocking GC Alloc
+11-09 01:25:15.307  3017  3017 I android.traceu: WaitForGcToComplete blocked Alloc on ClassLinker for 9.016ms
+11-09 01:25:15.308  3017  3017 I android.traceu: Starting a blocking GC Alloc
+11-09 01:25:15.312  1912  2583 I ActivityManager: Finished processing BOOT_COMPLETED for u0
+11-09 01:25:15.313  1912  2583 I ActivityManager: Killing 2684:com.android.quicksearchbox/u0a110 (adj 985): empty #17
+11-09 01:25:15.324  2732  3036 I MediaProvider: Begin Intent { act=android.intent.action.MEDIA_MOUNTED dat=file:///storage/emulated/0 flg=0x5000010 cmp=com.android.providers.media/.MediaService (has extras) }
+11-09 01:25:15.326  2450  2450 I Dialer  : VvmTaskReceiver - task received
+11-09 01:25:15.326  2450  2450 I Dialer  : VvmTaskReceiver - scheduling new job
+11-09 01:25:15.326  2450  2450 I Dialer  : TaskSchedulerJobService - scheduling job with 1 tasks
+11-09 01:25:15.327  2450  2450 I Dialer  : TaskSchedulerJobService - running job instantly.
+11-09 01:25:15.332  2450  2450 I Dialer  : TaskSchedulerJobService - job 8 scheduled
+11-09 01:25:15.335  2732  3036 W ModernMediaScanner: Failed to visit /system/media: java.nio.file.NoSuchFileException: /system/media
+11-09 01:25:15.336  2450  2450 I Dialer  : TaskSchedulerJobService - starting 8
+11-09 01:25:15.337  2450  2450 I Dialer  : VvmTaskExecutor - onStartJob
+11-09 01:25:15.337  2450  2450 I Dialer  : Task.createTask - create task:com.android.voicemail.impl.ActivationTask
+11-09 01:25:15.339  2450  3038 I Dialer  : VvmTaskExecutor - executing task com.android.voicemail.impl.ActivationTask@25f54df
+11-09 01:25:15.340  1663  1663 I Zygote  : Process 2684 exited due to signal 9 (Killed)
+11-09 01:25:15.340  2450  3038 I Dialer  : PreOMigrationHandler - ComponentInfo{com.android.phone/com.android.services.telephony.TelephonyConnectionService}, ***, UserHandle{0} already migrated
+11-09 01:25:15.350  1912  1940 I libprocessgroup: Successfully killed process cgroup uid 10110 pid 2684 in 36ms
+11-09 01:25:15.354  2473  2473 I ContactsPerf: VoicemailContentProvider.onCreate start
+11-09 01:25:15.354  2473  2473 I ContactsPerf: VoicemailContentProvider.onCreate finish
+11-09 01:25:15.358  2732  3036 W ModernMediaScanner: Failed to visit /oem/media: java.nio.file.NoSuchFileException: /oem/media
+11-09 01:25:15.366  2473  2750 I VoicemailNotifier: receivers for android.intent.action.PROVIDER_CHANGED :[]
+11-09 01:25:15.367  2450  3038 I Dialer  : VvmActivationTask - VVM content provider configured - vvm_type_cvvm
+11-09 01:25:15.367  2450  3038 I Dialer  : OmtpVvmCarrierCfgHlpr - OmtpEvent:CONFIG_ACTIVATING
+11-09 01:25:15.375  2473  2750 I VoicemailNotifier: receivers for android.intent.action.PROVIDER_CHANGED :[]
+11-09 01:25:15.377  2190  2217 I LocationAccessPolicy: Allowing com.android.dialer fine because it doesn't target API 29 yet. Please fix this app. Called from getServiceStateForSubscriber
+11-09 01:25:15.378  2190  2217 I LocationAccessPolicy: Allowing com.android.dialer coarse because it doesn't target API 29 yet. Please fix this app. Called from getServiceStateForSubscriber
+11-09 01:25:15.701  2732  3036 E SQLiteLog: (1) no such table: audio_genres
+11-09 01:25:15.718  2732  3036 E SQLiteLog: (1) no such table: audio_genres
+11-09 01:25:15.724  1663  1663 D Zygote  : Forked child process 3044
+11-09 01:25:15.729  3044  3044 W .localtranspor: Unexpected CPU variant for X86 using defaults: x86_64
+11-09 01:25:15.736  1912  1939 I ActivityManager: Start proc 3044:com.android.localtransport/1000 for service {com.android.localtransport/com.android.localtransport.LocalTransportService}
+11-09 01:25:15.742  3044  3053 I .localtranspor: Starting a blocking GC Alloc
+11-09 01:25:15.742  3044  3053 I .localtranspor: Starting a blocking GC Alloc
+11-09 01:25:15.751  3044  3053 I .localtranspor: Alloc young concurrent copying GC freed 1976(1071KB) AllocSpace objects, 0(0B) LOS objects, 86% free, 942KB/7086KB, paused 1.738ms total 9.131ms
+11-09 01:25:15.784  3044  3044 I .localtranspor: The ClassLoaderContext is a special shared library.
+11-09 01:25:15.803  1912  1912 I TransportClient: LocalTransportService#0: Notifying [TransportManager.registerTransport()] transport = IBackupTransport
+11-09 01:25:15.806  1912  2557 W Binder  : Outgoing transactions from this process must be FLAG_ONEWAY
+11-09 01:25:15.806  1912  2557 W Binder  : java.lang.Throwable
+11-09 01:25:15.806  1912  2557 W Binder  : 	at android.os.BinderProxy.transact(BinderProxy.java:480)
+11-09 01:25:15.806  1912  2557 W Binder  : 	at com.android.internal.backup.IBackupTransport$Stub$Proxy.name(IBackupTransport.java:869)
+11-09 01:25:15.806  1912  2557 W Binder  : 	at com.android.server.backup.TransportManager.registerTransport(TransportManager.java:653)
+11-09 01:25:15.806  1912  2557 W Binder  : 	at com.android.server.backup.TransportManager.registerTransportsForIntent(TransportManager.java:588)
+11-09 01:25:15.806  1912  2557 W Binder  : 	at com.android.server.backup.TransportManager.registerTransports(TransportManager.java:558)
+11-09 01:25:15.806  1912  2557 W Binder  : 	at com.android.server.backup.-$$Lambda$pM_c5tVAGDtxjxLF_ONtACWWq6Q.run(Unknown Source:2)
+11-09 01:25:15.806  1912  2557 W Binder  : 	at android.os.Handler.handleCallback(Handler.java:883)
+11-09 01:25:15.806  1912  2557 W Binder  : 	at android.os.Handler.dispatchMessage(Handler.java:100)
+11-09 01:25:15.806  1912  2557 W Binder  : 	at android.os.Looper.loop(Looper.java:214)
+11-09 01:25:15.806  1912  2557 W Binder  : 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-09 01:25:15.807  1912  2557 D BackupTransportManager: Transport com.android.localtransport/.LocalTransportService registered
+11-09 01:25:15.807  1912  2557 D BackupManagerService: Transport com.android.localtransport/.LocalTransport registered 3157ms after first request (delay = 3000ms)
+11-09 01:25:15.811  1912  2557 I BackupManagerService: Found stale backup journal, scheduling
+11-09 01:25:15.820  1912  1928 D WificondControl: Scan result ready event
+11-09 01:25:15.831  1912  2010 D WifiClientModeImpl: CMD_START_CONNECT sup state UninitializedState my state DisconnectedState nid=0 roam=false
+11-09 01:25:15.834  1912  2010 I WifiClientModeImpl: Connecting with 02:15:b2:00:00:00 as the mac address
+11-09 01:25:15.816  1912  2557 I chatty  : uid=1000(system) backup-0 identical 55 lines
+11-09 01:25:15.829  1912  2557 I BackupManagerService: Found stale backup journal, scheduling
+11-09 01:25:15.837  1819  1819 W wificond: Scan is not started. Ignore abort request
+11-09 01:25:15.837  1912  2010 D SupplicantStaIfaceHal: connectToNetwork "AndroidWifi"NONE
+11-09 01:25:15.837  1912  2010 I SupplicantStaIfaceHal: addSupplicantStaNetwork via HIDL
+11-09 01:25:15.840  1912  2557 I BackupManagerService: Found stale backup journal, scheduling
+11-09 01:25:15.845  2732  3036 I MediaProvider: End Intent { act=android.intent.action.MEDIA_MOUNTED dat=file:///storage/emulated/0 flg=0x5000010 cmp=com.android.providers.media/.MediaService (has extras) }
+11-09 01:25:15.900  2206  2206 I wpa_supplicant: wlan0: SME: Trying to authenticate with 02:15:b2:00:01:00 (SSID='AndroidWifi' freq=2447 MHz)
+11-09 01:25:15.903  1866  1866 I hostapd : wlan1: STA 02:15:b2:00:00:00 IEEE 802.11: authenticated
+11-09 01:25:15.903  1866  1866 I hostapd : wlan1: STA 02:15:b2:00:00:00 IEEE 802.11: authenticated
+11-09 01:25:15.905  2206  2206 I wpa_supplicant: wlan0: Trying to associate with 02:15:b2:00:01:00 (SSID='AndroidWifi' freq=2447 MHz)
+11-09 01:25:15.920  1866  1866 I hostapd : wlan1: STA 02:15:b2:00:00:00 IEEE 802.11: associated (aid 1)
+11-09 01:25:15.920  1866  1866 I hostapd : wlan1: STA 02:15:b2:00:00:00 IEEE 802.11: associated (aid 1)
+11-09 01:25:15.920  1866  1866 I hostapd : wlan1: AP-STA-CONNECTED 02:15:b2:00:00:00
+11-09 01:25:15.923  2206  2206 I wpa_supplicant: wlan0: Associated with 02:15:b2:00:01:00
+11-09 01:25:15.923  2206  2206 I wpa_supplicant: wlan0: CTRL-EVENT-CONNECTED - Connection to 02:15:b2:00:01:00 completed [id=0 id_str=%7B%22configKey%22%3A%22%5C%22AndroidWifi%5C%22NONE%22%2C%22creatorUid%22%3A%221000%22%7D]
+11-09 01:25:15.923  2206  2206 I wpa_supplicant: wlan0: CTRL-EVENT-SUBNET-STATUS-UPDATE status=0
+11-09 01:25:15.848  1912  2557 I chatty  : uid=1000(system) backup-0 identical 57 lines
+11-09 01:25:15.848  1912  2557 I BackupManagerService: Found stale backup journal, scheduling
+11-09 01:25:15.926  1912  2010 D ConnectivityService: registerNetworkAgent NetworkAgentInfo{ ni{[type: WIFI[], state: CONNECTING/CONNECTING, reason: (unspecified), extra: (none), failover: false, available: true, roaming: false]}  network{101}  nethandle{437197393933}  lp{{LinkAddresses: [ ] DnsAddresses: [ ] Domains: null MTU: 0 Routes: [ ]}}  nc{[ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&NOT_VPN&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED LinkUpBandwidth>=1048576Kbps LinkDnBandwidth>=1048576Kbps Specifier: <WifiNetworkAgentSpecifier [WifiConfiguration=, SSID="AndroidWifi", BSSID=02:15:b2:00:01:00, mOriginalRequestorUid=-1, mOriginalRequestorPackageName=]> SSID: "AndroidWifi"]}  Score{20}  everValidated{false}  lastValidated{false}  created{false} lingering{false} explicitlySelected{false} acceptUnvalidated{false} everCaptivePortalDetected{false} lastCaptivePortalDetected{false} captivePortalValidationPending{false} partialConnectivity{false} acceptPartialConnectivity{false} clat{mBaseIface: null, mIface: null, mState: IDLE} }
+11-09 01:25:15.927  1912  2010 E SupplicantStaIfaceHal: ISupplicantStaIface.setPowerSave failed: {.code = FAILURE_UNKNOWN, .debugMessage = }
+11-09 01:25:15.942  1662  2053 I netd    : interfaceGetCfg("wlan0") <0.15ms>
+11-09 01:25:15.944  1912  2017 D ConnectivityService: NetworkAgentInfo [WIFI () - 101] EVENT_NETWORK_INFO_CHANGED, going from null to CONNECTING
+11-09 01:25:15.948  1662  2053 W ServiceManager: Permission failure: android.permission.NETWORK_STACK from uid=1073 pid=2177
+11-09 01:25:15.948  1662  2053 I netd    : interfaceSetIPv6PrivacyExtensions("wlan0", "true") <0.20ms>
+11-09 01:25:15.949  1662  2053 W ServiceManager: Permission failure: android.permission.NETWORK_STACK from uid=1073 pid=2177
+11-09 01:25:15.949  1662  2053 I netd    : setIPv6AddrGenMode("wlan0", 0) <0.30ms>
+11-09 01:25:15.950  1662  2053 W ServiceManager: Permission failure: android.permission.NETWORK_STACK from uid=1073 pid=2177
+11-09 01:25:15.950  1662  2053 I netd    : interfaceSetEnableIPv6("wlan0", "true") <0.39ms>
+11-09 01:25:15.952  1662  2053 W ServiceManager: Permission failure: android.permission.NETWORK_STACK from uid=1073 pid=2177
+11-09 01:25:15.952  1662  2053 I netd    : setProcSysNet(4, 2, "wlan0", "retrans_time_ms", "750") <0.17ms>
+11-09 01:25:15.952  1662  2053 W ServiceManager: Permission failure: android.permission.NETWORK_STACK from uid=1073 pid=2177
+11-09 01:25:15.952  1662  2053 I netd    : setProcSysNet(4, 2, "wlan0", "ucast_solicit", "5") <0.09ms>
+11-09 01:25:15.952  1662  2053 W ServiceManager: Permission failure: android.permission.NETWORK_STACK from uid=1073 pid=2177
+11-09 01:25:15.953  1662  2053 I netd    : setProcSysNet(6, 2, "wlan0", "retrans_time_ms", "750") <0.09ms>
+11-09 01:25:15.953  1662  2053 W ServiceManager: Permission failure: android.permission.NETWORK_STACK from uid=1073 pid=2177
+11-09 01:25:15.953  1662  2053 I netd    : setProcSysNet(6, 2, "wlan0", "ucast_solicit", "5") <0.67ms>
+11-09 01:25:15.960  1662  2079 I netd    : trafficSwapActiveStatsMap() <30.77ms>
+11-09 01:25:15.961  1662  2079 I netd    : interfaceGetCfg("wlan0") <0.06ms>
+11-09 01:25:15.961  1912  2017 D ConnectivityService: NetworkAgentInfo [WIFI () - 101] EVENT_NETWORK_INFO_CHANGED, going from CONNECTING to CONNECTING
+11-09 01:25:15.963  1662  2079 I netd    : tetherGetStats() <1.16ms>
+11-09 01:25:16.003  2177  3068 D DhcpClient: Receive thread started
+11-09 01:25:16.004  1912  2017 D ConnectivityService: Adding iface wlan0 to network 101
+11-09 01:25:16.004  1662  2079 E Netd    : no such netId 101
+11-09 01:25:16.004  1662  2079 I netd    : networkAddInterface(101, "wlan0") -> ServiceSpecificException(64, "Machine is not on the network") <0.03ms>
+11-09 01:25:16.004  1912  2017 E ConnectivityService: Exception adding interface: java.lang.IllegalStateException: android.os.ServiceSpecificException: Machine is not on the network (code 64)
+11-09 01:25:16.005  1662  2079 E Netd    : no such netId 101
+11-09 01:25:16.005  1662  2079 I netd    : networkAddRoute(101, "wlan0", "fe80::/64", "") -> ServiceSpecificException(64, "Machine is not on the network") <0.06ms>
+11-09 01:25:16.006  1912  2011 I system_server: Starting a blocking GC Alloc
+11-09 01:25:16.006  1912  2011 I system_server: Starting a blocking GC Alloc
+11-09 01:25:16.017  1912  2011 I system_server: Alloc young concurrent copying GC freed 53268(3259KB) AllocSpace objects, 18(488KB) LOS objects, 35% free, 7208KB/10MB, paused 254us total 10.865ms
+11-09 01:25:16.020  2177  2378 D DhcpClient: Broadcasting DHCPDISCOVER
+11-09 01:25:16.021  2177  3068 D DhcpClient: Received packet: 02:15:b2:00:00:00 OFFER, ip /10.0.2.16, mask /255.255.255.0, DNS servers: /10.0.2.3 , gateways [/10.0.2.2] lease time 86400, domain null
+11-09 01:25:16.021  2177  2378 D DhcpClient: Got pending lease: android.net.networkstack.DhcpResults@d3ec58a DHCP server /10.0.2.2 Vendor info null lease 86400 seconds Servername 
+11-09 01:25:16.022  2177  2378 D DhcpClient: Broadcasting DHCPREQUEST ciaddr=0.0.0.0 request=10.0.2.16 serverid=10.0.2.2
+11-09 01:25:16.023  2177  3068 D DhcpClient: Received packet: 02:15:b2:00:00:00 ACK: your new IP /10.0.2.16, netmask /255.255.255.0, gateways [/10.0.2.2] DNS servers: /10.0.2.3 , lease time 86400
+11-09 01:25:16.024  2177  2378 D DhcpClient: Confirmed lease: android.net.networkstack.DhcpResults@ac42018 DHCP server /10.0.2.2 Vendor info null lease 86400 seconds Servername 
+11-09 01:25:16.026  1912  2010 E SupplicantStaIfaceHal: ISupplicantStaIface.setPowerSave failed: {.code = FAILURE_UNKNOWN, .debugMessage = }
+11-09 01:25:16.028  1662  2053 W ServiceManager: Permission failure: android.permission.NETWORK_STACK from uid=1073 pid=2177
+11-09 01:25:16.028  1662  2053 I netd    : interfaceSetCfg() <0.75ms>
+11-09 01:25:16.030  2177  2378 D DhcpClient: Scheduling renewal in 43199s
+11-09 01:25:16.030  2177  2378 D DhcpClient: Scheduling rebind in 75599s
+11-09 01:25:16.030  2177  2378 D DhcpClient: Scheduling expiry in 86399s
+11-09 01:25:16.050  1662  2079 I netd    : trafficSwapActiveStatsMap() <44.19ms>
+11-09 01:25:16.051  1662  2079 I netd    : tetherGetStats() <0.89ms>
+11-09 01:25:16.052  2047  2047 W View    : requestLayout() improperly called by com.android.keyguard.AlphaOptimizedLinearLayout{50fdaf8 V.E...... ......ID 4,0-33,37 #7f0a03ef app:id/wifi_group} during layout: running second layout pass
+11-09 01:25:16.052  2047  2047 W View    : requestLayout() improperly called by com.android.keyguard.AlphaOptimizedLinearLayout{47fbd1 V.E...... ......ID 4,0-33,37 #7f0a03ef app:id/wifi_group} during layout: running second layout pass
+11-09 01:25:16.052  2047  2047 W View    : requestLayout() improperly called by com.android.keyguard.AlphaOptimizedLinearLayout{2061636 V.E...... ......ID 4,0-33,37 #7f0a03ef app:id/wifi_group} during layout: running second layout pass
+11-09 01:25:16.054  1662  2079 E Netd    : no such netId 101
+11-09 01:25:16.054  1662  2079 I netd    : networkAddRoute(101, "wlan0", "10.0.2.0/24", "") -> ServiceSpecificException(64, "Machine is not on the network") <0.07ms>
+11-09 01:25:16.055  1912  2017 E ConnectivityService: Exception in addRoute for non-gateway: java.lang.IllegalStateException: android.os.ServiceSpecificException: Machine is not on the network (code 64)
+11-09 01:25:16.056  1662  2079 E Netd    : no such netId 101
+11-09 01:25:16.056  1662  2079 I netd    : networkAddRoute(101, "wlan0", "0.0.0.0/0", "10.0.2.2") -> ServiceSpecificException(64, "Machine is not on the network") <0.03ms>
+11-09 01:25:16.056  1912  2017 E ConnectivityService: Exception in addRoute for gateway: java.lang.IllegalStateException: android.os.ServiceSpecificException: Machine is not on the network (code 64)
+11-09 01:25:16.090  1662  2079 I netd    : trafficSwapActiveStatsMap() <32.64ms>
+11-09 01:25:16.091  1662  2079 I netd    : tetherGetStats() <0.52ms>
+11-09 01:25:16.099  1912  2017 D ConnectivityService: Setting DNS servers for network 101 to [/10.0.2.3]
+11-09 01:25:16.099  1912  2017 D DnsManager: setDnsConfigurationForNetwork(101, [10.0.2.3], [], 1800, 25, 8, 64, 0, 0, , [])
+11-09 01:25:16.099  1662  2079 I netd    : DnsResolverService::setResolverConfiguration(101, [10.0.2.3], [], 1800, 25, 8, 64, 0, 0, [], []) -> (-64) (0.1ms)
+11-09 01:25:16.099  1662  2079 I netd    : setResolverConfiguration() -> ServiceSpecificException(64, "Machine is not on the network") <0.19ms>
+11-09 01:25:16.099  1912  2017 E DnsManager: Error setting DNS configuration: android.os.ServiceSpecificException: Machine is not on the network (code 64)
+11-09 01:25:16.139  1662  2079 I netd    : trafficSwapActiveStatsMap() <39.49ms>
+11-09 01:25:16.140  1662  2079 I netd    : tetherGetStats() <0.70ms>
+11-09 01:25:16.143  1912  2017 D ConnectivityService: NetworkAgentInfo [WIFI () - 101] EVENT_NETWORK_INFO_CHANGED, going from CONNECTING to CONNECTED
+11-09 01:25:16.144  1662  2079 D TcpSocketMonitor: resuming tcpinfo polling (interval=30000ms)
+11-09 01:25:16.144  1662  2079 I netd    : networkCreatePhysical(101, 0) <0.07ms>
+11-09 01:25:16.145  1662  2079 I netd    : createNetworkCache(101) <0.02ms>
+11-09 01:25:16.145  1912  2017 W DnsManager: updatePrivateDns(101, PrivateDnsConfig{true:/[]})
+11-09 01:25:16.145  1912  2017 D ConnectivityService: Setting DNS servers for network 101 to [/10.0.2.3]
+11-09 01:25:16.145  1912  2017 D DnsManager: setDnsConfigurationForNetwork(101, [10.0.2.3], [], 1800, 25, 8, 64, 0, 0, , [10.0.2.3])
+11-09 01:25:16.146  1662  2079 I netd    : DnsResolverService::setResolverConfiguration(101, [10.0.2.3], [], 1800, 25, 8, 64, 0, 0, [10.0.2.3], []) -> (0) (0.4ms)
+11-09 01:25:16.146  1662  2079 I netd    : setResolverConfiguration() <0.48ms>
+11-09 01:25:16.148  1912  2017 D ConnectivityService: Adding iface wlan0 to network 101
+11-09 01:25:16.150  1662  2079 I netd    : networkAddInterface(101, "wlan0") <1.40ms>
+11-09 01:25:16.150  1662  2079 I netd    : networkAddRoute(101, "wlan0", "fe80::/64", "") <0.09ms>
+11-09 01:25:16.151  1662  2079 I netd    : networkAddRoute(101, "wlan0", "10.0.2.0/24", "") <0.05ms>
+11-09 01:25:16.151  1662  2079 I netd    : networkAddRoute(101, "wlan0", "0.0.0.0/0", "10.0.2.2") <0.07ms>
+11-09 01:25:16.151  1912  2017 D ConnectivityService: Setting DNS servers for network 101 to [/10.0.2.3]
+11-09 01:25:16.151  1912  2017 D DnsManager: setDnsConfigurationForNetwork(101, [10.0.2.3], [], 1800, 25, 8, 64, 0, 0, , [10.0.2.3])
+11-09 01:25:16.151  1662  2079 I netd    : DnsResolverService::setResolverConfiguration(101, [10.0.2.3], [], 1800, 25, 8, 64, 0, 0, [10.0.2.3], []) -> (0) (0.2ms)
+11-09 01:25:16.151  1662  2079 I netd    : setResolverConfiguration() <0.30ms>
+11-09 01:25:16.160  1729  1729 I qemu-props: tell the host boot completed
+11-09 01:25:16.190  1662  2079 I netd    : trafficSwapActiveStatsMap() <35.94ms>
+11-09 01:25:16.191  1662  2079 I netd    : tetherGetStats() <0.73ms>
+11-09 01:25:16.202  1912  2010 D WifiNetworkAgent: NetworkAgent: Received signal strength thresholds: []
+11-09 01:25:16.203  1912  2010 E WifiVendorHal: stopRssiMonitoring(l.2042) failed {.code = ERROR_NOT_AVAILABLE, .description = }
+11-09 01:25:16.205  1662  2079 I netd    : idletimerAddInterface("wlan0", 15, "1") <0.80ms>
+11-09 01:25:16.206  1662  2079 I netd    : idletimerRemoveInterface("radio0", 10, "0") <1.07ms>
+11-09 01:25:16.207  1912  2017 D ConnectivityService: Switching to new default network: NetworkAgentInfo{ ni{[type: WIFI[], state: CONNECTED/CONNECTED, reason: (unspecified), extra: (none), failover: false, available: true, roaming: false]}  network{101}  nethandle{437197393933}  lp{{InterfaceName: wlan0 LinkAddresses: [ fe80::15:b2ff:fe00:0/64,10.0.2.16/24 ] DnsAddresses: [ /10.0.2.3 ] Domains: null MTU: 0 TcpBufferSizes: 524288,1048576,2097152,262144,524288,1048576 Routes: [ fe80::/64 -> :: wlan0,10.0.2.0/24 -> 0.0.0.0 wlan0,0.0.0.0/0 -> 10.0.2.2 wlan0 ]}}  nc{[ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED LinkUpBandwidth>=1048576Kbps LinkDnBandwidth>=1048576Kbps Specifier: <WifiNetworkAgentSpecifier [WifiConfiguration=, SSID="AndroidWifi", BSSID=02:15:b2:00:01:00, mOriginalRequestorUid=-1, mOriginalRequestorPackageName=]> SignalStrength: -30 SSID: "AndroidWifi"]}  Score{20}  everValidated{false}  lastValidated{false}  created{true} lingering{false} explicitlySelected{false} acceptUnvalidated{false} everCaptivePortalDetected{false} lastCaptivePortalDetected{false} captivePortalValidationPending{false} partialConnectivity{false} acceptPartialConnectivity{false} clat{mBaseIface: null, mIface: null, mState: IDLE} }
+11-09 01:25:16.207  1662  2079 I netd    : networkSetDefault(101) <0.09ms>
+11-09 01:25:16.250  1662  2079 I netd    : trafficSwapActiveStatsMap() <40.86ms>
+11-09 01:25:16.251  1662  2079 I netd    : tetherGetStats() <0.44ms>
+11-09 01:25:16.257  1912  2102 D NetworkTimeUpdateService: New default network 101; checking time.
+11-09 01:25:16.260  1912  2017 D ConnectivityService: Sending DISCONNECTED broadcast for type 0 NetworkAgentInfo [MOBILE (LTE) - 100] isDefaultNetwork=true
+11-09 01:25:16.260  1912  2017 D ConnectivityService: Sending CONNECTED broadcast for type 1 NetworkAgentInfo [WIFI () - 101] isDefaultNetwork=true
+11-09 01:25:16.260  1662  2079 I netd    : bandwidthRemoveInterfaceQuota("radio0") <0.66ms>
+11-09 01:25:16.262  1662  2079 I netd    : bandwidthSetInterfaceQuota("radio0", 9223372036854775807) <0.95ms>
+11-09 01:25:16.263  1662  2079 I netd    : bandwidthSetGlobalAlert(2097152) <0.12ms>
+11-09 01:25:16.275  1662  2079 I netd    : bandwidthRemoveInterfaceQuota("radio0") <0.45ms>
+11-09 01:25:16.275  1662  2079 I netd    : bandwidthSetInterfaceQuota("radio0", 9223372036854775807) <0.27ms>
+11-09 01:25:16.276  1662  2079 I netd    : bandwidthSetGlobalAlert(2097152) <0.06ms>
+11-09 01:25:16.277  1662  2079 I netd    : bandwidthRemoveInterfaceQuota("radio0") <0.34ms>
+11-09 01:25:16.278  1662  2079 I netd    : bandwidthSetInterfaceQuota("radio0", 9223372036854775807) <0.35ms>
+11-09 01:25:16.279  1662  2079 I netd    : bandwidthSetGlobalAlert(2097152) <0.06ms>
+11-09 01:25:16.300  1662  2053 I netd    : trafficSwapActiveStatsMap() <49.71ms>
+11-09 01:25:16.302  1662  2053 I netd    : tetherGetStats() <0.69ms>
+11-09 01:25:16.313  2177  3077 D NetworkMonitor/101: PROBE_DNS connectivitycheck.gstatic.com 90ms OK 172.217.24.99
+11-09 01:25:16.314  1912  1931 I DropBoxManagerService: add tag=system_app_strictmode isTagEnabled=true flags=0x2
+11-09 01:25:16.320  1662  3083 E ResolverController: No valid NAT64 prefix (101, <unspecified>/0)
+11-09 01:25:16.343  2177  3076 D NetworkMonitor/101: PROBE_DNS www.google.com 121ms OK 142.251.152.119,142.251.154.119,142.251.157.119,142.251.156.119,142.251.153.119,142.251.155.119,142.251.150.119,142.251.151.119
+11-09 01:25:16.343  2177  3077 D NetworkMonitor/101: PROBE_HTTP http://connectivitycheck.gstatic.com/generate_204 time=29ms ret=204 request={Connection=[close], User-Agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.32 Safari/537.36]} headers={null=[HTTP/1.1 204 No Content], Connection=[close], Content-Length=[0], Cross-Origin-Resource-Policy=[cross-origin], Date=[Sun, 08 Nov 2026 19:55:16 GMT], X-Android-Received-Millis=[1794167716334], X-Android-Response-Source=[NETWORK 204], X-Android-Selected-Protocol=[http/1.1], X-Android-Sent-Millis=[1794167716326]}
+11-09 01:25:16.347  1662  3086 E ResolverController: No valid NAT64 prefix (101, <unspecified>/0)
+11-09 01:25:16.386  2177  3076 D NetworkMonitor/101: PROBE_HTTPS https://www.google.com/generate_204 Probe failed with exception javax.net.ssl.SSLHandshakeException: SSL handshake aborted: ssl=0x74eadeb90d08: I/O error during system call, Connection reset by peer
+11-09 01:25:16.437  2177  3075 D NetworkMonitor/101: PROBE_FALLBACK http://www.google.com/gen_204 time=49ms ret=303 request={Connection=[close], User-Agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.32 Safari/537.36]} headers={null=[HTTP/1.1 303 See Other], Connection=[close], Location=[https://iac.srmist.edu.in/Connect/Access?AgentCode=000&url=aHR0cDovL3d3dy5nb29nbGUuY29tL2dlbl8yMDQ=&params=AkuD6YmBcYlxiYHBcaG52aNLayvpibnJoYmxubmJsQ==], X-Android-Received-Millis=[1794167716437], X-Android-Response-Source=[NETWORK 303], X-Android-Selected-Protocol=[http/1.1], X-Android-Sent-Millis=[1794167716390]}
+11-09 01:25:16.438  2177  3075 D NetworkMonitor/101: isCaptivePortal: isSuccessful()=false isPortal()=true RedirectUrl=https://iac.srmist.edu.in/Connect/Access?AgentCode=000&url=aHR0cDovL3d3dy5nb29nbGUuY29tL2dlbl8yMDQ=&params=AkuD6YmBcYlxiYHBcaG52aNLayvpibnJoYmxubmJsQ== isPartialConnectivity()=false Time=231ms
+11-09 01:25:16.353  1912  1931 I chatty  : uid=1000(system) android.io identical 7 lines
+11-09 01:25:16.355  1912  1931 I DropBoxManagerService: add tag=system_app_strictmode isTagEnabled=true flags=0x2
+11-09 01:25:16.439  1912  2017 D ConnectivityService: NetworkAgentInfo [WIFI () - 101] validation failed with redirect to https://iac.srmist.edu.in/Connect/Access?AgentCode=000&url=aHR0cDovL3d3dy5nb29nbGUuY29tL2dlbl8yMDQ=&params=AkuD6YmBcYlxiYHBcaG52aNLayvpibnJoYmxubmJsQ==
+11-09 01:25:16.439  1912  2010 D WifiClientModeImpl: NETWORK_STATUS_UNWANTED_VALIDATION_FAILED
+11-09 01:25:16.441  1912  2017 D NetworkNotificationManager: showNotification tag=ConnectivityNotification:101 event=SIGN_IN transport=Wi-Fi name="AndroidWifi" highPriority=false
+11-09 01:25:16.472  1912  2010 I WifiClientModeImpl: Temporarily disabling network because ofno-internet access
+11-09 01:25:16.553  2657  2657 D NLService: Successfully stored the newly arrived notification identified by 740
+11-09 01:25:16.656  2657  2657 D NLService: Successfully stored the newly arrived notification identified by 2147483647
+11-09 01:25:16.742  1710  1739 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 4612096
+11-09 01:25:16.878  1572  1572 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.
+11-09 01:25:16.878  3093  3093 W Gralloc3: mapper 3.x is not supported
+11-09 01:25:16.888  3093  3093 D HostConnection: createUnique: call
+11-09 01:25:16.889  3093  3093 D HostConnection: HostConnection::get() New Host Connection established 0x73038dbc65a0, tid 3093
+11-09 01:25:16.917  3093  3093 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_hwc_color_transform GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_2 
+11-09 01:25:16.917  3093  3093 D eglCodecCommon: allocate: Ask for block of size 0x1000
+11-09 01:25:16.917  3093  3093 D eglCodecCommon: allocate: ioctl allocate returned offset 0x3ffff2000 size 0x2000
+11-09 01:25:16.961  3093  3093 D eglCodecCommon: allocate: Ask for block of size 0x466000
+11-09 01:25:16.961  3093  3093 D eglCodecCommon: allocate: ioctl allocate returned offset 0x3ffb8d000 size 0x467000
+11-09 01:25:16.996  1662  2053 I netd    : networkAddRoute(101, "wlan0", "fec0::/64", "") <0.08ms>
+11-09 01:25:16.997  1662  2053 E Netd    : Error adding route ::/0 -> fe80::2 wlan0 to table 1003: File exists
+11-09 01:25:16.997  1662  2053 I netd    : networkAddRoute(101, "wlan0", "::/0", "fe80::2") <0.06ms>
+11-09 01:25:17.040  1662  2053 I netd    : trafficSwapActiveStatsMap() <42.76ms>
+11-09 01:25:17.042  1662  2053 I netd    : tetherGetStats() <1.30ms>
+11-09 01:25:17.090  1662  2053 I netd    : trafficSwapActiveStatsMap() <39.33ms>
+11-09 01:25:17.093  1662  2053 I netd    : tetherGetStats() <3.02ms>
+11-09 01:25:17.541  1912  1912 V SettingsProvider: Notifying for 0: content://settings/system/accelerometer_rotation
+11-09 01:25:17.653  3135  3135 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-09 01:25:17.656  3135  3135 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_apex_image"
+11-09 01:25:17.657  3135  3135 I AndroidRuntime: Using default boot image
+11-09 01:25:17.657  3135  3135 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.disable_lock_profiling"
+11-09 01:25:17.657  3135  3135 I AndroidRuntime: Leaving lock profiling enabled
+11-09 01:25:17.658  3135  3135 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_generational_cc"
+11-09 01:25:17.659  3135  3135 I app_process: Core platform API reporting enabled, enforcing=false
+11-09 01:25:17.640  3135  3135 W app_process: type=1400 audit(0.0:10): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=7767 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+11-09 01:25:17.640  3135  3135 I chatty  : uid=2000(shell) app_process identical 1 line
+11-09 01:25:17.640  3135  3135 W app_process: type=1400 audit(0.0:12): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=7767 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+11-09 01:25:17.860  3135  3135 D ICU     : Time zone APEX file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+11-09 01:25:17.863  3135  3135 W app_process: Unexpected CPU variant for X86 using defaults: x86_64
+11-09 01:25:17.897  3135  3135 I app_process: The ClassLoaderContext is a special shared library.
+11-09 01:25:17.900  3135  3135 I app_process: The ClassLoaderContext is a special shared library.
+11-09 01:25:17.926  3135  3135 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+11-09 01:25:17.929  3135  3135 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-09 01:25:17.936  1912  1912 V SettingsProvider: Notifying for 0: content://settings/secure/accessibility_enabled
+11-09 01:25:18.305  1912  2003 E ReportEncoder: No watchlist hash
+11-09 01:25:18.305  1912  2003 I WatchlistLoggingHandler: Milliseconds spent on tryAggregateRecords(): 12432
+11-09 01:25:18.306  1912  1931 I DropBoxManagerService: add tag=system_server_strictmode isTagEnabled=true flags=0x2
+11-09 01:25:18.327  1912  1931 I chatty  : uid=1000(system) android.io identical 8 lines
+11-09 01:25:18.328  1912  1931 I DropBoxManagerService: add tag=system_server_strictmode isTagEnabled=true flags=0x2
+11-09 01:25:18.433  1912  1928 I ActivityManager: Killing 2411:com.android.cellbroadcastreceiver/u0a66 (adj 985): empty #17
+11-09 01:25:18.469  1663  1663 I Zygote  : Process 2411 exited due to signal 9 (Killed)
+11-09 01:25:18.479  1912  1940 I libprocessgroup: Successfully killed process cgroup uid 10066 pid 2411 in 43ms
+11-09 01:25:18.953  3135  3135 I AccessibilityNodeInfoDumper: Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@e89f; boundsInParent: Rect(0, 0 - 720, 61); boundsInScreen: Rect(0, 1641 - 720, 1600); packageName: com.android.launcher3; className: android.widget.LinearLayout; text: null; error: null; maxTextLength: -1; contentDescription: null; tooltipText: null; viewIdResName: com.android.launcher3:id/all_apps_header; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
+11-09 01:25:18.953  3135  3135 I AccessibilityNodeInfoDumper: Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@115ab; boundsInParent: Rect(0, 0 - 126, 104); boundsInScreen: Rect(562, 1641 - 688, 1600); packageName: com.android.launcher3; className: android.widget.TextView; text: null; error: null; maxTextLength: -1; contentDescription: null; tooltipText: null; viewIdResName: com.android.launcher3:id/fast_scroller_popup; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
+11-09 01:25:18.953  3135  3135 W AccessibilityNodeInfoDumper: Fetch time: 2ms
+11-09 01:25:18.954  1912  1928 W WindowManager: removeWindowToken: Attempted to remove non-existing token: android.os.Binder@36d5693
+11-09 01:25:18.955  1912  1912 V SettingsProvider: Notifying for 0: content://settings/secure/accessibility_enabled
+11-09 01:25:18.957  1912  1912 V SettingsProvider: Notifying for 0: content://settings/system/accelerometer_rotation
+11-09 01:25:18.960  3135  3135 D AndroidRuntime: Shutting down VM
+11-09 01:25:19.153  1912  1928 W InputReader: Device has associated, but no associated display id.
+11-09 01:25:19.153  1912  1928 I chatty  : uid=1000(system) Binder:1912_2 identical 8 lines
+11-09 01:25:19.153  1912  1928 W InputReader: Device has associated, but no associated display id.
+11-09 01:25:21.570  2177  2475 D NetworkMonitor/100: PROBE_HTTPS https://www.google.com/generate_204 Probe failed with exception java.net.SocketTimeoutException: failed to connect to www.google.com/2001:4860:482d:7700:: (port 443) from /fec0::942d:1c19:3714:9ab0 (port 36194) after 10000ms
+11-09 01:25:22.528  1710  1739 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 4612096
+11-09 01:25:22.533  1572  1572 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.
+11-09 01:25:22.533  3232  3232 W Gralloc3: mapper 3.x is not supported
+11-09 01:25:22.537  3232  3232 D HostConnection: createUnique: call
+11-09 01:25:22.538  3232  3232 D HostConnection: HostConnection::get() New Host Connection established 0x7a556721e5a0, tid 3232
+11-09 01:25:22.547  3232  3232 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_hwc_color_transform GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_2 
+11-09 01:25:22.547  3232  3232 D eglCodecCommon: allocate: Ask for block of size 0x1000
+11-09 01:25:22.547  3232  3232 D eglCodecCommon: allocate: ioctl allocate returned offset 0x3ffff2000 size 0x2000
+11-09 01:25:22.553  3232  3232 D eglCodecCommon: allocate: Ask for block of size 0x466000
+11-09 01:25:22.554  3232  3232 D eglCodecCommon: allocate: ioctl allocate returned offset 0x3ffb8d000 size 0x467000
+11-09 01:25:22.976  3267  3267 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-09 01:25:22.970  3267  3267 W app_process: type=1400 audit(0.0:13): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=7767 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+11-09 01:25:22.977  3267  3267 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_apex_image"
+11-09 01:25:22.977  3267  3267 I AndroidRuntime: Using default boot image
+11-09 01:25:22.970  3267  3267 W app_process: type=1400 audit(0.0:14): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=7767 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+11-09 01:25:22.977  3267  3267 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.disable_lock_profiling"
+11-09 01:25:22.977  3267  3267 I AndroidRuntime: Leaving lock profiling enabled
+11-09 01:25:22.970  3267  3267 W app_process: type=1400 audit(0.0:15): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=7767 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+11-09 01:25:22.977  3267  3267 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_generational_cc"
+11-09 01:25:22.978  3267  3267 I app_process: Core platform API reporting enabled, enforcing=false
+11-09 01:25:23.009  3267  3267 D ICU     : Time zone APEX file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+11-09 01:25:23.011  3267  3267 W app_process: Unexpected CPU variant for X86 using defaults: x86_64
+11-09 01:25:23.013  3267  3267 I app_process: The ClassLoaderContext is a special shared library.
+11-09 01:25:23.013  3267  3267 I app_process: The ClassLoaderContext is a special shared library.
+11-09 01:25:23.019  3267  3267 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+11-09 01:25:23.020  3267  3267 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-09 01:25:23.025  1912  1912 V SettingsProvider: Notifying for 0: content://settings/secure/accessibility_enabled
+11-09 01:25:24.042  3267  3267 I AccessibilityNodeInfoDumper: Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@e8a3; boundsInParent: Rect(0, 0 - 720, 61); boundsInScreen: Rect(0, 1641 - 720, 1600); packageName: com.android.launcher3; className: android.widget.LinearLayout; text: null; error: null; maxTextLength: -1; contentDescription: null; tooltipText: null; viewIdResName: com.android.launcher3:id/all_apps_header; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
+11-09 01:25:24.042  3267  3267 I AccessibilityNodeInfoDumper: Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@115af; boundsInParent: Rect(0, 0 - 126, 104); boundsInScreen: Rect(562, 1641 - 688, 1600); packageName: com.android.launcher3; className: android.widget.TextView; text: null; error: null; maxTextLength: -1; contentDescription: null; tooltipText: null; viewIdResName: com.android.launcher3:id/fast_scroller_popup; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
+11-09 01:25:24.043  3267  3267 W AccessibilityNodeInfoDumper: Fetch time: 3ms
+11-09 01:25:24.044  1912  2074 W WindowManager: removeWindowToken: Attempted to remove non-existing token: android.os.Binder@841f20
+11-09 01:25:24.045  1912  1912 V SettingsProvider: Notifying for 0: content://settings/secure/accessibility_enabled
+11-09 01:25:24.049  3267  3267 D AndroidRuntime: Shutting down VM

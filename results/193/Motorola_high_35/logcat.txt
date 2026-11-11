@@ -1,0 +1,421 @@
+--------- beginning of main
+11-10 01:20:37.173  1103  1103 D SsBaseTemplateCard: Passed-in item info is null
+11-10 01:20:37.173   890   890 D SsMediaDataProvider: Forwarding Smartspace updates []
+11-10 01:20:37.173  1103  1103 D SsBaseTemplateCard: Passed-in item info is null
+11-10 01:20:37.173  1103  1103 I SsBaseTemplateCard: Secondary card pane is null
+11-10 01:20:37.175  1572  1749 I A       : NGA enabled in interactor.
+11-10 01:20:37.175  1572  1749 I A       : (REDACTED) Nga state changed to %s
+11-10 01:20:37.175  1572  1749 I A       : (REDACTED) isTngActive=%s
+--------- beginning of system
+11-10 01:20:37.178   643  1081 D BiometricService: canAuthenticate: User=0, Caller=0, Authenticators=32768
+11-10 01:20:37.179   643  1081 D BiometricService/PreAuthInfo: getCanAuthenticateInternal Modality: 1 AuthenticatorStatus: 9
+11-10 01:20:37.179   643  1081 D AuthService: canAuthenticate, userId: 0, callingUserId: 0, authenticators: 32768, result: 11
+11-10 01:20:37.179  1499  1718 I Fido    : [FidoV2EnrollmentController] Attempting to enroll Autofill Keystore keys
+11-10 01:20:37.184  1103  1539 D EGL_emulation: app_time_stats: avg=507.15ms min=49.15ms max=965.14ms count=2
+11-10 01:20:37.184  1499  1718 I Fido    : [FidoV2EnrollmentController] No screen lock set.
+11-10 01:20:37.185  1366  1377 I A       : Initializing all components
+11-10 01:20:37.186  1366  1681 I A       : (REDACTED) onIsEnabledChanged, isEnabled: %s
+11-10 01:20:37.186  1366  1669 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+11-10 01:20:37.186  1366  1681 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:20:37.186  1366  1681 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:20:37.187  1366  1681 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:20:37.187  1366  1681 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:20:37.187  1366  1669 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+11-10 01:20:37.187  1366  1681 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:20:37.188  1366  1681 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:20:37.188  1366  1681 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:20:37.188  1366  1681 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:20:37.189  1366  1681 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:20:37.189  1366  1681 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:20:37.192  1366  1681 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:20:37.192  1366  1681 I A       : (REDACTED) Setting session to type: %s
+11-10 01:20:37.193  1366  1681 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:20:37.194  1366  1681 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:20:37.194  1366  1681 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:20:37.194  1366  1681 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:20:37.195  1366  1680 I A       : (REDACTED) on opa visibility changed %s
+11-10 01:20:37.195  1366  1680 I A       : (REDACTED) stopListening(%s, %s)
+11-10 01:20:37.195  1366  1681 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:20:37.196  1366  1681 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:20:37.196  1366  1681 I A       : (REDACTED) setNavBarVisible: %s
+11-10 01:20:37.197  1366  1681 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:20:37.197  1366  1681 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:20:37.197  1366  1681 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:20:37.198  1366  1681 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:20:37.198  1366  1681 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:20:37.198  1366  1681 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-10 01:20:37.199  1366  1681 I A       : (REDACTED) State changed: %s => %s by %s and %s with %s
+11-10 01:20:37.200  1366  1681 I A       : (REDACTED) Recognizer choice: (recognizer_type: %s, recognizer_mode: %s, choice_reason: %s)
+11-10 01:20:37.202  1366  1681 I A       : (REDACTED) onActiveStateChangeEvent: %s => %s
+11-10 01:20:37.202  1366  1681 I A       : (REDACTED) #onActiveStateChangeEvent, newState: %s, previousState: %s.
+11-10 01:20:37.200  1499  2759 I SchedulingUtil: Scheduling Periodic SPOT account changes sync. [CONTEXT service_id=284 ]
+11-10 01:20:37.204  3180  3180 D nativeloader: InitLlndkLibrariesProduct: libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libRS.so:libandroid_net.so:libapexsupport.so:libbinder_ndk.so:libc.so:libcgrouprc.so:libclang_rt.asan-x86_64-android.so:libcom.android.tethering.connectivity_native.so:libdl.so:libft2.so:liblog.so:libm.so:libmediandk.so:libnativewindow.so:libneuralnetworks.so:libselinux.so:libsync.so:libvendorsupport.so:libvndksupport.so:libvulkan.so
+11-10 01:20:37.204  3180  3180 D nativeloader: Configuring product-clns-9 for unbundled product apk /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk. target_sdk_version=34, uses_libraries=, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64:/product/lib64:/system/product/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms:/product/lib64:/system/product/lib64
+11-10 01:20:37.205  3180  3180 D nativeloader: InitVndkspLibrariesProduct: VNDK is deprecated with product
+11-10 01:20:37.208  1366  1669 I A       : Initialize
+11-10 01:20:37.211  1366  1680 I A       : (REDACTED) on opa visibility changed %s
+11-10 01:20:37.211  1366  1670 I NgaEntryPointEventSendr: setupConnection
+11-10 01:20:37.212  1366  1681 I INV.SystemUI: showGestureNav
+11-10 01:20:37.212  1366  1681 I INV.SystemUI: (REDACTED) setUiHints(hints = %s)
+11-10 01:20:37.213  1366  1681 I A       : Ignoring as prefetch was recently called
+11-10 01:20:37.217  3180  3180 V GraphicsEnvironment: Currently set values for:
+11-10 01:20:37.218  3180  3180 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+11-10 01:20:37.218  3180  3180 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+11-10 01:20:37.218  3180  3180 V GraphicsEnvironment: Global.Settings values are invalid: number of packages: 0, number of values: 0
+11-10 01:20:37.218  3180  3180 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+11-10 01:20:37.219  1366  1681 I A       : Successfully initialized all components
+11-10 01:20:37.220  1366  1669 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+11-10 01:20:37.222  3180  3180 I LoadedApk: No resource references to update in package com.google.android.gms
+11-10 01:20:37.222  1366  1680 I INV.SystemUI: setUiHints: finished successfully
+11-10 01:20:37.226  1366  1670 I NgaEntryPointEventSendr: (REDACTED) State changed: %s => %s
+11-10 01:20:37.234  1366  1680 I NgaEntryPointEventSendr: onServiceConnected
+11-10 01:20:37.235  1572  1612 I A       : Calling beginBinderSession().
+11-10 01:20:37.236  3180  3180 I GmsApplication: Using GservicesReaderQueryDelegate
+11-10 01:20:37.240  3180  3180 W SQLiteCompatibilityWalFlags: Cannot read global setting sqlite_compatibility_wal_flags - Application state not available
+11-10 01:20:37.242  1572  1612 I A       : beginBinderSession(): calling binder
+11-10 01:20:37.244  1366  1680 I NgaEntryPointEventSendr: (REDACTED) State changed: %s => %s
+11-10 01:20:37.261   643  2144 W ActivityManager: Unable to start service Intent { cmp=com.google.android.apps.tachyon/.clientapi.ClientApiService } U=0: not found
+11-10 01:20:37.276  1175  2214 I AlarmManager: setExactAndAllowWhileIdle [name: GCM_CONN_ALARM type: 2 triggerAtMillis: 46560]
+11-10 01:20:37.279  1499  1718 W ChimeraUtils: Module com.google.android.gms.growth missing resource growth_module_display_name(0)
+11-10 01:20:37.284  1572  1872 W A       : (REDACTED) %s task was not run. Callback from Service received after client was disposed.
+11-10 01:20:37.284  1572  1872 W A       : (REDACTED) %s task was not run. Callback from Service received after client was disposed.
+11-10 01:20:37.288  1572  1872 W A       : (REDACTED) %s task was not run. Callback from Service received after client was disposed.
+11-10 01:20:37.288  1572  2347 I PBSessionCacheImpl: (REDACTED) Deleted sessionId[%d] from persistence.
+11-10 01:20:37.288  1366  1680 I NgaEntryPointEventSendr: (REDACTED) State changed: %s => %s (%s)
+11-10 01:20:37.293  1572  1872 W SearchServiceCore: Abort, client detached.
+11-10 01:20:37.297  3180  3180 W ProviderHelper: Unknown dynamite feature providerinstaller.dynamite
+11-10 01:20:37.297  3180  3180 I DynamiteModule: Considering local module com.google.android.gms.providerinstaller.dynamite:1 and remote module com.google.android.gms.providerinstaller.dynamite:0
+11-10 01:20:37.298  3180  3180 I DynamiteModule: Selected local version of com.google.android.gms.providerinstaller.dynamite
+11-10 01:20:37.298  1499  1718 W ChimeraUtils: Module com.google.android.gms.growth missing resource growth_module_display_name(0)
+11-10 01:20:37.303  1762  1777 V ClearcutMetricXmitter: Transmission is done.
+11-10 01:20:37.306  1499  1718 I HomeStub: Updating Home module request state at home stub init [CONTEXT service_id=336 ]
+11-10 01:20:37.317  1175  2323 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.google.android.onetimeinitializer
+11-10 01:20:37.318  1499  1718 I HomeStubModuleLoader: No requirement for Home module found. [CONTEXT service_id=336 ]
+11-10 01:20:37.319  1499  1718 W SystemServiceRegistry: No service published for: thread_network
+11-10 01:20:37.319  1499  1718 I HomeStubModuleLoader: Not downloading Thread module: Thread feature not available. [CONTEXT service_id=336 ]
+11-10 01:20:37.324  3180  3180 D nativeloader: Load /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64/libconscrypt_gmscore_jni.so using ns product-clns-9 from class loader (caller=/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!classes3.dex): ok
+11-10 01:20:37.324  3180  3180 V NativeCrypto: Registering com/google/android/gms/org/conscrypt/NativeCrypto's 305 native methods...
+11-10 01:20:37.336  3180  3180 I ProviderInstaller: Installed default security provider GmsCore_OpenSSL
+11-10 01:20:37.349  3180  3206 I Watchcat: Started
+11-10 01:20:37.351  3180  3180 I GmsApplication: [gms_startup_benchmark] Static start time (ms): 41691, Startup latency (ms): 127, Is system user: true
+11-10 01:20:37.355  3180  3180 W ebcf    : Primes not initialized, returning default (no-op) Primes instance which will ignore all calls. Please call Primes.initialize(...) before using any Primes API.
+11-10 01:20:37.356  3180  3206 I GMS_MM_Logger: Start time: 263626
+11-10 01:20:37.357  3180  3206 I GMS_MM_Logger: Started.
+11-10 01:20:37.373  3180  3208 I DynamiteModule: Considering local module com.google.android.gms.googlecertificates:7 and remote module com.google.android.gms.googlecertificates:7
+11-10 01:20:37.374  3180  3208 I DynamiteModule: Selected local version of com.google.android.gms.googlecertificates
+11-10 01:20:37.378  1499  1718 I NewModuleOp: Schedule LanguageProfileGcmTaskChimeraService tasks. [CONTEXT service_id=167 ]
+11-10 01:20:37.383  1499  1718 I LPGcmTaskChimeraService: Scheduling sync task. [CONTEXT service_id=167 ]
+11-10 01:20:37.388  1499  1718 I GmsSyncPolicyEngine: Periodic sync 2 disabled by policy, cancelled.
+11-10 01:20:37.392  1499  1718 I GmsSyncPolicyEngine: Periodic sync 6 disabled
+11-10 01:20:37.412  1762  2354 I BugleRcsProvisioning: RcsProvisioningTrigger: onCsLibPhenotypeUpdated, enableProvisioningTaskInBugle = true
+11-10 01:20:37.412  1762  2354 I BugleRcsProvisioning: RcsProvisioningTrigger: updateAvailabilityForAllSimsAsync : hint = CSLIB_PHENOTYPE_UPDATE logTriggerEvent = true
+11-10 01:20:37.413  1762  2354 I Bugle   : RcsAvailabilityUtilForProvisioningEngineV2: updateAvailabilityForAllSimsAsync, hint: CSLIB_PHENOTYPE_UPDATE
+11-10 01:20:37.414  1762  2354 I RcsAvailabilityUpdaterL: updateAvailabilityForAllSimsAsync: scheduling updateAvailabilityForRcsProvisioningId call. Hint: CSLIB_PHENOTYPE_UPDATE, enableWelcomePopupWithoutGoogleTos: false, reshowSuccessPopup: false
+11-10 01:20:37.415  1762  2354 I Bugle   : RcsAvailabilityUtilForProvisioningEngineV2: onCsLibPhenotypeUpdated
+11-10 01:20:37.417  1762  1896 I BugleRcsEngine: SystemBinding enabled: true [CONTEXT log_prefix="SystemBindingManager" thread_id=42 ]
+11-10 01:20:37.418  1762  2399 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=73 ]
+11-10 01:20:37.418  1762  1896 I BugleRcsEngine: System Binding updated [CONTEXT thread_id=42 ]
+11-10 01:20:37.419  1762  2454 I RcsAvailabilityUpdaterL: updateRcsAvailabilityForMultipleSims: hint: CSLIB_PHENOTYPE_UPDATE, canReshowWelcomeMessage: false
+11-10 01:20:37.419  1762  2354 I BugleRcsEngine: SystemBinding enabled: true [CONTEXT log_prefix="SystemBindingManager" thread_id=64 ]
+11-10 01:20:37.420  1762  2354 I BugleRcsEngine: System Binding updated [CONTEXT thread_id=64 ]
+11-10 01:20:37.420  1499  1499 I EsimPhSyncer: Esim transfer p/h flags synced successfully. [CONTEXT service_id=333 ]
+11-10 01:20:37.422  1499  3194 W ConnectivityManager.CallbackHandler: callback not found for CALLBACK_AVAILABLE message
+11-10 01:20:37.422  1762  2344 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=59 ]
+11-10 01:20:37.422   999  1006 W System  : A resource failed to call close. 
+11-10 01:20:37.423  1762  2396 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=70 ]
+11-10 01:20:37.425  1762  2453 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=77 ]
+11-10 01:20:37.433  1499  1718 I LSRModuleInit: Attempting to change container components state to enabled: true [CONTEXT service_id=277 ]
+11-10 01:20:37.450  1499  2759 I Google Maps Android API: Validating conditions for requesting maps_core feature. [CONTEXT service_id=71 ]
+11-10 01:20:37.451  1499  2759 I Google Maps Android API: Is maps_core feature installed? 2 [CONTEXT service_id=71 ]
+11-10 01:20:37.452  1499  2759 I Google Maps Android API: Eligible to request maps_core feature. [CONTEXT service_id=71 ]
+11-10 01:20:37.456  1175  1956 I LSR     : Handling LSR module init in persistent process [CONTEXT service_id=277 ]
+11-10 01:20:37.462  3180  3208 D nativeloader: Configuring clns-10 for other apk . target_sdk_version=34, uses_libraries=ALL, library_path=, permitted_path=/data:/mnt/expand
+11-10 01:20:37.465  1762  2454 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=78 ]
+11-10 01:20:37.465  3180  3208 D nativeloader: Load /data/user/0/com.google.android.gms/app_dg_cache/476A36E35ABF01578AB5E50CBAEDC9FC525822EA/the.apk!/libdAC7A1C580925.so using isolated ns clns-10 (caller=/data/user/0/com.google.android.gms/app_dg_cache/476A36E35ABF01578AB5E50CBAEDC9FC525822EA/the.apk): ok
+11-10 01:20:37.465  1499  2759 I Google Maps Android API: maps_core feature request succeeded. [CONTEXT service_id=71 ]
+11-10 01:20:37.473  1762  2454 I RcsAvailabilityUpdaterL: RcsAvailability configuration availability and enabled status: simId: redacted-pii:sim_id[chars:20,last3:897], SipConnectionType: DUAL_REG, isConfigurationAvailableAndEnabled: false
+11-10 01:20:37.480  1499  2760 I ChimeraConfigurator: Starting update, reason: 4 urgentFeatures: maps_core:-1
+11-10 01:20:37.484  1175  3216 I MagicTether: [WifiSyncService] Disabled for all users, clearing cache and stopping service. [CONTEXT service_id=276 ]
+11-10 01:20:37.487  1762  2454 I BugleRcsEngine: Using config server URL from biuf [CONTEXT log_prefix="ProvisioningServerUtil" thread_id=78 ]
+11-10 01:20:37.488  1499  2759 I MS_Utils: version of com.google.android.apps.maps = 1067529190
+11-10 01:20:37.499  3180  3208 W libc    : Access denied finding property "persist.adb.tls_server.enable"
+11-10 01:20:37.499  3180  3208 W libc    : Access denied finding property "service.adb.tls.port"
+11-10 01:20:37.501  1762  2454 I RcsAvailabilityUpdaterL: RcsAvailability: Subscription Id: 1, simId: redacted-pii:sim_id[chars:20,last3:897], sipConnectionType: DUAL_REG, isRcsAvailable: false
+11-10 01:20:37.496  3180  3180 W binder:3180_4: type=1400 audit(0.0:22): avc:  denied  { read } for  name="u:object_r:system_adbd_prop:s0" dev="tmpfs" ino=318 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:system_adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+11-10 01:20:37.502  1762  2454 I RcsAvailabilityUpdaterL: updateAvailabilityForRcsProvisioningId. SimId: redacted-pii:sim_id[chars:20,last3:897], currentAvailability: 10, newAvailability: 10, hint: CSLIB_PHENOTYPE_UPDATE
+11-10 01:20:37.502  1762  2396 I BugleRcsProvisioning: scheduleProvisioningForEligibleSims
+11-10 01:20:37.503  1762  2399 I afym    : scheduleProvisioningForEligibleSims: operationTrigger: 2 bugle trigger event: 9
+11-10 01:20:37.505  1762  2453 I BugleRcsProvisioning: RcsProvisioningTrigger: onRcsAvailabilityUpdate : availability is updated to Carrier RCS is not set up, lastAvailabilityLocal is Carrier RCS is not set up, simId hash = 3680363033121705265, simId = redacted-pii:sim_id[chars:20,last3:897], isPev3Enabled = true
+--------- beginning of kernel
+11-10 01:20:37.485     0     0 I logd    : start watching /data/system/packages.list ...
+11-10 01:20:37.496  3180  3180 W binder:3180_4: type=1400 audit(0.0:23): avc:  denied  { read } for  name="u:object_r:adbd_prop:s0" dev="tmpfs" ino=63 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+11-10 01:20:37.489     0     0 I logd    : ReadPackageList, total packages: 220
+11-10 01:20:37.507  1762  2399 I afym    : scheduleProvisioningForAllEligibleSims: operationTrigger: 2 bugle trigger event: 9
+11-10 01:20:37.509  1762  2399 I afym    : scheduleProvisioningForDefaultSimIfEligible: defaultSimType: DEFAULT_CALL_SIM operationTrigger: 2 bugle trigger event: 9
+11-10 01:20:37.512  1175  2214 I LSR     : No periodic upload requests, periodic reporting should be disabled [CONTEXT service_id=277 ]
+11-10 01:20:37.517  1762  2399 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=73 ]
+11-10 01:20:37.518  1175  3014 I LSR     : Centralized reporting is disabled for all accounts [CONTEXT service_id=277 ]
+11-10 01:20:37.519  1175  1956 I LSR     : Refreshing periodic location reporting state [CONTEXT service_id=277 ]
+11-10 01:20:37.520  1762  2399 I afym    : RcsProvisioningTrigger: DR is active, initializing DR provisioning. DUAL_REG
+11-10 01:20:37.521  1762  2399 I afym    : scheduleProvisioningForDefaultSimIfEligible: defaultSimType: DEFAULT_SMS_SIM operationTrigger: 2 bugle trigger event: 9
+11-10 01:20:37.525  1175  1475 I TetheringManager: registerTetheringEventCallback:com.google.android.gms
+11-10 01:20:37.525  1499  1499 W ProviderHelper: Unknown dynamite feature providerinstaller.dynamite
+11-10 01:20:37.526  1499  1499 I DynamiteModule: Considering local module com.google.android.gms.providerinstaller.dynamite:1 and remote module com.google.android.gms.providerinstaller.dynamite:0
+11-10 01:20:37.526  1499  1499 I DynamiteModule: Selected local version of com.google.android.gms.providerinstaller.dynamite
+11-10 01:20:37.531  1499  1700 I MdiSyncModule: initializing module...
+11-10 01:20:37.532  1762  2399 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=73 ]
+11-10 01:20:37.532  1175  2217 I LSR     : No periodic upload requests, periodic reporting should be disabled [CONTEXT service_id=277 ]
+11-10 01:20:37.538  1175  2217 I LSR     : Centralized reporting is disabled for all accounts [CONTEXT service_id=277 ]
+11-10 01:20:37.539  1175  2217 I LSR     : Reporting should be enabled: false [CONTEXT service_id=277 ]
+11-10 01:20:37.540  1175  1475 W MagicTether: [HostEnablementUtils] Invalid account list. [CONTEXT service_id=276 ]
+11-10 01:20:37.541  1175  2217 I LSR     : Stopping periodic location reporting [CONTEXT service_id=277 ]
+11-10 01:20:37.542  1762  2453 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=77 ]
+11-10 01:20:37.547  1762  2399 I afym    : RcsProvisioningTrigger: DR is active, initializing DR provisioning. DUAL_REG
+11-10 01:20:37.548  1499  1700 I MdiSyncModule: module initialization completed
+11-10 01:20:37.555  1499  1627 I Checkin : [CheckinApiChimeraService] onGetService
+11-10 01:20:37.566  1499  1499 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.findmydevice.spot.service.management.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsApiService }
+11-10 01:20:37.567  1499  1499 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.findmydevice.spot.service.management.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsApiService }
+11-10 01:20:37.573  1175  1475 I LSR     : Unregistering for activity transition updates. [CONTEXT service_id=277 ]
+11-10 01:20:37.575  1762  2453 I BugleRcsEngine: Scheduled provisioning task with 0 seconds delay, KEEP policy, trigger is CSLIB_PHENOTYPE_UPDATE, workerId is 01d74e76-b78a-42f0-863a-d893789185c9, simId is redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="provisioning" thread_id=77 ]
+11-10 01:20:37.578  1499  2759 W MDM     : [85] btrf.d: Q+ devices does not need device admin.
+11-10 01:20:37.579  1499  2759 I MlBenchmarkInstaller: Intent: android.intent.action.BOOT_COMPLETED [CONTEXT service_id=340 ]
+11-10 01:20:37.579  1499  2759 I MlBenchmarkInstaller: onInitRuntimeState(), intent action=android.intent.action.BOOT_COMPLETED [CONTEXT service_id=340 ]
+11-10 01:20:37.580  1499  2760 I ChimeraConfigurator: Detected pending changes for urgent request: [maps_core]. Pending module sets: container:2423359190800+maps_core
+11-10 01:20:37.580  1175  1175 I MagicTether: [AutoDisconnectIntentOperation] Canceling task. [CONTEXT service_id=276 ]
+11-10 01:20:37.584  1499  2759 W libc    : Access denied finding property "ro.hardware.chipname"
+11-10 01:20:37.586  1762  1962 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=53 ]
+11-10 01:20:37.589  1175  1960 I MagicTether: [AutoDisconnectIntentOperation] Canceling task. [CONTEXT service_id=276 ]
+11-10 01:20:37.601  1499  1499 I MdmInitializer: Updated FMD enabled state successfully. [CONTEXT service_id=247 ]
+11-10 01:20:37.605  1499  2760 I GmsDebugLogger: [73] 1801
+11-10 01:20:37.606   643  1081 D FileUtils: Rounded bytes from 8331366400 to 16000000000
+11-10 01:20:37.606  1762  1962 I BugleRcsEngine: Scheduled provisioning task with 0 seconds delay, KEEP policy, trigger is CSLIB_PHENOTYPE_UPDATE, workerId is bb31ca84-5f9c-49b1-9d2a-a932b6dcbe93, simId is redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="provisioning" thread_id=53 ]
+11-10 01:20:37.607   426  3219 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10143 0}
+11-10 01:20:37.609  3180  3208 D TrafficStats: tagSocket(109) with statsTag=0x1809, statsUid=-1
+11-10 01:20:37.615  1499  2760 W ZappDownloader: No successful Zapp module downloads for requested modules [MapsCoreDynamite.integ:241610202100800:permitMetered].
+11-10 01:20:37.615  1499  2760 I GmsDebugLogger: [30] [MapsCoreDynamite.integ:241610202100800]
+11-10 01:20:37.620  1499  2776 I Checkin : [CheckinOperation] Starting Checkin: Default Task Reason : 1 Force : false UserId : 0 Start time : 42087
+11-10 01:20:37.621  1499  3218 I FA-SVC  : App measurement initialized, version: 242335
+11-10 01:20:37.623  1175  2216 I LSR     : Cancelling periodic location reporting maintenance task [CONTEXT service_id=277 ]
+11-10 01:20:37.623  1499  2776 I gle.android.gms: Waiting for a blocking GC ClassLinker
+11-10 01:20:37.626  1175  1693 V NativeCrypto: SSL handshake aborted: ssl=0x7454de71b798: I/O error during system call, Connection reset by peer
+11-10 01:20:37.627  1175  1475 D TrafficStats: tagSocket(206) with statsTag=0x34000609, statsUid=10136
+11-10 01:20:37.633  1499  2760 W ChimeraConfigService: Retry attempt was throttled. [CONTEXT service_id=264 ]
+11-10 01:20:37.633  1499  2760 I GmsDebugLogger: [83] 1 [maps_core]
+11-10 01:20:37.637  1175  1475 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-10 01:20:37.637  1175  1475 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-10 01:20:37.637  1175  1475 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-10 01:20:37.643  1499  1700 W ChimeraUtils: Module com.google.android.gms.mobiledataplan missing resource null(0)
+11-10 01:20:37.646  1499  2759 I EGL_emulation: Opening libGLESv1_CM_emulation.so
+11-10 01:20:37.649  1499  1700 W Glide   : Failed to find GeneratedAppGlideModule. You should include an annotationProcessor compile dependency on com.github.bumptech.glide:compiler in your application and a @GlideModule annotated AppGlideModule implementation or LibraryGlideModules will be silently ignored
+11-10 01:20:37.650  1499  2759 I EGL_emulation: Opening libGLESv2_emulation.so
+11-10 01:20:37.654  1499  1696 I LT_StubFactory: tachyonHostName = instantmessaging-pa.googleapis.com and tachyonPortNumber = 443
+11-10 01:20:37.656  1499  1615 I ChangeFmdSettings: ChangeFindMyDeviceSettings: FMD on [CONTEXT service_id=284 ]
+11-10 01:20:37.680   643  1027 D ConnectivityService: requestNetwork for uid/pid:10143/1499 activeRequest: null callbackRequest: 116 [NetworkRequest [ REQUEST id=117, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10143 RequestorUid: 10143 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false
+11-10 01:20:37.683   643   799 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=117, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10143 RequestorUid: 10143 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+11-10 01:20:37.683   643   799 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=117, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10143 RequestorUid: 10143 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+11-10 01:20:37.683   643   799 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=117, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10143 RequestorUid: 10143 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+11-10 01:20:37.684   643   799 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=117, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10143 RequestorUid: 10143 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+11-10 01:20:37.686   643   806 D ConnectivityService: NetReassign [117 : null → 100] [c 0] [a 1] [i 0]
+11-10 01:20:37.692  1175  1552 W WearableService: onGetService: Wear is not available on this device.
+11-10 01:20:37.717  1499  2759 I MlBenchmarkInstallerSch: ML Benchmark installer scheduler periodic task was set up. [CONTEXT service_id=340 ]
+11-10 01:20:37.718  1499  1696 D LT_OkHttpChannelBuilder: Using Spatula header keyless authentication.
+11-10 01:20:37.718  1499  2759 I MlBenchmarkInstaller: Device sampled out, skipping. [CONTEXT service_id=340 ]
+11-10 01:20:37.729  1499  1499 I MlBenchmarkInstaller: Feature unrequest success = true [CONTEXT service_id=340 ]
+11-10 01:20:37.741  1499  2759 I NearbyFastPair: onInitRuntimeState isEnableWearableListener: false [CONTEXT service_id=265 ]
+11-10 01:20:37.743  1499  1700 I Nearby  : is blocked device type false, isAuto=false, isIot=false, isLatchsky=false, isChinaWearable=false, isTv=false, isWearable=false (supportWearOs=false), isChromeOsDevice=false (supportChromeOs=false) [CONTEXT service_id=49 ]
+11-10 01:20:37.747  1499  1499 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.auth.service.START pkg=com.google.android.gms }
+11-10 01:20:37.747  1499  1499 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.auth.service.START pkg=com.google.android.gms }
+11-10 01:20:37.757  1499  1700 I NearbyDiscovery: Trigger rescan contextual cards [CONTEXT service_id=265 ]
+11-10 01:20:37.764  1175  1175 I NearbyDiscovery: DiscoveryService onStartCommand action: com.google.android.gms.nearby.discovery:ACTION_INIT_RUNTIME_STATE [CONTEXT service_id=265 ]
+11-10 01:20:37.765  1499  1700 I NearbyDiscovery: FastPair: HeadsetPieceImage, grant permission files:0 [CONTEXT service_id=265 ]
+11-10 01:20:37.766  1175  3216 I Nearby  : is blocked device type false, isAuto=false, isIot=false, isLatchsky=false, isChinaWearable=false, isTv=false, isWearable=false (supportWearOs=false), isChromeOsDevice=false (supportChromeOs=false) [CONTEXT service_id=49 ]
+11-10 01:20:37.769  1499  1513 I gle.android.gms: Background concurrent mark compact GC freed 6067KB AllocSpace bytes, 66(2596KB) LOS objects, 49% free, 13MB/26MB, paused 4.687ms,2.140ms total 210.298ms
+11-10 01:20:37.769  1175  2275 I Nearby  : is blocked device type false, isAuto=false, isIot=false, isLatchsky=false, isChinaWearable=false, isTv=false, isWearable=false (supportWearOs=false), isChromeOsDevice=false (supportChromeOs=false) [CONTEXT service_id=49 ]
+11-10 01:20:37.769  1499  2776 I gle.android.gms: WaitForGcToComplete blocked ClassLinker on Background for 146.102ms
+11-10 01:20:37.770  1175  2275 I NearbyDiscovery: DiscoveryController, showNotification, itemSize=0 [CONTEXT service_id=265 ]
+11-10 01:20:37.770  1175  2275 I NearbyDiscovery: Show notifications: 0 total, no changes since last shown, no-op. [CONTEXT service_id=265 ]
+11-10 01:20:37.779  1499  2759 I NearbyFastPair: FastPairInitIntentOperation: check the Footprints sync tasks. [CONTEXT service_id=265 ]
+11-10 01:20:37.780  1499  2759 I NearbyFastPair: TaskSchedulerUtils cancelTask TAG_FOOTPRINTS_PERIODIC_SCHEDULE success. [CONTEXT service_id=265 ]
+11-10 01:20:37.781  1499  2759 I NearbyFastPair: TSS scheduleFootprintsOneOffSync: not enable [CONTEXT service_id=265 ]
+11-10 01:20:37.788  1499  2759 W libc    : Access denied finding property "ro.hardware.chipname"
+11-10 01:20:37.789  1499  2759 I NnApiDriverManager: Registering application with chipset 'xeon(r) w5-2465x' [CONTEXT service_id=301 ]
+11-10 01:20:37.799  1499  2776 I CheckinUtil: Classify the device as Phone. [CONTEXT service_id=130 ]
+11-10 01:20:37.799  1499  1808 D CompatChangeReporter: Compat change id reported: 3400644; UID 10143; state: ENABLED
+11-10 01:20:37.801  1499  1808 I NearbySharing: onBindSlice failed since shareTargets is empty [CONTEXT service_id=194 ]
+11-10 01:20:37.808  1499  1808 I NearbySharing: Granted slice and uri permissions to com.samsung.android.app.nearbyshare.theme [CONTEXT service_id=194 ]
+11-10 01:20:37.812  1499  1808 I NearbySharing: Granted slice and uri permissions to android [CONTEXT service_id=194 ]
+11-10 01:20:37.815  1499  1808 I NearbySharing: Granted slice and uri permissions to com.google.android.apps.nbu.files [CONTEXT service_id=194 ]
+11-10 01:20:37.817  1499  2759 I NnApiDriverManager: Registering application with GPU 'Android Emulator OpenGL ES Translator (Google SwiftShader)' by 'Google (Google Inc.)' [CONTEXT service_id=301 ]
+11-10 01:20:37.819  1499  1696 D LT_LitBstrpCntrl: Initializing BootstrapController Instance
+11-10 01:20:37.824  1499  1808 I NearbySharing: Granted slice and uri permissions to com.samsung.android.app.sharelive [CONTEXT service_id=194 ]
+11-10 01:20:37.830  1175  2585 W GLSUser : [DeviceKeyStore] Cannot load key: Device key file not found.
+11-10 01:20:37.830  1175  2585 W GLSUser : [DeviceKeyStore] Cannot load key: Device key file not found.
+11-10 01:20:37.837  1499  2759 I Pay     : Pay module init: 2 / 0 / 0 [CONTEXT service_id=198 ]
+11-10 01:20:37.848  1499  1808 I NearbySharing: Runtime state initialization complete. Sharing is enabled. [CONTEXT service_id=194 ]
+11-10 01:20:37.855  1499  1499 D LT_ClntIntrcptrFctryV12: Spatula header: CjYKFmNvbS5nb29nbGUuYW5kcm9pZC5nbXMaHFdPSEVFejkwUWV3OUxDY0NjS0ZJQXRwSHVnND0Y8uzjiOnJ1ecx
+11-10 01:20:37.856  1499  2776 I Checkin : [AndroidCheckinProtoModule] Checkin reason type: 1 attempt count: 1.
+11-10 01:20:37.857  1175  1473 I NearbySharing: A new client has bound to the NearbySharingService ClientBridge for calling package com.google.android.gms and PID 1175 [CONTEXT service_id=194 ]
+11-10 01:20:37.858  1499  3225 D LT_PhenotypeApiImplV12: Retrieve experiment configurations
+11-10 01:20:37.859  1175  1473 I NearbySharing: Package com.google.android.gms has requested to register a receive surface of type BACKGROUND [CONTEXT service_id=194 ]
+11-10 01:20:37.860  1499  2760 I DeletedNullContactsCleanup: Scheduling the service.
+11-10 01:20:37.863  1175  1482 I NearbySharing: Not allowed to auto turn on device settings. [CONTEXT service_id=194 ]
+11-10 01:20:37.866  1175  1482 I NearbySharing: A ReceiveSurface(BACKGROUND) has been registered [CONTEXT service_id=194 ]
+11-10 01:20:37.867  1175  1175 I NearbySharing: ReceiveSurfaceService created with vendorMetadata null [CONTEXT service_id=194 ]
+11-10 01:20:37.868  1175  1482 I NearbySharing: Stopping advertising because Nearby Sharing is disabled. [CONTEXT service_id=194 ]
+11-10 01:20:37.868  1175  1175 I NearbySharing: ReceiveSurfaceService started [CONTEXT service_id=194 ]
+11-10 01:20:37.870  1175  1482 I NearbySharing: Stopping FastInitiation scanning because visibility is hidden. [CONTEXT service_id=194 ]
+11-10 01:20:37.871  1175  1482 I NearbySharing: Fast Initiation Scanning has stopped [CONTEXT service_id=194 ]
+11-10 01:20:37.871  1499  2760 I BackupAndSyncValidation: Scheduling the service.
+11-10 01:20:37.872  1175  1482 I NearbySharing: Dismissing HUN as there's no device nearby. [CONTEXT service_id=194 ]
+11-10 01:20:37.873  1175  1175 I NearbySharing: SendSurfaceService started [CONTEXT service_id=194 ]
+11-10 01:20:37.873  1175  1473 I NearbySharing: Package com.google.android.gms has requested to register a send surface of type BACKGROUND [CONTEXT service_id=194 ]
+11-10 01:20:37.874  1175  1482 I NearbySharing: Broadcasting NearbySharing state change. [CONTEXT service_id=194 ]
+11-10 01:20:37.875  1175  1482 I NearbySharing: Not allowed to auto turn on device settings. [CONTEXT service_id=194 ]
+11-10 01:20:37.875  1175  1482 I NearbySharing: A SendSurface(BACKGROUND) has been registered [CONTEXT service_id=194 ]
+11-10 01:20:37.875  1175  1482 I NearbySharing: Uwb feature is off. [CONTEXT service_id=194 ]
+11-10 01:20:37.879  1175  1482 I NearbySharing: Stopping scanning because Nearby Sharing is disabled. [CONTEXT service_id=194 ]
+11-10 01:20:37.880  1175  1482 I NearbySharing: Stopping Fast Init advertisement because we're not scanning in the foreground. [CONTEXT service_id=194 ]
+11-10 01:20:37.881  1175  1482 I NearbySharing: Stopping advertising because Nearby Sharing is disabled. [CONTEXT service_id=194 ]
+11-10 01:20:37.883  1175  1482 I NearbySharing: Stopping FastInitiation scanning because visibility is hidden. [CONTEXT service_id=194 ]
+11-10 01:20:37.886  1175  1482 I NearbySharing: Fast Initiation Scanning has stopped [CONTEXT service_id=194 ]
+11-10 01:20:37.886  1175  1482 I NearbySharing: Dismissing HUN as there's no device nearby. [CONTEXT service_id=194 ]
+11-10 01:20:37.887  1499  2759 W Pay     : Active account was null, notification task will be cancelled. [CONTEXT service_id=198 ]
+11-10 01:20:37.889  1499  2759 I Pay     : Failed to get account info [CONTEXT service_id=198 ]
+11-10 01:20:37.889  1499  2760 I PeopleInitIntentOp: Not initializing debuggability [CONTEXT service_id=5 ]
+11-10 01:20:37.890  1499  2760 I PeopleInitIntentOp: Register contacts changed observer. [CONTEXT service_id=5 ]
+11-10 01:20:37.891  1175  1482 I NearbySharing: Broadcasting NearbySharing state change. [CONTEXT service_id=194 ]
+11-10 01:20:37.891  1499  2760 W ChimeraUtils: Module com.google.android.gms.people missing resource null(0)
+11-10 01:20:37.897   643  2135 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-10 01:20:37.897   643  2135 D PackageManager: Clear ephemeral installer activity
+11-10 01:20:37.900  1175  2323 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.google.android.devicelockcontroller
+11-10 01:20:37.901   643   663 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-10 01:20:37.901   643   663 D PackageManager: Clear ephemeral installer activity
+11-10 01:20:37.914  1499  2760 I PersonalSafety: Entry under S&E status true, true, true  [CONTEXT service_id=310 ]
+11-10 01:20:37.916  1499  2760 W ChimeraUtils: Module com.google.android.gms.phonesky_recovery missing resource null(0)
+11-10 01:20:37.919  1175  1175 I PersonalSafety: Init [CONTEXT service_id=310 ]
+11-10 01:20:37.920  1175  1175 I PersonalSafety: enabling createOptionalComponents [CONTEXT service_id=310 ]
+11-10 01:20:37.922  1175  3216 W Settings: Setting airplane_mode_on has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+11-10 01:20:37.923  1175  2216 D BluetoothAdapter: isLeEnabled(): ON
+11-10 01:20:37.924  1175  3216 I PersonalSafety: Create createOptionalComponents: true true false false [CONTEXT service_id=310 ]
+11-10 01:20:37.939  1499  2759 I Pay     : Requested check of feature migrations. [CONTEXT service_id=198 ]
+11-10 01:20:37.952  1499  1499 I LT_PhenotypeApiImplV12: Phenotype registration succeeded
+11-10 01:20:37.952   643  1081 D FileUtils: Rounded bytes from 8331366400 to 16000000000
+11-10 01:20:37.963  1499  2759 W Pay     : Active account was null, notification task will be cancelled. [CONTEXT service_id=198 ]
+11-10 01:20:37.974  1499  2776 D CompatChangeReporter: Compat change id reported: 263076149; UID 10143; state: ENABLED
+11-10 01:20:37.981  1499  1808 I ChimeraConfigurator: Starting update, reason: 4 urgentFeatures: mlkit.barcode.ui:0
+11-10 01:20:37.999  1499  2760 I GmsSyncPolicyEngine: Periodic sync 1 disabled by policy, cancelled.
+11-10 01:20:37.999  1175  1183 I .gms.persistent: Background concurrent mark compact GC freed 13MB AllocSpace bytes, 24(716KB) LOS objects, 49% free, 16MB/33MB, paused 5.285ms,7.671ms total 135.045ms
+11-10 01:20:38.003  1499  2760 I GmsSyncPolicyEngine: Periodic sync 2 disabled by policy, cancelled.
+11-10 01:20:38.004   426  3234 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10143 0}
+11-10 01:20:38.005   426  3237 I resolv  : res_nmkquery: (QUERY, IN, A)
+11-10 01:20:38.006   426  3236 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+11-10 01:20:38.007  1499  2760 I GmsSyncPolicyEngine: Periodic sync 3 disabled by policy, cancelled.
+11-10 01:20:38.008   426  3236 I resolv  : res_nsend: used send_dg 494 terrno: 0
+11-10 01:20:38.009   426  3236 I resolv  : doQuery: rcode=0, ancount=8, return value=494
+11-10 01:20:38.010   426  3237 I resolv  : res_nsend: used send_dg 426 terrno: 0
+11-10 01:20:38.010   426  3237 I resolv  : doQuery: rcode=0, ancount=8, return value=426
+11-10 01:20:38.015  1175  1475 V NativeCrypto: SSL handshake aborted: ssl=0x7454de71b798: I/O error during system call, Connection reset by peer
+11-10 01:20:38.017  1499  2776 D TrafficStats: tagSocket(161) with statsTag=0x30000408, statsUid=-1
+11-10 01:20:38.027  1499  1700 I AlarmManager: setExactAndAllowWhileIdle [name: RemindersNSREFRESH_TIME_REMINDERS_ALARM type: 0 triggerAtMillis: 1794335400000]
+11-10 01:20:38.029  1175  2217 D TrafficStats: tagSocket(206) with statsTag=0x34000609, statsUid=10136
+11-10 01:20:38.030  1499  2776 W ProviderHelper: Unknown dynamite feature providerinstaller.dynamite
+11-10 01:20:38.031  1499  2776 I DynamiteModule: Considering local module com.google.android.gms.providerinstaller.dynamite:1 and remote module com.google.android.gms.providerinstaller.dynamite:0
+11-10 01:20:38.031  1175  1185 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Photos/Photos.apk' with 1 weak references
+11-10 01:20:38.031  1499  2776 I DynamiteModule: Selected local version of com.google.android.gms.providerinstaller.dynamite
+11-10 01:20:38.038  1499  2776 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-10 01:20:38.038  1499  2776 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-10 01:20:38.039  1499  2776 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-10 01:20:38.039  1499  1808 I ChimeraConfigurator: Detected pending changes for urgent request: [mlkit.barcode.ui]. Pending module sets: container:2423359190800+mlkit.barcode.ui+vision.barcode,tflite_dynamite:2640104055100800+tflite_dynamite
+11-10 01:20:38.044  1175  1185 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PartnerSetupPrebuilt/PartnerSetupPrebuilt.apk' with 1 weak references
+11-10 01:20:38.048  1175  1185 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/YouTube/YouTube.apk' with 1 weak references
+11-10 01:20:38.049  1175  1185 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/Velvet/Velvet.apk' with 1 weak references
+11-10 01:20:38.050  1175  2217 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-10 01:20:38.051  1175  2217 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-10 01:20:38.051  1175  2217 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-10 01:20:38.053  1175  1185 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PrebuiltBugle/PrebuiltBugle.apk' with 1 weak references
+11-10 01:20:38.056  1175  1185 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/SoundPickerPrebuilt/SoundPickerPrebuilt.apk' with 1 weak references
+11-10 01:20:38.057  1175  1185 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/ConfigUpdater/ConfigUpdater.apk' with 1 weak references
+11-10 01:20:38.060  1175  1185 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/SafetyHubPrebuilt/SafetyHubPrebuilt.apk' with 1 weak references
+11-10 01:20:38.062  1175  3215 W Settings: Setting airplane_mode_on has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+11-10 01:20:38.063  1175  3215 I PersonalSafety: start auto-detection [CONTEXT service_id=310 ]
+11-10 01:20:38.063  1175  3215 I PersonalSafety: AutoD Start settings: true true false false [CONTEXT service_id=310 ]
+11-10 01:20:38.064  1499  1808 I GmsDebugLogger: [73] 1801
+11-10 01:20:38.069  1499  2776 V NativeCrypto: SSL handshake aborted: ssl=0x7454de71aa18: I/O error during system call, Connection reset by peer
+11-10 01:20:38.071  1175  1185 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/talkback/talkback.apk' with 1 weak references
+11-10 01:20:38.071  1175  1185 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '/vendor/overlay/EmulatorTalkBackOverlay/EmulatorTalkBackOverlay.apk' with 1 weak references
+11-10 01:20:38.074  1499  1808 W ZappDownloader: No successful Zapp module downloads for requested modules [VisionBarcode.optional:242335100800:permitMetered, TfliteDynamiteDynamite.integ:264010405100800:permitMetered, MlkitBarcodeUi.optional:242335100800:permitMetered].
+11-10 01:20:38.074  1499  1808 I GmsDebugLogger: [30] [VisionBarcode.optional:242335100800],[TfliteDynamiteDynamite.integ:264010405100800],[MlkitBarcodeUi.optional:242335100800]
+11-10 01:20:38.074  1175  1185 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PrebuiltDeskClockGoogle/PrebuiltDeskClockGoogle.apk' with 1 weak references
+11-10 01:20:38.075  1175  1185 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/DevicePersonalizationPrebuiltPixel2021-aiai_20240329.00_RC16/DevicePersonalizationPrebuiltPixel2021-aiai_20240329.00_RC16.apk' with 1 weak references
+11-10 01:20:38.076  1175  1185 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PrebuiltGmail/PrebuiltGmail.apk' with 1 weak references
+11-10 01:20:38.077  1175  1185 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/WellbeingPrebuilt/WellbeingPrebuilt.apk' with 1 weak references
+11-10 01:20:38.080  1175  2217 V NativeCrypto: SSL handshake aborted: ssl=0x7454de719ed8: I/O error during system call, Connection reset by peer
+11-10 01:20:38.083  1175  3216 D TrafficStats: tagSocket(216) with statsTag=0x34000609, statsUid=10136
+11-10 01:20:38.085  1499  2776 D TrafficStats: tagSocket(161) with statsTag=0x30000408, statsUid=-1
+11-10 01:20:38.093  1499  2776 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-10 01:20:38.094  1499  2776 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-10 01:20:38.094  1499  2776 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-10 01:20:38.096  1175  3216 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-10 01:20:38.097  1175  3216 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-10 01:20:38.097  1175  3216 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-10 01:20:38.113  1499  2759 W Pay     : Active account was null, notification task will be cancelled. [CONTEXT service_id=198 ]
+11-10 01:20:38.113  1499  2759 I Pay     : PendingSeProvisioningTaskOperation: Active account not found! [CONTEXT service_id=198 ]
+11-10 01:20:38.114  1499  1808 W ChimeraConfigService: Retry attempt was throttled. [CONTEXT service_id=264 ]
+11-10 01:20:38.115  1499  1808 I GmsDebugLogger: [83] 1 [mlkit.barcode.ui]
+11-10 01:20:38.120  1499  2759 W Pay     : Active account was null, notification task will be cancelled. [CONTEXT service_id=198 ]
+11-10 01:20:38.120  1499  2759 W Pay     : [eMoney card recovery task] exiting without init: active tapandpay account not found! [CONTEXT service_id=198 ]
+11-10 01:20:38.121  1499  2759 I Pay     : Requested immediate check to see whether to show pay module downloading complete notification. [CONTEXT service_id=198 ]
+11-10 01:20:38.123  1499  2776 V NativeCrypto: SSL handshake aborted: ssl=0x7454de71aa18: I/O error during system call, Connection reset by peer
+11-10 01:20:38.124  1499  2776 D TrafficStats: tagSocket(161) with statsTag=0x30000408, statsUid=-1
+11-10 01:20:38.126  1175  3216 V NativeCrypto: SSL handshake aborted: ssl=0x7454de71b798: I/O error during system call, Connection reset by peer
+11-10 01:20:38.130  1175  2216 D TrafficStats: tagSocket(216) with statsTag=0x34000609, statsUid=10136
+11-10 01:20:38.130  1175  2214 W NetworkScheduler: Immediate task was not started com.google.android.gms/.pay.gcmtask.PayGcmTaskService{u=0 tag="hceserviceinitoneoff.sync" trigger=window{start=0s,end=1s,earliest=0s,latest=0s} requirements=[NET_ANY,PREFERRED_CHARGING] attributes=[PERSISTED] scheduled=0s last_run=N/A exec_window_multiplier=1.0000 jid=N/A status=PENDING retries=0 client_lib=GMS_TASK_SCHEDULER-242335000}. Rescheduling immediate tasks can cause excessive battery drain.
+11-10 01:20:38.133  1499  2776 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-10 01:20:38.134  1499  2776 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-10 01:20:38.134  1499  2776 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-10 01:20:38.136  1499  2759 W Pay     : Active account was null, notification task will be cancelled. [CONTEXT service_id=198 ]
+11-10 01:20:38.138  1499  2759 W Pay     : [eMoney txn sync] exiting without init: active tapandpay account not found! [CONTEXT service_id=198 ]
+11-10 01:20:38.142  1175  2216 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-10 01:20:38.142  1175  2216 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-10 01:20:38.142  1175  2216 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-10 01:20:38.157  1499  2776 V NativeCrypto: SSL handshake aborted: ssl=0x7454de71aa18: I/O error during system call, Connection reset by peer
+11-10 01:20:38.160  1499  2776 D TrafficStats: tagSocket(161) with statsTag=0x30000408, statsUid=-1
+11-10 01:20:38.164  1499  2759 I SemanticLocation: [Scheduler] Housekeeping Task com.google.android.gms.semanticlocation.mdd.MddDownloadScheduleService.schedule_mdd_task is scheduled to run at cadence bpjz@37a7cb6 [CONTEXT service_id=173 ]
+11-10 01:20:38.164  1175  1851 I ActivityScheduler: nextTriggerTime: 44999, in 2367ms, detectorType: 39, FULL_TYPE alarmWindowMillis: 80000
+11-10 01:20:38.165  1175  1851 W AlarmManager: alarm window unlikely to be respected [CONTEXT service_id=231 ]
+11-10 01:20:38.165  1175  1851 W AlarmManager: java.lang.IllegalArgumentException: alarm "NetworkLocationActivityDetection" has short window length
+11-10 01:20:38.165  1175  1851 W AlarmManager: 	at boaw.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):52)
+11-10 01:20:38.165  1175  1851 W AlarmManager: 	at ehbk.f(:com.google.android.gms@242335041@24.23.35 (190800-646585959):119)
+11-10 01:20:38.165  1175  1851 W AlarmManager: 	at efdj.w(:com.google.android.gms@242335041@24.23.35 (190800-646585959):65)
+11-10 01:20:38.165  1175  1851 W AlarmManager: 	at effb.q(:com.google.android.gms@242335041@24.23.35 (190800-646585959):138)
+11-10 01:20:38.165  1175  1851 W AlarmManager: 	at effb.u(:com.google.android.gms@242335041@24.23.35 (190800-646585959):125)
+11-10 01:20:38.165  1175  1851 W AlarmManager: 	at effh.M(:com.google.android.gms@242335041@24.23.35 (190800-646585959):82)
+11-10 01:20:38.165  1175  1851 W AlarmManager: 	at efer.M(:com.google.android.gms@242335041@24.23.35 (190800-646585959):5)
+11-10 01:20:38.165  1175  1851 W AlarmManager: 	at efer.o(:com.google.android.gms@242335041@24.23.35 (190800-646585959):49)
+11-10 01:20:38.165  1175  1851 W AlarmManager: 	at efer.x(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+11-10 01:20:38.165  1175  1851 W AlarmManager: 	at efdj.B(:com.google.android.gms@242335041@24.23.35 (190800-646585959):318)
+11-10 01:20:38.165  1175  1851 W AlarmManager: 	at ehah.handleMessage(:com.google.android.gms@242335041@24.23.35 (190800-646585959):270)
+11-10 01:20:38.165  1175  1851 W AlarmManager: 	at android.os.Handler.dispatchMessage(Handler.java:107)
+11-10 01:20:38.165  1175  1851 W AlarmManager: 	at bphk.nR(:com.google.android.gms@242335041@24.23.35 (190800-646585959):1)
+11-10 01:20:38.165  1175  1851 W AlarmManager: 	at bphk.dispatchMessage(:com.google.android.gms@242335041@24.23.35 (190800-646585959):138)
+11-10 01:20:38.165  1175  1851 W AlarmManager: 	at android.os.Looper.loopOnce(Looper.java:232)
+11-10 01:20:38.165  1175  1851 W AlarmManager: 	at android.os.Looper.loop(Looper.java:317)
+11-10 01:20:38.165  1175  1851 W AlarmManager: 	at android.os.HandlerThread.run(HandlerThread.java:85)
+11-10 01:20:38.166  1499  2759 I SemanticLocation: [Scheduler] Housekeeping Task com.google.android.gms.semanticlocation.service.SemanticLocationCleanupJob.SemanticLocationRemovedAccountsCleanup is scheduled to run at cadence bpjz@7eabdb7 [CONTEXT service_id=173 ]
+11-10 01:20:38.170  1499  2776 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-10 01:20:38.171  1175  2216 V NativeCrypto: SSL handshake aborted: ssl=0x7454de71bf18: I/O error during system call, Connection reset by peer
+11-10 01:20:38.171  1499  2776 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-10 01:20:38.172  1499  2776 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-10 01:20:38.173  1175  1475 D TrafficStats: tagSocket(216) with statsTag=0x34000609, statsUid=10136
+11-10 01:20:38.179  1499  1808 V SmartDevice: [ModuleInitializer] ModuleInitializer got intent Intent { act=android.intent.action.BOOT_COMPLETED flg=0x89000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) } with flag 2
+11-10 01:20:38.180  1499  1808 W ChimeraUtils: Module com.google.android.gms.smartdevice missing resource null(0)
+11-10 01:20:38.185  1175  1475 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-10 01:20:38.185  1175  1475 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-10 01:20:38.186  1175  1475 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-10 01:20:38.187  1175  2216 W .gms.persistent: Accessing hidden method Landroid/net/ConnectivityManager;->isNetworkSupported(I)Z (max-target-p, reflection, denied)
+11-10 01:20:38.188  1175  2216 I TapAndPay: Maintaining payment bundles [CONTEXT service_id=79 ]
+11-10 01:20:38.191  1175  2216 I TapAndPay: Finished maintaining payment bundles [CONTEXT service_id=79 ]
+11-10 01:20:38.198  1499  1808 D SmartDevice: [ModuleInitializer] Module init - scheduling buffered logs cleanup task
+11-10 01:20:38.199  1499  2776 V NativeCrypto: SSL handshake aborted: ssl=0x7454de71aa18: I/O error during system call, Connection reset by peer
+11-10 01:20:38.199  1499  1808 I SmartDevice: [CleanBufferedLogsService] Periodic task upload_buffered_logs_periodic scheduled!
+11-10 01:20:38.201  1499  2776 D TrafficStats: tagSocket(161) with statsTag=0x30000408, statsUid=-1

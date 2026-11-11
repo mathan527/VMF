@@ -1,0 +1,430 @@
+--------- beginning of main
+11-10 01:10:33.205  2604  4245 W Ads     : Play store is not installed or the service for parental controls is not available.
+11-10 01:10:33.206  2604  4245 I Ads     : Initialized AdMob in container 20.24.14 (040800-319035315)
+11-10 01:10:33.209  4278  4278 W DynamiteModule: Local module descriptor class for providerinstaller not found.
+11-10 01:10:33.210  4278  4278 W ProviderHelper: Unknown dynamite feature providerinstaller
+11-10 01:10:33.218  2853  2853 D NLService: Successfully stored the newly arrived notification identified by 1
+11-10 01:10:33.227  2853  2853 D NLService: Successfully stored the newly arrived notification identified by 1
+11-10 01:10:33.228  4278  4278 I DynamiteModule: Considering local module providerinstaller:0 and remote module providerinstaller:0
+11-10 01:10:33.228  4278  4278 W ProviderInstaller: Failed to load providerinstaller module: No acceptable module found. Local version is 0 and remote version is 0.
+11-10 01:10:33.230  4278  4278 V NativeCrypto: Registering com/google/android/gms/org/conscrypt/NativeCrypto's 286 native methods...
+11-10 01:10:33.247  4278  4278 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: false
+11-10 01:10:33.267  4278  4278 I ProviderInstaller: Installed default security provider GmsCore_OpenSSL
+11-10 01:10:33.282  4278  4278 I Safeboot: Checking safeboot...
+11-10 01:10:33.283  4278  4278 I Safeboot: Not entering safeboot; wrong process.
+11-10 01:10:33.299  2604  4241 E JavaBinder: !!! FAILED BINDER TRANSACTION !!!  (parcel size = 1056768)
+11-10 01:10:33.302  4215  4215 E GooglePartnerSetup: Phenotype client.register: true
+11-10 01:10:33.305  2604  4241 I constellation: [intent_handler] Received onBootCompleted intent
+11-10 01:10:33.305  2604  4241 I constellation: [reboot_checker] Reboot checker check status.
+--------- beginning of system
+11-10 01:10:33.316  1915  4228 W ActivityManager: Background start not allowed: service Intent { cmp=com.google.android.apps.messaging/.shared.datamodel.action.execution.ActionExecutorImpl$EmptyService } to com.google.android.apps.messaging/.shared.datamodel.action.execution.ActionExecutorImpl$EmptyService from pid=3402 uid=10131 pkg=com.google.android.apps.messaging startFg?=false
+11-10 01:10:33.317  4308  4308 I ssioncontrolle: The ClassLoaderContext is a special shared library.
+11-10 01:10:33.331  1915  4228 I ActivityManager: Killing 2416:com.android.cellbroadcastreceiver/u0a57 (adj 985): empty #17
+11-10 01:10:33.344  2604  2647 W gle.android.gm: Accessing hidden method Landroid/net/ConnectivityManager;->isNetworkSupported(I)Z (greylist-max-p, reflection, denied)
+11-10 01:10:33.349  2604  4241 I constellation: [reboot_checker] Reboot Sync didn't run.
+11-10 01:10:33.349  2604  4241 I constellation: [intent_handler] on init with intent Intent { act=android.intent.action.BOOT_COMPLETED flg=0x89000010 cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+11-10 01:10:33.364  2604  2647 D ActivityThread: Loading provider com.google.android.gms.download: com.google.android.gms.common.download.provider.DownloadsProvider
+11-10 01:10:33.375  2604  4241 I Fido    : [FidoInitIntentOperation] Initializing Fido module, InitRuntimeState=2
+11-10 01:10:33.417  4278  4278 I bezb    : Primes not initialized, returning default (no-op) Primes instance which will ignore all calls. Please call Primes.initialize(...) before using any Primes API.
+11-10 01:10:33.460  1915  4213 I ActivityManager: Killing 3383:com.google.android.angle/u0a105 (adj 985): empty #17
+11-10 01:10:33.478  1666  1666 D Zygote  : Forked child process 4348
+11-10 01:10:33.478  1666  1666 I Zygote  : Process 2416 exited due to signal 9 (Killed)
+11-10 01:10:33.479  1915  1944 I ActivityManager: Start proc 4348:com.google.android.projection.gearhead:shared/u0a113 for broadcast {com.google.android.projection.gearhead/com.google.android.apps.auto.components.app.fzero.FzeroReceiver}
+11-10 01:10:33.490  1666  1666 I Zygote  : Process 3383 exited due to signal 9 (Killed)
+11-10 01:10:33.496  4348  4348 W gearhead:share: Unexpected CPU variant for X86 using defaults: x86_64
+11-10 01:10:33.508  1915  1945 I libprocessgroup: Successfully killed process cgroup uid 10057 pid 2416 in 176ms
+11-10 01:10:33.508  1915  1945 I libprocessgroup: Successfully killed process cgroup uid 10105 pid 3383 in 0ms
+11-10 01:10:33.529  2446  4131 I Herrevad: [186] absm.a: updateListenState
+11-10 01:10:33.548  2604  4245 I MobileDataHub: Scheduling periodic tasks
+11-10 01:10:33.557  2604  4129 I NewModuleOp: Schedule LanguageProfileGcmTaskChimeraService tasks. [CONTEXT service_id=167 ]
+11-10 01:10:33.574  2604  4129 I LPGcmTaskChimeraService: Unscheduling sync tasks. [CONTEXT service_id=167 ]
+11-10 01:10:33.581  2604  2616 I gle.android.gm: Background concurrent copying GC freed 36825(1811KB) AllocSpace objects, 24(736KB) LOS objects, 48% free, 6597KB/12MB, paused 22.340ms total 251.684ms
+11-10 01:10:33.587  4348  4348 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.hidl.base-V1.0-java.jar
+11-10 01:10:33.587  4348  4348 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.hidl.manager-V1.0-java.jar
+11-10 01:10:33.587  4348  4348 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.hidl.base-V1.0-java.jar
+11-10 01:10:33.588  4348  4348 I gearhead:share: The ClassLoaderContext is a special shared library.
+11-10 01:10:33.601  2604  4245 W MobileDataHub: [Service] appsupload-periodic periodic task disabled
+11-10 01:10:33.604  2604  4129 W MagicTether: [MagicTetherInitializer] Invalid account list.
+11-10 01:10:33.616  4348  4348 I MultiDex: VM with version 2.1.0 has multidex support
+11-10 01:10:33.616  4348  4348 I MultiDex: install
+11-10 01:10:33.616  4348  4348 I MultiDex: VM has multidex support, MultiDex support library is disabled.
+11-10 01:10:33.618  4348  4348 W Primes  : Primes not initialized, returning default (no-op) Primes instance which will ignore all calls. Please call Primes.initialize(...) before using any Primes API.
+11-10 01:10:33.618  4348  4348 I CAR.GH  : onCreate
+11-10 01:10:33.647  2604  4245 I MdiSyncModule: initializing module...
+11-10 01:10:33.667  4348  4348 I CAR.GH  : Process: SHARED_SERVICE
+11-10 01:10:33.670  2604  4129 I MS_Utils: version of com.google.android.apps.maps = 1016701040
+11-10 01:10:33.675  2446  3803 I MagicTether: [HostValidator] InvalidHost. MobileData: true, Tethering: true, whitelist: false, ble: false
+11-10 01:10:33.680  2604  2638 I MS_RegisterService: Tachyon host: www.google.com, Tachyon port: 443
+11-10 01:10:33.687  1915  1931 I WifiService: getWifiApConfiguration uid=10115
+11-10 01:10:33.709  2446  2446 I MagicTether: [AutoDisconnectIntentOperation] Canceling task.
+11-10 01:10:33.714  2446  4131 I MagicTether: [AutoDisconnectIntentOperation] Canceling task.
+11-10 01:10:33.721  2604  3456 I GmsSyncPolicyEngine: Periodic sync 3 disabled
+11-10 01:10:33.722  2604  4245 I MdiSyncModule: module initialization completed
+11-10 01:10:33.723  2604  2647 I LT_StubFactory: tachyonHostName = instantmessaging-pa.googleapis.com and tachyonPortNumber = 443
+11-10 01:10:33.735  2604  2647 D LT_OkHttpChannelBuilder: Using Spatula header keyless authentication.
+11-10 01:10:33.760  4348  4348 I GAv4    : Google Analytics 17.4.49 is starting up. To enable debug logging on a device run:
+11-10 01:10:33.760  4348  4348 I GAv4    :   adb shell setprop log.tag.GAv4 DEBUG
+11-10 01:10:33.760  4348  4348 I GAv4    :   adb logcat -s GAv4
+11-10 01:10:33.765  2604  4403 D ActivityThread: Loading provider com.google.android.gms.lighter.data: com.google.android.gms.matchstick.data.LighterContentProvider
+11-10 01:10:33.775  2604  4404 D ActivityThread: Loading provider com.google.android.gms.lighter.data: com.google.android.gms.matchstick.data.LighterContentProvider
+11-10 01:10:33.776  4348  4348 E BluetoothAdapter: Bluetooth binder is null
+11-10 01:10:33.778  4348  4406 W GAv4    : AnalyticsReceiver is not registered or is disabled. Register the receiver for reliable dispatching on non-Google Play devices. See http://goo.gl/8Rd3yj for instructions.
+11-10 01:10:33.786  4348  4348 I GH.CONFIG: groups:
+11-10 01:10:33.788  4348  4348 I GH.CONFIG: everyone
+11-10 01:10:33.799  2446  3075 W GCoreFlp: No location to return for getLastLocation()
+11-10 01:10:33.804  2604  4245 I ExposureNotification: ExposureNotificationInitIntentOperation.onInitRuntimeState [CONTEXT service_id=236 ]
+11-10 01:10:33.804  2446  2458 W GLSUser : [DeviceKeyStore] Cannot load key: Device key file not found.
+11-10 01:10:33.809  3777  3802 I oid.apps.photo: Waiting for a blocking GC ProfileSaver
+11-10 01:10:33.811  4348  4406 W GAv4    : CampaignTrackingReceiver is not registered, not exported or is disabled. Installation campaign tracking is not possible. See http://goo.gl/8Rd3yj for instructions.
+11-10 01:10:33.813  4348  4406 W GAv4    : AnalyticsService not registered in the app manifest. Hits might not be delivered reliably. See http://goo.gl/8Rd3yj for instructions.
+11-10 01:10:33.815  1915  4213 W ActivityManager: Unable to start service Intent { act=com.google.android.gms.nearby.discovery:ACTION_INIT_MESSAGES_PATH cmp=com.google.android.gms/.nearby.discovery.service.DiscoveryService } U=0: not found
+11-10 01:10:33.819  2446  2446 I ExposureNotification: ExposureNotificationInternalService.onCreate, com.google.android.gms.nearby.exposurenotification.service.ExposureNotificationInternalChimeraService@fcc31a1 [CONTEXT service_id=236 ]
+11-10 01:10:33.822  1915  3788 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-10 01:10:33.822  1915  3788 D PackageManager: Clear ephemeral installer activity
+11-10 01:10:33.825  4348  4348 I GH.FzeroReceiver: Handling intent android.intent.action.BOOT_COMPLETED
+11-10 01:10:33.826  2604  4129 I NearbyDiscovery: FastPair: HeadsetPieceImage, grant permission files:0 [CONTEXT service_id=49 ]
+11-10 01:10:33.829  2604  4403 I LT_PhenotypeApiImplV12: Retrieve experiment configurations for: 
+11-10 01:10:33.834  2446  2446 I ExposureNotification: ExposureServiceInternalService.onStartCommand, Intent { act=com.google.android.gms.nearby.exposurenotification.service.ACTION_CLIENT_CHANGE cmp=com.google.android.gms/.nearby.exposurenotification.service.ExposureNotificationInternalService } [CONTEXT service_id=236 ]
+11-10 01:10:33.834  2446  2458 W GLSUser : [DeviceKeyStore] Cannot load key: Device key file not found.
+11-10 01:10:33.835  2446  2877 I LockboxService: Completed task: true [CONTEXT service_id=26 ]
+11-10 01:10:33.844  3777  3802 I oid.apps.photo: WaitForGcToComplete blocked ProfileSaver on ClassLinker for 35.140ms
+11-10 01:10:33.846  1915  2468 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-10 01:10:33.846  1915  2468 D PackageManager: Clear ephemeral installer activity
+11-10 01:10:33.849  2604  4241 I NearbySharing: Runtime state initialization complete. Sharing is disabled. [CONTEXT service_id=194 ]
+11-10 01:10:33.856  2604  4129 I DeletedNullContactsCleanup: Scheduling the service.
+11-10 01:10:33.863  1915  1930 I ActivityManager: Killing 2484:com.android.dialer/u0a106 (adj 985): empty #17
+11-10 01:10:33.872  1666  1666 D Zygote  : Forked child process 4410
+11-10 01:10:33.873  1915  1944 I ActivityManager: Start proc 4410:com.google.android.projection.gearhead:projection/u0a113 for broadcast {com.google.android.projection.gearhead/com.google.android.apps.auto.components.notifications.listener.impl.BootReceiver}
+11-10 01:10:33.876  4410  4410 W head:projectio: Unexpected CPU variant for X86 using defaults: x86_64
+11-10 01:10:33.878  2604  2604 D LT_ClntIntrcptrFctryV12: Spatula header: CjYKFmNvbS5nb29nbGUuYW5kcm9pZC5nbXMaHFdPSEVFejkwUWV3OUxDY0NjS0ZJQXRwSHVnND0YsK77mrPByss4
+11-10 01:10:33.886  1666  1666 I Zygote  : Process 2484 exited due to signal 9 (Killed)
+11-10 01:10:33.890  2446  2446 I ExposureNotification: Utils#isSupported enabled=true, isDeviceSupported=true, isBluetoothSupported=false, BluetoothAdapter.isMultipleAdvertisementSupported=false [CONTEXT service_id=236 ]
+11-10 01:10:33.892  2446  2446 I ExposureNotification: Exposure notifications disabled. [CONTEXT service_id=236 ]
+11-10 01:10:33.892  2446  2446 I ExposureNotification: ExposureServiceInternalService.stopTracing [CONTEXT service_id=236 ]
+11-10 01:10:33.903  2604  4129 I BackupAndSyncValidation: Scheduling the service.
+11-10 01:10:33.905  2604  2604 I LT_PhenotypeApiImplV12: Phenotype registration succeeded
+11-10 01:10:33.910  1915  1945 I libprocessgroup: Successfully killed process cgroup uid 10106 pid 2484 in 43ms
+11-10 01:10:33.915  4410  4410 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.hidl.base-V1.0-java.jar
+11-10 01:10:33.916  4410  4410 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.hidl.manager-V1.0-java.jar
+11-10 01:10:33.916  4410  4410 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.hidl.base-V1.0-java.jar
+11-10 01:10:33.921  4410  4410 I head:projectio: The ClassLoaderContext is a special shared library.
+11-10 01:10:33.938  4410  4410 I MultiDex: VM with version 2.1.0 has multidex support
+11-10 01:10:33.938  4410  4410 I MultiDex: install
+11-10 01:10:33.938  4410  4410 I MultiDex: VM has multidex support, MultiDex support library is disabled.
+11-10 01:10:33.938  2604  4129 I PeopleInitIntentOp: Not initializing debuggability [CONTEXT service_id=5 ]
+11-10 01:10:33.940  4410  4410 W Primes  : Primes not initialized, returning default (no-op) Primes instance which will ignore all calls. Please call Primes.initialize(...) before using any Primes API.
+11-10 01:10:33.941  4410  4410 I CAR.GH  : onCreate
+11-10 01:10:33.945  2446  2446 I ExposureNotification: AlarmManagerImpl.opportunisticSchedule called, delay=1800000ms [CONTEXT service_id=236 ]
+11-10 01:10:33.947  2446  2446 I ExposureNotification: User turn off scanning. [CONTEXT service_id=236 ]
+11-10 01:10:33.947  2446  2446 I ExposureNotification: Not scanning! [CONTEXT service_id=236 ]
+11-10 01:10:33.947  2446  2446 W ExposureNotification: stopTracing called but Scanner failed to stop! [CONTEXT service_id=236 ]
+11-10 01:10:33.957  2604  4129 V SmartDevice: [service,SmartDeviceIntentHandlers] OnUpgradeOrBootOperation got intent: Intent { act=android.intent.action.BOOT_COMPLETED flg=0x89000010 cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) } with flag 2
+11-10 01:10:33.966  2446  2446 I ExposureNotification: ThreadSafeLevelDbWrapper: do open LevelDb contact-tracing-self-tracing-key-db [CONTEXT service_id=236 ]
+11-10 01:10:33.969  2446  2446 I ExposureNotification: ThreadSafeLevelDbWrapper:contact-tracing-self-tracing-key-db instance ajdk@8531967 created [CONTEXT service_id=236 ]
+11-10 01:10:33.981  2604  4255 D ActivityThread: Loading provider com.google.android.gms.reminders: com.google.android.gms.reminders.provider.RemindersProvider
+11-10 01:10:33.983  2446  2446 I ExposureNotification: ThreadSafeLevelDbWrapper:contact-tracing-self-tracing-key-db instance ajdk@8531967 closed [CONTEXT service_id=236 ]
+11-10 01:10:33.983  2604  4261 W MDM     : [171] agll.b: Unable to set as device admin.
+11-10 01:10:33.983  2604  4261 W MDM     : java.lang.reflect.InvocationTargetException
+11-10 01:10:33.983  2604  4261 W MDM     : 	at java.lang.reflect.Method.invoke(Native Method)
+11-10 01:10:33.983  2604  4261 W MDM     : 	at agkz.c(:com.google.android.gms@202414023@20.24.14 (040800-319035315):7)
+11-10 01:10:33.983  2604  4261 W MDM     : 	at agkz.b(:com.google.android.gms@202414023@20.24.14 (040800-319035315):3)
+11-10 01:10:33.983  2604  4261 W MDM     : 	at com.google.android.gms.security.snet.SecurityModuleInitIntentOperation.a(:com.google.android.gms@202414023@20.24.14 (040800-319035315):5)
+11-10 01:10:33.983  2604  4261 W MDM     : 	at com.google.android.gms.security.snet.SecurityModuleInitIntentOperation.a(:com.google.android.gms@202414023@20.24.14 (040800-319035315):17)
+11-10 01:10:33.983  2604  4261 W MDM     : 	at qme.onHandleIntent(:com.google.android.gms@202414023@20.24.14 (040800-319035315):11)
+11-10 01:10:33.983  2604  4261 W MDM     : 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@202414023@20.24.14 (040800-319035315):2)
+11-10 01:10:33.983  2604  4261 W MDM     : 	at qlx.onHandleIntent(:com.google.android.gms@202414023@20.24.14 (040800-319035315):4)
+11-10 01:10:33.983  2604  4261 W MDM     : 	at cuo.run(:com.google.android.gms@202414023@20.24.14 (040800-319035315):5)
+11-10 01:10:33.983  2604  4261 W MDM     : 	at cun.run(:com.google.android.gms@202414023@20.24.14 (040800-319035315):10)
+11-10 01:10:33.983  2604  4261 W MDM     : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+11-10 01:10:33.983  2604  4261 W MDM     : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+11-10 01:10:33.983  2604  4261 W MDM     : 	at java.lang.Thread.run(Thread.java:919)
+11-10 01:10:33.983  2604  4261 W MDM     : Caused by: java.lang.SecurityException: Neither user 10115 nor current process has android.permission.MANAGE_DEVICE_ADMINS.
+11-10 01:10:33.983  2604  4261 W MDM     : 	at android.os.Parcel.createException(Parcel.java:2071)
+11-10 01:10:33.983  2604  4261 W MDM     : 	at android.os.Parcel.readException(Parcel.java:2039)
+11-10 01:10:33.983  2604  4261 W MDM     : 	at android.os.Parcel.readException(Parcel.java:1987)
+11-10 01:10:33.983  2604  4261 W MDM     : 	at android.app.admin.IDevicePolicyManager$Stub$Proxy.setActiveAdmin(IDevicePolicyManager.java:8021)
+11-10 01:10:33.983  2604  4261 W MDM     : 	at android.app.admin.DevicePolicyManager.setActiveAdmin(DevicePolicyManager.java:5666)
+11-10 01:10:33.983  2604  4261 W MDM     : 	at android.app.admin.DevicePolicyManager.setActiveAdmin(DevicePolicyManager.java:5678)
+11-10 01:10:33.983  2604  4261 W MDM     : 	... 13 more
+11-10 01:10:33.983  2446  2446 I ExposureNotification: ThreadSafeLevelDbWrapper: do close LevelDb contact-tracing-self-tracing-key-db [CONTEXT service_id=236 ]
+11-10 01:10:33.984  2604  4261 I TelephonySpam: TelephonySpamInit - On boot completed TelephonySpam module initialized
+11-10 01:10:33.984  2604  4261 I TelephonySpam: TelephonySpamInit - onModuleUpdated TelephonySpam module initialized
+11-10 01:10:33.984  2604  4261 I TelephonySpam: SpamListSync - scheduleSyncTasks
+11-10 01:10:33.984  2604  4261 I TelephonySpam: SpamListSync - schedulePeriodicTask
+11-10 01:10:33.987  4410  4410 I CAR.GH  : Process: PROJECTION
+11-10 01:10:33.997  2446  2454 I .gms.persisten: Background young concurrent copying GC freed 35627(2355KB) AllocSpace objects, 29(952KB) LOS objects, 23% free, 9695KB/12MB, paused 6.984ms total 178.283ms
+11-10 01:10:34.026  2446  2446 I ExposureNotification: ThreadSafeLevelDbWrapper: do open LevelDb en-matching-request-db [CONTEXT service_id=236 ]
+11-10 01:10:34.026  2446  2446 I ExposureNotification: ThreadSafeLevelDbWrapper:en-matching-request-db instance ajdk@8eae175 created [CONTEXT service_id=236 ]
+11-10 01:10:34.026  2446  2446 I ExposureNotification: ThreadSafeLevelDbWrapper:en-matching-request-db instance ajdk@8eae175 closed [CONTEXT service_id=236 ]
+11-10 01:10:34.026  2446  2446 I ExposureNotification: ThreadSafeLevelDbWrapper: do close LevelDb en-matching-request-db [CONTEXT service_id=236 ]
+11-10 01:10:34.028  2604  4241 I SubscribedFeeds: Collected 10 certs in 9ms [CONTEXT service_id=250 ]
+11-10 01:10:34.028  2446  4131 I NetRec  : [186] BootCompletedOrAppUpdatedIntentOperation.onHandleIntent: onBootCompleted()
+11-10 01:10:34.029  2604  4261 I TelephonySpam: SpamListSync - scheduleOneTimeTask
+11-10 01:10:34.058  4410  4410 I GH.CallAdapterFactory: creating call adapter instance
+11-10 01:10:34.058  4410  4410 I GH.CallAdapterFactory: useCompat().
+11-10 01:10:34.060  4410  4410 I GH.CallAdapterFactory: useCompat=false, Device running M or later, assuming a healthy telecom stack.
+11-10 01:10:34.063  2446  4131 I NetRec  : [186] BootCompletedOrAppUpdatedIntentOperation.onHandleIntent: Scheduling CleanupDatabaseTask
+11-10 01:10:34.065  4348  4348 I GH.SharedService: Shared Service created
+11-10 01:10:34.073  4410  4410 E BluetoothAdapter: Bluetooth binder is null
+11-10 01:10:34.073  4410  4410 E BluetoothAdapter: Bluetooth binder is null
+11-10 01:10:34.083  2446  2446 I NearbySharing: ReceiveSurfaceService created [CONTEXT service_id=194 ]
+11-10 01:10:34.083  2446  2446 I NearbySharing: ReceiveSurfaceService started [CONTEXT service_id=194 ]
+11-10 01:10:34.086  2446  4131 I NetRec  : [186] alod.a: onConfigChanged()
+11-10 01:10:34.094  2604  2638 I Vision  : Supported ABIS: [x86_64, x86]
+11-10 01:10:34.103  2604  4241 I Wear_Controller: Wear requires a companion app to be installed.
+11-10 01:10:34.104  2604  4241 I Wear_Controller: onStartup - Wear is not available on this device.
+11-10 01:10:34.104  2446  4131 I NetRec  : [186] alod.a: Cancelling all NetRec GCM tasks
+11-10 01:10:34.110  4410  4410 I GH.LifetimeManager: connectToCarService
+11-10 01:10:34.110  4410  4410 I GH.CONFIG: groups:
+11-10 01:10:34.112  4410  4410 I GH.CONFIG: everyone
+11-10 01:10:34.116  2604  4255 I Vision  : Requesting optional module download of ocr.
+11-10 01:10:34.122  2446  2446 I rcs     : [RcsBindingManager] Checking if we should rebind to previous service. Attempt 0
+11-10 01:10:34.129  2604  4255 I Vision  : Checking for download completion for 43121 -- ocr
+11-10 01:10:34.132  2604  4241 I ChimeraConfigurator: Starting update, reason: 4 urgentFeatures: vision.ocr:-1
+11-10 01:10:34.133  2446  2446 I rcs     : [RcsBindingManager] No valid settings for binding.
+11-10 01:10:34.135  2446  2446 I ExposureNotification: ExposureServiceInternalService.onDestroy, com.google.android.gms.nearby.exposurenotification.service.ExposureNotificationInternalChimeraService@fcc31a1 [CONTEXT service_id=236 ]
+11-10 01:10:34.189  1666  1666 D Zygote  : Forked child process 4461
+11-10 01:10:34.201  1915  1944 W ActivityManager: Slow operation: 93ms so far, now at startProcess: returned from zygote!
+11-10 01:10:34.201  1915  1944 W ActivityManager: Slow operation: 93ms so far, now at startProcess: done updating battery stats
+11-10 01:10:34.201  1915  1944 W ActivityManager: Slow operation: 93ms so far, now at startProcess: building log message
+11-10 01:10:34.201  1915  1944 I ActivityManager: Start proc 4461:com.google.android.gms:car/u0a115 for service {com.google.android.gms/com.google.android.gms.car.CarService}
+11-10 01:10:34.201  1915  1944 W ActivityManager: Slow operation: 93ms so far, now at startProcess: starting to update pids map
+11-10 01:10:34.201  1915  1944 W ActivityManager: Slow operation: 94ms so far, now at startProcess: done updating pids map
+11-10 01:10:34.210  2446  2446 I NearbySharing: ReceiveSurfaceService destroyed [CONTEXT service_id=194 ]
+11-10 01:10:34.214  4461  4461 W android.gms:ca: Unexpected CPU variant for X86 using defaults: x86_64
+11-10 01:10:34.219  2446  4475 I NetRec  : [217] ClearDatabaseService.onHandleIntent: Clearing score cache
+11-10 01:10:34.249  1915  3788 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-10 01:10:34.249  1915  3788 D PackageManager: Clear ephemeral installer activity
+11-10 01:10:34.250  1915  3788 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-10 01:10:34.250  1915  3788 D PackageManager: Clear ephemeral installer activity
+11-10 01:10:34.250  4461  4461 I android.gms:ca: The ClassLoaderContext is a special shared library.
+11-10 01:10:34.252  4461  4461 I chatty  : uid=10115 com.google.android.gms:car identical 2 lines
+11-10 01:10:34.264  4461  4461 I android.gms:ca: The ClassLoaderContext is a special shared library.
+11-10 01:10:34.283  1666  1666 D Zygote  : Forked child process 4490
+11-10 01:10:34.293  1915  1944 W ActivityManager: Slow operation: 100ms so far, now at startProcess: returned from zygote!
+11-10 01:10:34.294  1915  1944 W ActivityManager: Slow operation: 100ms so far, now at startProcess: done updating battery stats
+11-10 01:10:34.294  1915  1944 W ActivityManager: Slow operation: 100ms so far, now at startProcess: building log message
+11-10 01:10:34.294  1915  1944 I ActivityManager: Start proc 4490:com.google.process.gapps/u0a128 for broadcast {com.google.android.syncadapters.contacts/com.google.android.syncadapters.contacts.ContactsSyncAdapterBroadcastReceiver}
+11-10 01:10:34.294  1915  1944 W ActivityManager: Slow operation: 100ms so far, now at startProcess: starting to update pids map
+11-10 01:10:34.294  1915  1944 W ActivityManager: Slow operation: 100ms so far, now at startProcess: done updating pids map
+11-10 01:10:34.295  4490  4490 W e.process.gapp: Unexpected CPU variant for X86 using defaults: x86_64
+11-10 01:10:34.335  2446  2446 I GeofencerStateMachine: sendQueryLocationOptIn
+11-10 01:10:34.338  2446  2446 I GeofencerStateMachine: sendQueryLocationOptIn
+11-10 01:10:34.353  4461  4461 W DynamiteModule: Local module descriptor class for providerinstaller not found.
+11-10 01:10:34.356  4461  4461 W ProviderHelper: Unknown dynamite feature providerinstaller
+11-10 01:10:34.358  4490  4490 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.hidl.base-V1.0-java.jar
+11-10 01:10:34.358  4490  4490 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.hidl.manager-V1.0-java.jar
+11-10 01:10:34.358  4490  4490 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.hidl.base-V1.0-java.jar
+11-10 01:10:34.359  4490  4490 I e.process.gapp: The ClassLoaderContext is a special shared library.
+11-10 01:10:34.363  2446  2446 I GeofencerStateMachine: sendQueryLocationOptIn
+11-10 01:10:34.365  2446  2446 I GeofencerStateMachine: sendQueryLocationOptIn
+11-10 01:10:34.369  4490  4490 I e.process.gapp: The ClassLoaderContext is a special shared library.
+11-10 01:10:34.371  4461  4461 I DynamiteModule: Considering local module providerinstaller:0 and remote module providerinstaller:0
+11-10 01:10:34.373  4461  4461 W ProviderInstaller: Failed to load providerinstaller module: No acceptable module found. Local version is 0 and remote version is 0.
+11-10 01:10:34.374  2604  2644 E WakeLock: DG:service ** IS FORCE-RELEASED ON TIMEOUT **
+11-10 01:10:34.376  2446  2446 I GeofencerStateMachine: sendQueryLocationOptIn
+11-10 01:10:34.386  1915  2727 I ActivityManager: Killing 2915:com.android.printspooler/u0a78 (adj 985): empty #17
+11-10 01:10:34.390  2446  2446 I GeofencerStateMachine: sendQueryLocationOptIn
+11-10 01:10:34.396  4461  4461 V NativeCrypto: Registering com/google/android/gms/org/conscrypt/NativeCrypto's 286 native methods...
+11-10 01:10:34.402  4490  4490 I GoogleHttpClient: GMS http client unavailable, use old client
+11-10 01:10:34.413  4461  4461 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: false
+11-10 01:10:34.414  4461  4461 I ProviderInstaller: Installed default security provider GmsCore_OpenSSL
+11-10 01:10:34.432  4461  4461 I Safeboot: Checking safeboot...
+11-10 01:10:34.433  4461  4461 I Safeboot: Not entering safeboot; wrong process.
+11-10 01:10:34.435  1666  1666 I Zygote  : Process 2915 exited due to signal 9 (Killed)
+11-10 01:10:34.440  1667  1667 D Zygote  : Forked child process 4519
+11-10 01:10:34.447  1915  1944 I ActivityManager: Start proc 4519:com.google.android.videos/u0a129 for broadcast {com.google.android.videos/com.google.android.apps.play.movies.common.service.drm.RefreshLicenseTaskService$Initializer}
+11-10 01:10:34.453  4519  4519 W .android.video: Unexpected CPU variant for X86 using defaults: x86_64
+11-10 01:10:34.467  1915  1945 I libprocessgroup: Successfully killed process cgroup uid 10078 pid 2915 in 80ms
+11-10 01:10:34.476  1915  4228 I ActivityManager: Killing 3435:com.google.android.apps.maps/u0a137 (adj 985): empty #17
+11-10 01:10:34.510  4461  4461 I bezb    : Primes not initialized, returning default (no-op) Primes instance which will ignore all calls. Please call Primes.initialize(...) before using any Primes API.
+11-10 01:10:34.515  4519  4519 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.hidl.base-V1.0-java.jar
+11-10 01:10:34.515  4519  4519 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.hidl.manager-V1.0-java.jar
+11-10 01:10:34.515  4519  4519 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.hidl.base-V1.0-java.jar
+11-10 01:10:34.516  4519  4519 I .android.video: The ClassLoaderContext is a special shared library.
+11-10 01:10:34.517  1666  1666 I Zygote  : Process 3435 exited due to signal 9 (Killed)
+11-10 01:10:34.525  1915  1945 I libprocessgroup: Successfully killed process cgroup uid 10137 pid 3435 in 44ms
+11-10 01:10:34.537  4519  4519 I .android.video: The ClassLoaderContext is a special shared library.
+11-10 01:10:34.540  2446  2875 I GCoreUlr: WorldUpdater received intent Intent { act=com.google.android.location.reporting.ACTION_UPDATE_WORLD cmp=com.google.android.gms/com.google.android.location.reporting.service.DispatchingService (has extras) } with receiverAction init
+11-10 01:10:34.553  2446  2875 I GCoreUlr: WorldUpdater:init: Ensuring that reporting is stopped because of reasons: (no Google accounts)
+11-10 01:10:34.555  2446  3376 I aorp    : updateFromConfigurations using legacy put method [CONTEXT service_id=204 ]
+11-10 01:10:34.578  2446  2875 I GCoreUlr: Unbound from all signal providers.
+11-10 01:10:34.587  2446  2454 I .gms.persisten: Background concurrent copying GC freed 118078(5500KB) AllocSpace objects, 14(384KB) LOS objects, 43% free, 7823KB/13MB, paused 10us total 324.330ms
+11-10 01:10:34.604  2446  2875 I GCoreUlr: DispatchingService ignoring Intent { act=android.net.wifi.WIFI_STATE_CHANGED flg=0x4000010 (has extras) } because ULR inactive
+11-10 01:10:34.607  2446  2446 I GCoreUlr: Unbound from all signal providers.
+11-10 01:10:34.607  2446  2446 I GCoreUlr: Stopping handler for UlrDispSvcFast
+11-10 01:10:34.613  2446  3376 I aorp    : updateFromConfigurations using legacy put method [CONTEXT service_id=204 ]
+11-10 01:10:34.697  4461  4461 I CAR.TEL.CarCall: creating a non-static CarCallMapper [CONTEXT service_id=13 ]
+11-10 01:10:34.699  4461  4461 I CAR.TEL.Service: Binding to InCallService [CONTEXT service_id=13 ]
+11-10 01:10:34.699  1915  2468 W ActivityManager: Unable to start service Intent { act=local_action cmp=com.google.android.gms/.car.InCallService2 } U=0: not found
+11-10 01:10:34.699  4461  4461 E CAR.TEL.Service: Failed to bind to InCallService [CONTEXT service_id=13 ]
+11-10 01:10:34.713  1915  2468 I ActivityManager: Killing 3751:com.google.android.apps.messaging:rcs/u0a131 (adj 985): empty #17
+11-10 01:10:34.720  4461  4488 I DynamiteModule: Considering local module com.google.android.gms.googlecertificates:4 and remote module com.google.android.gms.googlecertificates:4
+11-10 01:10:34.720  4461  4488 I DynamiteModule: Selected local version of com.google.android.gms.googlecertificates
+11-10 01:10:34.731  4410  4410 I GH.CarClientManager: connected
+11-10 01:10:34.732  4348  4348 I GH.CarClientManager: connected
+11-10 01:10:34.733  4461  4461 I CAR.ANALYTICS: Flushing event queue to clearcut [CONTEXT service_id=13 ]
+11-10 01:10:34.733  4410  4410 I GH.LifetimeManager: stop(): false
+11-10 01:10:34.734  4410  4410 D GH.CarClientManager: unregistered listener foo@3239092
+11-10 01:10:34.738  4348  4348 D GH.CarClientManager: unregistered listener foo@49e9719
+11-10 01:10:34.738  4348  4348 D GH.CarClientManager: calling onConnected on dml@bacd0b6
+11-10 01:10:34.738  4348  4348 D GH.CarClientManager: unregistered listener dml@bacd0b6
+11-10 01:10:34.738  4348  4348 D GH.FeedbackNotifManager: Starting FeedbackNotificationManager.
+11-10 01:10:34.740  4348  4348 I GH.HatsManager: HaTS feature flag is not enabled. Not starting HatsManager.
+11-10 01:10:34.740  4348  4348 D GH.RatingPromptManager: Starting RatingPromptManager.
+11-10 01:10:34.740  4348  4348 D GH.AutoLaunchPromptMgr: Starting AutoLaunchPromptManager.
+11-10 01:10:34.740  4348  4348 D GH.CarClientManager: notifying listener that the client was already connected
+11-10 01:10:34.740  4348  4348 D GH.CarClientManager: registered listener bof@93fa643
+11-10 01:10:34.746  1667  1667 I Zygote  : Process 3751 exited due to signal 9 (Killed)
+11-10 01:10:34.760  1915  1945 I libprocessgroup: Successfully killed process cgroup uid 10131 pid 3751 in 43ms
+11-10 01:10:34.788  2446  3165 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-10 01:10:34.788  2446  3165 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@202414023@20.24.14 (040800-319035315):2)
+11-10 01:10:34.788  2446  3165 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@202414023@20.24.14 (040800-319035315):0)
+11-10 01:10:34.811  2446  3165 V NativeCrypto: SSL handshake aborted: ssl=0x7578dfd79848: I/O error during system call, Connection reset by peer
+11-10 01:10:34.817  2446  3165 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-10 01:10:34.817  2446  3165 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@202414023@20.24.14 (040800-319035315):2)
+11-10 01:10:34.817  2446  3165 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@202414023@20.24.14 (040800-319035315):0)
+11-10 01:10:34.847  2446  3165 V NativeCrypto: SSL handshake aborted: ssl=0x7578dfd79848: I/O error during system call, Connection reset by peer
+11-10 01:10:34.853  2446  3165 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-10 01:10:34.853  2446  3165 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@202414023@20.24.14 (040800-319035315):2)
+11-10 01:10:34.853  2446  3165 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@202414023@20.24.14 (040800-319035315):0)
+11-10 01:10:34.878  2446  3165 V NativeCrypto: SSL handshake aborted: ssl=0x7578dfd79848: I/O error during system call, Connection reset by peer
+11-10 01:10:34.884  2446  3165 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-10 01:10:34.884  2446  3165 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@202414023@20.24.14 (040800-319035315):2)
+11-10 01:10:34.884  2446  3165 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@202414023@20.24.14 (040800-319035315):0)
+11-10 01:10:34.914  2446  3165 V NativeCrypto: SSL handshake aborted: ssl=0x7578dfd79848: I/O error during system call, Connection reset by peer
+11-10 01:10:34.921  2446  3165 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-10 01:10:34.921  2446  3165 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@202414023@20.24.14 (040800-319035315):2)
+11-10 01:10:34.921  2446  3165 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@202414023@20.24.14 (040800-319035315):0)
+11-10 01:10:34.949  2446  3165 V NativeCrypto: SSL handshake aborted: ssl=0x7578dfd79848: I/O error during system call, Connection reset by peer
+11-10 01:10:34.955  2446  3165 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-10 01:10:34.956  2446  3165 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@202414023@20.24.14 (040800-319035315):2)
+11-10 01:10:34.956  2446  3165 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@202414023@20.24.14 (040800-319035315):0)
+11-10 01:10:34.978  2446  3165 V NativeCrypto: SSL handshake aborted: ssl=0x7578dfd79848: I/O error during system call, Connection reset by peer
+11-10 01:10:34.985  2446  3165 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-10 01:10:34.985  2446  3165 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@202414023@20.24.14 (040800-319035315):2)
+11-10 01:10:34.985  2446  3165 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@202414023@20.24.14 (040800-319035315):0)
+11-10 01:10:35.015  2446  3165 V NativeCrypto: SSL handshake aborted: ssl=0x7578dfd79848: I/O error during system call, Connection reset by peer
+11-10 01:10:35.022  2446  3165 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-10 01:10:35.022  2446  3165 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@202414023@20.24.14 (040800-319035315):2)
+11-10 01:10:35.022  2446  3165 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@202414023@20.24.14 (040800-319035315):0)
+11-10 01:10:35.050  1696  1696 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 4612096
+11-10 01:10:35.054  2446  3165 V NativeCrypto: SSL handshake aborted: ssl=0x7578dfd79848: I/O error during system call, Connection reset by peer
+11-10 01:10:35.055  1572  1572 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.
+11-10 01:10:35.056  4567  4567 W Gralloc3: mapper 3.x is not supported
+11-10 01:10:35.061  4567  4567 D HostConnection: createUnique: call
+11-10 01:10:35.062  4567  4567 D HostConnection: HostConnection::get() New Host Connection established 0x70a255d1c5a0, tid 4567
+11-10 01:10:35.091  4567  4567 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_hwc_color_transform GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_2 
+11-10 01:10:35.091  4567  4567 D eglCodecCommon: allocate: Ask for block of size 0x1000
+11-10 01:10:35.091  4567  4567 D eglCodecCommon: allocate: ioctl allocate returned offset 0x3ffff6000 size 0x2000
+11-10 01:10:35.111  4567  4567 D eglCodecCommon: allocate: Ask for block of size 0x466000
+11-10 01:10:35.112  4567  4567 D eglCodecCommon: allocate: ioctl allocate returned offset 0x3ff722000 size 0x467000
+11-10 01:10:35.218  1915  3937 W ActivityManager: Unable to start service Intent { act=com.android.vending.contentfilters.IContentFiltersService.BIND pkg=com.android.vending } U=0: not found
+11-10 01:10:35.317  4519  4519 V MediaRouter: Selecting route: RouteInfo{ name=Phone, description=null, status=null, category=RouteCategory{ name=System types=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO  groupable=false }, supportedTypes=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO , presentationDisplay=null }
+11-10 01:10:35.320  4519  4519 W MediaSessionCompat: Couldn't find a unique registered media button receiver in the given context.
+11-10 01:10:35.333  4519  4519 W PrimesInit: Primes instant initialization
+11-10 01:10:35.334  4519  4588 W Primes  : background initialization
+11-10 01:10:35.337  4519  4519 W PlayMovies: VideosInitializer.initializeApp:31 Installer Package: null
+11-10 01:10:35.337  4519  4519 W PlayMovies: 
+11-10 01:10:35.350  4519  4519 V MediaRouter: Selecting route: RouteInfo{ name=Phone, description=null, status=null, category=RouteCategory{ name=System types=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO  groupable=false }, supportedTypes=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO , presentationDisplay=null }
+11-10 01:10:35.354  4519  4588 I PrimesTesting: GserviceFlagsSupplier.get()
+11-10 01:10:35.358  1915  2595 I WifiService: acquireWifiLock uid=10129 lockMode=3
+11-10 01:10:35.364  1915  3937 I ActivityManager: Killing 3812:com.google.android.apps.wallpaper/u0a107 (adj 985): empty #17
+11-10 01:10:35.378  1666  1666 D Zygote  : Forked child process 4599
+11-10 01:10:35.379  1915  1944 I ActivityManager: Start proc 4599:com.google.android.youtube/u0a145 for broadcast {com.google.android.youtube/com.google.android.libraries.youtube.mdx.background.MdxBackgroundScanBootReceiver}
+11-10 01:10:35.391  4599  4599 W android.youtub: Unexpected CPU variant for X86 using defaults: x86_64
+11-10 01:10:35.395  1666  1666 I Zygote  : Process 3812 exited due to signal 9 (Killed)
+11-10 01:10:35.404  4599  4599 I android.youtub: The ClassLoaderContext is a special shared library.
+11-10 01:10:35.409  1915  1945 I libprocessgroup: Successfully killed process cgroup uid 10107 pid 3812 in 43ms
+11-10 01:10:35.411  4599  4599 I android.youtub: The ClassLoaderContext is a special shared library.
+11-10 01:10:35.417  1915  3937 I WifiService: releaseWifiLock uid=10129
+11-10 01:10:35.418  1915  2016 E SupplicantStaIfaceHal: ISupplicantStaIface.setPowerSave failed: {.code = FAILURE_UNKNOWN, .debugMessage = }
+11-10 01:10:35.469  4599  4599 E YouTube : flushBinderConnectionCallbacks is unverified on SDK 29
+11-10 01:10:35.483  4599  4628 W YouTube : Fetching the Gservices key 'failsafe_clear_cache_release_13_02' before the end of the bulk initialization
+11-10 01:10:35.663  1915  3937 D ConnectivityService: requestNetwork for uid/pid:10145/4599 NetworkRequest [ TRACK_DEFAULT id=20, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10145] ]
+11-10 01:10:35.664  1915  2016 D UntrustedWifiNetworkFactory: got request NetworkRequest [ TRACK_DEFAULT id=20, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10145] ] with score 20 and serial -1
+11-10 01:10:35.664  1915  2016 D WifiNetworkFactory: got request NetworkRequest [ TRACK_DEFAULT id=20, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10145] ] with score 20 and serial -1
+11-10 01:10:35.664  2213  2213 D PhoneSwitcherNetworkRequstListener: got request NetworkRequest [ TRACK_DEFAULT id=20, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10145] ] with score 20 and serial -1
+11-10 01:10:35.668  4599  4635 E GEL_DELAYED_EVENT_DEBUG: Failed delayed event dispatch, no dispatchers.
+11-10 01:10:35.868  4599  4599 V MediaRouter: Selecting route: RouteInfo{ name=Phone, description=null, status=null, category=RouteCategory{ name=System types=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO  groupable=false }, supportedTypes=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO , presentationDisplay=null }
+11-10 01:10:35.933  4599  4599 W YT.MDX.aeto: CastAppId for type 0 not found. Defaulting to mainCastAppId.
+11-10 01:10:35.936  4599  4599 W YT.MDX.aeto: CastAppId for type 0 not found. Defaulting to mainCastAppId.
+11-10 01:10:35.965  4599  4599 V MediaRouter: Selecting route: RouteInfo{ name=Phone, description=null, status=null, category=RouteCategory{ name=System types=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO  groupable=false }, supportedTypes=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO , presentationDisplay=null }
+11-10 01:10:36.027  1915  2741 D ConnectivityService: requestNetwork for uid/pid:10145/4599 NetworkRequest [ TRACK_DEFAULT id=22, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10145] ]
+11-10 01:10:36.027  1915  2016 D UntrustedWifiNetworkFactory: got request NetworkRequest [ TRACK_DEFAULT id=22, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10145] ] with score 20 and serial -1
+11-10 01:10:36.027  1915  2016 D WifiNetworkFactory: got request NetworkRequest [ TRACK_DEFAULT id=22, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10145] ] with score 20 and serial -1
+11-10 01:10:36.027  2213  2213 D PhoneSwitcherNetworkRequstListener: got request NetworkRequest [ TRACK_DEFAULT id=22, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10145] ] with score 20 and serial -1
+11-10 01:10:36.028  1915  2741 I ActivityManager: Finished processing BOOT_COMPLETED for u0
+11-10 01:10:36.029  1915  2741 I ActivityManager: Killing 3843:com.google.android.calendar/u0a140 (adj 985): empty #17
+11-10 01:10:36.055  1666  1666 I Zygote  : Process 3843 exited due to signal 9 (Killed)
+11-10 01:10:36.056  1915  2741 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.net.conn.NETWORK_CONDITIONS_MEASURED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+11-10 01:10:36.057  3072  4749 I MediaProvider: Begin Intent { act=android.intent.action.MEDIA_MOUNTED dat=file:///storage/emulated/0 flg=0x5000010 cmp=com.android.providers.media/.MediaService (has extras) }
+11-10 01:10:36.057  1915  1943 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+11-10 01:10:36.057  1915  1943 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+11-10 01:10:36.057  1915  1943 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.location.PROVIDERS_CHANGED flg=0x10 (has extras) } to com.google.android.apps.maps/com.google.android.apps.gmm.locationsharing.usr.LocationAvailabilityChecker$LocationProvidersChangedBroadcastReceiver
+11-10 01:10:36.057  1915  1943 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.location.PROVIDERS_CHANGED flg=0x10 (has extras) } to com.google.android.gms/com.google.android.location.internal.NlpNetworkProviderSettingsUpdateReceiver
+11-10 01:10:36.057  1915  1943 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.location.PROVIDERS_CHANGED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+11-10 01:10:36.057  1915  1943 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.location.PROVIDERS_CHANGED flg=0x10 (has extras) } to com.google.android.googlequicksearchbox/com.google.android.apps.gsa.broadcastreceiver.external.ExternalCommonBroadcastReceiver
+11-10 01:10:36.057  1915  1943 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.location.PROVIDERS_CHANGED flg=0x10 (has extras) } to com.google.android.apps.maps/com.google.android.apps.gmm.locationsharing.usr.LocationAvailabilityChecker$LocationProvidersChangedBroadcastReceiver
+11-10 01:10:36.057  1915  1943 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.location.PROVIDERS_CHANGED flg=0x10 (has extras) } to com.google.android.gms/com.google.android.location.internal.NlpNetworkProviderSettingsUpdateReceiver
+11-10 01:10:36.057  1915  1943 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.location.PROVIDERS_CHANGED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+11-10 01:10:36.057  1915  1943 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.location.PROVIDERS_CHANGED flg=0x10 (has extras) } to com.google.android.googlequicksearchbox/com.google.android.apps.gsa.broadcastreceiver.external.ExternalCommonBroadcastReceiver
+11-10 01:10:36.063  3072  4749 W ModernMediaScanner: Failed to visit /system/media: java.nio.file.NoSuchFileException: /system/media
+11-10 01:10:36.071  3072  4749 W ModernMediaScanner: Failed to visit /oem/media: java.nio.file.NoSuchFileException: /oem/media
+11-10 01:10:36.076  1915  1945 I libprocessgroup: Successfully killed process cgroup uid 10140 pid 3843 in 42ms
+11-10 01:10:36.084  1915  2741 W ActivityManager: Background start not allowed: service Intent { cmp=com.google.android.apps.messaging/.shared.datamodel.action.execution.ActionExecutorImpl$EmptyService } to com.google.android.apps.messaging/.shared.datamodel.action.execution.ActionExecutorImpl$EmptyService from pid=3402 uid=10131 pkg=com.google.android.apps.messaging startFg?=false
+11-10 01:10:36.098  4742  4742 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-10 01:10:36.105  4742  4742 W app_process: type=1400 audit(0.0:15): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=169 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+11-10 01:10:36.105  4742  4742 I chatty  : uid=2000(shell) app_process identical 1 line
+11-10 01:10:36.105  4742  4742 W app_process: type=1400 audit(0.0:17): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=169 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+11-10 01:10:36.115  4742  4742 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_apex_image"
+11-10 01:10:36.115  4742  4742 I AndroidRuntime: Using default boot image
+11-10 01:10:36.116  4742  4742 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.disable_lock_profiling"
+11-10 01:10:36.116  4742  4742 I AndroidRuntime: Leaving lock profiling enabled
+11-10 01:10:36.116  4742  4742 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_generational_cc"
+11-10 01:10:36.116  4742  4742 I app_process: Core platform API reporting enabled, enforcing=false
+11-10 01:10:36.201  4599  4745 E WM-WorkerWrapper: Didn't find WorkSpec for id 1388e839-5e40-4fce-a744-1c4a491f3804
+11-10 01:10:36.255  2189  3471 D NetworkMonitor/100: PROBE_HTTPS https://www.google.com/generate_204 Probe failed with exception java.net.SocketTimeoutException: failed to connect to www.google.com/2001:4860:4829:7700:: (port 443) from /fec0::4909:c493:30b6:1775 (port 38754) after 10000ms
+11-10 01:10:36.319  4742  4742 D ICU     : Time zone APEX file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+11-10 01:10:36.326  4742  4742 W app_process: Unexpected CPU variant for X86 using defaults: x86_64
+11-10 01:10:36.327  4742  4742 I app_process: The ClassLoaderContext is a special shared library.
+11-10 01:10:36.328  4742  4742 I app_process: The ClassLoaderContext is a special shared library.
+11-10 01:10:36.335  4742  4742 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+11-10 01:10:36.337  4742  4742 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-10 01:10:36.341  1915  1915 V SettingsProvider: Notifying for 0: content://settings/secure/accessibility_enabled
+11-10 01:10:36.400  2446  2446 I Herrevad: [2] absm.a: updateListenState
+11-10 01:10:36.434  4599  4761 E GoogleConversionReporter: Error sending ping
+11-10 01:10:36.434  4599  4761 E GoogleConversionReporter: bigt: Exception in CronetUrlRequest: net::ERR_CONNECTION_RESET, ErrorCode=8, InternalErrorCode=-101, Retryable=true
+11-10 01:10:36.434  4599  4761 E GoogleConversionReporter: 	at org.chromium.net.impl.CronetUrlRequest.onError(PG:61)
+11-10 01:10:36.442  1915  2020 D ConnectivityService: releasing NetworkRequest [ TRACK_DEFAULT id=22, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10145] ] (release request)
+11-10 01:10:36.485  3072  4749 E SQLiteLog: (1) no such table: audio_genres
+11-10 01:10:36.486  3072  4749 I chatty  : uid=10055(com.android.providers.media) android.process.media identical 1 line
+11-10 01:10:36.494  3072  4749 E SQLiteLog: (1) no such table: audio_genres
+11-10 01:10:36.581  3072  4749 I MediaProvider: End Intent { act=android.intent.action.MEDIA_MOUNTED dat=file:///storage/emulated/0 flg=0x5000010 cmp=com.android.providers.media/.MediaService (has extras) }
+11-10 01:10:36.607  4599  4726 I FA      : App measurement initialized, version: 26017
+11-10 01:10:36.607  4599  4726 I FA      : To enable debug logging run: adb shell setprop log.tag.FA VERBOSE
+11-10 01:10:36.607  4599  4726 I FA      : To enable faster debug mode event logging run:
+11-10 01:10:36.607  4599  4726 I FA      :   adb shell setprop debug.firebase.analytics.app com.google.android.youtube
+11-10 01:10:36.678  1915  2741 D AlarmManagerService: Kernel timezone updated to -330 minutes west of GMT
+11-10 01:10:36.704  2604  2604 I GAv4-SVC: Google Analytics 202.4.14 is starting up.
+11-10 01:10:36.916  2377  2377 W TenorCategoryExtension: onErrorInternal() failed with code: Error{exception=mfb: Timed out (timeout delayed by 31 ms after scheduled time): mfc@b8f6a88[status=PENDING, info=[task=[running=[RUNNING ON ExUtils-F-P9-1], fea@8034143]]], code=TIMEOUT}
+11-10 01:10:37.063  1915  4748 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+11-10 01:10:37.064  1915  1943 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+11-10 01:10:37.064  1915  1943 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+11-10 01:10:37.064  1915  1943 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+11-10 01:10:37.064  1915  1943 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+11-10 01:10:37.064  1915  1943 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+11-10 01:10:37.064  1915  2012 W BestClock: java.time.DateTimeException: Missing NTP fix
+11-10 01:10:37.105  1665  1908 I netd    : trafficSwapActiveStatsMap() <40.35ms>
+11-10 01:10:37.106  1665  1908 I netd    : tetherGetStats() <0.60ms>
+11-10 01:10:37.110  1915  2012 W BestClock: java.time.DateTimeException: Missing NTP fix
+11-10 01:10:37.110  1665  1908 I netd    : bandwidthSetGlobalAlert(2097152) <0.09ms>
+11-10 01:10:37.111  1915  2013 W BestClock: java.time.DateTimeException: Missing NTP fix
+11-10 01:10:37.112  1915  1943 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.net.conn.NETWORK_CONDITIONS_MEASURED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+11-10 01:10:37.121  2691  2987 E BluetoothAdapter: Bluetooth binder is null
+11-10 01:10:37.361  4742  4742 I AccessibilityNodeInfoDumper: Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@2e730; boundsInParent: Rect(0, 0 - 0, 24); boundsInScreen: Rect(360, 1476 - 360, 1500); packageName: com.google.android.apps.nexuslauncher; className: android.widget.TextView; text: null; error: null; maxTextLength: -1; contentDescription: ; tooltipText: null; viewIdResName: com.google.android.apps.nexuslauncher:id/qsb_hint; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
+11-10 01:10:37.361  4742  4742 I AccessibilityNodeInfoDumper: Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@2eaf1; boundsInParent: Rect(0, 0 - 119, 98); boundsInScreen: Rect(571, 1485 - 690, 1583); packageName: com.google.android.apps.nexuslauncher; className: android.widget.TextView; text: null; error: null; maxTextLength: -1; contentDescription: null; tooltipText: null; viewIdResName: com.google.android.apps.nexuslauncher:id/fast_scroller_popup; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
+11-10 01:10:37.365  4742  4742 W AccessibilityNodeInfoDumper: Fetch time: 6ms
+11-10 01:10:37.366  1915  1990 W WindowManager: removeWindowToken: Attempted to remove non-existing token: android.os.Binder@6e7227f
+11-10 01:10:37.367  1915  1915 V SettingsProvider: Notifying for 0: content://settings/secure/accessibility_enabled
+11-10 01:10:37.371  4742  4742 D AndroidRuntime: Shutting down VM

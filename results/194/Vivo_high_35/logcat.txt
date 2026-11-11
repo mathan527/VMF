@@ -1,0 +1,487 @@
+--------- beginning of main
+11-11 01:06:00.536  1543  2631 I GellerSyncClient: The syncToken for corpus GDD_BUGLE_EMOJIFY is EgkIk6jB/5L+lwM=.
+11-11 01:06:00.537  1543  2626 I BugleJobs: Starts to observe table change.
+11-11 01:06:00.538   426  3585 I resolv  : GetAddrInfoHandler::run: {101 786533 101 983141 10137 0}
+11-11 01:06:00.538   426  3586 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+11-11 01:06:00.538   426  3586 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x74db27f1e150
+11-11 01:06:00.538   426  3586 I resolv  : doQuery: rcode=0, ancount=8, return value=496
+11-11 01:06:00.538   426  3587 I resolv  : res_nmkquery: (QUERY, IN, A)
+11-11 01:06:00.538   426  3587 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x74dbc7f22c00
+11-11 01:06:00.538   426  3587 I resolv  : doQuery: rcode=0, ancount=8, return value=428
+11-11 01:06:00.539  1543  3584 I BugleRcsEngine: Skipping writing subId because this is main bugle process. [CONTEXT log_prefix="(Sim)" thread_id=110 ]
+11-11 01:06:00.540  1543  2631 D TrafficStats: tagSocket(160) with statsTag=0x0, statsUid=-1
+11-11 01:06:00.542  1543  3584 I BugleRcsEngine: Updated SIM info: currentSimId: redacted-pii:sim_id[chars:20,last3:897]; imsi: redacted-pii:imsi[chars:15]; rawMsisdn: redacted-pii:phone_number[chars:12,last2:67]; formattedMsisdn: redacted-pii:phone_number[chars:12,last2:67]; mccmnc: redacted-pii:sim_operator[chars:6]; gid1: redacted-pii:sim_gid[chars:0]; isFiDevice: false; subId: 1; slotIndex: 0 [CONTEXT log_prefix="(Sim)" thread_id=110 ]
+11-11 01:06:00.543  1543  1703 I BugleJobs: Icing index repair service is not scheduled. [CONTEXT class_name="IcingMonitoringUtils" ]
+11-11 01:06:00.544  1543  2628 D PhFileGroupPop: Added file groups smarts_expressive_content_scoped_v1
+11-11 01:06:00.545  1543  2628 D PhFileGroupPop: Added file groups smart_actions_sensitive_classifier_models
+11-11 01:06:00.546  1543  2628 D PhFileGroupPop: Added file groups scripted_reply
+11-11 01:06:00.546  1543  2628 D PhFileGroupPop: Added file groups multitask_experiment
+11-11 01:06:00.546  1543  2628 D PhFileGroupPop: Added file groups spam_verdict_enforcement_policy_config
+11-11 01:06:00.547  1543  2628 D PhFileGroupPop: Added file groups smart_suggestion_reranker_models
+11-11 01:06:00.547  1543  2628 D PhFileGroupPop: Added file groups supersort_us_grammars
+11-11 01:06:00.547  1543  2628 D PhFileGroupPop: Added file groups nudge
+11-11 01:06:00.548  1543  2628 D PhFileGroupPop: Added file groups calendar_appointment_grammar
+11-11 01:06:00.548  1543  2628 D PhFileGroupPop: Added file groups birthday_suggestion
+11-11 01:06:00.549  1543  3584 I BugleRcsEngine: Handling SIM_LOADED in PhoneSimsStateUpdater. [CONTEXT log_prefix="(Sim)" thread_id=110 ]
+11-11 01:06:00.549  1543  2628 D PhFileGroupPop: Added file groups birthday_grammars
+11-11 01:06:00.551  1543  1710 I BugleSimStateTracker: Looking up Fi through package names.
+11-11 01:06:00.552  1543  2662 I Forking : Starting analysis.
+11-11 01:06:00.553  1543  2662 I Misthreading: Starting analysis.
+11-11 01:06:00.555   918  3562 D NetworkMonitor/101: PROBE_HTTPS https://www.google.com/generate_204 time=282ms ret=204 request={Connection=[close], User-Agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.32 Safari/537.36]} headers={null=[HTTP/1.1 204 No Content], Alt-Svc=[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000], Connection=[close], Content-Length=[0], Cross-Origin-Resource-Policy=[cross-origin], Date=[Tue, 10 Nov 2026 19:36:00 GMT], X-Android-Received-Millis=[1794339360554], X-Android-Response-Source=[NETWORK 204], X-Android-Selected-Protocol=[http/1.1], X-Android-Sent-Millis=[1794339360319]}
+11-11 01:06:00.557   918  3561 D NetworkMonitor/101: isCaptivePortal: isSuccessful()=true isPortal()=false RedirectUrl=null isPartialConnectivity()=false Time=336ms
+11-11 01:06:00.557   426  3589 I resolv  : GetAddrInfoHandler::run: {101 786533 101 983141 10143 0}
+11-11 01:06:00.557  2169  3469 D TrafficStats: tagSocket(133) with statsTag=0x1809, statsUid=-1
+11-11 01:06:00.558  1543  2628 D PhFileGroupPop: Added file groups animated_emoji
+11-11 01:06:00.559  1543  1689 I GnpSdk  : set is [].
+11-11 01:06:00.560  2169  3469 D TrafficStats: tagSocket(133) with statsTag=0x1809, statsUid=-1
+11-11 01:06:00.561  1543  2628 D PhFileGroupPop: Added file groups voice_moods
+11-11 01:06:00.562   627   792 D ConnectivityService: [101 WIFI] validation passed
+11-11 01:06:00.562  1543  2628 D PhFileGroupPop: Added file groups screen_effects
+11-11 01:06:00.563  1543  2628 D PhFileGroupPop: Added file groups screen_effect_suggestions
+11-11 01:06:00.564  1543  2628 D PhFileGroupPop: Added file groups selfie_gif_grammars
+11-11 01:06:00.564  1543  2628 D PhFileGroupPop: Added file groups spam_fm_templates
+11-11 01:06:00.564  2169  3469 D TrafficStats: tagSocket(133) with statsTag=0x1809, statsUid=-1
+11-11 01:06:00.566  1543  2626 I BugleNetwork: FirebaseRegistrationStartupTask: Enabling Firebase component
+11-11 01:06:00.567  1543  1710 I BugleSimStateTracker: default call SIM: redacted-pii:sim_id[chars:20,last3:897], default sms SIM redacted-pii:sim_id[chars:20,last3:897]. default data SIM redacted-pii:sim_id[chars:20,last3:897].
+11-11 01:06:00.567   496   503 W GpuWork : Failed to attach bpf program to power/gpu_work_period tracepoint [2(No such file or directory)]
+11-11 01:06:00.578  1543  1710 I BugleSimStateTracker: Looking up Fi through package names.
+11-11 01:06:00.579  1543  1710 I Bugle   : CountryCodeDetector: updateSmsNetworkCountry from default subscription network country. detected country: us
+11-11 01:06:00.580  1087  1211 W BpBinder: Large outgoing transaction of 408000 bytes, interface descriptor , code 4
+11-11 01:06:00.582  1087  2064 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.scheduler.standalone.housekeeping.HousekeepingTrainTaskService started execution. cause:5 exec_start_elapsed_seconds: 36 [CONTEXT service_id=218 ]
+11-11 01:06:00.585  1543  1710 I BugleSimStateTracker: allNewlyBuiltSimSubscriptionInfos (simId, loggableGuid): [(redacted-pii:sim_id[chars:20,last3:897], ca7b9aa7-f650-46b8-a4c8-3142572895c2)]
+11-11 01:06:00.586  1543  1710 I BugleSimStateTracker: Storing updatedSimSubscriptionInfos: [(redacted-pii:sim_id[chars:20,last3:897], ca7b9aa7-f650-46b8-a4c8-3142572895c2)]
+11-11 01:06:00.587  1543  1710 I BugleSimStateTracker: Handling SIM loaded event for all SIMs on first update: [(redacted-pii[20-chars], ca7b9aa7-f650-46b8-a4c8-3142572895c2)]
+11-11 01:06:00.595  1543  2628 I Bugle   : RcsAvailabilityUtilForProvisioningEngineV2: updateAvailabilityForAllSimsAsync, hint: NO_HINT
+11-11 01:06:00.595  1543  2628 I RcsAvailabilityUpdaterL: updateAvailabilityForAllSimsAsync: scheduling updateAvailabilityForRcsProvisioningId call. Hint: NO_HINT, enableWelcomePopupWithoutGoogleTos: false, reshowSuccessPopup: false
+11-11 01:06:00.598  1543  2627 I RcsAvailabilityUpdaterL: updateRcsAvailabilityForMultipleSims: hint: NO_HINT, canReshowWelcomeMessage: false
+11-11 01:06:00.606  1543  1721 I MobileConfigurationApi: registerParameters successfully stored 4 parameters
+11-11 01:06:00.607  2169  3469 W SystemServiceRegistry: No service published for: persistent_data_block
+11-11 01:06:00.607  1543  2627 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=65 ]
+11-11 01:06:00.607   627  3098 D FileUtils: Rounded bytes from 8331362304 to 16000000000
+11-11 01:06:00.608  1543  1721 I SyncScheduler: scheduling sync for 0 seconds later, policy = KEEP
+11-11 01:06:00.610  1543  2627 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=65 ]
+11-11 01:06:00.610  1543  2628 W BugleRcsEngine: Unable to send RCS extension log [CONTEXT thread_id=69 ]
+11-11 01:06:00.611  1087  2903 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.mdi.download.service.MddGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 36 [CONTEXT service_id=218 ]
+11-11 01:06:00.613  1543  2627 I RcsAvailabilityUpdaterL: RcsAvailability configuration availability and enabled status: simId: redacted-pii:sim_id[chars:20,last3:897], SipConnectionType: DUAL_REG, isConfigurationAvailableAndEnabled: false
+11-11 01:06:00.614  1543  2627 I BugleRcsEngine: Using config server URL from biuf [CONTEXT log_prefix="ProvisioningServerUtil" thread_id=65 ]
+11-11 01:06:00.619  1543  2627 W BugleRcsProvisioning: Failed to get RCS configuration from the cached provider, configuration is empty.
+11-11 01:06:00.619  1543  2627 W BugleRcsProvisioning: dncp: FULL
+11-11 01:06:00.619  1543  2627 W BugleRcsProvisioning: 	at afzl.c(PG:130)
+11-11 01:06:00.619  1543  2627 W BugleRcsProvisioning: 	at afzl.f(PG:13)
+11-11 01:06:00.619  1543  2627 W BugleRcsProvisioning: 	at afwq.a(PG:9)
+11-11 01:06:00.619  1543  2627 W BugleRcsProvisioning: 	at bluy.apply(PG:125)
+11-11 01:06:00.619  1543  2627 W BugleRcsProvisioning: 	at j$.util.Optional.map(SourceFile:17)
+11-11 01:06:00.619  1543  2627 W BugleRcsProvisioning: 	at blve.s(PG:255)
+11-11 01:06:00.619  1543  2627 W BugleRcsProvisioning: 	at blve.o(PG:58)
+11-11 01:06:00.619  1543  2627 W BugleRcsProvisioning: 	at bluo.run(PG:6)
+11-11 01:06:00.619  1543  2627 W BugleRcsProvisioning: 	at dkqk.run(PG:21)
+11-11 01:06:00.619  1543  2627 W BugleRcsProvisioning: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:487)
+11-11 01:06:00.619  1543  2627 W BugleRcsProvisioning: 	at dqsy.a(PG:3)
+11-11 01:06:00.619  1543  2627 W BugleRcsProvisioning: 	at dqrv.run(PG:21)
+11-11 01:06:00.619  1543  2627 W BugleRcsProvisioning: 	at dqsz.run(PG:5)
+11-11 01:06:00.619  1543  2627 W BugleRcsProvisioning: 	at crzm.run(PG:3)
+11-11 01:06:00.619  1543  2627 W BugleRcsProvisioning: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-11 01:06:00.619  1543  2627 W BugleRcsProvisioning: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-11 01:06:00.619  1543  2627 W BugleRcsProvisioning: 	at cryq.run(PG:6)
+11-11 01:06:00.619  1543  2627 W BugleRcsProvisioning: 	at java.lang.Thread.run(Thread.java:1012)
+11-11 01:06:00.619  1543  2627 W BugleRcsProvisioning: 	at csaw.run(PG:64)
+11-11 01:06:00.619  1543  2626 D nativeloader: Load /product/priv-app/PrebuiltBugle/PrebuiltBugle.apk!/lib/x86_64/libscytale_v2_jni.so using ns product-clns-8 from class loader (caller=/product/priv-app/PrebuiltBugle/PrebuiltBugle.apk!classes3.dex): ok
+11-11 01:06:00.619  1543  2627 I RcsAvailabilityUpdaterL: RcsAvailability: Subscription Id: 1, simId: redacted-pii:sim_id[chars:20,last3:897], sipConnectionType: DUAL_REG, isRcsAvailable: false
+11-11 01:06:00.619  1543  2627 I RcsAvailabilityUpdaterL: updateAvailabilityForRcsProvisioningId. SimId: redacted-pii:sim_id[chars:20,last3:897], currentAvailability: 10, newAvailability: 10, hint: NO_HINT
+11-11 01:06:00.620  1543  1721 I BugleRcsProvisioning: RcsProvisioningTrigger: onRcsAvailabilityUpdate : availability is updated to Carrier RCS is not set up, lastAvailabilityLocal is Carrier RCS is not set up, simId hash = -6328418159303776093, simId = redacted-pii:sim_id[chars:20,last3:897], isPev3Enabled = true
+11-11 01:06:00.631  1543  2626 W BugleEtouffee: E2eeStartupTask: No identities to perform prekey checking for.
+11-11 01:06:00.638  1543  1710 I BugleMDD: MddBackgroundStartupTask: Scheduled MDD periodic tasks.
+11-11 01:06:00.640  1578  2677 E MDD     : FileGroupManager: Trying to add expired group enpromo-state-config.
+11-11 01:06:00.640  1578  2677 W MDD     : MDDManager class dwld
+11-11 01:06:00.644  1087  2311 W WearableService: onGetService: Wear is not available on this device.
+11-11 01:06:00.654  1087  2064 I NetworkScheduler.Stats: HousekeepingTask com.google.android.gms/com.google.android.gms.mdi.download.service.MddGcmTaskService finished executing. cause:0 result: 1 elapsed_millis: 59 uptime_millis: 59 exec_start_elapsed_seconds: 36 [CONTEXT service_id=218 ]
+11-11 01:06:00.665  1543  1703 I BugleRcsProvisioning: RcsProvisioningTrigger: onCsLibPhenotypeUpdated, enableProvisioningTaskInBugle = true
+11-11 01:06:00.666  1543  1703 I BugleRcsProvisioning: RcsProvisioningTrigger: updateAvailabilityForAllSimsAsync : hint = CSLIB_PHENOTYPE_UPDATE logTriggerEvent = true
+11-11 01:06:00.667  1543  2629 D MddListenableWorkerFactory: createWorker for class: com.google.android.apps.messaging.shared.datamodel.workqueue.WorkQueueWorkerShim
+11-11 01:06:00.669  1543  1703 I Bugle   : RcsAvailabilityUtilForProvisioningEngineV2: updateAvailabilityForAllSimsAsync, hint: CSLIB_PHENOTYPE_UPDATE
+11-11 01:06:00.670  1543  1703 I RcsAvailabilityUpdaterL: updateAvailabilityForAllSimsAsync: scheduling updateAvailabilityForRcsProvisioningId call. Hint: CSLIB_PHENOTYPE_UPDATE, enableWelcomePopupWithoutGoogleTos: false, reshowSuccessPopup: false
+11-11 01:06:00.671  1543  1703 I Bugle   : RcsAvailabilityUtilForProvisioningEngineV2: onCsLibPhenotypeUpdated
+11-11 01:06:00.673  1543  2626 I SimStateUpdateHandler: Handling SimStateUpdate. Request for 2 work type received.
+11-11 01:06:00.673  1543  1710 I RcsAvailabilityUpdaterL: updateRcsAvailabilityForMultipleSims: hint: CSLIB_PHENOTYPE_UPDATE, canReshowWelcomeMessage: false
+11-11 01:06:00.673  1543  2626 I SimStateUpdateHandler: Handling SIM removal verification.
+11-11 01:06:00.675  1578  1578 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.backup.transport.component.CustomBackupNewScheduleLoggingTask.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-11 01:06:00.675  1578  1578 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.backup.transport.component.CustomBackupNewScheduleLoggingTask.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-11 01:06:00.675  1543  2627 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=65 ]
+11-11 01:06:00.677  1543  1702 I BugleRcsEngine: SystemBinding enabled: true [CONTEXT log_prefix="SystemBindingManager" thread_id=48 ]
+11-11 01:06:00.677  1543  1688 I BugleRcsEngine: System Binding updated [CONTEXT thread_id=42 ]
+11-11 01:06:00.678  1543  2626 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=68 ]
+11-11 01:06:00.678  1543  1703 I BugleRcsEngine: SystemBinding enabled: true [CONTEXT log_prefix="SystemBindingManager" thread_id=49 ]
+11-11 01:06:00.679  1543  2626 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=68 ]
+11-11 01:06:00.679  1087  2064 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.backup.transport.component.CustomBackupNewScheduleLoggingTask started execution. cause:5 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-11 01:06:00.679  1543  2632 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=72 ]
+11-11 01:06:00.680  1578  1816 V Backup  : [CustomBackupNewScheduleLog] Running
+11-11 01:06:00.680  1578  1816 V Backup  : [CustomBackupNewScheduleLog] Starting custom backups intent operation
+11-11 01:06:00.680  1543  1703 I BugleRcsEngine: System Binding updated [CONTEXT thread_id=49 ]
+11-11 01:06:00.680  1543  1710 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=51 ]
+11-11 01:06:00.682  1578  1816 V Backup  : [CustomBackupNewScheduleLog] Logging backup state
+11-11 01:06:00.682  1543  1710 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=51 ]
+11-11 01:06:00.683  1543  1689 I BugleSimStateTracker: Broadcasting SimRemoval for: []
+11-11 01:06:00.684  1543  1689 I BugleSimStateTracker: default call SIM: redacted-pii:sim_id[chars:20,last3:897], default sms SIM redacted-pii:sim_id[chars:20,last3:897]. default data SIM redacted-pii:sim_id[chars:20,last3:897].
+11-11 01:06:00.684  1543  1710 I RcsAvailabilityUpdaterL: RcsAvailability configuration availability and enabled status: simId: redacted-pii:sim_id[chars:20,last3:897], SipConnectionType: DUAL_REG, isConfigurationAvailableAndEnabled: false
+11-11 01:06:00.685  1543  1710 I BugleRcsEngine: Using config server URL from biuf [CONTEXT log_prefix="ProvisioningServerUtil" thread_id=51 ]
+11-11 01:06:00.687  1543  1710 W BugleRcsProvisioning: Failed to get RCS configuration from the cached provider, configuration is empty.
+11-11 01:06:00.687  1543  1710 W BugleRcsProvisioning: dncp: FULL
+11-11 01:06:00.687  1543  1710 W BugleRcsProvisioning: 	at afzl.c(PG:130)
+11-11 01:06:00.687  1543  1710 W BugleRcsProvisioning: 	at afzl.f(PG:13)
+11-11 01:06:00.687  1543  1710 W BugleRcsProvisioning: 	at afwq.a(PG:9)
+11-11 01:06:00.687  1543  1710 W BugleRcsProvisioning: 	at bluy.apply(PG:125)
+11-11 01:06:00.687  1543  1710 W BugleRcsProvisioning: 	at j$.util.Optional.map(SourceFile:17)
+11-11 01:06:00.687  1543  1710 W BugleRcsProvisioning: 	at blve.s(PG:255)
+11-11 01:06:00.687  1543  1710 W BugleRcsProvisioning: 	at blve.o(PG:58)
+11-11 01:06:00.687  1543  1710 W BugleRcsProvisioning: 	at bluo.run(PG:6)
+11-11 01:06:00.687  1543  1710 W BugleRcsProvisioning: 	at dkqk.run(PG:21)
+11-11 01:06:00.687  1543  1710 W BugleRcsProvisioning: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:487)
+11-11 01:06:00.687  1543  1710 W BugleRcsProvisioning: 	at dqsy.a(PG:3)
+11-11 01:06:00.687  1543  1710 W BugleRcsProvisioning: 	at dqrv.run(PG:21)
+11-11 01:06:00.687  1543  1710 W BugleRcsProvisioning: 	at dqsz.run(PG:5)
+11-11 01:06:00.687  1543  1710 W BugleRcsProvisioning: 	at crzm.run(PG:3)
+11-11 01:06:00.687  1543  1710 W BugleRcsProvisioning: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-11 01:06:00.687  1543  1710 W BugleRcsProvisioning: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-11 01:06:00.687  1543  1710 W BugleRcsProvisioning: 	at cryq.run(PG:6)
+11-11 01:06:00.687  1543  1710 W BugleRcsProvisioning: 	at java.lang.Thread.run(Thread.java:1012)
+11-11 01:06:00.687  1543  1710 W BugleRcsProvisioning: 	at csaw.run(PG:64)
+11-11 01:06:00.687  1543  2627 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=8a06a61e-7029-4b46-bbe4-70314aff9fed, tags={ com.google.android.apps.messaging.shared.datamodel.workqueue.WorkQueueWorkerShim,sim_state_update_queue-WORK_TYPE_VERIFY_SIM_REMOVAL } ]
+11-11 01:06:00.688  1543  1710 I RcsAvailabilityUpdaterL: RcsAvailability: Subscription Id: 1, simId: redacted-pii:sim_id[chars:20,last3:897], sipConnectionType: DUAL_REG, isRcsAvailable: false
+11-11 01:06:00.688  1543  1710 I RcsAvailabilityUpdaterL: updateAvailabilityForRcsProvisioningId. SimId: redacted-pii:sim_id[chars:20,last3:897], currentAvailability: 10, newAvailability: 10, hint: CSLIB_PHENOTYPE_UPDATE
+11-11 01:06:00.689  1087  2050 V Backup  : [RunCustomBackupsIO] Running
+11-11 01:06:00.689  1087  2050 V Backup  : [RunCustomBackupsIO] Creating CustomBackupsManager with requiredUnmetered=true
+11-11 01:06:00.690  1543  2629 I BugleRcsProvisioning: scheduleProvisioningForEligibleSims
+11-11 01:06:00.691  1543  1701 I BugleRcsProvisioning: RcsProvisioningTrigger: onRcsAvailabilityUpdate : availability is updated to Carrier RCS is not set up, lastAvailabilityLocal is Carrier RCS is not set up, simId hash = -6328418159303776093, simId = redacted-pii:sim_id[chars:20,last3:897], isPev3Enabled = true
+11-11 01:06:00.692  1543  1721 I afym    : scheduleProvisioningForEligibleSims: operationTrigger: 2 bugle trigger event: 9
+11-11 01:06:00.692  1543  1721 I afym    : scheduleProvisioningForAllEligibleSims: operationTrigger: 2 bugle trigger event: 9
+11-11 01:06:00.692  1543  1721 I afym    : scheduleProvisioningForDefaultSimIfEligible: defaultSimType: DEFAULT_CALL_SIM operationTrigger: 2 bugle trigger event: 9
+11-11 01:06:00.693  1543  1721 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=54 ]
+11-11 01:06:00.694  1543  1721 I afym    : RcsProvisioningTrigger: DR is active, initializing DR provisioning. DUAL_REG
+11-11 01:06:00.694  1543  1721 I afym    : scheduleProvisioningForDefaultSimIfEligible: defaultSimType: DEFAULT_SMS_SIM operationTrigger: 2 bugle trigger event: 9
+11-11 01:06:00.694  1543  2632 D ProfileInstaller: Installing profile for com.google.android.apps.messaging
+11-11 01:06:00.694  1543  2629 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=70 ]
+11-11 01:06:00.695  1543  1721 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=54 ]
+11-11 01:06:00.696  1543  2627 D MddListenableWorkerFactory: createWorker for class: com.google.android.apps.messaging.shared.datamodel.workqueue.WorkQueueWorkerShim
+11-11 01:06:00.697  1543  2629 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=70 ]
+11-11 01:06:00.697  1543  1721 I afym    : RcsProvisioningTrigger: DR is active, initializing DR provisioning. DUAL_REG
+11-11 01:06:00.698  1543  1721 I BugleRcsProvisioning: RcsProvisioningTrigger: Schedule provisioning on app startup
+11-11 01:06:00.698  1543  1721 I BugleRcsProvisioning: RcsProvisioningTrigger: updateAvailabilityForAllSimsAsync : hint = NO_HINT logTriggerEvent = false
+11-11 01:06:00.698  1543  1721 I Bugle   : RcsAvailabilityUtilForProvisioningEngineV2: updateAvailabilityForAllSimsAsync, hint: NO_HINT
+11-11 01:06:00.698  1543  1721 I RcsAvailabilityUpdaterL: updateAvailabilityForAllSimsAsync: scheduling updateAvailabilityForRcsProvisioningId call. Hint: NO_HINT, enableWelcomePopupWithoutGoogleTos: false, reshowSuccessPopup: false
+11-11 01:06:00.699  1543  2632 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=72 ]
+11-11 01:06:00.699  1543  2629 I BugleRcsEngine: Scheduled provisioning task with 0 seconds delay, KEEP policy, trigger is CSLIB_PHENOTYPE_UPDATE, workerId is 4454235a-7baa-4c7f-8ced-7ee21d836b1d, simId is redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="provisioning" thread_id=70 ]
+11-11 01:06:00.700  1543  1722 I BugleNetwork: Startup: registering tachyon.
+11-11 01:06:00.701  1543  1701 I RcsAvailabilityUpdaterL: updateRcsAvailabilityForMultipleSims: hint: NO_HINT, canReshowWelcomeMessage: false
+11-11 01:06:00.704  1543  2632 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=72 ]
+11-11 01:06:00.706  1543  1701 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=47 ]
+11-11 01:06:00.706  1543  1701 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=47 ]
+11-11 01:06:00.707  1543  1701 I RcsAvailabilityUpdaterL: RcsAvailability configuration availability and enabled status: simId: redacted-pii:sim_id[chars:20,last3:897], SipConnectionType: DUAL_REG, isConfigurationAvailableAndEnabled: false
+11-11 01:06:00.707  1543  2632 I BugleRcsEngine: Scheduled provisioning task with 0 seconds delay, KEEP policy, trigger is CSLIB_PHENOTYPE_UPDATE, workerId is d2887a7a-dc22-4cad-a683-095c1ddb01c6, simId is redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="provisioning" thread_id=72 ]
+11-11 01:06:00.707  1543  1701 I BugleRcsEngine: Using config server URL from biuf [CONTEXT log_prefix="ProvisioningServerUtil" thread_id=47 ]
+11-11 01:06:00.707  1543  2627 I SimStateUpdateHandler: Handling SimStateUpdate. Request for 3 work type received.
+11-11 01:06:00.708  1543  2627 I SimStateUpdateHandler: Handling update phone SIM state.
+11-11 01:06:00.708  1543  2627 I BugleSimStateTracker: Updating PhoneSimState
+11-11 01:06:00.710  1543  1701 W BugleRcsProvisioning: Failed to get RCS configuration from the cached provider, configuration is empty.
+11-11 01:06:00.710  1543  1701 W BugleRcsProvisioning: dncp: FULL
+11-11 01:06:00.710  1543  1701 W BugleRcsProvisioning: 	at afzl.c(PG:130)
+11-11 01:06:00.710  1543  1701 W BugleRcsProvisioning: 	at afzl.f(PG:13)
+11-11 01:06:00.710  1543  1701 W BugleRcsProvisioning: 	at afwq.a(PG:9)
+11-11 01:06:00.710  1543  1701 W BugleRcsProvisioning: 	at bluy.apply(PG:125)
+11-11 01:06:00.710  1543  1701 W BugleRcsProvisioning: 	at j$.util.Optional.map(SourceFile:17)
+11-11 01:06:00.710  1543  1701 W BugleRcsProvisioning: 	at blve.s(PG:255)
+11-11 01:06:00.710  1543  1701 W BugleRcsProvisioning: 	at blve.o(PG:58)
+11-11 01:06:00.710  1543  1701 W BugleRcsProvisioning: 	at bluo.run(PG:6)
+11-11 01:06:00.710  1543  1701 W BugleRcsProvisioning: 	at dkqk.run(PG:21)
+11-11 01:06:00.710  1543  1701 W BugleRcsProvisioning: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:487)
+11-11 01:06:00.710  1543  1701 W BugleRcsProvisioning: 	at dqsy.a(PG:3)
+11-11 01:06:00.710  1543  1701 W BugleRcsProvisioning: 	at dqrv.run(PG:21)
+11-11 01:06:00.710  1543  1701 W BugleRcsProvisioning: 	at dqsz.run(PG:5)
+11-11 01:06:00.710  1543  1701 W BugleRcsProvisioning: 	at crzm.run(PG:3)
+11-11 01:06:00.710  1543  1701 W BugleRcsProvisioning: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-11 01:06:00.710  1543  1701 W BugleRcsProvisioning: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-11 01:06:00.710  1543  1701 W BugleRcsProvisioning: 	at cryq.run(PG:6)
+11-11 01:06:00.710  1543  1701 W BugleRcsProvisioning: 	at java.lang.Thread.run(Thread.java:1012)
+11-11 01:06:00.710  1543  1701 W BugleRcsProvisioning: 	at csaw.run(PG:64)
+11-11 01:06:00.710  1543  1701 I RcsAvailabilityUpdaterL: RcsAvailability: Subscription Id: 1, simId: redacted-pii:sim_id[chars:20,last3:897], sipConnectionType: DUAL_REG, isRcsAvailable: false
+11-11 01:06:00.710  1087  2050 D Backup  : [CustomBackupsManager] Creating intent for package: com.google.android.apps.photos
+11-11 01:06:00.710  1543  1701 I RcsAvailabilityUpdaterL: updateAvailabilityForRcsProvisioningId. SimId: redacted-pii:sim_id[chars:20,last3:897], currentAvailability: 10, newAvailability: 10, hint: NO_HINT
+11-11 01:06:00.711  1543  2626 I BugleRcsProvisioning: scheduleProvisioningForEligibleSims
+11-11 01:06:00.711  1543  2632 I BugleRcsProvisioning: RcsProvisioningTrigger: onRcsAvailabilityUpdate : availability is updated to Carrier RCS is not set up, lastAvailabilityLocal is Carrier RCS is not set up, simId hash = -6328418159303776093, simId = redacted-pii:sim_id[chars:20,last3:897], isPev3Enabled = true
+11-11 01:06:00.712  1543  2629 I afym    : scheduleProvisioningForEligibleSims: operationTrigger: 5 bugle trigger event: 4
+11-11 01:06:00.712  1543  2629 I afym    : scheduleProvisioningForAllEligibleSims: operationTrigger: 5 bugle trigger event: 4
+11-11 01:06:00.712  1543  2629 I afym    : scheduleProvisioningForDefaultSimIfEligible: defaultSimType: DEFAULT_CALL_SIM operationTrigger: 5 bugle trigger event: 4
+11-11 01:06:00.712  1543  2629 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=70 ]
+11-11 01:06:00.713  1543  2629 I afym    : RcsProvisioningTrigger: DR is active, initializing DR provisioning. DUAL_REG
+11-11 01:06:00.713  1543  1722 I BugleNetwork: Startup: registering tachyon for phone.
+11-11 01:06:00.714  1543  2629 I afym    : scheduleProvisioningForDefaultSimIfEligible: defaultSimType: DEFAULT_SMS_SIM operationTrigger: 5 bugle trigger event: 4
+11-11 01:06:00.714  1543  2629 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=70 ]
+11-11 01:06:00.715  1543  1721 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=54 ]
+11-11 01:06:00.715  1543  2629 I afym    : RcsProvisioningTrigger: DR is active, initializing DR provisioning. DUAL_REG
+11-11 01:06:00.715  1087  2050 W ChimeraUtils: Module com.google.android.gms.backup_settings missing resource null(0)
+11-11 01:06:00.715  1543  1722 I BugleNetwork: Profile service is not connected at startup task.
+11-11 01:06:00.716  1543  1722 I Bugle   : VerifiedSmsEnabledCheckerImpl: VSMS is disabled via Phenotype flag.
+11-11 01:06:00.716  1543  2626 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=68 ]
+11-11 01:06:00.716  1543  1721 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=54 ]
+11-11 01:06:00.717  1543  2626 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=68 ]
+11-11 01:06:00.717  1543  2627 I BugleSimStateTracker: Is carrier config for identified carrier: true
+11-11 01:06:00.717  1543  1721 I BugleRcsEngine: Scheduled provisioning task with 0 seconds delay, KEEP policy, trigger is APP_STARTUP, workerId is b1d0814b-7911-4c38-a05a-31635fe235ac, simId is redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="provisioning" thread_id=54 ]
+11-11 01:06:00.718  1087  2050 W ChimeraUtils: Module com.google.android.gms.backup_settings missing resource null(0)
+11-11 01:06:00.719  1087  2050 V Backup  : [FlavorController] getDisabledBackupDataFlavors
+11-11 01:06:00.720   426   426 I netd    : tetherGetStats() -> {[]} <0.56ms>
+11-11 01:06:00.720  1543  1689 I Bugle   : VerifiedSmsStartupTask: Checking if Verified SMS tasks should be enqueued. feature supported: false, feature enabled: false, eligible / has registered key: false, C11N: false
+11-11 01:06:00.720  1543  1689 I Bugle   : VerifiedSmsStartupTask: Not enqueuing VSMS periodic task, VSMS is disabled or not supported.
+11-11 01:06:00.720  1543  2655 I Bugle   : VerifiedSmsStartupTask: Not calling C11N to get phone numbers.
+11-11 01:06:00.721  1543  2626 I BugleRcsEngine: Scheduled provisioning task with 0 seconds delay, KEEP policy, trigger is APP_STARTUP, workerId is 4889f94b-89e3-4055-bffc-cbfae9b2ee8a, simId is redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="provisioning" thread_id=68 ]
+11-11 01:06:00.722  1543  2627 I BugleSimStateTracker: default call SIM: redacted-pii:sim_id[chars:20,last3:897], default sms SIM redacted-pii:sim_id[chars:20,last3:897]. default data SIM redacted-pii:sim_id[chars:20,last3:897].
+11-11 01:06:00.730  1606  3591 W ziparchive: Unable to open '/data/user_de/0/com.google.android.gms/app_chimera/m/0000000d/GoogleCertificates.dm': No such file or directory
+11-11 01:06:00.730  1606  3591 W ziparchive: Unable to open '/data/user_de/0/com.google.android.gms/app_chimera/m/0000000d/GoogleCertificates.dm': No such file or directory
+11-11 01:06:00.734  1538  2376 I A       : (REDACTED) Writing metadata key: %s, corpus: %s
+11-11 01:06:00.735  1578  1813 I Backup  : [GmsBackupAccountManager] Backup account not found in gmscore.
+11-11 01:06:00.735  1538  2376 I A       : (REDACTED) Writing metadata key: %s, corpus: %s
+11-11 01:06:00.738  1543  2627 I BugleSimStateTracker: Looking up Fi through package names.
+11-11 01:06:00.740  1538  2232 I A       : (REDACTED) Writing metadata key: %s, corpus: %s
+11-11 01:06:00.741  1087  1507 W ChimeraUtils: Module com.google.android.gms.backup_base missing resource null(0)
+11-11 01:06:00.742  1087  1507 V Backup  : [BackupAccountNotifier] Handling new intent. Show notification: true
+11-11 01:06:00.743  1543  2627 I BugleSimStateTracker: allNewlyBuiltSimSubscriptionInfos (simId, loggableGuid): [(redacted-pii:sim_id[chars:20,last3:897], ca7b9aa7-f650-46b8-a4c8-3142572895c2)]
+11-11 01:06:00.744  1543  2627 I BugleSimStateTracker: Storing updatedSimSubscriptionInfos: [(redacted-pii:sim_id[chars:20,last3:897], ca7b9aa7-f650-46b8-a4c8-3142572895c2)]
+11-11 01:06:00.754  1543  2627 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=4ccfb7df-e0df-43c4-8a85-e655972f09e6, tags={ com.google.android.apps.messaging.shared.datamodel.workqueue.WorkQueueWorkerShim,sim_state_update_queue-WORK_TYPE_UPDATE_PHONE_SIMS_STATE } ]
+11-11 01:06:00.755  1538  2232 I A       : (REDACTED) Writing metadata key: %s, corpus: %s
+11-11 01:06:00.760  1543  2629 I BugleRcsProvisioning: BugleSystemBindingManager: onBuglePhenotypeFlagChanged
+11-11 01:06:00.764  1543  1719 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=53 ]
+11-11 01:06:00.767  1578  1816 V Backup  : [ClearcutLoggerWithVerifier] Logging to Clearcut eventCode: 64, event: # eqmb@a1e1ba27
+11-11 01:06:00.768  1538  2232 I A       : (REDACTED) Writing metadata key: %s, corpus: %s
+11-11 01:06:00.768  1538  2232 I A       : (REDACTED) Writing metadata key: %s, corpus: %s
+11-11 01:06:00.767  1543  1689 I BugleRcsEngine: SystemBinding enabled: true [CONTEXT log_prefix="SystemBindingManager" thread_id=43 ]
+11-11 01:06:00.771  1543  1689 I BugleRcsEngine: System Binding updated [CONTEXT thread_id=43 ]
+11-11 01:06:00.772  1578  1816 V Backup  : [ClearcutLoggerWithVerifier] Logging to Clearcut eventCode: 86, event: # eqmb@8272d8fa
+11-11 01:06:00.775  1543  2627 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=65 ]
+11-11 01:06:00.777  1087  2903 I NetworkScheduler.Stats: HousekeepingTask com.google.android.gms/com.google.android.gms.backup.transport.component.CustomBackupNewScheduleLoggingTask finished executing. cause:0 result: 1 elapsed_millis: 103 uptime_millis: 103 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-11 01:06:00.777  1578  1578 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.backup.transport.component.CustomBackupNewScheduleLoggingTask.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-11 01:06:00.781  1087  2065 V Backup  : [ClearcutLoggerWithVerifier] Logging to Clearcut eventCode: 64, event: # eqmb@f46e8595
+11-11 01:06:00.784  1087  1220 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.scheduler.standalone.housekeeping.HousekeepingTrainTaskService finished executing. cause:5 result: 1 elapsed_millis: 205 uptime_millis: 205 exec_start_elapsed_seconds: 36 [CONTEXT service_id=218 ]
+11-11 01:06:00.786  1543  2627 W BugleRcs: getAvailableProvisioningIds: accessing uninitialized provisioning identities.
+11-11 01:06:00.786  1543  2627 W BugleRcs: dncp: FULL
+11-11 01:06:00.786  1543  2627 W BugleRcs: 	at cjmd.i(PG:53)
+11-11 01:06:00.786  1543  2627 W BugleRcs: 	at cjvb.q(PG:169)
+11-11 01:06:00.786  1543  2627 W BugleRcs: 	at brts.a(PG:27)
+11-11 01:06:00.786  1543  2627 W BugleRcs: 	at brsg.b(PG:24)
+11-11 01:06:00.786  1543  2627 W BugleRcs: 	at brsg.a(PG:13)
+11-11 01:06:00.786  1543  2627 W BugleRcs: 	at efhn.a(PG:14)
+11-11 01:06:00.786  1543  2627 W BugleRcs: 	at eerl.a(PG:10)
+11-11 01:06:00.786  1543  2627 W BugleRcs: 	at dlmg.b(PG:84)
+11-11 01:06:00.786  1543  2627 W BugleRcs: 	at eegr.w(PG:11)
+11-11 01:06:00.786  1543  2627 W BugleRcs: 	at eerz.run(PG:109)
+11-11 01:06:00.786  1543  2627 W BugleRcs: 	at djfc.run(PG:3)
+11-11 01:06:00.786  1543  2627 W BugleRcs: 	at dkqk.run(PG:21)
+11-11 01:06:00.786  1543  2627 W BugleRcs: 	at crzm.run(PG:3)
+11-11 01:06:00.786  1543  2627 W BugleRcs: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-11 01:06:00.786  1543  2627 W BugleRcs: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-11 01:06:00.786  1543  2627 W BugleRcs: 	at cryq.run(PG:6)
+11-11 01:06:00.786  1543  2627 W BugleRcs: 	at java.lang.Thread.run(Thread.java:1012)
+11-11 01:06:00.786  1543  2627 W BugleRcs: 	at csaw.run(PG:64)
+11-11 01:06:00.786  1543  2627 I BugleTransport: Retrieved RCS available simIds: []
+11-11 01:06:00.787  1087  2050 V Backup  : [CustomBackupsManager] No custom backup packages have user consent to run backup.
+11-11 01:06:00.787  1087  2050 V Backup  : [RunCustomBackupsIO] Finished running
+11-11 01:06:00.790  1543  1719 I BugleTransport: Deregister all SIMs except for SIMs with subIds: [] from chat transport: SINGLE_REGISTRATION.
+11-11 01:06:00.791  1543  1719 I BugleTransport: Deregister all SIMs except for SIMs with subIds: [] from chat transport: TACHYGRAM.
+11-11 01:06:00.792  1543  1722 I BugleTransport: Deregister all SIMs except for SIMs with subIds: [] from chat transport: DUAL_REGISTRATION.
+11-11 01:06:00.793  1543  1704 I RcsClientLib: Connecting RcsEngineLifecycleServiceV2
+11-11 01:06:00.793  1543  1719 I RcsClientLib: Connecting RcsEngineLifecycleServiceV2
+11-11 01:06:00.793  1543  1719 W RcsClientLib: No CS.apk RCS service found. Is RCS running in Bugle?
+11-11 01:06:00.794  1538  2232 I A       : (REDACTED) Writing metadata key: %s, corpus: %s
+11-11 01:06:00.794  1543  1719 I RcsClientLib: shouldUseCarrierServicesJibeService: false, CarrierServices rcs service found: false
+11-11 01:06:00.795  1543  1704 W RcsClientLib: No CS.apk RCS service found. Is RCS running in Bugle?
+11-11 01:06:00.796  1538  2232 I A       : (REDACTED) Writing metadata key: %s, corpus: %s
+11-11 01:06:00.796  1543  1704 I RcsClientLib: shouldUseCarrierServicesJibeService: false, CarrierServices rcs service found: false
+11-11 01:06:00.798  1543  1722 I RcsClientLib: com.google.android.rcs.client.lifecycle.RcsEngineLifecycleServiceV2 connected
+11-11 01:06:00.802  1543  1721 I RcsClientLib: com.google.android.rcs.client.lifecycle.RcsEngineLifecycleServiceV2 connected
+11-11 01:06:00.803  1462  3185 I BugleRcsEngine: stopAllRcsTransportsExcept: ignoring stopping the RcsEngine. RcsEngine is still running [CONTEXT log_prefix="RcsEngineProxyImpl:[2239ff2b-bb8d]" thread_id=67 ]
+11-11 01:06:00.804  1543  2655 I RcsClientLib: Disconnecting RcsEngineLifecycleServiceV2
+11-11 01:06:00.806  1462  2570 I BugleRcsEngine: stopAllRcsTransportsExcept: ignoring stopping the RcsEngine. RcsEngine is still running [CONTEXT log_prefix="RcsEngineProxyImpl:[2239ff2b-bb8d]" thread_id=64 ]
+11-11 01:06:00.806  1543  2184 I RcsClientLib: Disconnecting RcsEngineLifecycleServiceV2
+11-11 01:06:00.816  1543  1722 D MddListenableWorkerFactory: createWorker for class: com.google.android.apps.messaging.shared.datamodel.workqueue.WorkQueueWorkerShim
+11-11 01:06:00.821  1543  1721 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=276e04bb-abb7-4ec4-aca5-efb191ba1f48, tags={ com.google.android.apps.messaging.shared.datamodel.workqueue.WorkQueueWorkerShim,data_upgrade- } ]
+11-11 01:06:00.824  1087  2467 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.scheduler.standalone.housekeeping.HousekeepingTrainTaskService started execution. cause:5 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-11 01:06:00.828  1087  2057 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.scheduler.standalone.housekeeping.HousekeepingTrainTaskService finished executing. cause:5 result: 1 elapsed_millis: 3 uptime_millis: 3 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-11 01:06:00.845  3527  3527 I AccessibilityNodeInfoDumper: Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@35b95; boundsInParent: Rect(0, 0 - 606, 0); boundsInScreen: Rect(57, 218 - 663, 218); boundsInWindow: Rect(57, 218 - 663, 218); packageName: com.google.android.apps.nexuslauncher; className: android.view.ViewGroup; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; containerTitle: null; viewIdResName: com.google.android.apps.nexuslauncher:id/smartspace_subtitle_group; uniqueId: null; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; granularScrollingSupported: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]; isTextSelectable: false
+11-11 01:06:00.855  3527  3527 W AccessibilityNodeInfoDumper: Fetch time: 12ms
+--------- beginning of system
+11-11 01:06:00.857   627  2568 W MagnificationConnectionManager: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
+11-11 01:06:00.857   627  2568 D AccessibilityManagerService: restoreCurrentUserForTestAutomationIfNeededLocked(): ignoring because device doesn't support visible background users
+11-11 01:06:00.858  1433  2188 I AiAiEcho: Settings changed for uri: content://settings/secure/accessibility_enabled
+11-11 01:06:00.859  3527  3527 D AndroidRuntime: Shutting down VM
+11-11 01:06:00.861  1433  1795 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-11 01:06:00.862   627   627 D BatterySaverPolicy: accessibility changed to false, updating policy.
+11-11 01:06:00.862  1433  1795 I AiAiEcho: EchoTargets: 
+11-11 01:06:00.862  1433  1795 I AiAiEcho: Filtered by AiAi flag check: 
+11-11 01:06:00.862  1433  1795 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:06:00.862  1433  1795 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:06:00.862  1433  1795 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-11 01:06:00.863  1433  1795 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-11 01:06:00.863  1433  1795 I AiAiEcho: EchoTargets: 
+11-11 01:06:00.863  1433  1795 I AiAiEcho: Filtered by AiAi flag check: 
+11-11 01:06:00.863  1433  1795 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:06:00.863  1433  1795 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:06:00.863  1433  1795 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-11 01:06:00.863  1433  1795 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-11 01:06:00.863  1433  1795 I AiAiEcho: EchoTargets: 
+11-11 01:06:00.863  1433  1795 I AiAiEcho: Filtered by AiAi flag check: 
+11-11 01:06:00.863  1433  1795 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:06:00.864  1433  1795 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:06:00.864  1433  1795 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-11 01:06:00.864  1433  1795 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+11-11 01:06:00.864  1330  1330 D SsBaseTemplateCard: No text view can be set up
+11-11 01:06:00.865  1330  1330 D SsBaseTemplateCard: Passed-in item info is null
+11-11 01:06:00.865  1330  1330 D SsBaseTemplateCard: Passed-in item info is null
+11-11 01:06:00.865  1330  1330 D SsBaseTemplateCard: Passed-in item info is null
+11-11 01:06:00.865  1330  1330 I SsBaseTemplateCard: Secondary card pane is null
+11-11 01:06:00.865  1433  1795 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface media_data_manager with targets# 0 (types=[])
+11-11 01:06:00.866   879   879 D SsMediaDataProvider: Forwarding Smartspace updates []
+11-11 01:06:00.866  1433  1795 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+11-11 01:06:00.866   879   879 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+11-11 01:06:00.867  1087  2467 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.chimera.container.ConfigService started execution. cause:5 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-11 01:06:00.868  1538  1773 I A       : NGA enabled in interactor.
+11-11 01:06:00.868  1538  1773 I A       : (REDACTED) Nga state changed to %s
+11-11 01:06:00.868  1538  1773 I A       : (REDACTED) isTngActive=%s
+11-11 01:06:00.868  1578  1784 I ChimeraConfigurator: Starting update, reason: 3 urgentFeatures: 
+11-11 01:06:00.871  1448  3200 I A       : Initializing all components
+11-11 01:06:00.872  1448  1812 I A       : (REDACTED) onIsEnabledChanged, isEnabled: %s
+11-11 01:06:00.872  1448  1817 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+11-11 01:06:00.872  1448  1812 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:06:00.872  1448  1812 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:06:00.872  1448  1812 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:06:00.872  1448  1817 I A       : (REDACTED) State changed: %s => %s by %s and %s with %s
+11-11 01:06:00.872  1448  1812 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:06:00.872  1448  1812 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:06:00.872  1448  1812 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:06:00.872  1448  1812 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:06:00.872  1448  1817 I A       : (REDACTED) Recognizer choice: (recognizer_type: %s, recognizer_mode: %s, choice_reason: %s)
+11-11 01:06:00.873  1448  1946 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+11-11 01:06:00.873  1448  1812 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:06:00.873  1330  1523 D EGL_emulation: app_time_stats: avg=123.76ms min=11.13ms max=815.40ms count=9
+11-11 01:06:00.873  1448  1812 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:06:00.873  1448  1812 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:06:00.873  1448  1812 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:06:00.874  1448  1812 I A       : (REDACTED) Setting session to type: %s
+11-11 01:06:00.874  1448  1812 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:06:00.874  1448  1812 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:06:00.874  1448  1812 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:06:00.874  1448  1812 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:06:00.874  1448  1812 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:06:00.874  1448  1812 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:06:00.874  1448  1812 I A       : (REDACTED) setNavBarVisible: %s
+11-11 01:06:00.875  1448  1812 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:06:00.875  1448  1812 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:06:00.875  1448  1812 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:06:00.875  1448  1812 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:06:00.875  1448  1812 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:06:00.875  1448  1812 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:06:00.876  1448  1946 I A       : Initialize
+11-11 01:06:00.876  1448  1812 I A       : (REDACTED) stopListening(%s, %s)
+11-11 01:06:00.877  1448  1946 I NgaEntryPointEventSendr: setupConnection
+11-11 01:06:00.879  1448  1812 I INV.SystemUI: showGestureNav
+11-11 01:06:00.879  1448  1817 I A       : (REDACTED) onActiveStateChangeEvent: %s => %s
+11-11 01:06:00.879  1448  1812 I INV.SystemUI: (REDACTED) setUiHints(hints = %s)
+11-11 01:06:00.879  1448  1817 I A       : (REDACTED) #onActiveStateChangeEvent, newState: %s, previousState: %s.
+11-11 01:06:00.882  1448  1946 I NgaEntryPointEventSendr: (REDACTED) State changed: %s => %s
+11-11 01:06:00.883  1448  1946 I A       : Successfully initialized all components
+11-11 01:06:00.886  1448  1946 I NgaEntryPointEventSendr: onServiceConnected
+11-11 01:06:00.886  1538  3351 I A       : Calling beginBinderSession().
+11-11 01:06:00.888  1448  1817 I A       : Ignoring as prefetch was recently called
+11-11 01:06:00.889  1538  3351 I A       : beginBinderSession(): calling binder
+11-11 01:06:00.889  1448  1945 I A       : (REDACTED) on opa visibility changed %s
+11-11 01:06:00.889  1448  1946 I NgaEntryPointEventSendr: (REDACTED) State changed: %s => %s
+11-11 01:06:00.889  1448  1945 I INV.SystemUI: setUiHints: finished successfully
+11-11 01:06:00.894  1448  1945 I A       : (REDACTED) on opa visibility changed %s
+11-11 01:06:00.895   627  2568 W ActivityManager: Unable to start service Intent { cmp=com.google.android.apps.tachyon/.clientapi.ClientApiService } U=0: not found
+11-11 01:06:00.898  1448  1946 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+11-11 01:06:00.903  1448  3200 V ClearcutMetricXmitter: Transmission is done.
+11-11 01:06:00.918  1538  2078 W A       : (REDACTED) %s task was not run. Callback from Service received after client was disposed.
+11-11 01:06:00.919  1538  3441 I PBSessionCacheImpl: (REDACTED) Deleted sessionId[%d] from persistence.
+11-11 01:06:00.919  1538  2232 I A       : (REDACTED) Writing metadata key: %s, corpus: %s
+11-11 01:06:00.919  1538  2232 I A       : (REDACTED) Writing metadata key: %s, corpus: %s
+11-11 01:06:00.922  1448  1946 I NgaEntryPointEventSendr: (REDACTED) State changed: %s => %s (%s)
+11-11 01:06:00.923  1538  2232 I A       : (REDACTED) NGA Sync: MDD Task: %s done.
+11-11 01:06:00.927  1538  2078 W SearchServiceCore: Abort, client detached.
+11-11 01:06:00.928  1578  1784 I GmsDebugLogger: [73] 1801
+11-11 01:06:00.929  1538  2232 I A       : (REDACTED) NGA Sync: isNgaSyncEnabled: %s; enableFileGroupPopulator: %s; requiresMddAssets: %s
+11-11 01:06:00.930  1538  1773 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=c9b98c49-3fee-4287-a5b0-a919f0d7eda8, tags={ com.google.apps.tiktok.contrib.work.TikTokListenableWorker,TikTokWorker#com.google.android.libraries.mdi.download.workmanager.tiktok.TikTokPeriodicWorker } ]
+11-11 01:06:00.931  1578  1784 W ZappDownloader: No successful Zapp module downloads for requested modules [VisionBarcode.optional:242335100800:permitMetered, VisionOcr.optional:242335100000:permitMetered, MapsCoreDynamite.integ:241610202100800, MlkitOcrCommon.optional:242335100800:permitMetered, TfliteDynamiteDynamite.integ:264010405100800:permitMetered, MlkitBarcodeUi.optional:242335100800:permitMetered].
+11-11 01:06:00.931  1578  1784 I GmsDebugLogger: [30] [VisionBarcode.optional:242335100800],[VisionOcr.optional:242335100000],[MapsCoreDynamite.integ:241610202100800],[MlkitOcrCommon.optional:242335100800],[TfliteDynamiteDynamite.integ:264010405100800],[MlkitBarcodeUi.optional:242335100800]
+11-11 01:06:00.934  1578  1784 W ChimeraConfigService: Retry attempt was throttled. [CONTEXT service_id=264 ]
+11-11 01:06:00.940  1087  2057 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.chimera.container.ConfigService finished executing. cause:5 result: 2 elapsed_millis: 83 uptime_millis: 83 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-11 01:06:00.968  1087  2467 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.clearcut.uploader.QosUploaderService started execution. cause:5 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-11 01:06:00.995  1087  2467 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.clearcut.uploader.QosUploaderService finished executing. cause:5 result: 1 elapsed_millis: 36 uptime_millis: 36 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-11 01:06:01.028  1087  1220 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.auth.account.be.legacy.AuthCronService started execution. cause:5 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-11 01:06:01.037  1087  1220 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.auth.account.be.legacy.AuthCronService finished executing. cause:5 result: 3 elapsed_millis: 18 uptime_millis: 18 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-11 01:06:01.059  1578  1578 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.security.safebrowsing.SafeBrowsingGmsTaskBoundService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-11 01:06:01.059  1578  1578 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.security.safebrowsing.SafeBrowsingGmsTaskBoundService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-11 01:06:01.062  1087  2057 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.security.safebrowsing.SafeBrowsingGmsTaskBoundService started execution. cause:5 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-11 01:06:01.177  1087  1220 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.security.safebrowsing.SafeBrowsingGmsTaskBoundService finished executing. cause:5 result: 1 elapsed_millis: 119 uptime_millis: 119 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-11 01:06:01.178  1578  1578 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.security.safebrowsing.SafeBrowsingGmsTaskBoundService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-11 01:06:01.199  1578  1587 W gle.android.gms: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/priv-app/GoogleServicesFramework/GoogleServicesFramework.apk' with 1 weak references
+11-11 01:06:01.206  1578  1578 I BorderAgentScannerImpl: Sent Border Agent mDNS service query (transactionId = 3) [CONTEXT service_id=305 ]
+11-11 01:06:01.207  1087  2057 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.languageprofile.GcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-11 01:06:01.217  1087  1220 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.languageprofile.GcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 17 uptime_millis: 17 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-11 01:06:01.243  1087  2057 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.languageprofile.GcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-11 01:06:01.273  1087  1220 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.languageprofile.GcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 37 uptime_millis: 37 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-11 01:06:01.300  1087  2057 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.languageprofile.GcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-11 01:06:01.338  1087  1220 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.languageprofile.GcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 46 uptime_millis: 46 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-11 01:06:01.353  1578  1578 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.semanticlocationhistory.deidentifieddata.wifi.WifiPlaceVisitProcessingService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-11 01:06:01.354  1578  1578 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.semanticlocationhistory.deidentifieddata.wifi.WifiPlaceVisitProcessingService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-11 01:06:01.356  1087  2057 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.semanticlocationhistory.deidentifieddata.wifi.WifiPlaceVisitProcessingService started execution. cause:5 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-11 01:06:01.361  1087  1220 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.semanticlocationhistory.deidentifieddata.wifi.WifiPlaceVisitProcessingService finished executing. cause:5 result: 1 elapsed_millis: 7 uptime_millis: 7 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-11 01:06:01.361  1578  1578 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.semanticlocationhistory.deidentifieddata.wifi.WifiPlaceVisitProcessingService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-11 01:06:01.389  1578  1578 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.semanticlocationhistory.deidentifieddata.historicalbusyness.HistoricalBusynessProcessingService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-11 01:06:01.389  1578  1578 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.semanticlocationhistory.deidentifieddata.historicalbusyness.HistoricalBusynessProcessingService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-11 01:06:01.392  1087  2057 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.semanticlocationhistory.deidentifieddata.historicalbusyness.HistoricalBusynessProcessingService started execution. cause:5 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-11 01:06:01.396  1087  1220 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.semanticlocationhistory.deidentifieddata.historicalbusyness.HistoricalBusynessProcessingService finished executing. cause:5 result: 1 elapsed_millis: 8 uptime_millis: 8 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-11 01:06:01.397  1578  1578 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.semanticlocationhistory.deidentifieddata.historicalbusyness.HistoricalBusynessProcessingService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-11 01:06:01.415  1578  1578 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.semanticlocationhistory.pulp.PulpMddMaintenanceService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-11 01:06:01.415  1578  1578 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.semanticlocationhistory.pulp.PulpMddMaintenanceService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-11 01:06:01.418  1087  2057 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.semanticlocationhistory.pulp.PulpMddMaintenanceService started execution. cause:5 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-11 01:06:01.435  1087  1220 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.semanticlocationhistory.pulp.PulpMddMaintenanceService finished executing. cause:5 result: 1 elapsed_millis: 21 uptime_millis: 21 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-11 01:06:01.435  1578  1578 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.semanticlocationhistory.pulp.PulpMddMaintenanceService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-11 01:06:01.453  1578  1578 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.semanticlocationhistory.federated.FederatedScheduleService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-11 01:06:01.453  1578  1578 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.semanticlocationhistory.federated.FederatedScheduleService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-11 01:06:01.457  1087  2057 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.semanticlocationhistory.federated.FederatedScheduleService started execution. cause:5 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-11 01:06:01.460  1578  1816 I LocationHistory: [FederatedScheduleService] Account-level location setting is turned off. [CONTEXT service_id=314 ]
+11-11 01:06:01.462  1578  1578 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.semanticlocationhistory.federated.FederatedScheduleService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-11 01:06:01.462  1087  1220 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.semanticlocationhistory.federated.FederatedScheduleService finished executing. cause:5 result: 2 elapsed_millis: 9 uptime_millis: 9 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-11 01:06:01.482  1578  1578 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.semanticlocationhistory.federated.regionfetcher.RegionMddMaintenanceService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-11 01:06:01.483  1578  1578 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.semanticlocationhistory.federated.regionfetcher.RegionMddMaintenanceService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-11 01:06:01.485  1087  2057 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.semanticlocationhistory.federated.regionfetcher.RegionMddMaintenanceService started execution. cause:5 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-11 01:06:01.486  1578  1816 D nativeloader: Load /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64/libgeller_jni_lite_lib.so using ns product-clns-9 from class loader (caller=/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!classes6.dex): ok
+11-11 01:06:01.503  1578  1578 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.semanticlocationhistory.federated.regionfetcher.RegionMddMaintenanceService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-11 01:06:01.504  1087  1220 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.semanticlocationhistory.federated.regionfetcher.RegionMddMaintenanceService finished executing. cause:5 result: 1 elapsed_millis: 21 uptime_millis: 21 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-11 01:06:01.522  1578  1578 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.semanticlocationhistory.pulp.PulpMddDownloadScheduleService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-11 01:06:01.522  1578  1578 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.semanticlocationhistory.pulp.PulpMddDownloadScheduleService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-11 01:06:01.524  1087  2057 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.semanticlocationhistory.pulp.PulpMddDownloadScheduleService started execution. cause:5 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-11 01:06:01.528  1087  1220 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.semanticlocationhistory.pulp.PulpMddDownloadScheduleService finished executing. cause:5 result: 1 elapsed_millis: 7 uptime_millis: 7 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-11 01:06:01.528  1578  1578 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.semanticlocationhistory.pulp.PulpMddDownloadScheduleService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-11 01:06:01.547  1578  1578 D BoundBrokerSvc: onBind: Intent { act=.people.service.wipeout.PeopleAndroidUriWipeoutTask.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-11 01:06:01.547  1578  1578 D BoundBrokerSvc: Loading bound service for intent: Intent { act=.people.service.wipeout.PeopleAndroidUriWipeoutTask.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-11 01:06:01.549  1087  2057 I NetworkScheduler.Stats: Task com.google.android.gms/.people.service.wipeout.PeopleAndroidUriWipeoutTask started execution. cause:5 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-11 01:06:01.550  1578  2314 I AndroidUriWipeoutSvc: Running AndroidUriWipeout [CONTEXT service_id=5 ]
+11-11 01:06:01.553  1578  1578 D BoundBrokerSvc: onUnbind: Intent { act=.people.service.wipeout.PeopleAndroidUriWipeoutTask.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-11 01:06:01.553  1087  1220 I NetworkScheduler.Stats: Task com.google.android.gms/.people.service.wipeout.PeopleAndroidUriWipeoutTask finished executing. cause:5 result: 1 elapsed_millis: 6 uptime_millis: 6 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-11 01:06:01.579  1578  1578 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.semanticlocationhistory.settings.LocationHistoryActiveProcessingService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-11 01:06:01.579  1578  1578 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.semanticlocationhistory.settings.LocationHistoryActiveProcessingService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-11 01:06:01.582  1087  2057 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.semanticlocationhistory.settings.LocationHistoryActiveProcessingService started execution. cause:5 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-11 01:06:01.588  1087  1220 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.semanticlocationhistory.settings.LocationHistoryActiveProcessingService finished executing. cause:5 result: 1 elapsed_millis: 9 uptime_millis: 9 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-11 01:06:01.589  1578  1578 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.semanticlocationhistory.settings.LocationHistoryActiveProcessingService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-11 01:06:01.630  1578  1578 D BoundBrokerSvc: onBind: Intent { act=.cobalt.service.ObservationGenerationTask.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-11 01:06:01.630  1578  1578 D BoundBrokerSvc: Loading bound service for intent: Intent { act=.cobalt.service.ObservationGenerationTask.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-11 01:06:01.635  1578  2314 I CobaltLoggerImpl: Running periodic Cobalt Observation Generation task. [CONTEXT service_id=364 ]
+11-11 01:06:01.635  1578  2314 I CobaltLoggerImpl: Loading/parsing Cobalt registry from asset [CONTEXT service_id=364 ]
+11-11 01:06:01.635  1087  2057 I NetworkScheduler.Stats: Task com.google.android.gms/.cobalt.service.ObservationGenerationTask started execution. cause:5 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-11 01:06:01.636  1578  2314 I CobaltLoggerImpl: Loading Cobalt database from disk [CONTEXT service_id=364 ]
+11-11 01:06:01.640  1578  2314 I CobaltLoggerImpl: Start generating and sending logs to the Cobalt Server [CONTEXT service_id=364 ]
+11-11 01:06:01.642  1578  2314 W CobaltLoggerImpl: Skipping observation generation for project 200000-4, no project configuration found [CONTEXT service_id=364 ]
+11-11 01:06:01.653  1087  1098 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PrebuiltBugle/PrebuiltBugle.apk' with 1 weak references
+11-11 01:06:01.660  1578  2314 I CobaltLoggerImpl: Generating observations for project 200007-1 [CONTEXT service_id=364 ]
+11-11 01:06:01.662  1578  2314 I CobaltLoggerImpl: Generating observations up to day index 20766 for metric: 200007-1-1 [CONTEXT service_id=364 ]
+11-11 01:06:01.670  1578  2314 I CobaltLoggerImpl: Generating observations up to day index 20766 for metric: 200007-1-2 [CONTEXT service_id=364 ]
+11-11 01:06:01.674  1578  2314 I CobaltLoggerImpl: Generating observations for project 200008-1 [CONTEXT service_id=364 ]
+11-11 01:06:01.674  1578  2314 I CobaltLoggerImpl: Generating observations up to day index 20766 for metric: 200008-1-1 [CONTEXT service_id=364 ]
+11-11 01:06:01.676  1578  2314 I CobaltLoggerImpl: Encrypting 40 Observation Batches that need uploading [CONTEXT service_id=364 ]

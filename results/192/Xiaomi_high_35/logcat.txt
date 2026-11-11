@@ -1,0 +1,444 @@
+--------- beginning of main
+11-09 01:14:26.333  1648  2319 W IndexDataConverter: Skipping null deep link for raw indexable com.android.settings/Android Safe Browsing
+11-09 01:14:26.336  1648  2319 W IndexDataConverter: Skipping null deep link for raw indexable com.android.settings/Google
+11-09 01:14:26.336  1648  2319 W IndexDataConverter: Skipping null deep link for raw indexable com.android.settings/Android Safe Browsing
+11-09 01:14:26.346  1637  2016 I CobaltLoggerImpl: Generating observations up to day index 20764 for metric: 200007-1-2 [CONTEXT service_id=364 ]
+11-09 01:14:26.368  1637  2016 I CobaltLoggerImpl: Generating observations for project 200008-1 [CONTEXT service_id=364 ]
+11-09 01:14:26.369  1637  2016 I CobaltLoggerImpl: Generating observations up to day index 20764 for metric: 200008-1-1 [CONTEXT service_id=364 ]
+11-09 01:14:26.376  1637  2016 I CobaltLoggerImpl: Encrypting 24 Observation Batches that need uploading [CONTEXT service_id=364 ]
+11-09 01:14:26.387  1070  1090 V MmsProvider: accessRestricted=false
+11-09 01:14:26.413  1134  1748 W GLSUser : [DeviceKeyStore] Cannot load key: Device key file not found.
+11-09 01:14:26.415  1134  1748 W GLSUser : [DeviceKeyStore] Cannot load key: Device key file not found.
+11-09 01:14:26.420   429  3177 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10143 0}
+11-09 01:14:26.421  1898  2538 I BugleDataModel: ActionExecutorImpl: ACTION_RESPONSE_QUEUED_RecurringTelemetryUploaderAction
+11-09 01:14:26.421   429  3178 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+11-09 01:14:26.421   429  3179 I resolv  : res_nmkquery: (QUERY, IN, A)
+11-09 01:14:26.422  1898  2089 I BugleDataModel: ActionExecutorImpl: Stopping ActionService
+--------- beginning of system
+11-09 01:14:26.426   638  1021 D OomAdjuster: Not killing cached processes
+11-09 01:14:26.427  1443  3058 V ClearcutMetricXmitter: Transmission is done.
+11-09 01:14:26.429  1443  3058 V ClearcutMetricXmitter: Transmission is done.
+11-09 01:14:26.430   638   662 I system_server: Background concurrent mark compact GC freed 25MB AllocSpace bytes, 82(1676KB) LOS objects, 47% free, 26MB/50MB, paused 2.915ms,2.374ms total 140.308ms
+11-09 01:14:26.431  1443  2502 V ClearcutMetricXmitter: Transmission is done.
+11-09 01:14:26.431  1443  3058 V ClearcutMetricXmitter: Transmission is done.
+11-09 01:14:26.437   638   663 I BpBinder: onLastStrongRef automatically unlinking death recipients: 
+11-09 01:14:26.437   638   663 I BpBinder: onLastStrongRef automatically unlinking death recipients: 
+11-09 01:14:26.447   638   663 I BpBinder: onLastStrongRef automatically unlinking death recipients: 
+11-09 01:14:26.450   638   664 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/Velvet/Velvet.apk' with 1 weak references
+11-09 01:14:26.452   638   664 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/LicenseChecker/LicenseChecker.apk' with 1 weak references
+11-09 01:14:26.452   638   664 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk' with 1 weak references
+11-09 01:14:26.453   638   664 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.permission/priv-app/GooglePermissionController@350820360/GooglePermissionController.apk' with 1 weak references
+11-09 01:14:26.453   638   664 W system_server: ApkAssets: Deleting an ApkAssets object '/product/overlay/GooglePermissionControllerOverlay.apk' with 1 weak references
+11-09 01:14:26.458   429  3178 I resolv  : res_nsend: used send_dg 499 terrno: 0
+11-09 01:14:26.459   429  3178 I resolv  : doQuery: rcode=0, ancount=8, return value=499
+11-09 01:14:26.462   429  3179 I resolv  : res_nsend: used send_dg 431 terrno: 0
+11-09 01:14:26.463   429  3179 I resolv  : doQuery: rcode=0, ancount=8, return value=431
+11-09 01:14:26.485  1134  1991 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.phenotype.service.sync.PhenotypeConfigurator started execution. cause:7 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-09 01:14:26.486  1134  2720 D TrafficStats: tagSocket(208) with statsTag=0x34000609, statsUid=10136
+11-09 01:14:26.497  1134  2720 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-09 01:14:26.497  1134  2720 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-09 01:14:26.497  1134  2720 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-09 01:14:26.516  1134  1854 W CCTFlatFileLogStore: Excessive logging: 64 events, 155280 bytes from log source PHENOTYPE last 10s
+11-09 01:14:26.521  1637  2016 I CobaltLoggerImpl: Uploading to Clearcut an Envelope for 24 of the ObservationStore Batches [CONTEXT service_id=364 ]
+11-09 01:14:26.522  1637  2016 I CobaltLoggerImpl: start uploading logs to Clearcut log_source = PROD [CONTEXT service_id=364 ]
+11-09 01:14:26.526  1134  2720 V NativeCrypto: SSL handshake aborted: ssl=0x7305eff39098: I/O error during system call, Connection reset by peer
+11-09 01:14:26.531  1134  2014 D TrafficStats: tagSocket(208) with statsTag=0x34000609, statsUid=10136
+11-09 01:14:26.535  1637  2016 I CobaltLoggerImpl: Finished sending logs to the Cobalt Server [CONTEXT service_id=364 ]
+11-09 01:14:26.539  1134  2014 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-09 01:14:26.541  1134  2014 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-09 01:14:26.542  1134  2014 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-09 01:14:26.543  1448  1568 V ClearcutMetricXmitter: Transmission is done.
+11-09 01:14:26.557  1637  1637 D BoundBrokerSvc: onUnbind: Intent { act=.cobalt.service.ObservationGenerationTask.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-09 01:14:26.565  1134  1991 I NetworkScheduler.Stats: Task com.google.android.gms/.cobalt.service.ObservationGenerationTask finished executing. cause:5 result: 1 elapsed_millis: 723 uptime_millis: 723 exec_start_elapsed_seconds: 37 [CONTEXT service_id=218 ]
+11-09 01:14:26.571  1134  2014 V NativeCrypto: SSL handshake aborted: ssl=0x7305eff39098: I/O error during system call, Connection reset by peer
+11-09 01:14:26.574  1134  2719 D TrafficStats: tagSocket(208) with statsTag=0x34000609, statsUid=10136
+11-09 01:14:26.580  2982  2982 I AccessibilityNodeInfoDumper: Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@53fd1; boundsInParent: Rect(0, 0 - 597, 0); boundsInScreen: Rect(62, 217 - 659, 217); boundsInWindow: Rect(62, 217 - 659, 217); packageName: com.google.android.apps.nexuslauncher; className: android.view.ViewGroup; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; containerTitle: null; viewIdResName: com.google.android.apps.nexuslauncher:id/smartspace_subtitle_group; uniqueId: null; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; granularScrollingSupported: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]; isTextSelectable: false
+11-09 01:14:26.584  2982  2982 W AccessibilityNodeInfoDumper: Fetch time: 6ms
+11-09 01:14:26.584  1134  2719 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-09 01:14:26.585  1134  2719 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-09 01:14:26.585  1134  2719 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-09 01:14:26.592   638  1179 W MagnificationConnectionManager: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
+11-09 01:14:26.593   638  1179 D AccessibilityManagerService: restoreCurrentUserForTestAutomationIfNeededLocked(): ignoring because device doesn't support visible background users
+11-09 01:14:26.593  1427  1834 I AiAiEcho: Settings changed for uri: content://settings/secure/accessibility_enabled
+11-09 01:14:26.596  1427  1559 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-09 01:14:26.597  1427  1559 I AiAiEcho: EchoTargets: 
+11-09 01:14:26.597  1427  1559 I AiAiEcho: Filtered by AiAi flag check: 
+11-09 01:14:26.597  1427  1559 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-09 01:14:26.598  1427  1559 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-09 01:14:26.599  1427  1559 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-09 01:14:26.599  1427  1559 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-09 01:14:26.599  1427  1559 I AiAiEcho: EchoTargets: 
+11-09 01:14:26.599  1427  1559 I AiAiEcho: Filtered by AiAi flag check: 
+11-09 01:14:26.599  1427  1559 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-09 01:14:26.600  1427  1559 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-09 01:14:26.601  1427  1559 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-09 01:14:26.601  1427  1559 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-09 01:14:26.602  1427  1559 I AiAiEcho: EchoTargets: 
+11-09 01:14:26.602  1427  1559 I AiAiEcho: Filtered by AiAi flag check: 
+11-09 01:14:26.602  1427  1559 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-09 01:14:26.602  2982  2982 D AndroidRuntime: Shutting down VM
+11-09 01:14:26.602  1427  1559 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-09 01:14:26.602  1427  1559 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-09 01:14:26.602   638   638 D BatterySaverPolicy: accessibility changed to false, updating policy.
+11-09 01:14:26.604  1427  1559 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface media_data_manager with targets# 0 (types=[])
+11-09 01:14:26.606  1427  1559 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+11-09 01:14:26.606   898   898 D SsMediaDataProvider: Forwarding Smartspace updates []
+11-09 01:14:26.606  1427  1559 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+11-09 01:14:26.607  1624  1770 I A       : NGA enabled in interactor.
+11-09 01:14:26.608  1176  1176 D SsBaseTemplateCard: No text view can be set up
+11-09 01:14:26.608  1624  1770 I A       : (REDACTED) Nga state changed to %s
+11-09 01:14:26.608  1176  1176 D SsBaseTemplateCard: Passed-in item info is null
+11-09 01:14:26.608  1176  1176 D SsBaseTemplateCard: Passed-in item info is null
+11-09 01:14:26.609  1176  1176 D SsBaseTemplateCard: Passed-in item info is null
+11-09 01:14:26.609  1176  1176 I SsBaseTemplateCard: Secondary card pane is null
+11-09 01:14:26.610   898   898 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+11-09 01:14:26.609  1624  1770 I A       : (REDACTED) isTngActive=%s
+11-09 01:14:26.614  1443  2502 I A       : Initializing all components
+11-09 01:14:26.615  1443  1670 I A       : (REDACTED) onIsEnabledChanged, isEnabled: %s
+11-09 01:14:26.614  1134  2719 V NativeCrypto: SSL handshake aborted: ssl=0x7305eff3a4d8: I/O error during system call, Connection reset by peer
+11-09 01:14:26.617  1443  1676 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+11-09 01:14:26.618  1443  1676 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+11-09 01:14:26.618  1443  1670 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:14:26.618  1176  1558 D EGL_emulation: app_time_stats: avg=500.69ms min=167.79ms max=833.59ms count=2
+11-09 01:14:26.618  1134  1991 D TrafficStats: tagSocket(208) with statsTag=0x34000609, statsUid=10136
+11-09 01:14:26.622  1443  1670 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:14:26.622  1443  1670 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:14:26.623  1443  1670 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:14:26.623  1443  1670 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:14:26.624  1443  1670 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:14:26.629  1443  1670 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:14:26.629  1443  1670 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:14:26.631  1637  1637 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.semanticlocationhistory.settings.LocationHistoryActiveProcessingService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-09 01:14:26.631  1637  1637 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.semanticlocationhistory.settings.LocationHistoryActiveProcessingService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-09 01:14:26.632  1443  1670 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:14:26.632  1443  1670 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:14:26.632  1134  1991 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-09 01:14:26.632  1134  1991 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-09 01:14:26.632  1443  1670 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:14:26.632  1134  1991 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-09 01:14:26.633  1443  1670 I A       : (REDACTED) Setting session to type: %s
+11-09 01:14:26.633  1443  1670 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:14:26.633  1443  1670 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:14:26.633  1443  1670 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:14:26.634  1443  1670 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:14:26.634  1443  1670 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:14:26.634  1443  1670 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:14:26.634  1443  1670 I A       : (REDACTED) setNavBarVisible: %s
+11-09 01:14:26.635  1443  1670 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:14:26.635  1443  1670 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:14:26.635  1443  1670 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:14:26.635  1443  1670 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:14:26.635  1443  1670 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:14:26.635  1443  1670 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-09 01:14:26.638  1443  1764 I A       : (REDACTED) on opa visibility changed %s
+11-09 01:14:26.638  1443  1764 I A       : (REDACTED) on opa visibility changed %s
+11-09 01:14:26.639  1443  1764 I A       : (REDACTED) stopListening(%s, %s)
+11-09 01:14:26.639  1134  2719 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.semanticlocationhistory.settings.LocationHistoryActiveProcessingService started execution. cause:5 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-09 01:14:26.641  1443  1670 I A       : (REDACTED) State changed: %s => %s by %s and %s with %s
+11-09 01:14:26.641  1443  1670 I A       : (REDACTED) Recognizer choice: (recognizer_type: %s, recognizer_mode: %s, choice_reason: %s)
+11-09 01:14:26.643  1443  1670 I A       : (REDACTED) onActiveStateChangeEvent: %s => %s
+11-09 01:14:26.643  1443  1676 I A       : Initialize
+11-09 01:14:26.644  1443  1670 I A       : (REDACTED) #onActiveStateChangeEvent, newState: %s, previousState: %s.
+11-09 01:14:26.646  1443  1670 I NgaEntryPointEventSendr: setupConnection
+11-09 01:14:26.651  1443  1764 I INV.SystemUI: showGestureNav
+11-09 01:14:26.651  1443  1764 I INV.SystemUI: (REDACTED) setUiHints(hints = %s)
+11-09 01:14:26.652  1443  1764 I A       : Ignoring as prefetch was recently called
+11-09 01:14:26.654  1443  1676 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+11-09 01:14:26.654  1443  1670 I NgaEntryPointEventSendr: (REDACTED) State changed: %s => %s
+11-09 01:14:26.654  1443  1763 I A       : Successfully initialized all components
+11-09 01:14:26.656  1443  1670 I INV.SystemUI: setUiHints: finished successfully
+11-09 01:14:26.657  1443  1763 I NgaEntryPointEventSendr: onServiceConnected
+11-09 01:14:26.658  1624  1636 I A       : Calling beginBinderSession().
+11-09 01:14:26.660  1134  1991 V NativeCrypto: SSL handshake aborted: ssl=0x7305eff3a7d8: I/O error during system call, Connection reset by peer
+11-09 01:14:26.660  1624  1636 I A       : beginBinderSession(): calling binder
+11-09 01:14:26.661  1443  1763 I NgaEntryPointEventSendr: (REDACTED) State changed: %s => %s
+11-09 01:14:26.664  1624  2040 V ClearcutMetricXmitter: Transmission is done.
+11-09 01:14:26.666  1134  1855 D TrafficStats: tagSocket(210) with statsTag=0x34000609, statsUid=10136
+11-09 01:14:26.667  1637  1637 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.semanticlocationhistory.settings.LocationHistoryActiveProcessingService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-09 01:14:26.669   489   503 W GpuWork : Failed to attach bpf program to power/gpu_work_period tracepoint [2(No such file or directory)]
+11-09 01:14:26.672  1134  2720 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.semanticlocationhistory.settings.LocationHistoryActiveProcessingService finished executing. cause:5 result: 1 elapsed_millis: 36 uptime_millis: 36 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-09 01:14:26.676  1134  1855 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-09 01:14:26.676  1134  1855 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-09 01:14:26.676  1134  1855 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-09 01:14:26.680   638   725 W ActivityManager: Unable to start service Intent { cmp=com.google.android.apps.tachyon/.clientapi.ClientApiService } U=0: not found
+11-09 01:14:26.681  1898  1898 I ClearcutUploader: Mobalt: successfully finished uploading logs to Clearcut log_source = TURQUOISE_COBALT_SHUFFLER_INPUT_PROD
+11-09 01:14:26.706  1134  1855 V NativeCrypto: SSL handshake aborted: ssl=0x7305eff3a7d8: I/O error during system call, Connection reset by peer
+11-09 01:14:26.710  1134  2720 D TrafficStats: tagSocket(210) with statsTag=0x34000609, statsUid=10136
+11-09 01:14:26.714  1624  1887 W A       : (REDACTED) %s task was not run. Callback from Service received after client was disposed.
+11-09 01:14:26.715  1624  2618 I PBSessionCacheImpl: (REDACTED) Deleted sessionId[%d] from persistence.
+11-09 01:14:26.717  1443  1676 I NgaEntryPointEventSendr: (REDACTED) State changed: %s => %s (%s)
+11-09 01:14:26.721  1637  1637 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.semanticlocationhistory.settings.SettingsSyncService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-09 01:14:26.722  1637  1637 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.semanticlocationhistory.settings.SettingsSyncService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-09 01:14:26.728  1134  1855 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.semanticlocationhistory.settings.SettingsSyncService started execution. cause:5 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-09 01:14:26.729  1134  2720 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-09 01:14:26.730  1624  1887 W SearchServiceCore: Abort, client detached.
+11-09 01:14:26.730  1134  2720 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-09 01:14:26.730  1134  2720 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-09 01:14:26.753  1134  2720 V NativeCrypto: SSL handshake aborted: ssl=0x7305eff3a7d8: I/O error during system call, Connection reset by peer
+11-09 01:14:26.757  1134  1855 D TrafficStats: tagSocket(210) with statsTag=0x34000609, statsUid=10136
+11-09 01:14:26.767  1637  2008 I LocationHistory: [SettingsSync] Synced ODLH settings for all accounts. [CONTEXT service_id=314 ]
+11-09 01:14:26.768  1134  1855 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-09 01:14:26.769  1134  1855 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-09 01:14:26.769  1134  1855 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-09 01:14:26.770  1637  1637 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.semanticlocationhistory.settings.SettingsSyncService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-09 01:14:26.772  1134  2720 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.semanticlocationhistory.settings.SettingsSyncService finished executing. cause:5 result: 1 elapsed_millis: 53 uptime_millis: 53 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-09 01:14:26.796  1134  1855 V NativeCrypto: SSL handshake aborted: ssl=0x7305eff3a7d8: I/O error during system call, Connection reset by peer
+11-09 01:14:26.797  1134  2720 D TrafficStats: tagSocket(210) with statsTag=0x34000609, statsUid=10136
+11-09 01:14:26.809  1134  2720 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-09 01:14:26.809  1134  2720 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+11-09 01:14:26.810  1134  2720 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+11-09 01:14:26.821  1637  1637 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.semanticlocationhistory.settings.OdlhTombstonesCleanupJob.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-09 01:14:26.821  1637  1637 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.semanticlocationhistory.settings.OdlhTombstonesCleanupJob.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-09 01:14:26.824  1648  1655 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.healthfitness/priv-app/HealthConnectControllerGoogle@350820300/HealthConnectControllerGoogle.apk' with 1 weak references
+11-09 01:14:26.824  1648  1655 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/talkback/talkback.apk' with 1 weak references
+11-09 01:14:26.825  1648  1655 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '/vendor/overlay/EmulatorTalkBackOverlay/EmulatorTalkBackOverlay.apk' with 1 weak references
+11-09 01:14:26.838  1134  1855 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.semanticlocationhistory.settings.OdlhTombstonesCleanupJob started execution. cause:5 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-09 01:14:26.847  1134  2720 V NativeCrypto: SSL handshake aborted: ssl=0x7305eff3a7d8: I/O error during system call, Connection reset by peer
+11-09 01:14:26.849  1134  1855 D TrafficStats: tagSocket(210) with statsTag=0x34000609, statsUid=10136
+11-09 01:14:26.880  1637  1637 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.semanticlocationhistory.settings.OdlhTombstonesCleanupJob.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-09 01:14:26.888  1134  2720 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.semanticlocationhistory.settings.OdlhTombstonesCleanupJob finished executing. cause:5 result: 1 elapsed_millis: 61 uptime_millis: 61 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-09 01:14:26.916  1134  1141 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/Velvet/Velvet.apk' with 1 weak references
+11-09 01:14:26.918  1134  1141 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/WellbeingPrebuilt/WellbeingPrebuilt.apk' with 1 weak references
+11-09 01:14:26.920  1134  1141 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/GoogleTTS/GoogleTTS.apk' with 1 weak references
+11-09 01:14:26.922  1134  1141 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PrebuiltBugle/PrebuiltBugle.apk' with 1 weak references
+11-09 01:14:26.934  1134  1854 W CCTFlatFileLogStore: Excessive logging: 128 events, 309911 bytes from log source PHENOTYPE last 10s
+11-09 01:14:26.947  1637  1637 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.semanticlocationhistory.db.OdlhDatabaseCleanupJob.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-09 01:14:26.947  1637  1637 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.semanticlocationhistory.db.OdlhDatabaseCleanupJob.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-09 01:14:26.951  1134  1991 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.semanticlocationhistory.db.OdlhDatabaseCleanupJob started execution. cause:5 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-09 01:14:26.972  1637  2008 D nativeloader: Load /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64/libleveldbjni.so using ns product-clns-9 from class loader (caller=/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!classes3.dex): ok
+11-09 01:14:26.989  1898  2081 V ClearcutMetricXmitter: Transmission is done.
+11-09 01:14:26.994  1134  1292 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(8, com.google.android.gms) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+11-09 01:14:27.026  2657  2725 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+11-09 01:14:27.030  1637  2154 I Auth    : [WorkAccount] update authenticator enabled for boot or update
+11-09 01:14:27.031  1637  2769 I SystemUpdate: [Installation,ReceiverIntentOperation] Received intent: Intent { act=com.google.android.gms.update.BASE_MODULE_INIT cat=[targeted_intent_op_prefix:.update.control.ReceiverIntentOperation] cmp=com.google.android.gms/.chimera.GmsIntentOperationService }.
+11-09 01:14:27.031  1637  1904 W SystemServiceRegistry: No service published for: persistent_data_block
+11-09 01:14:27.035  1637  2688 I Auth    : [FRP,FrpUpdateIntentOperation] Intent received: Intent { act=com.google.android.gms.auth.FRP_CONFIG_CHANGED cat=[targeted_intent_op_prefix:.auth.frp.FrpUpdateIntentOperation] cmp=com.google.android.gms/.chimera.GmsIntentOperationService }
+11-09 01:14:27.037  1637  2688 I Auth    : [FRP,FrpUpdateIntentOperation] FRP is not supported for this device / user
+11-09 01:14:27.037  1134  1134 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.auth.account.workaccount.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+11-09 01:14:27.039  1134  1134 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.auth.account.workaccount.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+11-09 01:14:27.048  1637  1637 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.semanticlocationhistory.db.OdlhDatabaseCleanupJob.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-09 01:14:27.050  1134  2014 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.semanticlocationhistory.db.OdlhDatabaseCleanupJob finished executing. cause:5 result: 1 elapsed_millis: 105 uptime_millis: 105 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-09 01:14:27.053  1134  1903 I Auth    : [WorkAccountServiceImpl] init work authenticator
+11-09 01:14:27.075  1637  1904 I adservices: Register privacy sandbox mendel properties by handle intent
+11-09 01:14:27.081  1637  1637 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.semanticlocationhistory.edit.EditMergeJob.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-09 01:14:27.081  1637  1637 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.semanticlocationhistory.edit.EditMergeJob.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-09 01:14:27.088  1637  1637 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.semanticlocationhistory.edit.EditMergeJob.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-09 01:14:27.113  1637  2701 I Auth    : [SupervisedAccountIntentOperation] onHandleIntent(): android.intent.action.BOOT_COMPLETED
+11-09 01:14:27.117  1637  2688 W Auth    : [PubsubPeriodicSyncherRuntimeInit] Initializing periodic tasks, IntentAction=android.intent.action.BOOT_COMPLETED, InitRuntimeState=2
+11-09 01:14:27.118  1134  1134 W SystemServiceRegistry: No service published for: persistent_data_block
+11-09 01:14:27.133  1134  2014 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.semanticlocationhistory.edit.EditMergeJob started execution. cause:5 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-09 01:14:27.134  1134  2014 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.semanticlocationhistory.edit.EditMergeJob finished executing. cause:5 result: 1 elapsed_millis: 9 uptime_millis: 9 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-09 01:14:27.142  1637  3092 I RecoverableKeyStoreGms: [RecoverableKeyStoreGmsInitOperation] Initializing auth_folsom
+11-09 01:14:27.147  1637  3194 W ChimeraUtils: Module com.google.android.gms.auth_authzen__phone missing resource null(0)
+11-09 01:14:27.151  1637  3092 I RecoverableKeyStoreGms: [RecoverableKeyStoreGmsInitOperation] com.google.android.gms.auth.folsom.service.FolsomPublicKeyUpdateService is already enabled. Ignore.
+11-09 01:14:27.152  1637  3092 I RecoverableKeyStoreGms: [RecoverableKeyStoreGmsInitOperation] com.google.android.gms.auth.folsom.service.GcmReceiverService is already enabled. Ignore.
+11-09 01:14:27.153  1637  3194 I Authzen : [AuthZenEventHandler] Handling event: android.intent.action.BOOT_COMPLETED
+11-09 01:14:27.155  1637  3194 I Authzen : [TransactionCache] Clearing transaction cache
+11-09 01:14:27.155  1134  1300 W BpBinder: Large outgoing transaction of 407896 bytes, interface descriptor , code 4
+11-09 01:14:27.159  1637  2154 I Ads     : Parental control value is stale. Refreshing.
+11-09 01:14:27.160  1637  2154 W Ads     : Play store is not installed or the service for parental controls is not available.
+11-09 01:14:27.161  1637  2154 I Ads     : Initialized AdMob in container 24.23.35 (190800-646585959)
+11-09 01:14:27.162  1898  2089 W BugleRcsEngine: Unable to send RCS extension log [CONTEXT thread_id=54 ]
+11-09 01:14:27.164  1134  1134 E WearableService: PackageRecordCache: appContext was already set bbpj@b8f1ab2 -> bbpj@dbcca03
+11-09 01:14:27.167  1637  2154 I Auth    : [AuthManaged, PasswordComplexityHelperImpl] Updating password complexity components state.
+11-09 01:14:27.168  1637  2154 I Auth    : [AuthManaged, PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+11-09 01:14:27.168  1637  2154 I Auth    : [AuthManaged, PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+11-09 01:14:27.169  1637  2154 I Auth    : [AuthManaged, AuthManagedModuleInitIntentOperation] enabling com.google.android.gms.auth.managed.ui.EmmActivity
+11-09 01:14:27.170  1637  2154 I Auth    : [AuthManaged, AuthManagedModuleInitIntentOperation] enabling com.google.android.gms.auth.managed.ui.PhoneskyDpcInstallActivity
+11-09 01:14:27.171  1637  2154 W Auth    : [AuthManaged, SettingsSecurityDeviceOwnerChimeraActivity] device owner: n/a
+11-09 01:14:27.172  1637  2154 I Auth    : [AuthManaged, AuthManagedModuleInitIntentOperation] disabling com.google.android.gms.auth.managed.ui.SettingsSecurityDeviceOwnerActivity
+11-09 01:14:27.172  1637  2154 I Auth    : [AuthManaged, PasswordComplexityHelperImpl] Updating password complexity components state.
+11-09 01:14:27.172  1637  2154 I Auth    : [AuthManaged, PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+11-09 01:14:27.172  1637  2154 I Auth    : [AuthManaged, PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+11-09 01:14:27.178  1134  1134 I Wear_Controller: Wearable module requires a companion app to be installed.
+11-09 01:14:27.178  1134  1134 I WearableService: onCreate: Wearable Services not starting. Wear is not available on this device.
+11-09 01:14:27.183  1134  1147 W WearableService: onGetService: Wear is not available on this device.
+11-09 01:14:27.183  1637  1904 I ProximityAuth: [FeatureLoader] auth_easyunlock module load status: 2
+11-09 01:14:27.189  1134  2719 W EasyUnlock: [HostValidator] Invalid account list. [CONTEXT service_id=234 ]
+11-09 01:14:27.189  1637  1637 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.auth.cryptauth.cryptauthservice.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+11-09 01:14:27.190  1637  1637 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.auth.cryptauth.cryptauthservice.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+11-09 01:14:27.193  1134  1134 I ProximityAuth: [PhoneHubService] Handling intent for PhoneHubChimeraService.
+11-09 01:14:27.194  1134  1134 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.auth.proximity.devicesyncservice.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentBoundBrokerService }
+11-09 01:14:27.194  1134  1134 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.auth.proximity.devicesyncservice.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentBoundBrokerService }
+11-09 01:14:27.198   638   667 V RecoverableKeyStoreMgr: Not updating secret types - same as old value.
+11-09 01:14:27.199  1134  1134 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.auth.proximity.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentBoundBrokerService }
+11-09 01:14:27.199  1134  1134 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.auth.proximity.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentBoundBrokerService }
+11-09 01:14:27.203  1637  3092 I RecoverableKeyStoreGms: [RecoverableKeyStoreGmsInitOperation] Setting vault handle
+11-09 01:14:27.204   638  1021 V RecoverableKeyStoreMgr: Not updating server params - same as old value.
+11-09 01:14:27.204  1134  2720 I ProximityAuth: [PhoneHubService] No enabled account, stopping service
+11-09 01:14:27.205   638  1021 I RecoverySnapshotLstnrs: Registered listener for agent with uid 10143
+11-09 01:14:27.213  1637  2688 I SystemUpdate: [Execution,InstallationEventIntentOperation] Handling event of type 1.
+11-09 01:14:27.215  1134  1991 W ProximityAuth: [GetMyPublicKey] Failed to fetch public key.
+11-09 01:14:27.216  1637  2154 I GmsCoreXrpcWrapper: Returning a channel provider with trafficStatsTag=18692 trafficStatsUid=-1
+11-09 01:14:27.217  1637  3092 I RecoverableKeyStoreGms: [EnrollmentManager] Returning certificates list from cache [CONTEXT service_id=172 ]
+11-09 01:14:27.217  1134  1991 E etxo    : RuntimeException while executing runnable etyd{aasn@46dadd3} with executor MoreExecutors.directExecutor()
+11-09 01:14:27.217  1134  1991 E etxo    : java.lang.NullPointerException: Attempt to get length of null array
+11-09 01:14:27.217  1134  1991 E etxo    : 	at android.util.Base64.encode(Base64.java:497)
+11-09 01:14:27.217  1134  1991 E etxo    : 	at android.util.Base64.encodeToString(Base64.java:459)
+11-09 01:14:27.217  1134  1991 E etxo    : 	at com.google.android.gms.auth.proximity.RemoteDevice.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):3)
+11-09 01:14:27.217  1134  1991 E etxo    : 	at aasn.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):3)
+11-09 01:14:27.217  1134  1991 E etxo    : 	at etyd.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):30)
+11-09 01:14:27.217  1134  1991 E etxo    : 	at etxk.execute(:com.google.android.gms@242335041@24.23.35 (190800-646585959):1)
+11-09 01:14:27.217  1134  1991 E etxo    : 	at etxo.c(:com.google.android.gms@242335041@24.23.35 (190800-646585959):1)
+11-09 01:14:27.217  1134  1991 E etxo    : 	at etxo.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):32)
+11-09 01:14:27.217  1134  1991 E etxo    : 	at angx.done(:com.google.android.gms@242335041@24.23.35 (190800-646585959):6)
+11-09 01:14:27.217  1134  1991 E etxo    : 	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:381)
+11-09 01:14:27.217  1134  1991 E etxo    : 	at java.util.concurrent.FutureTask.set(FutureTask.java:232)
+11-09 01:14:27.217  1134  1991 E etxo    : 	at java.util.concurrent.FutureTask.run(FutureTask.java:272)
+11-09 01:14:27.217  1134  1991 E etxo    : 	at angs.c(:com.google.android.gms@242335041@24.23.35 (190800-646585959):50)
+11-09 01:14:27.217  1134  1991 E etxo    : 	at angs.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):76)
+11-09 01:14:27.217  1134  1991 E etxo    : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-09 01:14:27.217  1134  1991 E etxo    : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-09 01:14:27.217  1134  1991 E etxo    : 	at anmg.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+11-09 01:14:27.217  1134  1991 E etxo    : 	at java.lang.Thread.run(Thread.java:1012)
+11-09 01:14:27.222  1134  1134 I ProximityAuth: [PhoneHubService] Destroying PhoneHubChimeraService.
+11-09 01:14:27.222  1134  1134 W ProximityAuth: [PhoneHubNotificationProcessor] shutdown(): context is null.
+11-09 01:14:27.222  1134  1134 I ProximityAuth: [PhoneHubService] All devices have disconnected. Performing cleanup...
+11-09 01:14:27.226  1134  1134 W ChimeraUtils: Module com.google.android.gms.auth_proximity missing resource null(0)
+11-09 01:14:27.233  1637  2688 I SystemUpdate: [Execution,InstallationIntentOperation] Received intent: Intent { act=com.google.android.gms.update.INSTALL_UPDATE cat=[targeted_intent_op_prefix:.update.execution.InstallationIntentOperation] cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+11-09 01:14:27.234  1637  2688 I SystemUpdate: [Execution,ExecutionManager] Action finished-execution executed for 0.00 seconds.
+11-09 01:14:27.236   638   725 I RecoverableKeyStoreMgr: The cert file serial number is the same, so skip updating.
+11-09 01:14:27.237  1637  3092 I RecoverableKeyStoreGms: [EnrollmentManager] Recovery service is initialized. [CONTEXT service_id=172 ]
+11-09 01:14:27.252  1637  1637 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.semanticlocationhistory.db.OdlhUserEditSyncJob.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-09 01:14:27.252  1637  1637 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.semanticlocationhistory.db.OdlhUserEditSyncJob.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-09 01:14:27.260  1637  1637 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.semanticlocationhistory.db.OdlhUserEditSyncJob.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-09 01:14:27.261  1637  2154 I AutofillModuleInitInten: AutofillModuleInitIntentOperation onInitRuntimeState(2) [CONTEXT service_id=177 ]
+11-09 01:14:27.273   638   667 E RecoverySnapshotStorage: Error reading snapshot for 10143 from disk
+11-09 01:14:27.273   638   667 E RecoverySnapshotStorage: java.io.FileNotFoundException: /data/system/recoverablekeystore/snapshots/10143.xml: open failed: ENOENT (No such file or directory)
+11-09 01:14:27.273   638   667 E RecoverySnapshotStorage: 	at libcore.io.IoBridge.open(IoBridge.java:574)
+11-09 01:14:27.273   638   667 E RecoverySnapshotStorage: 	at java.io.FileInputStream.<init>(FileInputStream.java:179)
+11-09 01:14:27.273   638   667 E RecoverySnapshotStorage: 	at com.android.server.locksettings.recoverablekeystore.storage.RecoverySnapshotStorage.readFromDisk(RecoverySnapshotStorage.java:152)
+11-09 01:14:27.273   638   667 E RecoverySnapshotStorage: 	at com.android.server.locksettings.recoverablekeystore.storage.RecoverySnapshotStorage.get(RecoverySnapshotStorage.java:104)
+11-09 01:14:27.273   638   667 E RecoverySnapshotStorage: 	at com.android.server.locksettings.recoverablekeystore.RecoverableKeyStoreManager.getKeyChainSnapshot(RecoverableKeyStoreManager.java:377)
+11-09 01:14:27.273   638   667 E RecoverySnapshotStorage: 	at com.android.server.locksettings.LockSettingsService.getKeyChainSnapshot(LockSettingsService.java:2709)
+11-09 01:14:27.273   638   667 E RecoverySnapshotStorage: 	at com.android.internal.widget.ILockSettings$Stub.onTransact(ILockSettings.java:844)
+11-09 01:14:27.273   638   667 E RecoverySnapshotStorage: 	at android.os.Binder.execTransactInternal(Binder.java:1500)
+11-09 01:14:27.273   638   667 E RecoverySnapshotStorage: 	at android.os.Binder.execTransact(Binder.java:1444)
+11-09 01:14:27.273   638   667 E RecoverySnapshotStorage: Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+11-09 01:14:27.273   638   667 E RecoverySnapshotStorage: 	at libcore.io.Linux.open(Native Method)
+11-09 01:14:27.273   638   667 E RecoverySnapshotStorage: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+11-09 01:14:27.273   638   667 E RecoverySnapshotStorage: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:274)
+11-09 01:14:27.273   638   667 E RecoverySnapshotStorage: 	at libcore.io.IoBridge.open(IoBridge.java:560)
+11-09 01:14:27.273   638   667 E RecoverySnapshotStorage: 	... 8 more
+11-09 01:14:27.276   638   725 I RecoverableAppKeyStore: Get 0/10143/com.google.android.gms.auth.folsom/v1/1793773286539/AC604568F0E126431BAE45DD23881719
+11-09 01:14:27.284  1637  1904 W ProximityAuth: [GetSyncedDevices] Attestation: No devices out of 0 passed verification.
+11-09 01:14:27.286  1637  1904 V Backup  : [MigrateUtil] Clearing migrate temp dir: /data/user/0/com.google.android.gms/files/migrate_dir
+11-09 01:14:27.290  1637  1904 D Backup  : [MigrateCleaner] D2D transport was not selected, not selecting cloud transport.
+11-09 01:14:27.292  1637  1904 W ChimeraUtils: Module com.google.android.gms.backup_g1 missing resource null(0)
+11-09 01:14:27.294  1637  3092 V Backup  : [SettingsModuleInit] onInitRuntimeState
+11-09 01:14:27.296  1637  1904 W ChimeraUtils: Module com.google.android.gms.backup_g1 missing resource null(0)
+11-09 01:14:27.299  1637  1904 W ChimeraUtils: Module com.google.android.gms.backup_g1 missing resource null(0)
+11-09 01:14:27.301  1637  1904 V Backup  : [AccountChangedIO] Received intent, action = android.intent.action.BOOT_COMPLETED
+11-09 01:14:27.302  1134  2014 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.semanticlocationhistory.db.OdlhUserEditSyncJob started execution. cause:5 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-09 01:14:27.303  1134  2014 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.semanticlocationhistory.db.OdlhUserEditSyncJob finished executing. cause:5 result: 1 elapsed_millis: 8 uptime_millis: 8 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-09 01:14:27.309  1637  1734 I GmsSyncPolicyEngine: Periodic sync 4 disabled by policy, cancelled.
+11-09 01:14:27.319  1637  3092 I Backup  : [GmsBackupAccountManager] Backup account not found in gmscore.
+11-09 01:14:27.320  1637  1904 I Backup  : [GmsBackupAccountManager] Backup account not found in gmscore.
+11-09 01:14:27.324  1134  1963 W ChimeraUtils: Module com.google.android.gms.backup_base missing resource null(0)
+11-09 01:14:27.324  1134  1963 V Backup  : [BackupAccountNotifier] Handling new intent. Show notification: true
+11-09 01:14:27.328  1134  1963 V Backup  : [BackupAccountNotifier] Handling new intent. Show notification: true
+11-09 01:14:27.335  1637  3092 V Backup  : [NoBackupNotification] Disabled, not scheduling
+11-09 01:14:27.335  1624  1996 V ClearcutMetricXmitter: Transmission is done.
+11-09 01:14:27.336  1637  2688 V Backup  : [ComponentEnabler] Enabling components
+11-09 01:14:27.337  1637  2688 I Backup  : [TargetEnabler] Setting target components to enabled = true
+11-09 01:14:27.339  1637  2688 I Backup  : [SourceEnabler] Setting source components to enabled = true
+11-09 01:14:27.340  1637  2688 V Backup  : [MigrateUtil] Using O+ select transport api
+11-09 01:14:27.343  1637  2688 W Backup  : [ComponentEnablerUtil] Unable to set component 'com.google.android.gms.backup.component.RestoreSessionV0Service' to enabled=true
+11-09 01:14:27.346  1134  2014 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-09 01:14:27.346  1637  2688 W Backup  : [ComponentEnablerUtil] Unable to set component 'com.google.android.gms.backup.component.CloudRestoreFlowActivity' to enabled=true
+11-09 01:14:27.355  1637  2688 W Backup  : [ComponentEnablerUtil] Unable to set component 'com.google.android.gms.backup.component.D2dMigrateFlowActivity' to enabled=false
+11-09 01:14:27.356  1637  2688 V Backup  : [ComponentEnabler] Scheduling tasks.
+11-09 01:14:27.356  1637  2688 V Backup  : [GmsBackupScheduler] Disabled, not scheduling.
+11-09 01:14:27.358  1637  2688 V Backup  : [MmsBackupScheduler] Ineligible, not scheduling.
+11-09 01:14:27.359  1637  3092 I Checkin : [CheckinHSUMHandler] Do not register network callback if not user 0 on HSUM.
+11-09 01:14:27.364  1637  2688 V Backup  : [CustomBackupNewScheduleLog] Task is scheduled to run
+11-09 01:14:27.364  1134  2720 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 29 uptime_millis: 29 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-09 01:14:27.372  1637  2688 V Backup  : [ClearcutLoggerWithVerifier] Logging to Clearcut eventCode: 85, event: # eqmb@456f429f
+11-09 01:14:27.377  1637  3092 I WakefulBroadcastRcvr: Processing wakeful broadcast: com.google.android.gms.checkin.CHECKIN_START_ACTION
+11-09 01:14:27.380  1637  2769 I SyncIntentOperation: Handling the intent: Intent { act=android.intent.action.BOOT_COMPLETED flg=0x89000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }. [CONTEXT service_id=80 ]
+11-09 01:14:27.382  1134  1134 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.chimera.container.BIND_FIND_BUFFER_SIZE dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentInternalBoundBrokerService }
+11-09 01:14:27.382  1134  1134 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.chimera.container.BIND_FIND_BUFFER_SIZE dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentInternalBoundBrokerService }
+11-09 01:14:27.385  1637  1904 I Backup  : [GmsBackupAccountManager] Backup account not found in gmscore.
+11-09 01:14:27.394  1134  1963 W ChimeraUtils: Module com.google.android.gms.backup_base missing resource null(0)
+11-09 01:14:27.394  1134  1963 V Backup  : [BackupAccountNotifier] Handling new intent. Show notification: true
+--------- beginning of kernel
+11-09 01:14:27.378     0     0 I binder_alloc: 1134: binder_alloc_buf size 1056768 failed, no address space
+11-09 01:14:27.379     0     0 I binder_alloc: allocated: 133104 (num: 3 largest: 66096), free: 907280 (num: 1 largest: 907280)
+11-09 01:14:27.401  1637  1904 V Backup  : [AccountChangedIO] currentDestinationString: null
+11-09 01:14:27.402   638  1021 D BackupTransportManager: [UserID:0] Transport com.google.android.gms/.backup.BackupTransportService updated its attributes
+11-09 01:14:27.402  1637  2688 E IPCThreadState: Binder transaction failure. id: 95927, BR_*: 29201, error: -28 (No space left on device)
+11-09 01:14:27.403  1637  2154 I CobaltLoggerImpl: CobaltModuleInitIntentOperation: 2 [CONTEXT service_id=364 ]
+11-09 01:14:27.403  1637  2688 W BpBinder: Large outgoing transaction of 1056768 bytes, interface descriptor , code 1
+11-09 01:14:27.403  1637  2154 I CobaltLoggerImpl: Scheduling Cobalt Observation Generation task to run every 24 hours [CONTEXT service_id=364 ]
+11-09 01:14:27.403  1637  2688 E JavaBinder: !!! FAILED BINDER TRANSACTION !!!  (parcel size = 1056768)
+11-09 01:14:27.381     0     0 I binder  : cannot allocate buffer: no space left
+11-09 01:14:27.381     0     0 I binder  : 1637:2688 transaction call to 1134:0 failed 95927/29201/-28, size 1056768-0 line 3544
+11-09 01:14:27.407  1134  1134 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.chimera.container.BIND_FIND_BUFFER_SIZE dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentInternalBoundBrokerService }
+11-09 01:14:27.408   638   725 W ActivityManager: pid 1637 com.google.android.gms sent binder code 1 with flags 2 to frozen apps and got error -2147483646
+11-09 01:14:27.418  1637  2154 I constellation: [intent_handler] Received onBootCompleted intent
+11-09 01:14:27.419  1637  2154 I constellation: [reboot_checker] Reboot checker check status.
+11-09 01:14:27.419  1637  2154 I constellation: [reboot_checker] Reboot Sync didn't run.
+11-09 01:14:27.430  1637  1831 I Checkin : [CheckinApiChimeraService] onGetService
+11-09 01:14:27.435  1134  3195 I TapAndPay: Not syncing Tap Doodles: tap doodle sync disabled [CONTEXT service_id=79 ]
+11-09 01:14:27.437  1637  2154 I constellation: [intent_handler] on init with intent Intent { act=android.intent.action.BOOT_COMPLETED flg=0x89000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+11-09 01:14:27.441   638  2056 V SafetySourceDataValidat: Package: com.google.android.gms has expected signature
+11-09 01:14:27.441   638  2056 V SafetySourceDataValidat: Package: com.google.android.gms has expected signature
+11-09 01:14:27.444  1637  2688 W GmsTaskScheduler: com.google.android.gms.credential.manager.tasks.PasswordSharingSubscriptionTaskBoundService is not available. This may cause the task to be lost.
+11-09 01:14:27.445  1637  2688 W ChimeraUtils: Module com.google.android.gms.dck_stub missing resource null(0)
+11-09 01:14:27.450  1041  1047 W System  : A resource failed to call close. 
+11-09 01:14:27.457  1134  2720 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-09 01:14:27.460  1134  2720 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 34 uptime_millis: 34 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-09 01:14:27.462   429  3198 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10143 0}
+11-09 01:14:27.462   429  3199 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+11-09 01:14:27.463   429  3201 I resolv  : res_nmkquery: (QUERY, IN, A)
+11-09 01:14:27.465   429  3199 I resolv  : res_nsend: used send_dg 490 terrno: 0
+11-09 01:14:27.466   429  3199 I resolv  : doQuery: rcode=0, ancount=8, return value=490
+11-09 01:14:27.467   429  3201 I resolv  : res_nsend: used send_dg 422 terrno: 0
+11-09 01:14:27.468   429  3201 I resolv  : doQuery: rcode=0, ancount=8, return value=422
+11-09 01:14:27.471  1637  2154 D TrafficStats: tagSocket(177) with statsTag=0x30001803, statsUid=-1
+11-09 01:14:27.472   429   494 E NetdUpdatable: Unsupported protocol: 1
+11-09 01:14:27.472  1637  2154 I TrafficStats: tagSocketFd(177, 805312515, -1) failed with errno-93
+11-09 01:14:27.477  1637  2688 I DckStubModuleInit: Loading stub module components [CONTEXT service_id=289 ]
+11-09 01:14:27.479  1637  2688 I Dck     : disableDckSupport: false [CONTEXT service_id=289 ]
+11-09 01:14:27.479  1637  2688 I Dck     : doesDeviceHaveSupportedWirelessCapabilities: wccSysProp:0, wccMendel:3, deviceWccOverride:false [CONTEXT service_id=289 ]
+11-09 01:14:27.480  1637  2688 I Dck     : Dck module condition - hasWccSupport: false [CONTEXT service_id=289 ]
+11-09 01:14:27.481  1637  2688 I Dck     : Dck module condition - downloadAllowed: false [CONTEXT service_id=289 ]
+11-09 01:14:27.481  1637  2688 W Dck     : Dck module not eligible for asynchronous downloading [CONTEXT service_id=289 ]
+11-09 01:14:27.507  1637  1637 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.security.safebrowsing.SafeBrowsingGmsTaskBoundService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-09 01:14:27.507  1637  1637 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.security.safebrowsing.SafeBrowsingGmsTaskBoundService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-09 01:14:27.509  1637  1904 I EnterpriseLoader: [ConditionsChecker] ZT config not present. [CONTEXT service_id=225 ]
+11-09 01:14:27.511  1134  1991 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.security.safebrowsing.SafeBrowsingGmsTaskBoundService started execution. cause:5 exec_start_elapsed_seconds: 38 [CONTEXT service_id=218 ]
+11-09 01:14:27.522  3099  3150 I GooglePartnerSetup: Registered with Phenotype
+11-09 01:14:27.522  3099  3150 W JobInfo : Job 'com.google.android.partnersetup/.PhenotypeJobService#2' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+11-09 01:14:27.523   638  2056 W JobInfo : Job 'com.google.android.partnersetup/.PhenotypeJobService#2' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+11-09 01:14:27.526  1637  1904 I EsimModuleInit: onHandleIntent action: android.intent.action.BOOT_COMPLETED [CONTEXT service_id=333 ]
+11-09 01:14:27.529   638  2064 D CompatChangeReporter: Compat change id reported: 319212206; UID 10143; state: ENABLED
+11-09 01:14:27.531  1637  1904 I Fido    : [FidoInitIntentOperation] Initializing Fido module, InitRuntimeState=2
+11-09 01:14:27.533  1637  3207 I EsimPhSyncer: Network available: syncing esim transfer p/h flags. [CONTEXT service_id=333 ]
+11-09 01:14:27.534   638   813 D ConnectivityService: NetReassign [no changes] [c 0] [a 0] [i 4]
+11-09 01:14:27.551   429   498 I netd    : tetherGetStats() -> {[]} <1.42ms>
+11-09 01:14:27.553  1134  1134 I Fido    : [CableAuthenticatorChimeraService] Registering broadcast receiver.
+11-09 01:14:27.557  1134  1134 I Fido    : [AuthenticatorChimeraService] Unregistered the broadcast receiver [CONTEXT service_id=287 ]
+11-09 01:14:27.566  1637  1734 D nativeloader: Configuring clns-10 for other apk . target_sdk_version=34, uses_libraries=ALL, library_path=/data/user_de/0/com.google.android.gms/app_chimera/m/00000009/CronetDynamite.uncompressed.apk!/lib/x86_64:/data/user_de/0/com.google.android.gms/app_chimera/m/00000009/CronetDynamite.uncompressed.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand
+11-09 01:14:27.580  1637  1734 D nativeloader: Load /data/user_de/0/com.google.android.gms/app_chimera/m/00000009/CronetDynamite.uncompressed.apk!/lib/x86_64/libcronet.126.0.6452.4.so using isolated ns clns-10 (caller=/data/user_de/0/com.google.android.gms/app_chimera/m/00000009/CronetDynamite.uncompressed.apk): ok
+11-09 01:14:27.584   638  1618 D BiometricService: canAuthenticate: User=0, Caller=0, Authenticators=255
+11-09 01:14:27.585   638  1618 D BiometricService/PreAuthInfo: Package: com.google.android.gms Sensor ID: 0 Modality: 2 Status: 7
+11-09 01:14:27.586   638  1618 D BiometricService/PreAuthInfo: Package: com.google.android.gms Sensor ID: 4 Modality: 8 Status: 7
+11-09 01:14:27.586   638  1618 D BiometricService/PreAuthInfo: getCanAuthenticateInternal Modality: 8 AuthenticatorStatus: 7
+11-09 01:14:27.586   638  1618 D AuthService: canAuthenticate, userId: 0, callingUserId: 0, authenticators: 255, result: 11
+11-09 01:14:27.590   638  1618 D BiometricService: canAuthenticate: User=0, Caller=0, Authenticators=32768
+11-09 01:14:27.591   638  1618 D BiometricService/PreAuthInfo: getCanAuthenticateInternal Modality: 1 AuthenticatorStatus: 9
+11-09 01:14:27.591   638  1618 D AuthService: canAuthenticate, userId: 0, callingUserId: 0, authenticators: 32768, result: 11
+11-09 01:14:27.591  1637  1904 I Fido    : [FidoV2EnrollmentController] Attempting to enroll Autofill Keystore keys
+11-09 01:14:27.593  1637  1904 I Fido    : [FidoV2EnrollmentController] No screen lock set.
+11-09 01:14:27.604  1637  1904 I SchedulingUtil: Scheduling Periodic SPOT account changes sync. [CONTEXT service_id=284 ]
+11-09 01:14:27.616  1637  1734 I cr_CronetLibraryLoader: Cronet version: 126.0.6452.4, arch: x86_64
+11-09 01:14:27.619  1134  1303 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.google.android.onetimeinitializer
+11-09 01:14:27.620   638  2064 D ConnectivityService: requestNetwork for uid/pid:10143/1637 activeRequest: null callbackRequest: 113 [NetworkRequest [ REQUEST id=114, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10143 RequestorUid: 10143 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false
+11-09 01:14:27.622   638   806 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=114, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10143 RequestorUid: 10143 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+11-09 01:14:27.622   638   806 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=114, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10143 RequestorUid: 10143 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+11-09 01:14:27.622   638   806 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=114, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10143 RequestorUid: 10143 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+11-09 01:14:27.622   638   806 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=114, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10143 RequestorUid: 10143 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+11-09 01:14:27.623   638   813 D ConnectivityService: NetReassign [114 : null → 100] [c 0] [a 0] [i 1]
+11-09 01:14:27.625   638   813 D ConnectivityService: NetReassign [no changes] [c 0] [a 1] [i 0]
+11-09 01:14:27.666  1134  2720 I AlarmManager: setExactAndAllowWhileIdle [name: GCM_CONN_ALARM type: 2 triggerAtMillis: 41550]

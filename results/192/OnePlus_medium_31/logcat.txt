@@ -1,0 +1,838 @@
+--------- beginning of main
+11-09 01:08:27.376   487   505 V C2Store : in init
+11-09 01:08:27.376   487   505 V C2Store : loading dll
+11-09 01:08:27.377  6029  6115 I CCodec  : Created component [c2.android.vorbis.decoder]
+11-09 01:08:27.378  6029  6115 D CCodecConfig: read media type: audio/vorbis
+11-09 01:08:27.379  6029  6115 D ReflectedParamUpdater: extent() != 1 for single value type: algo.buffers.max-count.values
+11-09 01:08:27.379  6029  6115 D ReflectedParamUpdater: extent() != 1 for single value type: output.subscribed-indices.values
+11-09 01:08:27.380  6029  6115 D ReflectedParamUpdater: extent() != 1 for single value type: input.buffers.allocator-ids.values
+11-09 01:08:27.380  6029  6115 D ReflectedParamUpdater: extent() != 1 for single value type: output.buffers.allocator-ids.values
+11-09 01:08:27.380  6029  6115 D ReflectedParamUpdater: extent() != 1 for single value type: algo.buffers.allocator-ids.values
+11-09 01:08:27.380  6029  6115 D ReflectedParamUpdater: extent() != 1 for single value type: output.buffers.pool-ids.values
+11-09 01:08:27.380  4445  6105 I .apps.messagin: WaitForGcToComplete blocked ClassLinker on Background for 16.439ms
+11-09 01:08:27.382  6029  6115 D ReflectedParamUpdater: extent() != 1 for single value type: algo.buffers.pool-ids.values
+11-09 01:08:27.383  6029  6115 I CCodecConfig: query failed after returning 7 values (BAD_INDEX)
+11-09 01:08:27.383  6029  6115 D CCodecConfig: c2 config diff is Dict {
+11-09 01:08:27.383  6029  6115 D CCodecConfig:   c2::u32 coded.bitrate.value = 64000
+11-09 01:08:27.383  6029  6115 D CCodecConfig:   c2::u32 input.buffers.max-size.value = 32768
+11-09 01:08:27.383  6029  6115 D CCodecConfig:   c2::u32 input.delay.value = 0
+11-09 01:08:27.383  6029  6115 D CCodecConfig:   string input.media-type.value = "audio/vorbis"
+11-09 01:08:27.383  6029  6115 D CCodecConfig:   string output.media-type.value = "audio/raw"
+11-09 01:08:27.383  6029  6115 D CCodecConfig:   c2::u32 raw.channel-count.value = 1
+11-09 01:08:27.383  6029  6115 D CCodecConfig:   c2::u32 raw.sample-rate.value = 48000
+11-09 01:08:27.383  6029  6115 D CCodecConfig: }
+11-09 01:08:27.385  6029  6115 D CCodec  : [c2.android.vorbis.decoder] buffers are bound to CCodec for this session
+11-09 01:08:27.385  6029  6115 D CCodecConfig: no c2 equivalents for durationUs
+11-09 01:08:27.385  6029  6115 D CCodecConfig: no c2 equivalents for track-id
+11-09 01:08:27.385  6029  6115 D CCodecConfig: no c2 equivalents for csd-1
+11-09 01:08:27.385  4445  6105 I DynamiteModule: Considering local module com.google.android.gms.measurement.dynamite:51 and remote module com.google.android.gms.measurement.dynamite:87
+11-09 01:08:27.386  6029  6115 D CCodecConfig: no c2 equivalents for channel-mask
+11-09 01:08:27.386  4445  6105 I DynamiteModule: Selected remote version of com.google.android.gms.measurement.dynamite, version >= 87
+11-09 01:08:27.386  4445  6105 V DynamiteModule: Dynamite loader version >= 2, using loadModule2NoCrashUtils
+11-09 01:08:27.386  6029  6115 D CCodecConfig: no c2 equivalents for flags
+11-09 01:08:27.386  6029  6115 D CCodecConfig: c2 config diff is   c2::u32 coded.bitrate.value = 160000
+11-09 01:08:27.386  6029  6115 D CCodecConfig:   c2::u32 raw.channel-count.value = 2
+11-09 01:08:27.386  6029  6115 D CCodecConfig:   c2::u32 raw.sample-rate.value = 44100
+11-09 01:08:27.386  6029  6115 W Codec2Client: query -- param skipped: index = 1107298332.
+11-09 01:08:27.386  6029  6115 D CCodec  : setup formats input: AMessage(what = 0x00000000) = {
+11-09 01:08:27.386  6029  6115 D CCodec  :   int32_t bitrate = 160000
+11-09 01:08:27.386  6029  6115 D CCodec  :   int32_t channel-count = 2
+11-09 01:08:27.386  6029  6115 D CCodec  :   int32_t max-input-size = 32768
+11-09 01:08:27.386  6029  6115 D CCodec  :   string mime = "audio/vorbis"
+11-09 01:08:27.386  6029  6115 D CCodec  :   int32_t sample-rate = 44100
+11-09 01:08:27.386  6029  6115 D CCodec  : }
+11-09 01:08:27.386  6029  6115 D CCodec  : setup formats output: AMessage(what = 0x00000000) = {
+11-09 01:08:27.386  6029  6115 D CCodec  :   int32_t channel-count = 2
+11-09 01:08:27.386  6029  6115 D CCodec  :   string mime = "audio/raw"
+11-09 01:08:27.386  6029  6115 D CCodec  :   int32_t sample-rate = 44100
+11-09 01:08:27.386  6029  6115 D CCodec  :   int32_t channel-mask = 3
+11-09 01:08:27.386  6029  6115 D CCodec  : }
+11-09 01:08:27.386  6029  6115 I CCodecConfig: query failed after returning 7 values (BAD_INDEX)
+11-09 01:08:27.391  6029  6115 W Codec2Client: query -- param skipped: index = 1342179345.
+11-09 01:08:27.391  6029  6115 W Codec2Client: query -- param skipped: index = 2415921170.
+11-09 01:08:27.391  6029  6115 D C2Store : Using DMABUF Heaps
+11-09 01:08:27.392  6029  6120 I CCodec  : Created component [c2.android.vorbis.decoder]
+11-09 01:08:27.392  6029  6120 D CCodecConfig: read media type: audio/vorbis
+11-09 01:08:27.394  4445  4886 E MDD     : FileGroupManager: Trying to add expired group webref-model-local-index.
+11-09 01:08:27.395  6029  6115 D CCodecBufferChannel: [c2.android.vorbis.decoder#485] Created input block pool with allocatorID 16 => poolID 17 - OK (0)
+11-09 01:08:27.396  6029  6120 D ReflectedParamUpdater: extent() != 1 for single value type: algo.buffers.max-count.values
+11-09 01:08:27.396  6029  6115 I CCodecBufferChannel: [c2.android.vorbis.decoder#485] Created output block pool with allocatorID 16 => poolID 161 - OK
+11-09 01:08:27.397  4445  4886 W MDD     : MDDManager class arhp
+11-09 01:08:27.397  6029  6115 D CCodecBufferChannel: [c2.android.vorbis.decoder#485] Configured output block pool ids 161 => OK
+11-09 01:08:27.397  4445  4886 E PhFileGroupPop: Failed to add file group
+11-09 01:08:27.397  4445  4886 E PhFileGroupPop: arhp
+11-09 01:08:27.397  4445  4886 E PhFileGroupPop: 	at arnq.a(PG:86)
+11-09 01:08:27.397  4445  4886 E PhFileGroupPop: 	at bcdv.e(PG:2)
+11-09 01:08:27.397  4445  4886 E PhFileGroupPop: 	at bcdx.run(PG:9)
+11-09 01:08:27.397  4445  4886 E PhFileGroupPop: 	at bchu.run(PG:4)
+11-09 01:08:27.397  4445  4886 E PhFileGroupPop: 	at aosz.run(PG:1)
+11-09 01:08:27.397  4445  4886 E PhFileGroupPop: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+11-09 01:08:27.397  4445  4886 E PhFileGroupPop: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+11-09 01:08:27.397  4445  4886 E PhFileGroupPop: 	at aosl.run(PG:2)
+11-09 01:08:27.397  4445  4886 E PhFileGroupPop: 	at aory.run(PG:3)
+11-09 01:08:27.397  4445  4886 E PhFileGroupPop: 	at java.lang.Thread.run(Thread.java:920)
+11-09 01:08:27.398  6029  6115 I DMABUFHEAPS: Using DMA-BUF heap named: system
+11-09 01:08:27.400  6029  6120 D ReflectedParamUpdater: extent() != 1 for single value type: output.subscribed-indices.values
+11-09 01:08:27.400   487  6125 D SimpleC2Component: Using output block pool with poolID 161 => got 161 - 0
+11-09 01:08:27.400  4445  4487 I BugleRcsEngine: [40] alsz.e: Cannot get service version because CS.apk was not found, not pre-loaded or disabled.
+11-09 01:08:27.401  4445  4487 W BugleRcsEngine: [40] alsz.e: Service with meta data key: JibeServiceApiVersions is not compatible. Service Version 1 is not supported. Supported versions: []
+11-09 01:08:27.401  6029  6120 D ReflectedParamUpdater: extent() != 1 for single value type: input.buffers.allocator-ids.values
+11-09 01:08:27.401  6029  6120 D ReflectedParamUpdater: extent() != 1 for single value type: output.buffers.allocator-ids.values
+11-09 01:08:27.401  6029  6120 D ReflectedParamUpdater: extent() != 1 for single value type: algo.buffers.allocator-ids.values
+11-09 01:08:27.402  6029  6120 D ReflectedParamUpdater: extent() != 1 for single value type: output.buffers.pool-ids.values
+11-09 01:08:27.402  6029  6120 D ReflectedParamUpdater: extent() != 1 for single value type: algo.buffers.pool-ids.values
+11-09 01:08:27.403  4445  4487 W BugleRcsEngine: [40] akrz.a: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1
+11-09 01:08:27.403  4445  4487 I BugleRcsProvisioning: RcsAvailabilityUpdaterLocal: [SR]: SingleRegistration capability, singleRegistrationCapability: false, simId: redacted-pii:sim_id[20-chars], subId: 1
+11-09 01:08:27.404  4445  4487 I BugleRcsEngine: [40] albk.n: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[20-chars]
+11-09 01:08:27.404  4445  4487 I BugleRcsProvisioning: RcsAvailabilityUpdaterLocal: [SR]: SingleRegistration configuration, singleRegistrationRcsConfigAvailableAndEnabled: false, simId: redacted-pii:sim_id[20-chars]
+11-09 01:08:27.404  4445  4487 I BugleRcsEngine: [40] albk.n: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[20-chars]
+11-09 01:08:27.405  4445  4487 I BugleRcsProvisioning: RcsAvailabilityUpdaterLocal: updateRcsAvailability, currentAvailability: 9, newAvailability: 9, hint: BOOT_COMPLETE
+11-09 01:08:27.405  4445  4487 I BugleRcsProvisioning: RcsProvisioningTrigger: onRcsAvailabilityUpdate : availability is updated to RCS is disabled due to SIM absent, lastAvailability is null, simId hash = -7319505075106527944, isPev3Enabled = true
+11-09 01:08:27.406  4445  4487 I BugleRcsEngine: [40] jtw.a: RcsProvisioningManager: Receive onRcsAvailabilityUpdate, SIM = redacted-pii:sim_id[20-chars], availability = RcsAvailability{mAvailability=DISABLED_SIM_ABSENT (RCS is disabled due to SIM absent)}
+11-09 01:08:27.408  4445  4487 I BugleRcsProvisioning: RcsProvisioningTrigger: onRcsAvailabilityUpdate : isPreviousDisabled = true, isCurrentDisabled = true
+11-09 01:08:27.409  4445  4487 I BugleRcsEngine: [40] albk.n: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[20-chars]
+11-09 01:08:27.409  6029  6120 I CCodecConfig: query failed after returning 7 values (BAD_INDEX)
+11-09 01:08:27.409  6029  6120 D CCodecConfig: c2 config diff is Dict {
+11-09 01:08:27.409  6029  6120 D CCodecConfig:   c2::u32 coded.bitrate.value = 64000
+11-09 01:08:27.409  6029  6120 D CCodecConfig:   c2::u32 input.buffers.max-size.value = 32768
+11-09 01:08:27.409  6029  6120 D CCodecConfig:   c2::u32 input.delay.value = 0
+11-09 01:08:27.409  6029  6120 D CCodecConfig:   string input.media-type.value = "audio/vorbis"
+11-09 01:08:27.409  6029  6120 D CCodecConfig:   string output.media-type.value = "audio/raw"
+11-09 01:08:27.409  6029  6120 D CCodecConfig:   c2::u32 raw.channel-count.value = 1
+11-09 01:08:27.409  6029  6120 D CCodecConfig:   c2::u32 raw.sample-rate.value = 48000
+11-09 01:08:27.409  6029  6120 D CCodecConfig: }
+11-09 01:08:27.410  6029  6120 D CCodec  : [c2.android.vorbis.decoder] buffers are bound to CCodec for this session
+11-09 01:08:27.410  6029  6120 D CCodecConfig: no c2 equivalents for durationUs
+11-09 01:08:27.410  6029  6120 D CCodecConfig: no c2 equivalents for track-id
+11-09 01:08:27.410  6029  6120 D CCodecConfig: no c2 equivalents for csd-1
+11-09 01:08:27.410  6029  6120 D CCodecConfig: no c2 equivalents for channel-mask
+11-09 01:08:27.410  6029  6120 D CCodecConfig: no c2 equivalents for flags
+11-09 01:08:27.411  6029  6120 D CCodecConfig: c2 config diff is   c2::u32 coded.bitrate.value = 160000
+11-09 01:08:27.411  6029  6120 D CCodecConfig:   c2::u32 raw.channel-count.value = 2
+11-09 01:08:27.411  6029  6120 D CCodecConfig:   c2::u32 raw.sample-rate.value = 44100
+11-09 01:08:27.412  6029  6120 W Codec2Client: query -- param skipped: index = 1107298332.
+11-09 01:08:27.412  6029  6120 D CCodec  : setup formats input: AMessage(what = 0x00000000) = {
+11-09 01:08:27.412  6029  6120 D CCodec  :   int32_t bitrate = 160000
+11-09 01:08:27.412  6029  6120 D CCodec  :   int32_t channel-count = 2
+11-09 01:08:27.412  6029  6120 D CCodec  :   int32_t max-input-size = 32768
+11-09 01:08:27.412  6029  6120 D CCodec  :   string mime = "audio/vorbis"
+11-09 01:08:27.412  6029  6120 D CCodec  :   int32_t sample-rate = 44100
+11-09 01:08:27.412  6029  6120 D CCodec  : }
+11-09 01:08:27.413  6029  6120 D CCodec  : setup formats output: AMessage(what = 0x00000000) = {
+11-09 01:08:27.413  6029  6120 D CCodec  :   int32_t channel-count = 2
+11-09 01:08:27.413  6029  6120 D CCodec  :   string mime = "audio/raw"
+11-09 01:08:27.413  6029  6120 D CCodec  :   int32_t sample-rate = 44100
+11-09 01:08:27.413  6029  6120 D CCodec  :   int32_t channel-mask = 3
+11-09 01:08:27.413  6029  6120 D CCodec  : }
+11-09 01:08:27.413  6029  6120 I CCodecConfig: query failed after returning 7 values (BAD_INDEX)
+11-09 01:08:27.415  6029  6120 W Codec2Client: query -- param skipped: index = 1342179345.
+11-09 01:08:27.415  6029  6120 W Codec2Client: query -- param skipped: index = 2415921170.
+11-09 01:08:27.421  6029  6121 E vol.VolumeDialogControl: isCaptionsServiceEnabled failed to check for captions component
+11-09 01:08:27.421  6029  6121 E vol.VolumeDialogControl: java.lang.IllegalArgumentException: Unknown component: ComponentInfo{com.google.android.as/com.google.android.apps.miphone.aiai.captions.CaptionsService}
+11-09 01:08:27.421  6029  6121 E vol.VolumeDialogControl: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:2430)
+11-09 01:08:27.421  6029  6121 E vol.VolumeDialogControl: 	at android.os.Parcel.createException(Parcel.java:2410)
+11-09 01:08:27.421  6029  6121 E vol.VolumeDialogControl: 	at android.os.Parcel.readException(Parcel.java:2393)
+11-09 01:08:27.421  6029  6121 E vol.VolumeDialogControl: 	at android.os.Parcel.readException(Parcel.java:2335)
+11-09 01:08:27.421  6029  6121 E vol.VolumeDialogControl: 	at android.content.pm.IPackageManager$Stub$Proxy.getComponentEnabledSetting(IPackageManager.java:7204)
+11-09 01:08:27.421  6029  6121 E vol.VolumeDialogControl: 	at android.app.ApplicationPackageManager.getComponentEnabledSetting(ApplicationPackageManager.java:2802)
+11-09 01:08:27.421  6029  6121 E vol.VolumeDialogControl: 	at com.android.systemui.volume.VolumeDialogControllerImpl.onGetCaptionsComponentStateW(VolumeDialogControllerImpl.java:449)
+11-09 01:08:27.421  6029  6121 E vol.VolumeDialogControl: 	at com.android.systemui.volume.VolumeDialogControllerImpl.access$2100(VolumeDialogControllerImpl.java:94)
+11-09 01:08:27.421  6029  6121 E vol.VolumeDialogControl: 	at com.android.systemui.volume.VolumeDialogControllerImpl$W.handleMessage(VolumeDialogControllerImpl.java:826)
+11-09 01:08:27.421  6029  6121 E vol.VolumeDialogControl: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-09 01:08:27.421  6029  6121 E vol.VolumeDialogControl: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-09 01:08:27.421  6029  6121 E vol.VolumeDialogControl: 	at android.os.Looper.loop(Looper.java:288)
+11-09 01:08:27.421  6029  6121 E vol.VolumeDialogControl: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-09 01:08:27.421  6029  6121 I vol.Events: writeEvent level_changed STREAM_VOICE_CALL 3
+11-09 01:08:27.422  6029  6121 I vol.Events: writeEvent level_changed STREAM_SYSTEM 5
+11-09 01:08:27.422  6029  6121 I vol.Events: writeEvent level_changed STREAM_RING 5
+11-09 01:08:27.424  6029  6121 I vol.Events: writeEvent level_changed STREAM_MUSIC 5
+11-09 01:08:27.424  6029  6121 I vol.Events: writeEvent level_changed STREAM_ALARM 6
+11-09 01:08:27.424  4445  6105 W .apps.messagin: ClassLoaderContext type mismatch. expected=PCL, found=DLC (PCL[] | DLC[];PCL[/product/priv-app/PrebuiltBugle/PrebuiltBugle.apk*1660416700:/product/priv-app/PrebuiltBugle/PrebuiltBugle.apk!classes2.dex*3930274089:/product/priv-app/PrebuiltBugle/PrebuiltBugle.apk!classes3.dex*2866496204:/product/priv-app/PrebuiltBugle/PrebuiltBugle.apk!classes4.dex*4291126302:/product/priv-app/PrebuiltBugle/PrebuiltBugle.apk!classes5.dex*1172335467]{PCL[/system/framework/org.apache.http.legacy.jar*2058259660]})
+11-09 01:08:27.424  6029  6121 I vol.Events: writeEvent level_changed STREAM_BLUETOOTH_SCO 7
+11-09 01:08:27.426  6029  6121 I vol.Events: writeEvent external_ringer_mode_changed unknown
+11-09 01:08:27.426  6029  6121 I vol.Events: writeEvent zen_mode_config_changed [disallowAlarms=false disallowMedia=false disallowSystem=true disallowRinger=false]
+11-09 01:08:27.434  6029  6120 D CCodecBufferChannel: [c2.android.vorbis.decoder#175] Created input block pool with allocatorID 16 => poolID 18 - OK (0)
+11-09 01:08:27.435  6029  6120 I CCodecBufferChannel: [c2.android.vorbis.decoder#175] Created output block pool with allocatorID 16 => poolID 162 - OK
+11-09 01:08:27.435  6029  6120 D CCodecBufferChannel: [c2.android.vorbis.decoder#175] Configured output block pool ids 162 => OK
+11-09 01:08:27.437   487  6126 D SimpleC2Component: Using output block pool with poolID 162 => got 162 - 0
+--------- beginning of system
+11-09 01:08:27.441  6029  6029 D SystemUIBootTiming: StartServicescom.android.systemui.volume.VolumeUI took to complete: 73ms
+11-09 01:08:27.448  6029  6029 D NavigationModeController: getCurrentInteractionMode: mode=0 contextUser=0
+11-09 01:08:27.459  4445  4886 D PhFileGroupPop: Added file groups smart_actions_grammars
+11-09 01:08:27.461  4445  4507 D MddListenableWorkerFactory: createWorker for class: com.google.android.apps.messaging.shared.datamodel.workqueue.WorkQueueWorkerShim
+11-09 01:08:27.462  4445  4886 D PhFileGroupPop: Added file groups smart_actions_ml_models
+11-09 01:08:27.463  4445  4886 D PhFileGroupPop: Added file groups text_classifier
+11-09 01:08:27.465  4445  4886 D PhFileGroupPop: Added file groups smart_actions_emotive_models
+11-09 01:08:27.471  4445  4768 I FirebaseApp: Device unlocked: initializing all Firebase APIs for app [DEFAULT]
+11-09 01:08:27.472  4445  4768 D StrictMode: StrictMode policy violation: android.os.strictmode.DiskReadViolation
+11-09 01:08:27.472  4445  4768 D StrictMode: 	at android.os.StrictMode$AndroidBlockGuardPolicy.onReadFromDisk(StrictMode.java:1659)
+11-09 01:08:27.472  4445  4768 D StrictMode: 	at libcore.io.BlockGuardOs.access(BlockGuardOs.java:74)
+11-09 01:08:27.472  4445  4768 D StrictMode: 	at libcore.io.ForwardingOs.access(ForwardingOs.java:131)
+11-09 01:08:27.472  4445  4768 D StrictMode: 	at android.app.ActivityThread$AndroidOs.access(ActivityThread.java:7716)
+11-09 01:08:27.472  4445  4768 D StrictMode: 	at java.io.UnixFileSystem.checkAccess(UnixFileSystem.java:281)
+11-09 01:08:27.472  4445  4768 D StrictMode: 	at java.io.File.exists(File.java:813)
+11-09 01:08:27.472  4445  4768 D StrictMode: 	at android.app.ContextImpl.getDataDir(ContextImpl.java:2888)
+11-09 01:08:27.472  4445  4768 D StrictMode: 	at android.app.ContextImpl.getPreferencesDir(ContextImpl.java:688)
+11-09 01:08:27.472  4445  4768 D StrictMode: 	at android.app.ContextImpl.getSharedPreferencesPath(ContextImpl.java:915)
+11-09 01:08:27.472  4445  4768 D StrictMode: 	at android.app.ContextImpl.getSharedPreferences(ContextImpl.java:537)
+11-09 01:08:27.472  4445  4768 D StrictMode: 	at beev.<init>(PG:3)
+11-09 01:08:27.472  4445  4768 D StrictMode: 	at bdxi.a(PG:2)
+11-09 01:08:27.472  4445  4768 D StrictMode: 	at beaz.a(PG:1)
+11-09 01:08:27.472  4445  4768 D StrictMode: 	at bdxn.f(PG:2)
+11-09 01:08:27.472  4445  4768 D StrictMode: 	at com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar.lambda$getComponents$0$AnalyticsConnectorRegistrar(PG:11)
+11-09 01:08:27.472  4445  4768 D StrictMode: 	at bdxw.a(PG:1)
+11-09 01:08:27.472  4445  4768 D StrictMode: 	at beak.a(PG:2)
+11-09 01:08:27.472  4445  4768 D StrictMode: 	at beaz.a(PG:1)
+11-09 01:08:27.472  4445  4768 D StrictMode: 	at beap.d(PG:4)
+11-09 01:08:27.472  4445  4768 D StrictMode: 	at bdxn.i(PG:15)
+11-09 01:08:27.472  4445  4768 D StrictMode: 	at bdxn.j(PG:29)
+11-09 01:08:27.472  4445  4768 D StrictMode: 	at jpb.AT(PG:4)
+11-09 01:08:27.472  4445  4768 D StrictMode: 	at jos.c(PG:85)
+11-09 01:08:27.472  4445  4768 D StrictMode: 	at jos.b(PG:237)
+11-09 01:08:27.472  4445  4768 D StrictMode: 	at yly.call(PG:1)
+11-09 01:08:27.472  4445  4768 D StrictMode: 	at ayqv.a(PG:1)
+11-09 01:08:27.472  4445  4768 D StrictMode: 	at aypm.a(PG:2)
+11-09 01:08:27.472  4445  4768 D StrictMode: 	at bcib.c(PG:1)
+11-09 01:08:27.472  4445  4768 D StrictMode: 	at bchf.run(PG:4)
+11-09 01:08:27.472  4445  4768 D StrictMode: 	at bcid.run(PG:1)
+11-09 01:08:27.472  4445  4768 D StrictMode: 	at aosz.run(PG:1)
+11-09 01:08:27.472  4445  4768 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+11-09 01:08:27.472  4445  4768 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+11-09 01:08:27.472  4445  4768 D StrictMode: 	at aosl.run(PG:2)
+11-09 01:08:27.472  4445  4768 D StrictMode: 	at aorz.run(PG:2)
+11-09 01:08:27.472  4445  4768 D StrictMode: 	at java.lang.Thread.run(Thread.java:920)
+11-09 01:08:27.472  6029  6115 D CCodecBufferChannel: [c2.android.vorbis.decoder#485] MediaCodec discarded an unknown buffer
+11-09 01:08:27.473  4445  4768 D StrictMode: StrictMode policy violation: android.os.strictmode.DiskReadViolation
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at android.os.StrictMode$AndroidBlockGuardPolicy.onReadFromDisk(StrictMode.java:1659)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at libcore.io.BlockGuardOs.access(BlockGuardOs.java:74)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at libcore.io.ForwardingOs.access(ForwardingOs.java:131)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at android.app.ActivityThread$AndroidOs.access(ActivityThread.java:7716)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at java.io.UnixFileSystem.checkAccess(UnixFileSystem.java:281)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at java.io.File.exists(File.java:813)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at android.app.ContextImpl.ensurePrivateDirExists(ContextImpl.java:743)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at android.app.ContextImpl.ensurePrivateDirExists(ContextImpl.java:734)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at android.app.ContextImpl.getPreferencesDir(ContextImpl.java:690)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at android.app.ContextImpl.getSharedPreferencesPath(ContextImpl.java:915)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at android.app.ContextImpl.getSharedPreferences(ContextImpl.java:537)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at beev.<init>(PG:3)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at bdxi.a(PG:2)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at beaz.a(PG:1)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at bdxn.f(PG:2)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar.lambda$getComponents$0$AnalyticsConnectorRegistrar(PG:11)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at bdxw.a(PG:1)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at beak.a(PG:2)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at beaz.a(PG:1)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at beap.d(PG:4)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at bdxn.i(PG:15)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at bdxn.j(PG:29)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at jpb.AT(PG:4)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at jos.c(PG:85)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at jos.b(PG:237)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at yly.call(PG:1)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at ayqv.a(PG:1)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at aypm.a(PG:2)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at bcib.c(PG:1)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at bchf.run(PG:4)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at bcid.run(PG:1)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at aosz.run(PG:1)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at aosl.run(PG:2)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at aorz.run(PG:2)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at java.lang.Thread.run(Thread.java:920)
+11-09 01:08:27.473  4445  4768 D StrictMode: StrictMode policy violation: android.os.strictmode.DiskReadViolation
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at android.os.StrictMode$AndroidBlockGuardPolicy.onReadFromDisk(StrictMode.java:1659)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at android.app.SharedPreferencesImpl.awaitLoadedLocked(SharedPreferencesImpl.java:275)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at android.app.SharedPreferencesImpl.contains(SharedPreferencesImpl.java:353)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at beev.<init>(PG:4)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at bdxi.a(PG:2)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at beaz.a(PG:1)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at bdxn.f(PG:2)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar.lambda$getComponents$0$AnalyticsConnectorRegistrar(PG:11)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at bdxw.a(PG:1)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at beak.a(PG:2)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at beaz.a(PG:1)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at beap.d(PG:4)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at bdxn.i(PG:15)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at bdxn.j(PG:29)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at jpb.AT(PG:4)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at jos.c(PG:85)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at jos.b(PG:237)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at yly.call(PG:1)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at ayqv.a(PG:1)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at aypm.a(PG:2)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at bcib.c(PG:1)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at bchf.run(PG:4)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at bcid.run(PG:1)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at aosz.run(PG:1)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at aosl.run(PG:2)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at aorz.run(PG:2)
+11-09 01:08:27.473  4445  4768 D StrictMode: 	at java.lang.Thread.run(Thread.java:920)
+11-09 01:08:27.474   547  1175 D ConnectivityService: requestNetwork for uid/pid:10134/6029 activeRequest: null callbackRequest: 362 [NetworkRequest [ REQUEST id=363, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10134 RequestorUid: 10134 RequestorPkg: com.android.systemui] ]] callback flags: 1 priority: 2147483647
+11-09 01:08:27.474   547   663 D ConnectivityService: NetReassign [no changes]
+11-09 01:08:27.474  6029  6029 V WifiManager: registerTrafficStateCallback: callback=com.android.systemui.statusbar.policy.WifiSignalController$WifiTrafficStateCallback@e3ade9f, executor=android.os.HandlerExecutor@5261c51
+11-09 01:08:27.477  4445  4768 D StrictMode: StrictMode policy violation: android.os.strictmode.DiskReadViolation
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at android.os.StrictMode$AndroidBlockGuardPolicy.onReadFromDisk(StrictMode.java:1659)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at libcore.io.BlockGuardOs.access(BlockGuardOs.java:74)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at libcore.io.ForwardingOs.access(ForwardingOs.java:131)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at android.app.ActivityThread$AndroidOs.access(ActivityThread.java:7716)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at java.io.UnixFileSystem.checkAccess(UnixFileSystem.java:281)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at java.io.File.exists(File.java:813)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at android.app.ContextImpl.ensurePrivateDirExists(ContextImpl.java:743)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at android.app.ContextImpl.ensurePrivateDirExists(ContextImpl.java:734)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at android.app.ContextImpl.getFilesDir(ContextImpl.java:779)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at android.content.ContextWrapper.getFilesDir(ContextWrapper.java:261)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at beeh.<init>(PG:1)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at beds.<init>(PG:2)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at bedv.a(PG:4)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at beak.a(PG:2)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at beaz.a(PG:1)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at beab.a(PG:2)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at bebg.a(PG:3)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at becy.a(PG:5)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at beak.a(PG:2)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at beaz.a(PG:1)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at beab.a(PG:2)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at bebg.a(PG:3)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at becz.a(PG:1)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at beak.a(PG:2)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at beaz.a(PG:1)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at beab.a(PG:2)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at bebg.a(PG:3)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at befw.a(PG:3)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at beak.a(PG:2)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at beaz.a(PG:1)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at beap.d(PG:4)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at bdxn.i(PG:15)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at bdxn.j(PG:29)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at jpb.AT(PG:4)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at jos.c(PG:85)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at jos.b(PG:237)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at yly.call(PG:1)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at ayqv.a(PG:1)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at aypm.a(PG:2)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at bcib.c(PG:1)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at bchf.run(PG:4)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at bcid.run(PG:1)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at aosz.run(PG:1)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at aosl.run(PG:2)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at aorz.run(PG:2)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at java.lang.Thread.run(Thread.java:920)
+11-09 01:08:27.477  4445  4768 D StrictMode: StrictMode policy violation: android.os.strictmode.DiskReadViolation
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at android.os.StrictMode$AndroidBlockGuardPolicy.onReadFromDisk(StrictMode.java:1659)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at libcore.io.BlockGuardOs.access(BlockGuardOs.java:74)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at libcore.io.ForwardingOs.access(ForwardingOs.java:131)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at android.app.ActivityThread$AndroidOs.access(ActivityThread.java:7716)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at java.io.UnixFileSystem.checkAccess(UnixFileSystem.java:281)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at java.io.File.exists(File.java:813)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at android.app.ContextImpl.ensurePrivateDirExists(ContextImpl.java:743)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at android.app.ContextImpl.ensurePrivateDirExists(ContextImpl.java:734)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at android.app.ContextImpl.getPreferencesDir(ContextImpl.java:690)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at android.app.ContextImpl.getSharedPreferencesPath(ContextImpl.java:915)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at android.app.ContextImpl.getSharedPreferences(ContextImpl.java:537)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at android.content.ContextWrapper.getSharedPreferences(ContextWrapper.java:196)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at beeg.<init>(PG:2)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at beds.<init>(PG:3)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at bedv.a(PG:4)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at beak.a(PG:2)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at beaz.a(PG:1)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at beab.a(PG:2)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at bebg.a(PG:3)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at becy.a(PG:5)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at beak.a(PG:2)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at beaz.a(PG:1)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at beab.a(PG:2)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at bebg.a(PG:3)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at becz.a(PG:1)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at beak.a(PG:2)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at beaz.a(PG:1)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at beab.a(PG:2)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at bebg.a(PG:3)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at befw.a(PG:3)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at beak.a(PG:2)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at beaz.a(PG:1)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at beap.d(PG:4)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at bdxn.i(PG:15)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at bdxn.j(PG:29)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at jpb.AT(PG:4)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at jos.c(PG:85)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at jos.b(PG:237)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at yly.call(PG:1)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at ayqv.a(PG:1)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at aypm.a(PG:2)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at bcib.c(PG:1)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at bchf.run(PG:4)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at bcid.run(PG:1)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at aosz.run(PG:1)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at aosl.run(PG:2)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at aorz.run(PG:2)
+11-09 01:08:27.477  4445  4768 D StrictMode: 	at java.lang.Thread.run(Thread.java:920)
+11-09 01:08:27.478  4445  4507 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=5a15c929-f758-4b5f-9026-82be4695d362, tags={ com.google.android.apps.messaging.shared.datamodel.workqueue.WorkQueueWorkerShim, expire_wap_push_si_message- } ]
+11-09 01:08:27.479  6029  6115 I hw-BpHwBinder: onLastStrongRef automatically unlinking death recipients
+11-09 01:08:27.482   547   663 D ConnectivityService: NetReassign [363 : null → 101]
+11-09 01:08:27.482   547   655 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=363, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10134 RequestorUid: 10134 RequestorPkg: com.android.systemui] ]
+11-09 01:08:27.482   547   655 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=363, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10134 RequestorUid: 10134 RequestorPkg: com.android.systemui] ]
+11-09 01:08:27.484  4445  4768 D StrictMode: StrictMode policy violation: android.os.strictmode.DiskReadViolation
+11-09 01:08:27.484  4445  4768 D StrictMode: 	at android.os.StrictMode$AndroidBlockGuardPolicy.onReadFromDisk(StrictMode.java:1659)
+11-09 01:08:27.484  4445  4768 D StrictMode: 	at libcore.io.BlockGuardOs.access(BlockGuardOs.java:74)
+11-09 01:08:27.484  4445  4768 D StrictMode: 	at libcore.io.ForwardingOs.access(ForwardingOs.java:131)
+11-09 01:08:27.484  4445  4768 D StrictMode: 	at android.app.ActivityThread$AndroidOs.access(ActivityThread.java:7716)
+11-09 01:08:27.484  4445  4768 D StrictMode: 	at java.io.UnixFileSystem.checkAccess(UnixFileSystem.java:281)
+11-09 01:08:27.484  4445  4768 D StrictMode: 	at java.io.File.exists(File.java:813)
+11-09 01:08:27.484  4445  4768 D StrictMode: 	at android.app.ContextImpl.ensurePrivateDirExists(ContextImpl.java:743)
+11-09 01:08:27.484  4445  4768 D StrictMode: 	at android.app.ContextImpl.ensurePrivateDirExists(ContextImpl.java:734)
+11-09 01:08:27.484  4445  4768 D StrictMode: 	at android.app.ContextImpl.getNoBackupFilesDir(ContextImpl.java:807)
+11-09 01:08:27.484  4445  4768 D StrictMode: 	at android.content.ContextWrapper.getNoBackupFilesDir(ContextWrapper.java:276)
+11-09 01:08:27.484  4445  4768 D StrictMode: 	at amg.b(PG:1)
+11-09 01:08:27.484  4445  4768 D StrictMode: 	at bedg.<init>(PG:3)
+11-09 01:08:27.484  4445  4768 D StrictMode: 	at com.google.firebase.iid.FirebaseInstanceId.<init>(PG:4)
+11-09 01:08:27.484  4445  4768 D StrictMode: 	at becy.a(PG:9)
+11-09 01:08:27.484  4445  4768 D StrictMode: 	at beak.a(PG:2)
+11-09 01:08:27.484  4445  4768 D StrictMode: 	at beaz.a(PG:1)
+11-09 01:08:27.484  4445  4768 D StrictMode: 	at beab.a(PG:2)
+11-09 01:08:27.484  4445  4768 D StrictMode: 	at bebg.a(PG:3)
+11-09 01:08:27.484  4445  4768 D StrictMode: 	at becz.a(PG:1)
+11-09 01:08:27.484  4445  4768 D StrictMode: 	at beak.a(PG:2)
+11-09 01:08:27.484  4445  4768 D StrictMode: 	at beaz.a(PG:1)
+11-09 01:08:27.484  4445  4768 D StrictMode: 	at beab.a(PG:2)
+11-09 01:08:27.484  4445  4768 D StrictMode: 	at bebg.a(PG:3)
+11-09 01:08:27.484  4445  4768 D StrictMode: 	at befw.a(PG:3)
+11-09 01:08:27.484  4445  4768 D StrictMode: 	at beak.a(PG:2)
+11-09 01:08:27.484  4445  4768 D StrictMode: 	at beaz.a(PG:1)
+11-09 01:08:27.484  4445  4768 D StrictMode: 	at beap.d(PG:4)
+11-09 01:08:27.484  4445  4768 D StrictMode: 	at bdxn.i(PG:15)
+11-09 01:08:27.484  4445  4768 D StrictMode: 	at bdxn.j(PG:29)
+11-09 01:08:27.484  4445  4768 D StrictMode: 	at jpb.AT(PG:4)
+11-09 01:08:27.484  4445  4768 D StrictMode: 	at jos.c(PG:85)
+11-09 01:08:27.484  4445  4768 D StrictMode: 	at jos.b(PG:237)
+11-09 01:08:27.484  4445  4768 D StrictMode: 	at yly.call(PG:1)
+11-09 01:08:27.484  4445  4768 D StrictMode: 	at ayqv.a(PG:1)
+11-09 01:08:27.484  4445  4768 D StrictMode: 	at aypm.a(PG:2)
+11-09 01:08:27.484  4445  4768 D StrictMode: 	at bcib.c(PG:1)
+11-09 01:08:27.484  4445  4768 D StrictMode: 	at bchf.run(PG:4)
+11-09 01:08:27.484  4445  4768 D StrictMode: 	at bcid.run(PG:1)
+11-09 01:08:27.484  4445  4768 D StrictMode: 	at aosz.run(PG:1)
+11-09 01:08:27.484  4445  4768 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+11-09 01:08:27.484  4445  4768 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+11-09 01:08:27.484  4445  4768 D StrictMode: 	at aosl.run(PG:2)
+11-09 01:08:27.484  4445  4768 D StrictMode: 	at aorz.run(PG:2)
+11-09 01:08:27.484  4445  4768 D StrictMode: 	at java.lang.Thread.run(Thread.java:920)
+11-09 01:08:27.485  4445  4768 D StrictMode: StrictMode policy violation: android.os.strictmode.DiskReadViolation
+11-09 01:08:27.485  4445  4768 D StrictMode: 	at android.os.StrictMode$AndroidBlockGuardPolicy.onReadFromDisk(StrictMode.java:1659)
+11-09 01:08:27.485  4445  4768 D StrictMode: 	at libcore.io.BlockGuardOs.access(BlockGuardOs.java:74)
+11-09 01:08:27.485  4445  4768 D StrictMode: 	at libcore.io.ForwardingOs.access(ForwardingOs.java:131)
+11-09 01:08:27.485  4445  4768 D StrictMode: 	at android.app.ActivityThread$AndroidOs.access(ActivityThread.java:7716)
+11-09 01:08:27.485  4445  4768 D StrictMode: 	at java.io.UnixFileSystem.checkAccess(UnixFileSystem.java:281)
+11-09 01:08:27.485  4445  4768 D StrictMode: 	at java.io.File.exists(File.java:813)
+11-09 01:08:27.485  4445  4768 D StrictMode: 	at bedg.<init>(PG:5)
+11-09 01:08:27.485  4445  4768 D StrictMode: 	at com.google.firebase.iid.FirebaseInstanceId.<init>(PG:4)
+11-09 01:08:27.485  4445  4768 D StrictMode: 	at becy.a(PG:9)
+11-09 01:08:27.485  4445  4768 D StrictMode: 	at beak.a(PG:2)
+11-09 01:08:27.485  4445  4768 D StrictMode: 	at beaz.a(PG:1)
+11-09 01:08:27.485  4445  4768 D StrictMode: 	at beab.a(PG:2)
+11-09 01:08:27.485  4445  4768 D StrictMode: 	at bebg.a(PG:3)
+11-09 01:08:27.485  4445  4768 D StrictMode: 	at becz.a(PG:1)
+11-09 01:08:27.485  4445  4768 D StrictMode: 	at beak.a(PG:2)
+11-09 01:08:27.485  4445  4768 D StrictMode: 	at beaz.a(PG:1)
+11-09 01:08:27.485  4445  4768 D StrictMode: 	at beab.a(PG:2)
+11-09 01:08:27.485  4445  4768 D StrictMode: 	at bebg.a(PG:3)
+11-09 01:08:27.485  4445  4768 D StrictMode: 	at befw.a(PG:3)
+11-09 01:08:27.485  4445  4768 D StrictMode: 	at beak.a(PG:2)
+11-09 01:08:27.485  4445  4768 D StrictMode: 	at beaz.a(PG:1)
+11-09 01:08:27.485  4445  4768 D StrictMode: 	at beap.d(PG:4)
+11-09 01:08:27.485  4445  4768 D StrictMode: 	at bdxn.i(PG:15)
+11-09 01:08:27.485  4445  4768 D StrictMode: 	at bdxn.j(PG:29)
+11-09 01:08:27.485  4445  4768 D StrictMode: 	at jpb.AT(PG:4)
+11-09 01:08:27.485  4445  4768 D StrictMode: 	at jos.c(PG:85)
+11-09 01:08:27.485  4445  4768 D StrictMode: 	at jos.b(PG:237)
+11-09 01:08:27.485  4445  4768 D StrictMode: 	at yly.call(PG:1)
+11-09 01:08:27.485  4445  4768 D StrictMode: 	at ayqv.a(PG:1)
+11-09 01:08:27.485  4445  4768 D StrictMode: 	at aypm.a(PG:2)
+11-09 01:08:27.485  4445  4768 D StrictMode: 	at bcib.c(PG:1)
+11-09 01:08:27.485  4445  4768 D StrictMode: 	at bchf.run(PG:4)
+11-09 01:08:27.485  4445  4768 D StrictMode: 	at bcid.run(PG:1)
+11-09 01:08:27.485  4445  4768 D StrictMode: 	at aosz.run(PG:1)
+11-09 01:08:27.485  4445  4768 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+11-09 01:08:27.485  4445  4768 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+11-09 01:08:27.485  4445  4768 D StrictMode: 	at aosl.run(PG:2)
+11-09 01:08:27.485  4445  4768 D StrictMode: 	at aorz.run(PG:2)
+11-09 01:08:27.485  4445  4768 D StrictMode: 	at java.lang.Thread.run(Thread.java:920)
+11-09 01:08:27.492   547   655 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=363, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10134 RequestorUid: 10134 RequestorPkg: com.android.systemui] ]
+11-09 01:08:27.500  6029  6113 D MediaCodecList: codecHandlesFormat: no format, so no extra checks
+11-09 01:08:27.501  6029  6029 V WifiManager: registerScanResultsCallback: callback=com.android.systemui.statusbar.policy.NetworkControllerImpl$5@cdf6bec, executor=androidx.mediarouter.media.MediaRoute2Provider$$ExternalSyntheticLambda0@28b0bb5
+11-09 01:08:27.504  6029  6137 D CCodec  : allocate(c2.android.vorbis.decoder)
+11-09 01:08:27.509  4445  4508 I GnpSdk  : [PhenotypeManagerImpl] Phenotype registration SUCCESS
+11-09 01:08:27.517   547  1175 D ConnectivityService: requestNetwork for uid/pid:10134/6029 activeRequest: null callbackRequest: 364 [NetworkRequest [ REQUEST id=365, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10134 RequestorUid: 10134 RequestorPkg: com.android.systemui] ]] callback flags: 1 priority: 2147483647
+11-09 01:08:27.517  6029  6137 I CCodec  : setting up 'default' as default (vendor) store
+11-09 01:08:27.518   547   663 D ConnectivityService: NetReassign [365 : null → 101]
+11-09 01:08:27.519   547   655 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=365, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10134 RequestorUid: 10134 RequestorPkg: com.android.systemui] ]
+11-09 01:08:27.520  6029  6137 I CCodec  : Created component [c2.android.vorbis.decoder]
+11-09 01:08:27.520   547   655 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=365, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10134 RequestorUid: 10134 RequestorPkg: com.android.systemui] ]
+11-09 01:08:27.521   547   655 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=365, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10134 RequestorUid: 10134 RequestorPkg: com.android.systemui] ]
+11-09 01:08:27.524  6029  6137 D CCodecConfig: read media type: audio/vorbis
+11-09 01:08:27.525  6029  6137 D ReflectedParamUpdater: extent() != 1 for single value type: algo.buffers.max-count.values
+11-09 01:08:27.525  6029  6120 D CCodecBufferChannel: [c2.android.vorbis.decoder#175] MediaCodec discarded an unknown buffer
+11-09 01:08:27.525  6029  6120 D CCodecBufferChannel: [c2.android.vorbis.decoder#175] MediaCodec discarded an unknown buffer
+11-09 01:08:27.525  6029  6137 D ReflectedParamUpdater: extent() != 1 for single value type: output.subscribed-indices.values
+11-09 01:08:27.525  6029  6137 D ReflectedParamUpdater: extent() != 1 for single value type: input.buffers.allocator-ids.values
+11-09 01:08:27.525  6029  6137 D ReflectedParamUpdater: extent() != 1 for single value type: output.buffers.allocator-ids.values
+11-09 01:08:27.526  6029  6137 D ReflectedParamUpdater: extent() != 1 for single value type: algo.buffers.allocator-ids.values
+11-09 01:08:27.526  6029  6137 D ReflectedParamUpdater: extent() != 1 for single value type: output.buffers.pool-ids.values
+11-09 01:08:27.526  6029  6137 D ReflectedParamUpdater: extent() != 1 for single value type: algo.buffers.pool-ids.values
+11-09 01:08:27.526  6029  6137 I CCodecConfig: query failed after returning 7 values (BAD_INDEX)
+11-09 01:08:27.526  6029  6137 D CCodecConfig: c2 config diff is Dict {
+11-09 01:08:27.526  6029  6137 D CCodecConfig:   c2::u32 coded.bitrate.value = 64000
+11-09 01:08:27.526  6029  6137 D CCodecConfig:   c2::u32 input.buffers.max-size.value = 32768
+11-09 01:08:27.526  6029  6137 D CCodecConfig:   c2::u32 input.delay.value = 0
+11-09 01:08:27.526  6029  6137 D CCodecConfig:   string input.media-type.value = "audio/vorbis"
+11-09 01:08:27.526  6029  6137 D CCodecConfig:   string output.media-type.value = "audio/raw"
+11-09 01:08:27.526  6029  6137 D CCodecConfig:   c2::u32 raw.channel-count.value = 1
+11-09 01:08:27.526  6029  6137 D CCodecConfig:   c2::u32 raw.sample-rate.value = 48000
+11-09 01:08:27.526  6029  6137 D CCodecConfig: }
+11-09 01:08:27.527  6029  6120 D CCodecBufferChannel: [c2.android.vorbis.decoder#175] MediaCodec discarded an unknown buffer
+11-09 01:08:27.527  6029  6137 D CCodec  : [c2.android.vorbis.decoder] buffers are bound to CCodec for this session
+11-09 01:08:27.527  6029  6137 D CCodecConfig: no c2 equivalents for durationUs
+11-09 01:08:27.527  6029  6137 D CCodecConfig: no c2 equivalents for track-id
+11-09 01:08:27.527  6029  6137 D CCodecConfig: no c2 equivalents for csd-1
+11-09 01:08:27.527  6029  6137 D CCodecConfig: no c2 equivalents for channel-mask
+11-09 01:08:27.527  6029  6137 D CCodecConfig: no c2 equivalents for flags
+11-09 01:08:27.531  6029  6137 D CCodecConfig: c2 config diff is   c2::u32 coded.bitrate.value = 160000
+11-09 01:08:27.531  6029  6137 D CCodecConfig:   c2::u32 raw.channel-count.value = 2
+11-09 01:08:27.532  6029  6137 W Codec2Client: query -- param skipped: index = 1107298332.
+11-09 01:08:27.532  6029  6137 D CCodec  : setup formats input: AMessage(what = 0x00000000) = {
+11-09 01:08:27.532  6029  6137 D CCodec  :   int32_t bitrate = 160000
+11-09 01:08:27.532  6029  6137 D CCodec  :   int32_t channel-count = 2
+11-09 01:08:27.532  6029  6137 D CCodec  :   int32_t max-input-size = 32768
+11-09 01:08:27.532  6029  6137 D CCodec  :   string mime = "audio/vorbis"
+11-09 01:08:27.532  6029  6137 D CCodec  :   int32_t sample-rate = 48000
+11-09 01:08:27.532  6029  6137 D CCodec  : }
+11-09 01:08:27.532  6029  6137 D CCodec  : setup formats output: AMessage(what = 0x00000000) = {
+11-09 01:08:27.532  6029  6137 D CCodec  :   int32_t channel-count = 2
+11-09 01:08:27.532  6029  6137 D CCodec  :   string mime = "audio/raw"
+11-09 01:08:27.532  6029  6137 D CCodec  :   int32_t sample-rate = 48000
+11-09 01:08:27.532  6029  6137 D CCodec  :   int32_t channel-mask = 3
+11-09 01:08:27.532  6029  6137 D CCodec  : }
+11-09 01:08:27.533  6029  6137 I CCodecConfig: query failed after returning 7 values (BAD_INDEX)
+11-09 01:08:27.535   342  6145 D resolv  : GetAddrInfoHandler::run: {101 786533 101 983141 10100 0}
+11-09 01:08:27.535   342  6145 D resolv  : resolv_getaddrinfo: explore_fqdn(): ai_family=0 ai_socktype=1 ai_protocol=6
+11-09 01:08:27.536  4445  4531 W SQLiteLog: (28) double-quoted string literal: ""
+11-09 01:08:27.536   547   663 D ConnectivityService: NetReassign [no changes]
+11-09 01:08:27.536  4445  4531 W SQLiteLog: (28) double-quoted string literal: ""
+11-09 01:08:27.536  4445  4531 W SQLiteLog: (28) double-quoted string literal: ""
+11-09 01:08:27.536  4445  4531 W SQLiteLog: (28) double-quoted string literal: ""
+11-09 01:08:27.536  4445  4531 W SQLiteLog: (28) double-quoted string literal: ""
+11-09 01:08:27.536  4445  4531 W SQLiteLog: (28) double-quoted string literal: ""
+11-09 01:08:27.538   342  6149 D resolv  : doQuery: (1, 28)
+11-09 01:08:27.538   342  6149 D resolv  : res_nmkquery: (QUERY, IN, AAAA)
+11-09 01:08:27.538  6029  6137 W Codec2Client: query -- param skipped: index = 1342179345.
+11-09 01:08:27.538   342  6149 D resolv  : res_nsend
+11-09 01:08:27.538  6029  6137 W Codec2Client: query -- param skipped: index = 2415921170.
+11-09 01:08:27.538   342  6149 I resolv  : resolv_cache_lookup: lookup
+11-09 01:08:27.538   342  6149 I resolv  : resolv_cache_lookup: NOT IN CACHE
+11-09 01:08:27.538   342  6149 I resolv  : resolv_populate_res_for_net: netid=101
+11-09 01:08:27.538   342  6149 I resolv  : res_stats_usable_server: NS stats: S 13 + E 0 + T 0 + I 0 = 13, rtt = 8, min_samples = 8
+11-09 01:08:27.538   342  6149 I resolv  : res_stats_usable_server: success rate 100
+11-09 01:08:27.538   342  6149 D resolv  : res_nsend: Querying server (# 1) address = 10.0.2.3:53
+11-09 01:08:27.538  4445  4445 D CompatibilityChangeReporter: Compat change id reported: 119147584; UID 10100; state: ENABLED
+11-09 01:08:27.538   342  6149 D resolv  : send_dg: new DG socket
+11-09 01:08:27.539   342  6149 I resolv  : get_timeout: using timeout of 5000 msec
+11-09 01:08:27.539   342  6149 I resolv  : retrying_poll: 55 retrying_poll
+11-09 01:08:27.539   342  6150 D resolv  : doQuery: (1, 1)
+11-09 01:08:27.539   342  6150 D resolv  : res_nmkquery: (QUERY, IN, A)
+11-09 01:08:27.539   342  6150 D resolv  : res_nsend
+11-09 01:08:27.541   342  6150 I resolv  : resolv_cache_lookup: lookup
+11-09 01:08:27.541   342  6150 I resolv  : resolv_cache_lookup: NOT IN CACHE
+11-09 01:08:27.541   342  6150 I resolv  : resolv_populate_res_for_net: netid=101
+11-09 01:08:27.542  6029  6137 D CCodecBufferChannel: [c2.android.vorbis.decoder#906] Created input block pool with allocatorID 16 => poolID 19 - OK (0)
+11-09 01:08:27.543  6029  6137 I CCodecBufferChannel: [c2.android.vorbis.decoder#906] Created output block pool with allocatorID 16 => poolID 163 - OK
+11-09 01:08:27.543  6029  6137 D CCodecBufferChannel: [c2.android.vorbis.decoder#906] Configured output block pool ids 163 => OK
+11-09 01:08:27.543  6029  6120 I hw-BpHwBinder: onLastStrongRef automatically unlinking death recipients
+11-09 01:08:27.543   342  6150 I resolv  : res_stats_usable_server: NS stats: S 13 + E 0 + T 0 + I 0 = 13, rtt = 8, min_samples = 8
+11-09 01:08:27.543   342  6150 I resolv  : res_stats_usable_server: success rate 100
+11-09 01:08:27.543   342  6150 D resolv  : res_nsend: Querying server (# 1) address = 10.0.2.3:53
+11-09 01:08:27.543   342  6150 D resolv  : send_dg: new DG socket
+11-09 01:08:27.544   342  6150 I resolv  : get_timeout: using timeout of 5000 msec
+11-09 01:08:27.544   342  6150 I resolv  : retrying_poll: 56 retrying_poll
+11-09 01:08:27.545   342  6150 I resolv  : retrying_poll: 56 retrying_poll returning 1
+11-09 01:08:27.545   342  6150 I resolv  : res_nsend: used send_dg 307 terrno: 0
+11-09 01:08:27.545   342  6150 I resolv  : res_stats_set_sample: rcode = 0, sec = 1
+11-09 01:08:27.546   342  6150 I resolv  : res_cache_add_stats_sample_locked: adding sample to stats, next = 13, count = 13
+11-09 01:08:27.546  6029  6029 D CompatibilityChangeReporter: Compat change id reported: 171228096; UID 10134; state: ENABLED
+11-09 01:08:27.546   342  6150 D resolv  : res_nsend: got answer:
+11-09 01:08:27.546   342  6150 I resolv  : answer_getTTL: TTL = 224
+11-09 01:08:27.546   342  6150 I resolv  : _cache_add_p: entry 14 added (count=14)
+11-09 01:08:27.546   342  6150 I resolv  : cache_dump_mru_locked: MRU LIST (14):  14 3 8 2 9 13 12 11 10 7 6 5 4 1
+11-09 01:08:27.546   487  6142 D SimpleC2Component: Using output block pool with poolID 163 => got 163 - 0
+11-09 01:08:27.547   342  6150 D resolv  : doQuery: rcode=0, ancount=1
+11-09 01:08:27.549  4445  4531 W SQLiteLog: (28) double-quoted string literal: ""
+11-09 01:08:27.553  4445  4531 W SQLiteLog: (28) double-quoted string literal: ""
+11-09 01:08:27.553  4445  4531 W SQLiteLog: (28) double-quoted string literal: ""
+11-09 01:08:27.553  4445  4886 D PhFileGroupPop: Added file groups smarts_expressive_content_scoped_v1
+11-09 01:08:27.554  4445  4886 D PhFileGroupPop: Added file groups smart_actions_sensitive_classifier_models
+11-09 01:08:27.555  4445  4886 D PhFileGroupPop: Added file groups scripted_reply
+11-09 01:08:27.557  4445  4886 D PhFileGroupPop: Added file groups multitask_experiment
+11-09 01:08:27.558  4445  4886 D PhFileGroupPop: Added file groups spam_verdict_enforcement_policy_config
+11-09 01:08:27.558  4445  4886 D PhFileGroupPop: Added file groups smart_suggestion_reranker_models
+11-09 01:08:27.559  4445  4886 D PhFileGroupPop: Added file groups calendar_appointment_grammar
+11-09 01:08:27.560  4445  4886 D PhFileGroupPop: Added file groups birthday_grammars
+11-09 01:08:27.566  4445  4531 I BugleNotifications: No unseen incoming message notifications
+11-09 01:08:27.566  4445  4531 I BugleNotifications: No incomingMessageNotification created, canceling existing incomingMessageNotifications
+11-09 01:08:27.572   342  6149 I resolv  : retrying_poll: 55 retrying_poll returning 1
+11-09 01:08:27.572   342  6149 I resolv  : res_nsend: used send_dg 319 terrno: 0
+11-09 01:08:27.572   342  6149 I resolv  : res_stats_set_sample: rcode = 0, sec = 33
+11-09 01:08:27.572   342  6149 I resolv  : res_cache_add_stats_sample_locked: adding sample to stats, next = 14, count = 14
+11-09 01:08:27.572   342  6149 D resolv  : res_nsend: got answer:
+11-09 01:08:27.572   342  6149 I resolv  : answer_getTTL: TTL = 300
+11-09 01:08:27.572   342  6149 I resolv  : _cache_add_p: entry 15 added (count=15)
+11-09 01:08:27.572   342  6149 I resolv  : cache_dump_mru_locked: MRU LIST (15):  15 14 3 8 2 9 13 12 11 10 7 6 5 4 1
+11-09 01:08:27.573   342  6149 D resolv  : doQuery: rcode=0, ancount=1
+11-09 01:08:27.573  4445  4495 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=19544d99-338c-419c-86f3-08cdab24159a, tags={ com.google.android.apps.messaging.shared.datamodel.workqueue.WorkQueueWorkerShim, refresh_incoming_message_notifications- } ]
+11-09 01:08:27.581  6029  6137 I hw-BpHwBinder: onLastStrongRef automatically unlinking death recipients
+11-09 01:08:27.581   487   505 I hw-BpHwBinder: onLastStrongRef automatically unlinking death recipients
+11-09 01:08:27.582  4445  6143 W DynamiteModule: Local module descriptor class for com.google.android.gms.providerinstaller.dynamite not found.
+11-09 01:08:27.583   487   505 V C2Store : in ~ComponentModule
+11-09 01:08:27.583   487   505 V C2Store : unloading dll
+11-09 01:08:27.586  1135  1150 W ProviderHelper: Unknown dynamite feature providerinstaller.dynamite
+11-09 01:08:27.595  4445  6143 I DynamiteModule: Considering local module com.google.android.gms.providerinstaller.dynamite:0 and remote module com.google.android.gms.providerinstaller.dynamite:0
+11-09 01:08:27.595  4445  6143 W ProviderInstaller: Failed to load providerinstaller module: No acceptable module found. Local version is 0 and remote version is 0.
+11-09 01:08:27.597  6029  6029 D NavigationModeController: getCurrentInteractionMode: mode=0 contextUser=0
+11-09 01:08:27.597  1135  1150 I ChimeraSrvcProxy: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl
+11-09 01:08:27.601  4445  4508 I GnpSdk  : [PhenotypeManagerImpl] Phenotype registration SUCCESS
+11-09 01:08:27.605  6029  6029 D NavigationModeController: getCurrentInteractionMode: mode=0 contextUser=0
+11-09 01:08:27.612  6029  6029 D NavigationModeController: getCurrentInteractionMode: mode=0 contextUser=0
+11-09 01:08:27.612  6029  6029 D NavigationModeController: getCurrentInteractionMode: mode=0 contextUser=0
+11-09 01:08:27.612  4445  6134 I FA      : App measurement initialized, version: 75066
+11-09 01:08:27.612  4445  6134 I FA      : To enable debug logging run: adb shell setprop log.tag.FA VERBOSE
+11-09 01:08:27.612  4445  6134 I FA      : To enable faster debug mode event logging run:
+11-09 01:08:27.612  4445  6134 I FA      :   adb shell setprop debug.firebase.analytics.app com.google.android.apps.messaging
+11-09 01:08:27.617  4445  6143 D nativeloader: classloader namespace configured for unbundled product apk. library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64:/product/lib64:/system/product/lib64
+11-09 01:08:27.619  6029  6029 D NavigationModeController: getCurrentInteractionMode: mode=0 contextUser=0
+11-09 01:08:27.623  4445  6143 I .apps.messagin: Waiting for a blocking GC ClassLinker
+11-09 01:08:27.629  6029  6029 I TetheringManager: registerTetheringEventCallback:com.android.systemui
+11-09 01:08:27.629  6029  6029 I TetheringManager: registerTetheringEventCallback caller:com.android.systemui
+11-09 01:08:27.631   547  1175 W ActivityManager: Receiver with filter android.content.IntentFilter@d9c219e already registered for pid 6029, callerPackage is com.android.systemui
+11-09 01:08:27.640  6029  6029 W AudioManager: attempt to call registerAudioRecordingCallback() on a previouslyregistered callback
+11-09 01:08:27.660  6029  6029 D StatusBar: disable<e i a s b h r c s > disable2<q i n >
+11-09 01:08:27.661   547  1175 I StatusBarManagerService: registerStatusBar bar=com.android.internal.statusbar.IStatusBar$Stub$Proxy@2c4fb98
+11-09 01:08:27.662  3616  3616 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+11-09 01:08:27.662  3616  3616 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+11-09 01:08:27.662  4445  4508 I GrowthKit: GrowthKit enabled by flag, registered to Phenotype and schedule jobs.
+11-09 01:08:27.670  4445  4487 W BugleRcsEngine: [40] alsz.g: Carrier Services Apk was not found.
+11-09 01:08:27.672  4445  6143 I .apps.messagin: WaitForGcToComplete blocked ClassLinker on Background for 48.346ms
+11-09 01:08:27.676  6029  6029 I CameraManagerGlobal: Connecting to camera service
+11-09 01:08:27.678  4445  4487 I ShortcutBadger: Checking if platform supports badge counters, attempt 1/3.
+11-09 01:08:27.678  3692  6154 W AssistantConfig: appIntegrationDataInBase64 is null
+11-09 01:08:27.681   547  1175 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10123; state: DISABLED
+11-09 01:08:27.681   547   579 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10123; state: ENABLED
+11-09 01:08:27.685  4445  4487 I ShortcutBadger: Checking if platform supports badge counters, attempt 2/3.
+11-09 01:08:27.686   343   343 D Zygote  : Forked child process 6156
+11-09 01:08:27.687  4445  6143 V NativeCrypto: Registering com/google/android/gms/org/conscrypt/NativeCrypto's 295 native methods...
+11-09 01:08:27.689   547   579 I ActivityManager: Start proc 6156:com.google.android.apps.photos/u0a123 for broadcast {com.google.android.apps.photos/com.google.android.apps.photos.actionqueue.impl.SystemReceiver}
+11-09 01:08:27.690  4445  4487 I ShortcutBadger: Checking if platform supports badge counters, attempt 3/3.
+11-09 01:08:27.695  6156  6156 W oid.apps.photo: Unexpected CPU variant for X86 using defaults: x86_64
+11-09 01:08:27.699  3692  6154 E AssistantConnector: Couldn't read whether gRPC is supported from public value
+11-09 01:08:27.699  3692  6154 E AssistantConnector: java.lang.IllegalStateException: Failed to query to AGSA.
+11-09 01:08:27.699  3692  6154 E AssistantConnector: 	at amdj.call(PG:16)
+11-09 01:08:27.699  3692  6154 E AssistantConnector: 	at aypl.call(PG:2)
+11-09 01:08:27.699  3692  6154 E AssistantConnector: 	at bcic.c(PG:1)
+11-09 01:08:27.699  3692  6154 E AssistantConnector: 	at bchf.run(PG:4)
+11-09 01:08:27.699  3692  6154 E AssistantConnector: 	at bcid.run(PG:1)
+11-09 01:08:27.699  3692  6154 E AssistantConnector: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+11-09 01:08:27.699  3692  6154 E AssistantConnector: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+11-09 01:08:27.699  3692  6154 E AssistantConnector: 	at java.lang.Thread.run(Thread.java:920)
+11-09 01:08:27.699  3692  6154 I AssistantConnector: Fallback to Maestro connector
+11-09 01:08:27.699  4445  4487 W ShortcutBadger: Badge counter seems not supported in this platform: unable to resolve intent: Intent { act=android.intent.action.BADGE_COUNT_UPDATE (has extras) }
+11-09 01:08:27.707  4445  6143 I ProviderInstaller: Installed default security provider GmsCore_OpenSSL
+11-09 01:08:27.711  6029  6029 E ThemeUtils: View class com.airbnb.lottie.LottieAnimationView is an AppCompat widget that can only be used with a Theme.AppCompat theme (or descendant).
+11-09 01:08:27.711  4445  4487 W BugleAction: Null config in BugleSharedPrefs
+11-09 01:08:27.711  4445  4487 W BugleAction: Failed to get msisdn from Bugle
+11-09 01:08:27.711  4445  4487 W BugleAction: Failed to get msisdn from RcsProfileService
+11-09 01:08:27.711  4445  4487 W BugleAction: awmw: Jibe SDK Service not available. Is the Jibe SDK service running? Did you call connect() and wait for the notification before calling an API function?
+11-09 01:08:27.711  4445  4487 W BugleAction: 	at awmp.b(PG:2)
+11-09 01:08:27.711  4445  4487 W BugleAction: 	at com.google.android.rcs.client.profile.RcsProfileService.g(PG:1)
+11-09 01:08:27.711  4445  4487 W BugleAction: 	at com.google.android.rcs.client.profile.RcsProfileService.getMsisdn(PG:1)
+11-09 01:08:27.711  4445  4487 W BugleAction: 	at utg.F(PG:12)
+11-09 01:08:27.711  4445  4487 W BugleAction: 	at mrh.call(PG:155)
+11-09 01:08:27.711  4445  4487 W BugleAction: 	at aypl.call(PG:2)
+11-09 01:08:27.711  4445  4487 W BugleAction: 	at bcfn.c(PG:1)
+11-09 01:08:27.711  4445  4487 W BugleAction: 	at bchf.run(PG:4)
+11-09 01:08:27.711  4445  4487 W BugleAction: 	at aosz.run(PG:1)
+11-09 01:08:27.711  4445  4487 W BugleAction: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+11-09 01:08:27.711  4445  4487 W BugleAction: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+11-09 01:08:27.711  4445  4487 W BugleAction: 	at aosl.run(PG:2)
+11-09 01:08:27.711  4445  4487 W BugleAction: 	at aorz.run(PG:2)
+11-09 01:08:27.711  4445  4487 W BugleAction: 	at java.lang.Thread.run(Thread.java:920)
+11-09 01:08:27.711  4445  4487 W Bugle   : SubscriptionMetadataUtils get: invalid subId = -2
+11-09 01:08:27.711   441   465 I adbd    : jdwp connection from 6156
+11-09 01:08:27.711  4445  4487 W Bugle   : SubscriptionMetadataUtils get: invalid subId = -2
+11-09 01:08:27.712  4445  4487 W Bugle   : SubscriptionMetadataUtils get: invalid subId = -2
+11-09 01:08:27.712  4445  4487 W Bugle   : SubscriptionUtilsAsOfLMR1: getSelfRawNumber: subInfo is null for subscription{id:-1}
+11-09 01:08:27.712  4445  4487 W BugleAction: No default number, returning empty msisdn
+11-09 01:08:27.713  4445  4487 W BugleAction: No default number, returning empty msisdn
+11-09 01:08:27.714  4445  4487 W Bugle   : SubscriptionMetadataUtils get: invalid subId = -2
+11-09 01:08:27.719   547  1816 D CompatibilityChangeReporter: Compat change id reported: 168419799; UID 10123; state: DISABLED
+11-09 01:08:27.719   342   376 I netd    : trafficSwapActiveStatsMap() <16.20ms>
+11-09 01:08:27.719  4445  4517 W Bugle   : Failed to check if revocation is enabled
+11-09 01:08:27.719  4445  4517 W Bugle   : awmw: Jibe SDK Service not available. Is the Jibe SDK service running? Did you call connect() and wait for the notification before calling an API function?
+11-09 01:08:27.719  4445  4517 W Bugle   : 	at awmp.b(PG:2)
+11-09 01:08:27.719  4445  4517 W Bugle   : 	at com.google.android.rcs.client.profile.RcsProfileService.getRcsConfig(PG:1)
+11-09 01:08:27.719  4445  4517 W Bugle   : 	at utg.K(PG:1)
+11-09 01:08:27.719  4445  4517 W Bugle   : 	at utg.aG(PG:1)
+11-09 01:08:27.719  4445  4517 W Bugle   : 	at utg.aa(PG:1)
+11-09 01:08:27.719  4445  4517 W Bugle   : 	at kmn.call(PG:8)
+11-09 01:08:27.719  4445  4517 W Bugle   : 	at aypl.call(PG:2)
+11-09 01:08:27.719  4445  4517 W Bugle   : 	at bcfn.c(PG:1)
+11-09 01:08:27.719  4445  4517 W Bugle   : 	at bchf.run(PG:4)
+11-09 01:08:27.719  4445  4517 W Bugle   : 	at aosz.run(PG:1)
+11-09 01:08:27.719  4445  4517 W Bugle   : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+11-09 01:08:27.719  4445  4517 W Bugle   : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+11-09 01:08:27.719  4445  4517 W Bugle   : 	at aosl.run(PG:2)
+11-09 01:08:27.719  4445  4517 W Bugle   : 	at aorz.run(PG:2)
+11-09 01:08:27.719  4445  4517 W Bugle   : 	at java.lang.Thread.run(Thread.java:920)
+11-09 01:08:27.720  3540  3562 D CompatibilityChangeReporter: Compat change id reported: 150939131; UID 10114; state: ENABLED
+11-09 01:08:27.723   342   376 I netd    : tetherGetStats() -> {[]} <1.48ms>
+11-09 01:08:27.725  6156  6156 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10123; state: ENABLED
+11-09 01:08:27.733  6156  6156 D nativeloader: classloader namespace configured for unbundled product apk. library_path=/product/app/Photos/lib/x86_64:/product/app/Photos/Photos.apk!/lib/x86_64:/product/lib64:/system/product/lib64
+11-09 01:08:27.733   342   376 I netd    : bandwidthRemoveInterfaceQuota(eth0) <1.43ms>
+11-09 01:08:27.735   342   376 I netd    : bandwidthSetInterfaceQuota(eth0, 9223372036854775807) <0.82ms>
+11-09 01:08:27.738  6029  6029 D CompatibilityChangeReporter: Compat change id reported: 170233598; UID 10134; state: DISABLED
+11-09 01:08:27.740  6156  6156 V GraphicsEnvironment: ANGLE Developer option for 'com.google.android.apps.photos' set to: 'default'
+11-09 01:08:27.740  6156  6156 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+11-09 01:08:27.741  6156  6156 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-09 01:08:27.741  6156  6156 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-09 01:08:27.742  4445  4487 W BugleRcsEngine: [40] alsz.g: Carrier Services Apk was not found.
+11-09 01:08:27.742  4445  4487 I BugleRcsEngine: [40] alsz.e: Cannot get service version because CS.apk was not found, not pre-loaded or disabled.
+11-09 01:08:27.742  4445  4487 W BugleRcsEngine: [40] alsz.e: Service with meta data key: JibeServiceApiVersions is not compatible. Service Version 1 is not supported. Supported versions: []
+11-09 01:08:27.743  4445  4487 I BugleRcsEngine: [40] alsz.c: Not using CS JibeService because it is not compatible with AM.
+11-09 01:08:27.769  6156  6156 W oid.apps.photo: Accessing hidden field Ljava/util/Collections$SynchronizedCollection;->mutex:Ljava/lang/Object; (max-target-o, reflection, denied)
+11-09 01:08:27.770  6156  6156 W oid.apps.photo: Accessing hidden method Ljava/util/Collections$SynchronizedSet;-><init>(Ljava/util/Set;Ljava/lang/Object;)V (max-target-o, reflection, denied)
+11-09 01:08:27.770  6156  6156 W oid.apps.photo: Accessing hidden method Ljava/util/Collections$SynchronizedCollection;-><init>(Ljava/util/Collection;Ljava/lang/Object;)V (max-target-o, reflection, denied)
+11-09 01:08:27.775   342   376 I netd    : trafficSwapActiveStatsMap() <34.50ms>
+11-09 01:08:27.776   342   376 I netd    : tetherGetStats() -> {[]} <0.80ms>
+11-09 01:08:27.781   342   376 I netd    : bandwidthRemoveInterfaceQuota(eth0) <0.76ms>
+11-09 01:08:27.783   342   376 I netd    : bandwidthSetInterfaceQuota(eth0, 9223372036854775807) <0.68ms>
+11-09 01:08:27.789  6029  6029 D NavigationModeController: getCurrentInteractionMode: mode=0 contextUser=0
+11-09 01:08:27.802  6029  6029 W System  : ClassLoader referenced unknown path: 
+11-09 01:08:27.805  6029  6029 D ControlsListingControllerImpl: Initializing
+11-09 01:08:27.806  6029  6093 D ControlsListingControllerImpl: Subscribing callback, service count: 0
+11-09 01:08:27.818  6029  6029 D StatusBar: mUserSetupObserver - DeviceProvisionedListener called for user 0
+11-09 01:08:27.819  6029  6029 D StatusBar: updateQsExpansionEnabled - QS Expand enabled: true
+11-09 01:08:27.819  6029  6029 D StatusBar: mUserSetupObserver - DeviceProvisionedListener called for user 0
+11-09 01:08:27.820  6029  6086 D OpenGLRenderer: profile bars disabled
+11-09 01:08:27.823  6029  6086 D OpenGLRenderer: ambientRatio = 1.50
+11-09 01:08:27.855  6029  6029 D NotifPipeline: Notif pipeline initialized
+11-09 01:08:27.872  6029  6029 V WifiManager: registerSoftApCallback: callback=com.android.systemui.statusbar.policy.HotspotControllerImpl@1da9d92, executor=android.os.HandlerExecutor@703c363
+11-09 01:08:27.874  6029  6048 V WifiManager: SoftApCallbackProxy: send InfoChanged, newInfo: SoftApInfo{bandwidth= 0, frequency= 0, wifiStandard= 0, mApInstanceIdentifier= null, mIdleShutdownTimeoutMillis= 0}
+11-09 01:08:27.874  6029  6048 V WifiManager: SoftApCallbackProxy: send InfoChanged, changedInfoList: []
+11-09 01:08:27.874  6029  6048 V WifiManager: SoftApCallbackProxy: send onConnectedClientsChanged(clients): []
+11-09 01:08:27.876  6156  6181 D CompatibilityChangeReporter: Compat change id reported: 160794467; UID 10123; state: ENABLED
+11-09 01:08:27.882  6029  6029 D NavigationModeController: getCurrentInteractionMode: mode=0 contextUser=0
+11-09 01:08:27.887  6029  6029 W DockAlignmentController: wirelessCharger is null
+11-09 01:08:27.891  6029  6029 D SystemUIBootTiming: StartServicescom.android.systemui.statusbar.phone.StatusBar took to complete: 449ms
+11-09 01:08:27.896  6029  6029 D StorageNotification: Notifying about private volume: VolumeInfo{private}:
+11-09 01:08:27.896  6029  6029 D StorageNotification:     type=PRIVATE diskId=null partGuid=null mountFlags=0 mountUserId=-10000 
+11-09 01:08:27.896  6029  6029 D StorageNotification:     state=MOUNTED 
+11-09 01:08:27.896  6029  6029 D StorageNotification:     fsType=null fsUuid=null fsLabel=null 
+11-09 01:08:27.896  6029  6029 D StorageNotification:     path=/data internalPath=null 
+11-09 01:08:27.899  6029  6029 D SystemUIBootTiming: StartServicescom.android.systemui.usb.StorageNotification took to complete: 8ms
+11-09 01:08:27.903  6029  6029 D PowerNotificationWarningsGoogleImpl: isPlugged: true | isOverheated: false | defenderEnabled: false
+11-09 01:08:27.917  6029  6029 D SystemUIBootTiming: StartServicescom.android.systemui.power.PowerUI took to complete: 18ms
+11-09 01:08:27.920  6029  6029 D SystemUIBootTiming: StartServicescom.android.systemui.media.RingtonePlayer took to complete: 2ms
+11-09 01:08:27.921   547  1173 D ConnectivityService: requestNetwork for uid/pid:10123/6156 activeRequest: null callbackRequest: 367 [NetworkRequest [ REQUEST id=368, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10123 RequestorUid: 10123 RequestorPkg: com.google.android.apps.photos] ]] callback flags: 0 priority: 2147483647
+11-09 01:08:27.921   547   663 D ConnectivityService: NetReassign [368 : null → 101]
+--------- beginning of kernel
+11-09 01:08:27.905     0     0 I binder  : 547:1173 transaction failed 29189/-22, size 0-0 line 3133
+11-09 01:08:27.923  6029  6029 D SystemUIBootTiming: StartServicescom.android.systemui.keyboard.KeyboardUI took to complete: 4ms
+11-09 01:08:27.923   547   655 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=368, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10123 RequestorUid: 10123 RequestorPkg: com.google.android.apps.photos] ]
+11-09 01:08:27.923   547   655 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=368, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10123 RequestorUid: 10123 RequestorPkg: com.google.android.apps.photos] ]
+11-09 01:08:27.923   547   655 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=368, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10123 RequestorUid: 10123 RequestorPkg: com.google.android.apps.photos] ]
+11-09 01:08:27.926  6029  6029 D SystemUIBootTiming: StartServicescom.android.systemui.shortcut.ShortcutKeyDispatcher took to complete: 2ms
+11-09 01:08:27.927   487   758 D BufferPoolAccessor2.0: evictor expired: 3, evicted: 0
+11-09 01:08:27.934  6029  6029 W AnimatedVectorDrawable: Duration for the animation is too long :483, the animation will subsample the keyframe or path data.
+11-09 01:08:27.934  6029  6029 W AnimatedVectorDrawable: Duration for the animation is too long :483, the animation will subsample the keyframe or path data.
+11-09 01:08:27.934  6029  6029 W AnimatedVectorDrawable: Duration for the animation is too long :317, the animation will subsample the keyframe or path data.
+11-09 01:08:27.934  6029  6029 W AnimatedVectorDrawable: Duration for the animation is too long :317, the animation will subsample the keyframe or path data.
+11-09 01:08:27.935  6029  6029 W AnimatedVectorDrawable: Duration for the animation is too long :483, the animation will subsample the keyframe or path data.
+11-09 01:08:27.935  6029  6029 W AnimatedVectorDrawable: Duration for the animation is too long :483, the animation will subsample the keyframe or path data.
+11-09 01:08:27.935  6029  6029 W AnimatedVectorDrawable: Duration for the animation is too long :317, the animation will subsample the keyframe or path data.
+11-09 01:08:27.936  6029  6029 W AnimatedVectorDrawable: Duration for the animation is too long :317, the animation will subsample the keyframe or path data.
+11-09 01:08:27.942  6029  6029 D SystemUIBootTiming: StartServicescom.google.android.systemui.GoogleServices took to complete: 16ms
+11-09 01:08:27.944  6029  6029 D SystemUIBootTiming: StartServicescom.android.systemui.util.leak.GarbageMonitor$Service took to complete: 2ms
+11-09 01:08:27.944  6029  6029 D SystemUIBootTiming: StartServicescom.android.systemui.LatencyTester took to complete: 0ms
+11-09 01:08:27.946  6029  6029 D SystemUIBootTiming: StartServicescom.android.systemui.globalactions.GlobalActionsComponent took to complete: 2ms
+11-09 01:08:27.948  6029  6029 D SystemUIBootTiming: StartServicescom.android.systemui.ScreenDecorations took to complete: 1ms
+11-09 01:08:27.948  6029  6047 D AuthController: onFingerprintProvidersAvailable | sensors: [ID: 0, Strength: 2, Type: 1]
+11-09 01:08:27.948  6029  6029 D SystemUIBootTiming: StartServicescom.android.systemui.biometrics.AuthController took to complete: 1ms
+11-09 01:08:27.949  6029  6029 D SystemUIBootTiming: StartServicescom.android.systemui.SliceBroadcastRelayHandler took to complete: 0ms
+11-09 01:08:27.949  6156  6156 D CompatibilityChangeReporter: Compat change id reported: 119147584; UID 10123; state: ENABLED
+11-09 01:08:27.950  6029  6029 D SystemUIBootTiming: StartServicescom.android.systemui.statusbar.notification.InstantAppNotifier took to complete: 2ms
+11-09 01:08:27.953  6029  6029 D ThemeOverlayController: Start
+11-09 01:08:27.953  6029  6029 D SystemUIBootTiming: StartServicescom.android.systemui.theme.ThemeOverlayController took to complete: 3ms
+11-09 01:08:27.955  6029  6029 D SystemUIBootTiming: StartServicescom.android.systemui.accessibility.WindowMagnification took to complete: 2ms
+11-09 01:08:27.959  6029  6029 D SystemUIBootTiming: StartServicescom.android.systemui.accessibility.SystemActions took to complete: 4ms
+11-09 01:08:27.960  6029  6029 D SystemUIBootTiming: StartServicescom.android.systemui.toast.ToastUI took to complete: 0ms
+--------- beginning of crash
+11-09 01:08:27.962  6029  6212 E AndroidRuntime: FATAL EXCEPTION: ScreenDecorations
+11-09 01:08:27.962  6029  6212 E AndroidRuntime: Process: com.android.systemui, PID: 6029
+11-09 01:08:27.962  6029  6212 E AndroidRuntime: java.lang.NullPointerException: Parameter specified as non-null is null: method kotlin.jvm.internal.Intrinsics.checkNotNullParameter, parameter bottomLeft
+11-09 01:08:27.962  6029  6212 E AndroidRuntime: 	at com.android.systemui.statusbar.events.PrivacyDotViewController.initialize(Unknown Source:22)
+11-09 01:08:27.962  6029  6212 E AndroidRuntime: 	at com.android.systemui.ScreenDecorations.setupDecorations(ScreenDecorations.java:315)
+11-09 01:08:27.962  6029  6212 E AndroidRuntime: 	at com.android.systemui.ScreenDecorations.startOnScreenDecorationsThread(ScreenDecorations.java:252)
+11-09 01:08:27.962  6029  6212 E AndroidRuntime: 	at com.android.systemui.ScreenDecorations.$r8$lambda$bRx4s-frKyGv-SmpobluoualBbQ(Unknown Source:0)
+11-09 01:08:27.962  6029  6212 E AndroidRuntime: 	at com.android.systemui.ScreenDecorations$$ExternalSyntheticLambda2.run(Unknown Source:2)
+11-09 01:08:27.962  6029  6212 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:938)
+11-09 01:08:27.962  6029  6212 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-09 01:08:27.962  6029  6212 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-09 01:08:27.962  6029  6212 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:288)
+11-09 01:08:27.962  6029  6212 E AndroidRuntime: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-09 01:08:27.965  6029  6029 D SystemUIBootTiming: StartServicescom.android.systemui.wmshell.WMShell took to complete: 6ms
+11-09 01:08:27.970   547  6217 I DropBoxManagerService: add tag=system_app_crash isTagEnabled=true flags=0x2
+11-09 01:08:27.970   547  1816 W ActivityManager: Process com.android.systemui has crashed too many times, killing! Reason: crashed quickly
+11-09 01:08:27.972  6029  6212 I Process : Sending signal. PID: 6029 SIG: 9
+11-09 01:08:27.987   487   841 D BufferPoolAccessor2.0: Destruction - bufferpool2 0x76f9fd266688 cached: 0/0M, 0/0% in use; allocs: 7, 57% recycled; transfers: 6, 50% unfetched
+11-09 01:08:27.987   487   841 D BufferPoolAccessor2.0: Destruction - bufferpool2 0x76f9fd260c58 cached: 0/0M, 0/0% in use; allocs: 16, 75% recycled; transfers: 15, 73% unfetched
+11-09 01:08:27.988   487   841 D BufferPoolAccessor2.0: Destruction - bufferpool2 0x76f9fd25d728 cached: 0/0M, 0/0% in use; allocs: 17, 82% recycled; transfers: 16, 81% unfetched
+11-09 01:08:27.988   547  1888 I ActivityManager: Process com.android.systemui (pid 6029) has died: pers PER 
+11-09 01:08:27.989   547   580 I libprocessgroup: Successfully killed process cgroup uid 10134 pid 6029 in 0ms
+11-09 01:08:27.989   547  1611 E BiometricService: Enabled callback binder died
+11-09 01:08:27.989   547  1611 W AudioService.RecordingActivityMonitor: client died
+11-09 01:08:27.990   547  1611 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(uid/pid:10134/6029, android.os.BinderProxy@bb2f73f)
+11-09 01:08:27.990   547  1415 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(uid/pid:10134/6029, android.os.BinderProxy@c42a80c)
+11-09 01:08:27.990   547  1415 D NotificationListeners: Removing active service ComponentInfo{com.android.systemui/com.android.systemui.statusbar.NotificationListener}
+11-09 01:08:27.991   547  1611 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(uid/pid:10134/6029, android.os.BinderProxy@3e23b6a)
+11-09 01:08:27.992   547   875 E LockoutResetTracker: Callback binder died: android.os.BinderProxy@191075e
+11-09 01:08:27.992   547   875 E LockoutResetTracker: Removing dead callback for: com.android.systemui
+11-09 01:08:27.992   547   663 D ConnectivityService: releasing NetworkRequest [ REQUEST id=365, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10134 RequestorUid: 10134 RequestorPkg: com.android.systemui] ] (release request)
+11-09 01:08:27.992   547  1613 W AS.AudioService: Current remote volume controller died, unregistering
+11-09 01:08:27.992   547  1613 W VolumeController: Error calling dismiss
+11-09 01:08:27.992   547  1613 W VolumeController: android.os.DeadObjectException
+11-09 01:08:27.992   547  1613 W VolumeController: 	at android.os.BinderProxy.transactNative(Native Method)
+11-09 01:08:27.992   547  1613 W VolumeController: 	at android.os.BinderProxy.transact(BinderProxy.java:571)
+11-09 01:08:27.992   547  1613 W VolumeController: 	at android.media.IVolumeController$Stub$Proxy.dismiss(IVolumeController.java:270)
+11-09 01:08:27.992   547  1613 W VolumeController: 	at com.android.server.audio.AudioService$VolumeController.postDismiss(AudioService.java:9061)
+11-09 01:08:27.992   547  1613 W VolumeController: 	at com.android.server.audio.AudioService.setVolumeController(AudioService.java:8886)
+11-09 01:08:27.992   547  1613 W VolumeController: 	at com.android.server.audio.AudioService$5.binderDied(AudioService.java:8895)
+11-09 01:08:27.992   547  1613 W VolumeController: 	at android.os.IBinder$DeathRecipient.binderDied(IBinder.java:314)
+11-09 01:08:27.992   547  1613 W VolumeController: 	at android.os.BinderProxy.sendDeathNotice(BinderProxy.java:685)
+11-09 01:08:27.992   547  1612 D DisplayAreaOrganizerController: Organizer died before sending onDisplayAreaVanished
+11-09 01:08:27.993   547  1174 I StatusBarManagerService: binder died for pkg=com.android.systemui
+11-09 01:08:27.993   547  1059 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(uid/pid:10134/6029, android.os.BinderProxy@cdd6555)
+11-09 01:08:27.996   547   663 D ConnectivityService: releasing NetworkRequest [ REQUEST id=363, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10134 RequestorUid: 10134 RequestorPkg: com.android.systemui] ] (release request)
+11-09 01:08:27.997   994   994 D TouchInteractionService: Touch service destroyed: user=0
+11-09 01:08:27.997   547  1888 W ActivityManager: Scheduling restart of crashed service com.android.systemui/.keyguard.KeyguardService in 0ms for persistent
+11-09 01:08:28.000   547  1890 I WindowManager: WIN DEATH: Window{4f03399 u0 ShellDropTarget}
+11-09 01:08:28.000   547  1890 W InputManager-JNI: Input channel object '4f03399 ShellDropTarget (client)' was disposed without first being removed with the input manager!
+11-09 01:08:28.001   547  1890 W WindowManager: Could not report config changes to the window token client.
+11-09 01:08:28.002   343   343 I Zygote  : Process 6029 exited due to signal 9 (Killed)
+11-09 01:08:28.003   547   789 I WindowManager: WIN DEATH: Window{99d9a64 u0 StatusBar}
+11-09 01:08:28.003   547   789 W InputManager-JNI: Input channel object '99d9a64 StatusBar (client)' was disposed without first being removed with the input manager!
+11-09 01:08:28.006   547  1959 I WindowManager: WIN DEATH: Window{423491b u0 NotificationShade}
+11-09 01:08:28.006   547  1959 W InputManager-JNI: Input channel object '423491b NotificationShade (client)' was disposed without first being removed with the input manager!
+11-09 01:08:28.008   547  1172 I WindowManager: WIN DEATH: Window{eb0fa6f u0 ScreenDecorOverlay}
+11-09 01:08:28.008   547  1172 W InputManager-JNI: Input channel object 'eb0fa6f ScreenDecorOverlay (client)' was disposed without first being removed with the input manager!

@@ -1,0 +1,423 @@
+--------- beginning of main
+11-11 01:02:59.236  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.specialaccess.DataSaverController
+11-11 01:02:59.237  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.specialaccess.vrlistener.EnabledVrListenersController
+11-11 01:02:59.237  1381  1661 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:02:59.237  1381  1661 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:02:59.237  1381  1661 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:02:59.238  1381  1661 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:02:59.238  1381  1661 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:02:59.238  1381  1661 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:02:59.238  1381  1659 I A       : (REDACTED) stopListening(%s, %s)
+11-11 01:02:59.239  1381  1648 I A       : (REDACTED) onActiveStateChangeEvent: %s => %s
+11-11 01:02:59.239  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.specialaccess.MoreSpecialAccessPreferenceController
+11-11 01:02:59.240  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.nfc.NfcTagAppsPreferenceController
+11-11 01:02:59.240  1381  1661 I A       : (REDACTED) setNavBarVisible: %s
+11-11 01:02:59.241  1381  1661 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:02:59.242  1381  1648 I A       : (REDACTED) #onActiveStateChangeEvent, newState: %s, previousState: %s.
+11-11 01:02:59.243  1381  1661 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:02:59.243  1381  1661 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:02:59.244  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.AutoBrightnessDetailPreferenceController
+11-11 01:02:59.244  1381  1661 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:02:59.244  1381  1661 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:02:59.244  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.location.RecentLocationAccessPreferenceController
+11-11 01:02:59.244  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.location.RecentLocationAccessSeeAllButtonPreferenceController
+11-11 01:02:59.244  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.location.LocationForWorkPreferenceController
+11-11 01:02:59.245  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.location.LocationForPrivateProfilePreferenceController
+11-11 01:02:59.246  1381  1661 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+11-11 01:02:59.246  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.location.AppLocationPermissionPreferenceController
+11-11 01:02:59.247  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.location.LocationServicesPreferenceController
+11-11 01:02:59.247  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.location.LocationSettingsFooterPreferenceController
+--------- beginning of system
+11-11 01:02:59.251   633   921 D OomAdjuster: Not killing cached processes
+11-11 01:02:59.253  1381  1661 I A       : (REDACTED) on opa visibility changed %s
+11-11 01:02:59.253  1381  1790 I A       : Initialize
+11-11 01:02:59.255  2363  3009 D nativeloader: Load /product/app/GoogleTTS/GoogleTTS.apk!/lib/x86_64/libcronet.122.0.6238.4.so using ns product-clns-7 from class loader (caller=/product/app/GoogleTTS/GoogleTTS.apk): ok
+11-11 01:02:59.255  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.SecurityAdvancedSettingsController
+11-11 01:02:59.257  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.specialaccess.premiumsms.PremiumSmsScreenPreferenceController
+11-11 01:02:59.257  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.VibrationMainSwitchPreferenceController
+11-11 01:02:59.257  1056  1081 W PrefCtrlListHelper: Cannot instantiate controller from reflection: com.android.settings.accessibility.VibrationMainSwitchPreferenceController
+11-11 01:02:59.258  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.RingVibrationIntensityPreferenceController
+11-11 01:02:59.258  1381  1790 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+11-11 01:02:59.258  1056  1081 W PrefCtrlListHelper: Cannot instantiate controller from reflection: com.android.settings.accessibility.RingVibrationIntensityPreferenceController
+11-11 01:02:59.258  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.VibrationRampingRingerTogglePreferenceController
+11-11 01:02:59.258  1056  1081 W PrefCtrlListHelper: Cannot instantiate controller from reflection: com.android.settings.accessibility.VibrationRampingRingerTogglePreferenceController
+11-11 01:02:59.258  1381  1648 I NgaEntryPointEventSendr: setupConnection
+11-11 01:02:59.259  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.NotificationVibrationIntensityPreferenceController
+11-11 01:02:59.260  1056  1081 W PrefCtrlListHelper: Cannot instantiate controller from reflection: com.android.settings.accessibility.NotificationVibrationIntensityPreferenceController
+11-11 01:02:59.260  1407  1821 W BugleRcsEngine: Unable to send provisioning snapshots log [CONTEXT thread_id=44 ]
+11-11 01:02:59.260  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AlarmVibrationIntensityPreferenceController
+11-11 01:02:59.260  1056  1081 W PrefCtrlListHelper: Cannot instantiate controller from reflection: com.android.settings.accessibility.AlarmVibrationIntensityPreferenceController
+11-11 01:02:59.260  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.accessibility.AdaptiveHapticsTogglePreferenceController
+11-11 01:02:59.261  1056  1081 W PrefCtrlListHelper: Cannot instantiate controller from reflection: com.google.android.settings.accessibility.AdaptiveHapticsTogglePreferenceController
+11-11 01:02:59.261  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.accessibility.AdaptiveVibrationPreferenceController
+11-11 01:02:59.261  1056  1081 W PrefCtrlListHelper: Cannot instantiate controller from reflection: com.google.android.settings.accessibility.AdaptiveVibrationPreferenceController
+11-11 01:02:59.262  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.HapticFeedbackIntensityPreferenceController
+11-11 01:02:59.263  1056  1081 W PrefCtrlListHelper: Cannot instantiate controller from reflection: com.android.settings.accessibility.HapticFeedbackIntensityPreferenceController
+11-11 01:02:59.263  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.MediaVibrationIntensityPreferenceController
+11-11 01:02:59.263  1056  1081 W PrefCtrlListHelper: Cannot instantiate controller from reflection: com.android.settings.accessibility.MediaVibrationIntensityPreferenceController
+11-11 01:02:59.264  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.KeyboardVibrationTogglePreferenceController
+11-11 01:02:59.264  1056  1081 W PrefCtrlListHelper: Cannot instantiate controller from reflection: com.android.settings.accessibility.KeyboardVibrationTogglePreferenceController
+11-11 01:02:59.266  1381  1661 I A       : Ignoring as prefetch was recently called
+11-11 01:02:59.267  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.telephony.MobileNetworkSwitchController
+11-11 01:02:59.268  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.telephony.DisabledSubscriptionController
+11-11 01:02:59.268  3023  3023 D CompatChangeReporter: Compat change id reported: 202956589; UID 10207; state: ENABLED
+11-11 01:02:59.269  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.telephony.CallsDefaultSubscriptionController
+11-11 01:02:59.269  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.telephony.SmsDefaultSubscriptionController
+11-11 01:02:59.269  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.telephony.MobileNetworkSpnPreferenceController
+11-11 01:02:59.269  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.telephony.MobileNetworkPhoneNumberPreferenceController
+11-11 01:02:59.269  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.telephony.DataServiceSetupPreferenceController
+11-11 01:02:59.269  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.telephony.MobileDataPreferenceController
+11-11 01:02:59.269  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.telephony.AutoDataSwitchPreferenceController
+11-11 01:02:59.270  1381  1661 I INV.SystemUI: showGestureNav
+11-11 01:02:59.270  1381  1661 I INV.SystemUI: (REDACTED) setUiHints(hints = %s)
+11-11 01:02:59.270  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.telephony.RoamingPreferenceController
+11-11 01:02:59.270  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.telephony.DataUsagePreferenceController
+11-11 01:02:59.271  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.datausage.BillingCyclePreferenceController
+11-11 01:02:59.271  1381  1648 I NgaEntryPointEventSendr: (REDACTED) State changed: %s => %s
+11-11 01:02:59.271  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.CarrierWifiTogglePreferenceController
+11-11 01:02:59.272  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.telephony.MmsMessagePreferenceController
+11-11 01:02:59.272  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.telephony.Enhanced4gLtePreferenceController
+11-11 01:02:59.272  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.telephony.Enhanced4gCallingPreferenceController
+11-11 01:02:59.272  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.telephony.Enhanced4gAdvancedCallingPreferenceController
+11-11 01:02:59.272  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.telephony.ContactDiscoveryPreferenceController
+11-11 01:02:59.273  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.telephony.PreferredNetworkModePreferenceController
+11-11 01:02:59.273  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.telephony.EnabledNetworkModePreferenceController
+11-11 01:02:59.273  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.telephony.CarrierSettingsVersionPreferenceController
+11-11 01:02:59.273  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.network.telephony.SpeedBoostPreferenceController
+11-11 01:02:59.273  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.telephony.MobileNetworkImeiPreferenceController
+11-11 01:02:59.273  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.telephony.CallingPreferenceCategoryController
+11-11 01:02:59.273  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.telephony.WifiCallingPreferenceController
+11-11 01:02:59.273  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.telephony.VideoCallingPreferenceController
+11-11 01:02:59.274  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.telephony.cdma.CdmaSystemSelectPreferenceController
+11-11 01:02:59.274  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.telephony.cdma.CdmaSubscriptionPreferenceController
+11-11 01:02:59.274  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.telephony.NetworkPreferenceCategoryController
+11-11 01:02:59.274  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.telephony.gsm.AutoSelectPreferenceController
+11-11 01:02:59.274  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.telephony.gsm.OpenNetworkSelectPagePreferenceController
+11-11 01:02:59.275  1546  2236 I A       : (REDACTED) The syncToken for corpus %s is %s.
+11-11 01:02:59.278  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.telephony.SatelliteSettingPreferenceController
+11-11 01:02:59.278  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.telephony.ApnPreferenceController
+11-11 01:02:59.279  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.telephony.CarrierPreferenceController
+11-11 01:02:59.279  3023  3023 V GraphicsEnvironment: Currently set values for:
+11-11 01:02:59.279  3023  3023 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+11-11 01:02:59.279  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.telephony.Enable2gPreferenceController
+11-11 01:02:59.279  3023  3023 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+11-11 01:02:59.279  3023  3023 V GraphicsEnvironment: Global.Settings values are invalid: number of packages: 0, number of values: 0
+11-11 01:02:59.279  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.telephony.NullAlgorithmsPreferenceController
+11-11 01:02:59.279  3023  3023 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+11-11 01:02:59.279  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.telephony.NrAdvancedCallingPreferenceController
+11-11 01:02:59.280  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.telephony.ConvertToEsimPreferenceController
+11-11 01:02:59.280  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.telephony.TransferEsimPreferenceController
+11-11 01:02:59.280  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.telephony.DeleteSimProfilePreferenceController
+11-11 01:02:59.280  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.telephony.DisableSimFooterPreferenceController
+11-11 01:02:59.280  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.telephony.NrDisabledInDsdsFooterPreferenceController
+11-11 01:02:59.281  1546  2236 D TrafficStats: tagSocket(201) with statsTag=0x0, statsUid=-1
+11-11 01:02:59.286  1381  1659 I NgaEntryPointEventSendr: onServiceConnected
+11-11 01:02:59.286  1546  1823 I A       : Calling beginBinderSession().
+11-11 01:02:59.288  1381  1648 I INV.SystemUI: setUiHints: finished successfully
+11-11 01:02:59.291  2363  3009 I cr_CronetLibraryLoader: Cronet version: 122.0.6238.4, arch: x86_64
+11-11 01:02:59.291  1546  1823 I A       : beginBinderSession(): calling binder
+11-11 01:02:59.292  1381  1661 I A       : Successfully initialized all components
+11-11 01:02:59.294  1381  1659 I NgaEntryPointEventSendr: (REDACTED) State changed: %s => %s
+11-11 01:02:59.307   633   668 D CompatChangeReporter: Compat change id reported: 151861875; UID 10101; state: ENABLED
+11-11 01:02:59.331  1407  1844 W BugleRcsEngine: Unable to send provisioning event log [CONTEXT thread_id=55 ]
+11-11 01:02:59.334  1422  1434 I gle.android.gms: Background concurrent mark compact GC freed 4741KB AllocSpace bytes, 52(2128KB) LOS objects, 49% free, 10MB/20MB, paused 8.995ms,20.546ms total 170.431ms
+11-11 01:02:59.337  1546  2234 I A       : (REDACTED) Writing metadata key: %s, corpus: %s
+11-11 01:02:59.340   420   420 D Zygote  : Forked child process 3048
+11-11 01:02:59.340   633   669 I ActivityManager: Start proc 3048:com.google.android.packageinstaller/u0a101 for broadcast {com.google.android.packageinstaller/com.android.packageinstaller.common.TemporaryFileManager}
+11-11 01:02:59.343   633   921 W ActivityManager: Unable to start service Intent { cmp=com.google.android.apps.tachyon/.clientapi.ClientApiService } U=0: not found
+11-11 01:02:59.343  1422  1436 W gle.android.gms: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/priv-app/SettingsGoogle/SettingsGoogle.apk' with 1 weak references
+11-11 01:02:59.344  1422  1436 W gle.android.gms: ApkAssets: Deleting an ApkAssets object '/product/overlay/SettingsGoogle__sdk_gphone64_x86_64__auto_generated_rro_product.apk' with 1 weak references
+11-11 01:02:59.345  1422  1584 I native  : I0000 00:00:1794339179.345105    1584 document-store.cc:1685] Scored 15 usage reports, missing_corpora 0 update_failed 6
+11-11 01:02:59.358  1546  2234 I A       : (REDACTED) Writing metadata key: %s, corpus: %s
+11-11 01:02:59.358  3048  3048 I ackageinstaller: Using CollectorTypeCMC GC.
+11-11 01:02:59.359  3048  3048 W ackageinstaller: Unexpected CPU variant for x86: x86_64.
+11-11 01:02:59.359  3048  3048 W ackageinstaller: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, goldmont-without-sha-xsaves, tremont, kabylake, default
+11-11 01:02:59.362  3048  3048 E ackageinstaller: Not starting debugger since process cannot load the jdwp agent.
+11-11 01:02:59.369  3048  3048 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+11-11 01:02:59.375  2363  3044 W chromium: [1111/010259.375101:WARNING:url_request_context_config.cc(722)] Unrecognized Cronet experimental option "enable_telemetry" with params "false
+11-11 01:02:59.375  2363  3044 W chromium: 
+11-11 01:02:59.377  1546  2237 I A       : (REDACTED) Writing metadata key: %s, corpus: %s
+11-11 01:02:59.379  1546  2000 W A       : (REDACTED) %s task was not run. Callback from Service received after client was disposed.
+11-11 01:02:59.379  1546  2000 W A       : (REDACTED) %s task was not run. Callback from Service received after client was disposed.
+11-11 01:02:59.381  1546  2237 I A       : (REDACTED) Writing metadata key: %s, corpus: %s
+11-11 01:02:59.387   633  1043 D ShortcutService: Getting shortcuts for launcher= com.google.android.asuser=0 pkg=com.google.android.deskclock
+11-11 01:02:59.387  1546  2237 I A       : (REDACTED) Writing metadata key: %s, corpus: %s
+11-11 01:02:59.391  1546  2000 W A       : (REDACTED) %s task was not run. Callback from Service received after client was disposed.
+11-11 01:02:59.395  1546  2237 I A       : (REDACTED) Writing metadata key: %s, corpus: %s
+11-11 01:02:59.398  1546  2253 I PBSessionCacheImpl: (REDACTED) Deleted sessionId[%d] from persistence.
+11-11 01:02:59.400  1381  1790 I NgaEntryPointEventSendr: (REDACTED) State changed: %s => %s (%s)
+11-11 01:02:59.404  2363  3011 I SyncWorkManagerOneTimeS: Successfully scheduled next onetime workers
+11-11 01:02:59.408  2363  2537 W WM-Processor: Didn't find WorkSpec for id WorkGenerationalId(workSpecId=b20f3e3c-464b-409e-89f6-26cb1b76c4c3, generation=0)
+11-11 01:02:59.408  1546  1546 I BgTaskExecutorImpl: (REDACTED) Starting %s background task %s.
+11-11 01:02:59.415   419  3060 I resolv  : GetAddrInfoHandler::run: {100 100 100 983140 10165 0}
+11-11 01:02:59.416   419  3061 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+11-11 01:02:59.416   419  3062 I resolv  : res_nmkquery: (QUERY, IN, A)
+11-11 01:02:59.420   419  3061 I resolv  : res_nsend: used send_dg 307 terrno: 0
+11-11 01:02:59.420   419  3062 I resolv  : res_nsend: used send_dg 295 terrno: 0
+11-11 01:02:59.421   419  3061 I resolv  : doQuery: rcode=0, ancount=1, return value=307
+11-11 01:02:59.421   419  3062 I resolv  : doQuery: rcode=0, ancount=1, return value=295
+11-11 01:02:59.424  3048  3048 D nativeloader: Configuring clns-shared-7 for other apk /system/priv-app/GooglePackageInstaller/GooglePackageInstaller.apk. target_sdk_version=35, uses_libraries=, library_path=/system/priv-app/GooglePackageInstaller/lib/x86_64:/system/lib64:/system_ext/lib64, permitted_path=/data:/mnt/expand:/data/user_de/0/com.google.android.packageinstaller:/system/priv-app/GooglePackageInstaller:/system/lib64:/system_ext/lib64
+11-11 01:02:59.424  1546  2000 W SearchServiceCore: Abort, client detached.
+11-11 01:02:59.438   633  1412 D ShortcutService: Getting shortcuts for launcher= com.google.android.asuser=0 pkg=com.google.android.deskclock
+11-11 01:02:59.439  3048  3048 D CompatChangeReporter: Compat change id reported: 202956589; UID 10101; state: ENABLED
+11-11 01:02:59.441  1546  2238 I A       : (REDACTED) Writing metadata key: %s, corpus: %s
+11-11 01:02:59.444  1546  2238 I A       : (REDACTED) Writing metadata key: %s, corpus: %s
+11-11 01:02:59.446  3048  3048 V GraphicsEnvironment: Currently set values for:
+11-11 01:02:59.446  3048  3048 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+11-11 01:02:59.447  3048  3048 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+11-11 01:02:59.447  3048  3048 V GraphicsEnvironment: Global.Settings values are invalid: number of packages: 0, number of values: 0
+11-11 01:02:59.447  3048  3048 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+11-11 01:02:59.454  1381  2925 V ClearcutMetricXmitter: Transmission is done.
+11-11 01:02:59.462  1422  1584 I Icing   : Removing corpus key com.google.android.deskclock-internal.3p:Stopwatch_cross_device for package com.google.android.deskclock
+11-11 01:02:59.477   633   668 V GrammaticalInflectionUtils: AttributionSource: AttributionSource { uid = 10132, packageName = null, attributionTag = null, token = android.os.Binder@1e6c85c, deviceId = 0, next = null } does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+11-11 01:02:59.499   420   420 D Zygote  : Forked child process 3066
+11-11 01:02:59.500   633   669 I ActivityManager: Start proc 3066:com.google.android.partnersetup/u0a132 for broadcast {com.google.android.partnersetup/com.google.android.partnersetup.BootReceiver}
+11-11 01:02:59.504  3066  3066 I id.partnersetup: Using CollectorTypeCMC GC.
+11-11 01:02:59.505  3066  3066 W id.partnersetup: Unexpected CPU variant for x86: x86_64.
+11-11 01:02:59.505  3066  3066 W id.partnersetup: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, goldmont-without-sha-xsaves, tremont, kabylake, default
+11-11 01:02:59.505  1546  1546 I BgTaskExecutorImpl: (REDACTED) Starting %s background task %s.
+11-11 01:02:59.509  3066  3066 E id.partnersetup: Not starting debugger since process cannot load the jdwp agent.
+11-11 01:02:59.512  3066  3066 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+11-11 01:02:59.520  1546  2235 I A       : (REDACTED) Attempting to cache the data for corpora %s.
+11-11 01:02:59.524  3066  3066 D CompatChangeReporter: Compat change id reported: 242716250; UID 10132; state: ENABLED
+11-11 01:02:59.532  1546  2234 I A       : (REDACTED) Writing metadata key: %s, corpus: %s
+11-11 01:02:59.537  3066  3066 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/org.apache.http.legacy.jar
+11-11 01:02:59.552  1546  2234 I A       : (REDACTED) Writing metadata key: %s, corpus: %s
+11-11 01:02:59.559   885   885 D TileServices: Couldn't find tile for ComponentInfo{com.google.android.apps.wellbeing/com.google.android.apps.wellbeing.focusmode.quicksettings.FocusModeTileService}(0)
+11-11 01:02:59.560  3066  3066 D nativeloader: InitLlndkLibrariesProduct: libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libRS.so:libandroid_net.so:libapexsupport.so:libbinder_ndk.so:libc.so:libcgrouprc.so:libclang_rt.asan-x86_64-android.so:libcom.android.tethering.connectivity_native.so:libdl.so:libft2.so:liblog.so:libm.so:libmediandk.so:libnativewindow.so:libneuralnetworks.so:libselinux.so:libsync.so:libvendorsupport.so:libvndksupport.so:libvulkan.so
+11-11 01:02:59.561  3066  3066 D nativeloader: Configuring product-clns-7 for unbundled product apk /product/priv-app/PartnerSetupPrebuilt/PartnerSetupPrebuilt.apk. target_sdk_version=34, uses_libraries=, library_path=/product/priv-app/PartnerSetupPrebuilt/lib/x86_64:/product/lib64:/system/product/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.partnersetup:/product/lib64:/system/product/lib64
+11-11 01:02:59.567   633   800 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+11-11 01:02:59.568   633   800 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+11-11 01:02:59.568   633   800 D InetDiagMessage: Destroyed live tcp sockets for uids={10111} in 5ms
+11-11 01:02:59.568   633   800 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+11-11 01:02:59.569   633   800 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+11-11 01:02:59.570   633   800 D InetDiagMessage: Destroyed live tcp sockets for uids={20111} in 2ms
+11-11 01:02:59.571  3066  3066 D nativeloader: InitVndkspLibrariesProduct: VNDK is deprecated with product
+11-11 01:02:59.572  1795  2206 W BugleRcsEngine: Unable to send RCS extension log [CONTEXT thread_id=72 ]
+11-11 01:02:59.577  2363  2554 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.tts/files/datadownload/shared/public/datadownloadfile_1793772675374_feeffe09a4f88ca77c6f3515f7e2b99cbfeb6873
+11-11 01:02:59.591  1422  1584 I native  : I0000 00:00:1794339179.591804    1584 document-store.cc:1685] Scored 15 usage reports, missing_corpora 0 update_failed 6
+11-11 01:02:59.600  1546  2235 I A       : (REDACTED) NGA Sync: MDD Task: %s done.
+11-11 01:02:59.611  1546  1546 I BgTaskExecutorImpl: (REDACTED) Starting %s background task %s.
+11-11 01:02:59.615  1283  1480 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=0eb006e7-0e99-47ba-a66b-52b3b48abc30, tags={ com.google.apps.tiktok.contrib.work.TikTokListenableWorker,task_manager_work,TikTokWorker#com.google.android.apps.wellbeing.task.Task } ]
+11-11 01:02:59.616  1546  2238 I A       : (REDACTED) NGA Sync: MDD Task: %s done.
+11-11 01:02:59.628  3066  3066 V GraphicsEnvironment: Currently set values for:
+11-11 01:02:59.629  3066  3066 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+11-11 01:02:59.629  3066  3066 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+11-11 01:02:59.629  3066  3066 V GraphicsEnvironment: Global.Settings values are invalid: number of packages: 0, number of values: 0
+11-11 01:02:59.629  3066  3066 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+11-11 01:02:59.644  1546  2090 I A       : (REDACTED) Attempting to cache the data for corpora %s.
+11-11 01:02:59.646  1546  2235 I A       : (REDACTED) NGA Sync: isNgaSyncEnabled: %s; enableFileGroupPopulator: %s; requiresMddAssets: %s
+11-11 01:02:59.720  1546  2238 I A       : (REDACTED) NGA Sync: isNgaSyncEnabled: %s; enableFileGroupPopulator: %s; requiresMddAssets: %s
+11-11 01:02:59.731  3066  3066 D CompatChangeReporter: Compat change id reported: 253665015; UID 10132; state: ENABLED
+11-11 01:02:59.731  3066  3066 W JobInfo : Job 'com.google.android.partnersetup/.PhenotypeJobService#1' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+11-11 01:02:59.738   633  1926 D CompatChangeReporter: Compat change id reported: 253665015; UID 10132; state: ENABLED
+11-11 01:02:59.738   633  1926 W JobInfo : Job 'com.google.android.partnersetup/.PhenotypeJobService#1' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+11-11 01:02:59.790  1546  1546 W TaskServiceHelper: (REDACTED) Not enough time has passed between starts of two %s periodic tasks.
+11-11 01:02:59.804   633   712 D CompatChangeReporter: Compat change id reported: 161145287; UID 10132; state: ENABLED
+11-11 01:02:59.805   633   668 V GrammaticalInflectionUtils: AttributionSource: AttributionSource { uid = 10185, packageName = null, attributionTag = null, token = android.os.Binder@1e6c85c, deviceId = 0, next = null } does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+11-11 01:02:59.805  3066  3066 W JobInfo : Job 'com.google.android.partnersetup/.ClientIdJobService#8192' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+11-11 01:02:59.807  1422  1584 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+11-11 01:02:59.808   633   712 W JobInfo : Job 'com.google.android.partnersetup/.ClientIdJobService#8192' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+11-11 01:02:59.828   419   478 I netd    : tetherGetStats() -> {[]} <1.18ms>
+11-11 01:02:59.851   968   979 W System  : A resource failed to call close. 
+11-11 01:02:59.862   420   420 D Zygote  : Forked child process 3083
+11-11 01:02:59.872   633   669 W ActivityManager: Slow operation: 62ms so far, now at startProcess: returned from zygote!
+11-11 01:02:59.872   633   669 W ActivityManager: Slow operation: 62ms so far, now at startProcess: done updating battery stats
+11-11 01:02:59.872   633   669 W ActivityManager: Slow operation: 63ms so far, now at startProcess: building log message
+11-11 01:02:59.872   633   669 I ActivityManager: Start proc 3083:com.google.android.rkpdapp/u0a185 for broadcast {com.google.android.rkpdapp/com.android.rkpdapp.BootReceiver}
+11-11 01:02:59.873   633   669 W ActivityManager: Slow operation: 63ms so far, now at startProcess: starting to update pids map
+11-11 01:02:59.896  3066  3066 W JobInfo : Job 'com.google.android.partnersetup/.AppHidingJobService#12288' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+11-11 01:02:59.896   633  1004 W JobInfo : Job 'com.google.android.partnersetup/.AppHidingJobService#12288' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+11-11 01:02:59.898   633   669 W ActivityManager: Slow operation: 88ms so far, now at startProcess: done updating pids map
+11-11 01:02:59.902  1056  1081 W Enable2gPreferenceController: Telephony manager not yet initialized
+11-11 01:02:59.910  1795  2207 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=73 ]
+11-11 01:02:59.911  1795  1805 I .apps.messaging: Background concurrent mark compact GC freed 1460KB AllocSpace bytes, 242(15MB) LOS objects, 46% free, 27MB/51MB, paused 12.551ms,19.578ms total 287.186ms
+11-11 01:02:59.912  1795  2770 I BugleRcsEngine: RequestWithImsiState: event HTTP Response [787ab7d1-c960-4f34-b950-919f10b3cbf3] [CONTEXT log_prefix="(PEv2-SM156627680-DefaultCallSmsData-1-a4f)" thread_id=105 ]
+11-11 01:02:59.924  3083  3083 I android.rkpdapp: Using CollectorTypeCMC GC.
+11-11 01:02:59.925  1056  1081 E ConvertToEsimPreference: Fail to check pSIM conversion supported carrier: Attempt to invoke virtual method 'boolean android.telephony.euicc.EuiccManager.isPsimConversionSupported(int)' on a null object reference
+11-11 01:02:59.930  3083  3083 W android.rkpdapp: Unexpected CPU variant for x86: x86_64.
+11-11 01:02:59.930  3083  3083 W android.rkpdapp: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, goldmont-without-sha-xsaves, tremont, kabylake, default
+11-11 01:02:59.931  1056  1081 E ConvertToEsimPreference: Fail to check pSIM conversion supported carrier: Attempt to invoke virtual method 'boolean android.telephony.euicc.EuiccManager.isPsimConversionSupported(int)' on a null object reference
+11-11 01:02:59.934  1795  2770 I BugleRcsEngine: InProgressState: event HTTP Response [787ab7d1-c960-4f34-b950-919f10b3cbf3] [CONTEXT log_prefix="(PEv2-SM156627680-DefaultCallSmsData-1-a4f)" thread_id=105 ]
+11-11 01:02:59.937  1056  1081 W SettingsPrefController: Skipping updateNonIndexableKeys, key already in list. com.android.settings.network.telephony.DisableSimFooterPreferenceController@eef002b
+11-11 01:02:59.937  1056  1081 W SettingsPrefController: Skipping updateNonIndexableKeys, key already in list. com.android.settings.network.telephony.NrDisabledInDsdsFooterPreferenceController@a125c88
+11-11 01:02:59.937  1056  1081 V SettingsSearchProvider: com.android.settings.display.ColorModePreferenceFragment$3@f1dda46 tried to add an empty non-indexable key
+11-11 01:02:59.938   633   793 D WifiConfigStore: Writing to stores completed in 47 ms.
+11-11 01:02:59.947  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.PickupGesturePreferenceController
+11-11 01:02:59.949  1135  1139 W .gms.persistent: Missing inline cache for void aktq.<init>(aktp)
+11-11 01:02:59.950  1135  1139 W .gms.persistent: Missing inline cache for void aktq.<init>(aktp)
+11-11 01:02:59.951  1135  1139 W .gms.persistent: Missing inline cache for void aktq.<init>(aktp)
+11-11 01:02:59.951  1135  1139 W .gms.persistent: Missing inline cache for void aktq.<init>(aktp)
+11-11 01:02:59.953  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.TopLevelNetworkEntryPreferenceController
+11-11 01:02:59.954  3083  3083 E android.rkpdapp: Not starting debugger since process cannot load the jdwp agent.
+11-11 01:02:59.956  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.communal.CommunalPreferenceController
+11-11 01:02:59.957  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.connecteddevice.TopLevelConnectedDevicesPreferenceController
+11-11 01:02:59.958  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.fuelgauge.TopLevelBatteryPreferenceController
+11-11 01:02:59.959  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.TopLevelStoragePreferenceController
+11-11 01:02:59.959  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.TopLevelDisplayPreferenceController
+11-11 01:02:59.960  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.TopLevelWallpaperPreferenceController
+11-11 01:02:59.962  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.TopLevelAccessibilityPreferenceController
+11-11 01:02:59.963  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.safetycenter.TopLevelSafetyCenterEntryPreferenceController
+11-11 01:02:59.963  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.TopLevelSecurityEntryPreferenceController
+11-11 01:02:59.964  1795  2770 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=105 ]
+11-11 01:02:59.964  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.privacy.TopLevelPrivacyEntryPreferenceController
+11-11 01:02:59.964  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.location.TopLevelLocationPreferenceController
+11-11 01:02:59.965  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accounts.TopLevelAccountEntryPreferenceController
+11-11 01:02:59.965  1795  2770 I BugleRcsEngine: RequestWithImsiState: event HTTP 503 (Unavailable) [787ab7d1-c960-4f34-b950-919f10b3cbf3] [CONTEXT log_prefix="(PEv2-SM156627680-DefaultCallSmsData-1-a4f)" thread_id=105 ]
+11-11 01:02:59.966  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.aboutphone.TopLevelAboutDevicePreferenceController
+11-11 01:02:59.966  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.support.SupportPreferenceController
+11-11 01:02:59.967  1795  2770 I BugleRcsEngine: InProgressState: event HTTP 503 (Unavailable) [787ab7d1-c960-4f34-b950-919f10b3cbf3] [CONTEXT log_prefix="(PEv2-SM156627680-DefaultCallSmsData-1-a4f)" thread_id=105 ]
+11-11 01:02:59.967  1795  2770 I BugleRcsEngine: Connection unavailable. Retry in 796 seconds [787ab7d1-c960-4f34-b950-919f10b3cbf3] [CONTEXT log_prefix="(PEv2-SM156627680-DefaultCallSmsData-1-a4f)" thread_id=105 ]
+11-11 01:02:59.969  1795  2770 I BugleRcsEngine: transitionTo: destState=ReplayRequestState [787ab7d1-c960-4f34-b950-919f10b3cbf3] [CONTEXT log_prefix="(PEv2-SM156627680-DefaultCallSmsData-1-a4f)" thread_id=105 ]
+11-11 01:02:59.969  1795  2770 I BugleRcsEngine: onTransitionRequested RequestWithImsiState [787ab7d1-c960-4f34-b950-919f10b3cbf3] [CONTEXT log_prefix="(PEv2-SM156627680-DefaultCallSmsData-1-a4f)" thread_id=105 ]
+11-11 01:02:59.970  1795  2770 I BugleRcsEngine: Exit RequestWithImsiState [787ab7d1-c960-4f34-b950-919f10b3cbf3] [CONTEXT log_prefix="(PEv2-SM156627680-DefaultCallSmsData-1-a4f)" thread_id=105 ]
+11-11 01:02:59.971  1795  2207 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=73 ]
+11-11 01:02:59.973  1795  2770 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=105 ]
+11-11 01:02:59.975  1795  2770 I BugleRcsEngine: Exit InProgressState [787ab7d1-c960-4f34-b950-919f10b3cbf3] [CONTEXT log_prefix="(PEv2-SM156627680-DefaultCallSmsData-1-a4f)" thread_id=105 ]
+11-11 01:02:59.977  3083  3083 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+11-11 01:02:59.978  1795  2770 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=105 ]
+11-11 01:02:59.979  1795  2770 I BugleRcsEngine: Enter ReplayRequestState [787ab7d1-c960-4f34-b950-919f10b3cbf3] [CONTEXT log_prefix="(PEv2-SM156627680-DefaultCallSmsData-1-a4f)" thread_id=105 ]
+11-11 01:03:00.000  1056  1081 W OemUnlockPreferenceController: oem_unlock not supported.
+11-11 01:03:00.008  1546  1546 W TaskServiceHelper: (REDACTED) Not enough time has passed between starts of two %s periodic tasks.
+11-11 01:03:00.010  1056  1081 V GraphicsEnableAngleCtrl: Value of persist.graphics.egl is: 
+11-11 01:03:00.011  1056  1081 D ForcePeakRefreshRateCtr: DEFAULT_REFRESH_RATE : 60.0 mPeakRefreshRate : 60.000004
+11-11 01:03:00.015  1795  2770 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=105 ]
+11-11 01:03:00.019  1795  2770 I BugleRcsEngine: ReplayRequestState: event Retry after [787ab7d1-c960-4f34-b950-919f10b3cbf3] [CONTEXT log_prefix="(PEv2-SM156627680-DefaultCallSmsData-1-a4f)" thread_id=105 ]
+11-11 01:03:00.031  1795  2770 I BugleRcsWorker: [seqId=1][workId=6f423975-b2ea-494b-a100-3203a3f72caf] Provisioning Engine entered ReplayRequestState, request will be re-attempted in 796
+11-11 01:03:00.032  1795  2770 I BugleRcsWorker: [seqId=1][workId=6f423975-b2ea-494b-a100-3203a3f72caf] finish provisioning task with result Success {mOutputData=Data {}}
+11-11 01:03:00.032  1795  2770 I BugleRcsWorker: [seqId=1][workId=6f423975-b2ea-494b-a100-3203a3f72caf] RCS provisioning task has finished with result Success {mOutputData=Data {}}
+11-11 01:03:00.035  1795  2207 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=73 ]
+11-11 01:03:00.043  1795  1910 I BugleRcsEngine: quit [787ab7d1-c960-4f34-b950-919f10b3cbf3] [CONTEXT log_prefix="(PEv2-SM156627680-DefaultCallSmsData-1-a4f)" thread_id=47 ]
+11-11 01:03:00.067  1369  1683 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-11 01:03:00.068  1369  1683 I AiAiEcho: EchoTargets: 
+11-11 01:03:00.068  1369  1683 I AiAiEcho: Filtered by AiAi flag check: 
+11-11 01:03:00.068  1369  1683 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:03:00.068  1369  1683 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:03:00.068  1369  1683 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-11 01:03:00.069  1369  1683 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+11-11 01:03:00.069  1369  1683 I AiAiEcho: EchoTargets: 
+11-11 01:03:00.069  1369  1683 I AiAiEcho: Filtered by AiAi flag check: 
+11-11 01:03:00.069  1369  1683 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:03:00.074  1795  2770 I BugleRcsEngine: transitionTo: destState=ciru [787ab7d1-c960-4f34-b950-919f10b3cbf3] [CONTEXT log_prefix="(PEv2-SM156627680-DefaultCallSmsData-1-a4f)" thread_id=105 ]
+11-11 01:03:00.074  1795  2770 I BugleRcsEngine: Exit ReplayRequestState [787ab7d1-c960-4f34-b950-919f10b3cbf3] [CONTEXT log_prefix="(PEv2-SM156627680-DefaultCallSmsData-1-a4f)" thread_id=105 ]
+11-11 01:03:00.075  1795  2770 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=105 ]
+11-11 01:03:00.077  1369  1683 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+11-11 01:03:00.078  1795  2206 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=4b317d84-1a0b-455e-b0d3-6c3ab68f360c, tags={ com.google.android.apps.messaging.rcsprovisioning.RcsProvisioningListenableWorker,provisioning } ]
+11-11 01:03:00.078  1369  1683 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+11-11 01:03:00.078  1795  2207 I BugleRcsEngine: Scheduled provisioning task with 796 seconds delay, APPEND policy, trigger is STATE_MACHINE_REPLAY, workerId is 0180a7a8-68d7-40a4-9f2b-a8a2bda4169c, simId is redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="provisioning" thread_id=73 ]
+11-11 01:03:00.079  1369  1683 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+11-11 01:03:00.087  1795  2770 W BugleRcsEngine: onQuitting [787ab7d1-c960-4f34-b950-919f10b3cbf3] [CONTEXT log_prefix="(PEv2-SM156627680-DefaultCallSmsData-1-a4f)" thread_id=105 ]
+11-11 01:03:00.092  3066  3066 W JobInfo : Job 'com.google.android.partnersetup/.InstalledAppJobService#4096' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+11-11 01:03:00.092   633  1412 W JobInfo : Job 'com.google.android.partnersetup/.InstalledAppJobService#4096' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+11-11 01:03:00.095   885   885 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+11-11 01:03:00.096  1369  1683 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+11-11 01:03:00.099  1115  1115 D SsBaseTemplateCard: No text view can be set up
+11-11 01:03:00.099  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.spa.development.compat.PlatformCompatPreferenceController
+11-11 01:03:00.100  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.notification.ImportanceResetPreferenceController
+11-11 01:03:00.101  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.location.LocationIndicatorsPreferenceController
+11-11 01:03:00.101  1115  1115 D SsBaseTemplateCard: Passed-in item info is null
+11-11 01:03:00.102  1115  1115 D SsBaseTemplateCard: Passed-in item info is null
+11-11 01:03:00.102  1115  1115 D SsBaseTemplateCard: Passed-in item info is null
+11-11 01:03:00.102  1115  1115 I SsBaseTemplateCard: Secondary card pane is null
+11-11 01:03:00.103  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AccessibilityButtonPreviewPreferenceController
+11-11 01:03:00.104  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AccessibilityButtonLocationPreferenceController
+11-11 01:03:00.104  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AccessibilityButtonGesturePreferenceController
+11-11 01:03:00.104  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.FloatingMenuSizePreferenceController
+11-11 01:03:00.104  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.FloatingMenuFadePreferenceController
+11-11 01:03:00.105  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.FloatingMenuTransparencyPreferenceController
+11-11 01:03:00.105  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AccessibilityButtonFooterPreferenceController
+11-11 01:03:00.111  3083  3083 D CompatChangeReporter: Compat change id reported: 242716250; UID 10185; state: ENABLED
+11-11 01:03:00.127  1795  1933 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=56 ]
+11-11 01:03:00.129  1056  1081 E ScreenResolutionController: No support
+11-11 01:03:00.131  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.notification.RemoteVolumeGroupController
+11-11 01:03:00.145   885  1010 D EGL_emulation: app_time_stats: avg=1036.24ms min=42.11ms max=4024.58ms count=5
+11-11 01:03:00.147  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.sound.MediaOutputPreferenceController
+11-11 01:03:00.148  1352  1352 I DeviceModeMonitor2: DeviceModeMonitor2.calculateAndNotify():101 Device mode 'phone' from display metrics 'DisplayMetrics{density=0.0, width=1080, height=2340, scaledDensity=0.0, xdpi=382.0, ydpi=382.0}' or smallestScreenWidthDp: 452
+11-11 01:03:00.156  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.notification.CallVolumePreferenceController
+11-11 01:03:00.156  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.sound.HandsFreeProfileOutputPreferenceController
+11-11 01:03:00.159  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.notification.zen.ZenModePreferenceController
+11-11 01:03:00.159  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.notification.SpatialAudioParentPreferenceController
+11-11 01:03:00.159  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.sound.MediaControlsParentPreferenceController
+11-11 01:03:00.160  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.VibrationPreferenceController
+11-11 01:03:00.160  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.PreventRingingParentPreferenceController
+11-11 01:03:00.160  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.notification.ClearCallingPreferenceController
+11-11 01:03:00.161  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.notification.WorkSoundsPreferenceController
+11-11 01:03:00.165  3083  3083 D nativeloader: Configuring clns-shared-7 for other apk /apex/com.android.rkpd/priv-app/rkpdapp.google@350820300/rkpdapp.google.apk. target_sdk_version=34, uses_libraries=, library_path=/apex/com.android.rkpd/priv-app/rkpdapp.google@350820300/lib/x86_64:/system/lib64:/system_ext/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.rkpdapp:/apex/com.android.rkpd/priv-app/rkpdapp.google@350820300:/system/lib64:/system_ext/lib64
+11-11 01:03:00.166  1352  2221 I PhenotypeModule: PhenotypeModule.handlePhenotypeConfigurationUpdatesInternal():538 Latency of updating configurations from phenotype (experiment v4): 22
+11-11 01:03:00.166  1352  2221 I PhenotypeModule: PhenotypeModule.handlePhenotypeConfigurationUpdates():478 Latency of updating configurations from phenotype (ExperimentV4): 22
+11-11 01:03:00.168  1352  2221 I PhenotypeModule: PhenotypeModule.handleResult():319 fetchAndUpdate() : Success, hasFlags=true, fetchStatus=2026-11-11 01:02:48{reason=ON_CREATE, isFullFetch=true, isEmpty=false, registeredFormFactor=null, fetchedFormFactor=phone, success=true, failureMessage=null, isDelta=false, fetchedFlagsCount=1052, deletedFlagsCount=0, totalTime=11611}
+11-11 01:03:00.173  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.notification.SpatialAudioTipsButtonPreferenceController
+11-11 01:03:00.173  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.notification.SpatialAudioPreferenceController
+11-11 01:03:00.174  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.notification.SpatialAudioWiredHeadphonesController
+11-11 01:03:00.175  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.notification.BubbleNotificationIllustrationPreferenceController
+11-11 01:03:00.176  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.notification.BubbleNotificationPreferenceController
+11-11 01:03:00.176  3083  3083 D nativeloader: InitApexLibraries:
+11-11 01:03:00.176  3083  3083 D nativeloader:   com_android_adservices: libhpke_jni.so:libtflite_support_classifiers_native.so
+11-11 01:03:00.176  3083  3083 D nativeloader:   com_android_appsearch: libicing.so
+11-11 01:03:00.176  3083  3083 D nativeloader:   com_android_art: libartservice.so
+11-11 01:03:00.176  3083  3083 D nativeloader:   com_android_btservices: libbluetooth_jni.so
+11-11 01:03:00.176  3083  3083 D nativeloader:   com_android_conscrypt: libjavacrypto.so
+11-11 01:03:00.176  3083  3083 D nativeloader:   com_android_mediaprovider: libpdfclient.so
+11-11 01:03:00.176  3083  3083 D nativeloader:   com_android_nfcservices: libnfc_nci_jni.so
+11-11 01:03:00.176  3083  3083 D nativeloader:   com_android_ondevicepersonalization: libfcp_cpp_dep_jni.so:libfcp_hpke_jni.so
+11-11 01:03:00.176  3083  3083 D nativeloader:   com_android_os_statsd: libstats_jni.so
+11-11 01:03:00.176  3083  3083 D nativeloader:   com_android_tethering: libandroid_net_connectivity_com_android_net_module_util_jni.so:libcrypto.so:libframework-connectivity-jni.so:libframework-connectivity-tiramisu-jni.so:libmainlinecronet.121.0.6167.71.so:libservice-connectivity.so:libservice-thread-jni.so:libssl.so
+11-11 01:03:00.176  3083  3083 D nativeloader:   com_android_uwb: libuwb_uci_jni_rust.so
+11-11 01:03:00.176  3083  3083 D nativeloader:   com_android_virt: libvirtualizationservice_jni.so:libvirtualmachine_jni.so
+11-11 01:03:00.183  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.development.AdbDeviceNamePreferenceController
+11-11 01:03:00.184  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.development.AdbQrCodePreferenceController
+11-11 01:03:00.185  1056  1081 V SettingsSearchProvider: com.android.settings.development.WirelessDebuggingFragment$2@9636cf7 tried to add an empty non-indexable key
+11-11 01:03:00.188  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.development.mediadrm.ForceSwSecureCryptoFallbackPreferenceController
+11-11 01:03:00.188  1056  1081 V SettingsSearchProvider: com.android.settings.development.mediadrm.MediaDrmSettingsFragment$1@f7e5dcd tried to add an empty non-indexable key
+11-11 01:03:00.193  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.biometrics.fingerprint.FingerprintsEnrolledCategoryPreferenceController
+11-11 01:03:00.193  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.biometrics.fingerprint.FingerprintUnlockCategoryController
+11-11 01:03:00.193  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.biometrics.fingerprint.FingerprintSettingsRequireScreenOnToAuthPreferenceController
+11-11 01:03:00.194  1056  1081 W PrefCtrlListHelper: security_settings_fingerprints_enrolled already has a controller
+11-11 01:03:00.202  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.bluetooth.BluetoothAutoOnPreferenceController
+11-11 01:03:00.203  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.bluetooth.BluetoothDeviceRenamePreferenceController
+11-11 01:03:00.204  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.connecteddevice.AddDevicePreferenceController
+11-11 01:03:00.206  1056  1081 I BluetoothAutoOnPrefCtlr: getAvailabilityStatus() isSupported: false
+11-11 01:03:00.210  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.inputmethod.ModifierKeysPreferenceController
+11-11 01:03:00.211  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.inputmethod.ModifierKeysRestorePreferenceController
+11-11 01:03:00.212  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.nfc.NfcForegroundPreferenceController
+11-11 01:03:00.213  1056  1081 V SettingsSearchProvider: com.android.settings.nfc.PaymentSettings$1@ae31e65 tried to add an empty non-indexable key
+11-11 01:03:00.213  1056  1081 V SettingsSearchProvider: com.android.settings.accessibility.ToggleReduceBrightColorsPreferenceFragment$1@1364feb tried to add an empty non-indexable key
+11-11 01:03:00.214  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.specialaccess.DataSaverController
+11-11 01:03:00.218  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.fuelgauge.adaptivecharging.AdaptiveChargingMainSwitchPreferenceController
+11-11 01:03:00.218  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.fuelgauge.adaptivecharging.AdaptiveChargingFooterPreferenceController
+11-11 01:03:00.219  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.specialaccess.deviceadmin.DeviceAdminListPreferenceController
+11-11 01:03:00.223  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.storage.StorageSelectionPreferenceController
+11-11 01:03:00.223  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.storage.StorageUsageProgressBarPreferenceController
+11-11 01:03:00.223  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.storage.AutomaticStorageManagementSwitchPreferenceController
+11-11 01:03:00.225  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.storage.ManageStoragePreferenceController
+11-11 01:03:00.226  1056  1081 W SettingsPrefController: Skipping updateNonIndexableKeys, key already in list. com.android.settings.deviceinfo.storage.StorageSelectionPreferenceController@54d2392
+11-11 01:03:00.226  1056  1081 W SettingsPrefController: Skipping updateNonIndexableKeys, key already in list. com.android.settings.deviceinfo.storage.StorageUsageProgressBarPreferenceController@79ad163
+11-11 01:03:00.227  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.CaptioningTogglePreferenceController
+11-11 01:03:00.227  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.CaptioningAppearancePreferenceController
+11-11 01:03:00.228  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.CaptioningFooterPreferenceController
+11-11 01:03:00.228  1056  1081 D BatterySettingsFeatureProviderGoogleImpl: isBatteryInfoEnabled = false
+11-11 01:03:00.229  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.batteryinfo.BatteryManufactureDatePreferenceController
+11-11 01:03:00.232  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.batteryinfo.BatteryFirstUseDatePreferenceController
+11-11 01:03:00.233  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.batteryinfo.BatteryCycleCountPreferenceController
+11-11 01:03:00.234  1056  1081 V SettingsSearchProvider: com.android.settings.deviceinfo.batteryinfo.BatteryInfoFragment$1@7df20bf tried to add an empty non-indexable key
+11-11 01:03:00.238  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.backup.BackupDataPreferenceController
+11-11 01:03:00.239  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.backup.ConfigureAccountPreferenceController
+11-11 01:03:00.239  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.backup.DataManagementPreferenceController
+11-11 01:03:00.241  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.backup.AutoRestorePreferenceController
+--------- beginning of kernel
+11-11 01:03:00.216     0     0 I logd    : logdr: UID=2000 GID=2000 PID=3109 n tail=400 logMask=99 pid=0 start=0ns deadline=0ns
+11-11 01:03:00.242  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.backup.BackupInactivePreferenceController
+11-11 01:03:00.242  1056  1081 V SettingsSearchProvider: com.android.settings.backup.PrivacySettings$1@ef16ad5 tried to add an empty non-indexable key
+11-11 01:03:00.251  1056  1081 V SettingsSearchProvider: com.android.settings.enterprise.EnterprisePrivacySettings$1@3ef09db tried to add an empty non-indexable key
+11-11 01:03:00.252  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.specialaccess.vrlistener.VrListenerScreenPreferenceController
+11-11 01:03:00.252  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AccessibilityTimeoutController
+11-11 01:03:00.252  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AccessibilityTimeoutController
+11-11 01:03:00.253  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AccessibilityTimeoutController
+11-11 01:03:00.255  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AccessibilityTimeoutController
+11-11 01:03:00.255  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AccessibilityTimeoutController
+11-11 01:03:00.255  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AccessibilityControlTimeoutFooterPreferenceController
+11-11 01:03:00.255  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.SystemNavigationPreferenceController
+11-11 01:03:00.256  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.OneHandedEnablePreferenceController
+11-11 01:03:00.256  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.PowerButtonEndsCallPreferenceController
+11-11 01:03:00.257  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.LockScreenRotationPreferenceController
+11-11 01:03:00.257  1056  1081 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.DeviceStateAutoRotateOverviewController

@@ -1,0 +1,500 @@
+--------- beginning of system
+11-10 01:27:59.804   556  1769 E LockoutResetTracker: Removing dead callback for: com.android.systemui
+11-10 01:27:59.805   556   573 E BiometricService: Enabled callback binder died
+--------- beginning of main
+11-10 01:27:59.805   556   868 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(uid/pid:10095/26562, android.os.BinderProxy@63a6e64)
+11-10 01:27:59.806   556   862 I StatusBarManagerService: binder died for pkg=com.android.systemui
+11-10 01:27:59.806   363   363 I Zygote  : Process 26562 exited due to signal 9 (Killed)
+11-10 01:27:59.806   556  1119 W AS.AudioService: Current remote volume controller died, unregistering
+11-10 01:27:59.806   556  1895 D DisplayAreaOrganizerController: Organizer died before sending onDisplayAreaVanished
+11-10 01:27:59.806   556  1959 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(uid/pid:10095/26562, android.os.BinderProxy@9dba8cd)
+11-10 01:27:59.806   556  1770 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(uid/pid:10095/26562, android.os.BinderProxy@b838582)
+11-10 01:27:59.807   556  1704 W AudioService.RecordingActivityMonitor: client died
+11-10 01:27:59.807   556   675 D ConnectivityService: releasing NetworkRequest [ REQUEST id=2397, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10095 RequestorUid: 10095 RequestorPkg: com.android.systemui] ] (release request)
+11-10 01:27:59.807   556  1958 D NotificationListeners: Removing active service ComponentInfo{com.android.systemui/com.android.systemui.statusbar.NotificationListener}
+11-10 01:27:59.807   556   675 D ConnectivityService: releasing NetworkRequest [ REQUEST id=2395, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10095 RequestorUid: 10095 RequestorPkg: com.android.systemui] ] (release request)
+11-10 01:27:59.807   556  1119 W VolumeController: Error calling dismiss
+11-10 01:27:59.807   556  1119 W VolumeController: android.os.DeadObjectException
+11-10 01:27:59.807   556  1119 W VolumeController: 	at android.os.BinderProxy.transactNative(Native Method)
+11-10 01:27:59.807   556  1119 W VolumeController: 	at android.os.BinderProxy.transact(BinderProxy.java:571)
+11-10 01:27:59.807   556  1119 W VolumeController: 	at android.media.IVolumeController$Stub$Proxy.dismiss(IVolumeController.java:270)
+11-10 01:27:59.807   556  1119 W VolumeController: 	at com.android.server.audio.AudioService$VolumeController.postDismiss(AudioService.java:9061)
+11-10 01:27:59.807   556  1119 W VolumeController: 	at com.android.server.audio.AudioService.setVolumeController(AudioService.java:8886)
+11-10 01:27:59.807   556  1119 W VolumeController: 	at com.android.server.audio.AudioService$5.binderDied(AudioService.java:8895)
+11-10 01:27:59.807   556  1119 W VolumeController: 	at android.os.IBinder$DeathRecipient.binderDied(IBinder.java:314)
+11-10 01:27:59.807   556  1119 W VolumeController: 	at android.os.BinderProxy.sendDeathNotice(BinderProxy.java:685)
+11-10 01:27:59.807   556  1832 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(uid/pid:10095/26562, android.os.BinderProxy@e39a493)
+11-10 01:27:59.809   556  1224 I WindowManager: WIN DEATH: Window{763a3f1 u0 NotificationShade}
+11-10 01:27:59.809   556  1224 W InputManager-JNI: Input channel object '763a3f1 NotificationShade (client)' was disposed without first being removed with the input manager!
+11-10 01:27:59.810  1047  1047 D TouchInteractionService: Touch service destroyed: user=0
+11-10 01:27:59.810   384   426 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+11-10 01:27:59.811   556   572 W WindowManager: Cannot find window which accessibility connection is added to
+11-10 01:27:59.811   556  1224 W InputManager-JNI: Input channel object 'recents_animation_input_consumer (client)' was disposed without first being removed with the input manager!
+11-10 01:27:59.811   556   617 W ActivityManager: Scheduling restart of crashed service com.android.systemui/.keyguard.KeyguardService in 0ms for persistent
+11-10 01:27:59.811   556   617 W ActivityManager: Scheduling restart of crashed service com.android.systemui/.SystemUIService in 0ms for persistent
+11-10 01:27:59.813   556   844 I WindowManager: WIN DEATH: Window{f932a6e u0 ScreenDecorOverlay}
+11-10 01:27:59.813   556   844 W InputManager-JNI: Input channel object 'f932a6e ScreenDecorOverlay (client)' was disposed without first being removed with the input manager!
+11-10 01:27:59.814   556   573 I WindowManager: WIN DEATH: Window{c156f62 u0 StatusBar}
+11-10 01:27:59.814   556   573 W InputManager-JNI: Input channel object 'c156f62 StatusBar (client)' was disposed without first being removed with the input manager!
+11-10 01:27:59.815   556   617 W ActivityManager: Scheduling restart of crashed service com.android.systemui/.dump.SystemUIAuxiliaryDumpService in 0ms for persistent
+11-10 01:27:59.815   556  1574 W WindowManager: Cannot find window which accessibility connection is added to
+11-10 01:27:59.815   556   617 W ActivityManager: Scheduling restart of crashed service com.android.systemui/.ImageWallpaper in 0ms for persistent
+11-10 01:27:59.815   556  1572 W WindowManager: Cannot find window which accessibility connection is added to
+11-10 01:27:59.816   556   617 W ActivityManager: Re-adding persistent process ProcessRecord{175ca83 26562:com.android.systemui/u0a95}
+11-10 01:27:59.817   556   617 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10095; state: DISABLED
+11-10 01:27:59.817   556   617 D CompatibilityChangeReporter: Compat change id reported: 177438394; UID 10095; state: DISABLED
+11-10 01:27:59.817   556   617 D CompatibilityChangeReporter: Compat change id reported: 135772972; UID 10095; state: DISABLED
+11-10 01:27:59.818   556   617 D CompatibilityChangeReporter: Compat change id reported: 135754954; UID 10095; state: ENABLED
+11-10 01:27:59.818   556   587 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10095; state: ENABLED
+11-10 01:27:59.821   556   578 W ActivityManager: setHasOverlayUi called on unknown pid: 26562
+11-10 01:27:59.823   363   363 D Zygote  : Forked child process 26624
+11-10 01:27:59.823   556   587 I ActivityManager: Start proc 26624:com.android.systemui/u0a95 for restart com.android.systemui
+11-10 01:27:59.826 26624 26624 W ndroid.systemu: Unexpected CPU variant for X86 using defaults: x86_64
+11-10 01:27:59.828   384   426 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+11-10 01:27:59.829   456   497 I adbd    : jdwp connection from 26624
+11-10 01:27:59.838 26624 26624 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10095; state: ENABLED
+11-10 01:27:59.843   384   426 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+11-10 01:27:59.845 26624 26624 V GraphicsEnvironment: ANGLE Developer option for 'com.android.systemui' set to: 'default'
+11-10 01:27:59.845 26624 26624 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+11-10 01:27:59.846 26624 26624 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-10 01:27:59.846 26624 26624 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-10 01:27:59.846 26624 26624 V SystemUIService: SystemUIApplication constructed.
+11-10 01:27:59.852   556   588 I libprocessgroup: Successfully killed process cgroup uid 10095 pid 26562 in 47ms
+11-10 01:27:59.863 26624 26624 D CompatibilityChangeReporter: Compat change id reported: 160794467; UID 10095; state: ENABLED
+11-10 01:27:59.907 26624 26624 W OneHandedController: Device doesn't support OneHanded feature
+11-10 01:27:59.929 26624 26624 W SystemServiceRegistry: No service published for: face
+11-10 01:27:59.933   556   556 D TrustManagerService: Removing dead TrustListener.
+--------- beginning of kernel
+11-10 01:27:59.914     0     0 I binder  : 556:556 transaction failed 29189/-22, size 92-0 line 2847
+11-10 01:27:59.952 26624 26624 D MediaResumeListener: loaded resume components []
+11-10 01:27:59.954 26624 26624 D LocalBluetoothProfileManager: LocalBluetoothProfileManager construction complete
+11-10 01:27:59.954 26624 26624 D LocalBluetoothProfileManager: Adding local A2DP profile
+11-10 01:27:59.955 26624 26624 D BluetoothA2dp: Binding service...
+11-10 01:27:59.956 26624 26624 D LocalBluetoothProfileManager: Adding local HEADSET profile
+11-10 01:27:59.957 26624 26624 D LocalBluetoothProfileManager: Adding local MAP profile
+11-10 01:27:59.957 26624 26624 D BluetoothMap: Create BluetoothMap proxy object
+11-10 01:27:59.958 26624 26624 D BluetoothMap: Binding service...
+11-10 01:27:59.959 26624 26624 D LocalBluetoothProfileManager: Adding local OPP profile
+11-10 01:27:59.959 26624 26624 D LocalBluetoothProfileManager: Adding local HID_HOST profile
+11-10 01:27:59.959 26624 26624 D BluetoothHidHost: Binding service...
+11-10 01:27:59.960 26624 26624 D LocalBluetoothProfileManager: Adding local HID_DEVICE profile
+11-10 01:27:59.961 26624 26624 D BluetoothHidDevice: Binding service...
+11-10 01:27:59.962 26624 26624 D LocalBluetoothProfileManager: Adding local PAN profile
+11-10 01:27:59.962 26624 26624 D BluetoothPan: Binding service...
+11-10 01:27:59.963 26624 26624 D LocalBluetoothProfileManager: Adding local PBAP profile
+11-10 01:27:59.975 26624 26624 W AlarmManager: Unrecognized alarm listener com.android.systemui.keyguard.KeyguardSliceProvider$$ExternalSyntheticLambda0@4216e50
+11-10 01:27:59.978 26624 26624 V SystemUIService: SystemUIApplication created.
+11-10 01:27:59.978 26624 26624 D SystemUIBootTiming: DependencyInjection took to complete: 0ms
+11-10 01:27:59.978   447   455 E EGL_emulation: eglQueryContext 3100  EGL_BAD_ATTRIBUTE
+11-10 01:27:59.978   447   455 E EGL_emulation: tid 455: eglQueryContext(2160): error 0x3004 (EGL_BAD_ATTRIBUTE)
+11-10 01:27:59.979 26624 26624 I SystemUIService: Found SurfaceFlinger's GPU Priority: 0
+11-10 01:27:59.980 26624 26624 I FalsingManager: xdpi, ydpi: 260.0, 260.0
+11-10 01:27:59.980 26624 26624 I FalsingManager: width, height: 720, 1464
+11-10 01:27:59.983   556   572 W ServiceManager: Permission failure: android.permission.HIGH_SAMPLING_RATE_SENSORS from uid=10095 pid=26624
+11-10 01:27:59.992 26624 26624 D NavigationModeController: getCurrentUserContext: contextUser=0 currentUser=0
+11-10 01:27:59.992 26624 26624 D NavigationModeController: getCurrentInteractionMode: mode=0 contextUser=0
+11-10 01:27:59.992 26624 26624 D NavigationModeController: updateCurrentInteractionMode: mode=0
+11-10 01:27:59.992 26624 26624 D NavigationModeController:   contextUser=0
+11-10 01:27:59.992 26624 26624 D NavigationModeController:   assetPaths=
+11-10 01:27:59.992 26624 26624 D NavigationModeController:     <empty> and /system/framework/framework-res.apk
+11-10 01:27:59.992 26624 26624 D NavigationModeController:     /vendor/overlay/framework-res__auto_generated_rro_vendor.apk
+11-10 01:27:59.992 26624 26624 D NavigationModeController:     <empty> and /system_ext/priv-app/SystemUI/SystemUI.apk
+11-10 01:27:59.992 26624 26624 D NavigationModeController:     /product/overlay/NavigationBarMode3Button/NavigationBarMode3ButtonOverlay.apk
+11-10 01:27:59.992 26624 26624 D NavigationModeController:     /product/overlay/DisplayCutoutEmulationHole/DisplayCutoutEmulationHoleOverlay.apk
+11-10 01:27:59.992 26624 26624 D NavigationModeController: getCurrentInteractionMode: mode=0 contextUser=0
+11-10 01:27:59.993 26624 26624 V SystemUIService: Starting SystemUI services for user 0.
+11-10 01:27:59.995 26624 26624 D SystemUIBootTiming: StartServicescom.android.systemui.util.NotificationChannels took to complete: 2ms
+11-10 01:27:59.996 26624 26652 V MediaRouter: Selecting route: RouteInfo{ name=Phone, description=null, status=null, category=RouteCategory{ name=System types=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO  groupable=false }, supportedTypes=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO , presentationDisplay=null }
+11-10 01:27:59.996 26624 26652 I MediaRouter: Skip setBluetoothA2dpOn(): types=8388615, isPlaybackActive()=false, BT route=null
+11-10 01:28:00.001 26624 26624 D SystemUIBootTiming: StartServicescom.android.systemui.keyguard.KeyguardViewMediator took to complete: 6ms
+11-10 01:28:00.003 26624 26624 D NavigationModeController: getCurrentInteractionMode: mode=0 contextUser=0
+11-10 01:28:00.007 26624 26624 D SystemUIBootTiming: StartServicescom.android.systemui.recents.Recents took to complete: 5ms
+11-10 01:28:00.008 26624 26624 I vol.Events: writeEvent collection_started
+11-10 01:28:00.011 26624 26654 D MediaCodecList: codecHandlesFormat: no format, so no extra checks
+11-10 01:28:00.013  1047  1047 D TouchInteractionService: Touch service connected: user=0
+11-10 01:28:00.015 26624 26655 D MediaCodecList: codecHandlesFormat: no format, so no extra checks
+11-10 01:28:00.015 26624 26657 D CCodec  : allocate(c2.android.vorbis.decoder)
+11-10 01:28:00.017 26624 26657 I Codec2Client: Available Codec2 services: "default" "software"
+11-10 01:28:00.019 26624 26659 D CCodec  : allocate(c2.android.vorbis.decoder)
+11-10 01:28:00.019 26624 26657 I CCodec  : setting up 'default' as default (vendor) store
+11-10 01:28:00.021 26624 26659 I CCodec  : setting up 'default' as default (vendor) store
+11-10 01:28:00.024   498   526 V C2Store : in init
+11-10 01:28:00.024   498   526 V C2Store : loading dll
+11-10 01:28:00.026 26624 26657 I CCodec  : Created component [c2.android.vorbis.decoder]
+11-10 01:28:00.026 26624 26659 I CCodec  : Created component [c2.android.vorbis.decoder]
+11-10 01:28:00.026 26624 26657 D CCodecConfig: read media type: audio/vorbis
+11-10 01:28:00.028 26624 26659 D CCodecConfig: read media type: audio/vorbis
+11-10 01:28:00.031 26624 26657 D ReflectedParamUpdater: extent() != 1 for single value type: algo.buffers.max-count.values
+11-10 01:28:00.031 26624 26657 D ReflectedParamUpdater: extent() != 1 for single value type: output.subscribed-indices.values
+11-10 01:28:00.031 26624 26657 D ReflectedParamUpdater: extent() != 1 for single value type: input.buffers.allocator-ids.values
+11-10 01:28:00.031 26624 26657 D ReflectedParamUpdater: extent() != 1 for single value type: output.buffers.allocator-ids.values
+11-10 01:28:00.031 26624 26657 D ReflectedParamUpdater: extent() != 1 for single value type: algo.buffers.allocator-ids.values
+11-10 01:28:00.031 26624 26657 D ReflectedParamUpdater: extent() != 1 for single value type: output.buffers.pool-ids.values
+11-10 01:28:00.031 26624 26657 D ReflectedParamUpdater: extent() != 1 for single value type: algo.buffers.pool-ids.values
+11-10 01:28:00.033 26624 26657 I CCodecConfig: query failed after returning 7 values (BAD_INDEX)
+11-10 01:28:00.033 26624 26657 D CCodecConfig: c2 config diff is Dict {
+11-10 01:28:00.033 26624 26657 D CCodecConfig:   c2::u32 coded.bitrate.value = 64000
+11-10 01:28:00.033 26624 26657 D CCodecConfig:   c2::u32 input.buffers.max-size.value = 32768
+11-10 01:28:00.033 26624 26657 D CCodecConfig:   c2::u32 input.delay.value = 0
+11-10 01:28:00.033 26624 26657 D CCodecConfig:   string input.media-type.value = "audio/vorbis"
+11-10 01:28:00.033 26624 26657 D CCodecConfig:   string output.media-type.value = "audio/raw"
+11-10 01:28:00.033 26624 26657 D CCodecConfig:   c2::u32 raw.channel-count.value = 1
+11-10 01:28:00.033 26624 26657 D CCodecConfig:   c2::u32 raw.sample-rate.value = 48000
+11-10 01:28:00.033 26624 26657 D CCodecConfig: }
+11-10 01:28:00.033 26624 26659 D ReflectedParamUpdater: extent() != 1 for single value type: algo.buffers.max-count.values
+11-10 01:28:00.034 26624 26657 D CCodec  : [c2.android.vorbis.decoder] buffers are bound to CCodec for this session
+11-10 01:28:00.034 26624 26657 D CCodecConfig: no c2 equivalents for durationUs
+11-10 01:28:00.034 26624 26657 D CCodecConfig: no c2 equivalents for track-id
+11-10 01:28:00.034 26624 26657 D CCodecConfig: no c2 equivalents for csd-1
+11-10 01:28:00.034 26624 26657 D CCodecConfig: no c2 equivalents for channel-mask
+11-10 01:28:00.034 26624 26657 D CCodecConfig: no c2 equivalents for flags
+11-10 01:28:00.034 26624 26659 D ReflectedParamUpdater: extent() != 1 for single value type: output.subscribed-indices.values
+11-10 01:28:00.035 26624 26659 D ReflectedParamUpdater: extent() != 1 for single value type: input.buffers.allocator-ids.values
+11-10 01:28:00.036 26624 26659 D ReflectedParamUpdater: extent() != 1 for single value type: output.buffers.allocator-ids.values
+11-10 01:28:00.036 26624 26659 D ReflectedParamUpdater: extent() != 1 for single value type: algo.buffers.allocator-ids.values
+11-10 01:28:00.036 26624 26657 D CCodecConfig: c2 config diff is   c2::u32 coded.bitrate.value = 160000
+11-10 01:28:00.036 26624 26657 D CCodecConfig:   c2::u32 raw.channel-count.value = 2
+11-10 01:28:00.036 26624 26657 D CCodecConfig:   c2::u32 raw.sample-rate.value = 44100
+11-10 01:28:00.036 26624 26659 D ReflectedParamUpdater: extent() != 1 for single value type: output.buffers.pool-ids.values
+11-10 01:28:00.037 26624 26657 W Codec2Client: query -- param skipped: index = 1107298332.
+11-10 01:28:00.037 26624 26657 D CCodec  : setup formats input: AMessage(what = 0x00000000) = {
+11-10 01:28:00.037 26624 26657 D CCodec  :   int32_t bitrate = 160000
+11-10 01:28:00.037 26624 26657 D CCodec  :   int32_t channel-count = 2
+11-10 01:28:00.037 26624 26657 D CCodec  :   int32_t max-input-size = 32768
+11-10 01:28:00.037 26624 26657 D CCodec  :   string mime = "audio/vorbis"
+11-10 01:28:00.037 26624 26657 D CCodec  :   int32_t sample-rate = 44100
+11-10 01:28:00.037 26624 26657 D CCodec  : }
+11-10 01:28:00.037 26624 26657 D CCodec  : setup formats output: AMessage(what = 0x00000000) = {
+11-10 01:28:00.037 26624 26657 D CCodec  :   int32_t channel-count = 2
+11-10 01:28:00.037 26624 26657 D CCodec  :   string mime = "audio/raw"
+11-10 01:28:00.037 26624 26657 D CCodec  :   int32_t sample-rate = 44100
+11-10 01:28:00.037 26624 26657 D CCodec  :   int32_t channel-mask = 3
+11-10 01:28:00.037 26624 26657 D CCodec  : }
+11-10 01:28:00.037 26624 26659 D ReflectedParamUpdater: extent() != 1 for single value type: algo.buffers.pool-ids.values
+11-10 01:28:00.038 26624 26657 I CCodecConfig: query failed after returning 7 values (BAD_INDEX)
+11-10 01:28:00.039 26624 26657 W Codec2Client: query -- param skipped: index = 1342179345.
+11-10 01:28:00.039 26624 26657 W Codec2Client: query -- param skipped: index = 2415921170.
+11-10 01:28:00.039 26624 26656 I vol.Events: writeEvent level_changed STREAM_VOICE_CALL 3
+11-10 01:28:00.039 26624 26657 D C2Store : Using DMABUF Heaps
+11-10 01:28:00.040 26624 26659 I CCodecConfig: query failed after returning 7 values (BAD_INDEX)
+11-10 01:28:00.040 26624 26659 D CCodecConfig: c2 config diff is Dict {
+11-10 01:28:00.040 26624 26659 D CCodecConfig:   c2::u32 coded.bitrate.value = 64000
+11-10 01:28:00.040 26624 26659 D CCodecConfig:   c2::u32 input.buffers.max-size.value = 32768
+11-10 01:28:00.040 26624 26659 D CCodecConfig:   c2::u32 input.delay.value = 0
+11-10 01:28:00.040 26624 26659 D CCodecConfig:   string input.media-type.value = "audio/vorbis"
+11-10 01:28:00.040 26624 26659 D CCodecConfig:   string output.media-type.value = "audio/raw"
+11-10 01:28:00.040 26624 26659 D CCodecConfig:   c2::u32 raw.channel-count.value = 1
+11-10 01:28:00.040 26624 26659 D CCodecConfig:   c2::u32 raw.sample-rate.value = 48000
+11-10 01:28:00.040 26624 26659 D CCodecConfig: }
+11-10 01:28:00.040 26624 26659 D CCodec  : [c2.android.vorbis.decoder] buffers are bound to CCodec for this session
+11-10 01:28:00.040 26624 26659 D CCodecConfig: no c2 equivalents for durationUs
+11-10 01:28:00.040 26624 26659 D CCodecConfig: no c2 equivalents for track-id
+11-10 01:28:00.040 26624 26659 D CCodecConfig: no c2 equivalents for csd-1
+11-10 01:28:00.040 26624 26659 D CCodecConfig: no c2 equivalents for channel-mask
+11-10 01:28:00.040 26624 26659 D CCodecConfig: no c2 equivalents for flags
+11-10 01:28:00.041 26624 26657 D CCodecBufferChannel: [c2.android.vorbis.decoder#102] Created input block pool with allocatorID 16 => poolID 17 - OK (0)
+11-10 01:28:00.041 26624 26659 D CCodecConfig: c2 config diff is   c2::u32 coded.bitrate.value = 160000
+11-10 01:28:00.041 26624 26659 D CCodecConfig:   c2::u32 raw.channel-count.value = 2
+11-10 01:28:00.041 26624 26659 D CCodecConfig:   c2::u32 raw.sample-rate.value = 44100
+11-10 01:28:00.041 26624 26657 I CCodecBufferChannel: [c2.android.vorbis.decoder#102] Created output block pool with allocatorID 16 => poolID 1205 - OK
+11-10 01:28:00.042 26624 26659 W Codec2Client: query -- param skipped: index = 1107298332.
+11-10 01:28:00.042 26624 26659 D CCodec  : setup formats input: AMessage(what = 0x00000000) = {
+11-10 01:28:00.042 26624 26659 D CCodec  :   int32_t bitrate = 160000
+11-10 01:28:00.042 26624 26659 D CCodec  :   int32_t channel-count = 2
+11-10 01:28:00.042 26624 26659 D CCodec  :   int32_t max-input-size = 32768
+11-10 01:28:00.042 26624 26659 D CCodec  :   string mime = "audio/vorbis"
+11-10 01:28:00.042 26624 26659 D CCodec  :   int32_t sample-rate = 44100
+11-10 01:28:00.042 26624 26659 D CCodec  : }
+11-10 01:28:00.042 26624 26659 D CCodec  : setup formats output: AMessage(what = 0x00000000) = {
+11-10 01:28:00.042 26624 26659 D CCodec  :   int32_t channel-count = 2
+11-10 01:28:00.042 26624 26659 D CCodec  :   string mime = "audio/raw"
+11-10 01:28:00.042 26624 26659 D CCodec  :   int32_t sample-rate = 44100
+11-10 01:28:00.042 26624 26659 D CCodec  :   int32_t channel-mask = 3
+11-10 01:28:00.042 26624 26659 D CCodec  : }
+11-10 01:28:00.042 26624 26657 D CCodecBufferChannel: [c2.android.vorbis.decoder#102] Configured output block pool ids 1205 => OK
+11-10 01:28:00.043 26624 26659 I CCodecConfig: query failed after returning 7 values (BAD_INDEX)
+11-10 01:28:00.043 26624 26657 I DMABUFHEAPS: Using DMA-BUF heap named: system
+11-10 01:28:00.045 26624 26659 W Codec2Client: query -- param skipped: index = 1342179345.
+11-10 01:28:00.045 26624 26659 W Codec2Client: query -- param skipped: index = 2415921170.
+11-10 01:28:00.046 26624 26624 D SystemUIBootTiming: StartServicescom.android.systemui.volume.VolumeUI took to complete: 39ms
+11-10 01:28:00.046   498 26664 D SimpleC2Component: Using output block pool with poolID 1205 => got 1205 - 0
+11-10 01:28:00.046 26624 26659 D CCodecBufferChannel: [c2.android.vorbis.decoder#656] Created input block pool with allocatorID 16 => poolID 18 - OK (0)
+11-10 01:28:00.047 26624 26659 I CCodecBufferChannel: [c2.android.vorbis.decoder#656] Created output block pool with allocatorID 16 => poolID 1206 - OK
+11-10 01:28:00.048 26624 26659 D CCodecBufferChannel: [c2.android.vorbis.decoder#656] Configured output block pool ids 1206 => OK
+11-10 01:28:00.048 26624 26656 I vol.Events: writeEvent level_changed STREAM_SYSTEM 5
+11-10 01:28:00.050 26624 26656 I vol.Events: writeEvent level_changed STREAM_RING 5
+11-10 01:28:00.051 26624 26656 I vol.Events: writeEvent level_changed STREAM_MUSIC 5
+11-10 01:28:00.052 26624 26656 I vol.Events: writeEvent level_changed STREAM_ALARM 6
+11-10 01:28:00.053 26624 26656 I vol.Events: writeEvent level_changed STREAM_BLUETOOTH_SCO 7
+11-10 01:28:00.054 26624 26656 I vol.Events: writeEvent external_ringer_mode_changed unknown
+11-10 01:28:00.054 26624 26656 I vol.Events: writeEvent zen_mode_config_changed [disallowAlarms=false disallowMedia=false disallowSystem=true disallowRinger=false]
+11-10 01:28:00.057 26624 26624 D InterruptionStateProvider: heads up is enabled
+11-10 01:28:00.058 26624 26624 D NavigationModeController: getCurrentInteractionMode: mode=0 contextUser=0
+11-10 01:28:00.058 26624 26644 D BluetoothHeadset: Proxy object connected
+11-10 01:28:00.080   498 26665 D SimpleC2Component: Using output block pool with poolID 1206 => got 1206 - 0
+11-10 01:28:00.088   556   675 D ConnectivityService: NetReassign [no changes]
+11-10 01:28:00.088   556  1572 D ConnectivityService: requestNetwork for uid/pid:10095/26624 activeRequest: null callbackRequest: 2400 [NetworkRequest [ REQUEST id=2401, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10095 RequestorUid: 10095 RequestorPkg: com.android.systemui] ]] callback flags: 1 priority: 2147483647
+11-10 01:28:00.089 26624 26624 V WifiManager: registerTrafficStateCallback: callback=com.android.systemui.statusbar.policy.WifiSignalController$WifiTrafficStateCallback@c0ecd45, executor=android.os.HandlerExecutor@5610251
+11-10 01:28:00.089   556   675 D ConnectivityService: NetReassign [2401 : null → 101]
+11-10 01:28:00.090 26624 26624 V WifiManager: registerScanResultsCallback: callback=com.android.systemui.statusbar.policy.NetworkControllerImpl$5@d369c9a, executor=androidx.mediarouter.media.MediaRoute2Provider$$ExternalSyntheticLambda0@d13c9cb
+11-10 01:28:00.090   556   668 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=2401, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10095 RequestorUid: 10095 RequestorPkg: com.android.systemui] ]
+11-10 01:28:00.090   556   668 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=2401, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10095 RequestorUid: 10095 RequestorPkg: com.android.systemui] ]
+11-10 01:28:00.090   556   668 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=2401, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10095 RequestorUid: 10095 RequestorPkg: com.android.systemui] ]
+11-10 01:28:00.091   556  1572 D ConnectivityService: requestNetwork for uid/pid:10095/26624 activeRequest: null callbackRequest: 2402 [NetworkRequest [ REQUEST id=2403, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10095 RequestorUid: 10095 RequestorPkg: com.android.systemui] ]] callback flags: 1 priority: 2147483647
+11-10 01:28:00.091   556   675 D ConnectivityService: NetReassign [2403 : null → 101]
+11-10 01:28:00.093   556   668 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=2403, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10095 RequestorUid: 10095 RequestorPkg: com.android.systemui] ]
+11-10 01:28:00.093   556   668 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=2403, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10095 RequestorUid: 10095 RequestorPkg: com.android.systemui] ]
+11-10 01:28:00.093   556   668 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=2403, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10095 RequestorUid: 10095 RequestorPkg: com.android.systemui] ]
+11-10 01:28:00.093   556   675 D ConnectivityService: NetReassign [no changes]
+11-10 01:28:00.095 26624 26624 D CompatibilityChangeReporter: Compat change id reported: 171228096; UID 10095; state: ENABLED
+11-10 01:28:00.104 26624 26659 D CCodecBufferChannel: [c2.android.vorbis.decoder#656] MediaCodec discarded an unknown buffer
+11-10 01:28:00.104 26624 26659 D CCodecBufferChannel: [c2.android.vorbis.decoder#656] MediaCodec discarded an unknown buffer
+11-10 01:28:00.104 26624 26657 D CCodecBufferChannel: [c2.android.vorbis.decoder#102] MediaCodec discarded an unknown buffer
+11-10 01:28:00.105 26624 26659 D CCodecBufferChannel: [c2.android.vorbis.decoder#656] MediaCodec discarded an unknown buffer
+11-10 01:28:00.106 26624 26659 I hw-BpHwBinder: onLastStrongRef automatically unlinking death recipients
+11-10 01:28:00.107 26624 26624 D NavigationModeController: getCurrentInteractionMode: mode=0 contextUser=0
+11-10 01:28:00.107 26624 26624 D NavigationModeController: getCurrentInteractionMode: mode=0 contextUser=0
+11-10 01:28:00.109 26624 26657 I hw-BpHwBinder: onLastStrongRef automatically unlinking death recipients
+11-10 01:28:00.109   498  4056 I hw-BpHwBinder: onLastStrongRef automatically unlinking death recipients
+11-10 01:28:00.109   498  4056 V C2Store : in ~ComponentModule
+11-10 01:28:00.109   498  4056 V C2Store : unloading dll
+11-10 01:28:00.113 26624 26655 D MediaCodecList: codecHandlesFormat: no format, so no extra checks
+11-10 01:28:00.114 26624 26624 D NavigationModeController: getCurrentInteractionMode: mode=0 contextUser=0
+11-10 01:28:00.115 26624 26673 D CCodec  : allocate(c2.android.vorbis.decoder)
+11-10 01:28:00.116 26624 26673 I CCodec  : setting up 'default' as default (vendor) store
+11-10 01:28:00.116   498   859 V C2Store : in init
+11-10 01:28:00.116   498   859 V C2Store : loading dll
+11-10 01:28:00.117 26624 26673 I CCodec  : Created component [c2.android.vorbis.decoder]
+11-10 01:28:00.118 26624 26673 D CCodecConfig: read media type: audio/vorbis
+11-10 01:28:00.121 26624 26673 D ReflectedParamUpdater: extent() != 1 for single value type: algo.buffers.max-count.values
+11-10 01:28:00.122 26624 26673 D ReflectedParamUpdater: extent() != 1 for single value type: output.subscribed-indices.values
+11-10 01:28:00.122 26624 26624 I TetheringManager: registerTetheringEventCallback:com.android.systemui
+11-10 01:28:00.122 26624 26673 D ReflectedParamUpdater: extent() != 1 for single value type: input.buffers.allocator-ids.values
+11-10 01:28:00.122 26624 26673 D ReflectedParamUpdater: extent() != 1 for single value type: output.buffers.allocator-ids.values
+11-10 01:28:00.123 26624 26624 I TetheringManager: registerTetheringEventCallback caller:com.android.systemui
+11-10 01:28:00.123 26624 26673 D ReflectedParamUpdater: extent() != 1 for single value type: algo.buffers.allocator-ids.values
+11-10 01:28:00.123 26624 26673 D ReflectedParamUpdater: extent() != 1 for single value type: output.buffers.pool-ids.values
+11-10 01:28:00.124 26624 26673 D ReflectedParamUpdater: extent() != 1 for single value type: algo.buffers.pool-ids.values
+11-10 01:28:00.124   556  1572 W ActivityManager: Receiver with filter android.content.IntentFilter@b794f16 already registered for pid 26624, callerPackage is com.android.systemui
+11-10 01:28:00.125 26624 26673 I CCodecConfig: query failed after returning 7 values (BAD_INDEX)
+11-10 01:28:00.125 26624 26673 D CCodecConfig: c2 config diff is Dict {
+11-10 01:28:00.125 26624 26673 D CCodecConfig:   c2::u32 coded.bitrate.value = 64000
+11-10 01:28:00.125 26624 26673 D CCodecConfig:   c2::u32 input.buffers.max-size.value = 32768
+11-10 01:28:00.125 26624 26673 D CCodecConfig:   c2::u32 input.delay.value = 0
+11-10 01:28:00.125 26624 26673 D CCodecConfig:   string input.media-type.value = "audio/vorbis"
+11-10 01:28:00.125 26624 26673 D CCodecConfig:   string output.media-type.value = "audio/raw"
+11-10 01:28:00.125 26624 26673 D CCodecConfig:   c2::u32 raw.channel-count.value = 1
+11-10 01:28:00.125 26624 26673 D CCodecConfig:   c2::u32 raw.sample-rate.value = 48000
+11-10 01:28:00.125 26624 26673 D CCodecConfig: }
+11-10 01:28:00.125 26624 26673 D CCodec  : [c2.android.vorbis.decoder] buffers are bound to CCodec for this session
+11-10 01:28:00.126 26624 26673 D CCodecConfig: no c2 equivalents for durationUs
+11-10 01:28:00.126 26624 26673 D CCodecConfig: no c2 equivalents for track-id
+11-10 01:28:00.126 26624 26673 D CCodecConfig: no c2 equivalents for csd-1
+11-10 01:28:00.126 26624 26673 D CCodecConfig: no c2 equivalents for channel-mask
+11-10 01:28:00.126 26624 26673 D CCodecConfig: no c2 equivalents for flags
+11-10 01:28:00.127 26624 26673 D CCodecConfig: c2 config diff is   c2::u32 coded.bitrate.value = 160000
+11-10 01:28:00.127 26624 26673 D CCodecConfig:   c2::u32 raw.channel-count.value = 2
+11-10 01:28:00.128 26624 26673 W Codec2Client: query -- param skipped: index = 1107298332.
+11-10 01:28:00.128 26624 26673 D CCodec  : setup formats input: AMessage(what = 0x00000000) = {
+11-10 01:28:00.128 26624 26673 D CCodec  :   int32_t bitrate = 160000
+11-10 01:28:00.128 26624 26673 D CCodec  :   int32_t channel-count = 2
+11-10 01:28:00.128 26624 26673 D CCodec  :   int32_t max-input-size = 32768
+11-10 01:28:00.128 26624 26673 D CCodec  :   string mime = "audio/vorbis"
+11-10 01:28:00.128 26624 26673 D CCodec  :   int32_t sample-rate = 48000
+11-10 01:28:00.128 26624 26673 D CCodec  : }
+11-10 01:28:00.128 26624 26673 D CCodec  : setup formats output: AMessage(what = 0x00000000) = {
+11-10 01:28:00.128 26624 26673 D CCodec  :   int32_t channel-count = 2
+11-10 01:28:00.128 26624 26673 D CCodec  :   string mime = "audio/raw"
+11-10 01:28:00.128 26624 26673 D CCodec  :   int32_t sample-rate = 48000
+11-10 01:28:00.128 26624 26673 D CCodec  :   int32_t channel-mask = 3
+11-10 01:28:00.128 26624 26673 D CCodec  : }
+11-10 01:28:00.129 26624 26673 I CCodecConfig: query failed after returning 7 values (BAD_INDEX)
+11-10 01:28:00.130 26624 26624 W AudioManager: attempt to call registerAudioRecordingCallback() on a previouslyregistered callback
+11-10 01:28:00.130 26624 26673 W Codec2Client: query -- param skipped: index = 1342179345.
+11-10 01:28:00.131 26624 26673 W Codec2Client: query -- param skipped: index = 2415921170.
+11-10 01:28:00.131 26624 26673 D CCodecBufferChannel: [c2.android.vorbis.decoder#595] Created input block pool with allocatorID 16 => poolID 19 - OK (0)
+11-10 01:28:00.132 26624 26673 I CCodecBufferChannel: [c2.android.vorbis.decoder#595] Created output block pool with allocatorID 16 => poolID 1207 - OK
+11-10 01:28:00.132 26624 26673 D CCodecBufferChannel: [c2.android.vorbis.decoder#595] Configured output block pool ids 1207 => OK
+11-10 01:28:00.133   498 26675 D SimpleC2Component: Using output block pool with poolID 1207 => got 1207 - 0
+11-10 01:28:00.141 26624 26624 D StatusBar: disable<e i a s b h r c s > disable2<q i n >
+11-10 01:28:00.141   556   617 I StatusBarManagerService: registerStatusBar bar=com.android.internal.statusbar.IStatusBar$Stub$Proxy@de582f0
+11-10 01:28:00.147 26624 26624 I CameraManagerGlobal: Connecting to camera service
+11-10 01:28:00.148 26624 26673 D CCodecBufferChannel: [c2.android.vorbis.decoder#595] MediaCodec discarded an unknown buffer
+11-10 01:28:00.148 26624 26673 D CCodecBufferChannel: [c2.android.vorbis.decoder#595] MediaCodec discarded an unknown buffer
+11-10 01:28:00.149 26624 26673 D CCodecBufferChannel: [c2.android.vorbis.decoder#595] MediaCodec discarded an unknown buffer
+11-10 01:28:00.150 26624 26673 I hw-BpHwBinder: onLastStrongRef automatically unlinking death recipients
+11-10 01:28:00.150   498   938 I hw-BpHwBinder: onLastStrongRef automatically unlinking death recipients
+11-10 01:28:00.150   498   938 V C2Store : in ~ComponentModule
+11-10 01:28:00.151   498   938 V C2Store : unloading dll
+11-10 01:28:00.155 26624 26624 E ThemeUtils: View class com.airbnb.lottie.LottieAnimationView is an AppCompat widget that can only be used with a Theme.AppCompat theme (or descendant).
+11-10 01:28:00.159 26624 26624 D CompatibilityChangeReporter: Compat change id reported: 170233598; UID 10095; state: DISABLED
+11-10 01:28:00.180 26624 26624 D NavigationModeController: getCurrentInteractionMode: mode=0 contextUser=0
+11-10 01:28:00.188 26624 26624 W System  : ClassLoader referenced unknown path: 
+11-10 01:28:00.190 26624 26624 D ControlsListingControllerImpl: Initializing
+11-10 01:28:00.192 26624 26645 D ControlsListingControllerImpl: Subscribing callback, service count: 0
+11-10 01:28:00.207 26624 26624 D StatusBar: mUserSetupObserver - DeviceProvisionedListener called for user 0
+11-10 01:28:00.207 26624 26624 D StatusBar: updateQsExpansionEnabled - QS Expand enabled: true
+11-10 01:28:00.207 26624 26624 D StatusBar: mUserSetupObserver - DeviceProvisionedListener called for user 0
+11-10 01:28:00.209 26624 26681 D OpenGLRenderer: profile bars disabled
+11-10 01:28:00.209 26624 26681 D OpenGLRenderer: ambientRatio = 1.50
+11-10 01:28:00.218 26624 26624 D NotifPipeline: Notif pipeline initialized
+11-10 01:28:00.221 26624 26624 V WifiManager: registerSoftApCallback: callback=com.android.systemui.statusbar.policy.HotspotControllerImpl@b33a8f6, executor=android.os.HandlerExecutor@6be14f7
+11-10 01:28:00.222 26624 26644 V WifiManager: SoftApCallbackProxy: send InfoChanged, newInfo: SoftApInfo{bandwidth= 0, frequency= 0, wifiStandard= 0, mApInstanceIdentifier= null, mIdleShutdownTimeoutMillis= 0}
+11-10 01:28:00.222 26624 26644 V WifiManager: SoftApCallbackProxy: send InfoChanged, changedInfoList: []
+11-10 01:28:00.222 26624 26644 V WifiManager: SoftApCallbackProxy: send onConnectedClientsChanged(clients): []
+11-10 01:28:00.223 26624 26624 D NavigationModeController: getCurrentInteractionMode: mode=0 contextUser=0
+11-10 01:28:00.224 26624 26624 D SystemUIBootTiming: StartServicescom.android.systemui.statusbar.phone.StatusBar took to complete: 178ms
+11-10 01:28:00.227 26624 26624 D StorageNotification: Notifying about private volume: VolumeInfo{private}:
+11-10 01:28:00.227 26624 26624 D StorageNotification:     type=PRIVATE diskId=null partGuid=null mountFlags=0 mountUserId=-10000 
+11-10 01:28:00.227 26624 26624 D StorageNotification:     state=MOUNTED 
+11-10 01:28:00.227 26624 26624 D StorageNotification:     fsType=null fsUuid=null fsLabel=null 
+11-10 01:28:00.227 26624 26624 D StorageNotification:     path=/data internalPath=null 
+11-10 01:28:00.228 26624 26624 D SystemUIBootTiming: StartServicescom.android.systemui.usb.StorageNotification took to complete: 3ms
+11-10 01:28:00.233 26624 26624 D SystemUIBootTiming: StartServicescom.android.systemui.power.PowerUI took to complete: 5ms
+11-10 01:28:00.234 26624 26624 D SystemUIBootTiming: StartServicescom.android.systemui.media.RingtonePlayer took to complete: 1ms
+11-10 01:28:00.234 26624 26624 D SystemUIBootTiming: StartServicescom.android.systemui.keyboard.KeyboardUI took to complete: 0ms
+11-10 01:28:00.236 26624 26624 D SystemUIBootTiming: StartServicescom.android.systemui.shortcut.ShortcutKeyDispatcher took to complete: 2ms
+11-10 01:28:00.236 26624 26624 D SystemUIBootTiming: StartServicescom.android.systemui.VendorServices took to complete: 0ms
+11-10 01:28:00.236 26624 26624 D SystemUIBootTiming: StartServicescom.android.systemui.util.leak.GarbageMonitor$Service took to complete: 0ms
+11-10 01:28:00.236 26624 26624 D SystemUIBootTiming: StartServicescom.android.systemui.LatencyTester took to complete: 0ms
+11-10 01:28:00.237 26624 26624 D SystemUIBootTiming: StartServicescom.android.systemui.globalactions.GlobalActionsComponent took to complete: 1ms
+11-10 01:28:00.238 26624 26624 D SystemUIBootTiming: StartServicescom.android.systemui.ScreenDecorations took to complete: 1ms
+11-10 01:28:00.238 26624 26671 D AuthController: onFingerprintProvidersAvailable | sensors: [ID: 0, Strength: 2, Type: 1]
+11-10 01:28:00.239 26624 26624 D SystemUIBootTiming: StartServicescom.android.systemui.biometrics.AuthController took to complete: 0ms
+11-10 01:28:00.216     0     0 I binder  : 556:617 transaction failed 29189/-22, size 0-0 line 2847
+11-10 01:28:00.239 26624 26624 D SystemUIBootTiming: StartServicescom.android.systemui.SliceBroadcastRelayHandler took to complete: 0ms
+11-10 01:28:00.240 26624 26624 D SystemUIBootTiming: StartServicescom.android.systemui.statusbar.notification.InstantAppNotifier took to complete: 1ms
+11-10 01:28:00.242 26624 26624 D ThemeOverlayController: Start
+11-10 01:28:00.242 26624 26624 D SystemUIBootTiming: StartServicescom.android.systemui.theme.ThemeOverlayController took to complete: 2ms
+11-10 01:28:00.243 26624 26624 D SystemUIBootTiming: StartServicescom.android.systemui.accessibility.WindowMagnification took to complete: 0ms
+--------- beginning of crash
+11-10 01:28:00.245 26624 26685 E AndroidRuntime: FATAL EXCEPTION: ScreenDecorations
+11-10 01:28:00.245 26624 26685 E AndroidRuntime: Process: com.android.systemui, PID: 26624
+11-10 01:28:00.245 26624 26685 E AndroidRuntime: java.lang.NullPointerException: Parameter specified as non-null is null: method kotlin.jvm.internal.Intrinsics.checkNotNullParameter, parameter bottomLeft
+11-10 01:28:00.245 26624 26685 E AndroidRuntime: 	at com.android.systemui.statusbar.events.PrivacyDotViewController.initialize(Unknown Source:24)
+11-10 01:28:00.245 26624 26685 E AndroidRuntime: 	at com.android.systemui.ScreenDecorations.setupDecorations(ScreenDecorations.java:315)
+11-10 01:28:00.245 26624 26685 E AndroidRuntime: 	at com.android.systemui.ScreenDecorations.startOnScreenDecorationsThread(ScreenDecorations.java:252)
+11-10 01:28:00.245 26624 26685 E AndroidRuntime: 	at com.android.systemui.ScreenDecorations.$r8$lambda$bRx4s-frKyGv-SmpobluoualBbQ(Unknown Source:0)
+11-10 01:28:00.245 26624 26685 E AndroidRuntime: 	at com.android.systemui.ScreenDecorations$$ExternalSyntheticLambda2.run(Unknown Source:2)
+11-10 01:28:00.245 26624 26685 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:938)
+11-10 01:28:00.245 26624 26685 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-10 01:28:00.245 26624 26685 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-10 01:28:00.245 26624 26685 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:288)
+11-10 01:28:00.245 26624 26685 E AndroidRuntime: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-10 01:28:00.246 26624 26624 D SystemUIBootTiming: StartServicescom.android.systemui.accessibility.SystemActions took to complete: 4ms
+11-10 01:28:00.247 26624 26624 D SystemUIBootTiming: StartServicescom.android.systemui.toast.ToastUI took to complete: 1ms
+11-10 01:28:00.248   556 26686 I DropBoxManagerService: add tag=system_app_crash isTagEnabled=true flags=0x2
+11-10 01:28:00.248 26624 26624 D SystemUIBootTiming: StartServicescom.android.systemui.wmshell.WMShell took to complete: 1ms
+11-10 01:28:00.248   556   585 V RescueParty: Disabled because of manual property
+11-10 01:28:00.248   556  1572 W ActivityManager: Process com.android.systemui has crashed too many times, killing! Reason: crashed quickly
+11-10 01:28:00.249 26624 26685 I Process : Sending signal. PID: 26624 SIG: 9
+11-10 01:28:00.257   498  4056 D BufferPoolAccessor2.0: Destruction - bufferpool2 0x7736639b14f8 cached: 0/0M, 0/0% in use; allocs: 7, 86% recycled; transfers: 6, 83% unfetched
+11-10 01:28:00.257   498   527 D BufferPoolAccessor2.0: Destruction - bufferpool2 0x7736639af6e8 cached: 0/0M, 0/0% in use; allocs: 17, 82% recycled; transfers: 16, 81% unfetched
+11-10 01:28:00.257   498  4056 D BufferPoolAccessor2.0: Destruction - bufferpool2 0x7736639ab878 cached: 0/0M, 0/0% in use; allocs: 16, 75% recycled; transfers: 15, 73% unfetched
+11-10 01:28:00.257   363   363 I Zygote  : Process 26624 exited due to signal 9 (Killed)
+11-10 01:28:00.237     0     0 I binder  : undelivered TRANSACTION_COMPLETE
+11-10 01:28:00.238     0     0 I binder  : undelivered transaction 1599757, process died.
+11-10 01:28:00.239     0     0 I binder  : undelivered TRANSACTION_COMPLETE
+11-10 01:28:00.240     0     0 I binder  : undelivered transaction 1599758, process died.
+11-10 01:28:00.263   556  1573 E LockoutResetTracker: Callback binder died: android.os.BinderProxy@b59910b
+11-10 01:28:00.264   556   617 I ActivityManager: Process com.android.systemui (pid 26624) has died: pers PER 
+11-10 01:28:00.264   556   588 I libprocessgroup: Successfully killed process cgroup uid 10095 pid 26624 in 0ms
+11-10 01:28:00.264   556   844 E BiometricService: Enabled callback binder died
+11-10 01:28:00.264   556   572 W AS.AudioService: Current remote volume controller died, unregistering
+11-10 01:28:00.264   556  1770 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(uid/pid:10095/26624, android.os.BinderProxy@8d64be8)
+11-10 01:28:00.265   556  1832 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(uid/pid:10095/26624, android.os.BinderProxy@68e32e7)
+11-10 01:28:00.265   556  1573 E LockoutResetTracker: Removing dead callback for: com.android.systemui
+11-10 01:28:00.265   556   862 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(uid/pid:10095/26624, android.os.BinderProxy@3b83e94)
+11-10 01:28:00.265   556   572 W VolumeController: Error calling dismiss
+11-10 01:28:00.265   556   572 W VolumeController: android.os.DeadObjectException
+11-10 01:28:00.265   556   572 W VolumeController: 	at android.os.BinderProxy.transactNative(Native Method)
+11-10 01:28:00.265   556   572 W VolumeController: 	at android.os.BinderProxy.transact(BinderProxy.java:571)
+11-10 01:28:00.265   556   572 W VolumeController: 	at android.media.IVolumeController$Stub$Proxy.dismiss(IVolumeController.java:270)
+11-10 01:28:00.265   556   572 W VolumeController: 	at com.android.server.audio.AudioService$VolumeController.postDismiss(AudioService.java:9061)
+11-10 01:28:00.265   556   572 W VolumeController: 	at com.android.server.audio.AudioService.setVolumeController(AudioService.java:8886)
+11-10 01:28:00.265   556   572 W VolumeController: 	at com.android.server.audio.AudioService$5.binderDied(AudioService.java:8895)
+11-10 01:28:00.265   556   572 W VolumeController: 	at android.os.IBinder$DeathRecipient.binderDied(IBinder.java:314)
+11-10 01:28:00.265   556   572 W VolumeController: 	at android.os.BinderProxy.sendDeathNotice(BinderProxy.java:685)
+11-10 01:28:00.265   556  1958 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(uid/pid:10095/26624, android.os.BinderProxy@2fbed3d)
+11-10 01:28:00.265   556   675 D ConnectivityService: releasing NetworkRequest [ REQUEST id=2401, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10095 RequestorUid: 10095 RequestorPkg: com.android.systemui] ] (release request)
+11-10 01:28:00.265   556  2023 W AudioService.RecordingActivityMonitor: client died
+11-10 01:28:00.265   556  1224 D DisplayAreaOrganizerController: Organizer died before sending onDisplayAreaVanished
+11-10 01:28:00.265   556  1639 I StatusBarManagerService: binder died for pkg=com.android.systemui
+11-10 01:28:00.266   556  1119 D NotificationListeners: Removing active service ComponentInfo{com.android.systemui/com.android.systemui.statusbar.NotificationListener}
+11-10 01:28:00.266   556   675 D ConnectivityService: releasing NetworkRequest [ REQUEST id=2403, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10095 RequestorUid: 10095 RequestorPkg: com.android.systemui] ] (release request)
+11-10 01:28:00.266   556  1702 I WindowManager: WIN DEATH: Window{92836f3 u0 NotificationShade}
+11-10 01:28:00.267   556  1702 W InputManager-JNI: Input channel object '92836f3 NotificationShade (client)' was disposed without first being removed with the input manager!
+11-10 01:28:00.267   556  1959 I WindowManager: WIN DEATH: Window{9882dff u0 ScreenDecorOverlay}
+11-10 01:28:00.267   556  1959 W InputManager-JNI: Input channel object '9882dff ScreenDecorOverlay (client)' was disposed without first being removed with the input manager!
+11-10 01:28:00.268   556  1703 I WindowManager: WIN DEATH: Window{b8706dc u0 StatusBar}
+11-10 01:28:00.268   556  1703 W InputManager-JNI: Input channel object 'b8706dc StatusBar (client)' was disposed without first being removed with the input manager!
+11-10 01:28:00.270   556   617 W ActivityManager: Scheduling restart of crashed service com.android.systemui/.keyguard.KeyguardService in 0ms for persistent
+11-10 01:28:00.270  1047  1047 D TouchInteractionService: Touch service destroyed: user=0
+11-10 01:28:00.270   556   617 W ActivityManager: Scheduling restart of crashed service com.android.systemui/.SystemUIService in 0ms for persistent
+11-10 01:28:00.270   556  1959 W InputManager-JNI: Input channel object 'recents_animation_input_consumer (client)' was disposed without first being removed with the input manager!
+11-10 01:28:00.271   556   617 W ActivityManager: Scheduling restart of crashed service com.android.systemui/.dump.SystemUIAuxiliaryDumpService in 0ms for persistent
+11-10 01:28:00.271   556   617 W ActivityManager: Scheduling restart of crashed service com.android.systemui/.ImageWallpaper in 0ms for persistent
+11-10 01:28:00.271   556   617 W ActivityManager: Re-adding persistent process ProcessRecord{175ca83 26624:com.android.systemui/u0a95}
+11-10 01:28:00.272   556   617 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10095; state: DISABLED
+11-10 01:28:00.272   556   617 D CompatibilityChangeReporter: Compat change id reported: 177438394; UID 10095; state: DISABLED
+11-10 01:28:00.272   556   617 D CompatibilityChangeReporter: Compat change id reported: 135772972; UID 10095; state: DISABLED
+11-10 01:28:00.272   556   617 D CompatibilityChangeReporter: Compat change id reported: 135754954; UID 10095; state: ENABLED
+11-10 01:28:00.273   556   587 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10095; state: ENABLED
+11-10 01:28:00.274   556   578 W ActivityManager: setHasOverlayUi called on unknown pid: 26624
+11-10 01:28:00.277   384   426 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+11-10 01:28:00.278   363   363 D Zygote  : Forked child process 26687
+11-10 01:28:00.278   556   587 I ActivityManager: Start proc 26687:com.android.systemui/u0a95 for restart com.android.systemui
+11-10 01:28:00.281 26687 26687 W ndroid.systemu: Unexpected CPU variant for X86 using defaults: x86_64
+11-10 01:28:00.285   456   497 I adbd    : jdwp connection from 26687
+11-10 01:28:00.293   384   426 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+11-10 01:28:00.294 26687 26687 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10095; state: ENABLED
+11-10 01:28:00.302 26687 26687 V GraphicsEnvironment: ANGLE Developer option for 'com.android.systemui' set to: 'default'
+11-10 01:28:00.302 26687 26687 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+11-10 01:28:00.303 26687 26687 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-10 01:28:00.303 26687 26687 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-10 01:28:00.304 26687 26687 V SystemUIService: SystemUIApplication constructed.
+11-10 01:28:00.309   384   426 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+11-10 01:28:00.323 26687 26687 D CompatibilityChangeReporter: Compat change id reported: 160794467; UID 10095; state: ENABLED
+11-10 01:28:00.331   498   782 D BufferPoolAccessor2.0: evictor expired: 6, evicted: 0
+11-10 01:28:00.373 26687 26687 W OneHandedController: Device doesn't support OneHanded feature
+11-10 01:28:00.396  1047  5278 D EGL_emulation: app_time_stats: avg=199.97ms min=84.37ms max=365.54ms count=5
+11-10 01:28:00.398 26687 26687 W SystemServiceRegistry: No service published for: face
+11-10 01:28:00.404   556   556 D TrustManagerService: Removing dead TrustListener.
+11-10 01:28:00.384     0     0 I binder  : 556:556 transaction failed 29189/-22, size 92-0 line 2847
+11-10 01:28:00.422 26687 26687 D MediaResumeListener: loaded resume components []
+11-10 01:28:00.424 26687 26687 D LocalBluetoothProfileManager: LocalBluetoothProfileManager construction complete
+11-10 01:28:00.424 26687 26687 D LocalBluetoothProfileManager: Adding local A2DP profile
+11-10 01:28:00.425 26687 26687 D BluetoothA2dp: Binding service...
+11-10 01:28:00.426 26687 26687 D LocalBluetoothProfileManager: Adding local HEADSET profile
+11-10 01:28:00.427 26687 26687 D LocalBluetoothProfileManager: Adding local MAP profile
+11-10 01:28:00.428 26687 26687 D BluetoothMap: Create BluetoothMap proxy object
+11-10 01:28:00.429 26687 26687 D BluetoothMap: Binding service...
+11-10 01:28:00.430 26687 26687 D LocalBluetoothProfileManager: Adding local OPP profile
+11-10 01:28:00.430 26687 26687 D LocalBluetoothProfileManager: Adding local HID_HOST profile
+11-10 01:28:00.431 26687 26687 D BluetoothHidHost: Binding service...
+11-10 01:28:00.432 26687 26687 D LocalBluetoothProfileManager: Adding local HID_DEVICE profile
+11-10 01:28:00.432 26687 26687 D BluetoothHidDevice: Binding service...
+11-10 01:28:00.433 26687 26687 D LocalBluetoothProfileManager: Adding local PAN profile
+11-10 01:28:00.434 26687 26687 D BluetoothPan: Binding service...
+11-10 01:28:00.435 26687 26687 D LocalBluetoothProfileManager: Adding local PBAP profile
+11-10 01:28:00.451 26687 26687 W AlarmManager: Unrecognized alarm listener com.android.systemui.keyguard.KeyguardSliceProvider$$ExternalSyntheticLambda0@4216e50
+11-10 01:28:00.455 26687 26687 V SystemUIService: SystemUIApplication created.
+11-10 01:28:00.456 26687 26687 D SystemUIBootTiming: DependencyInjection took to complete: 0ms
+11-10 01:28:00.456   447   455 E EGL_emulation: eglQueryContext 3100  EGL_BAD_ATTRIBUTE
+11-10 01:28:00.456   447   455 E EGL_emulation: tid 455: eglQueryContext(2160): error 0x3004 (EGL_BAD_ATTRIBUTE)
+11-10 01:28:00.456 26687 26687 I SystemUIService: Found SurfaceFlinger's GPU Priority: 0
+11-10 01:28:00.458 26687 26687 I FalsingManager: xdpi, ydpi: 260.0, 260.0
+11-10 01:28:00.458 26687 26687 I FalsingManager: width, height: 720, 1464
+11-10 01:28:00.462   556  1959 W ServiceManager: Permission failure: android.permission.HIGH_SAMPLING_RATE_SENSORS from uid=10095 pid=26687
+11-10 01:28:00.473 26687 26687 D NavigationModeController: getCurrentUserContext: contextUser=0 currentUser=0
+11-10 01:28:00.473 26687 26687 D NavigationModeController: getCurrentInteractionMode: mode=0 contextUser=0
+11-10 01:28:00.473 26687 26687 D NavigationModeController: updateCurrentInteractionMode: mode=0
+11-10 01:28:00.473 26687 26687 D NavigationModeController:   contextUser=0
+11-10 01:28:00.473 26687 26687 D NavigationModeController:   assetPaths=
+11-10 01:28:00.473 26687 26687 D NavigationModeController:     <empty> and /system/framework/framework-res.apk
+11-10 01:28:00.473 26687 26687 D NavigationModeController:     /vendor/overlay/framework-res__auto_generated_rro_vendor.apk
+11-10 01:28:00.473 26687 26687 D NavigationModeController:     <empty> and /system_ext/priv-app/SystemUI/SystemUI.apk
+11-10 01:28:00.473 26687 26687 D NavigationModeController:     /product/overlay/NavigationBarMode3Button/NavigationBarMode3ButtonOverlay.apk
+11-10 01:28:00.473 26687 26687 D NavigationModeController:     /product/overlay/DisplayCutoutEmulationHole/DisplayCutoutEmulationHoleOverlay.apk
+11-10 01:28:00.474 26687 26687 D NavigationModeController: getCurrentInteractionMode: mode=0 contextUser=0
+11-10 01:28:00.474 26687 26687 V SystemUIService: Starting SystemUI services for user 0.

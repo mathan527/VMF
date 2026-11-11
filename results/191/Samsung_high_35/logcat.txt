@@ -1,0 +1,658 @@
+--------- beginning of main
+11-08 01:03:26.213  1732  1802 W System.err: val in interceptor: null
+11-08 01:03:26.213  1732  1802 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/train/en/pasted-to-maps-apps, session=smartselect/train/en/pasted-to-maps-apps]
+11-08 01:03:26.213  1732  1802 W System.err: val in interceptor: null
+11-08 01:03:26.214  1732  1802 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/train/en/address-phone-or-selected-in-non-messaging-apps, session=smartselect/train/en/address-phone-or-selected-in-non-messaging-apps]
+11-08 01:03:26.214  1732  1802 W System.err: val in interceptor: null
+11-08 01:03:26.214  1562  2246 D TrafficStats: tagSocket(285) with statsTag=0x0, statsUid=-1
+11-08 01:03:26.216  1732  1802 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/train/en/address-or-pasted-to-map-or-shopping-apps, session=smartselect/train/en/address-or-pasted-to-map-or-shopping-apps]
+11-08 01:03:26.216  1732  1802 W System.err: val in interceptor: null
+11-08 01:03:26.216  1562  2073 D TrafficStats: tagSocket(289) with statsTag=0x0, statsUid=-1
+11-08 01:03:26.216  1732  1802 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/train/en/address-phone-or-pasted-to-non-messaging-apps, session=smartselect/train/en/address-phone-or-pasted-to-non-messaging-apps]
+11-08 01:03:26.217  1732  1802 W System.err: val in interceptor: null
+11-08 01:03:26.217  1732  1802 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/train/en/pasted-to-translate-apps, session=smartselect/train/en/pasted-to-translate-apps]
+11-08 01:03:26.217  1732  1802 W System.err: val in interceptor: null
+11-08 01:03:26.224  1562  1778 D TrafficStats: tagSocket(295) with statsTag=0x0, statsUid=-1
+11-08 01:03:26.225  1108  1116 W System  : A resource failed to call release. 
+11-08 01:03:26.228  1562  2189 D TrafficStats: tagSocket(289) with statsTag=0x0, statsUid=-1
+11-08 01:03:26.232  1732  1802 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/train/en/address-phone-or-pasted-to-search-or-browser-apps, session=smartselect/train/en/address-phone-or-pasted-to-search-or-browser-apps]
+11-08 01:03:26.233  1732  1802 W System.err: val in interceptor: null
+11-08 01:03:26.234  1732  1802 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/train/en/address-phone-other, session=smartselect/train/en/address-phone-other]
+11-08 01:03:26.234  1732  1802 W System.err: val in interceptor: null
+11-08 01:03:26.234  1562  2247 D TrafficStats: tagSocket(295) with statsTag=0x0, statsUid=-1
+11-08 01:03:26.236  1108  1116 W System  : A resource failed to call release. 
+11-08 01:03:26.237  1108  1116 W s.nexuslauncher: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/Velvet/Velvet.apk' with 1 weak references
+11-08 01:03:26.238  1108  1116 W System  : A resource failed to call release. 
+11-08 01:03:26.238  1108  1116 W s.nexuslauncher: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/priv-app/SystemUIGoogle/SystemUIGoogle.apk' with 1 weak references
+11-08 01:03:26.239  1108  1116 W s.nexuslauncher: ApkAssets: Deleting an ApkAssets object '/vendor/overlay/SystemUIGoogle__sdk_gphone64_x86_64__auto_generated_rro_vendor.apk' with 1 weak references
+11-08 01:03:26.239  1108  1116 W s.nexuslauncher: ApkAssets: Deleting an ApkAssets object '/product/overlay/SystemUIGoogle__sdk_gphone64_x86_64__auto_generated_rro_product.apk' with 1 weak references
+11-08 01:03:26.239  1108  1116 W s.nexuslauncher: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Drive/Drive.apk' with 1 weak references
+11-08 01:03:26.240  1108  1116 W s.nexuslauncher: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Maps/Maps.apk' with 1 weak references
+11-08 01:03:26.240  1108  1116 W s.nexuslauncher: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Photos/Photos.apk' with 1 weak references
+11-08 01:03:26.240  1108  1116 W s.nexuslauncher: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/WellbeingPrebuilt/WellbeingPrebuilt.apk' with 1 weak references
+11-08 01:03:26.241  1108  1116 W s.nexuslauncher: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/YouTubeMusicPrebuilt/YouTubeMusicPrebuilt.apk' with 1 weak references
+11-08 01:03:26.241  1108  1116 W s.nexuslauncher: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/CalendarGooglePrebuilt/CalendarGooglePrebuilt.apk' with 1 weak references
+11-08 01:03:26.241  1108  1116 W s.nexuslauncher: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/GoogleContacts/GoogleContacts.apk' with 1 weak references
+11-08 01:03:26.241  1562  1797 E MDD     : GddFileGroupPopulator: GDD Sync failed for corpus: GDD_APA_SMART_ACTION_MODELS, configuration: GddAgsaApaSmartActionModels
+11-08 01:03:26.241  1562  1797 E MDD     : com.google.android.libraries.mdi.download.aj: refresh failed [GDD_FAIL_IN_SYNC_RUNNER_PUBLIC]
+11-08 01:03:26.241  1562  1797 E MDD     : 	at com.google.android.libraries.mdi.download.ah.a(PG:28)
+11-08 01:03:26.241  1562  1797 E MDD     : 	at com.google.android.libraries.mdi.download.h.b.y.apply(PG:32)
+11-08 01:03:26.241  1562  1797 E MDD     : 	at com.google.apps.tiktok.tracing.ff.apply(PG:13)
+11-08 01:03:26.241  1562  1797 E MDD     : 	at com.google.common.util.concurrent.a.e(PG:3)
+11-08 01:03:26.241  1562  1797 E MDD     : 	at com.google.common.util.concurrent.c.run(PG:130)
+11-08 01:03:26.241  1562  1797 E MDD     : 	at com.google.android.libraries.k.x.run(PG:3)
+11-08 01:03:26.241  1562  1797 E MDD     : 	at com.google.common.n.c.c.run(PG:50)
+11-08 01:03:26.241  1562  1797 E MDD     : 	at com.google.android.libraries.k.e.run(PG:8)
+11-08 01:03:26.241  1562  1797 E MDD     : 	at java.lang.Thread.run(Thread.java:1012)
+11-08 01:03:26.241  1562  1797 E MDD     : 	at com.google.android.libraries.k.d.b.run(PG:74)
+11-08 01:03:26.241  1562  1797 E MDD     : Caused by: com.google.android.libraries.geller.h.bl: Geller batch sync rpc call failed
+11-08 01:03:26.241  1562  1797 E MDD     : 	at com.google.android.libraries.geller.h.bk.b(PG:30)
+11-08 01:03:26.241  1562  1797 E MDD     : 	at com.google.android.libraries.geller.h.bc.apply(PG:53)
+11-08 01:03:26.241  1562  1797 E MDD     : 	at com.google.apps.tiktok.tracing.fj.apply(PG:13)
+11-08 01:03:26.241  1562  1797 E MDD     : 	at com.google.common.util.concurrent.b.e(PG:3)
+11-08 01:03:26.241  1562  1797 E MDD     : 	... 6 more
+11-08 01:03:26.241  1562  1797 E MDD     : Caused by: io.grpc.fg: UNAVAILABLE
+11-08 01:03:26.241  1562  1797 E MDD     : 	at io.grpc.j.m.a(PG:42)
+11-08 01:03:26.241  1562  1797 E MDD     : 	at io.grpc.f.bq.run(PG:9)
+11-08 01:03:26.241  1562  1797 E MDD     : 	at io.grpc.f.bs.e(PG:14)
+11-08 01:03:26.241  1562  1797 E MDD     : 	at io.grpc.f.bs.a(PG:6)
+11-08 01:03:26.241  1562  1797 E MDD     : 	at io.grpc.f.ah.a(PG:32)
+11-08 01:03:26.241  1562  1797 E MDD     : 	at io.grpc.f.bc.run(PG:7)
+11-08 01:03:26.241  1562  1797 E MDD     : 	at io.grpc.f.kq.run(PG:17)
+11-08 01:03:26.241  1562  1797 E MDD     : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-08 01:03:26.241  1562  1797 E MDD     : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-08 01:03:26.241  1562  1797 E MDD     : 	at java.lang.Thread.run(Thread.java:1012)
+11-08 01:03:26.241  1562  1797 E MDD     : Caused by: java.net.ConnectException: failed to connect to geller-pa.googleapis.com/2001:4860:4840:400:: (port 443) from /:: (port 53686): connect failed: ECONNREFUSED (Connection refused)
+11-08 01:03:26.241  1562  1797 E MDD     : 	at libcore.io.IoBridge.connect(IoBridge.java:187)
+11-08 01:03:26.241  1562  1797 E MDD     : 	at java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:142)
+11-08 01:03:26.241  1562  1797 E MDD     : 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:390)
+11-08 01:03:26.241  1562  1797 E MDD     : 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:230)
+11-08 01:03:26.241  1562  1797 E MDD     : 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:212)
+11-08 01:03:26.241  1562  1797 E MDD     : 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:436)
+11-08 01:03:26.241  1562  1797 E MDD     : 	at java.net.Socket.connect(Socket.java:646)
+11-08 01:03:26.241  1562  1797 E MDD     : 	at java.net.Socket.connect(Socket.java:595)
+11-08 01:03:26.241  1562  1797 E MDD     : 	at java.net.Socket.<init>(Socket.java:475)
+11-08 01:03:26.241  1562  1797 E MDD     : 	at java.net.Socket.<init>(Socket.java:275)
+11-08 01:03:26.241  1562  1797 E MDD     : 	at javax.net.DefaultSocketFactory.createSocket(SocketFactory.java:285)
+11-08 01:03:26.241  1562  1797 E MDD     : 	at io.grpc.h.w.run(PG:50)
+11-08 01:03:26.241  1562  1797 E MDD     : 	at io.grpc.f.kq.run(PG:17)
+11-08 01:03:26.241  1562  1797 E MDD     : 	at com.google.android.libraries.geller.j.a.run(PG:7)
+11-08 01:03:26.241  1562  1797 E MDD     : 	at com.google.apps.tiktok.tracing.fl.run(PG:24)
+11-08 01:03:26.241  1562  1797 E MDD     : 	at com.google.android.libraries.k.x.run(PG:3)
+11-08 01:03:26.241  1562  1797 E MDD     : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-08 01:03:26.241  1562  1797 E MDD     : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-08 01:03:26.241  1562  1797 E MDD     : 	at com.google.android.libraries.k.b.run(PG:6)
+11-08 01:03:26.241  1562  1797 E MDD     : 	at java.lang.Thread.run(Thread.java:1012)
+11-08 01:03:26.241  1562  1797 E MDD     : 	at com.google.android.libraries.k.d.b.run(PG:74)
+11-08 01:03:26.241  1562  1797 E MDD     : Caused by: android.system.ErrnoException: connect failed: ECONNREFUSED (Connection refused)
+11-08 01:03:26.241  1562  1797 E MDD     : 	at libcore.io.Linux.connect(Native Method)
+11-08 01:03:26.241  1562  1797 E MDD     : 	at libcore.io.ForwardingOs.connect(ForwardingOs.java:201)
+11-08 01:03:26.241  1562  1797 E MDD     : 	at libcore.io.BlockGuardOs.connect(BlockGuardOs.java:158)
+11-08 01:03:26.241  1562  1797 E MDD     : 	at libcore.io.ForwardingOs.connect(ForwardingOs.java:201)
+11-08 01:03:26.241  1562  1797 E MDD     : 	at libcore.io.IoBridge.connectErrno(IoBridge.java:201)
+11-08 01:03:26.241  1562  1797 E MDD     : 	at libcore.io.IoBridge.connect(IoBridge.java:179)
+11-08 01:03:26.241  1562  1797 E MDD     : 	... 20 more
+11-08 01:03:26.241  1108  1116 W s.nexuslauncher: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PrebuiltDeskClockGoogle/PrebuiltDeskClockGoogle.apk' with 1 weak references
+11-08 01:03:26.242  1108  1116 W s.nexuslauncher: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/SettingsIntelligenceGooglePrebuilt/SettingsIntelligenceGooglePrebuilt.apk' with 1 weak references
+11-08 01:03:26.242  1108  1116 W s.nexuslauncher: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/YouTube/YouTube.apk' with 1 weak references
+11-08 01:03:26.244  1732  1802 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/train/en/pasted-to-named-entity-apps, session=smartselect/train/en/pasted-to-named-entity-apps]
+11-08 01:03:26.244  1732  1802 W System.err: val in interceptor: null
+11-08 01:03:26.246  1562  1786 E MDD     : GddFileGroupPopulator: GDD Sync failed for corpus: GDD_APA_BISTO, configuration: GddAgsaApaBisto
+11-08 01:03:26.246  1562  1786 E MDD     : com.google.android.libraries.mdi.download.aj: refresh failed [GDD_FAIL_IN_SYNC_RUNNER_PUBLIC]
+11-08 01:03:26.246  1562  1786 E MDD     : 	at com.google.android.libraries.mdi.download.ah.a(PG:28)
+11-08 01:03:26.246  1562  1786 E MDD     : 	at com.google.android.libraries.mdi.download.h.b.y.apply(PG:32)
+11-08 01:03:26.246  1562  1786 E MDD     : 	at com.google.apps.tiktok.tracing.ff.apply(PG:13)
+11-08 01:03:26.246  1562  1786 E MDD     : 	at com.google.common.util.concurrent.a.e(PG:3)
+11-08 01:03:26.246  1562  1786 E MDD     : 	at com.google.common.util.concurrent.c.run(PG:130)
+11-08 01:03:26.246  1562  1786 E MDD     : 	at com.google.android.libraries.k.x.run(PG:3)
+11-08 01:03:26.246  1562  1786 E MDD     : 	at com.google.common.n.c.c.run(PG:50)
+11-08 01:03:26.246  1562  1786 E MDD     : 	at com.google.android.libraries.k.e.run(PG:8)
+11-08 01:03:26.246  1562  1786 E MDD     : 	at java.lang.Thread.run(Thread.java:1012)
+11-08 01:03:26.246  1562  1786 E MDD     : 	at com.google.android.libraries.k.d.b.run(PG:74)
+11-08 01:03:26.246  1562  1786 E MDD     : Caused by: com.google.android.libraries.geller.h.bl: Geller batch sync rpc call failed
+11-08 01:03:26.246  1562  1786 E MDD     : 	at com.google.android.libraries.geller.h.bk.b(PG:30)
+11-08 01:03:26.246  1562  1786 E MDD     : 	at com.google.android.libraries.geller.h.bc.apply(PG:53)
+11-08 01:03:26.246  1562  1786 E MDD     : 	at com.google.apps.tiktok.tracing.fj.apply(PG:13)
+11-08 01:03:26.246  1562  1786 E MDD     : 	at com.google.common.util.concurrent.b.e(PG:3)
+11-08 01:03:26.246  1562  1786 E MDD     : 	... 6 more
+11-08 01:03:26.246  1562  1786 E MDD     : Caused by: io.grpc.fg: UNAVAILABLE
+11-08 01:03:26.246  1562  1786 E MDD     : 	at io.grpc.j.m.a(PG:42)
+11-08 01:03:26.246  1562  1786 E MDD     : 	at io.grpc.f.bq.run(PG:9)
+11-08 01:03:26.246  1562  1786 E MDD     : 	at io.grpc.f.bs.e(PG:14)
+11-08 01:03:26.246  1562  1786 E MDD     : 	at io.grpc.f.bs.a(PG:6)
+11-08 01:03:26.246  1562  1786 E MDD     : 	at io.grpc.f.ah.a(PG:32)
+11-08 01:03:26.246  1562  1786 E MDD     : 	at io.grpc.f.bc.run(PG:7)
+11-08 01:03:26.246  1562  1786 E MDD     : 	at io.grpc.f.kq.run(PG:17)
+11-08 01:03:26.246  1562  1786 E MDD     : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-08 01:03:26.246  1562  1786 E MDD     : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-08 01:03:26.246  1562  1786 E MDD     : 	at java.lang.Thread.run(Thread.java:1012)
+11-08 01:03:26.246  1562  1786 E MDD     : Caused by: java.net.ConnectException: failed to connect to geller-pa.googleapis.com/2001:4860:4840:400:: (port 443) from /:: (port 53700): connect failed: ECONNREFUSED (Connection refused)
+11-08 01:03:26.246  1562  1786 E MDD     : 	at libcore.io.IoBridge.connect(IoBridge.java:187)
+11-08 01:03:26.246  1562  1786 E MDD     : 	at java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:142)
+11-08 01:03:26.246  1562  1786 E MDD     : 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:390)
+11-08 01:03:26.246  1562  1786 E MDD     : 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:230)
+11-08 01:03:26.246  1562  1786 E MDD     : 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:212)
+11-08 01:03:26.246  1562  1786 E MDD     : 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:436)
+11-08 01:03:26.246  1562  1786 E MDD     : 	at java.net.Socket.connect(Socket.java:646)
+11-08 01:03:26.246  1562  1786 E MDD     : 	at java.net.Socket.connect(Socket.java:595)
+11-08 01:03:26.246  1562  1786 E MDD     : 	at java.net.Socket.<init>(Socket.java:475)
+11-08 01:03:26.246  1562  1786 E MDD     : 	at java.net.Socket.<init>(Socket.java:275)
+11-08 01:03:26.246  1562  1786 E MDD     : 	at javax.net.DefaultSocketFactory.createSocket(SocketFactory.java:285)
+11-08 01:03:26.246  1562  1786 E MDD     : 	at io.grpc.h.w.run(PG:50)
+11-08 01:03:26.246  1562  1786 E MDD     : 	at io.grpc.f.kq.run(PG:17)
+11-08 01:03:26.246  1562  1786 E MDD     : 	at com.google.android.libraries.geller.j.a.run(PG:7)
+11-08 01:03:26.246  1562  1786 E MDD     : 	at com.google.apps.tiktok.tracing.fl.run(PG:24)
+11-08 01:03:26.246  1562  1786 E MDD     : 	at com.google.android.libraries.k.x.run(PG:3)
+11-08 01:03:26.246  1562  1786 E MDD     : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-08 01:03:26.246  1562  1786 E MDD     : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-08 01:03:26.246  1562  1786 E MDD     : 	at com.google.android.libraries.k.b.run(PG:6)
+11-08 01:03:26.246  1562  1786 E MDD     : 	at java.lang.Thread.run(Thread.java:1012)
+11-08 01:03:26.246  1562  1786 E MDD     : 	at com.google.android.libraries.k.d.b.run(PG:74)
+11-08 01:03:26.246  1562  1786 E MDD     : Caused by: android.system.ErrnoException: connect failed: ECONNREFUSED (Connection refused)
+11-08 01:03:26.246  1562  1786 E MDD     : 	at libcore.io.Linux.connect(Native Method)
+11-08 01:03:26.246  1562  1786 E MDD     : 	at libcore.io.ForwardingOs.connect(ForwardingOs.java:201)
+11-08 01:03:26.246  1562  1786 E MDD     : 	at libcore.io.BlockGuardOs.connect(BlockGuardOs.java:158)
+11-08 01:03:26.246  1562  1786 E MDD     : 	at libcore.io.ForwardingOs.connect(ForwardingOs.java:201)
+11-08 01:03:26.246  1562  1786 E MDD     : 	at libcore.io.IoBridge.connectErrno(IoBridge.java:201)
+11-08 01:03:26.246  1562  1786 E MDD     : 	at libcore.io.IoBridge.connect(IoBridge.java:179)
+11-08 01:03:26.246  1562  1786 E MDD     : 	... 20 more
+11-08 01:03:26.247  1846  1852 I .apps.messaging: Background concurrent mark compact GC freed 8647KB AllocSpace bytes, 25(1180KB) LOS objects, 49% free, 12MB/24MB, paused 1.078ms,33.952ms total 398.761ms
+11-08 01:03:26.248  1364  1726 I TrainerClient: Preparing to schedule training for population:aiai/playstore/smartselect/train/en/all-pasted-to-apps session_name:smartselect/train/en/all-pasted-to-apps
+11-08 01:03:26.250  1732  2023 W System.err: Seeding context with ref: 181531187
+11-08 01:03:26.253  1498  2036 I UpdateAffiliationsTaskB: Updating affiliation from scheduled task scheduled successfully. [CONTEXT service_id=80 ]
+11-08 01:03:26.260  1498  1498 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.chromesync.tasks.UpdateAffiliationsTaskBoundService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-08 01:03:26.262  1267  2346 I NetworkScheduler.Stats: HousekeepingTask com.google.android.gms/com.google.android.gms.chromesync.tasks.UpdateAffiliationsTaskBoundService finished executing. cause:0 result: 1 elapsed_millis: 123 uptime_millis: 123 exec_start_elapsed_seconds: 42 [CONTEXT service_id=218 ]
+11-08 01:03:26.264  1364  1726 I TrainerClient: Preparing to schedule training for population:aiai/playstore/smartselect/train/en/address-phone-or-selected-in-search-or-browser-apps session_name:smartselect/train/en/address-phone-or-selected-in-search-or-browser-apps
+11-08 01:03:26.264  1732  2023 I FederatedTrainingScheduler: Cancelling training for population:aiai/playstore/smartselect/train/en/pasted-to-search-apps session_name:smartselect/train/en/pasted-to-search-apps
+11-08 01:03:26.264  1732  2026 W System.err: Seeding context with ref: 161602032
+11-08 01:03:26.265  1732  2026 I FederatedTrainingScheduler: Cancelling training for population:aiai/playstore/smartselect/train/en/all-pasted-to-apps session_name:smartselect/train/en/all-pasted-to-apps
+11-08 01:03:26.266  1364  1726 I TrainerClient: Preparing to schedule training for population:aiai/playstore/smartselect/train/en/phone session_name:smartselect/train/en/phone
+11-08 01:03:26.267  1732  2026 W System.err: Seeding context with ref: 166796137
+11-08 01:03:26.267  1364  1726 I TrainerClient: Preparing to schedule training for population:aiai/playstore/smartselect/train/en/pasted-to-shopping-apps session_name:smartselect/train/en/pasted-to-shopping-apps
+11-08 01:03:26.267  1562  2189 D TrafficStats: tagSocket(277) with statsTag=0x0, statsUid=-1
+11-08 01:03:26.267  1732  2026 I FederatedTrainingScheduler: Cancelling training for population:aiai/playstore/smartselect/train/en/address-phone-or-selected-in-search-or-browser-apps session_name:smartselect/train/en/address-phone-or-selected-in-search-or-browser-apps
+11-08 01:03:26.268  1364  1726 I TrainerClient: Preparing to schedule training for population:aiai/playstore/smartselect/train/en/address-phone-other-translate session_name:smartselect/train/en/address-phone-other-translate
+11-08 01:03:26.268  1732  2023 W System.err: Seeding context with ref: 212827791
+11-08 01:03:26.268  1732  2023 I FederatedTrainingScheduler: Cancelling training for population:aiai/playstore/smartselect/train/en/phone session_name:smartselect/train/en/phone
+11-08 01:03:26.268  1364  1726 I TrainerClient: Preparing to schedule training for population:aiai/playstore/smartselect/train/en/all session_name:smartselect/train/en/all
+11-08 01:03:26.268  1732  3320 W System.err: Seeding context with ref: 14853404
+11-08 01:03:26.269  1732  2026 W System.err: Seeding context with ref: 242681125
+11-08 01:03:26.269  1364  1726 I TrainerClient: Preparing to schedule training for population:aiai/playstore/smartselect/train/en/all-non-translate session_name:smartselect/train/en/all-non-translate
+11-08 01:03:26.269  1732  3320 I FederatedTrainingScheduler: Cancelling training for population:aiai/playstore/smartselect/train/en/pasted-to-shopping-apps session_name:smartselect/train/en/pasted-to-shopping-apps
+11-08 01:03:26.269  1364  1726 I TrainerClient: Preparing to schedule training for population:aiai/playstore/smartselect/train/en/pasted-to-notes-apps session_name:smartselect/train/en/pasted-to-notes-apps
+11-08 01:03:26.269  1732  3316 W System.err: Seeding context with ref: 120550571
+11-08 01:03:26.269  1732  2023 W System.err: Seeding context with ref: 199010042
+11-08 01:03:26.270  1364  1726 I TrainerClient: Preparing to schedule training for population:aiai/playstore/smartselect/train/en/address-phone-other-nonsentences session_name:smartselect/train/en/address-phone-other-nonsentences
+11-08 01:03:26.270  1732  3320 W System.err: Seeding context with ref: 201520904
+11-08 01:03:26.270  1364  1726 I TrainerClient: Preparing to schedule training for population:aiai/playstore/smartselect/train/en/selected-in-search-or-browser-apps session_name:smartselect/train/en/selected-in-search-or-browser-apps
+11-08 01:03:26.270  1732  3319 W System.err: Seeding context with ref: 213372577
+11-08 01:03:26.271  1364  1726 I TrainerClient: Preparing to schedule training for population:aiai/playstore/smartselect/train/en/address-or-pasted-to-shopping-apps session_name:smartselect/train/en/address-or-pasted-to-shopping-apps
+11-08 01:03:26.271  1732  3316 I FederatedTrainingScheduler: Cancelling training for population:aiai/playstore/smartselect/train/en/all-non-translate session_name:smartselect/train/en/all-non-translate
+11-08 01:03:26.271  1732  2026 I FederatedTrainingScheduler: Cancelling training for population:aiai/playstore/smartselect/train/en/address-phone-other-translate session_name:smartselect/train/en/address-phone-other-translate
+11-08 01:03:26.271  1364  1726 I TrainerClient: Preparing to schedule training for population:aiai/playstore/smartselect/train/en/phone-or-pasted-to-dialer-apps session_name:smartselect/train/en/phone-or-pasted-to-dialer-apps
+11-08 01:03:26.271  1732  2023 I FederatedTrainingScheduler: Cancelling training for population:aiai/playstore/smartselect/train/en/all session_name:smartselect/train/en/all
+11-08 01:03:26.272  1364  1726 I TrainerClient: Preparing to schedule training for population:aiai/playstore/smartselect/train/all/all session_name:smartselect/train/all/all
+11-08 01:03:26.272  1732  3316 W System.err: Seeding context with ref: 213792966
+11-08 01:03:26.273  1732  3320 I FederatedTrainingScheduler: Cancelling training for population:aiai/playstore/smartselect/train/en/pasted-to-notes-apps session_name:smartselect/train/en/pasted-to-notes-apps
+11-08 01:03:26.273  1732  3316 I FederatedTrainingScheduler: Cancelling training for population:aiai/playstore/smartselect/train/en/selected-in-search-or-browser-apps session_name:smartselect/train/en/selected-in-search-or-browser-apps
+11-08 01:03:26.274  1364  1726 I AiAiFedAss: [AiAi Ekho] *** enabled *** [mode=FEDERATION, population=aiai/ekho]
+11-08 01:03:26.274  1732  3322 W System.err: Seeding context with ref: 24031367
+11-08 01:03:26.274  1732  3320 W System.err: Seeding context with ref: 89422772
+11-08 01:03:26.274  1732  3322 I FederatedTrainingScheduler: Cancelling training for population:aiai/playstore/smartselect/train/en/address-or-pasted-to-shopping-apps session_name:smartselect/train/en/address-or-pasted-to-shopping-apps
+11-08 01:03:26.276  1732  3316 W System.err: Seeding context with ref: 65123293
+11-08 01:03:26.277  1732  3316 I FederatedTrainingScheduler: Cancelling training for population:aiai/playstore/smartselect/train/en/phone-or-pasted-to-dialer-apps session_name:smartselect/train/en/phone-or-pasted-to-dialer-apps
+11-08 01:03:26.277  1267  1983 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.scheduler.standalone.housekeeping.HousekeepingTrainTaskService finished executing. cause:5 result: 1 elapsed_millis: 712 uptime_millis: 712 exec_start_elapsed_seconds: 42 [CONTEXT service_id=218 ]
+11-08 01:03:26.278  1732  3319 I FederatedTrainingScheduler: Cancelling training for population:aiai/playstore/smartselect/train/en/address-phone-other-nonsentences session_name:smartselect/train/en/address-phone-other-nonsentences
+11-08 01:03:26.278  1732  3320 I FederatedTrainingScheduler: Cancelling training for population:aiai/playstore/smartselect/train/all/all session_name:smartselect/train/all/all
+11-08 01:03:26.279  1846  1932 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:03:26.280  1732  1802 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/train/en/all-pasted-to-apps, session=smartselect/train/en/all-pasted-to-apps]
+11-08 01:03:26.280  1732  1802 W System.err: val in interceptor: null
+11-08 01:03:26.282  1732  1802 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/train/en/pasted-to-search-apps, session=smartselect/train/en/pasted-to-search-apps]
+11-08 01:03:26.282  1732  1802 W System.err: val in interceptor: null
+11-08 01:03:26.298  1562  2195 D TrafficStats: tagSocket(285) with statsTag=0x0, statsUid=-1
+11-08 01:03:26.303  1732  1802 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/train/en/phone, session=smartselect/train/en/phone]
+11-08 01:03:26.305  1846  1932 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:03:26.306  1732  1802 W System.err: val in interceptor: null
+11-08 01:03:26.307  1732  1802 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/train/en/address-phone-or-selected-in-search-or-browser-apps, session=smartselect/train/en/address-phone-or-selected-in-search-or-browser-apps]
+11-08 01:03:26.308  1732  1802 W System.err: val in interceptor: null
+--------- beginning of system
+11-08 01:03:26.308   640  2157 D CompatChangeReporter: Compat change id reported: 311208629; UID 10143; state: ENABLED
+11-08 01:03:26.309  1732  1802 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/train/en/pasted-to-shopping-apps, session=smartselect/train/en/pasted-to-shopping-apps]
+11-08 01:03:26.310  1732  1802 W System.err: val in interceptor: null
+11-08 01:03:26.310  1732  1802 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/train/en/all-non-translate, session=smartselect/train/en/all-non-translate]
+11-08 01:03:26.310  1732  1802 W System.err: val in interceptor: null
+11-08 01:03:26.310  1364  1726 I AiAiFedAss: Ekho TTL succeeded.
+11-08 01:03:26.311  1732  1802 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/train/en/address-phone-other-translate, session=smartselect/train/en/address-phone-other-translate]
+11-08 01:03:26.312  1732  1802 W System.err: val in interceptor: null
+11-08 01:03:26.313  1732  1802 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/train/en/all, session=smartselect/train/en/all]
+11-08 01:03:26.313  1732  1802 W System.err: val in interceptor: null
+11-08 01:03:26.314  1732  1802 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/train/en/pasted-to-notes-apps, session=smartselect/train/en/pasted-to-notes-apps]
+11-08 01:03:26.317  1846  1932 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:03:26.320  1732  1802 W System.err: val in interceptor: null
+11-08 01:03:26.320  1732  1802 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/train/en/selected-in-search-or-browser-apps, session=smartselect/train/en/selected-in-search-or-browser-apps]
+11-08 01:03:26.321  1732  1802 W System.err: val in interceptor: null
+11-08 01:03:26.321  1732  1802 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/train/en/address-or-pasted-to-shopping-apps, session=smartselect/train/en/address-or-pasted-to-shopping-apps]
+11-08 01:03:26.321  1732  1802 W System.err: val in interceptor: null
+11-08 01:03:26.323  1732  1802 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/train/en/phone-or-pasted-to-dialer-apps, session=smartselect/train/en/phone-or-pasted-to-dialer-apps]
+11-08 01:03:26.323  1732  1802 W System.err: val in interceptor: null
+11-08 01:03:26.325  1732  1802 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/train/en/address-phone-other-nonsentences, session=smartselect/train/en/address-phone-other-nonsentences]
+11-08 01:03:26.325  1846  1932 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:03:26.326  1732  1802 W System.err: val in interceptor: null
+11-08 01:03:26.326  1732  1802 I TrainerGrpcBindableService: Cancelling training succeeded [population=aiai/playstore/smartselect/train/all/all, session=smartselect/train/all/all]
+11-08 01:03:26.326  1732  1802 W System.err: val in interceptor: null
+11-08 01:03:26.330  1846  1932 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:03:26.332  1562  2073 D TrafficStats: tagSocket(279) with statsTag=0x0, statsUid=-1
+11-08 01:03:26.337  1562  2190 D TrafficStats: tagSocket(277) with statsTag=0x0, statsUid=-1
+11-08 01:03:26.340  1562  2189 D TrafficStats: tagSocket(277) with statsTag=0x0, statsUid=-1
+11-08 01:03:26.343  1562  2073 D TrafficStats: tagSocket(277) with statsTag=0x0, statsUid=-1
+11-08 01:03:26.347  1562  2189 D TrafficStats: tagSocket(240) with statsTag=0x0, statsUid=-1
+11-08 01:03:26.349  1562  2190 D TrafficStats: tagSocket(277) with statsTag=0x0, statsUid=-1
+11-08 01:03:26.352  1846  1932 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:03:26.357  1562  2194 D TrafficStats: tagSocket(279) with statsTag=0x0, statsUid=-1
+11-08 01:03:26.361  1846  1932 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:03:26.366  1562  2073 D TrafficStats: tagSocket(279) with statsTag=0x0, statsUid=-1
+11-08 01:03:26.367  1267  1983 I NetworkScheduler.Stats: HousekeepingTask com.google.android.gms/com.google.android.gms.auth.folsom.service.FolsomPublicKeyUpdateService finished executing. cause:0 result: 1 elapsed_millis: 130 uptime_millis: 130 exec_start_elapsed_seconds: 42 [CONTEXT service_id=218 ]
+11-08 01:03:26.369  1562  2190 D TrafficStats: tagSocket(279) with statsTag=0x0, statsUid=-1
+11-08 01:03:26.372  1846  1932 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:03:26.373  1562  2194 D TrafficStats: tagSocket(282) with statsTag=0x0, statsUid=-1
+11-08 01:03:26.381  1562  1797 E MDD     : GddFileGroupPopulator: GDD Sync failed for corpus: GDD_APA_HOTWORD_MODEL, configuration: GddAgsaApaHotword
+11-08 01:03:26.381  1562  1797 E MDD     : com.google.android.libraries.mdi.download.aj: refresh failed [GDD_FAIL_IN_SYNC_RUNNER_PUBLIC]
+11-08 01:03:26.381  1562  1797 E MDD     : 	at com.google.android.libraries.mdi.download.ah.a(PG:28)
+11-08 01:03:26.381  1562  1797 E MDD     : 	at com.google.android.libraries.mdi.download.h.b.y.apply(PG:32)
+11-08 01:03:26.381  1562  1797 E MDD     : 	at com.google.apps.tiktok.tracing.ff.apply(PG:13)
+11-08 01:03:26.381  1562  1797 E MDD     : 	at com.google.common.util.concurrent.a.e(PG:3)
+11-08 01:03:26.381  1562  1797 E MDD     : 	at com.google.common.util.concurrent.c.run(PG:130)
+11-08 01:03:26.381  1562  1797 E MDD     : 	at com.google.android.libraries.k.x.run(PG:3)
+11-08 01:03:26.381  1562  1797 E MDD     : 	at com.google.common.n.c.c.run(PG:50)
+11-08 01:03:26.381  1562  1797 E MDD     : 	at com.google.android.libraries.k.e.run(PG:8)
+11-08 01:03:26.381  1562  1797 E MDD     : 	at java.lang.Thread.run(Thread.java:1012)
+11-08 01:03:26.381  1562  1797 E MDD     : 	at com.google.android.libraries.k.d.b.run(PG:74)
+11-08 01:03:26.381  1562  1797 E MDD     : Caused by: com.google.android.libraries.geller.h.bl: Geller batch sync rpc call failed
+11-08 01:03:26.381  1562  1797 E MDD     : 	at com.google.android.libraries.geller.h.bk.b(PG:30)
+11-08 01:03:26.381  1562  1797 E MDD     : 	at com.google.android.libraries.geller.h.bc.apply(PG:53)
+11-08 01:03:26.381  1562  1797 E MDD     : 	at com.google.apps.tiktok.tracing.fj.apply(PG:13)
+11-08 01:03:26.381  1562  1797 E MDD     : 	at com.google.common.util.concurrent.b.e(PG:3)
+11-08 01:03:26.381  1562  1797 E MDD     : 	... 6 more
+11-08 01:03:26.381  1562  1797 E MDD     : Caused by: io.grpc.fg: UNAVAILABLE
+11-08 01:03:26.381  1562  1797 E MDD     : 	at io.grpc.j.m.a(PG:42)
+11-08 01:03:26.381  1562  1797 E MDD     : 	at io.grpc.f.bq.run(PG:9)
+11-08 01:03:26.381  1562  1797 E MDD     : 	at io.grpc.f.bs.e(PG:14)
+11-08 01:03:26.381  1562  1797 E MDD     : 	at io.grpc.f.bs.a(PG:6)
+11-08 01:03:26.381  1562  1797 E MDD     : 	at io.grpc.f.ah.a(PG:32)
+11-08 01:03:26.381  1562  1797 E MDD     : 	at io.grpc.f.bc.run(PG:7)
+11-08 01:03:26.381  1562  1797 E MDD     : 	at io.grpc.f.kq.run(PG:17)
+11-08 01:03:26.381  1562  1797 E MDD     : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-08 01:03:26.381  1562  1797 E MDD     : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-08 01:03:26.381  1562  1797 E MDD     : 	at java.lang.Thread.run(Thread.java:1012)
+11-08 01:03:26.381  1562  1797 E MDD     : Caused by: java.net.ConnectException: failed to connect to geller-pa.googleapis.com/2001:4860:4840:400:: (port 443) from /:: (port 53712): connect failed: ECONNREFUSED (Connection refused)
+11-08 01:03:26.381  1562  1797 E MDD     : 	at libcore.io.IoBridge.connect(IoBridge.java:187)
+11-08 01:03:26.381  1562  1797 E MDD     : 	at java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:142)
+11-08 01:03:26.381  1562  1797 E MDD     : 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:390)
+11-08 01:03:26.381  1562  1797 E MDD     : 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:230)
+11-08 01:03:26.381  1562  1797 E MDD     : 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:212)
+11-08 01:03:26.381  1562  1797 E MDD     : 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:436)
+11-08 01:03:26.381  1562  1797 E MDD     : 	at java.net.Socket.connect(Socket.java:646)
+11-08 01:03:26.381  1562  1797 E MDD     : 	at java.net.Socket.connect(Socket.java:595)
+11-08 01:03:26.381  1562  1797 E MDD     : 	at java.net.Socket.<init>(Socket.java:475)
+11-08 01:03:26.381  1562  1797 E MDD     : 	at java.net.Socket.<init>(Socket.java:275)
+11-08 01:03:26.381  1562  1797 E MDD     : 	at javax.net.DefaultSocketFactory.createSocket(SocketFactory.java:285)
+11-08 01:03:26.381  1562  1797 E MDD     : 	at io.grpc.h.w.run(PG:50)
+11-08 01:03:26.381  1562  1797 E MDD     : 	at io.grpc.f.kq.run(PG:17)
+11-08 01:03:26.381  1562  1797 E MDD     : 	at com.google.android.libraries.geller.j.a.run(PG:7)
+11-08 01:03:26.381  1562  1797 E MDD     : 	at com.google.apps.tiktok.tracing.fl.run(PG:24)
+11-08 01:03:26.381  1562  1797 E MDD     : 	at com.google.android.libraries.k.x.run(PG:3)
+11-08 01:03:26.381  1562  1797 E MDD     : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-08 01:03:26.381  1562  1797 E MDD     : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-08 01:03:26.381  1562  1797 E MDD     : 	at com.google.android.libraries.k.b.run(PG:6)
+11-08 01:03:26.381  1562  1797 E MDD     : 	at java.lang.Thread.run(Thread.java:1012)
+11-08 01:03:26.381  1562  1797 E MDD     : 	at com.google.android.libraries.k.d.b.run(PG:74)
+11-08 01:03:26.381  1562  1797 E MDD     : Caused by: android.system.ErrnoException: connect failed: ECONNREFUSED (Connection refused)
+11-08 01:03:26.381  1562  1797 E MDD     : 	at libcore.io.Linux.connect(Native Method)
+11-08 01:03:26.381  1562  1797 E MDD     : 	at libcore.io.ForwardingOs.connect(ForwardingOs.java:201)
+11-08 01:03:26.381  1562  1797 E MDD     : 	at libcore.io.BlockGuardOs.connect(BlockGuardOs.java:158)
+11-08 01:03:26.381  1562  1797 E MDD     : 	at libcore.io.ForwardingOs.connect(ForwardingOs.java:201)
+11-08 01:03:26.381  1562  1797 E MDD     : 	at libcore.io.IoBridge.connectErrno(IoBridge.java:201)
+11-08 01:03:26.381  1562  1797 E MDD     : 	at libcore.io.IoBridge.connect(IoBridge.java:179)
+11-08 01:03:26.381  1562  1797 E MDD     : 	... 20 more
+11-08 01:03:26.382  1846  1932 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:03:26.390  1846  2577 I Bugle   : BugleStartup: Registering SIM change receiver...
+11-08 01:03:26.391  1846  1932 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:03:26.392  1846  2577 I Bugle   : BugleStartup: Updating app config...
+11-08 01:03:26.397  1846  1932 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:03:26.397  1846  2577 I Bugle   : BugleStartup: Done with SIM change receiver & app config.
+11-08 01:03:26.398  1846  2577 I Bugle   : BugleStartup: Handling shared prefs upgrade & Load MMS Configuration...
+11-08 01:03:26.406  1267  2346 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.scheduler.standalone.housekeeping.HousekeepingTrainTaskService started execution. cause:5 exec_start_elapsed_seconds: 42 [CONTEXT service_id=218 ]
+11-08 01:03:26.407  1846  1932 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:03:26.410  1846  2579 I Bugle   : BugleStartup: Initializing RCS availability...
+11-08 01:03:26.410  1846  3331 I BugleRcsEngine: do not delay first event [CONTEXT thread_id=103 ]
+11-08 01:03:26.411  1846  2579 I Bugle   : BugleStartup: Done with RCS availability.
+11-08 01:03:26.411  1846  2579 I Bugle   : BugleStartup: Done initializing with enabled individual init failures.
+11-08 01:03:26.414  1846  2580 I BugleSimStateTracker: Updating PhoneSimState
+11-08 01:03:26.416  1846  1932 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:03:26.424  1846  3331 I BugleRcsEngine: Processing an intent [CONTEXT log_prefix="(Sim)" thread_id=103 ]
+11-08 01:03:26.424  1846  1932 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:03:26.424  1846  3331 I BugleRcsEngine: SIM state LOADED [CONTEXT log_prefix="(Sim)" thread_id=103 ]
+11-08 01:03:26.427  1846  1923 I BugleRcsEngine: SIM state event delay enabled: attempts 0, maxAttempts 3, delaySeconds 90 MSIM delayseconds 90, effective delay seconds 90 [CONTEXT thread_id=43 ]
+11-08 01:03:26.428  1846  1923 I BugleRcsEngine: posted simEventProcessTask to handler with delay 90 [CONTEXT thread_id=43 ]
+11-08 01:03:26.429  1846  1923 I BugleRcsEngine: delay SIM event: android.intent.action.SIM_STATE_CHANGED, LOADED [CONTEXT log_prefix="(Sim)" thread_id=43 ]
+11-08 01:03:26.430  1846  3331 I BugleRcsEngine: SIM changed: false. current id: redacted-pii:sim_id[chars:20,last3:897]; stored id: redacted-pii:sim_id[chars:20,last3:897]; isFiDevice: false; subId: 1; slotIndex: 0 [CONTEXT log_prefix="(Sim)" thread_id=103 ]
+11-08 01:03:26.432  1846  1943 W Bugle   : BuglePhoneNumberUtils: canonicalizeMccMnc: invalid mccmnc. mcc: null, mnc: null
+11-08 01:03:26.435  1846  1932 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:03:26.435  1846  2580 I BugleSimStateTracker: Is carrier config for identified carrier: true
+11-08 01:03:26.436  1846  2580 I BugleSimStateTracker: default call SIM: redacted-pii:sim_id[chars:20,last3:897], default sms SIM redacted-pii:sim_id[chars:20,last3:897]. default data SIM redacted-pii:sim_id[chars:20,last3:897].
+11-08 01:03:26.439  2907  3223 W oid.apps.photos: Long monitor contention with owner ptz-ui-2-ITEM_PAGE_MANAGER (3205) at android.database.sqlite.SQLiteDatabase android.database.sqlite.SQLiteOpenHelper.getReadableDatabase()(SQLiteOpenHelper.java:340) waiters=0 in android.database.sqlite.SQLiteDatabase opz.getReadableDatabase() for 1.416s
+11-08 01:03:26.445  1846  1932 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:03:26.445  1846  3331 I BugleRcsEngine: Skipping writing subId because this is main bugle process. [CONTEXT log_prefix="(Sim)" thread_id=103 ]
+11-08 01:03:26.448  1846  3331 I BugleRcsEngine: Updated SIM info: currentSimId: redacted-pii:sim_id[chars:20,last3:897]; imsi: redacted-pii:imsi[chars:15]; rawMsisdn: redacted-pii:phone_number[chars:12,last2:67]; formattedMsisdn: redacted-pii:phone_number[chars:12,last2:67]; mccmnc: redacted-pii:sim_operator[chars:6]; gid1: redacted-pii:sim_gid[chars:0]; isFiDevice: false; subId: 1; slotIndex: 0 [CONTEXT log_prefix="(Sim)" thread_id=103 ]
+11-08 01:03:26.449  1846  1935 I GnpSdk  : set is [].
+11-08 01:03:26.454  1846  1932 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:03:26.457  1846  3331 I BugleRcsEngine: Handling SIM_LOADED in PhoneSimsStateUpdater. [CONTEXT log_prefix="(Sim)" thread_id=103 ]
+11-08 01:03:26.458  1846  2577 I BugleJobs: Starts to observe table change.
+11-08 01:03:26.465  1846  2580 I BugleSimStateTracker: Looking up Fi through package names.
+11-08 01:03:26.470  1846  1932 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:03:26.471  1846  2580 I BugleSimStateTracker: allNewlyBuiltSimSubscriptionInfos (simId, loggableGuid): [(redacted-pii:sim_id[chars:20,last3:897], df9619b6-510b-4681-81f3-00f6d47d6a4f)]
+11-08 01:03:26.471  1846  2580 I BugleSimStateTracker: Storing updatedSimSubscriptionInfos: [(redacted-pii:sim_id[chars:20,last3:897], df9619b6-510b-4681-81f3-00f6d47d6a4f)]
+11-08 01:03:26.472  1364  1583 I AiAiSuperpacks: No superpacks to release, will no-op
+11-08 01:03:26.482  1846  1932 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:03:26.482  1846  1934 I BugleJobs: Icing index repair service is not scheduled. [CONTEXT class_name="IcingMonitoringUtils" ]
+11-08 01:03:26.487  1846  1932 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:03:26.489  1498  1498 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.stats.FeatureLoggingTask.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-08 01:03:26.489  1498  1498 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.stats.FeatureLoggingTask.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-08 01:03:26.492  1846  2082 I Forking : Starting analysis.
+11-08 01:03:26.492  1846  1932 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:03:26.493  1846  2082 I Misthreading: Starting analysis.
+11-08 01:03:26.498  1267  2725 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.security.safebrowsing.SafeBrowsingUpdateTaskService started execution. cause:2 exec_start_elapsed_seconds: 42 [CONTEXT service_id=218 ]
+11-08 01:03:26.498  1267  2725 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.common.stats.FeatureLoggingTask started execution. cause:5 exec_start_elapsed_seconds: 42 [CONTEXT service_id=218 ]
+11-08 01:03:26.499  1846  1943 I BugleNetwork: FirebaseRegistrationStartupTask: Enabling Firebase component
+11-08 01:03:26.499  1364  1666 I SP.AiAi : Starting garbage collection
+11-08 01:03:26.500  1364  1666 I SP.AiAi : GC for 'global' (1) with ttl of 172800000 ms took 1 ms (0/1/0)
+11-08 01:03:26.504  1846  1932 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:03:26.508  1846  1943 D nativeloader: Load /product/priv-app/PrebuiltBugle/PrebuiltBugle.apk!/lib/x86_64/libscytale_v2_jni.so using ns product-clns-8 from class loader (caller=/product/priv-app/PrebuiltBugle/PrebuiltBugle.apk!classes3.dex): ok
+11-08 01:03:26.509  1846  1932 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:03:26.514  1846  1932 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:03:26.515  1846  1943 W BugleEtouffee: E2eeStartupTask: No identities to perform prekey checking for.
+11-08 01:03:26.517  1267  1983 I NetworkScheduler.Stats: HousekeepingTask com.google.android.gms/com.google.android.gms.security.safebrowsing.SafeBrowsingUpdateTaskService finished executing. cause:0 result: 1 elapsed_millis: 68 uptime_millis: 67 exec_start_elapsed_seconds: 42 [CONTEXT service_id=218 ]
+11-08 01:03:26.521   430   430 I netd    : tetherGetStats() -> {[]} <0.50ms>
+11-08 01:03:26.528  1846  1932 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:03:26.529  1498  1498 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.safetynet.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+11-08 01:03:26.529  1498  1498 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.safetynet.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+11-08 01:03:26.538  1846  1932 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:03:26.543  1846  1932 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:03:26.544  1846  1943 D ProfileInstaller: Installing profile for com.google.android.apps.messaging
+11-08 01:03:26.544  1267  1267 E WearableService: PackageRecordCache: appContext was already set bbpj@fb41626 -> bbpj@5d13267
+11-08 01:03:26.547  1498  2051 I MetricIdProvider: Unable to log feature status gaia snapshot: no accounts found [CONTEXT service_id=231 ]
+11-08 01:03:26.548  1498  2051 I MetricIdProvider: Unable to log feature status zwieback snapshot: Facet Usage cannot log or override not set [CONTEXT service_id=231 ]
+11-08 01:03:26.548  1498  2051 I GmsCoreDailyFeatureLogg: Unable to log feature status snapshot: Cannot log gaia or zwieback [CONTEXT service_id=231 ]
+11-08 01:03:26.552  1846  1943 I BugleRcsProvisioning: RcsProvisioningTrigger: Schedule provisioning on app startup
+11-08 01:03:26.552  1846  1943 I BugleRcsProvisioning: RcsProvisioningTrigger: updateAvailabilityForAllSimsAsync : hint = NO_HINT logTriggerEvent = false
+11-08 01:03:26.553  1846  1943 I Bugle   : RcsAvailabilityUtilForProvisioningEngineV2: updateAvailabilityForAllSimsAsync, hint: NO_HINT
+11-08 01:03:26.553  1498  1498 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.threadnetwork.service.firstparty.BorderRouterSyncBoundService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-08 01:03:26.553  1498  1498 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.threadnetwork.service.firstparty.BorderRouterSyncBoundService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-08 01:03:26.553  1846  1943 I RcsAvailabilityUpdaterL: updateAvailabilityForAllSimsAsync: scheduling updateAvailabilityForRcsProvisioningId call. Hint: NO_HINT, enableWelcomePopupWithoutGoogleTos: false, reshowSuccessPopup: false
+11-08 01:03:26.554  1846  1932 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:03:26.554  1846  2577 I BugleNetwork: Startup: registering tachyon.
+11-08 01:03:26.555  1846  2580 I RcsAvailabilityUpdaterL: updateRcsAvailabilityForMultipleSims: hint: NO_HINT, canReshowWelcomeMessage: false
+11-08 01:03:26.558  1846  1932 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:03:26.558  1562  1764 I A       : Successfully scheduled next onetime workers
+11-08 01:03:26.564  1846  1932 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:03:26.564  1846  2580 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=72 ]
+11-08 01:03:26.566  1846  2580 I RcsAvailabilityUpdaterL: RcsAvailability configuration availability and enabled status: simId: redacted-pii:sim_id[chars:20,last3:897], SipConnectionType: DUAL_REG, isConfigurationAvailableAndEnabled: false
+11-08 01:03:26.566  1846  2580 I BugleRcsEngine: Using config server URL from biuf [CONTEXT log_prefix="ProvisioningServerUtil" thread_id=72 ]
+11-08 01:03:26.568  1267  2772 I NetworkScheduler.Stats: HousekeepingTask com.google.android.gms/com.google.android.gms.common.stats.FeatureLoggingTask finished executing. cause:0 result: 1 elapsed_millis: 72 uptime_millis: 72 exec_start_elapsed_seconds: 42 [CONTEXT service_id=218 ]
+11-08 01:03:26.568  1498  1498 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.stats.FeatureLoggingTask.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-08 01:03:26.568  1846  1932 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:03:26.570  1846  2580 W BugleRcsProvisioning: Failed to get RCS configuration from the cached provider, configuration is empty.
+11-08 01:03:26.570  1846  2580 W BugleRcsProvisioning: dncp: FULL
+11-08 01:03:26.570  1846  2580 W BugleRcsProvisioning: 	at afzl.c(PG:130)
+11-08 01:03:26.570  1846  2580 W BugleRcsProvisioning: 	at afzl.f(PG:13)
+11-08 01:03:26.570  1846  2580 W BugleRcsProvisioning: 	at afwq.a(PG:9)
+11-08 01:03:26.570  1846  2580 W BugleRcsProvisioning: 	at bluy.apply(PG:125)
+11-08 01:03:26.570  1846  2580 W BugleRcsProvisioning: 	at j$.util.Optional.map(SourceFile:17)
+11-08 01:03:26.570  1846  2580 W BugleRcsProvisioning: 	at blve.s(PG:255)
+11-08 01:03:26.570  1846  2580 W BugleRcsProvisioning: 	at blve.o(PG:58)
+11-08 01:03:26.570  1846  2580 W BugleRcsProvisioning: 	at bluo.run(PG:6)
+11-08 01:03:26.570  1846  2580 W BugleRcsProvisioning: 	at dkqk.run(PG:21)
+11-08 01:03:26.570  1846  2580 W BugleRcsProvisioning: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:487)
+11-08 01:03:26.570  1846  2580 W BugleRcsProvisioning: 	at dqsy.a(PG:3)
+11-08 01:03:26.570  1846  2580 W BugleRcsProvisioning: 	at dqrv.run(PG:21)
+11-08 01:03:26.570  1846  2580 W BugleRcsProvisioning: 	at dqsz.run(PG:5)
+11-08 01:03:26.570  1846  2580 W BugleRcsProvisioning: 	at crzm.run(PG:3)
+11-08 01:03:26.570  1846  2580 W BugleRcsProvisioning: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-08 01:03:26.570  1846  2580 W BugleRcsProvisioning: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-08 01:03:26.570  1846  2580 W BugleRcsProvisioning: 	at cryq.run(PG:6)
+11-08 01:03:26.570  1846  2580 W BugleRcsProvisioning: 	at java.lang.Thread.run(Thread.java:1012)
+11-08 01:03:26.570  1846  2580 W BugleRcsProvisioning: 	at csaw.run(PG:64)
+11-08 01:03:26.573  1846  2580 I RcsAvailabilityUpdaterL: RcsAvailability: Subscription Id: 1, simId: redacted-pii:sim_id[chars:20,last3:897], sipConnectionType: DUAL_REG, isRcsAvailable: false
+11-08 01:03:26.574  1846  2580 I RcsAvailabilityUpdaterL: updateAvailabilityForRcsProvisioningId. SimId: redacted-pii:sim_id[chars:20,last3:897], currentAvailability: 9, newAvailability: 10, hint: NO_HINT
+11-08 01:03:26.575  1846  2580 I BugleRcsEngine: Receive onRcsAvailabilityUpdate, SIM = redacted-pii:sim_id[chars:20,last3:897], availability = RcsAvailability{mAvailability=CARRIER_SETUP_PENDING (Carrier RCS is not set up)} [CONTEXT log_prefix="RcsProvisioningManager" thread_id=72 ]
+11-08 01:03:26.576  1846  1932 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:03:26.577  1846  1947 I BugleRcsProvisioning: scheduleProvisioningForEligibleSims
+11-08 01:03:26.578  1846  2580 I afym    : scheduleProvisioningForEligibleSims: operationTrigger: 5 bugle trigger event: 4
+11-08 01:03:26.580  1846  2580 I afym    : scheduleProvisioningForAllEligibleSims: operationTrigger: 5 bugle trigger event: 4
+11-08 01:03:26.580  1267  1267 I Wear_Controller: Wearable module requires a companion app to be installed.
+11-08 01:03:26.580  1267  1267 I WearableService: onCreate: Wearable Services not starting. Wear is not available on this device.
+11-08 01:03:26.580  1846  2580 I afym    : scheduleProvisioningForDefaultSimIfEligible: defaultSimType: DEFAULT_CALL_SIM operationTrigger: 5 bugle trigger event: 4
+11-08 01:03:26.581  1846  2579 I BugleRcsEngine: AvailabilityObserver.onUpdate : Notify RcsAvailabilityListener brtj@d0cdde1 onRcsAvailabilityUpdate, SIM = redacted-pii:sim_id[chars:20,last3:897], availability = 10 [CONTEXT log_prefix="RcsProvisioningManager" thread_id=70 ]
+11-08 01:03:26.581  1846  2576 I BugleRcsProvisioning: RcsProvisioningTrigger: onRcsAvailabilityUpdate : availability is updated to Carrier RCS is not set up, lastAvailabilityLocal is RCS is disabled due to SIM absent, simId hash = 7631453343957230991, simId = redacted-pii:sim_id[chars:20,last3:897], isPev3Enabled = true
+11-08 01:03:26.581  1846  1942 W BugleRcs: getAvailableProvisioningIds: accessing uninitialized provisioning identities.
+11-08 01:03:26.581  1846  1942 W BugleRcs: dncp: FULL
+11-08 01:03:26.581  1846  1942 W BugleRcs: 	at cjmd.i(PG:53)
+11-08 01:03:26.581  1846  1942 W BugleRcs: 	at cjvb.q(PG:169)
+11-08 01:03:26.581  1846  1942 W BugleRcs: 	at brts.a(PG:27)
+11-08 01:03:26.581  1846  1942 W BugleRcs: 	at brsg.b(PG:24)
+11-08 01:03:26.581  1846  1942 W BugleRcs: 	at brsg.a(PG:13)
+11-08 01:03:26.581  1846  1942 W BugleRcs: 	at efhn.a(PG:14)
+11-08 01:03:26.581  1846  1942 W BugleRcs: 	at eerl.a(PG:10)
+11-08 01:03:26.581  1846  1942 W BugleRcs: 	at dlmg.b(PG:84)
+11-08 01:03:26.581  1846  1942 W BugleRcs: 	at eegr.w(PG:11)
+11-08 01:03:26.581  1846  1942 W BugleRcs: 	at eerz.run(PG:109)
+11-08 01:03:26.581  1846  1942 W BugleRcs: 	at djfc.run(PG:3)
+11-08 01:03:26.581  1846  1942 W BugleRcs: 	at dkqk.run(PG:21)
+11-08 01:03:26.581  1846  1942 W BugleRcs: 	at crzm.run(PG:3)
+11-08 01:03:26.581  1846  1942 W BugleRcs: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-08 01:03:26.581  1846  1942 W BugleRcs: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-08 01:03:26.581  1846  1942 W BugleRcs: 	at cryq.run(PG:6)
+11-08 01:03:26.581  1846  1942 W BugleRcs: 	at java.lang.Thread.run(Thread.java:1012)
+11-08 01:03:26.581  1846  1942 W BugleRcs: 	at csaw.run(PG:64)
+11-08 01:03:26.582  1846  1942 I BugleTransport: Retrieved RCS available simIds: []
+11-08 01:03:26.582  1846  2577 I BugleNetwork: Startup: registering tachyon for phone.
+11-08 01:03:26.582  1846  2577 I BugleNetwork: Profile service is not connected at startup task.
+11-08 01:03:26.583  1846  1947 I BugleTransport: Deregister all SIMs except for SIMs with subIds: [] from chat transport: SINGLE_REGISTRATION.
+11-08 01:03:26.584  1846  2585 W BugleRcs: getAvailableProvisioningIds: accessing uninitialized provisioning identities.
+11-08 01:03:26.584  1846  2585 W BugleRcs: dncp: FULL
+11-08 01:03:26.584  1846  2585 W BugleRcs: 	at cjmd.i(PG:53)
+11-08 01:03:26.584  1846  2585 W BugleRcs: 	at cjuu.a(PG:3)
+11-08 01:03:26.584  1846  2585 W BugleRcs: 	at cjux.a(PG:17)
+11-08 01:03:26.584  1846  2585 W BugleRcs: 	at cknu.run(PG:9)
+11-08 01:03:26.584  1846  2585 W BugleRcs: 	at dkqk.run(PG:21)
+11-08 01:03:26.584  1846  2585 W BugleRcs: 	at crzm.run(PG:3)
+11-08 01:03:26.584  1846  2585 W BugleRcs: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-08 01:03:26.584  1846  2585 W BugleRcs: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-08 01:03:26.584  1846  2585 W BugleRcs: 	at cryq.run(PG:6)
+11-08 01:03:26.584  1846  2585 W BugleRcs: 	at java.lang.Thread.run(Thread.java:1012)
+11-08 01:03:26.584  1846  2585 W BugleRcs: 	at csaw.run(PG:64)
+11-08 01:03:26.584  1846  2577 I Bugle   : VerifiedSmsEnabledCheckerImpl: VSMS is disabled via Phenotype flag.
+11-08 01:03:26.585  1846  2583 I RcsClientLib: Connecting RcsEngineLifecycleServiceV2
+11-08 01:03:26.586  1846  2581 I BugleTransport: Deregister all SIMs except for SIMs with subIds: [] from chat transport: TACHYGRAM.
+11-08 01:03:26.586  1846  1930 I BugleTransport: Deregister all SIMs except for SIMs with subIds: [] from chat transport: DUAL_REGISTRATION.
+11-08 01:03:26.587  1846  2585 I BugleRcsEngine: CommonRcsProvisioningChangeListenerHandler.notifyListener : Notify RcsProvisioningChangeListener bjbz@71b3706 onRcsProvisioningChange, SIM = redacted-pii:sim_id[chars:35,last3:97)], available rcs provisioning ids  =  [CONTEXT log_prefix="RcsProvisioningManager" thread_id=67 ]
+11-08 01:03:26.589  1846  2579 I RcsClientLib: Connecting RcsEngineLifecycleServiceV2
+11-08 01:03:26.589  1846  2576 I BugleRcsEngine: getRcsProvisioningGoogleTosConfiguration # bnuv@5d5fcd, consentState = 0, ServerUpdateTime = 0 [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=66 ]
+11-08 01:03:26.589  1846  2580 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=72 ]
+11-08 01:03:26.590  1562  1562 W TaskServiceHelper: (REDACTED) Not enough time has passed between starts of two %s periodic tasks.
+11-08 01:03:26.590  1846  1932 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:03:26.590  1846  2580 I afym    : RcsProvisioningTrigger: DR is active, initializing DR provisioning. DUAL_REG
+11-08 01:03:26.590  1846  2576 I BugleRcsProvisioning: RcsProvisioningTrigger: Should not schedule Revoke Google Consent Task because both the consent types are empty in the Storage
+11-08 01:03:26.591  1846  2583 W RcsClientLib: No CS.apk RCS service found. Is RCS running in Bugle?
+11-08 01:03:26.591  1846  2581 I BugleRcsProvisioning: RcsProvisioningTrigger: Did not schedule RevokeGoogleConsentTask
+11-08 01:03:26.592  1846  1935 I Bugle   : VerifiedSmsStartupTask: Checking if Verified SMS tasks should be enqueued. feature supported: false, feature enabled: false, eligible / has registered key: false, C11N: false
+11-08 01:03:26.593  1846  2579 W RcsClientLib: No CS.apk RCS service found. Is RCS running in Bugle?
+11-08 01:03:26.593  1846  1935 I Bugle   : VerifiedSmsStartupTask: Not enqueuing VSMS periodic task, VSMS is disabled or not supported.
+11-08 01:03:26.593  1846  1930 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=46 ]
+11-08 01:03:26.593  1846  2082 I Bugle   : VerifiedSmsStartupTask: Not calling C11N to get phone numbers.
+11-08 01:03:26.594  1846  2576 I BugleRcsEngine: Receive onRcsAvailabilityUpdate, SIM = redacted-pii:sim_id[chars:20,last3:897], availability = RcsAvailability{mAvailability=CARRIER_SETUP_PENDING (Carrier RCS is not set up)} [CONTEXT log_prefix="RcsProvisioningManager" thread_id=66 ]
+11-08 01:03:26.595  1846  2580 I afym    : scheduleProvisioningForDefaultSimIfEligible: defaultSimType: DEFAULT_SMS_SIM operationTrigger: 5 bugle trigger event: 4
+11-08 01:03:26.597  1846  1932 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:03:26.597  1846  1930 I BugleRcsEngine: Scheduled provisioning task with 0 seconds delay, KEEP policy, trigger is APP_STARTUP, workerId is 0a5c78a5-6442-40cb-b674-b0db95fcc656, simId is redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="provisioning" thread_id=46 ]
+11-08 01:03:26.598  1846  2583 I RcsClientLib: shouldUseCarrierServicesJibeService: false, CarrierServices rcs service found: false
+11-08 01:03:26.598  1846  2585 I BugleRcsEngine: AvailabilityObserver.onUpdate : Notify RcsAvailabilityListener brtj@d0cdde1 onRcsAvailabilityUpdate, SIM = redacted-pii:sim_id[chars:20,last3:897], availability = 10 [CONTEXT log_prefix="RcsProvisioningManager" thread_id=67 ]
+11-08 01:03:26.598  1846  2580 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=72 ]
+11-08 01:03:26.598  1846  2580 I afym    : RcsProvisioningTrigger: DR is active, initializing DR provisioning. DUAL_REG
+11-08 01:03:26.602  1846  2585 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=67 ]
+11-08 01:03:26.603  1846  2579 I RcsClientLib: shouldUseCarrierServicesJibeService: false, CarrierServices rcs service found: false
+11-08 01:03:26.606  1846  1932 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:03:26.606  1846  2577 W BugleRcs: getAvailableProvisioningIds: accessing uninitialized provisioning identities.
+11-08 01:03:26.606  1846  2577 W BugleRcs: dncp: FULL
+11-08 01:03:26.606  1846  2577 W BugleRcs: 	at cjmd.i(PG:53)
+11-08 01:03:26.606  1846  2577 W BugleRcs: 	at cjuu.a(PG:3)
+11-08 01:03:26.606  1846  2577 W BugleRcs: 	at cjux.a(PG:17)
+11-08 01:03:26.606  1846  2577 W BugleRcs: 	at cknu.run(PG:9)
+11-08 01:03:26.606  1846  2577 W BugleRcs: 	at dkqk.run(PG:21)
+11-08 01:03:26.606  1846  2577 W BugleRcs: 	at crzm.run(PG:3)
+11-08 01:03:26.606  1846  2577 W BugleRcs: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-08 01:03:26.606  1846  2577 W BugleRcs: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-08 01:03:26.606  1846  2577 W BugleRcs: 	at cryq.run(PG:6)
+11-08 01:03:26.606  1846  2577 W BugleRcs: 	at java.lang.Thread.run(Thread.java:1012)
+11-08 01:03:26.606  1846  2577 W BugleRcs: 	at csaw.run(PG:64)
+11-08 01:03:26.607  1846  2585 I BugleRcsEngine: Scheduled provisioning task with 0 seconds delay, KEEP policy, trigger is APP_STARTUP, workerId is eb5ce0ff-afb7-4cc2-91fd-3113abb78617, simId is redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="provisioning" thread_id=67 ]
+11-08 01:03:26.608  1846  2576 I BugleRcsProvisioning: RcsProvisioningTrigger: onRcsAvailabilityUpdate : isPreviousDisabled = true, isCurrentDisabled = false, config[simId:redacted-pii:sim_id[chars:20,last3:897]] = [Type: 0, Version: 0, Validity: 86400, Last updated: 1792057262, Remaining validity: 0, Reconfiguration requested: false, Messaging technology: SIMPLE_IM, rcsVolteSingleRegistration: false], hasToken: false, isValidAndUpdated: false
+11-08 01:03:26.609  1846  2576 I BugleRcsProvisioning: RcsProvisioningTrigger: Schedule KEEP provision when trigger configuration not valid
+11-08 01:03:26.610  1846  2576 I BugleRcsProvisioning: scheduleProvisioningForRcsProvisioningId rcsProvisioningId: redacted-pii:sim_id[chars:35,last3:97)], provisioningTriggerEvent: 0
+11-08 01:03:26.610  1267  2179 W WearableService: onGetService: Wear is not available on this device.
+11-08 01:03:26.610  1846  2577 I BugleRcsEngine: CommonRcsProvisioningChangeListenerHandler.notifyListener : Notify RcsProvisioningChangeListener bjbz@71b3706 onRcsProvisioningChange, SIM = redacted-pii:sim_id[chars:35,last3:97)], available rcs provisioning ids  =  [CONTEXT log_prefix="RcsProvisioningManager" thread_id=68 ]
+11-08 01:03:26.611  1846  2585 I afym    : scheduleProvisioningForRcsProvisioningId: rcsProvisioningId: SimId(idValue=89860318640220133897) operationTrigger: 6 bugle trigger event: 0
+11-08 01:03:26.612  1846  2585 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=67 ]
+11-08 01:03:26.613  1846  2585 I afym    : RcsProvisioningTrigger: DR is active, initializing DR provisioning. DUAL_REG
+11-08 01:03:26.613  1562  2073 D TrafficStats: tagSocket(152) with statsTag=0x0, statsUid=-1
+11-08 01:03:26.616  1846  1932 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:03:26.616  1846  2576 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=66 ]
+11-08 01:03:26.617  1846  2583 I RcsClientLib: com.google.android.rcs.client.lifecycle.RcsEngineLifecycleServiceV2 connected
+11-08 01:03:26.617  1498  1498 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.stats.NotificationLoggingTask.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-08 01:03:26.617  1498  1498 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.stats.NotificationLoggingTask.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-08 01:03:26.619  1846  2576 I BugleRcsEngine: Scheduled provisioning task with 0 seconds delay, KEEP policy, trigger is UNDEFINED_TRIGGER_EVENT, workerId is df7b1177-0cf5-434f-a8df-588e67b3b49a, simId is redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="provisioning" thread_id=66 ]
+11-08 01:03:26.620  1449  2438 I BugleRcsEngine: stopAllRcsTransportsExcept: ignoring stopping the RcsEngine. RcsEngine is still running [CONTEXT log_prefix="RcsEngineProxyImpl:[e6114a02-aa9d]" thread_id=64 ]
+11-08 01:03:26.620  1846  2576 I RcsClientLib: com.google.android.rcs.client.lifecycle.RcsEngineLifecycleServiceV2 connected
+11-08 01:03:26.621  1846  2409 I RcsClientLib: Disconnecting RcsEngineLifecycleServiceV2
+11-08 01:03:26.623  1846  1932 E MDD     : SharedFileManager: reVerifyFile lost or corrupted code DOWNLOADED_FILE_CHECKSUM_MISMATCH_ERROR
+11-08 01:03:26.625  1562  2190 D TrafficStats: tagSocket(279) with statsTag=0x0, statsUid=-1
+11-08 01:03:26.629  1449  2438 I BugleRcsEngine: stopAllRcsTransportsExcept: ignoring stopping the RcsEngine. RcsEngine is still running [CONTEXT log_prefix="RcsEngineProxyImpl:[e6114a02-aa9d]" thread_id=64 ]
+11-08 01:03:26.630  1846  2093 I RcsClientLib: Disconnecting RcsEngineLifecycleServiceV2
+11-08 01:03:26.630  1267  2772 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.threadnetwork.service.firstparty.BorderRouterSyncBoundService started execution. cause:2 exec_start_elapsed_seconds: 42 [CONTEXT service_id=218 ]
+11-08 01:03:26.633  1846  1932 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:03:26.641  1846  2583 W BugleRcs: getAvailableProvisioningIds: accessing uninitialized provisioning identities.
+11-08 01:03:26.641  1846  2583 W BugleRcs: dncp: FULL
+11-08 01:03:26.641  1846  2583 W BugleRcs: 	at cjmd.i(PG:53)
+11-08 01:03:26.641  1846  2583 W BugleRcs: 	at cjvb.q(PG:169)
+11-08 01:03:26.641  1846  2583 W BugleRcs: 	at brts.a(PG:27)
+11-08 01:03:26.641  1846  2583 W BugleRcs: 	at brsg.b(PG:24)
+11-08 01:03:26.641  1846  2583 W BugleRcs: 	at brsg.a(PG:13)
+11-08 01:03:26.641  1846  2583 W BugleRcs: 	at efhn.a(PG:14)
+11-08 01:03:26.641  1846  2583 W BugleRcs: 	at eerl.a(PG:10)
+11-08 01:03:26.641  1846  2583 W BugleRcs: 	at dlmg.b(PG:84)
+11-08 01:03:26.641  1846  2583 W BugleRcs: 	at eegr.w(PG:11)
+11-08 01:03:26.641  1846  2583 W BugleRcs: 	at eerz.run(PG:109)
+11-08 01:03:26.641  1846  2583 W BugleRcs: 	at djfc.run(PG:3)
+11-08 01:03:26.641  1846  2583 W BugleRcs: 	at dkqk.run(PG:21)
+11-08 01:03:26.641  1846  2583 W BugleRcs: 	at crzm.run(PG:3)
+11-08 01:03:26.641  1846  2583 W BugleRcs: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-08 01:03:26.641  1846  2583 W BugleRcs: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-08 01:03:26.641  1846  2583 W BugleRcs: 	at cryq.run(PG:6)
+11-08 01:03:26.641  1846  2583 W BugleRcs: 	at java.lang.Thread.run(Thread.java:1012)
+11-08 01:03:26.641  1846  2583 W BugleRcs: 	at csaw.run(PG:64)
+11-08 01:03:26.641  1846  1932 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:03:26.641  1846  2583 I BugleTransport: Retrieved RCS available simIds: []
+11-08 01:03:26.641  1846  1932 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:03:26.642  1846  1932 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:03:26.642  1846  1932 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:03:26.642  1846  1932 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:03:26.642  1846  2576 I BugleTransport: Deregister all SIMs except for SIMs with subIds: [] from chat transport: TACHYGRAM.
+11-08 01:03:26.643  1846  1932 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:03:26.643  1846  2585 I BugleTransport: Deregister all SIMs except for SIMs with subIds: [] from chat transport: SINGLE_REGISTRATION.
+11-08 01:03:26.643  1846  1932 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:03:26.643  1846  1932 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:03:26.644  1846  1932 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:03:26.644  1846  1932 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:03:26.644  1846  1932 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:03:26.644  1846  2583 I RcsClientLib: Connecting RcsEngineLifecycleServiceV2
+11-08 01:03:26.645  1846  1932 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:03:26.645  1846  1932 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:03:26.646  1846  2579 I BugleTransport: Deregister all SIMs except for SIMs with subIds: [] from chat transport: DUAL_REGISTRATION.
+11-08 01:03:26.646  1846  1932 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:03:26.646  1846  1932 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:03:26.646  1846  1932 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:03:26.647  1846  1932 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:03:26.647  1846  2585 I RcsClientLib: Connecting RcsEngineLifecycleServiceV2
+11-08 01:03:26.647  1846  1932 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:03:26.648  1846  1932 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:03:26.648  1846  1932 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:03:26.648  1846  1932 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:03:26.648  1846  1932 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:03:26.648  1846  1932 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:03:26.649  1846  1932 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:03:26.649  1846  1932 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:03:26.649  1846  1932 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:03:26.650  1846  2583 W RcsClientLib: No CS.apk RCS service found. Is RCS running in Bugle?
+11-08 01:03:26.651  1846  1932 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:03:26.651  1846  1932 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:03:26.652  1846  1932 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:03:26.652  1846  1932 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:03:26.652  1846  1932 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:03:26.652  1498  1973 I gle.android.gms: Waiting for a blocking GC ClassLinker
+11-08 01:03:26.653  1846  2583 I RcsClientLib: shouldUseCarrierServicesJibeService: false, CarrierServices rcs service found: false
+11-08 01:03:26.653  1846  2585 W RcsClientLib: No CS.apk RCS service found. Is RCS running in Bugle?
+11-08 01:03:26.653  1846  1932 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:03:26.654  1846  1932 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:03:26.655  1846  2585 I RcsClientLib: shouldUseCarrierServicesJibeService: false, CarrierServices rcs service found: false
+11-08 01:03:26.656  1846  1932 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:03:26.656  1846  1932 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:03:26.657  1846  1932 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:03:26.657  1846  1932 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:03:26.657  1846  1932 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:03:26.657  1846  1932 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:03:26.659  1846  2576 I RcsClientLib: com.google.android.rcs.client.lifecycle.RcsEngineLifecycleServiceV2 connected
+11-08 01:03:26.661  1846  2576 I RcsClientLib: com.google.android.rcs.client.lifecycle.RcsEngineLifecycleServiceV2 connected
+11-08 01:03:26.664  1449  1468 I BugleRcsEngine: stopAllRcsTransportsExcept: ignoring stopping the RcsEngine. RcsEngine is still running [CONTEXT log_prefix="RcsEngineProxyImpl:[e6114a02-aa9d]" thread_id=36 ]
+11-08 01:03:26.664  1846  2082 I RcsClientLib: Disconnecting RcsEngineLifecycleServiceV2
+11-08 01:03:26.666  1846  1932 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:03:26.666  1846  1932 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:03:26.666  1846  1932 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:03:26.667  1846  1932 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:03:26.668  1846  1932 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:03:26.668  1449  2438 I BugleRcsEngine: stopAllRcsTransportsExcept: ignoring stopping the RcsEngine. RcsEngine is still running [CONTEXT log_prefix="RcsEngineProxyImpl:[e6114a02-aa9d]" thread_id=64 ]
+11-08 01:03:26.668  1846  1932 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:03:26.668  1846  1932 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:03:26.669  1846  2409 I RcsClientLib: Disconnecting RcsEngineLifecycleServiceV2
+11-08 01:03:26.669  1267  2772 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.common.stats.NotificationLoggingTask started execution. cause:5 exec_start_elapsed_seconds: 43 [CONTEXT service_id=218 ]
+11-08 01:03:26.669  1846  1932 E MDD     : FileGroupManager: Missing file. Logging and deleting file group.
+11-08 01:03:26.671  1498  2036 W ChimeraUtils: Module com.google.android.gms.core missing resource null(0)
+11-08 01:03:26.674  1498  2046 I ThreadBrSyncService: Border Router sync service run task [CONTEXT service_id=305 ]
+11-08 01:03:26.684  1267  1267 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.mdns.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+11-08 01:03:26.684  1267  1267 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.mdns.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+11-08 01:03:26.686  1562  1562 W TaskServiceHelper: (REDACTED) Not enough time has passed between starts of two %s periodic tasks.
+11-08 01:03:26.687  1498  2046 I ThreadBrSynchronizer: Start syncing 1P Border Routers [CONTEXT service_id=305 ]
+11-08 01:03:26.688  1498  1498 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.stats.NotificationLoggingTask.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-08 01:03:26.689  1267  2725 I NetworkScheduler.Stats: HousekeepingTask com.google.android.gms/com.google.android.gms.common.stats.NotificationLoggingTask finished executing. cause:0 result: 1 elapsed_millis: 80 uptime_millis: 80 exec_start_elapsed_seconds: 43 [CONTEXT service_id=218 ]
+11-08 01:03:26.689   640  1055 D CompatChangeReporter: Compat change id reported: 319212206; UID 10143; state: ENABLED
+11-08 01:03:26.690   640   816 D ConnectivityService: NetReassign [no changes] [c 0] [a 0] [i 0]
+11-08 01:03:26.702  1498  1508 I gle.android.gms: Background concurrent mark compact GC freed 6690KB AllocSpace bytes, 35(1208KB) LOS objects, 49% free, 10MB/21MB, paused 3.255ms,10.245ms total 169.776ms
+11-08 01:03:26.703  1498  1973 I gle.android.gms: WaitForGcToComplete blocked ClassLinker on Background for 51.055ms
+11-08 01:03:26.704  1449  2438 V ClearcutMetricXmitter: Transmission is done.
+11-08 01:03:26.722  1562  1562 W TaskServiceHelper: (REDACTED) Not enough time has passed between starts of two %s periodic tasks.
+11-08 01:03:26.725  1267  2772 D TrafficStats: tagSocket(203) with statsTag=0x30000900, statsUid=-1
+11-08 01:03:26.725  1498  2036 I BorderAgentScannerImpl: Started mDNS service browser [CONTEXT service_id=305 ]
+11-08 01:03:26.727  1498  1498 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.adsidentity.service.AdservicesStatusService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-08 01:03:26.728  1498  1498 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.adsidentity.service.AdservicesStatusService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+11-08 01:03:26.729   640  2227 I WifiService: acquireMulticastLock uid=10143 tag=mdns-cast
+11-08 01:03:26.729  1498  1510 W gle.android.gms: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/priv-app/GoogleServicesFramework/GoogleServicesFramework.apk' with 1 weak references
+11-08 01:03:26.732   975  1181 D IpClient.wlan0: set max DTIM multiplier to 1
+11-08 01:03:26.739  1498  1498 I BorderAgentScannerImpl: Sent Border Agent mDNS service query (transactionId = 1) [CONTEXT service_id=305 ]
+11-08 01:03:26.742   640   809 E WifiStaIfaceAidlImpl: setDtimMultiplier failed with service-specific exception: android.os.ServiceSpecificException:  (code 4)
+11-08 01:03:26.748  1267  2725 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.adsidentity.service.AdservicesStatusService started execution. cause:5 exec_start_elapsed_seconds: 43 [CONTEXT service_id=218 ]
+11-08 01:03:26.750  1498  1973 D nativeloader: Configuring clns-10 for other apk . target_sdk_version=34, uses_libraries=ALL, library_path=/data/user_de/0/com.google.android.gms/app_chimera/m/00000009/CronetDynamite.uncompressed.apk!/lib/x86_64:/data/user_de/0/com.google.android.gms/app_chimera/m/00000009/CronetDynamite.uncompressed.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand
+11-08 01:03:26.752  1498  1498 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.adsidentity.service.BIND dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsApiService }
+11-08 01:03:26.752  1498  1498 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.adsidentity.service.BIND dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsApiService }
+11-08 01:03:26.757  1498  1973 D nativeloader: Load /data/user_de/0/com.google.android.gms/app_chimera/m/00000009/CronetDynamite.uncompressed.apk!/lib/x86_64/libcronet.126.0.6452.4.so using isolated ns clns-10 (caller=/data/user_de/0/com.google.android.gms/app_chimera/m/00000009/CronetDynamite.uncompressed.apk): ok
+11-08 01:03:26.772   640  1539 D CompatChangeReporter: Compat change id reported: 297989574; UID 10143; state: ENABLED
+11-08 01:03:26.781  1267  1558 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(8, com.google.android.gms) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+11-08 01:03:26.783  1498  1498 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.ads.identifier.service.EVENT_ATTESTATION dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+11-08 01:03:26.783  1498  1498 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.ads.identifier.service.EVENT_ATTESTATION dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
